@@ -73,7 +73,22 @@ df["alert"]              = df.apply(
 df["date"] = datetime.today().strftime("%Y-%m-%d")
 df = df.sort_values("delta", ascending=False)
 
-df.to_csv("data/benchmark_data.csv", index=False)
+# Acumula histórico — añade al CSV existente en vez de sobreescribir
+history_file = "data/benchmark_history.csv"
+if os.path.exists(history_file):
+    df_history = pd.read_csv(history_file)
+    df_history = pd.concat([df_history, df], ignore_index=True)
+    # Elimina duplicados del mismo día (por si se ejecuta dos veces)
+    df_history = df_history.drop_duplicates(subset=["date","retailer"], keep="last")
+else:
+    df_history = df.copy()
+
+df_history.to_csv(history_file, index=False)
+df.to_csv("data/benchmark_data.csv", index=False)  # mantiene el latest también
+
+print(f"✅ benchmark_data.csv saved — {len(df)} retailers")
+print(f"✅ benchmark_history.csv saved — {len(df_history)} rows total")
+print(f"   📅 Days tracked: {df_history['date'].nunique()}")
 print(f"✅ benchmark_data.csv saved — {len(df)} retailers")
 print(f"   ⚠️  LOWER: {(df['alert']=='LOWER').sum()}")
 print(f"   ✅ OK:    {(df['alert']=='OK').sum()}")
