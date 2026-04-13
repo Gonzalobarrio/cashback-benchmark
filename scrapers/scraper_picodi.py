@@ -58,3 +58,79 @@ def get_picodi_rate(url):
             )
             pct_values = [
                 float(h.replace(",",".")) for h in all_hits
+                if float(h.replace(",",".")) <= 50
+            ]
+
+        if pct_values:
+            try:
+                best = mode(pct_values)
+            except StatisticsError:
+                best = pct_values[0]
+            has_do = bool(re.search(r"cashback\s+do\s+\d", text, re.IGNORECASE))
+            return str(best), ("up_to_%" if has_do else "%")
+
+    except Exception as e:
+        print(f"  Error {url}: {e}")
+    return "no cashback", None
+
+def find_picodi_store(retailer_name, igraal_slug, listing):
+    name_slug  = re.sub(r"[^a-z0-9]+", "-", retailer_name.lower()).strip("-")
+    camel      = re.sub(r"([a-z])([A-Z])", r"\1-\2", retailer_name)
+    camel_slug = re.sub(r"[^a-z0-9]+", "-", camel.lower()).strip("-")
+
+    variants = list(dict.fromkeys([
+        igraal_slug,        igraal_slug + "-pl",
+        igraal_slug + "-com",
+        name_slug,          name_slug + "-pl",
+        camel_slug,         camel_slug + "-pl",
+    ]))
+
+    for v in variants:
+        if v in listing:
+            rate, rtype = get_picodi_rate(listing[v]["picodi_url"])
+            if rate and rate not in ("no cashback", None):
+                return rate, rtype, listing[v]["picodi_url"]
+
+    name_clean = re.sub(r"[^a-z0-9]", "", retailer_name.lower())
+    for slug, data in listing.items():
+        shop_clean = re.sub(r"[^a-z0-9]", "", data["name"].lower())
+        if name_clean == shop_clean:
+            rate, rtype = get_picodi_rate(data["picodi_url"])
+            if rate and rate not in ("no cashback", None):
+                return rate, rtype, data["picodi_url"]
+
+    for v in variants:
+        url  = f"{PICODI_BASE}/pl/{v}"
+        rate, rtype = get_picodi_rate(url)
+        if rate and rate not in ("no cashback", None):
+            return rate, rtype, url
+        time.sleep(0.3)
+
+    return "not_found", None, None
+
+def scrape_picodi(df_igraal):
+    listing = get_picodi_listing()
+    today   = datetime.today().strftime("%Y-%m-%d")
+    results = []
+    for _, row in df_igraal.iterrows():
+        retailer = row["retailer"]
+        slug     = row["slug"]
+        rate, rtype, url = find_picodi_store(retailer, slug, listing)
+        results.append({
+            "date"            : today,
+            "retailer"        : retailer,
+            "igraal_slug"     : slug,
+            "picodi_rate"     : rate if rate not in ("no cashback","not_found") else None,
+            "picodi_rate_type": rtype if rate not in ("no cashback","not_found") else rate,
+            "picodi_url"      : url,
+        })
+        time.sleep(0.4)
+    return pd.DataFrame(results)
+
+if __name__ == "__main__":
+    import os
+    os.makedirs("data", exist_ok=True)
+    df_ig = pd.read_csv("data/igraal_rates_latest.csv")
+    df    = scrape_picodi(df_ig)
+    df.to_csv("data/picodi_rates_latest.csv", index=False)
+    print(f"✅ Picodi: {len(df)} retailers")
