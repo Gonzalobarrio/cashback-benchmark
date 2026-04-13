@@ -8,13 +8,18 @@ on:
 jobs:
   scrape:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
@@ -26,18 +31,16 @@ jobs:
       - name: Run scrapers
         run: python main.py
 
-   - name: Commit and push results
+      - name: Commit and push results
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git stash
-          git pull --rebase origin main
-          git stash pop
           git add data/
           git diff --staged --quiet || git commit -m "Daily update $(date +'%Y-%m-%d')"
-          git push origin main
+          git push
 
       - name: Send Slack alerts
+        if: always()
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
         run: |
@@ -61,7 +64,7 @@ jobs:
               exit()
 
           lines = [f"*🚨 iGraal Cashback Alert — {pd.Timestamp.today().strftime('%Y-%m-%d')}*"]
-          lines.append(f"Top retailers where competitors beat iGraal by >5%:\n")
+          lines.append("Top retailers where competitors beat iGraal by >5%:\n")
 
           for _, row in alerts.iterrows():
               lines.append(
@@ -82,7 +85,8 @@ jobs:
           print(f"✅ Slack alert sent with {len(alerts)} retailers")
           EOF
 
-      - name: Send email alerts
+      - name: Send email report
+        if: always()
         env:
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
         run: |
@@ -97,77 +101,69 @@ jobs:
           today    = pd.Timestamp.today().strftime("%Y-%m-%d")
           df       = pd.read_csv("data/benchmark_data.csv")
 
-          # ── Alertas inmediatas (delta >= 5%) ──────────────────────────
           alerts = df[
               (df["alert"] == "LOWER") &
               (df["delta"] >= 5) &
               (df["igraal_rate"].notna())
           ].sort_values("delta", ascending=False)
 
-          # ── Resumen general ───────────────────────────────────────────
-          total        = len(df)
-          igral_best   = (df["alert"] == "OK").sum()
-          comp_beats   = (df["alert"] == "LOWER").sum()
-          avg_rate     = df["igraal_rate"].mean().round(2)
+          total      = len(df)
+          igral_best = (df["alert"] == "OK").sum()
+          comp_beats = (df["alert"] == "LOWER").sum()
+          avg_rate   = round(df["igraal_rate"].mean(), 2)
 
-          # ── HTML del email ────────────────────────────────────────────
           alert_rows = ""
           for _, row in alerts.iterrows():
               alert_rows += f"""
               <tr>
-                <td style="padding:8px;border-bottom:1px solid #eee">{row['retailer']}</td>
-                <td style="padding:8px;border-bottom:1px solid #eee;text-align:center">{row['igraal_rate']}%</td>
-                <td style="padding:8px;border-bottom:1px solid #eee;text-align:center;color:#e53e3e;font-weight:bold">{row['best_competitor_rate']}%</td>
-                <td style="padding:8px;border-bottom:1px solid #eee;text-align:center;color:#e53e3e;font-weight:bold">+{row['delta']}%</td>
+                <td style="padding:8px;border-bottom:1px solid #2a2a2a">{row['retailer']}</td>
+                <td style="padding:8px;border-bottom:1px solid #2a2a2a;text-align:center">{row['igraal_rate']}%</td>
+                <td style="padding:8px;border-bottom:1px solid #2a2a2a;text-align:center;color:#e53e3e;font-weight:bold">{row['best_competitor_rate']}%</td>
+                <td style="padding:8px;border-bottom:1px solid #2a2a2a;text-align:center;color:#e53e3e;font-weight:bold">+{row['delta']}%</td>
               </tr>"""
 
           html = f"""
-          <html><body style="font-family:DM Sans,Arial,sans-serif;max-width:700px;margin:0 auto;padding:20px">
-
+          <html><body style="font-family:Arial,sans-serif;max-width:700px;margin:0 auto;padding:20px;background:#0f1117;color:#ffffff">
             <div style="background:#FF6B35;padding:20px;border-radius:8px;margin-bottom:24px">
               <h1 style="color:white;margin:0;font-size:20px">📊 iGraal Cashback Benchmark</h1>
-              <p style="color:white;margin:4px 0 0;opacity:0.9">{today}</p>
+              <p style="color:white;margin:4px 0 0;opacity:0.9">Daily Report — {today}</p>
             </div>
-
-            <div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:12px;margin-bottom:24px">
-              <div style="background:#f7f7f7;padding:16px;border-radius:8px;text-align:center">
+            <div style="display:flex;gap:12px;margin-bottom:24px">
+              <div style="flex:1;background:#1a1a2e;padding:16px;border-radius:8px;text-align:center">
                 <div style="font-size:28px;font-weight:bold;color:#FF6B35">{total}</div>
-                <div style="font-size:12px;color:#666">Total Retailers</div>
+                <div style="font-size:12px;color:#888">Total Retailers</div>
               </div>
-              <div style="background:#f7f7f7;padding:16px;border-radius:8px;text-align:center">
+              <div style="flex:1;background:#1a1a2e;padding:16px;border-radius:8px;text-align:center">
                 <div style="font-size:28px;font-weight:bold;color:#38a169">{igral_best}</div>
-                <div style="font-size:12px;color:#666">iGraal is Best</div>
+                <div style="font-size:12px;color:#888">iGraal is Best</div>
               </div>
-              <div style="background:#f7f7f7;padding:16px;border-radius:8px;text-align:center">
+              <div style="flex:1;background:#1a1a2e;padding:16px;border-radius:8px;text-align:center">
                 <div style="font-size:28px;font-weight:bold;color:#e53e3e">{comp_beats}</div>
-                <div style="font-size:12px;color:#666">Competitor Beats iGraal</div>
+                <div style="font-size:12px;color:#888">Competitor Beats iGraal</div>
               </div>
-              <div style="background:#f7f7f7;padding:16px;border-radius:8px;text-align:center">
+              <div style="flex:1;background:#1a1a2e;padding:16px;border-radius:8px;text-align:center">
                 <div style="font-size:28px;font-weight:bold;color:#FF6B35">{avg_rate}%</div>
-                <div style="font-size:12px;color:#666">Avg iGraal Rate</div>
+                <div style="font-size:12px;color:#888">Avg iGraal Rate</div>
               </div>
             </div>
-
-            <h2 style="color:#333;font-size:16px">🚨 Retailers where competitor beats iGraal by >5%</h2>
-            <table style="width:100%;border-collapse:collapse;font-size:14px">
+            <h2 style="color:#ffffff;font-size:16px">🚨 Act Now — gap > 5%</h2>
+            <table style="width:100%;border-collapse:collapse;font-size:14px;background:#1a1a2e;border-radius:8px">
               <thead>
-                <tr style="background:#f7f7f7">
-                  <th style="padding:8px;text-align:left">Retailer</th>
-                  <th style="padding:8px;text-align:center">iGraal</th>
-                  <th style="padding:8px;text-align:center">Best Competitor</th>
-                  <th style="padding:8px;text-align:center">Delta</th>
+                <tr style="background:#2a2a3e">
+                  <th style="padding:10px;text-align:left;color:#888">Retailer</th>
+                  <th style="padding:10px;text-align:center;color:#888">iGraal</th>
+                  <th style="padding:10px;text-align:center;color:#888">Best Comp.</th>
+                  <th style="padding:10px;text-align:center;color:#888">Delta</th>
                 </tr>
               </thead>
-              <tbody>{alert_rows}</tbody>
+              <tbody>{alert_rows if alert_rows else '<tr><td colspan="4" style="padding:16px;text-align:center;color:#888">No critical gaps today 🎉</td></tr>'}</tbody>
             </table>
-
-            <p style="margin-top:24px;font-size:12px;color:#999">
-              Automated daily report — iGraal.pl Cashback Benchmark Tool
+            <p style="margin-top:24px;font-size:11px;color:#555;text-align:center">
+              iGraal.pl Cashback Benchmark — automated daily report
             </p>
           </body></html>
           """
 
-          # ── Envía con Resend ──────────────────────────────────────────
           payload = {
               "from"   : "iGraal Benchmark <onboarding@resend.dev>",
               "to"     : [to_email],
