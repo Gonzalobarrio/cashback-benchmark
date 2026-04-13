@@ -2,7 +2,7 @@ name: Daily Cashback Benchmark
 
 on:
   schedule:
-    - cron: '0 7 * * *'  # Cada día a las 7:00 UTC (9:00 hora Polonia)
+    - cron: '0 7 * * *'
   workflow_dispatch:
 
 jobs:
@@ -47,7 +47,6 @@ jobs:
           webhook_url = os.environ["SLACK_WEBHOOK_URL"]
           df = pd.read_csv("data/benchmark_data.csv")
 
-          # Retailers donde un competidor supera a iGraal en más de 5%
           alerts = df[
               (df["alert"] == "LOWER") &
               (df["delta"] >= 5) &
@@ -58,7 +57,6 @@ jobs:
               print("No alerts to send")
               exit()
 
-          # Construye el mensaje
           lines = [f"*🚨 iGraal Cashback Alert — {pd.Timestamp.today().strftime('%Y-%m-%d')}*"]
           lines.append(f"Top retailers where competitors beat iGraal by >5%:\n")
 
@@ -70,7 +68,6 @@ jobs:
               )
 
           lines.append(f"\n_Total retailers where competitor beats iGraal: {(df['alert']=='LOWER').sum()}_")
-
           message = {"text": "\n".join(lines)}
 
           req = urllib.request.Request(
@@ -80,4 +77,109 @@ jobs:
           )
           urllib.request.urlopen(req)
           print(f"✅ Slack alert sent with {len(alerts)} retailers")
+          EOF
+
+      - name: Send email alerts
+        env:
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+        run: |
+          python - <<'EOF'
+          import pandas as pd
+          import json
+          import urllib.request
+          import os
+
+          api_key  = os.environ["RESEND_API_KEY"]
+          to_email = "gonzalo.barrio@atolls.com"
+          today    = pd.Timestamp.today().strftime("%Y-%m-%d")
+          df       = pd.read_csv("data/benchmark_data.csv")
+
+          # ── Alertas inmediatas (delta >= 5%) ──────────────────────────
+          alerts = df[
+              (df["alert"] == "LOWER") &
+              (df["delta"] >= 5) &
+              (df["igraal_rate"].notna())
+          ].sort_values("delta", ascending=False)
+
+          # ── Resumen general ───────────────────────────────────────────
+          total        = len(df)
+          igral_best   = (df["alert"] == "OK").sum()
+          comp_beats   = (df["alert"] == "LOWER").sum()
+          avg_rate     = df["igraal_rate"].mean().round(2)
+
+          # ── HTML del email ────────────────────────────────────────────
+          alert_rows = ""
+          for _, row in alerts.iterrows():
+              alert_rows += f"""
+              <tr>
+                <td style="padding:8px;border-bottom:1px solid #eee">{row['retailer']}</td>
+                <td style="padding:8px;border-bottom:1px solid #eee;text-align:center">{row['igraal_rate']}%</td>
+                <td style="padding:8px;border-bottom:1px solid #eee;text-align:center;color:#e53e3e;font-weight:bold">{row['best_competitor_rate']}%</td>
+                <td style="padding:8px;border-bottom:1px solid #eee;text-align:center;color:#e53e3e;font-weight:bold">+{row['delta']}%</td>
+              </tr>"""
+
+          html = f"""
+          <html><body style="font-family:DM Sans,Arial,sans-serif;max-width:700px;margin:0 auto;padding:20px">
+
+            <div style="background:#FF6B35;padding:20px;border-radius:8px;margin-bottom:24px">
+              <h1 style="color:white;margin:0;font-size:20px">📊 iGraal Cashback Benchmark</h1>
+              <p style="color:white;margin:4px 0 0;opacity:0.9">{today}</p>
+            </div>
+
+            <div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:12px;margin-bottom:24px">
+              <div style="background:#f7f7f7;padding:16px;border-radius:8px;text-align:center">
+                <div style="font-size:28px;font-weight:bold;color:#FF6B35">{total}</div>
+                <div style="font-size:12px;color:#666">Total Retailers</div>
+              </div>
+              <div style="background:#f7f7f7;padding:16px;border-radius:8px;text-align:center">
+                <div style="font-size:28px;font-weight:bold;color:#38a169">{igral_best}</div>
+                <div style="font-size:12px;color:#666">iGraal is Best</div>
+              </div>
+              <div style="background:#f7f7f7;padding:16px;border-radius:8px;text-align:center">
+                <div style="font-size:28px;font-weight:bold;color:#e53e3e">{comp_beats}</div>
+                <div style="font-size:12px;color:#666">Competitor Beats iGraal</div>
+              </div>
+              <div style="background:#f7f7f7;padding:16px;border-radius:8px;text-align:center">
+                <div style="font-size:28px;font-weight:bold;color:#FF6B35">{avg_rate}%</div>
+                <div style="font-size:12px;color:#666">Avg iGraal Rate</div>
+              </div>
+            </div>
+
+            <h2 style="color:#333;font-size:16px">🚨 Retailers where competitor beats iGraal by >5%</h2>
+            <table style="width:100%;border-collapse:collapse;font-size:14px">
+              <thead>
+                <tr style="background:#f7f7f7">
+                  <th style="padding:8px;text-align:left">Retailer</th>
+                  <th style="padding:8px;text-align:center">iGraal</th>
+                  <th style="padding:8px;text-align:center">Best Competitor</th>
+                  <th style="padding:8px;text-align:center">Delta</th>
+                </tr>
+              </thead>
+              <tbody>{alert_rows}</tbody>
+            </table>
+
+            <p style="margin-top:24px;font-size:12px;color:#999">
+              Automated daily report — iGraal.pl Cashback Benchmark Tool
+            </p>
+          </body></html>
+          """
+
+          # ── Envía con Resend ──────────────────────────────────────────
+          payload = {
+              "from"   : "iGraal Benchmark <onboarding@resend.dev>",
+              "to"     : [to_email],
+              "subject": f"📊 iGraal Cashback Benchmark — {today}",
+              "html"   : html
+          }
+
+          req = urllib.request.Request(
+              "https://api.resend.com/emails",
+              data=json.dumps(payload).encode("utf-8"),
+              headers={
+                  "Authorization": f"Bearer {api_key}",
+                  "Content-Type" : "application/json"
+              }
+          )
+          resp = urllib.request.urlopen(req)
+          print(f"✅ Email sent to {to_email} — status: {resp.status}")
           EOF
