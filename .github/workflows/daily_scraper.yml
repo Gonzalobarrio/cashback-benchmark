@@ -3,7 +3,7 @@ name: Daily Cashback Benchmark
 on:
   schedule:
     - cron: '0 7 * * *'  # Cada día a las 7:00 UTC (9:00 hora Polonia)
-  workflow_dispatch:      # Permite ejecutarlo manualmente también
+  workflow_dispatch:
 
 jobs:
   scrape:
@@ -33,3 +33,51 @@ jobs:
           git add data/
           git diff --staged --quiet || git commit -m "Daily update $(date +'%Y-%m-%d')"
           git push
+
+      - name: Send Slack alerts
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+        run: |
+          python - <<'EOF'
+          import pandas as pd
+          import json
+          import urllib.request
+          import os
+
+          webhook_url = os.environ["SLACK_WEBHOOK_URL"]
+          df = pd.read_csv("data/benchmark_data.csv")
+
+          # Retailers donde un competidor supera a iGraal en más de 5%
+          alerts = df[
+              (df["alert"] == "LOWER") &
+              (df["delta"] >= 5) &
+              (df["igraal_rate"].notna())
+          ].sort_values("delta", ascending=False).head(10)
+
+          if len(alerts) == 0:
+              print("No alerts to send")
+              exit()
+
+          # Construye el mensaje
+          lines = [f"*🚨 iGraal Cashback Alert — {pd.Timestamp.today().strftime('%Y-%m-%d')}*"]
+          lines.append(f"Top retailers where competitors beat iGraal by >5%:\n")
+
+          for _, row in alerts.iterrows():
+              lines.append(
+                  f"• *{row['retailer']}* — iGraal: {row['igraal_rate']}% | "
+                  f"Best competitor: {row['best_competitor_rate']}% | "
+                  f"Delta: +{row['delta']}%"
+              )
+
+          lines.append(f"\n_Total retailers where competitor beats iGraal: {(df['alert']=='LOWER').sum()}_")
+
+          message = {"text": "\n".join(lines)}
+
+          req = urllib.request.Request(
+              webhook_url,
+              data=json.dumps(message).encode("utf-8"),
+              headers={"Content-Type": "application/json"}
+          )
+          urllib.request.urlopen(req)
+          print(f"✅ Slack alert sent with {len(alerts)} retailers")
+          EOF
