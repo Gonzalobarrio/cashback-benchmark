@@ -91,4 +91,45 @@ print(f"✅ benchmark_history.csv saved — {len(df_history)} rows total")
 print(f"   📅 Days tracked: {df_history['date'].nunique()}")
 print(f"✅ benchmark_data.csv saved — {len(df)} retailers")
 print(f"   ⚠️  LOWER: {(df['alert']=='LOWER').sum()}")
+# ── Merge con metadata de Preset ─────────────────────────────────
+NAME_MAP = {
+    "ALAB Laboratoria" : "Alab",
+    "AUTODOC"          : "Autodoc",
+    "Adidas"           : "adidas",
+    "BeDiet"           : "beDiet",
+    "Brasty"           : "BRASTY",
+    "CDkeys"           : "CDKeys",
+    "Canal Plus"       : "CANAL+",
+    "DHgate"           : "DHGate",
+    "DeLonghi"         : "Delonghi",
+    "Dstreet"          : "DSTREET",
+    "Foreo"            : "FOREO",
+    "Kiwi"             : "Kiwi.com",
+    "Lookfantastic"    : "LookFantastic",
+    "Lounge by Zalando": "Zalando Lounge",
+    "NEONAIL"          : "NeoNail",
+    "Ninja"            : "Ninja Kitchen",
+    "SHEIN"            : "Shein",
+    "Senpo.pl"         : "Senpo",
+    "Sun & Snow"       : "Sun&Snow",
+    "Surfshark"        : "SurfShark",
+    "Van Graaf"        : "Van GRAAF",
+    "Wolt"             : "WOLT",
+    "eBilet"           : "E-Bilet",
+    "home&you"         : "home and you",
+    "norton"           : "Norton",
+}
+
+metadata_file = "data/retailer_metadata.csv"
+if os.path.exists(metadata_file):
+    df_meta = pd.read_csv(metadata_file)
+    df["retailer_preset"] = df["retailer"].map(NAME_MAP).fillna(df["retailer"])
+    df = df.merge(
+        df_meta[["retailer","affiliate_network","quality","category",
+                 "avg_cpa_in","avg_margin_eur","margin_alert"]],
+        left_on="retailer_preset", right_on="retailer",
+        how="left", suffixes=("","_meta")
+    )
+    df.drop(columns=["retailer_preset","retailer_meta"], errors="ignore", inplace=True)
+    print(f"✅ Metadata merged — {df['affiliate_network'].notna().sum()} retailers enriched")
 print(f"   ✅ OK:    {(df['alert']=='OK').sum()}")
