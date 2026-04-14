@@ -167,7 +167,7 @@ jobs:
           """
 
           payload = {
-              "sender"     : {"name": "iGraal Benchmark", "email": "gonzalo.barrio@atolls.com"},
+              "sender": {"name": "iGraal Benchmark", "email": "noreply@sendinblue.com"},
               "to"         : [{"email": to_email}],
               "subject"    : f"📊 iGraal Cashback Benchmark — {today}",
               "htmlContent": html
