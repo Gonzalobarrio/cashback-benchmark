@@ -90,7 +90,7 @@ jobs:
       - name: Send email report
         if: always()
         env:
-          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          BREVO_API_KEY: ${{ secrets.BREVO_API_KEY }}
         run: |
           python - <<'EOF'
           import pandas as pd
@@ -98,7 +98,7 @@ jobs:
           import urllib.request
           import os
 
-          api_key  = os.environ["RESEND_API_KEY"]
+          api_key  = os.environ["BREVO_API_KEY"]
           to_email = "gonzalo.barrio@atolls.com"
           today    = pd.Timestamp.today().strftime("%Y-%m-%d")
           df       = pd.read_csv("data/benchmark_data.csv")
@@ -167,18 +167,18 @@ jobs:
           """
 
           payload = {
-              "from"   : "iGraal Benchmark <onboarding@resend.dev>",
-              "to"     : [to_email],
-              "subject": f"📊 iGraal Cashback Benchmark — {today}",
-              "html"   : html
+              "sender"     : {"name": "iGraal Benchmark", "email": "gonzalo.barrio@atolls.com"},
+              "to"         : [{"email": to_email}],
+              "subject"    : f"📊 iGraal Cashback Benchmark — {today}",
+              "htmlContent": html
           }
 
           req = urllib.request.Request(
-              "https://api.resend.com/emails",
+              "https://api.brevo.com/v3/smtp/email",
               data=json.dumps(payload).encode("utf-8"),
               headers={
-                  "Authorization": f"Bearer {api_key}",
-                  "Content-Type" : "application/json"
+                  "api-key"     : api_key,
+                  "Content-Type": "application/json"
               }
           )
           resp = urllib.request.urlopen(req)
