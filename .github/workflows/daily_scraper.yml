@@ -31,19 +31,16 @@ jobs:
       - name: Run scrapers
         run: python main.py
 
-   - name: Commit and push results
+      - name: Commit and push results
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git fetch origin main
+          git reset --soft origin/main
           git add data/
-          if ! git diff --staged --quiet; then
-            git commit -m "Daily update $(date +'%Y-%m-%d')"
-            git pull --rebase origin main
-            git push origin main
-          else
-            echo "No changes to commit"
-          fi
-          
+          git diff --staged --quiet || git commit -m "Daily update $(date +'%Y-%m-%d')"
+          git push origin main
+
       - name: Send Slack alerts
         if: always()
         env:
