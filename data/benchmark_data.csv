@@ -1,217 +1,217 @@
 retailer,igraal_rate,cashback_type,letyshops_rate,letyshops_rate_type,picodi_rate,picodi_rate_type,alerabat_rate,alerabat_rate_type,goodie_rate,goodie_rate_type,best_competitor_rate,delta,alert,date
-DHgate,2.0,%,25.0,%,15.3,up_to_%,25.5,up_to_%,1.75,%,25.5,23.5,LOWER,2026-04-14
-Cropp,4.0,%,3.5,%,10.0,%,3.5,up_to_%,3.0,%,10.0,6.0,LOWER,2026-04-14
-Empik,1.6,%,6.25,%,,zł,6.25,up_to_%,7.5,up_to_%,7.5,5.9,LOWER,2026-04-14
-Sferis,1.6,%,7.5,%,,not_found,7.5,up_to_%,7.5,up_to_%,7.5,5.9,LOWER,2026-04-14
-Remix,12.25,%,2.25,%,,not_found,17.5,up_to_%,,not_found,17.5,5.25,LOWER,2026-04-14
-Neness,6.0,%,10.0,%,,not_found,10.0,up_to_%,10.0,up_to_%,10.0,4.0,LOWER,2026-04-14
-OleOle!,1.0,%,1.0,%,,not_found,5.0,up_to_%,2.0,up_to_%,5.0,4.0,LOWER,2026-04-14
-AXA Partners,6.0,%,,not_found,6.0,%,10.0,up_to_%,10.0,%,10.0,4.0,LOWER,2026-04-14
-Orange,2.11,%,1.0,%,,not_found,5.0,up_to_%,1.06,up_to_%,5.0,2.89,LOWER,2026-04-14
-Decathlon,2.0,%,2.25,%,1.4,up_to_%,4.0,up_to_%,2.5,%,4.0,2.0,LOWER,2026-04-14
-LEGO,3.0,%,,no cashback,,not_found,5.0,up_to_%,3.5,up_to_%,5.0,2.0,LOWER,2026-04-14
-Bonprix,4.0,%,6.0,%,1.2,%,2.5,up_to_%,3.0,up_to_%,6.0,2.0,LOWER,2026-04-14
-Ryobi,4.0,%,6.0,%,,not_found,2.0,up_to_%,6.0,up_to_%,6.0,2.0,LOWER,2026-04-14
-iBOOD,1.0,%,,not_found,1.2,up_to_%,2.0,up_to_%,2.0,up_to_%,2.0,1.0,LOWER,2026-04-14
-Shark,4.0,%,3.0,%,,not_found,2.5,up_to_%,5.0,%,5.0,1.0,LOWER,2026-04-14
-Xiaomi,2.0,%,3.0,%,,not_found,1.5,up_to_%,2.5,%,3.0,1.0,LOWER,2026-04-14
-Vans,4.0,%,,no cashback,,not_found,0.5,up_to_%,5.0,%,5.0,1.0,LOWER,2026-04-14
-Krakvet,2.0,%,3.0,%,2.4,up_to_%,1.4,up_to_%,2.0,%,3.0,1.0,LOWER,2026-04-14
-Ninja,4.0,%,2.5,%,,not_found,2.5,up_to_%,5.0,%,5.0,1.0,LOWER,2026-04-14
-PRM,6.0,%,7.0,%,,not_found,2.0,up_to_%,,not_found,7.0,1.0,LOWER,2026-04-14
-Max Elektro,2.0,%,2.5,%,,not_found,1.0,up_to_%,1.0,%,2.5,0.5,LOWER,2026-04-14
-Ceneo,1.0,%,,not_found,,zł,1.32,up_to_%,,not_found,1.32,0.32,LOWER,2026-04-14
-Allegro,1.9,%,1.7,%,,zł,2.2,up_to_%,2.2,up_to_%,2.2,0.3,LOWER,2026-04-14
-Vobis,1.5,%,1.75,%,,not_found,1.5,up_to_%,1.75,up_to_%,1.75,0.25,LOWER,2026-04-14
-Huawei,3.5,%,3.2,%,,zł,3.46,up_to_%,3.6,up_to_%,3.6,0.1,LOWER,2026-04-14
-Hebe,4.0,%,4.0,%,,zł,2.5,up_to_%,,no cashback,4.0,0.0,OK,2026-04-14
-Modivo,4.0,%,3.5,%,,not_found,4.0,up_to_%,4.0,%,4.0,0.0,OK,2026-04-14
-Cyfrowe.pl,2.0,%,,not_found,,zł,1.05,up_to_%,2.0,up_to_%,2.0,0.0,OK,2026-04-14
-Greenpoint,4.0,%,2.0,%,1.2,%,2.0,up_to_%,4.0,%,4.0,0.0,OK,2026-04-14
-Giacomo Conti,5.0,%,2.5,%,3.0,%,4.0,up_to_%,5.0,%,5.0,0.0,OK,2026-04-14
-Electrolux,4.0,%,4.0,%,1.2,%,2.0,up_to_%,2.0,%,4.0,0.0,OK,2026-04-14
-Lookfantastic,5.0,%,5.0,%,,not_found,5.0,up_to_%,5.0,up_to_%,5.0,0.0,OK,2026-04-14
-Udemy,10.0,%,6.5,%,,not_found,10.0,up_to_%,,no cashback,10.0,0.0,OK,2026-04-14
-Teufel,4.0,%,2.0,%,,not_found,4.0,up_to_%,2.0,%,4.0,0.0,OK,2026-04-14
-Kinguin,5.0,%,,not_found,,not_found,5.0,up_to_%,2.5,up_to_%,5.0,0.0,OK,2026-04-14
-Converse,5.0,%,4.8,%,3.6,up_to_%,4.8,up_to_%,3.0,%,4.8,-0.2,OK,2026-04-14
-Brasty,2.0,%,0.5,%,1.8,up_to_%,1.0,up_to_%,,no cashback,1.8,-0.2,OK,2026-04-14
-Ubisoft,0.5,%,,not_found,,not_found,,not_found,0.21,%,0.21,-0.29,OK,2026-04-14
-VidaXL,2.9,%,1.45,%,,not_found,2.5,up_to_%,2.0,%,2.5,-0.4,OK,2026-04-14
-Tagomago,3.0,%,2.5,%,,not_found,2.5,up_to_%,2.5,%,2.5,-0.5,OK,2026-04-14
-Komputronik,1.5,%,1.0,%,0.5,%,0.95,up_to_%,0.75,%,1.0,-0.5,OK,2026-04-14
-Pyszne.pl,2.0,%,1.5,%,,not_found,1.5,up_to_%,1.5,up_to_%,1.5,-0.5,OK,2026-04-14
-Samsung,3.0,%,2.5,%,,not_found,,not_found,2.5,up_to_%,2.5,-0.5,OK,2026-04-14
-Reporter Young,3.5,%,3.0,%,,not_found,1.5,up_to_%,,not_found,3.0,-0.5,OK,2026-04-14
-eBilet,1.0,%,0.4,%,,zł,0.4,up_to_%,0.4,%,0.4,-0.6,OK,2026-04-14
-Diablo Chairs,4.5,%,2.25,%,2.1,up_to_%,3.75,up_to_%,2.25,%,3.75,-0.75,OK,2026-04-14
-LOT,1.5,%,,not_found,,not_found,0.75,up_to_%,,not_found,0.75,-0.75,OK,2026-04-14
-Dyson,4.0,%,3.2,%,1.4,%,2.4,up_to_%,2.0,%,3.2,-0.8,OK,2026-04-14
-iDream,3.0,%,,not_found,1.3,up_to_%,2.17,up_to_%,,no cashback,2.17,-0.83,OK,2026-04-14
-Victoria's Secret,3.5,%,2.5,%,,not_found,2.0,up_to_%,,not_found,2.5,-1.0,OK,2026-04-14
-BasicLab,3.0,%,,no cashback,1.2,%,2.0,up_to_%,,not_found,2.0,-1.0,OK,2026-04-14
-Acer,5.0,%,4.0,%,2.1,%,2.5,up_to_%,4.0,up_to_%,4.0,-1.0,OK,2026-04-14
-Kiwi,3.0,%,2.0,%,,not_found,1.5,up_to_%,,no cashback,2.0,-1.0,OK,2026-04-14
-Eventim,2.0,%,1.0,%,,zł,1.0,up_to_%,1.0,%,1.0,-1.0,OK,2026-04-14
-Renee,6.0,%,3.0,%,,not_found,3.0,up_to_%,5.0,%,5.0,-1.0,OK,2026-04-14
-iHerb,3.0,%,2.0,%,1.5,%,0.5,up_to_%,2.0,up_to_%,2.0,-1.0,OK,2026-04-14
-Sun & Snow,4.5,%,2.25,%,,not_found,2.25,up_to_%,3.5,%,3.5,-1.0,OK,2026-04-14
-KFC,4.0,%,2.75,%,,not_found,2.76,up_to_%,2.77,%,2.77,-1.23,OK,2026-04-14
-Cocolita,3.5,%,2.25,%,1.4,%,,no cashback,2.25,%,2.25,-1.25,OK,2026-04-14
-Carrefour,3.0,%,1.5,%,,zł,1.5,up_to_%,1.75,%,1.75,-1.25,OK,2026-04-14
-LG,2.5,%,1.0,%,,not_found,1.0,up_to_%,1.25,%,1.25,-1.25,OK,2026-04-14
-Perfumeria,3.84,%,2.5,%,,not_found,2.5,up_to_%,1.92,%,2.5,-1.34,OK,2026-04-14
-Znak,3.0,%,1.5,%,,not_found,1.6,up_to_%,1.6,%,1.6,-1.4,OK,2026-04-14
-ALAB Laboratoria,6.0,%,4.6,%,1.9,%,3.12,up_to_%,3.12,%,4.6,-1.4,OK,2026-04-14
-Katalog Marzeń,2.8,%,1.35,%,0.8,%,,not_found,1.35,%,1.35,-1.45,OK,2026-04-14
-Groupon,5.0,%,3.5,%,2.1,up_to_%,3.0,up_to_%,3.0,up_to_%,3.5,-1.5,OK,2026-04-14
-Leo Express,4.0,%,,not_found,,not_found,2.5,up_to_%,2.5,%,2.5,-1.5,OK,2026-04-14
-Gamivo,4.0,%,2.5,%,,zł,2.5,up_to_%,2.5,%,2.5,-1.5,OK,2026-04-14
-Castorama,4.0,%,2.0,%,1.2,%,2.0,up_to_%,2.5,%,2.5,-1.5,OK,2026-04-14
-Michael Kors,3.0,%,,no cashback,,not_found,1.5,up_to_%,,no cashback,1.5,-1.5,OK,2026-04-14
-Erli,4.0,%,2.2,%,1.3,up_to_%,2.5,up_to_%,2.2,up_to_%,2.5,-1.5,OK,2026-04-14
-Eltrox,4.5,%,2.75,%,1.8,%,3.0,up_to_%,2.75,up_to_%,3.0,-1.5,OK,2026-04-14
-Mamyito,4.5,%,2.8,%,,not_found,2.8,up_to_%,2.4,%,2.8,-1.7,OK,2026-04-14
-Cobi,3.5,%,1.75,%,,zł,1.75,up_to_%,,no cashback,1.75,-1.75,OK,2026-04-14
-home&you,6.5,%,3.25,%,1.2,up_to_%,,not_found,4.75,up_to_%,4.75,-1.75,OK,2026-04-14
-CCC,5.0,%,3.25,%,2.0,up_to_%,3.25,up_to_%,3.25,up_to_%,3.25,-1.75,OK,2026-04-14
-iParts,3.5,%,,no cashback,1.1,%,1.75,up_to_%,,no cashback,1.75,-1.75,OK,2026-04-14
-eSky,3.5,%,1.75,%,1.1,%,1.75,up_to_%,1.75,%,1.75,-1.75,OK,2026-04-14
-4kidspoint,3.5,%,1.75,%,,not_found,1.75,up_to_%,,no cashback,1.75,-1.75,OK,2026-04-14
-Perfumy.pl,5.0,%,3.25,%,,not_found,3.0,up_to_%,2.8,%,3.25,-1.75,OK,2026-04-14
-7way,3.5,%,1.75,%,,not_found,1.75,up_to_%,1.75,%,1.75,-1.75,OK,2026-04-14
-Olimp Store,4.0,%,,not_found,,not_found,2.1,up_to_%,,no cashback,2.1,-1.9,OK,2026-04-14
-Nike,7.0,%,,no cashback,,not_found,5.0,up_to_%,,no cashback,5.0,-2.0,OK,2026-04-14
-Ucando,4.0,%,2.0,%,,not_found,2.0,up_to_%,2.0,%,2.0,-2.0,OK,2026-04-14
-Trip.com,5.5,%,3.5,%,,not_found,,not_found,2.75,up_to_%,3.5,-2.0,OK,2026-04-14
-Under Armour,6.0,%,2.5,%,,not_found,4.0,up_to_%,3.0,%,4.0,-2.0,OK,2026-04-14
-Van Graaf,7.0,%,4.5,%,,not_found,5.0,up_to_%,,no cashback,5.0,-2.0,OK,2026-04-14
-Maxi Zoo,5.0,%,3.0,%,,not_found,3.0,up_to_%,3.0,up_to_%,3.0,-2.0,OK,2026-04-14
-Lampy.pl,8.0,%,6.0,%,,not_found,4.0,up_to_%,4.0,up_to_%,6.0,-2.0,OK,2026-04-14
-Fielmann,6.0,%,,not_found,2.4,%,4.0,up_to_%,4.0,%,4.0,-2.0,OK,2026-04-14
-Gameseal,5.0,%,1.5,%,3.0,up_to_%,1.5,up_to_%,1.5,%,3.0,-2.0,OK,2026-04-14
-Geekbuying.pl,6.0,%,4.0,%,2.4,up_to_%,2.5,up_to_%,4.0,up_to_%,4.0,-2.0,OK,2026-04-14
-Born2Be,5.0,%,3.0,%,1.8,%,3.0,up_to_%,3.0,%,3.0,-2.0,OK,2026-04-14
-Crocs,4.0,%,,no cashback,1.2,%,2.0,up_to_%,,no cashback,2.0,-2.0,OK,2026-04-14
-Adidas,5.0,%,3.0,%,1.8,up_to_%,3.0,up_to_%,3.0,up_to_%,3.0,-2.0,OK,2026-04-14
-Bimba Y Lola,6.0,%,,not_found,2.4,%,4.0,up_to_%,4.0,%,4.0,-2.0,OK,2026-04-14
-Philips,7.0,%,,no cashback,,not_found,2.5,up_to_%,5.0,%,5.0,-2.0,OK,2026-04-14
-Fera,4.0,%,2.0,%,1.2,%,2.0,up_to_%,2.0,%,2.0,-2.0,OK,2026-04-14
-Abra,4.2,%,,not_found,1.5,%,,not_found,2.1,%,2.1,-2.1,OK,2026-04-14
-Stylevana,7.19,%,5.0,%,,not_found,3.6,up_to_%,,not_found,5.0,-2.19,OK,2026-04-14
-NAOKO,5.0,%,2.8,%,,not_found,2.8,up_to_%,2.8,%,2.8,-2.2,OK,2026-04-14
-Joom,9.75,%,,no cashback,4.5,up_to_%,7.5,up_to_%,5.25,up_to_%,7.5,-2.25,OK,2026-04-14
-Colorland,8.0,%,5.6,%,3.5,%,5.75,up_to_%,5.75,%,5.75,-2.25,OK,2026-04-14
-Banggood,10.0,%,6.5,%,4.7,up_to_%,6.5,up_to_%,7.75,up_to_%,7.75,-2.25,OK,2026-04-14
-Drogeria.pl,4.5,%,2.25,%,,zł,,not_found,2.25,%,2.25,-2.25,OK,2026-04-14
-Przyjaciele Kawy,6.0,%,3.7,%,,not_found,3.55,up_to_%,3.7,up_to_%,3.7,-2.3,OK,2026-04-14
-Lacoste,8.0,%,4.0,%,,not_found,4.0,up_to_%,5.6,%,5.6,-2.4,OK,2026-04-14
-Recman,5.0,%,2.5,%,,not_found,,not_found,2.5,%,2.5,-2.5,OK,2026-04-14
-JD Sports,5.0,%,2.5,%,1.5,up_to_%,2.5,up_to_%,2.5,%,2.5,-2.5,OK,2026-04-14
-Flixbus,5.0,%,,no cashback,,zł,2.5,up_to_%,2.5,up_to_%,2.5,-2.5,OK,2026-04-14
-eobuwie,6.0,%,3.5,%,,zł,3.5,up_to_%,3.5,%,3.5,-2.5,OK,2026-04-14
-Flexispot,5.0,%,,not_found,1.5,%,2.5,up_to_%,2.5,%,2.5,-2.5,OK,2026-04-14
-Footshop,5.0,%,2.5,%,2.1,up_to_%,2.5,up_to_%,2.5,up_to_%,2.5,-2.5,OK,2026-04-14
-Loaded,5.0,%,2.5,%,,not_found,1.0,up_to_%,,not_found,2.5,-2.5,OK,2026-04-14
-Mango Outlet,3.0,%,,not_found,,not_found,0.5,up_to_%,,not_found,0.5,-2.5,OK,2026-04-14
-Levi's,5.0,%,,no cashback,,not_found,2.5,up_to_%,,not_found,2.5,-2.5,OK,2026-04-14
-Notino,5.0,%,2.5,%,,not_found,,not_found,2.5,up_to_%,2.5,-2.5,OK,2026-04-14
-Regatta,5.0,%,2.5,%,,not_found,2.5,up_to_%,2.5,%,2.5,-2.5,OK,2026-04-14
-Yves Rocher,5.0,%,2.5,%,,not_found,2.5,up_to_%,2.5,%,2.5,-2.5,OK,2026-04-14
-OBI,5.0,%,2.5,%,1.5,%,2.5,up_to_%,2.5,up_to_%,2.5,-2.5,OK,2026-04-14
-e-torty,10.0,%,7.5,%,4.5,%,7.5,up_to_%,7.5,%,7.5,-2.5,OK,2026-04-14
-Świat supli,5.0,%,,not_found,,not_found,2.5,up_to_%,,not_found,2.5,-2.5,OK,2026-04-14
-Streetstyle24,6.0,%,3.45,%,,not_found,3.46,up_to_%,3.46,%,3.46,-2.54,OK,2026-04-14
-Baseus,4.0,%,,no cashback,1.2,%,,no cashback,,not_found,1.2,-2.8,OK,2026-04-14
-Homla,4.8,%,,no cashback,,zł,2.0,up_to_%,2.0,%,2.0,-2.8,OK,2026-04-14
-MebleMWM,6.0,%,3.2,%,,not_found,3.2,up_to_%,,no cashback,3.2,-2.8,OK,2026-04-14
-GetYourGuide,4.0,%,1.15,%,0.7,%,1.15,up_to_%,1.15,%,1.15,-2.85,OK,2026-04-14
-Leroy Merlin,4.0,%,1.1,%,,zł,1.0,up_to_%,1.09,%,1.1,-2.9,OK,2026-04-14
-GOG,6.0,%,3.0,%,1.9,%,3.1,up_to_%,3.0,%,3.1,-2.9,OK,2026-04-14
-Senpo.pl,8.0,%,5.0,%,,not_found,,not_found,,not_found,5.0,-3.0,OK,2026-04-14
-Kenwood,6.0,%,3.0,%,,not_found,3.0,up_to_%,,no cashback,3.0,-3.0,OK,2026-04-14
-Medicine,6.0,%,3.0,%,,not_found,3.0,up_to_%,,not_found,3.0,-3.0,OK,2026-04-14
-DeLonghi,6.0,%,3.0,%,1.8,%,3.0,up_to_%,3.0,%,3.0,-3.0,OK,2026-04-14
-Vision Express,6.0,%,,no cashback,,not_found,3.0,up_to_%,3.0,%,3.0,-3.0,OK,2026-04-14
-Mountain Warehouse,6.0,%,3.0,%,,not_found,3.0,up_to_%,3.0,%,3.0,-3.0,OK,2026-04-14
-SportStyleStory,6.0,%,3.0,%,,not_found,3.0,up_to_%,3.0,up_to_%,3.0,-3.0,OK,2026-04-14
-Marilyn,6.0,%,,not_found,,not_found,3.0,up_to_%,3.0,%,3.0,-3.0,OK,2026-04-14
-Gomez,6.5,%,3.3,%,2.0,up_to_%,3.33,up_to_%,3.33,up_to_%,3.33,-3.17,OK,2026-04-14
-Airalo,9.0,%,,not_found,3.5,up_to_%,5.76,up_to_%,5.0,%,5.76,-3.24,OK,2026-04-14
-Lidl,5.0,%,1.0,%,1.7,%,,no cashback,0.5,up_to_%,1.7,-3.3,OK,2026-04-14
-Desigual,7.7,%,3.8,%,,zł,4.36,up_to_%,3.85,%,4.36,-3.34,OK,2026-04-14
-Eveline,7.0,%,3.5,%,2.1,%,,not_found,,not_found,3.5,-3.5,OK,2026-04-14
-Estro,7.0,%,3.5,%,2.1,%,3.5,up_to_%,3.5,%,3.5,-3.5,OK,2026-04-14
-Volcano,7.0,%,3.5,%,,not_found,3.5,up_to_%,3.5,%,3.5,-3.5,OK,2026-04-14
-HP,7.0,%,3.5,%,,zł,3.5,up_to_%,3.5,up_to_%,3.5,-3.5,OK,2026-04-14
-EMP,7.0,%,3.5,%,2.1,up_to_%,,not_found,,not_found,3.5,-3.5,OK,2026-04-14
-NEONAIL,7.0,%,3.5,%,,not_found,3.5,up_to_%,3.5,%,3.5,-3.5,OK,2026-04-14
-Philips Hue,7.0,%,3.5,%,,not_found,3.5,up_to_%,3.5,%,3.5,-3.5,OK,2026-04-14
-G2A,5.0,%,1.15,%,,not_found,1.15,up_to_%,1.35,%,1.35,-3.65,OK,2026-04-14
-Drop,5.38,%,1.0,%,1.6,%,,not_found,,not_found,1.6,-3.78,OK,2026-04-14
-Lounge by Zalando,10.0,%,6.0,%,,zł,6.0,up_to_%,6.0,up_to_%,6.0,-4.0,OK,2026-04-14
-Dedoles,8.0,%,,not_found,2.4,%,4.0,up_to_%,,not_found,4.0,-4.0,OK,2026-04-14
-Pan Materac,8.0,%,4.0,%,,not_found,4.0,up_to_%,4.0,%,4.0,-4.0,OK,2026-04-14
-AUTODOC,8.0,%,4.0,%,2.4,up_to_%,4.0,up_to_%,4.0,up_to_%,4.0,-4.0,OK,2026-04-14
-Puma,6.0,%,,no cashback,,not_found,1.0,up_to_%,2.0,up_to_%,2.0,-4.0,OK,2026-04-14
-ESET,10.0,%,6.0,%,3.6,up_to_%,5.5,up_to_%,5.5,%,6.0,-4.0,OK,2026-04-14
-Skechers,8.5,%,,not_found,,not_found,4.25,up_to_%,,no cashback,4.25,-4.25,OK,2026-04-14
-Dstreet,9.0,%,4.5,%,2.7,%,4.5,up_to_%,4.5,%,4.5,-4.5,OK,2026-04-14
-Endo,9.0,%,,no cashback,2.7,%,4.5,up_to_%,4.5,%,4.5,-4.5,OK,2026-04-14
-Empik Foto,10.0,%,5.0,%,,zł,5.0,up_to_%,5.0,up_to_%,5.0,-5.0,OK,2026-04-14
-New Balance,10.0,%,,no cashback,,not_found,2.5,up_to_%,5.0,%,5.0,-5.0,OK,2026-04-14
-Sinsay,10.0,%,5.0,%,,not_found,5.0,up_to_%,5.0,up_to_%,5.0,-5.0,OK,2026-04-14
-Petkarma,10.0,%,,not_found,,not_found,5.0,up_to_%,,no cashback,5.0,-5.0,OK,2026-04-14
-MyProtein,10.0,%,3.0,%,,not_found,5.0,up_to_%,4.0,%,5.0,-5.0,OK,2026-04-14
-Wrangler,10.0,%,5.0,%,,not_found,5.0,up_to_%,5.0,%,5.0,-5.0,OK,2026-04-14
-Parfumdreams,12.0,%,7.0,%,,not_found,5.0,up_to_%,5.0,up_to_%,7.0,-5.0,OK,2026-04-14
-AliExpress,10.0,%,5.0,%,,zł,5.0,up_to_%,4.5,up_to_%,5.0,-5.0,OK,2026-04-14
-Alibaba,8.4,%,,no cashback,2.5,up_to_%,3.08,up_to_%,2.7,%,3.08,-5.32,OK,2026-04-14
-Legimi,15.0,%,7.5,%,,not_found,7.5,up_to_%,9.2,up_to_%,9.2,-5.8,OK,2026-04-14
-Bibliotheque De Parfum,12.0,%,,not_found,3.6,%,6.0,up_to_%,,not_found,6.0,-6.0,OK,2026-04-14
-BIG STAR,9.0,%,1.75,%,0.6,%,3.0,up_to_%,3.0,%,3.0,-6.0,OK,2026-04-14
-Dermacol,8.0,%,,not_found,,not_found,2.0,up_to_%,,not_found,2.0,-6.0,OK,2026-04-14
-Euroflorist,12.0,%,6.0,%,3.6,%,6.0,up_to_%,6.0,%,6.0,-6.0,OK,2026-04-14
-RTV Euro AGD,10.0,%,3.5,%,1.8,up_to_%,3.0,up_to_%,1.54,up_to_%,3.5,-6.5,OK,2026-04-14
-BeDiet,14.0,%,7.0,%,4.2,up_to_%,7.0,up_to_%,7.0,up_to_%,7.0,-7.0,OK,2026-04-14
-AirHelp,20.0,%,7.5,%,4.5,%,12.5,up_to_%,10.0,up_to_%,12.5,-7.5,OK,2026-04-14
-Byrokko,14.0,%,,not_found,,not_found,4.5,up_to_%,6.5,up_to_%,6.5,-7.5,OK,2026-04-14
-SHEIN,20.0,%,5.0,%,6.0,up_to_%,7.5,up_to_%,10.0,up_to_%,10.0,-10.0,OK,2026-04-14
-Bricomarche,15.0,%,2.4,%,,zł,3.2,up_to_%,2.4,%,3.2,-11.8,OK,2026-04-14
-Answear,15.0,%,2.0,%,1.2,up_to_%,1.75,up_to_%,2.5,%,2.5,-12.5,OK,2026-04-14
-norton,25.0,%,,no cashback,,not_found,12.5,up_to_%,12.5,up_to_%,12.5,-12.5,OK,2026-04-14
-Foreo,20.0,%,3.75,%,6.9,%,3.75,up_to_%,3.75,%,6.9,-13.1,OK,2026-04-14
-zooplus,15.0,%,1.5,%,,not_found,1.5,up_to_%,1.5,up_to_%,1.5,-13.5,OK,2026-04-14
-MediaMarkt,18.0,%,3.5,%,1.8,up_to_%,3.0,up_to_%,3.0,up_to_%,3.5,-14.5,OK,2026-04-14
-Sephora,20.0,%,4.5,%,3.3,up_to_%,3.0,up_to_%,4.5,up_to_%,4.5,-15.5,OK,2026-04-14
-NordVPN,40.0,%,20.0,%,,not_found,21.97,up_to_%,20.0,%,21.97,-18.03,OK,2026-04-14
-Temu,40.0,%,7.85,%,16.0,up_to_%,7.5,up_to_%,19.0,up_to_%,19.0,-21.0,OK,2026-04-14
-Douglas,25.0,%,4.0,%,3.0,up_to_%,4.0,up_to_%,4.0,up_to_%,4.0,-21.0,OK,2026-04-14
-Bee.pl,,no cashback,,no cashback,,not_found,,not_found,,not_found,,,OK,2026-04-14
-Bezpieczna Rodzina,5.0,%,,no cashback,,not_found,,no cashback,,no cashback,,,OK,2026-04-14
-Bricoman,6.0,%,,no cashback,,not_found,,no cashback,,no cashback,,,OK,2026-04-14
-Broń.pl,,no cashback,,not_found,2.7,%,,not_found,,not_found,2.7,,OK,2026-04-14
-Canal Plus,,no cashback,,no cashback,,not_found,,not_found,,not_found,,,OK,2026-04-14
-DHL,,no cashback,,not_found,,zł,5.0,up_to_%,,no cashback,5.0,,OK,2026-04-14
-Ecco,,no cashback,,no cashback,1.5,%,1.0,up_to_%,2.5,up_to_%,2.5,,OK,2026-04-14
-Eurofirany,,no cashback,3.5,%,1.7,%,2.85,up_to_%,2.85,%,3.5,,OK,2026-04-14
-FotoForma,,zł,,not_found,0.8,%,1.25,up_to_%,1.5,%,1.5,,OK,2026-04-14
-Gabriella,,no cashback,,no cashback,1.1,%,2.5,up_to_%,,no cashback,2.5,,OK,2026-04-14
-Herbapol,,no cashback,,not_found,,not_found,,no cashback,,no cashback,,,OK,2026-04-14
-Kazar,,no cashback,,no cashback,1.1,up_to_%,,not_found,,no cashback,1.1,,OK,2026-04-14
-Konesso,,no cashback,,no cashback,1.2,up_to_%,5.0,up_to_%,,no cashback,5.0,,OK,2026-04-14
-Król Materacy,,no cashback,,not_found,,not_found,4.0,up_to_%,,not_found,4.0,,OK,2026-04-14
-lionelo,,no cashback,3.0,%,,not_found,3.0,up_to_%,3.0,%,3.0,,OK,2026-04-14
-Merkury Market,,zł,,no cashback,,not_found,1.75,up_to_%,,no cashback,1.75,,OK,2026-04-14
-Morele.net,,no cashback,0.5,%,,not_found,5.0,up_to_%,0.25,%,5.0,,OK,2026-04-14
-Novakid,,no cashback,,no cashback,,not_found,5.0,up_to_%,,no cashback,5.0,,OK,2026-04-14
-Ombre,,no cashback,,no cashback,,not_found,4.56,up_to_%,,no cashback,4.56,,OK,2026-04-14
-Play,,no cashback,,not_found,,not_found,5.0,up_to_%,,no cashback,5.0,,OK,2026-04-14
-Radisson Hotels,,zł,4.0,%,,not_found,2.0,up_to_%,2.0,up_to_%,4.0,,OK,2026-04-14
-SkyShowtime,,zł,,not_found,,not_found,5.0,up_to_%,,no cashback,5.0,,OK,2026-04-14
-Stradivarius,,no cashback,3.0,%,,not_found,3.0,up_to_%,2.5,%,3.0,,OK,2026-04-14
-Surfshark,,no cashback,,no cashback,,not_found,20.0,up_to_%,20.0,%,20.0,,OK,2026-04-14
-Top Secret,,no cashback,,no cashback,,not_found,5.0,up_to_%,,no cashback,5.0,,OK,2026-04-14
-Wolt,,zł,,no cashback,,not_found,,no cashback,,no cashback,,,OK,2026-04-14
-x-kom,,no cashback,0.65,%,,not_found,,no cashback,0.63,%,0.65,,OK,2026-04-14
-4Home,,no cashback,,no cashback,,not_found,,no cashback,,no cashback,,,OK,2026-04-14
+DHgate,2.0,%,25.0,%,15.3,up_to_%,25.5,up_to_%,1.75,%,25.5,23.5,LOWER,2026-04-15
+OleOle!,1.0,%,1.0,%,9.0,up_to_%,5.0,up_to_%,2.0,up_to_%,9.0,8.0,LOWER,2026-04-15
+LEGO,3.0,%,,no cashback,10.0,%,5.0,up_to_%,3.5,up_to_%,10.0,7.0,LOWER,2026-04-15
+Cropp,4.0,%,3.5,%,10.0,%,3.5,up_to_%,3.0,%,10.0,6.0,LOWER,2026-04-15
+Sferis,1.6,%,7.5,%,,not_found,7.5,up_to_%,7.5,up_to_%,7.5,5.9,LOWER,2026-04-15
+Remix,12.25,%,2.25,%,,not_found,17.5,up_to_%,,not_found,17.5,5.25,LOWER,2026-04-15
+AXA Partners,6.0,%,,not_found,6.0,%,10.0,up_to_%,10.0,%,10.0,4.0,LOWER,2026-04-15
+Neness,6.0,%,10.0,%,6.0,up_to_%,10.0,up_to_%,10.0,up_to_%,10.0,4.0,LOWER,2026-04-15
+Orange,2.11,%,1.0,%,,not_found,5.0,up_to_%,1.06,up_to_%,5.0,2.89,LOWER,2026-04-15
+Ryobi,4.0,%,6.0,%,,not_found,2.0,up_to_%,6.0,up_to_%,6.0,2.0,LOWER,2026-04-15
+Bonprix,4.0,%,6.0,%,1.2,%,2.5,up_to_%,3.0,up_to_%,6.0,2.0,LOWER,2026-04-15
+Decathlon,2.0,%,2.25,%,1.4,up_to_%,4.0,up_to_%,2.5,%,4.0,2.0,LOWER,2026-04-15
+iBOOD,1.0,%,,not_found,1.2,up_to_%,2.0,up_to_%,2.0,up_to_%,2.0,1.0,LOWER,2026-04-15
+Krakvet,2.0,%,3.0,%,0.6,up_to_%,1.4,up_to_%,2.0,%,3.0,1.0,LOWER,2026-04-15
+Shark,4.0,%,3.0,%,,not_found,2.5,up_to_%,5.0,%,5.0,1.0,LOWER,2026-04-15
+Xiaomi,2.0,%,3.0,%,,not_found,1.5,up_to_%,2.5,%,3.0,1.0,LOWER,2026-04-15
+Vans,4.0,%,,no cashback,,not_found,,no cashback,5.0,%,5.0,1.0,LOWER,2026-04-15
+PRM,6.0,%,7.0,%,,not_found,2.0,up_to_%,,not_found,7.0,1.0,LOWER,2026-04-15
+Ninja,4.0,%,2.5,%,,not_found,2.5,up_to_%,5.0,%,5.0,1.0,LOWER,2026-04-15
+Max Elektro,2.0,%,2.5,%,0.6,%,1.0,up_to_%,1.0,%,2.5,0.5,LOWER,2026-04-15
+Ceneo,1.0,%,,not_found,,zł,1.32,up_to_%,,not_found,1.32,0.32,LOWER,2026-04-15
+Allegro,1.9,%,1.7,%,,zł,2.2,up_to_%,2.2,up_to_%,2.2,0.3,LOWER,2026-04-15
+Vobis,1.5,%,1.75,%,,not_found,1.5,up_to_%,1.75,up_to_%,1.75,0.25,LOWER,2026-04-15
+Huawei,3.5,%,3.2,%,,zł,3.46,up_to_%,3.6,up_to_%,3.6,0.1,LOWER,2026-04-15
+Hebe,4.0,%,4.0,%,,zł,2.5,up_to_%,,no cashback,4.0,0.0,OK,2026-04-15
+Teufel,4.0,%,2.0,%,,not_found,4.0,up_to_%,2.0,%,4.0,0.0,OK,2026-04-15
+Modivo,4.0,%,3.5,%,3.5,%,4.0,up_to_%,4.0,%,4.0,0.0,OK,2026-04-15
+Cyfrowe.pl,2.0,%,,not_found,,zł,1.05,up_to_%,2.0,up_to_%,2.0,0.0,OK,2026-04-15
+Greenpoint,4.0,%,2.0,%,1.2,%,2.0,up_to_%,4.0,%,4.0,0.0,OK,2026-04-15
+Giacomo Conti,5.0,%,2.5,%,3.0,%,4.0,up_to_%,5.0,%,5.0,0.0,OK,2026-04-15
+Electrolux,4.0,%,4.0,%,1.2,%,2.0,up_to_%,2.0,%,4.0,0.0,OK,2026-04-15
+Lookfantastic,5.0,%,5.0,%,3.0,up_to_%,5.0,up_to_%,5.0,up_to_%,5.0,0.0,OK,2026-04-15
+Udemy,10.0,%,6.5,%,,not_found,10.0,up_to_%,,no cashback,10.0,0.0,OK,2026-04-15
+Kinguin,5.0,%,,not_found,3.4,up_to_%,5.0,up_to_%,2.5,up_to_%,5.0,0.0,OK,2026-04-15
+Brasty,2.0,%,0.5,%,1.8,up_to_%,1.0,up_to_%,,no cashback,1.8,-0.2,OK,2026-04-15
+Converse,5.0,%,4.8,%,3.6,up_to_%,4.8,up_to_%,3.0,%,4.8,-0.2,OK,2026-04-15
+Ubisoft,0.5,%,,not_found,,not_found,,not_found,0.21,%,0.21,-0.29,OK,2026-04-15
+VidaXL,2.9,%,1.45,%,,not_found,2.5,up_to_%,2.0,%,2.5,-0.4,OK,2026-04-15
+Tagomago,3.0,%,2.5,%,,not_found,2.5,up_to_%,2.5,%,2.5,-0.5,OK,2026-04-15
+Reporter Young,3.5,%,3.0,%,,not_found,1.5,up_to_%,,not_found,3.0,-0.5,OK,2026-04-15
+Komputronik,1.5,%,1.0,%,0.5,%,0.95,up_to_%,0.75,%,1.0,-0.5,OK,2026-04-15
+Pyszne.pl,2.0,%,1.5,%,,not_found,1.5,up_to_%,1.5,up_to_%,1.5,-0.5,OK,2026-04-15
+Samsung,3.0,%,2.5,%,,not_found,,not_found,2.5,up_to_%,2.5,-0.5,OK,2026-04-15
+eBilet,1.0,%,0.4,%,,zł,0.4,up_to_%,0.4,%,0.4,-0.6,OK,2026-04-15
+LOT,1.5,%,,not_found,,zł,0.75,up_to_%,,not_found,0.75,-0.75,OK,2026-04-15
+Diablo Chairs,4.5,%,2.25,%,2.1,up_to_%,3.75,up_to_%,2.25,%,3.75,-0.75,OK,2026-04-15
+Dyson,4.0,%,3.2,%,1.4,%,2.4,up_to_%,2.0,%,3.2,-0.8,OK,2026-04-15
+iDream,3.0,%,,not_found,1.3,up_to_%,2.17,up_to_%,,no cashback,2.17,-0.83,OK,2026-04-15
+Victoria's Secret,3.5,%,2.5,%,,not_found,2.0,up_to_%,,not_found,2.5,-1.0,OK,2026-04-15
+Acer,5.0,%,4.0,%,2.1,%,2.5,up_to_%,4.0,up_to_%,4.0,-1.0,OK,2026-04-15
+BasicLab,3.0,%,,no cashback,1.2,%,2.0,up_to_%,,not_found,2.0,-1.0,OK,2026-04-15
+iHerb,3.0,%,2.0,%,1.5,%,0.5,up_to_%,2.0,up_to_%,2.0,-1.0,OK,2026-04-15
+Kiwi,3.0,%,2.0,%,,zł,1.5,up_to_%,,no cashback,2.0,-1.0,OK,2026-04-15
+Eventim,2.0,%,1.0,%,,zł,1.0,up_to_%,1.0,%,1.0,-1.0,OK,2026-04-15
+Renee,6.0,%,3.0,%,,not_found,3.0,up_to_%,5.0,%,5.0,-1.0,OK,2026-04-15
+Sun & Snow,4.5,%,2.25,%,,not_found,2.25,up_to_%,3.5,%,3.5,-1.0,OK,2026-04-15
+KFC,4.0,%,2.75,%,1.7,%,2.76,up_to_%,2.77,%,2.77,-1.23,OK,2026-04-15
+LG,2.5,%,1.0,%,0.8,up_to_%,1.0,up_to_%,1.25,%,1.25,-1.25,OK,2026-04-15
+Cocolita,3.5,%,2.25,%,1.4,%,,no cashback,2.25,%,2.25,-1.25,OK,2026-04-15
+Carrefour,3.0,%,1.5,%,,zł,1.5,up_to_%,1.75,%,1.75,-1.25,OK,2026-04-15
+Perfumeria,3.84,%,2.5,%,1.5,%,2.5,up_to_%,1.92,%,2.5,-1.34,OK,2026-04-15
+Znak,3.0,%,1.5,%,,not_found,1.6,up_to_%,1.6,%,1.6,-1.4,OK,2026-04-15
+ALAB Laboratoria,6.0,%,4.6,%,1.9,%,3.12,up_to_%,3.12,%,4.6,-1.4,OK,2026-04-15
+Katalog Marzeń,2.8,%,1.35,%,0.8,%,,not_found,1.35,%,1.35,-1.45,OK,2026-04-15
+Groupon,5.0,%,3.5,%,2.1,up_to_%,3.0,up_to_%,3.0,up_to_%,3.5,-1.5,OK,2026-04-15
+Michael Kors,3.0,%,,no cashback,0.9,%,1.5,up_to_%,,no cashback,1.5,-1.5,OK,2026-04-15
+Leo Express,4.0,%,,not_found,1.5,%,2.5,up_to_%,2.5,%,2.5,-1.5,OK,2026-04-15
+Gamivo,4.0,%,2.5,%,,zł,2.5,up_to_%,2.5,%,2.5,-1.5,OK,2026-04-15
+Erli,4.0,%,2.2,%,1.3,up_to_%,2.5,up_to_%,2.2,up_to_%,2.5,-1.5,OK,2026-04-15
+Castorama,4.0,%,2.0,%,1.2,%,2.0,up_to_%,2.5,%,2.5,-1.5,OK,2026-04-15
+Eltrox,4.5,%,2.75,%,1.8,%,3.0,up_to_%,2.75,up_to_%,3.0,-1.5,OK,2026-04-15
+Mamyito,4.5,%,2.8,%,,zł,2.8,up_to_%,2.4,%,2.8,-1.7,OK,2026-04-15
+Cobi,3.5,%,1.75,%,,zł,1.75,up_to_%,,no cashback,1.75,-1.75,OK,2026-04-15
+7way,3.5,%,1.75,%,,not_found,1.75,up_to_%,1.75,%,1.75,-1.75,OK,2026-04-15
+home&you,6.5,%,3.25,%,1.2,up_to_%,,not_found,4.75,up_to_%,4.75,-1.75,OK,2026-04-15
+CCC,5.0,%,3.25,%,2.0,up_to_%,3.25,up_to_%,3.25,up_to_%,3.25,-1.75,OK,2026-04-15
+iParts,3.5,%,,no cashback,1.1,%,1.75,up_to_%,,no cashback,1.75,-1.75,OK,2026-04-15
+eSky,3.5,%,1.75,%,1.1,%,1.75,up_to_%,1.75,%,1.75,-1.75,OK,2026-04-15
+4kidspoint,3.5,%,1.75,%,,not_found,1.75,up_to_%,,no cashback,1.75,-1.75,OK,2026-04-15
+Perfumy.pl,5.0,%,3.25,%,1.7,%,3.0,up_to_%,2.8,%,3.25,-1.75,OK,2026-04-15
+Olimp Store,4.0,%,,not_found,1.3,%,2.1,up_to_%,,no cashback,2.1,-1.9,OK,2026-04-15
+Fera,4.0,%,2.0,%,1.2,%,2.0,up_to_%,2.0,%,2.0,-2.0,OK,2026-04-15
+Philips,7.0,%,,no cashback,,zł,2.5,up_to_%,5.0,%,5.0,-2.0,OK,2026-04-15
+Ucando,4.0,%,2.0,%,,not_found,2.0,up_to_%,2.0,%,2.0,-2.0,OK,2026-04-15
+Trip.com,5.5,%,3.5,%,,not_found,,not_found,2.75,up_to_%,3.5,-2.0,OK,2026-04-15
+Under Armour,6.0,%,2.5,%,,not_found,4.0,up_to_%,3.0,%,4.0,-2.0,OK,2026-04-15
+Van Graaf,7.0,%,4.5,%,,not_found,5.0,up_to_%,,no cashback,5.0,-2.0,OK,2026-04-15
+Maxi Zoo,5.0,%,3.0,%,1.8,up_to_%,3.0,up_to_%,3.0,up_to_%,3.0,-2.0,OK,2026-04-15
+Lampy.pl,8.0,%,6.0,%,2.4,up_to_%,4.0,up_to_%,4.0,up_to_%,6.0,-2.0,OK,2026-04-15
+Fielmann,6.0,%,,not_found,2.4,%,4.0,up_to_%,4.0,%,4.0,-2.0,OK,2026-04-15
+Gameseal,5.0,%,1.5,%,3.0,up_to_%,1.5,up_to_%,1.5,%,3.0,-2.0,OK,2026-04-15
+Geekbuying.pl,6.0,%,4.0,%,2.4,up_to_%,2.5,up_to_%,4.0,up_to_%,4.0,-2.0,OK,2026-04-15
+Born2Be,5.0,%,3.0,%,1.8,%,3.0,up_to_%,3.0,%,3.0,-2.0,OK,2026-04-15
+Bimba Y Lola,6.0,%,,not_found,2.4,%,4.0,up_to_%,4.0,%,4.0,-2.0,OK,2026-04-15
+Crocs,4.0,%,,no cashback,1.2,%,2.0,up_to_%,,no cashback,2.0,-2.0,OK,2026-04-15
+Adidas,5.0,%,3.0,%,1.8,up_to_%,3.0,up_to_%,3.0,up_to_%,3.0,-2.0,OK,2026-04-15
+Nike,7.0,%,,no cashback,,not_found,5.0,up_to_%,,no cashback,5.0,-2.0,OK,2026-04-15
+Notino,5.0,%,2.5,%,3.0,up_to_%,,not_found,2.5,up_to_%,3.0,-2.0,OK,2026-04-15
+Abra,4.2,%,,not_found,1.5,%,,not_found,2.1,%,2.1,-2.1,OK,2026-04-15
+Stylevana,7.19,%,5.0,%,,not_found,3.6,up_to_%,,not_found,5.0,-2.19,OK,2026-04-15
+NAOKO,5.0,%,2.8,%,1.7,%,2.8,up_to_%,2.8,%,2.8,-2.2,OK,2026-04-15
+Banggood,10.0,%,6.5,%,4.7,up_to_%,6.5,up_to_%,7.75,up_to_%,7.75,-2.25,OK,2026-04-15
+Joom,9.75,%,,no cashback,4.5,up_to_%,7.5,up_to_%,5.25,up_to_%,7.5,-2.25,OK,2026-04-15
+Drogeria.pl,4.5,%,2.25,%,,zł,,not_found,2.25,%,2.25,-2.25,OK,2026-04-15
+Colorland,8.0,%,5.6,%,3.5,%,5.75,up_to_%,5.75,%,5.75,-2.25,OK,2026-04-15
+Przyjaciele Kawy,6.0,%,3.7,%,,not_found,3.55,up_to_%,3.7,up_to_%,3.7,-2.3,OK,2026-04-15
+Lacoste,8.0,%,4.0,%,2.4,%,4.0,up_to_%,5.6,%,5.6,-2.4,OK,2026-04-15
+Regatta,5.0,%,2.5,%,,not_found,2.5,up_to_%,2.5,%,2.5,-2.5,OK,2026-04-15
+JD Sports,5.0,%,2.5,%,1.5,up_to_%,2.5,up_to_%,2.5,%,2.5,-2.5,OK,2026-04-15
+Flixbus,5.0,%,,no cashback,1.5,up_to_%,2.5,up_to_%,2.5,up_to_%,2.5,-2.5,OK,2026-04-15
+eobuwie,6.0,%,3.5,%,3.0,%,3.5,up_to_%,3.5,%,3.5,-2.5,OK,2026-04-15
+Flexispot,5.0,%,,not_found,1.5,%,2.5,up_to_%,2.5,%,2.5,-2.5,OK,2026-04-15
+Footshop,5.0,%,2.5,%,2.1,up_to_%,2.5,up_to_%,2.5,up_to_%,2.5,-2.5,OK,2026-04-15
+Loaded,5.0,%,2.5,%,1.5,up_to_%,1.0,up_to_%,,not_found,2.5,-2.5,OK,2026-04-15
+Mango Outlet,3.0,%,,not_found,,zł,0.5,up_to_%,,not_found,0.5,-2.5,OK,2026-04-15
+Levi's,5.0,%,,no cashback,1.5,up_to_%,2.5,up_to_%,,not_found,2.5,-2.5,OK,2026-04-15
+Recman,5.0,%,2.5,%,,not_found,,not_found,2.5,%,2.5,-2.5,OK,2026-04-15
+OBI,5.0,%,2.5,%,1.5,%,2.5,up_to_%,2.5,up_to_%,2.5,-2.5,OK,2026-04-15
+Yves Rocher,5.0,%,2.5,%,,not_found,2.5,up_to_%,2.5,%,2.5,-2.5,OK,2026-04-15
+Świat supli,5.0,%,,not_found,,not_found,2.5,up_to_%,,not_found,2.5,-2.5,OK,2026-04-15
+e-torty,10.0,%,7.5,%,4.5,%,7.5,up_to_%,7.5,%,7.5,-2.5,OK,2026-04-15
+Streetstyle24,6.0,%,3.45,%,,not_found,3.46,up_to_%,3.46,%,3.46,-2.54,OK,2026-04-15
+Homla,4.8,%,,no cashback,,zł,2.0,up_to_%,2.0,%,2.0,-2.8,OK,2026-04-15
+Baseus,4.0,%,,no cashback,1.2,%,,no cashback,,not_found,1.2,-2.8,OK,2026-04-15
+MebleMWM,6.0,%,3.2,%,1.9,%,3.2,up_to_%,,no cashback,3.2,-2.8,OK,2026-04-15
+GetYourGuide,4.0,%,1.15,%,0.7,%,1.15,up_to_%,1.15,%,1.15,-2.85,OK,2026-04-15
+Leroy Merlin,4.0,%,1.1,%,,zł,1.0,up_to_%,1.09,%,1.1,-2.9,OK,2026-04-15
+GOG,6.0,%,3.0,%,1.9,%,3.1,up_to_%,3.0,%,3.1,-2.9,OK,2026-04-15
+Senpo.pl,8.0,%,5.0,%,,not_found,,not_found,,not_found,5.0,-3.0,OK,2026-04-15
+Vision Express,6.0,%,,no cashback,,not_found,3.0,up_to_%,3.0,%,3.0,-3.0,OK,2026-04-15
+Kenwood,6.0,%,3.0,%,,not_found,3.0,up_to_%,,no cashback,3.0,-3.0,OK,2026-04-15
+Medicine,6.0,%,3.0,%,,zł,3.0,up_to_%,,not_found,3.0,-3.0,OK,2026-04-15
+Marilyn,6.0,%,,not_found,1.8,%,3.0,up_to_%,3.0,%,3.0,-3.0,OK,2026-04-15
+DeLonghi,6.0,%,3.0,%,1.8,%,3.0,up_to_%,3.0,%,3.0,-3.0,OK,2026-04-15
+Mountain Warehouse,6.0,%,3.0,%,1.8,%,3.0,up_to_%,3.0,%,3.0,-3.0,OK,2026-04-15
+SportStyleStory,6.0,%,3.0,%,,not_found,3.0,up_to_%,3.0,up_to_%,3.0,-3.0,OK,2026-04-15
+Gomez,6.5,%,3.3,%,2.0,up_to_%,3.33,up_to_%,3.33,up_to_%,3.33,-3.17,OK,2026-04-15
+Airalo,9.0,%,,not_found,3.5,up_to_%,5.76,up_to_%,5.0,%,5.76,-3.24,OK,2026-04-15
+Lidl,5.0,%,1.0,%,1.7,%,,no cashback,0.5,up_to_%,1.7,-3.3,OK,2026-04-15
+Desigual,7.7,%,3.8,%,,zł,4.36,up_to_%,3.85,%,4.36,-3.34,OK,2026-04-15
+Eveline,7.0,%,3.5,%,2.1,%,,not_found,,not_found,3.5,-3.5,OK,2026-04-15
+EMP,7.0,%,3.5,%,2.1,up_to_%,,not_found,,not_found,3.5,-3.5,OK,2026-04-15
+Estro,7.0,%,3.5,%,2.1,%,3.5,up_to_%,3.5,%,3.5,-3.5,OK,2026-04-15
+Volcano,7.0,%,3.5,%,,not_found,3.5,up_to_%,3.5,%,3.5,-3.5,OK,2026-04-15
+HP,7.0,%,3.5,%,,zł,3.5,up_to_%,3.5,up_to_%,3.5,-3.5,OK,2026-04-15
+Philips Hue,7.0,%,3.5,%,,not_found,3.5,up_to_%,3.5,%,3.5,-3.5,OK,2026-04-15
+NEONAIL,7.0,%,3.5,%,2.1,%,3.5,up_to_%,3.5,%,3.5,-3.5,OK,2026-04-15
+G2A,5.0,%,1.15,%,,not_found,1.15,up_to_%,1.35,%,1.35,-3.65,OK,2026-04-15
+Drop,5.38,%,1.0,%,1.6,%,,not_found,,not_found,1.6,-3.78,OK,2026-04-15
+norton,25.0,%,,no cashback,21.0,up_to_%,12.5,up_to_%,12.5,up_to_%,21.0,-4.0,OK,2026-04-15
+Lounge by Zalando,10.0,%,6.0,%,,zł,6.0,up_to_%,6.0,up_to_%,6.0,-4.0,OK,2026-04-15
+AUTODOC,8.0,%,4.0,%,2.4,up_to_%,4.0,up_to_%,4.0,up_to_%,4.0,-4.0,OK,2026-04-15
+Dedoles,8.0,%,,not_found,2.4,%,4.0,up_to_%,,not_found,4.0,-4.0,OK,2026-04-15
+Pan Materac,8.0,%,4.0,%,2.4,%,4.0,up_to_%,4.0,%,4.0,-4.0,OK,2026-04-15
+Puma,6.0,%,,no cashback,,not_found,1.0,up_to_%,2.0,up_to_%,2.0,-4.0,OK,2026-04-15
+ESET,10.0,%,6.0,%,3.6,up_to_%,5.5,up_to_%,5.5,%,6.0,-4.0,OK,2026-04-15
+Skechers,8.5,%,,not_found,,not_found,4.25,up_to_%,,no cashback,4.25,-4.25,OK,2026-04-15
+Dstreet,9.0,%,4.5,%,2.7,%,4.5,up_to_%,4.5,%,4.5,-4.5,OK,2026-04-15
+Endo,9.0,%,,no cashback,2.7,%,4.5,up_to_%,4.5,%,4.5,-4.5,OK,2026-04-15
+AliExpress,10.0,%,5.0,%,,zł,5.0,up_to_%,4.5,up_to_%,5.0,-5.0,OK,2026-04-15
+MyProtein,10.0,%,3.0,%,3.6,up_to_%,5.0,up_to_%,4.0,%,5.0,-5.0,OK,2026-04-15
+Petkarma,10.0,%,,not_found,,not_found,5.0,up_to_%,,no cashback,5.0,-5.0,OK,2026-04-15
+New Balance,10.0,%,,no cashback,1.7,up_to_%,2.5,up_to_%,5.0,%,5.0,-5.0,OK,2026-04-15
+Empik Foto,10.0,%,5.0,%,,zł,5.0,up_to_%,5.0,up_to_%,5.0,-5.0,OK,2026-04-15
+Wrangler,10.0,%,5.0,%,,not_found,5.0,up_to_%,5.0,%,5.0,-5.0,OK,2026-04-15
+Sinsay,10.0,%,5.0,%,,not_found,5.0,up_to_%,5.0,up_to_%,5.0,-5.0,OK,2026-04-15
+Parfumdreams,12.0,%,7.0,%,3.6,up_to_%,5.0,up_to_%,5.0,up_to_%,7.0,-5.0,OK,2026-04-15
+Alibaba,8.4,%,,no cashback,2.5,up_to_%,3.08,up_to_%,2.7,%,3.08,-5.32,OK,2026-04-15
+Legimi,15.0,%,7.5,%,4.8,%,7.5,up_to_%,9.2,up_to_%,9.2,-5.8,OK,2026-04-15
+BIG STAR,9.0,%,1.75,%,0.6,%,3.0,up_to_%,3.0,%,3.0,-6.0,OK,2026-04-15
+Dermacol,8.0,%,,not_found,,not_found,2.0,up_to_%,,not_found,2.0,-6.0,OK,2026-04-15
+Bibliotheque De Parfum,12.0,%,,not_found,3.6,%,6.0,up_to_%,,not_found,6.0,-6.0,OK,2026-04-15
+Euroflorist,12.0,%,6.0,%,3.6,%,6.0,up_to_%,6.0,%,6.0,-6.0,OK,2026-04-15
+RTV Euro AGD,10.0,%,3.5,%,,zł,3.0,up_to_%,1.54,up_to_%,3.5,-6.5,OK,2026-04-15
+BeDiet,14.0,%,7.0,%,4.2,up_to_%,7.0,up_to_%,7.0,up_to_%,7.0,-7.0,OK,2026-04-15
+Byrokko,14.0,%,,not_found,,not_found,4.5,up_to_%,6.5,up_to_%,6.5,-7.5,OK,2026-04-15
+AirHelp,20.0,%,7.5,%,4.5,%,12.5,up_to_%,10.0,up_to_%,12.5,-7.5,OK,2026-04-15
+SHEIN,18.0,%,5.0,%,6.0,up_to_%,7.5,up_to_%,10.0,up_to_%,10.0,-8.0,OK,2026-04-15
+Bricomarche,15.0,%,2.4,%,,zł,3.2,up_to_%,2.4,%,3.2,-11.8,OK,2026-04-15
+Answear,15.0,%,2.0,%,1.2,up_to_%,1.75,up_to_%,2.5,%,2.5,-12.5,OK,2026-04-15
+Empik,20.0,%,6.25,%,,zł,6.25,up_to_%,7.5,up_to_%,7.5,-12.5,OK,2026-04-15
+Foreo,20.0,%,3.75,%,6.9,%,3.75,up_to_%,3.75,%,6.9,-13.1,OK,2026-04-15
+zooplus,15.0,%,1.5,%,,not_found,1.5,up_to_%,1.5,up_to_%,1.5,-13.5,OK,2026-04-15
+MediaMarkt,18.0,%,3.5,%,1.8,up_to_%,3.0,up_to_%,3.0,up_to_%,3.5,-14.5,OK,2026-04-15
+Sephora,20.0,%,4.5,%,3.3,up_to_%,3.0,up_to_%,4.5,up_to_%,4.5,-15.5,OK,2026-04-15
+NordVPN,40.0,%,20.0,%,,not_found,21.97,up_to_%,20.0,%,21.97,-18.03,OK,2026-04-15
+Douglas,25.0,%,5.0,%,3.0,up_to_%,4.0,up_to_%,4.0,up_to_%,5.0,-20.0,OK,2026-04-15
+Temu,40.0,%,7.85,%,16.0,up_to_%,7.5,up_to_%,16.0,up_to_%,16.0,-24.0,OK,2026-04-15
+Bee.pl,,no cashback,,no cashback,,not_found,,not_found,,not_found,,,OK,2026-04-15
+Bezpieczna Rodzina,5.0,%,,no cashback,,not_found,,no cashback,,no cashback,,,OK,2026-04-15
+Bricoman,6.0,%,,no cashback,,not_found,,no cashback,,no cashback,,,OK,2026-04-15
+Broń.pl,,no cashback,,not_found,2.7,%,,not_found,,not_found,2.7,,OK,2026-04-15
+Canal Plus,,no cashback,,no cashback,,not_found,,not_found,,not_found,,,OK,2026-04-15
+DHL,,no cashback,,not_found,,zł,5.0,up_to_%,,no cashback,5.0,,OK,2026-04-15
+Ecco,,no cashback,,no cashback,1.5,%,1.0,up_to_%,2.5,up_to_%,2.5,,OK,2026-04-15
+Eurofirany,,no cashback,3.5,%,1.7,%,2.85,up_to_%,2.85,%,3.5,,OK,2026-04-15
+FotoForma,,zł,,not_found,0.8,%,1.25,up_to_%,1.5,%,1.5,,OK,2026-04-15
+Gabriella,,no cashback,,no cashback,1.1,%,2.5,up_to_%,,no cashback,2.5,,OK,2026-04-15
+Herbapol,,no cashback,,not_found,,not_found,,no cashback,,no cashback,,,OK,2026-04-15
+Kazar,,no cashback,,no cashback,1.1,up_to_%,,not_found,,no cashback,1.1,,OK,2026-04-15
+Konesso,,no cashback,,no cashback,1.2,up_to_%,5.0,up_to_%,,no cashback,5.0,,OK,2026-04-15
+Król Materacy,,no cashback,,not_found,,not_found,4.0,up_to_%,,not_found,4.0,,OK,2026-04-15
+lionelo,,no cashback,3.0,%,2.4,%,3.0,up_to_%,3.0,%,3.0,,OK,2026-04-15
+Merkury Market,,zł,,no cashback,1.2,up_to_%,1.75,up_to_%,,no cashback,1.75,,OK,2026-04-15
+Morele.net,,no cashback,0.5,%,,zł,5.0,up_to_%,0.25,%,5.0,,OK,2026-04-15
+Novakid,,no cashback,,no cashback,10.0,up_to_%,5.0,up_to_%,,no cashback,10.0,,OK,2026-04-15
+Ombre,,no cashback,,no cashback,2.7,up_to_%,4.56,up_to_%,,no cashback,4.56,,OK,2026-04-15
+Play,,no cashback,,not_found,,not_found,5.0,up_to_%,,no cashback,5.0,,OK,2026-04-15
+Radisson Hotels,,zł,4.0,%,,not_found,2.0,up_to_%,2.0,up_to_%,4.0,,OK,2026-04-15
+SkyShowtime,,zł,,not_found,,not_found,5.0,up_to_%,,no cashback,5.0,,OK,2026-04-15
+Stradivarius,,no cashback,3.0,%,,not_found,3.0,up_to_%,2.5,%,3.0,,OK,2026-04-15
+Surfshark,,no cashback,,no cashback,,not_found,20.0,up_to_%,20.0,%,20.0,,OK,2026-04-15
+Top Secret,,no cashback,,no cashback,,not_found,5.0,up_to_%,,no cashback,5.0,,OK,2026-04-15
+Wolt,,zł,,no cashback,,not_found,,no cashback,,no cashback,,,OK,2026-04-15
+x-kom,,no cashback,0.65,%,,not_found,,no cashback,0.63,%,0.65,,OK,2026-04-15
+4Home,,no cashback,,no cashback,,not_found,,no cashback,,no cashback,,,OK,2026-04-15
