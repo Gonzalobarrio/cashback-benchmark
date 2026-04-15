@@ -87,7 +87,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-04-15,Flixbus,flixbus,5.0,%
 2026-04-15,Footshop,footshop,5.0,%
 2026-04-15,Foreo,foreo,20.0,%
-2026-04-15,FotoForma,fotoforma,1260.0,zł
+2026-04-15,FotoForma,fotoforma,,zł
 2026-04-15,G2A,g2a,5.0,%
 2026-04-15,Gabriella,gabriella,,no cashback
 2026-04-15,Gameseal,gameseal,5.0,%
@@ -137,7 +137,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-04-15,Maxi Zoo,maxizoo,5.0,%
 2026-04-15,MebleMWM,meblemwm,6.0,%
 2026-04-15,Medicine,wearmedicine,6.0,%
-2026-04-15,Merkury Market,merkurymarket,10.5,zł
+2026-04-15,Merkury Market,merkurymarket,,zł
 2026-04-15,Michael Kors,michaelkors,3.0,%
 2026-04-15,Modivo,modivo.pl,4.0,%
 2026-04-15,Morele.net,morele,,no cashback
@@ -169,7 +169,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-04-15,Przyjaciele Kawy,przyjacielekawy,6.0,%
 2026-04-15,Puma,puma,6.0,%
 2026-04-15,Pyszne.pl,pyszne,2.0,%
-2026-04-15,Radisson Hotels,radissonhotels,40.0,zł
+2026-04-15,Radisson Hotels,radissonhotels,,zł
 2026-04-15,Recman,recman,5.0,%
 2026-04-15,Regatta,regatta,5.0,%
 2026-04-15,Remix,remix,12.25,%
@@ -182,7 +182,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-04-15,Shark,shark,4.0,%
 2026-04-15,Sinsay,sinsay,10.0,%
 2026-04-15,Skechers,skechers,8.5,%
-2026-04-15,SkyShowtime,skyshowtime,39.0,zł
+2026-04-15,SkyShowtime,skyshowtime,,zł
 2026-04-15,SportStyleStory,sportstylestory,6.0,%
 2026-04-15,Stradivarius,stradivarius,,no cashback
 2026-04-15,Streetstyle24,streetstyle24,6.0,%
@@ -205,7 +205,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-04-15,Vision Express,visionexpress,6.0,%
 2026-04-15,Vobis,vobis,1.5,%
 2026-04-15,Volcano,volcano,7.0,%
-2026-04-15,Wolt,wolt,21.0,zł
+2026-04-15,Wolt,wolt,,zł
 2026-04-15,Wrangler,wrangler,10.0,%
 2026-04-15,x-kom,x-kom,,no cashback
 2026-04-15,Xiaomi,mi,2.0,%
