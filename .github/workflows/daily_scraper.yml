@@ -27,6 +27,7 @@ jobs:
         run: |
           pip install requests beautifulsoup4 pandas playwright
           playwright install chromium
+          playwright install-deps chromium
 
       - name: Run scrapers
         run: python main.py
@@ -52,7 +53,11 @@ jobs:
           import urllib.request
           import os
 
-          webhook_url = os.environ["SLACK_WEBHOOK_URL"]
+          webhook_url = os.environ.get("SLACK_WEBHOOK_URL", "")
+          if not webhook_url:
+              print("No Slack webhook configured, skipping")
+              exit()
+
           df = pd.read_csv("data/benchmark_data.csv")
 
           alerts = df[
@@ -75,7 +80,10 @@ jobs:
                   f"Delta: +{row['delta']}%"
               )
 
-          lines.append(f"\n_Total retailers where competitor beats iGraal: {(df['alert']=='LOWER').sum()}_")
+          lines.append(
+              f"\n_Total retailers where competitor beats iGraal: "
+              f"{(df['alert']=='LOWER').sum()}_"
+          )
           message = {"text": "\n".join(lines)}
 
           req = urllib.request.Request(
@@ -98,7 +106,11 @@ jobs:
           import urllib.request
           import os
 
-          api_key  = os.environ["BREVO_API_KEY"]
+          api_key  = os.environ.get("BREVO_API_KEY", "")
+          if not api_key:
+              print("No Brevo API key configured, skipping")
+              exit()
+
           to_email = "gonzalo.barrio@atolls.com"
           today    = pd.Timestamp.today().strftime("%Y-%m-%d")
           df       = pd.read_csv("data/benchmark_data.csv")
@@ -112,7 +124,7 @@ jobs:
           total      = len(df)
           igral_best = (df["alert"] == "OK").sum()
           comp_beats = (df["alert"] == "LOWER").sum()
-          avg_rate   = round(df["igraal_rate"].mean(), 2)
+          avg_rate   = round(pd.to_numeric(df["igraal_rate"], errors="coerce").mean(), 2)
 
           alert_rows = ""
           for _, row in alerts.iterrows():
@@ -125,7 +137,8 @@ jobs:
               </tr>"""
 
           html = f"""
-          <html><body style="font-family:Arial,sans-serif;max-width:700px;margin:0 auto;padding:20px;background:#0f1117;color:#ffffff">
+          <html><body style="font-family:Arial,sans-serif;max-width:700px;margin:0 auto;
+                             padding:20px;background:#0f1117;color:#ffffff">
             <div style="background:#FF6B35;padding:20px;border-radius:8px;margin-bottom:24px">
               <h1 style="color:white;margin:0;font-size:20px">📊 iGraal Cashback Benchmark</h1>
               <p style="color:white;margin:4px 0 0;opacity:0.9">Daily Report — {today}</p>
@@ -137,19 +150,20 @@ jobs:
               </div>
               <div style="flex:1;background:#1a1a2e;padding:16px;border-radius:8px;text-align:center">
                 <div style="font-size:28px;font-weight:bold;color:#38a169">{igral_best}</div>
-                <div style="font-size:12px;color:#888">iGraal is Best</div>
+                <div style="font-size:12px;color:#888">iGraal Best</div>
               </div>
               <div style="flex:1;background:#1a1a2e;padding:16px;border-radius:8px;text-align:center">
                 <div style="font-size:28px;font-weight:bold;color:#e53e3e">{comp_beats}</div>
-                <div style="font-size:12px;color:#888">Competitor Beats iGraal</div>
+                <div style="font-size:12px;color:#888">Competitor Wins</div>
               </div>
               <div style="flex:1;background:#1a1a2e;padding:16px;border-radius:8px;text-align:center">
                 <div style="font-size:28px;font-weight:bold;color:#FF6B35">{avg_rate}%</div>
                 <div style="font-size:12px;color:#888">Avg iGraal Rate</div>
               </div>
             </div>
-            <h2 style="color:#ffffff;font-size:16px">🚨 Act Now — gap > 5%</h2>
-            <table style="width:100%;border-collapse:collapse;font-size:14px;background:#1a1a2e;border-radius:8px">
+            <h2 style="color:#ffffff;font-size:16px">🚨 Act Now — gap &gt; 5%</h2>
+            <table style="width:100%;border-collapse:collapse;font-size:14px;
+                          background:#1a1a2e;border-radius:8px">
               <thead>
                 <tr style="background:#2a2a3e">
                   <th style="padding:10px;text-align:left;color:#888">Retailer</th>
@@ -158,7 +172,9 @@ jobs:
                   <th style="padding:10px;text-align:center;color:#888">Delta</th>
                 </tr>
               </thead>
-              <tbody>{alert_rows if alert_rows else '<tr><td colspan="4" style="padding:16px;text-align:center;color:#888">No critical gaps today 🎉</td></tr>'}</tbody>
+              <tbody>{alert_rows if alert_rows else
+                '<tr><td colspan="4" style="padding:16px;text-align:center;color:#888">'
+                'No critical gaps today 🎉</td></tr>'}</tbody>
             </table>
             <p style="margin-top:24px;font-size:11px;color:#555;text-align:center">
               iGraal.pl Cashback Benchmark — automated daily report
@@ -167,7 +183,8 @@ jobs:
           """
 
           payload = {
-              "sender": {"name": "iGraal Benchmark", "email": "noreply@sendinblue.com"},
+              "sender"     : {"name": "iGraal Benchmark",
+                              "email": "noreply@sendinblue.com"},
               "to"         : [{"email": to_email}],
               "subject"    : f"📊 iGraal Cashback Benchmark — {today}",
               "htmlContent": html
