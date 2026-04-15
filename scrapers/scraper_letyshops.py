@@ -1,33 +1,31 @@
-import requests
-from bs4 import BeautifulSoup
 import re
 import time
 import pandas as pd
 from datetime import datetime
 import os
 
-HEADERS = {
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
-    "Accept-Language": "pl-PL,pl;q=0.9",
-}
+# Playwright en vez de requests
+from playwright.sync_api import sync_playwright
+
 LETYSHOPS_BASE    = "https://letyshops.com"
 LETYSHOPS_LISTING = "https://letyshops.com/pl/shops"
+
 NO_CASHBACK_PHRASES = [
     "w tej chwili nie ma cashbacku w tym sklepie",
     "there is no cashback in this store at the moment",
+    "brak cashbacku",
 ]
 
 # ══════════════════════════════════════════════════════════════════════════════
-# SHARED RATE PARSER  (used by both listing + individual page)
+# RATE PARSER
 # ══════════════════════════════════════════════════════════════════════════════
 
 def _parse_rate(text: str):
     """
-    Extract the best cashback rate from arbitrary text.
     Priority: zł > up_to_% > plain %
     Returns (rate_str, rate_type) or (None, None).
     """
-    # ── Fixed zł ─────────────────────────────────────────────────────────────
+    # Fixed zł
     zl = re.search(
         r"(\d+(?:[.,]\d+)?)\s*(?:\xa0)?zł\s*cashback",
         text, re.IGNORECASE
@@ -35,7 +33,7 @@ def _parse_rate(text: str):
     if zl:
         return str(float(zl.group(1).replace(",", "."))), "zł"
 
-    # ── up_to % — "do X%" / "up to X%" ───────────────────────────────────────
+    # up_to_%
     up = re.search(
         r"(?:do|up\s+to)\s+(\d+(?:[.,]\d+)?)\s*(?:\xa0)?%",
         text, re.IGNORECASE
@@ -43,7 +41,7 @@ def _parse_rate(text: str):
     if up:
         return str(float(up.group(1).replace(",", "."))), "up_to_%"
 
-    # ── Plain % with "cashback" nearby ────────────────────────────────────────
+    # Plain % + cashback nearby
     pct_cb = re.search(
         r"(\d+(?:[.,]\d+)?)\s*(?:\xa0)?%\s*cashback",
         text, re.IGNORECASE
@@ -51,10 +49,11 @@ def _parse_rate(text: str):
     if pct_cb:
         return str(float(pct_cb.group(1).replace(",", "."))), "%"
 
-    # ── Any % fallback (take max, cap at 100) ─────────────────────────────────
+    # Any % fallback (max, cap 100)
     hits = re.findall(r"(\d+(?:[.,]\d+)?)\s*(?:\xa0)?%", text)
     if hits:
-        values = [float(v.replace(",", ".")) for v in hits if float(v.replace(",", ".")) <= 100]
+        values = [float(v.replace(",", ".")) for v in hits
+                  if 0 < float(v.replace(",", ".")) <= 80]
         if values:
             return str(max(values)), "%"
 
@@ -62,18 +61,66 @@ def _parse_rate(text: str):
 
 
 # ══════════════════════════════════════════════════════════════════════════════
+# PLAYWRIGHT BROWSER (singleton context)
+# ══════════════════════════════════════════════════════════════════════════════
+
+class LetyshopsBrowser:
+    def __init__(self):
+        self._pw   = None
+        self._browser = None
+        self._page    = None
+
+    def start(self):
+        self._pw      = sync_playwright().start()
+        self._browser = self._pw.chromium.launch(headless=True)
+        context       = self._browser.new_context(
+            locale="pl-PL",
+            user_agent=(
+                "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                "AppleWebKit/537.36 (KHTML, like Gecko) "
+                "Chrome/122.0.0.0 Safari/537.36"
+            )
+        )
+        self._page = context.new_page()
+        return self
+
+    def get_text(self, url: str, wait_ms: int = 2000) -> str | None:
+        try:
+            self._page.goto(url, timeout=20000, wait_until="networkidle")
+            self._page.wait_for_timeout(wait_ms)
+            return self._page.inner_text("body")
+        except Exception as e:
+            print(f"    ⚠ Playwright error on {url}: {e}")
+            return None
+
+    def stop(self):
+        if self._browser:
+            self._browser.close()
+        if self._pw:
+            self._pw.stop()
+
+
+# ══════════════════════════════════════════════════════════════════════════════
 # LISTING PAGE
 # ══════════════════════════════════════════════════════════════════════════════
 
-def get_letyshops_listing() -> dict:
+def get_letyshops_listing(browser: LetyshopsBrowser) -> dict:
     """
-    Scrape /pl/shops and return a dict keyed by slug.
-    Rate extracted from link text via shared _parse_rate().
+    Scrape /pl/shops → extract all shop slugs + rates from rendered page.
     """
-    r    = requests.get(LETYSHOPS_LISTING, headers=HEADERS, timeout=15)
-    soup = BeautifulSoup(r.text, "html.parser")
-    seen, shops = set(), {}
+    from playwright.sync_api import sync_playwright
+    from bs4 import BeautifulSoup
+
+    print("  📋 Fetching listing page...")
+    # Use page directly for listing (need href attributes)
+    browser._page.goto(LETYSHOPS_LISTING, timeout=20000, wait_until="networkidle")
+    browser._page.wait_for_timeout(2500)
+
+    content = browser._page.content()
+    soup    = BeautifulSoup(content, "html.parser")
+
     pattern = re.compile(r"^/pl/shops/[^/?#]+$")
+    seen, shops = set(), {}
 
     for link in soup.find_all("a", href=pattern):
         href = link.get("href", "")
@@ -97,28 +144,16 @@ def get_letyshops_listing() -> dict:
 # INDIVIDUAL PAGE
 # ══════════════════════════════════════════════════════════════════════════════
 
-def extract_rate_from_url(url: str):
-    """
-    Fetch an individual shop page.
-    Returns (rate_str, rate_type), ("no cashback", None), or (None, None).
-    """
-    try:
-        r = requests.get(url, headers=HEADERS, timeout=15)
-        if r.status_code != 200:
-            return None, None
+def extract_rate_from_url(browser: LetyshopsBrowser, url: str):
+    text = browser.get_text(url)
+    if not text:
+        return None, None
 
-        text = BeautifulSoup(r.text, "html.parser").get_text(separator=" ")
+    tl = text.lower()
+    if any(phrase in tl for phrase in NO_CASHBACK_PHRASES):
+        return "no cashback", None
 
-        # No-cashback check first (avoids false positives)
-        tl = text.lower()
-        if any(phrase in tl for phrase in NO_CASHBACK_PHRASES):
-            return "no cashback", None
-
-        return _parse_rate(text)
-
-    except Exception as e:
-        print(f"    ⚠ Error fetching {url}: {e}")
-    return None, None
+    return _parse_rate(text)
 
 
 # ══════════════════════════════════════════════════════════════════════════════
@@ -127,10 +162,11 @@ def extract_rate_from_url(url: str):
 
 def generate_slug_variants(retailer_name: str, igraal_slug: str) -> list:
     camel_slug = re.sub(r"[^a-z0-9]+", "-",
-                        re.sub(r"([a-z])([A-Z])", r"\1-\2", retailer_name).lower()
-                        ).strip("-")
-    name_slug  = re.sub(r"[^a-z0-9]+", "-", retailer_name.lower()).strip("-")
-    bases      = list(dict.fromkeys([igraal_slug, name_slug, camel_slug]))
+                        re.sub(r"([a-z])([A-Z])", r"\1-\2",
+                               retailer_name).lower()).strip("-")
+    name_slug = re.sub(r"[^a-z0-9]+", "-",
+                       retailer_name.lower()).strip("-")
+    bases = list(dict.fromkeys([igraal_slug, name_slug, camel_slug]))
 
     variants = (
         [b + "-pl"     for b in bases] +
@@ -144,41 +180,41 @@ def generate_slug_variants(retailer_name: str, igraal_slug: str) -> list:
 # STORE RESOLVER
 # ══════════════════════════════════════════════════════════════════════════════
 
-def find_letyshops_store(retailer_name: str, igraal_slug: str, listing: dict):
-    """
-    Resolution order:
-      1. Listing hit WITH rate  → return immediately (no extra HTTP)
-      2. Listing hit, no rate   → scrape individual page once
-      3. Direct URL probing     → try /pl/shops/ and /pl-en/shops/ variants
-    Returns (rate, rate_type, url).
-    """
+def find_letyshops_store(
+    browser: LetyshopsBrowser,
+    retailer_name: str,
+    igraal_slug: str,
+    listing: dict
+):
     variants          = generate_slug_variants(retailer_name, igraal_slug)
     found_no_cashback = False
 
-    # ── Pass 1: listing ───────────────────────────────────────────────────────
+    # Pass 1: listing
     for slug in variants:
         if slug not in listing:
             continue
         info = listing[slug]
-        if info["letyshops_rate"]:                          # ✅ rate in listing
-            return info["letyshops_rate"], info["letyshops_rate_type"], info["letyshops_url"]
+        if info["letyshops_rate"]:
+            return (info["letyshops_rate"],
+                    info["letyshops_rate_type"],
+                    info["letyshops_url"])
 
-        # Listing entry exists but no rate → scrape individual page
-        rate, rtype = extract_rate_from_url(info["letyshops_url"])
+        # Listing hit but no rate → scrape individual page
+        rate, rtype = extract_rate_from_url(browser, info["letyshops_url"])
         if rate and rate != "no cashback":
             return rate, rtype, info["letyshops_url"]
         if rate == "no cashback":
             found_no_cashback = True
 
-    # ── Pass 2: direct URL probing ────────────────────────────────────────────
+    # Pass 2: direct URL probing
     url_bases = [
         LETYSHOPS_BASE + "/pl/shops/",
         LETYSHOPS_BASE + "/pl-en/shops/",
     ]
     for slug in variants:
         for base in url_bases:
-            url = base + slug
-            rate, rtype = extract_rate_from_url(url)
+            url  = base + slug
+            rate, rtype = extract_rate_from_url(browser, url)
             if rate and rate != "no cashback":
                 return rate, rtype, url
             if rate == "no cashback":
@@ -195,30 +231,40 @@ def find_letyshops_store(retailer_name: str, igraal_slug: str, listing: dict):
 # ══════════════════════════════════════════════════════════════════════════════
 
 def scrape_letyshops(df_igraal: pd.DataFrame) -> pd.DataFrame:
-    listing = get_letyshops_listing()
+    browser = LetyshopsBrowser().start()
+    listing = get_letyshops_listing(browser)
+
     today   = datetime.today().strftime("%Y-%m-%d")
     results = []
     total   = len(df_igraal)
 
-    for i, (_, row) in enumerate(df_igraal.iterrows(), 1):
-        retailer = row["retailer"]
-        slug     = row["slug"]
-        print(f"  [{i:>3}/{total}] {retailer} ({slug})", end=" → ")
+    try:
+        for i, (_, row) in enumerate(df_igraal.iterrows(), 1):
+            retailer = row["retailer"]
+            slug     = row["slug"]
+            print(f"  [{i:>3}/{total}] {retailer} ({slug})", end=" → ")
 
-        rate, rtype, url = find_letyshops_store(retailer, slug, listing)
-        print(rate or "—")
+            rate, rtype, url = find_letyshops_store(
+                browser, retailer, slug, listing
+            )
+            print(rate or "—")
 
-        results.append({
-            "date"               : today,
-            "retailer"           : retailer,
-            "igraal_slug"        : slug,
-            # rate column: numeric value or None
-            "letyshops_rate"     : rate if rate not in ("no cashback", "not_found") else None,
-            # type column: "%" / "up_to_%" / "zł" / "no cashback" / "not_found"
-            "letyshops_rate_type": rtype if rate not in ("no cashback", "not_found") else rate,
-            "letyshops_url"      : url,
-        })
-        time.sleep(0.5)
+            results.append({
+                "date"               : today,
+                "retailer"           : retailer,
+                "igraal_slug"        : slug,
+                "letyshops_rate"     : (rate
+                                        if rate not in ("no cashback","not_found")
+                                        else None),
+                "letyshops_rate_type": (rtype
+                                        if rate not in ("no cashback","not_found")
+                                        else rate),
+                "letyshops_url"      : url,
+            })
+            time.sleep(0.4)
+
+    finally:
+        browser.stop()
 
     return pd.DataFrame(results)
 
@@ -232,15 +278,22 @@ if __name__ == "__main__":
     df_ig  = pd.read_csv("data/igraal_rates_latest.csv")
     df_out = scrape_letyshops(df_ig)
 
-    # Date-stamped filename — preserves history
-    fname = f"data/letyshops_rates_{datetime.today().strftime('%Y%m%d')}.csv"
-    df_out.to_csv(fname, index=False)
+    today = datetime.today().strftime("%Y%m%d")
+
+    # ── Bug #2 fix: guardar AMBOS archivos ────────────────────────────────────
+    dated_file  = f"data/letyshops_rates_{today}.csv"
+    latest_file = "data/letyshops_rates_latest.csv"
+
+    df_out.to_csv(dated_file,  index=False)
+    df_out.to_csv(latest_file, index=False)  # ← ESTE es el que lee el dashboard
 
     # ── Summary ───────────────────────────────────────────────────────────────
     found = df_out["letyshops_rate_type"].isin(["%", "up_to_%", "zł"]).sum()
     nc    = (df_out["letyshops_rate_type"] == "no cashback").sum()
     nf    = (df_out["letyshops_rate_type"] == "not_found").sum()
-    print(f"\n✅  Saved → {fname}")
+
+    print(f"\n✅  Saved → {dated_file}")
+    print(f"✅  Saved → {latest_file}")
     print(f"   Rates found : {found}")
     print(f"   No cashback : {nc}")
     print(f"   Not found   : {nf}")
