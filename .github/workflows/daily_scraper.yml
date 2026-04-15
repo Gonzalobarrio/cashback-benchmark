@@ -31,6 +31,9 @@ jobs:
 
       - name: Run scrapers
         run: python main.py
+        env:
+          LETYSHOPS_EMAIL:    ${{ secrets.LETYSHOPS_EMAIL }}
+          LETYSHOPS_PASSWORD: ${{ secrets.LETYSHOPS_PASSWORD }}
 
       - name: Commit and push results
         run: |
@@ -106,7 +109,7 @@ jobs:
           import urllib.request
           import os
 
-          api_key  = os.environ.get("BREVO_API_KEY", "")
+          api_key = os.environ.get("BREVO_API_KEY", "")
           if not api_key:
               print("No Brevo API key configured, skipping")
               exit()
