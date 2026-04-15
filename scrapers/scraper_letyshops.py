@@ -3,12 +3,11 @@ import time
 import pandas as pd
 from datetime import datetime
 import os
-
-# Playwright en vez de requests
 from playwright.sync_api import sync_playwright
 
 LETYSHOPS_BASE    = "https://letyshops.com"
 LETYSHOPS_LISTING = "https://letyshops.com/pl/shops"
+LETYSHOPS_LOGIN   = "https://letyshops.com/pl/login"
 
 NO_CASHBACK_PHRASES = [
     "w tej chwili nie ma cashbacku w tym sklepie",
@@ -16,15 +15,11 @@ NO_CASHBACK_PHRASES = [
     "brak cashbacku",
 ]
 
-# ══════════════════════════════════════════════════════════════════════════════
+# ══════════════════════════════════════════════════════════════════
 # RATE PARSER
-# ══════════════════════════════════════════════════════════════════════════════
+# ══════════════════════════════════════════════════════════════════
 
 def _parse_rate(text: str):
-    """
-    Priority: zł > up_to_% > plain %
-    Returns (rate_str, rate_type) or (None, None).
-    """
     # Fixed zł
     zl = re.search(
         r"(\d+(?:[.,]\d+)?)\s*(?:\xa0)?zł\s*cashback",
@@ -49,26 +44,27 @@ def _parse_rate(text: str):
     if pct_cb:
         return str(float(pct_cb.group(1).replace(",", "."))), "%"
 
-    # Any % fallback (max, cap 100)
+    # Any % fallback
     hits = re.findall(r"(\d+(?:[.,]\d+)?)\s*(?:\xa0)?%", text)
     if hits:
         values = [float(v.replace(",", ".")) for v in hits
-                  if 0 < float(v.replace(",", ".")) <= 80]
+                  if 0 < float(v.replace(",", ".")) <= 95]
         if values:
             return str(max(values)), "%"
 
     return None, None
 
 
-# ══════════════════════════════════════════════════════════════════════════════
-# PLAYWRIGHT BROWSER (singleton context)
-# ══════════════════════════════════════════════════════════════════════════════
+# ══════════════════════════════════════════════════════════════════
+# BROWSER WITH AUTO-LOGIN
+# ══════════════════════════════════════════════════════════════════
 
 class LetyshopsBrowser:
     def __init__(self):
-        self._pw   = None
+        self._pw      = None
         self._browser = None
         self._page    = None
+        self._logged_in = False
 
     def start(self):
         self._pw      = sync_playwright().start()
@@ -83,6 +79,53 @@ class LetyshopsBrowser:
         )
         self._page = context.new_page()
         return self
+
+    def login(self, email: str, password: str) -> bool:
+        """
+        Login to Letyshops. Returns True if successful.
+        Credentials come from environment variables (GitHub Secrets).
+        """
+        if not email or not password:
+            print("  ⚠️  No credentials found — scraping without login")
+            return False
+
+        try:
+            print("  🔐 Logging in to Letyshops...")
+            self._page.goto(LETYSHOPS_LOGIN, timeout=20000,
+                            wait_until="networkidle")
+            self._page.wait_for_timeout(2000)
+
+            # Fill email
+            self._page.fill('input[type="email"], input[name="email"]', email)
+            time.sleep(0.5)
+
+            # Fill password
+            self._page.fill('input[type="password"], input[name="password"]',
+                            password)
+            time.sleep(0.5)
+
+            # Submit
+            self._page.click('button[type="submit"]')
+            self._page.wait_for_timeout(3000)
+
+            # Verify login success
+            current_url = self._page.url
+            page_text   = self._page.inner_text("body").lower()
+
+            if ("login" not in current_url and
+                    "zaloguj" not in current_url and
+                    "error" not in page_text and
+                    "błąd" not in page_text):
+                print("  ✅ Login successful")
+                self._logged_in = True
+                return True
+            else:
+                print("  ❌ Login failed — check credentials in GitHub Secrets")
+                return False
+
+        except Exception as e:
+            print(f"  ❌ Login error: {e}")
+            return False
 
     def get_text(self, url: str, wait_ms: int = 2000) -> str | None:
         try:
@@ -100,20 +143,16 @@ class LetyshopsBrowser:
             self._pw.stop()
 
 
-# ══════════════════════════════════════════════════════════════════════════════
+# ══════════════════════════════════════════════════════════════════
 # LISTING PAGE
-# ══════════════════════════════════════════════════════════════════════════════
+# ══════════════════════════════════════════════════════════════════
 
 def get_letyshops_listing(browser: LetyshopsBrowser) -> dict:
-    """
-    Scrape /pl/shops → extract all shop slugs + rates from rendered page.
-    """
-    from playwright.sync_api import sync_playwright
     from bs4 import BeautifulSoup
 
     print("  📋 Fetching listing page...")
-    # Use page directly for listing (need href attributes)
-    browser._page.goto(LETYSHOPS_LISTING, timeout=20000, wait_until="networkidle")
+    browser._page.goto(LETYSHOPS_LISTING, timeout=20000,
+                       wait_until="networkidle")
     browser._page.wait_for_timeout(2500)
 
     content = browser._page.content()
@@ -140,9 +179,9 @@ def get_letyshops_listing(browser: LetyshopsBrowser) -> dict:
     return shops
 
 
-# ══════════════════════════════════════════════════════════════════════════════
+# ══════════════════════════════════════════════════════════════════
 # INDIVIDUAL PAGE
-# ══════════════════════════════════════════════════════════════════════════════
+# ══════════════════════════════════════════════════════════════════
 
 def extract_rate_from_url(browser: LetyshopsBrowser, url: str):
     text = browser.get_text(url)
@@ -156,16 +195,16 @@ def extract_rate_from_url(browser: LetyshopsBrowser, url: str):
     return _parse_rate(text)
 
 
-# ══════════════════════════════════════════════════════════════════════════════
+# ══════════════════════════════════════════════════════════════════
 # SLUG LOGIC
-# ══════════════════════════════════════════════════════════════════════════════
+# ══════════════════════════════════════════════════════════════════
 
 def generate_slug_variants(retailer_name: str, igraal_slug: str) -> list:
     camel_slug = re.sub(r"[^a-z0-9]+", "-",
                         re.sub(r"([a-z])([A-Z])", r"\1-\2",
                                retailer_name).lower()).strip("-")
-    name_slug = re.sub(r"[^a-z0-9]+", "-",
-                       retailer_name.lower()).strip("-")
+    name_slug  = re.sub(r"[^a-z0-9]+", "-",
+                        retailer_name.lower()).strip("-")
     bases = list(dict.fromkeys([igraal_slug, name_slug, camel_slug]))
 
     variants = (
@@ -176,9 +215,9 @@ def generate_slug_variants(retailer_name: str, igraal_slug: str) -> list:
     return list(dict.fromkeys(variants))
 
 
-# ══════════════════════════════════════════════════════════════════════════════
+# ══════════════════════════════════════════════════════════════════
 # STORE RESOLVER
-# ══════════════════════════════════════════════════════════════════════════════
+# ══════════════════════════════════════════════════════════════════
 
 def find_letyshops_store(
     browser: LetyshopsBrowser,
@@ -199,7 +238,6 @@ def find_letyshops_store(
                     info["letyshops_rate_type"],
                     info["letyshops_url"])
 
-        # Listing hit but no rate → scrape individual page
         rate, rtype = extract_rate_from_url(browser, info["letyshops_url"])
         if rate and rate != "no cashback":
             return rate, rtype, info["letyshops_url"]
@@ -226,12 +264,17 @@ def find_letyshops_store(
     return "not_found", None, None
 
 
-# ══════════════════════════════════════════════════════════════════════════════
+# ══════════════════════════════════════════════════════════════════
 # MAIN SCRAPER
-# ══════════════════════════════════════════════════════════════════════════════
+# ══════════════════════════════════════════════════════════════════
 
 def scrape_letyshops(df_igraal: pd.DataFrame) -> pd.DataFrame:
+    # ── Credentials from GitHub Secrets (env vars) ────────────────
+    email    = os.environ.get("LETYSHOPS_EMAIL", "")
+    password = os.environ.get("LETYSHOPS_PASSWORD", "")
+
     browser = LetyshopsBrowser().start()
+    browser.login(email, password)          # ← auto-login, no cookies needed
     listing = get_letyshops_listing(browser)
 
     today   = datetime.today().strftime("%Y-%m-%d")
@@ -253,12 +296,10 @@ def scrape_letyshops(df_igraal: pd.DataFrame) -> pd.DataFrame:
                 "date"               : today,
                 "retailer"           : retailer,
                 "igraal_slug"        : slug,
-                "letyshops_rate"     : (rate
-                                        if rate not in ("no cashback","not_found")
-                                        else None),
-                "letyshops_rate_type": (rtype
-                                        if rate not in ("no cashback","not_found")
-                                        else rate),
+                "letyshops_rate"     : (rate if rate not in
+                                        ("no cashback","not_found") else None),
+                "letyshops_rate_type": (rtype if rate not in
+                                        ("no cashback","not_found") else rate),
                 "letyshops_url"      : url,
             })
             time.sleep(0.4)
@@ -269,31 +310,28 @@ def scrape_letyshops(df_igraal: pd.DataFrame) -> pd.DataFrame:
     return pd.DataFrame(results)
 
 
-# ══════════════════════════════════════════════════════════════════════════════
+# ══════════════════════════════════════════════════════════════════
 # ENTRY POINT
-# ══════════════════════════════════════════════════════════════════════════════
+# ══════════════════════════════════════════════════════════════════
 
 if __name__ == "__main__":
     os.makedirs("data", exist_ok=True)
     df_ig  = pd.read_csv("data/igraal_rates_latest.csv")
     df_out = scrape_letyshops(df_ig)
 
-    today = datetime.today().strftime("%Y%m%d")
-
-    # ── Bug #2 fix: guardar AMBOS archivos ────────────────────────────────────
+    today       = datetime.today().strftime("%Y%m%d")
     dated_file  = f"data/letyshops_rates_{today}.csv"
     latest_file = "data/letyshops_rates_latest.csv"
 
     df_out.to_csv(dated_file,  index=False)
-    df_out.to_csv(latest_file, index=False)  # ← ESTE es el que lee el dashboard
+    df_out.to_csv(latest_file, index=False)
 
-    # ── Summary ───────────────────────────────────────────────────────────────
     found = df_out["letyshops_rate_type"].isin(["%", "up_to_%", "zł"]).sum()
     nc    = (df_out["letyshops_rate_type"] == "no cashback").sum()
     nf    = (df_out["letyshops_rate_type"] == "not_found").sum()
 
-    print(f"\n✅  Saved → {dated_file}")
-    print(f"✅  Saved → {latest_file}")
+    print(f"\n✅ Saved → {dated_file}")
+    print(f"✅ Saved → {latest_file}")
     print(f"   Rates found : {found}")
     print(f"   No cashback : {nc}")
     print(f"   Not found   : {nf}")
