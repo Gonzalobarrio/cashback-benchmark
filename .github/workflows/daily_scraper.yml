@@ -2,7 +2,8 @@ name: Daily Cashback Benchmark
 
 on:
   schedule:
-    - cron: '0 7 * * *'
+    - cron: '0 7 * * *'   # 9am Polonia (UTC+2)
+    - cron: '0 8 * * *'   # reintento backup
   workflow_dispatch:
 
 jobs:
@@ -42,7 +43,8 @@ jobs:
           git fetch origin main
           git reset --soft origin/main
           git add data/
-          git diff --staged --quiet || git commit -m "Daily update $(date +'%Y-%m-%d')"
+          # Siempre hace commit aunque no haya cambios → mantiene repo activo
+          git commit -m "Daily update $(date +'%Y-%m-%d')" --allow-empty
           git push origin main
 
       - name: Send Slack alerts
@@ -62,7 +64,6 @@ jobs:
               exit()
 
           df = pd.read_csv("data/benchmark_data.csv")
-
           alerts = df[
               (df["alert"] == "LOWER") &
               (df["delta"] >= 5) &
@@ -75,20 +76,17 @@ jobs:
 
           lines = [f"*🚨 iGraal Cashback Alert — {pd.Timestamp.today().strftime('%Y-%m-%d')}*"]
           lines.append("Top retailers where competitors beat iGraal by >5%:\n")
-
           for _, row in alerts.iterrows():
               lines.append(
                   f"• *{row['retailer']}* — iGraal: {row['igraal_rate']}% | "
                   f"Best competitor: {row['best_competitor_rate']}% | "
                   f"Delta: +{row['delta']}%"
               )
-
           lines.append(
               f"\n_Total retailers where competitor beats iGraal: "
               f"{(df['alert']=='LOWER').sum()}_"
           )
           message = {"text": "\n".join(lines)}
-
           req = urllib.request.Request(
               webhook_url,
               data=json.dumps(message).encode("utf-8"),
@@ -192,7 +190,6 @@ jobs:
               "subject"    : f"📊 iGraal Cashback Benchmark — {today}",
               "htmlContent": html
           }
-
           req = urllib.request.Request(
               "https://api.brevo.com/v3/smtp/email",
               data=json.dumps(payload).encode("utf-8"),
@@ -203,4 +200,33 @@ jobs:
           )
           resp = urllib.request.urlopen(req)
           print(f"✅ Email sent to {to_email} — status: {resp.status}")
+          EOF
+
+      - name: Notify on failure
+        if: failure()
+        env:
+          BREVO_API_KEY: ${{ secrets.BREVO_API_KEY }}
+        run: |
+          python - <<'EOF'
+          import urllib.request, json, os
+          from datetime import datetime
+
+          api_key = os.environ.get("BREVO_API_KEY", "")
+          if not api_key:
+              exit()
+
+          payload = {
+              "sender"     : {"name": "iGraal Benchmark",
+                              "email": "noreply@sendinblue.com"},
+              "to"         : [{"email": "gonzalo.barrio@atolls.com"}],
+              "subject"    : f"❌ Benchmark scraper FAILED — {datetime.today().strftime('%Y-%m-%d')}",
+              "htmlContent": "<p>El scraper diario ha fallado. Revisa GitHub Actions.</p>"
+          }
+          req = urllib.request.Request(
+              "https://api.brevo.com/v3/smtp/email",
+              data=json.dumps(payload).encode("utf-8"),
+              headers={"api-key": api_key, "Content-Type": "application/json"}
+          )
+          urllib.request.urlopen(req)
+          print("✅ Failure email sent")
           EOF
