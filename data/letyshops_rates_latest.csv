@@ -1,14 +1,14 @@
 date,retailer,igraal_slug,letyshops_rate,letyshops_rate_type,letyshops_boosted,letyshops_url
 2026-04-16,AliExpress,aliexpress,5.0,up_to_%,False,https://letyshops.com/pl/shops/aliexpress
-2026-04-16,Allegro,allegro,1.7,up_to_%,False,https://letyshops.com/pl/shops/allegro-pl
-2026-04-16,Answear,answear,2.0,up_to_%,False,https://letyshops.com/pl/shops/answear
+2026-04-16,Allegro,allegro,54.95,boosted_%,True,https://letyshops.com/pl/shops/allegro-pl
+2026-04-16,Answear,answear,54.95,boosted_%,True,https://letyshops.com/pl/shops/answear
 2026-04-16,Decathlon,decathlon,7.85,up_to_%,False,https://letyshops.com/pl/shops/decathlon-pl
-2026-04-16,Empik,empik-test,6.25,up_to_%,False,https://letyshops.com/pl/shops/empik-pl
+2026-04-16,Empik,empik-test,54.95,boosted_%,True,https://letyshops.com/pl/shops/empik-pl
 2026-04-16,Lounge by Zalando,zalando-lounge,6.0,up_to_%,False,https://letyshops.com/pl/shops/zalando-lounge-pl
 2026-04-16,MediaMarkt,mediamarkt,3.5,up_to_%,False,https://letyshops.com/pl/shops/media-markt-pl
-2026-04-16,Temu,temu,7.85,up_to_%,False,https://letyshops.com/pl/shops/temu
+2026-04-16,Temu,temu,54.95,boosted_%,True,https://letyshops.com/pl/shops/temu
 2026-04-16,SHEIN,shein,5.0,up_to_%,False,https://letyshops.com/pl/shops/shein-pl
-2026-04-16,RTV Euro AGD,rtveuro,3.5,up_to_%,False,https://letyshops.com/pl/shops/rtv-euro-agd
+2026-04-16,RTV Euro AGD,rtveuro,54.95,boosted_%,True,https://letyshops.com/pl/shops/rtv-euro-agd
 2026-04-16,Lidl,lidl,1.0,%,False,https://letyshops.com/pl/shops/lidl-pl
 2026-04-16,Leroy Merlin,leroymerlin,7.85,up_to_%,False,https://letyshops.com/pl/shops/leroy-merlin
 2026-04-16,CCC,ccc,3.25,up_to_%,False,https://letyshops.com/pl/shops/ccc-pl
