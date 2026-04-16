@@ -2,8 +2,8 @@ name: Daily Cashback Benchmark
 
 on:
   schedule:
-    - cron: '0 7 * * *'   # 9am Polonia (UTC+2)
-    - cron: '0 8 * * *'   # reintento backup
+    - cron: '0 7 * * *'
+    - cron: '0 8 * * *'
   workflow_dispatch:
 
 jobs:
@@ -11,6 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+      workflows: write
 
     steps:
       - name: Checkout repository
@@ -40,10 +41,7 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git fetch origin main
-          git reset --soft origin/main
           git add data/
-          # Siempre hace commit aunque no haya cambios → mantiene repo activo
           git commit -m "Daily update $(date +'%Y-%m-%d')" --allow-empty
           git push origin main
 
