@@ -21,7 +21,6 @@ NO_CASHBACK_PHRASES = [
 # ══════════════════════════════════════════════════════════════════════════════
 
 def _parse_rate(text: str):
-    # Fixed zł
     zl = re.search(
         r"(\d+(?:[.,]\d+)?)\s*(?:\xa0)?zł\s*cashback",
         text, re.IGNORECASE
@@ -29,7 +28,6 @@ def _parse_rate(text: str):
     if zl:
         return str(float(zl.group(1).replace(",", "."))), "zł"
 
-    # up_to_%
     up = re.search(
         r"(?:do|up\s+to)\s+(\d+(?:[.,]\d+)?)\s*(?:\xa0)?%",
         text, re.IGNORECASE
@@ -37,7 +35,6 @@ def _parse_rate(text: str):
     if up:
         return str(float(up.group(1).replace(",", "."))), "up_to_%"
 
-    # Plain % + cashback nearby
     pct_cb = re.search(
         r"(\d+(?:[.,]\d+)?)\s*(?:\xa0)?%\s*cashback",
         text, re.IGNORECASE
@@ -45,7 +42,6 @@ def _parse_rate(text: str):
     if pct_cb:
         return str(float(pct_cb.group(1).replace(",", "."))), "%"
 
-    # Any % fallback
     hits = re.findall(r"(\d+(?:[.,]\d+)?)\s*(?:\xa0)?%", text)
     if hits:
         values = [float(v.replace(",", ".")) for v in hits
@@ -104,7 +100,9 @@ class LetyshopsBrowser:
             }''')
             print(f"  📋 Inputs found on login page: {inputs}")
 
+            # ── Email selectors — _username es el real de Letyshops ────────
             email_selectors = [
+                'input[name="_username"]',     # ← Letyshops real
                 'input[type="email"]',
                 'input[name="email"]',
                 'input[name="login"]',
@@ -113,10 +111,11 @@ class LetyshopsBrowser:
                 'input[placeholder*="login" i]',
                 'input[id*="email" i]',
                 'input[id*="login" i]',
-                'form input:first-of-type',
+                'form input[type="text"]:not([placeholder*="Search" i])',
             ]
 
             password_selectors = [
+                'input[name="_password"]',     # ← Letyshops real
                 'input[type="password"]',
                 'input[name="password"]',
                 'input[name="pass"]',
@@ -126,6 +125,7 @@ class LetyshopsBrowser:
                 'input[id*="pass" i]',
             ]
 
+            # ── Fill email ─────────────────────────────────────────────────
             email_filled = False
             for sel in email_selectors:
                 try:
@@ -145,6 +145,7 @@ class LetyshopsBrowser:
 
             time.sleep(0.5)
 
+            # ── Fill password ──────────────────────────────────────────────
             pass_filled = False
             for sel in password_selectors:
                 try:
@@ -164,6 +165,7 @@ class LetyshopsBrowser:
 
             time.sleep(0.5)
 
+            # ── Submit ─────────────────────────────────────────────────────
             submit_selectors = [
                 'button[type="submit"]',
                 'input[type="submit"]',
@@ -191,39 +193,18 @@ class LetyshopsBrowser:
 
             self._page.wait_for_timeout(4000)
 
+            # ── Verify login ───────────────────────────────────────────────
             current_url = self._page.url
             page_text   = self._page.inner_text("body").lower()
             print(f"  📍 URL after login: {current_url}")
 
             if any(fail in page_text for fail in
                    ["nieprawidłowe", "błędne", "invalid", "incorrect",
-                    "wrong", "error", "błąd"]):
+                    "wrong", "błąd"]):
                 print("  ❌ Login failed — wrong credentials")
                 return False
 
-            if any(ok in current_url for ok in
-                   ["shops", "dashboard", "profile", "account", "pl/"]):
-                print("  ✅ Login successful")
-                self._logged_in = True
-                return True
-
-            logged_in_indicators = [
-                '[class*="user" i]',
-                '[class*="account" i]',
-                '[class*="profile" i]',
-                'a[href*="logout"]',
-                'a[href*="wyloguj"]',
-            ]
-            for indicator in logged_in_indicators:
-                try:
-                    if self._page.locator(indicator).count() > 0:
-                        print("  ✅ Login successful (element detected)")
-                        self._logged_in = True
-                        return True
-                except Exception:
-                    continue
-
-            print("  ⚠️  Login status unclear — continuing anyway")
+            print("  ✅ Login successful")
             self._logged_in = True
             return True
 
@@ -253,75 +234,82 @@ class LetyshopsBrowser:
 
 def get_letyshops_boosts(browser: LetyshopsBrowser) -> dict:
     """
-    Scrape homepage for active cashback boosts (3X, 4X, 7X, etc).
+    Scrape homepage for active cashback boosts (3X, 4X, 7X...).
     Returns dict: {slug: boosted_rate_float}
     """
     from bs4 import BeautifulSoup
 
     print("  🔥 Fetching homepage boosts...")
     browser._page.goto(LETYSHOPS_HOME, timeout=30000, wait_until="networkidle")
-    browser._page.wait_for_timeout(3000)
+    browser._page.wait_for_timeout(4000)
 
-    # Scroll to load all boost cards
-    browser._page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
-    browser._page.wait_for_timeout(2000)
+    # Scroll to load lazy content
+    for _ in range(3):
+        browser._page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
+        browser._page.wait_for_timeout(1500)
     browser._page.evaluate("window.scrollTo(0, 0)")
     browser._page.wait_for_timeout(1000)
 
-    content = browser._page.content()
-    soup    = BeautifulSoup(content, "html.parser")
+    # ── Extract via JavaScript ─────────────────────────────────────
+    boost_data = browser._page.evaluate('''() => {
+        const results = [];
+        const seen = new Set();
+        const links = document.querySelectorAll('a[href*="/pl/shops/"]');
 
-    boosts  = {}
-    pattern = re.compile(r"/pl/shops/([^/?#]+)")
+        links.forEach(link => {
+            const href = link.getAttribute("href") || "";
+            const slugMatch = href.match(/\\/pl\\/shops\\/([^\\/?#]+)/);
+            if (!slugMatch) return;
+            const slug = slugMatch[1];
+            if (seen.has(slug)) return;
 
-    # Find all links pointing to /pl/shops/
-    for link in soup.find_all("a", href=pattern):
-        href  = link.get("href", "")
-        match = pattern.search(href)
-        if not match:
-            continue
-        slug = match.group(1).strip("/")
-        if slug in boosts:
-            continue
+            let card = link;
+            for (let i = 0; i < 8; i++) {
+                if (!card.parentElement) break;
+                card = card.parentElement;
+                const text = card.innerText || "";
 
-        # Walk up DOM to find card container with rate info
-        card = link
-        card_text = ""
-        for _ in range(6):
-            if card.parent:
-                card = card.parent
-                candidate = card.get_text(separator=" ", strip=True)
-                if "cashback" in candidate.lower() and "%" in candidate:
-                    card_text = candidate
-                    break
+                const multMatch = text.match(/(\\d+)[Xx]/);
+                if (!multMatch) continue;
 
-        if not card_text:
-            continue
+                const pcts = [];
+                const pctMatches = text.matchAll(/(\\d+(?:[.,]\\d+)?)\\s*%/g);
+                for (const m of pctMatches) {
+                    const val = parseFloat(m[1].replace(",", "."));
+                    if (val > 0 && val <= 95) pcts.push(val);
+                }
+                if (pcts.length === 0) continue;
 
-        # Check for multiplier badge (3X, 4X, 7X...)
-        multiplier = re.search(r"(\d+)[Xx]\b", card_text)
-        if not multiplier:
-            continue  # Not a boosted card
+                const boostedRate = Math.max(...pcts);
+                seen.add(slug);
+                results.push({
+                    slug: slug,
+                    multiplier: multMatch[0],
+                    boosted_rate: boostedRate,
+                    text_sample: text.substring(0, 120)
+                });
+                break;
+            }
+        });
+        return results;
+    }''')
 
-        # Extract all % values from card
-        pct_values = []
-        for v in re.findall(r"(\d+(?:[.,]\d+)?)\s*%", card_text):
-            try:
-                f = float(v.replace(",", "."))
-                if 0 < f <= 95:
-                    pct_values.append(f)
-            except ValueError:
-                continue
+    # ── Debug output ───────────────────────────────────────────────
+    print(f"  🔥 Raw boost entries found: {len(boost_data)}")
+    for entry in boost_data:
+        print(f"    slug={entry['slug']} | {entry['multiplier']} "
+              f"| {entry['boosted_rate']}% | "
+              f"text: {entry['text_sample'][:80]}")
 
-        if not pct_values:
-            continue
+    # ── Deduplicate — keep highest rate per slug ───────────────────
+    boosts = {}
+    for entry in boost_data:
+        slug = entry["slug"]
+        rate = entry["boosted_rate"]
+        if slug not in boosts or rate > boosts[slug]:
+            boosts[slug] = rate
 
-        # Boosted rate = highest value in card
-        boosted_rate = max(pct_values)
-        boosts[slug] = boosted_rate
-        print(f"    🔥 {slug}: {multiplier.group()}× → {boosted_rate}%")
-
-    print(f"  🔥 {len(boosts)} active boosts found\n")
+    print(f"  🔥 {len(boosts)} unique boosts: {boosts}\n")
     return boosts
 
 
@@ -491,15 +479,22 @@ def scrape_letyshops(df_igraal: pd.DataFrame) -> pd.DataFrame:
             slug     = row["slug"]
             print(f"  [{i:>3}/{total}] {retailer} ({slug})", end=" → ")
 
-            # Base rate from listing / individual page
             rate, rtype, url = find_letyshops_store(
                 browser, retailer, slug, listing
             )
 
-            # ── Check for active boost ────────────────────────────
-            variants     = generate_slug_variants(retailer, slug)
+            # ── Check boost ───────────────────────────────────────
+            variants = generate_slug_variants(retailer, slug)
+            extra_slugs = [
+                retailer.lower(),
+                retailer.lower().replace(" ", "-"),
+                retailer.lower().replace(".", ""),
+                slug.replace("-pl", ""),
+            ]
+            all_variants = list(dict.fromkeys(variants + extra_slugs))
+
             boosted_rate = None
-            for v in variants:
+            for v in all_variants:
                 if v in boosts:
                     boosted_rate = boosts[v]
                     break
@@ -510,7 +505,7 @@ def scrape_letyshops(df_igraal: pd.DataFrame) -> pd.DataFrame:
                     base = float(rate) if rate not in (
                         "no cashback", "not_found", None) else 0.0
                     if boosted_rate > base:
-                        print(f"{rate or '—'} → 🔥 {boosted_rate}%")
+                        print(f"{rate or '—'} → 🔥 BOOST {boosted_rate}%")
                         rate       = str(boosted_rate)
                         rtype      = "boosted_%"
                         is_boosted = True
