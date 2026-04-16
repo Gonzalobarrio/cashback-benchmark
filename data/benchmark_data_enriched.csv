@@ -1,217 +1,217 @@
 retailer,igraal_rate,cashback_type,letyshops_rate,letyshops_rate_type,picodi_rate,picodi_rate_type,alerabat_rate,alerabat_rate_type,goodie_rate,goodie_rate_type,best_competitor_rate,delta,alert,date,affiliate_network,quality,category,category_group,is_merchant_active,is_merchant_monetized,avg_cpa_in,avg_margin_eur,avg_revenue_eur,avg_gmv_eur,avg_cb_total_eur,total_transactions,months_with_data,margin_alert
-DHgate,2.0,%,25.0,up_to_%,15.3,up_to_%,25.5,up_to_%,1.75,%,25.5,23.5,LOWER,2026-04-15,,,,,,,,,,,,,,
-OleOle!,1.0,%,7.85,up_to_%,9.0,up_to_%,5.0,up_to_%,2.0,up_to_%,9.0,8.0,LOWER,2026-04-15,Tradedoubler,A+,Electronics,Technology,True,True,2.14,116.13,312.05,14461.91,195.91,18.0,5.0,False
-LEGO,3.0,%,7.85,up_to_%,10.0,%,5.0,up_to_%,3.5,up_to_%,10.0,7.0,LOWER,2026-04-15,Rakuten,A+,Entertainment,Lifestyle,True,True,4.0,3.8,7.02,122.69,3.18,6.0,4.0,False
-Cropp,4.0,%,7.85,up_to_%,10.0,%,3.5,up_to_%,3.0,%,10.0,6.0,LOWER,2026-04-15,Commission Junction,A,Fashion,Fashion,True,True,6.4,0.47,5.76,89.56,4.48,12.0,4.0,False
-Sferis,1.6,%,7.5,up_to_%,,zł,7.5,up_to_%,7.5,up_to_%,7.5,5.9,LOWER,2026-04-15,Tradedoubler,AA+,Electronics,Technology,True,True,1.9,-0.81,45.5,2221.16,46.3,5.0,3.0,True
-Decathlon,2.0,%,7.85,up_to_%,1.4,up_to_%,4.0,up_to_%,2.5,%,7.85,5.85,LOWER,2026-04-15,Webgains,A+,Sport Fashion,Fashion,True,True,2.31,-16.39,6.31,271.64,22.7,18.0,7.0,True
-Krakvet,2.0,%,7.85,up_to_%,0.6,up_to_%,1.4,up_to_%,2.0,%,7.85,5.85,LOWER,2026-04-15,Tradedoubler,B,Pets,Lifestyle,True,True,4.0,-7.46,9.86,246.6,17.32,5.0,2.0,True
-Brasty,2.0,%,7.85,up_to_%,1.8,up_to_%,1.0,up_to_%,,no cashback,7.85,5.85,LOWER,2026-04-15,Commission Junction,B,Health & Beauty,Multi-Category,True,True,1.5,0.5,82.93,4235.18,82.33,10.0,4.0,False
-Max Elektro,2.0,%,7.85,up_to_%,0.6,%,1.0,up_to_%,1.0,%,7.85,5.85,LOWER,2026-04-15,Tradedoubler,B,Appliance,Technology,True,True,4.0,22.62,94.36,2358.83,71.74,6.0,5.0,False
-LG,2.5,%,7.85,up_to_%,0.8,up_to_%,1.0,up_to_%,1.25,%,7.85,5.35,LOWER,2026-04-15,AWIN,B,Appliance,Technology,True,True,2.0,-3.01,12.02,601.06,15.03,3.0,3.0,True
-Remix,12.25,%,7.85,up_to_%,1.4,%,17.5,up_to_%,,not_found,17.5,5.25,LOWER,2026-04-15,Webgains,D,Fashion,Fashion,True,True,4.5,0.0,4.61,102.42,4.61,1.0,1.0,False
-VidaXL,2.9,%,7.85,up_to_%,,zł,2.5,up_to_%,2.0,%,7.85,4.95,LOWER,2026-04-15,Tradetracker,B,Health & Beauty,Multi-Category,True,True,2.9,0.0,2.29,78.95,2.29,1.0,1.0,False
-BasicLab,3.0,%,7.85,up_to_%,1.2,%,2.0,up_to_%,,not_found,7.85,4.85,LOWER,2026-04-15,AWIN,B,Health & Beauty,Multi-Category,True,True,3.0,0.0,62.36,2078.68,62.36,7.0,4.0,False
-iHerb,3.0,%,7.85,up_to_%,1.5,%,0.5,up_to_%,2.0,up_to_%,7.85,4.85,LOWER,2026-04-15,Admitad,D,Health & Beauty,Multi-Category,True,True,6.14,-5.99,11.33,169.35,17.32,12.0,5.0,True
-Michael Kors,3.0,%,7.85,up_to_%,0.9,%,1.5,up_to_%,,no cashback,7.85,4.85,LOWER,2026-04-15,,,,,,,,,,,,,,
-Tagomago,3.0,%,7.85,up_to_%,1.5,%,2.5,up_to_%,2.5,%,7.85,4.85,LOWER,2026-04-15,Admitad,B,Health & Beauty,Multi-Category,True,True,4.6,-0.17,1.81,36.34,1.98,2.0,2.0,True
-7way,3.5,%,7.85,up_to_%,,zł,1.75,up_to_%,1.75,%,7.85,4.35,LOWER,2026-04-15,,,,,,,,,,,,,,
-4kidspoint,3.5,%,7.85,up_to_%,1.1,%,1.75,up_to_%,,no cashback,7.85,4.35,LOWER,2026-04-15,,,,,,,,,,,,,,
-Victoria's Secret,3.5,%,7.85,up_to_%,1.5,up_to_%,2.0,up_to_%,,not_found,7.85,4.35,LOWER,2026-04-15,Webgains,B,Fashion,Fashion,True,True,4.0,0.05,0.4,9.93,0.35,1.0,1.0,False
-iParts,3.5,%,7.85,up_to_%,1.1,%,1.75,up_to_%,,no cashback,7.85,4.35,LOWER,2026-04-15,Tradetracker,D,Automotive,Lifestyle,True,True,3.5,0.0,5.69,162.49,5.69,2.0,2.0,False
-Reporter Young,3.5,%,7.85,up_to_%,1.8,up_to_%,1.5,up_to_%,,not_found,7.85,4.35,LOWER,2026-04-15,,,,,,,,,,,,,,
-Cobi,3.5,%,7.85,up_to_%,,zł,1.75,up_to_%,,no cashback,7.85,4.35,LOWER,2026-04-15,,,,,,,,,,,,,,
-Cocolita,3.5,%,7.85,up_to_%,1.4,%,,no cashback,2.25,%,7.85,4.35,LOWER,2026-04-15,Tradedoubler,B,Health & Beauty,Multi-Category,True,True,5.7,32.88,60.82,1146.99,27.94,9.0,4.0,False
-Perfumeria,3.84,%,7.85,up_to_%,1.5,%,2.5,up_to_%,1.92,%,7.85,4.01,LOWER,2026-04-15,,,,,,,,,,,,,,
-Neness,6.0,%,10.0,up_to_%,6.0,up_to_%,10.0,up_to_%,10.0,up_to_%,10.0,4.0,LOWER,2026-04-15,,,,,,,,,,,,,,
-AXA Partners,6.0,%,,not_found,6.0,%,10.0,up_to_%,10.0,%,10.0,4.0,LOWER,2026-04-15,,,,,,,,,,,,,,
-Bonprix,4.0,%,7.85,up_to_%,1.2,%,2.5,up_to_%,3.0,up_to_%,7.85,3.85,LOWER,2026-04-15,Tradedoubler,C,Fashion,Fashion,True,True,4.0,-0.36,0.75,18.86,1.12,1.0,1.0,True
-Baseus,4.0,%,7.85,up_to_%,1.2,%,,no cashback,,not_found,7.85,3.85,LOWER,2026-04-15,Admitad,D,Electronics,Technology,True,True,4.0,2.51,14.92,372.85,12.4,2.0,1.0,False
-Dyson,4.0,%,7.85,up_to_%,1.4,%,2.4,up_to_%,2.0,%,7.85,3.85,LOWER,2026-04-15,Tradedoubler,AA+,Electronics,Technology,True,True,0.0,0.0,0.0,0.0,0.0,3.0,3.0,False
-Castorama,4.0,%,7.85,up_to_%,1.2,%,2.0,up_to_%,2.5,%,7.85,3.85,LOWER,2026-04-15,Admitad,D,Home & Garden,Multi-Category,True,True,4.0,1.74,63.36,1583.96,61.61,13.0,6.0,False
-Electrolux,4.0,%,7.85,up_to_%,1.2,%,2.0,up_to_%,2.0,%,7.85,3.85,LOWER,2026-04-15,Tradedoubler,A,Appliance,Technology,True,True,4.24,37.13,389.36,8883.48,352.24,10.0,5.0,False
-Ryobi,4.0,%,7.85,up_to_%,1.2,%,2.0,up_to_%,6.0,up_to_%,7.85,3.85,LOWER,2026-04-15,,,,,,,,,,,,,,
-Ninja,4.0,%,7.85,up_to_%,1.5,up_to_%,2.5,up_to_%,5.0,%,7.85,3.85,LOWER,2026-04-15,AWIN,F,Home & Garden,Multi-Category,True,True,7.62,243.58,299.4,3533.24,55.82,11.0,6.0,False
-Teufel,4.0,%,7.85,up_to_%,1.2,%,4.0,up_to_%,2.0,%,7.85,3.85,LOWER,2026-04-15,Rakuten,B,Electronics,Technology,True,True,4.0,0.0,47.54,1188.58,47.54,2.0,2.0,False
-Vans,4.0,%,7.85,up_to_%,0.3,up_to_%,,no cashback,5.0,%,7.85,3.85,LOWER,2026-04-15,,,,,,,,,,,,,,
-Greenpoint,4.0,%,7.85,up_to_%,1.2,%,2.0,up_to_%,4.0,%,7.85,3.85,LOWER,2026-04-15,Webgains,B,Fashion,Fashion,True,True,8.0,11.6,27.29,341.1,15.69,8.0,5.0,False
-Leroy Merlin,4.0,%,7.85,up_to_%,,zł,1.0,up_to_%,1.09,%,7.85,3.85,LOWER,2026-04-15,Commission Junction,B,Home & Garden,Multi-Category,True,True,3.85,-5.7,57.68,1607.39,63.38,82.0,10.0,True
-Fera,4.0,%,7.85,up_to_%,1.2,%,2.0,up_to_%,2.0,%,7.85,3.85,LOWER,2026-04-15,AWIN,D,Pets,Lifestyle,True,True,4.0,0.0,1.1,27.51,1.1,1.0,1.0,False
-Crocs,4.0,%,7.85,up_to_%,1.2,%,2.0,up_to_%,,no cashback,7.85,3.85,LOWER,2026-04-15,AWIN,C,Footwear,Fashion,True,True,4.0,0.0,34.64,865.98,34.64,2.0,1.0,False
-Diablo Chairs,4.5,%,7.85,up_to_%,2.1,up_to_%,3.75,up_to_%,2.25,%,7.85,3.35,LOWER,2026-04-15,Commission Junction,A+,Home & Garden,Multi-Category,True,True,5.17,0.0,225.15,4639.75,225.15,7.0,3.0,False
-Drogeria.pl,4.5,%,7.85,up_to_%,,zł,,not_found,2.25,%,7.85,3.35,LOWER,2026-04-15,Tradedoubler,F,not_attributed,not_attributed,True,True,5.12,4.08,52.42,1087.8,48.34,8.0,4.0,False
-Homla,4.8,%,7.85,up_to_%,,zł,2.0,up_to_%,2.0,%,7.85,3.05,LOWER,2026-04-15,Tradedoubler,A,Home & Garden,Multi-Category,True,True,4.8,0.02,4.17,86.8,4.15,6.0,4.0,False
-Orange,2.11,%,,zł,,not_found,5.0,up_to_%,1.06,up_to_%,5.0,2.89,LOWER,2026-04-15,Tradedoubler,A+,Connectivity - Telco,Services,True,True,31044.5,4.54,307.24,1.08,302.69,10.0,2.0,False
-Levi's,5.0,%,7.85,up_to_%,1.5,up_to_%,2.5,up_to_%,,not_found,7.85,2.85,LOWER,2026-04-15,,,,,,,,,,,,,,
-G2A,5.0,%,7.85,up_to_%,,not_found,1.15,up_to_%,1.35,%,7.85,2.85,LOWER,2026-04-15,AWIN,A,Online Gaming,Technology,True,True,4.1,-0.52,2.33,56.87,2.84,12.0,4.0,True
-Giacomo Conti,5.0,%,7.85,up_to_%,3.0,%,4.0,up_to_%,5.0,%,7.85,2.85,LOWER,2026-04-15,Tradetracker,B,Fashion,Fashion,True,True,5.0,0.0,155.06,3101.1,155.06,5.0,3.0,False
-NAOKO,5.0,%,7.85,up_to_%,1.7,%,2.8,up_to_%,2.8,%,7.85,2.85,LOWER,2026-04-15,,,,,,,,,,,,,,
-Recman,5.0,%,7.85,up_to_%,1.5,%,,not_found,2.5,%,7.85,2.85,LOWER,2026-04-15,,,,,,,,,,,,,,
-OBI,5.0,%,7.85,up_to_%,1.5,%,2.5,up_to_%,2.5,up_to_%,7.85,2.85,LOWER,2026-04-15,Commission Junction,A,Home & Garden,Multi-Category,True,True,5.0,6.71,46.05,920.94,39.34,17.0,4.0,False
-Born2Be,5.0,%,7.85,up_to_%,1.8,%,3.0,up_to_%,3.0,%,7.85,2.85,LOWER,2026-04-15,Tradedoubler,B,Fashion,Fashion,True,True,6.14,3.96,34.89,578.12,30.93,12.0,5.0,False
-Bezpieczna Rodzina,5.0,%,7.85,up_to_%,,not_found,,no cashback,,no cashback,7.85,2.85,LOWER,2026-04-15,,,,,,,,,,,,,,
-Acer,5.0,%,7.85,up_to_%,2.1,%,2.5,up_to_%,4.0,up_to_%,7.85,2.85,LOWER,2026-04-15,AWIN,C,Electronics,Technology,True,True,8.5,2.02,4.91,57.75,2.89,1.0,1.0,False
-Lidl,5.0,%,7.85,up_to_%,1.7,%,,no cashback,0.5,up_to_%,7.85,2.85,LOWER,2026-04-15,Tradedoubler,D,Food & Drink,Lifestyle,True,True,1.0,-90.94,10.06,1005.96,101.0,18.0,4.0,True
-Regatta,5.0,%,7.85,up_to_%,,zł,2.5,up_to_%,2.5,%,7.85,2.85,LOWER,2026-04-15,Webgains,C,Sport Fashion,Fashion,True,True,9.9,-4.35,519.64,5239.91,523.99,12.0,1.0,True
-Perfumy.pl,5.0,%,7.85,up_to_%,1.7,%,3.0,up_to_%,2.8,%,7.85,2.85,LOWER,2026-04-15,AWIN,B,Health & Beauty,Multi-Category,True,True,5.7,6.54,54.66,962.24,48.11,1.0,1.0,False
-Yves Rocher,5.0,%,7.85,up_to_%,,zł,2.5,up_to_%,2.5,%,7.85,2.85,LOWER,2026-04-15,Commission Junction,C,Health & Beauty,Multi-Category,True,True,5.0,0.0,2.5,50.14,2.5,2.0,2.0,False
-Drop,5.38,%,7.85,up_to_%,1.6,%,,not_found,,not_found,7.85,2.47,LOWER,2026-04-15,,,,,,,,,,,,,,
-Bricoman,6.0,%,7.85,up_to_%,,not_found,,no cashback,,no cashback,7.85,1.85,LOWER,2026-04-15,,,,,,,,,,,,,,
-Streetstyle24,6.0,%,7.85,up_to_%,,not_found,3.46,up_to_%,3.46,%,7.85,1.85,LOWER,2026-04-15,AWIN,C,Bags & Accessories,Fashion,True,True,6.9,89.88,456.69,6599.56,366.81,11.0,3.0,False
-DeLonghi,6.0,%,7.85,up_to_%,1.8,%,3.0,up_to_%,3.0,%,7.85,1.85,LOWER,2026-04-15,Tradedoubler,B,Appliance,Technology,True,True,6.0,1.68,37.7,628.27,36.02,5.0,2.0,False
-ALAB Laboratoria,6.0,%,7.85,up_to_%,1.9,%,3.12,up_to_%,3.12,%,7.85,1.85,LOWER,2026-04-15,Tradedoubler,B,Health & Beauty,Multi-Category,True,True,6.2,0.16,2.99,47.98,2.83,1.0,1.0,False
-Medicine,6.0,%,7.85,up_to_%,,zł,3.0,up_to_%,,not_found,7.85,1.85,LOWER,2026-04-15,AWIN,D,Fashion,Fashion,True,True,6.0,1.59,4.76,79.37,3.17,8.0,4.0,False
-Under Armour,6.0,%,7.85,up_to_%,1.8,%,4.0,up_to_%,3.0,%,7.85,1.85,LOWER,2026-04-15,,,,,,,,,,,,,,
-Vision Express,6.0,%,7.85,up_to_%,1.8,%,3.0,up_to_%,3.0,%,7.85,1.85,LOWER,2026-04-15,Tradetracker,B,Bags & Accessories,Fashion,True,True,5.25,-0.33,1.62,33.39,1.94,4.0,4.0,True
-GOG,6.0,%,7.85,up_to_%,1.9,%,3.1,up_to_%,3.0,%,7.85,1.85,LOWER,2026-04-15,Commission Junction,B,Online Gaming,Technology,True,True,6.0,0.01,1.04,17.31,0.77,6.0,3.0,False
-MebleMWM,6.0,%,7.85,up_to_%,1.9,%,3.2,up_to_%,,no cashback,7.85,1.85,LOWER,2026-04-15,Tradedoubler,D,Home & Garden,Multi-Category,True,True,6.4,671.44,1271.63,19869.19,600.19,42.0,6.0,False
-Renee,6.0,%,7.85,up_to_%,1.8,%,3.0,up_to_%,5.0,%,7.85,1.85,LOWER,2026-04-15,Tradedoubler,B,Fashion,Fashion,True,True,6.0,0.2,17.56,292.64,17.36,8.0,4.0,False
-Kenwood,6.0,%,7.85,up_to_%,,not_found,3.0,up_to_%,,no cashback,7.85,1.85,LOWER,2026-04-15,,,,,,,,,,,,,,
-Mountain Warehouse,6.0,%,7.85,up_to_%,1.8,%,3.0,up_to_%,3.0,%,7.85,1.85,LOWER,2026-04-15,AWIN,B,Fashion,Fashion,True,True,6.0,0.0,8.67,144.46,8.67,1.0,1.0,False
-PRM,6.0,%,7.85,up_to_%,2.4,%,2.0,up_to_%,,not_found,7.85,1.85,LOWER,2026-04-15,Commission Junction,B,Fashion,Fashion,True,True,10.0,10.54,28.73,287.31,18.19,5.0,3.0,False
-Puma,6.0,%,7.85,up_to_%,1.2,up_to_%,1.0,up_to_%,2.0,up_to_%,7.85,1.85,LOWER,2026-04-15,Commission Junction,B,Sport Fashion,Fashion,True,True,6.0,0.0,155.05,2584.07,155.05,2.0,2.0,False
-iBOOD,1.0,%,,not_found,1.2,up_to_%,2.0,up_to_%,2.0,up_to_%,2.0,1.0,LOWER,2026-04-15,Webgains,B,Multi-Departments,Multi-Category,True,True,2.33,3.18,4.31,140.35,0.59,5.0,3.0,False
-Shark,4.0,%,3.0,up_to_%,1.5,up_to_%,2.5,up_to_%,5.0,%,5.0,1.0,LOWER,2026-04-15,AWIN,F,Home & Garden,Multi-Category,True,True,7.5,212.28,320.84,4874.01,108.56,3.0,2.0,False
-Xiaomi,2.0,%,3.0,up_to_%,0.9,%,1.5,up_to_%,2.5,%,3.0,1.0,LOWER,2026-04-15,,,,,,,,,,,,,,
-Eveline,7.0,%,7.85,up_to_%,2.1,%,,not_found,,not_found,7.85,0.85,LOWER,2026-04-15,Tradedoubler,C,Health & Beauty,Multi-Category,True,True,7.0,-0.09,124.03,1771.87,124.12,8.0,4.0,True
-NEONAIL,7.0,%,7.85,up_to_%,2.1,%,3.5,up_to_%,3.5,%,7.85,0.85,LOWER,2026-04-15,AWIN,C,Health & Beauty,Multi-Category,True,True,7.0,0.0,1.34,19.15,1.34,1.0,1.0,False
-Nike,7.0,%,7.85,up_to_%,,not_found,5.0,up_to_%,,no cashback,7.85,0.85,LOWER,2026-04-15,No Affiliate Network,A+,Sport Fashion,Fashion,True,False,3.0,-8.71,8.09,269.7,16.8,15.0,4.0,True
-Estro,7.0,%,7.85,up_to_%,2.1,%,3.5,up_to_%,3.5,%,7.85,0.85,LOWER,2026-04-15,Commission Junction,F,Fashion,Fashion,True,True,7.0,0.0,20.65,295.02,18.14,2.0,2.0,False
-Van Graaf,7.0,%,7.85,up_to_%,2.7,%,5.0,up_to_%,,no cashback,7.85,0.85,LOWER,2026-04-15,Tradedoubler,D,Fashion,Fashion,True,True,9.75,8.54,99.76,1068.77,91.22,4.0,4.0,False
-Volcano,7.0,%,7.85,up_to_%,3.0,%,3.5,up_to_%,3.5,%,7.85,0.85,LOWER,2026-04-15,No Affiliate Network,C,Fashion,Fashion,True,False,7.0,-0.57,233.63,3337.6,234.2,1.0,1.0,True
-Philips,7.0,%,7.85,up_to_%,,zł,2.5,up_to_%,5.0,%,7.85,0.85,LOWER,2026-04-15,Tradedoubler,D,Appliance,Technology,True,True,3.5,12.69,14.42,412.04,1.73,4.0,1.0,False
-Philips Hue,7.0,%,7.85,up_to_%,2.1,%,3.5,up_to_%,3.5,%,7.85,0.85,LOWER,2026-04-15,,,,,,,,,,,,,,
-eBilet,1.0,%,1.7,up_to_%,,zł,0.4,up_to_%,0.4,%,1.7,0.7,LOWER,2026-04-15,Tradedoubler,C,Entertainment,Lifestyle,True,True,1.4,0.37,1.41,103.39,1.04,1.0,1.0,False
-Stylevana,7.19,%,7.85,up_to_%,2.2,%,3.6,up_to_%,,not_found,7.85,0.66,LOWER,2026-04-15,Admitad,F,not_attributed,not_attributed,True,True,7.2,0.0,7.99,111.27,0.0,1.0,1.0,False
-Ceneo,1.0,%,,not_found,,zł,1.32,up_to_%,,not_found,1.32,0.32,LOWER,2026-04-15,Tradedoubler,B,Multi-Departments,Multi-Category,True,True,50.9,7.74,14.72,708.64,6.98,33.0,4.0,False
-Allegro,1.9,%,1.7,up_to_%,,zł,2.2,up_to_%,2.2,up_to_%,2.2,0.3,LOWER,2026-04-15,Admitad,AA,Multi-Departments,Multi-Category,True,True,1.74,-983.82,449.32,26335.38,1433.14,17234.0,12.0,True
-Vobis,1.5,%,1.75,up_to_%,,not_found,1.5,up_to_%,1.75,up_to_%,1.75,0.25,LOWER,2026-04-15,Tradedoubler,A,Electronics,Technology,True,True,4.62,-0.03,113.42,2679.38,65.48,4.0,4.0,True
-Desigual,7.7,%,7.85,up_to_%,,zł,4.36,up_to_%,3.85,%,7.85,0.15,LOWER,2026-04-15,,,,,,,,,,,,,,
-Huawei,3.5,%,3.2,up_to_%,,zł,3.46,up_to_%,3.6,up_to_%,3.6,0.1,LOWER,2026-04-15,Tradedoubler,B,Electronics,Technology,True,True,3.8,0.58,6.37,165.83,5.79,1.0,1.0,False
-Hebe,4.0,%,4.0,%,,zł,2.5,up_to_%,,no cashback,4.0,0.0,OK,2026-04-15,Tradedoubler,A,Health & Beauty,Multi-Category,True,True,6.21,-6.0,12.74,203.88,18.74,68.0,8.0,True
-Modivo,4.0,%,3.5,up_to_%,3.5,%,4.0,up_to_%,4.0,%,4.0,0.0,OK,2026-04-15,Tradedoubler,AA+,Fashion,Fashion,True,True,5.24,-0.66,13.15,291.9,13.81,21.0,7.0,True
-Udemy,10.0,%,6.5,up_to_%,6.0,up_to_%,10.0,up_to_%,,no cashback,10.0,0.0,OK,2026-04-15,Impact Radius,C,Business / Office,Technology,True,True,19.9,0.0,2.27,9.81,2.27,5.0,3.0,False
-Kinguin,5.0,%,,not_found,3.4,up_to_%,5.0,up_to_%,2.5,up_to_%,5.0,0.0,OK,2026-04-15,Admitad,A,Online Gaming,Technology,True,True,2.16,-4.61,1.93,88.5,6.54,37.0,7.0,True
-Lookfantastic,5.0,%,5.0,up_to_%,3.0,up_to_%,5.0,up_to_%,5.0,up_to_%,5.0,0.0,OK,2026-04-15,AWIN,C,Health & Beauty,Multi-Category,True,True,4.8,-0.44,2.2,45.38,2.64,2.0,1.0,True
-Cyfrowe.pl,2.0,%,,not_found,,zł,1.05,up_to_%,2.0,up_to_%,2.0,0.0,OK,2026-04-15,Tradetracker,B,Electronics,Technology,True,True,1.75,-5.93,62.57,3425.87,68.22,9.0,4.0,True
-Pan Materac,8.0,%,7.85,up_to_%,2.4,%,4.0,up_to_%,4.0,%,7.85,-0.15,OK,2026-04-15,Tradedoubler,AA,Home & Garden,Multi-Category,True,True,8.0,0.14,320.86,4010.79,320.72,11.0,6.0,False
-Lacoste,8.0,%,7.85,up_to_%,2.4,%,4.0,up_to_%,5.6,%,7.85,-0.15,OK,2026-04-15,,,,,,,,,,,,,,
-Senpo.pl,8.0,%,7.85,up_to_%,,not_found,,not_found,,not_found,7.85,-0.15,OK,2026-04-15,No Affiliate Network,F,Home & Garden,Multi-Category,True,False,9.6,-34.34,758.17,7916.93,792.51,14.0,3.0,True
-Colorland,8.0,%,7.85,up_to_%,3.5,%,5.75,up_to_%,5.75,%,7.85,-0.15,OK,2026-04-15,Tradetracker,A,Gifts & Flowers,Lifestyle,True,True,10.1,-1.68,2.82,28.55,2.86,4.0,3.0,True
-Converse,5.0,%,4.8,up_to_%,3.6,up_to_%,4.8,up_to_%,3.0,%,4.8,-0.2,OK,2026-04-15,,,,,,,,,,,,,,
-Ubisoft,0.5,%,,not_found,0.1,%,,not_found,0.21,%,0.21,-0.29,OK,2026-04-15,,,,,,,,,,,,,,
-Eventim,2.0,%,1.7,up_to_%,,zł,1.0,up_to_%,1.0,%,1.7,-0.3,OK,2026-04-15,AWIN,C,Unknown,Unknown,True,True,2.0,1.07,4.92,245.62,3.84,5.0,2.0,False
-Samsung,3.0,%,2.5,up_to_%,2.1,up_to_%,,not_found,2.5,up_to_%,2.5,-0.5,OK,2026-04-15,AWIN,A+,Appliance,Technology,True,True,4.5,5.06,49.92,1256.95,44.86,4.0,4.0,False
-Carrefour,3.0,%,2.5,up_to_%,,zł,1.5,up_to_%,1.75,%,2.5,-0.5,OK,2026-04-15,Admitad,A,Multi-Departments,Multi-Category,True,True,3.0,0.03,2.79,91.98,2.76,8.0,5.0,False
-Komputronik,1.5,%,1.0,%,0.5,%,0.95,up_to_%,0.75,%,1.0,-0.5,OK,2026-04-15,Admitad,B,Electronics,Technology,True,True,1.5,1.2,57.91,3831.6,56.72,4.0,2.0,False
-Pyszne.pl,2.0,%,1.5,%,,zł,1.5,up_to_%,1.5,up_to_%,1.5,-0.5,OK,2026-04-15,AWIN,AA,Food & Drink,Lifestyle,True,True,3.34,-49.81,9.81,299.59,59.62,120.0,8.0,True
-Alibaba,8.4,%,7.85,up_to_%,2.5,up_to_%,3.08,up_to_%,2.7,%,7.85,-0.55,OK,2026-04-15,Admitad,F,not_attributed,not_attributed,True,True,7.9,-1.26,9.88,125.65,11.14,3.0,1.0,True
-LOT,1.5,%,,not_found,,zł,0.75,up_to_%,,not_found,0.75,-0.75,OK,2026-04-15,Commission Junction,B,Airlines,Travel,True,True,1.5,0.0,25.94,1728.89,25.94,9.0,3.0,False
-iDream,3.0,%,,not_found,1.3,up_to_%,2.17,up_to_%,,no cashback,2.17,-0.83,OK,2026-04-15,Tradetracker,A+,Electronics,Technology,True,True,2.6,-0.62,25.65,875.43,26.26,3.0,2.0,True
-Kiwi,3.0,%,2.0,up_to_%,,zł,1.5,up_to_%,,no cashback,2.0,-1.0,OK,2026-04-15,,,,,,,,,,,,,,
-Sun & Snow,4.5,%,2.25,up_to_%,,not_found,2.25,up_to_%,3.5,%,3.5,-1.0,OK,2026-04-15,Webgains,B,Tourism & Attraction,Travel,True,True,7.0,4.87,13.64,194.79,8.76,1.0,1.0,False
-Katalog Marzeń,2.8,%,1.7,up_to_%,0.8,%,,not_found,1.35,%,1.7,-1.1,OK,2026-04-15,Admitad,F,Gifts & Flowers,Lifestyle,True,True,2.8,0.0,1.11,39.61,0.72,2.0,2.0,False
-BIG STAR,9.0,%,7.85,up_to_%,0.6,%,3.0,up_to_%,3.0,%,7.85,-1.15,OK,2026-04-15,,,,,,,,,,,,,,
-Dstreet,9.0,%,7.85,up_to_%,2.7,%,4.5,up_to_%,4.5,%,7.85,-1.15,OK,2026-04-15,AWIN,B,Fashion,Fashion,True,True,9.0,0.0,144.98,1610.88,144.98,14.0,5.0,False
-Endo,9.0,%,7.85,up_to_%,2.7,%,4.5,up_to_%,4.5,%,7.85,-1.15,OK,2026-04-15,AWIN,D,Fashion,Fashion,True,True,9.0,0.0,45.0,499.96,45.0,1.0,1.0,False
-KFC,4.0,%,2.5,up_to_%,1.7,%,2.76,up_to_%,2.77,%,2.77,-1.23,OK,2026-04-15,Commission Junction,A,Food & Drink,Lifestyle,True,True,5.5,-0.15,2.37,42.77,2.51,12.0,5.0,True
-Znak,3.0,%,1.7,up_to_%,1.0,%,1.6,up_to_%,1.6,%,1.7,-1.3,OK,2026-04-15,,,,,,,,,,,,,,
-Leo Express,4.0,%,,not_found,1.5,%,2.5,up_to_%,2.5,%,2.5,-1.5,OK,2026-04-15,Commission Junction,F,not_attributed,not_attributed,True,True,14.0,0.0,5.79,41.33,5.79,1.0,1.0,False
-Gamivo,4.0,%,1.7,up_to_%,,zł,2.5,up_to_%,2.5,%,2.5,-1.5,OK,2026-04-15,Commission Junction,D,Electronics,Technology,True,True,10.0,-518.84,80.76,807.59,597.84,37.0,2.0,True
-Groupon,5.0,%,3.5,up_to_%,2.1,up_to_%,3.0,up_to_%,3.0,up_to_%,3.5,-1.5,OK,2026-04-15,AWIN,A+,Multi-Departments,Multi-Category,True,True,5.0,-0.16,17.19,293.68,17.36,13.0,4.0,True
-Erli,4.0,%,2.2,up_to_%,1.3,up_to_%,2.5,up_to_%,2.2,up_to_%,2.5,-1.5,OK,2026-04-15,Admitad,A,Multi-Departments,Multi-Category,True,True,3.19,0.33,280.65,8759.91,280.32,98.0,7.0,False
-Eltrox,4.5,%,2.75,up_to_%,1.8,%,3.0,up_to_%,2.75,up_to_%,3.0,-1.5,OK,2026-04-15,Tradetracker,D,Electronics,Technology,True,True,4.5,0.0,48.18,1070.75,48.19,3.0,3.0,False
-Mamyito,4.5,%,2.5,up_to_%,,zł,2.8,up_to_%,2.4,%,2.8,-1.7,OK,2026-04-15,Tradedoubler,F,not_attributed,not_attributed,True,True,4.8,0.02,4.36,90.83,4.34,6.0,3.0,False
-CCC,5.0,%,3.25,up_to_%,2.0,up_to_%,3.25,up_to_%,3.25,up_to_%,3.25,-1.75,OK,2026-04-15,AWIN,A+,Footwear,Fashion,True,True,6.21,2.41,12.31,200.84,9.9,27.0,7.0,False
-home&you,6.5,%,3.25,up_to_%,1.2,up_to_%,,not_found,4.75,up_to_%,4.75,-1.75,OK,2026-04-15,Tradedoubler,A,Home & Garden,Multi-Category,True,True,6.42,2.9,35.9,560.74,32.99,26.0,4.0,False
-eSky,3.5,%,1.75,up_to_%,1.1,%,1.75,up_to_%,1.75,%,1.75,-1.75,OK,2026-04-15,Admitad,D,Travel agencies,Travel,True,True,3.5,0.0,30.06,858.95,30.06,4.0,4.0,False
-Olimp Store,4.0,%,,not_found,1.3,%,2.1,up_to_%,,no cashback,2.1,-1.9,OK,2026-04-15,Admitad,D,Health & Beauty,Multi-Category,True,True,4.2,0.0,1.51,36.03,0.0,1.0,1.0,False
-Trip.com,5.5,%,3.5,up_to_%,1.7,up_to_%,,not_found,2.75,up_to_%,3.5,-2.0,OK,2026-04-15,Admitad,F,not_attributed,not_attributed,True,True,2.55,28.22,52.9,2342.32,24.68,10.0,2.0,False
-Gameseal,5.0,%,1.5,up_to_%,3.0,up_to_%,1.5,up_to_%,1.5,%,3.0,-2.0,OK,2026-04-15,Commission Junction,F,not_attributed,not_attributed,True,True,6.0,-293.68,26.8,446.7,320.48,42.0,4.0,True
-Ucando,4.0,%,2.0,up_to_%,1.2,%,2.0,up_to_%,2.0,%,2.0,-2.0,OK,2026-04-15,Tradetracker,D,Automotive,Lifestyle,True,True,4.0,0.0,6.09,152.21,6.09,1.0,1.0,False
-Maxi Zoo,5.0,%,3.0,up_to_%,1.8,up_to_%,3.0,up_to_%,3.0,up_to_%,3.0,-2.0,OK,2026-04-15,AWIN,D,Pets,Lifestyle,True,True,3.18,-24.8,528.9,17136.32,553.69,816.0,6.0,True
-Fielmann,6.0,%,,not_found,2.4,%,4.0,up_to_%,4.0,%,4.0,-2.0,OK,2026-04-15,AWIN,C,Health & Beauty,Multi-Category,True,True,8.0,0.0,21.2,265.07,21.2,3.0,1.0,False
-Adidas,5.0,%,3.0,up_to_%,1.8,up_to_%,3.0,up_to_%,3.0,up_to_%,3.0,-2.0,OK,2026-04-15,AWIN,A+,Sport Fashion,Fashion,True,True,4.17,9.23,14.89,445.18,5.65,74.0,10.0,False
-Bimba Y Lola,6.0,%,,not_found,2.4,%,4.0,up_to_%,4.0,%,4.0,-2.0,OK,2026-04-15,,,,,,,,,,,,,,
-Notino,5.0,%,2.5,up_to_%,3.0,up_to_%,,not_found,2.5,up_to_%,3.0,-2.0,OK,2026-04-15,Commission Junction,AAA,Health & Beauty,Multi-Category,True,True,4.63,-19.14,331.28,6772.22,350.42,69.0,6.0,True
-Geekbuying.pl,6.0,%,4.0,up_to_%,2.4,up_to_%,2.5,up_to_%,4.0,up_to_%,4.0,-2.0,OK,2026-04-15,Admitad,A,Electronics,Technology,True,True,5.0,0.0,42.28,844.38,0.0,1.0,1.0,False
-Lampy.pl,8.0,%,6.0,up_to_%,2.4,up_to_%,4.0,up_to_%,4.0,up_to_%,6.0,-2.0,OK,2026-04-15,AWIN,B,Home & Garden,Multi-Category,True,True,7.5,-0.75,71.59,904.2,72.33,4.0,3.0,True
-Abra,4.2,%,,not_found,1.5,%,,not_found,2.1,%,2.1,-2.1,OK,2026-04-15,Tradedoubler,A,Home & Garden,Multi-Category,True,True,4.2,6.39,160.06,3811.05,153.68,6.0,4.0,False
-New Balance,10.0,%,7.85,up_to_%,1.7,up_to_%,2.5,up_to_%,5.0,%,7.85,-2.15,OK,2026-04-15,AWIN,A+,Sport Fashion,Fashion,True,True,5.47,-5.7,10.27,252.73,10.74,8.0,3.0,True
-MyProtein,10.0,%,7.85,up_to_%,3.6,up_to_%,5.0,up_to_%,4.0,%,7.85,-2.15,OK,2026-04-15,,,,,,,,,,,,,,
-Wrangler,10.0,%,7.85,up_to_%,3.0,%,5.0,up_to_%,5.0,%,7.85,-2.15,OK,2026-04-15,,,,,,,,,,,,,,
-Joom,9.75,%,,no cashback,4.5,up_to_%,7.5,up_to_%,5.25,up_to_%,7.5,-2.25,OK,2026-04-15,Admitad,C,Multi-Departments,Multi-Category,True,True,9.8,0.0,5.19,53.03,5.19,5.0,1.0,False
-Banggood,10.0,%,6.5,up_to_%,4.7,up_to_%,6.5,up_to_%,7.75,up_to_%,7.75,-2.25,OK,2026-04-15,Tradetracker,C,Electronics,Technology,True,True,6.0,0.25,0.76,12.58,0.5,1.0,1.0,False
-Przyjaciele Kawy,6.0,%,3.7,up_to_%,,zł,3.55,up_to_%,3.7,up_to_%,3.7,-2.3,OK,2026-04-15,Tradedoubler,B,Food & Drink,Lifestyle,True,True,4.94,1064.29,1518.77,31964.56,454.48,32.0,5.0,False
-Loaded,5.0,%,2.5,up_to_%,1.5,up_to_%,1.0,up_to_%,,not_found,2.5,-2.5,OK,2026-04-15,,,,,,,,,,,,,,
-e-torty,10.0,%,2.5,up_to_%,4.5,%,7.5,up_to_%,7.5,%,7.5,-2.5,OK,2026-04-15,Tradedoubler,F,not_attributed,not_attributed,True,True,15.0,2.3,9.08,60.56,3.68,4.0,2.0,False
-JD Sports,5.0,%,2.5,up_to_%,1.5,up_to_%,2.5,up_to_%,2.5,%,2.5,-2.5,OK,2026-04-15,AWIN,C,Footwear,Fashion,True,True,6.75,-0.48,4.72,90.04,5.2,4.0,4.0,True
-Flexispot,5.0,%,,not_found,1.5,%,2.5,up_to_%,2.5,%,2.5,-2.5,OK,2026-04-15,,,,,,,,,,,,,,
-eobuwie,6.0,%,3.5,up_to_%,3.0,%,3.5,up_to_%,3.5,%,3.5,-2.5,OK,2026-04-15,Tradedoubler,AAA,Footwear,Fashion,True,True,3.54,2.3,21.83,539.19,19.52,47.0,8.0,False
-Świat supli,5.0,%,,not_found,1.5,%,2.5,up_to_%,,not_found,2.5,-2.5,OK,2026-04-15,AWIN,C,Food & Drink,Lifestyle,True,True,5.0,0.0,34.02,680.47,34.02,8.0,4.0,False
-Footshop,5.0,%,2.5,up_to_%,2.1,up_to_%,2.5,up_to_%,2.5,up_to_%,2.5,-2.5,OK,2026-04-15,Commission Junction,D,Footwear,Fashion,True,True,4.0,72.89,96.92,2403.37,24.03,3.0,1.0,False
-Flixbus,5.0,%,0.75,%,1.5,up_to_%,2.5,up_to_%,2.5,up_to_%,2.5,-2.5,OK,2026-04-15,AWIN,A,Transports & Car rental,Travel,True,True,3.6,0.0,0.88,25.54,0.88,22.0,6.0,False
-Mango Outlet,3.0,%,,not_found,,zł,0.5,up_to_%,,not_found,0.5,-2.5,OK,2026-04-15,Rakuten,B,Fashion,Fashion,True,True,15.0,-16.67,64.73,431.51,81.4,4.0,1.0,True
-GetYourGuide,4.0,%,1.15,up_to_%,0.7,%,1.15,up_to_%,1.15,%,1.15,-2.85,OK,2026-04-15,Tradedoubler,B,Travel agencies,Travel,True,True,5.0,-6.82,10.36,207.2,17.18,6.0,2.0,True
-SportStyleStory,6.0,%,3.0,up_to_%,2.4,up_to_%,3.0,up_to_%,3.0,up_to_%,3.0,-3.0,OK,2026-04-15,Tradedoubler,C,Sport Fashion,Fashion,True,True,6.0,4.32,319.24,5320.8,314.92,12.0,4.0,False
-Marilyn,6.0,%,,not_found,1.8,%,3.0,up_to_%,3.0,%,3.0,-3.0,OK,2026-04-15,Webgains,D,Fashion,Fashion,True,True,6.0,0.0,39.72,661.97,39.72,2.0,2.0,False
-Gomez,6.5,%,3.3,up_to_%,2.0,up_to_%,3.33,up_to_%,3.33,up_to_%,3.33,-3.17,OK,2026-04-15,Tradedoubler,A+,Fashion,Fashion,True,True,6.7,2.86,74.89,1124.5,72.03,2.0,1.0,False
-Airalo,9.0,%,,not_found,3.5,up_to_%,5.76,up_to_%,5.0,%,5.76,-3.24,OK,2026-04-15,,,,,,,,,,,,,,
-HP,7.0,%,3.5,up_to_%,,zł,3.5,up_to_%,3.5,up_to_%,3.5,-3.5,OK,2026-04-15,,,,,,,,,,,,,,
-EMP,7.0,%,3.5,up_to_%,2.1,up_to_%,,not_found,,not_found,3.5,-3.5,OK,2026-04-15,,,,,,,,,,,,,,
-AUTODOC,8.0,%,4.0,up_to_%,2.4,up_to_%,4.0,up_to_%,4.0,up_to_%,4.0,-4.0,OK,2026-04-15,Tradedoubler,B,Automotive,Lifestyle,True,True,8.0,0.09,6.48,81.02,6.39,1.0,1.0,False
-Lounge by Zalando,10.0,%,6.0,up_to_%,,zł,6.0,up_to_%,6.0,up_to_%,6.0,-4.0,OK,2026-04-15,AWIN,AAA,Fashion,Fashion,True,True,4.8,6.78,56.78,1138.41,50.0,152.0,9.0,False
-ESET,10.0,%,6.0,up_to_%,3.6,up_to_%,5.5,up_to_%,5.5,%,6.0,-4.0,OK,2026-04-15,Commission Junction,A,Electronics,Technology,True,True,10.0,0.0,7.69,76.88,0.0,1.0,1.0,False
-norton,25.0,%,7.85,up_to_%,21.0,up_to_%,12.5,up_to_%,12.5,up_to_%,21.0,-4.0,OK,2026-04-15,,,,,,,,,,,,,,
-Dedoles,8.0,%,,not_found,2.4,%,4.0,up_to_%,,not_found,4.0,-4.0,OK,2026-04-15,,,,,,,,,,,,,,
-Parfumdreams,12.0,%,7.85,up_to_%,3.6,up_to_%,5.0,up_to_%,5.0,up_to_%,7.85,-4.15,OK,2026-04-15,,,,,,,,,,,,,,
-Skechers,8.5,%,,not_found,,zł,4.25,up_to_%,,no cashback,4.25,-4.25,OK,2026-04-15,,,,,,,,,,,,,,
-Sinsay,10.0,%,5.0,%,3.0,%,5.0,up_to_%,5.0,up_to_%,5.0,-5.0,OK,2026-04-15,No Affiliate Network,AA+,Fashion,Fashion,True,False,8.0,0.67,3.27,40.89,2.6,1.0,1.0,False
-Empik Foto,10.0,%,5.0,up_to_%,,zł,5.0,up_to_%,5.0,up_to_%,5.0,-5.0,OK,2026-04-15,,,,,,,,,,,,,,
-Petkarma,10.0,%,,not_found,,not_found,5.0,up_to_%,,no cashback,5.0,-5.0,OK,2026-04-15,Commission Junction,F,Pets,Lifestyle,True,True,5.0,0.0,8.72,174.38,8.72,1.0,1.0,False
-AliExpress,10.0,%,5.0,up_to_%,,zł,5.0,up_to_%,4.5,up_to_%,5.0,-5.0,OK,2026-04-15,AWIN,AAA,Multi-Departments,Multi-Category,True,True,5.22,267.12,439.78,8423.53,172.65,9288.0,12.0,False
-Legimi,15.0,%,7.5,up_to_%,4.8,%,7.5,up_to_%,9.2,up_to_%,9.2,-5.8,OK,2026-04-15,AWIN,A,Entertainment,Lifestyle,True,True,866.3,0.0,247.06,4.1,247.06,436.0,5.0,False
-Bibliotheque De Parfum,12.0,%,,not_found,3.6,%,6.0,up_to_%,,not_found,6.0,-6.0,OK,2026-04-15,,,,,,,,,,,,,,
-Dermacol,8.0,%,,not_found,,not_found,2.0,up_to_%,,not_found,2.0,-6.0,OK,2026-04-15,Commission Junction,F,not_attributed,not_attributed,True,True,4.0,-4.91,6.98,174.54,11.9,4.0,4.0,True
-Euroflorist,12.0,%,2.5,up_to_%,3.6,%,6.0,up_to_%,6.0,%,6.0,-6.0,OK,2026-04-15,Tradedoubler,C,Unknown,Unknown,True,True,12.0,0.05,3.01,25.06,2.96,1.0,1.0,False
-RTV Euro AGD,10.0,%,3.5,up_to_%,,zł,3.0,up_to_%,1.54,up_to_%,3.5,-6.5,OK,2026-04-15,Tradedoubler,AAA,Electronics,Technology,True,True,2.66,-73.63,143.74,6669.1,217.37,106.0,7.0,True
-BeDiet,14.0,%,7.0,up_to_%,4.2,up_to_%,7.0,up_to_%,7.0,up_to_%,7.0,-7.0,OK,2026-04-15,,,,,,,,,,,,,,
-Bricomarche,15.0,%,7.85,up_to_%,,zł,3.2,up_to_%,2.4,%,7.85,-7.15,OK,2026-04-15,Tradedoubler,B,Food & Drink,Lifestyle,True,True,6.08,3.46,31.66,589.69,28.2,11.0,5.0,False
-AirHelp,20.0,%,2.5,up_to_%,4.5,%,12.5,up_to_%,10.0,up_to_%,12.5,-7.5,OK,2026-04-15,Commission Junction,F,not_attributed,not_attributed,True,True,20.0,-9.67,19.33,96.66,29.0,1.0,1.0,True
-Byrokko,14.0,%,,not_found,,not_found,4.5,up_to_%,6.5,up_to_%,6.5,-7.5,OK,2026-04-15,Commission Junction,D,Health & Beauty,Multi-Category,True,True,17.0,31.22,37.9,222.97,6.69,1.0,1.0,False
-SHEIN,18.0,%,5.0,up_to_%,6.0,up_to_%,7.5,up_to_%,10.0,up_to_%,10.0,-8.0,OK,2026-04-15,Commission Junction,A,Fashion,Fashion,True,True,3.86,-6.91,26.26,617.42,33.16,139.0,8.0,True
-Foreo,20.0,%,7.85,up_to_%,6.9,%,3.75,up_to_%,3.75,%,7.85,-12.15,OK,2026-04-15,,,,,,,,,,,,,,
-Answear,15.0,%,2.0,up_to_%,1.2,up_to_%,1.75,up_to_%,2.5,%,2.5,-12.5,OK,2026-04-15,AWIN,AAA,Fashion,Fashion,True,True,3.54,56.47,154.21,4324.54,97.74,25.0,7.0,False
-Empik,20.0,%,6.25,up_to_%,,zł,6.25,up_to_%,7.5,up_to_%,7.5,-12.5,OK,2026-04-15,Tradedoubler,AAA,Multi-Departments,Multi-Category,True,True,2.41,-127.08,31.2,1875.16,158.27,169.0,9.0,True
-zooplus,15.0,%,1.5,up_to_%,0.6,up_to_%,1.5,up_to_%,1.5,up_to_%,1.5,-13.5,OK,2026-04-15,Tradedoubler,A+,Pets,Lifestyle,True,True,2.06,-137.15,343.76,13883.43,480.91,509.0,10.0,True
-MediaMarkt,18.0,%,3.5,up_to_%,1.8,up_to_%,3.0,up_to_%,3.0,up_to_%,3.5,-14.5,OK,2026-04-15,Tradedoubler,AAA,Electronics,Technology,True,True,2.19,-49.24,44.34,2104.24,93.58,57.0,8.0,True
-Sephora,20.0,%,4.5,up_to_%,3.3,up_to_%,3.0,up_to_%,4.5,up_to_%,4.5,-15.5,OK,2026-04-15,AWIN,A,Fashion,Fashion,True,True,3.35,-2.5,4.28,126.45,6.78,18.0,8.0,True
-NordVPN,40.0,%,20.0,up_to_%,13.2,%,21.97,up_to_%,20.0,%,21.97,-18.03,OK,2026-04-15,AWIN,B,Connectivity - Telco,Services,True,True,40.0,0.0,24.54,61.36,24.54,2.0,2.0,False
-Douglas,25.0,%,5.0,up_to_%,3.0,up_to_%,4.0,up_to_%,4.0,up_to_%,5.0,-20.0,OK,2026-04-15,AWIN,A,Health & Beauty,Multi-Category,True,True,7.12,-4.28,16.11,179.66,20.39,9.0,4.0,True
-Temu,40.0,%,7.85,up_to_%,16.0,up_to_%,7.5,up_to_%,16.0,up_to_%,16.0,-24.0,OK,2026-04-15,Impact Radius,AAA,Multi-Departments,Multi-Category,True,True,12.16,106.0,960.72,6255.29,854.71,2734.0,9.0,False
-Bee.pl,,no cashback,7.85,up_to_%,,not_found,,not_found,,not_found,7.85,,OK,2026-04-15,,,,,,,,,,,,,,
-Broń.pl,,no cashback,,not_found,2.7,%,,not_found,,not_found,2.7,,OK,2026-04-15,No Affiliate Network,F,not_attributed,not_attributed,True,False,8.0,0.27,360.85,4510.6,360.58,16.0,3.0,False
-Canal Plus,,no cashback,2.5,up_to_%,,not_found,,not_found,,not_found,2.5,,OK,2026-04-15,,,,,,,,,,,,,,
-DHL,,no cashback,,zł,,zł,5.0,up_to_%,,no cashback,5.0,,OK,2026-04-15,Tradedoubler,B,Utilities,Services,True,True,6.8,0.7,1.4,20.67,0.7,2.0,1.0,False
-Ecco,,no cashback,7.85,up_to_%,1.5,%,1.0,up_to_%,2.5,up_to_%,7.85,,OK,2026-04-15,,,,,,,,,,,,,,
-Eurofirany,,no cashback,7.85,up_to_%,1.7,%,2.85,up_to_%,2.85,%,7.85,,OK,2026-04-15,No Affiliate Network,C,Home & Garden,Multi-Category,True,False,5.0,-0.32,101.26,2031.72,101.59,2.0,1.0,True
-FotoForma,,zł,,not_found,0.8,%,1.25,up_to_%,1.5,%,1.5,,OK,2026-04-15,Tradedoubler,B,Utilities,Services,True,True,2.5,2.78,268.03,10721.34,265.26,3.0,1.0,False
-Gabriella,,no cashback,7.85,up_to_%,1.1,%,2.5,up_to_%,,no cashback,7.85,,OK,2026-04-15,No Affiliate Network,D,Fashion,Fashion,True,False,4.5,0.0,0.98,21.82,0.98,1.0,1.0,False
-Herbapol,,no cashback,,not_found,,not_found,,no cashback,,no cashback,,,OK,2026-04-15,,,,,,,,,,,,,,
-Kazar,,no cashback,7.85,up_to_%,1.1,up_to_%,,not_found,,no cashback,7.85,,OK,2026-04-15,No Affiliate Network,AA,Fashion,Fashion,True,False,6.5,0.0,400.66,6164.0,400.66,3.0,1.0,False
-Konesso,,no cashback,2.5,up_to_%,1.2,up_to_%,5.0,up_to_%,,no cashback,5.0,,OK,2026-04-15,No Affiliate Network,A+,Food & Drink,Lifestyle,True,False,3.2,-6.1,27.8,915.62,33.9,8.0,4.0,True
-Król Materacy,,no cashback,,not_found,,not_found,4.0,up_to_%,,not_found,4.0,,OK,2026-04-15,No Affiliate Network,F,not_attributed,not_attributed,True,False,8.0,0.0,61.87,773.4,61.87,2.0,1.0,False
-lionelo,,no cashback,7.85,up_to_%,2.4,%,3.0,up_to_%,3.0,%,7.85,,OK,2026-04-15,No Affiliate Network,D,not_attributed,not_attributed,True,False,6.0,224.27,842.91,14048.29,618.64,32.0,3.0,False
-Merkury Market,,zł,7.85,up_to_%,1.2,up_to_%,1.75,up_to_%,,no cashback,7.85,,OK,2026-04-15,Tradetracker,A+,Home & Garden,Multi-Category,True,True,3.5,1.47,166.28,4750.86,128.86,16.0,4.0,False
-Morele.net,,no cashback,7.85,up_to_%,,zł,5.0,up_to_%,0.25,%,7.85,,OK,2026-04-15,,,,,,,,,,,,,,
-Novakid,,no cashback,5.0,up_to_%,10.0,up_to_%,5.0,up_to_%,,no cashback,10.0,,OK,2026-04-15,Commission Junction,C,Baby & Child,Multi-Category,True,True,0.0,0.0,0.0,0.0,0.0,2.0,1.0,False
-Ombre,,no cashback,7.85,up_to_%,2.7,up_to_%,4.56,up_to_%,,no cashback,7.85,,OK,2026-04-15,,,,,,,,,,,,,,
-Play,,no cashback,,zł,,zł,5.0,up_to_%,,no cashback,5.0,,OK,2026-04-15,Tradedoubler,C,Connectivity - Telco,Services,True,True,234.4,-0.61,116.64,49.76,117.25,2.0,1.0,True
-Radisson Hotels,,zł,4.0,up_to_%,2.1,%,2.0,up_to_%,2.0,up_to_%,4.0,,OK,2026-04-15,Tradedoubler,F,Hotel & Accommodations,Travel,True,True,8.0,-0.08,61.18,764.79,61.26,2.0,1.0,True
-SkyShowtime,,zł,,zł,,zł,5.0,up_to_%,,no cashback,5.0,,OK,2026-04-15,AWIN,F,not_attributed,not_attributed,True,True,132.6,-150.04,159.86,86.19,309.9,25.0,2.0,True
-Stradivarius,,no cashback,3.0,up_to_%,1.8,up_to_%,3.0,up_to_%,2.5,%,3.0,,OK,2026-04-15,,,,,,,,,,,,,,
-Surfshark,,no cashback,7.85,up_to_%,12.0,%,20.0,up_to_%,20.0,%,20.0,,OK,2026-04-15,,,,,,,,,,,,,,
-Top Secret,,no cashback,7.85,up_to_%,2.1,%,5.0,up_to_%,,no cashback,7.85,,OK,2026-04-15,No Affiliate Network,C,Fashion,Fashion,True,False,7.0,0.0,24.78,354.08,24.78,2.0,2.0,False
-Wolt,,zł,2.5,up_to_%,,not_found,,no cashback,,no cashback,2.5,,OK,2026-04-15,No Affiliate Network,A,Food & Drink,Lifestyle,True,False,14.1,-0.3,2.18,17.76,2.48,4.0,4.0,True
-x-kom,,no cashback,0.65,%,,not_found,,no cashback,0.63,%,0.65,,OK,2026-04-15,,,,,,,,,,,,,,
-4Home,,no cashback,7.85,up_to_%,,not_found,,no cashback,,no cashback,7.85,,OK,2026-04-15,No Affiliate Network,D,Multi-Departments,Multi-Category,True,False,6.0,-0.63,125.93,2098.69,126.56,3.0,1.0,True
+DHgate,2.0,%,25.0,up_to_%,15.3,up_to_%,25.5,up_to_%,1.75,%,25.5,23.5,LOWER,2026-04-16,,,,,,,,,,,,,,
+OleOle!,1.0,%,7.85,up_to_%,9.0,up_to_%,5.0,up_to_%,2.0,up_to_%,9.0,8.0,LOWER,2026-04-16,Tradedoubler,A+,Electronics,Technology,True,True,2.14,116.13,312.05,14461.91,195.91,18.0,5.0,False
+LEGO,3.0,%,7.85,up_to_%,10.0,%,5.0,up_to_%,3.5,up_to_%,10.0,7.0,LOWER,2026-04-16,Rakuten,A+,Entertainment,Lifestyle,True,True,4.0,3.8,7.02,122.69,3.18,6.0,4.0,False
+Cropp,4.0,%,7.85,up_to_%,10.0,%,3.5,up_to_%,3.0,%,10.0,6.0,LOWER,2026-04-16,Commission Junction,A,Fashion,Fashion,True,True,6.4,0.47,5.76,89.56,4.48,12.0,4.0,False
+Sferis,1.6,%,7.5,up_to_%,,not_found,7.5,up_to_%,7.5,up_to_%,7.5,5.9,LOWER,2026-04-16,Tradedoubler,AA+,Electronics,Technology,True,True,1.9,-0.81,45.5,2221.16,46.3,5.0,3.0,True
+Krakvet,2.0,%,7.85,up_to_%,0.6,up_to_%,1.4,up_to_%,2.0,%,7.85,5.85,LOWER,2026-04-16,Tradedoubler,B,Pets,Lifestyle,True,True,4.0,-7.46,9.86,246.6,17.32,5.0,2.0,True
+Brasty,2.0,%,7.85,up_to_%,1.8,up_to_%,1.0,up_to_%,,no cashback,7.85,5.85,LOWER,2026-04-16,Commission Junction,B,Health & Beauty,Multi-Category,True,True,1.5,0.5,82.93,4235.18,82.33,10.0,4.0,False
+Max Elektro,2.0,%,7.85,up_to_%,0.6,%,1.0,up_to_%,1.0,%,7.85,5.85,LOWER,2026-04-16,Tradedoubler,B,Appliance,Technology,True,True,4.0,22.62,94.36,2358.83,71.74,6.0,5.0,False
+LG,2.5,%,7.85,up_to_%,0.8,up_to_%,1.0,up_to_%,1.25,%,7.85,5.35,LOWER,2026-04-16,AWIN,B,Appliance,Technology,True,True,2.0,-3.01,12.02,601.06,15.03,3.0,3.0,True
+Remix,12.25,%,7.85,up_to_%,,not_found,17.5,up_to_%,,not_found,17.5,5.25,LOWER,2026-04-16,Webgains,D,Fashion,Fashion,True,True,4.5,0.0,4.61,102.42,4.61,1.0,1.0,False
+VidaXL,2.9,%,7.85,up_to_%,,not_found,2.5,up_to_%,2.0,%,7.85,4.95,LOWER,2026-04-16,Tradetracker,B,Health & Beauty,Multi-Category,True,True,2.9,0.0,2.29,78.95,2.29,1.0,1.0,False
+BasicLab,3.0,%,7.85,up_to_%,1.2,%,2.0,up_to_%,,not_found,7.85,4.85,LOWER,2026-04-16,AWIN,B,Health & Beauty,Multi-Category,True,True,3.0,0.0,62.36,2078.68,62.36,7.0,4.0,False
+iHerb,3.0,%,7.85,up_to_%,1.5,%,0.5,up_to_%,2.0,up_to_%,7.85,4.85,LOWER,2026-04-16,Admitad,D,Health & Beauty,Multi-Category,True,True,6.14,-5.99,11.33,169.35,17.32,12.0,5.0,True
+Michael Kors,3.0,%,7.85,up_to_%,0.9,%,1.5,up_to_%,,no cashback,7.85,4.85,LOWER,2026-04-16,,,,,,,,,,,,,,
+Tagomago,3.0,%,7.85,up_to_%,,not_found,2.5,up_to_%,2.5,%,7.85,4.85,LOWER,2026-04-16,Admitad,B,Health & Beauty,Multi-Category,True,True,4.6,-0.17,1.81,36.34,1.98,2.0,2.0,True
+7way,3.5,%,7.85,up_to_%,,not_found,1.75,up_to_%,1.75,%,7.85,4.35,LOWER,2026-04-16,,,,,,,,,,,,,,
+Reporter Young,3.5,%,7.85,up_to_%,,not_found,1.5,up_to_%,,not_found,7.85,4.35,LOWER,2026-04-16,,,,,,,,,,,,,,
+Victoria's Secret,3.5,%,7.85,up_to_%,,not_found,2.0,up_to_%,,not_found,7.85,4.35,LOWER,2026-04-16,Webgains,B,Fashion,Fashion,True,True,4.0,0.05,0.4,9.93,0.35,1.0,1.0,False
+4kidspoint,3.5,%,7.85,up_to_%,,not_found,1.75,up_to_%,,no cashback,7.85,4.35,LOWER,2026-04-16,,,,,,,,,,,,,,
+iParts,3.5,%,7.85,up_to_%,1.1,%,1.75,up_to_%,,no cashback,7.85,4.35,LOWER,2026-04-16,Tradetracker,D,Automotive,Lifestyle,True,True,3.5,0.0,5.69,162.49,5.69,2.0,2.0,False
+Cobi,3.5,%,7.85,up_to_%,,zł,1.75,up_to_%,,no cashback,7.85,4.35,LOWER,2026-04-16,,,,,,,,,,,,,,
+Cocolita,3.5,%,7.85,up_to_%,1.4,%,,no cashback,2.25,%,7.85,4.35,LOWER,2026-04-16,Tradedoubler,B,Health & Beauty,Multi-Category,True,True,5.7,32.88,60.82,1146.99,27.94,9.0,4.0,False
+Perfumeria,3.84,%,7.85,up_to_%,,not_found,2.5,up_to_%,1.92,%,7.85,4.01,LOWER,2026-04-16,,,,,,,,,,,,,,
+Neness,6.0,%,10.0,up_to_%,6.0,up_to_%,10.0,up_to_%,10.0,up_to_%,10.0,4.0,LOWER,2026-04-16,,,,,,,,,,,,,,
+AXA Partners,6.0,%,,not_found,6.0,%,10.0,up_to_%,10.0,%,10.0,4.0,LOWER,2026-04-16,,,,,,,,,,,,,,
+Baseus,4.0,%,7.85,up_to_%,1.2,%,,no cashback,,not_found,7.85,3.85,LOWER,2026-04-16,Admitad,D,Electronics,Technology,True,True,4.0,2.51,14.92,372.85,12.4,2.0,1.0,False
+Dyson,4.0,%,7.85,up_to_%,1.4,%,2.4,up_to_%,2.0,%,7.85,3.85,LOWER,2026-04-16,Tradedoubler,AA+,Electronics,Technology,True,True,0.0,0.0,0.0,0.0,0.0,3.0,3.0,False
+Bonprix,4.0,%,7.85,up_to_%,1.2,%,2.5,up_to_%,3.0,up_to_%,7.85,3.85,LOWER,2026-04-16,Tradedoubler,C,Fashion,Fashion,True,True,4.0,-0.36,0.75,18.86,1.12,1.0,1.0,True
+Bricomarche,4.0,%,7.85,up_to_%,,zł,3.2,up_to_%,2.4,%,7.85,3.85,LOWER,2026-04-16,Tradedoubler,B,Food & Drink,Lifestyle,True,True,6.08,3.46,31.66,589.69,28.2,11.0,5.0,False
+Fera,4.0,%,7.85,up_to_%,1.2,%,2.0,up_to_%,2.0,%,7.85,3.85,LOWER,2026-04-16,AWIN,D,Pets,Lifestyle,True,True,4.0,0.0,1.1,27.51,1.1,1.0,1.0,False
+Electrolux,4.0,%,7.85,up_to_%,1.2,%,2.0,up_to_%,2.0,%,7.85,3.85,LOWER,2026-04-16,Tradedoubler,A,Appliance,Technology,True,True,4.24,37.13,389.36,8883.48,352.24,10.0,5.0,False
+Ninja,4.0,%,7.85,up_to_%,,not_found,2.5,up_to_%,5.0,%,7.85,3.85,LOWER,2026-04-16,AWIN,F,Home & Garden,Multi-Category,True,True,7.62,243.58,299.4,3533.24,55.82,11.0,6.0,False
+Vans,4.0,%,7.85,up_to_%,,not_found,,no cashback,5.0,%,7.85,3.85,LOWER,2026-04-16,,,,,,,,,,,,,,
+Ryobi,4.0,%,7.85,up_to_%,,not_found,2.0,up_to_%,6.0,up_to_%,7.85,3.85,LOWER,2026-04-16,,,,,,,,,,,,,,
+Teufel,4.0,%,7.85,up_to_%,,not_found,4.0,up_to_%,2.0,%,7.85,3.85,LOWER,2026-04-16,Rakuten,B,Electronics,Technology,True,True,4.0,0.0,47.54,1188.58,47.54,2.0,2.0,False
+Castorama,4.0,%,7.85,up_to_%,1.2,%,2.0,up_to_%,2.5,%,7.85,3.85,LOWER,2026-04-16,Admitad,D,Home & Garden,Multi-Category,True,True,4.0,1.74,63.36,1583.96,61.61,13.0,6.0,False
+Greenpoint,4.0,%,7.85,up_to_%,1.2,%,2.0,up_to_%,4.0,%,7.85,3.85,LOWER,2026-04-16,Webgains,B,Fashion,Fashion,True,True,8.0,11.6,27.29,341.1,15.69,8.0,5.0,False
+Crocs,4.0,%,7.85,up_to_%,1.2,%,2.0,up_to_%,,no cashback,7.85,3.85,LOWER,2026-04-16,AWIN,C,Footwear,Fashion,True,True,4.0,0.0,34.64,865.98,34.64,2.0,1.0,False
+Drogeria.pl,4.5,%,7.85,up_to_%,,zł,,not_found,2.25,%,7.85,3.35,LOWER,2026-04-16,Tradedoubler,F,not_attributed,not_attributed,True,True,5.12,4.08,52.42,1087.8,48.34,8.0,4.0,False
+Diablo Chairs,4.5,%,7.85,up_to_%,2.1,up_to_%,3.75,up_to_%,2.25,%,7.85,3.35,LOWER,2026-04-16,Commission Junction,A+,Home & Garden,Multi-Category,True,True,5.17,0.0,225.15,4639.75,225.15,7.0,3.0,False
+Decathlon,4.5,%,7.85,up_to_%,1.4,up_to_%,4.0,up_to_%,2.5,%,7.85,3.35,LOWER,2026-04-16,Webgains,A+,Sport Fashion,Fashion,True,True,2.31,-16.39,6.31,271.64,22.7,18.0,7.0,True
+Homla,4.8,%,7.85,up_to_%,,zł,2.0,up_to_%,2.0,%,7.85,3.05,LOWER,2026-04-16,Tradedoubler,A,Home & Garden,Multi-Category,True,True,4.8,0.02,4.17,86.8,4.15,6.0,4.0,False
+Orange,2.11,%,,zł,,not_found,5.0,up_to_%,1.06,up_to_%,5.0,2.89,LOWER,2026-04-16,Tradedoubler,A+,Connectivity - Telco,Services,True,True,31044.5,4.54,307.24,1.08,302.69,10.0,2.0,False
+Giacomo Conti,5.0,%,7.85,up_to_%,3.0,%,4.0,up_to_%,5.0,%,7.85,2.85,LOWER,2026-04-16,Tradetracker,B,Fashion,Fashion,True,True,5.0,0.0,155.06,3101.1,155.06,5.0,3.0,False
+G2A,5.0,%,7.85,up_to_%,,not_found,1.15,up_to_%,1.35,%,7.85,2.85,LOWER,2026-04-16,AWIN,A,Online Gaming,Technology,True,True,4.1,-0.52,2.33,56.87,2.84,12.0,4.0,True
+Levi's,5.0,%,7.85,up_to_%,1.5,up_to_%,2.5,up_to_%,,not_found,7.85,2.85,LOWER,2026-04-16,,,,,,,,,,,,,,
+Perfumy.pl,5.0,%,7.85,up_to_%,,not_found,3.0,up_to_%,2.8,%,7.85,2.85,LOWER,2026-04-16,AWIN,B,Health & Beauty,Multi-Category,True,True,5.7,6.54,54.66,962.24,48.11,1.0,1.0,False
+Recman,5.0,%,7.85,up_to_%,,not_found,,not_found,2.5,%,7.85,2.85,LOWER,2026-04-16,,,,,,,,,,,,,,
+Born2Be,5.0,%,7.85,up_to_%,1.8,%,3.0,up_to_%,3.0,%,7.85,2.85,LOWER,2026-04-16,Tradedoubler,B,Fashion,Fashion,True,True,6.14,3.96,34.89,578.12,30.93,12.0,5.0,False
+Acer,5.0,%,7.85,up_to_%,2.1,%,2.5,up_to_%,4.0,up_to_%,7.85,2.85,LOWER,2026-04-16,AWIN,C,Electronics,Technology,True,True,8.5,2.02,4.91,57.75,2.89,1.0,1.0,False
+Bezpieczna Rodzina,5.0,%,7.85,up_to_%,,not_found,,no cashback,,no cashback,7.85,2.85,LOWER,2026-04-16,,,,,,,,,,,,,,
+OBI,5.0,%,7.85,up_to_%,1.5,%,2.5,up_to_%,2.5,up_to_%,7.85,2.85,LOWER,2026-04-16,Commission Junction,A,Home & Garden,Multi-Category,True,True,5.0,6.71,46.05,920.94,39.34,17.0,4.0,False
+NAOKO,5.0,%,7.85,up_to_%,1.7,%,2.8,up_to_%,2.8,%,7.85,2.85,LOWER,2026-04-16,,,,,,,,,,,,,,
+Yves Rocher,5.0,%,7.85,up_to_%,,not_found,2.5,up_to_%,2.5,%,7.85,2.85,LOWER,2026-04-16,Commission Junction,C,Health & Beauty,Multi-Category,True,True,5.0,0.0,2.5,50.14,2.5,2.0,2.0,False
+Regatta,5.0,%,7.85,up_to_%,,not_found,2.5,up_to_%,2.5,%,7.85,2.85,LOWER,2026-04-16,Webgains,C,Sport Fashion,Fashion,True,True,9.9,-4.35,519.64,5239.91,523.99,12.0,1.0,True
+Drop,5.38,%,7.85,up_to_%,1.6,%,,not_found,,not_found,7.85,2.47,LOWER,2026-04-16,,,,,,,,,,,,,,
+ALAB Laboratoria,6.0,%,7.85,up_to_%,1.9,%,3.12,up_to_%,3.12,%,7.85,1.85,LOWER,2026-04-16,Tradedoubler,B,Health & Beauty,Multi-Category,True,True,6.2,0.16,2.99,47.98,2.83,1.0,1.0,False
+Vision Express,6.0,%,7.85,up_to_%,,not_found,3.0,up_to_%,3.0,%,7.85,1.85,LOWER,2026-04-16,Tradetracker,B,Bags & Accessories,Fashion,True,True,5.25,-0.33,1.62,33.39,1.94,4.0,4.0,True
+DeLonghi,6.0,%,7.85,up_to_%,1.8,%,3.0,up_to_%,3.0,%,7.85,1.85,LOWER,2026-04-16,Tradedoubler,B,Appliance,Technology,True,True,6.0,1.68,37.7,628.27,36.02,5.0,2.0,False
+Bricoman,6.0,%,7.85,up_to_%,,not_found,,no cashback,,no cashback,7.85,1.85,LOWER,2026-04-16,,,,,,,,,,,,,,
+MebleMWM,6.0,%,7.85,up_to_%,1.9,%,3.2,up_to_%,,no cashback,7.85,1.85,LOWER,2026-04-16,Tradedoubler,D,Home & Garden,Multi-Category,True,True,6.4,671.44,1271.63,19869.19,600.19,42.0,6.0,False
+Under Armour,6.0,%,7.85,up_to_%,,not_found,4.0,up_to_%,3.0,%,7.85,1.85,LOWER,2026-04-16,,,,,,,,,,,,,,
+Kenwood,6.0,%,7.85,up_to_%,,not_found,3.0,up_to_%,,no cashback,7.85,1.85,LOWER,2026-04-16,,,,,,,,,,,,,,
+GOG,6.0,%,7.85,up_to_%,1.9,%,3.1,up_to_%,3.0,%,7.85,1.85,LOWER,2026-04-16,Commission Junction,B,Online Gaming,Technology,True,True,6.0,0.01,1.04,17.31,0.77,6.0,3.0,False
+Renee,6.0,%,7.85,up_to_%,,not_found,3.0,up_to_%,5.0,%,7.85,1.85,LOWER,2026-04-16,Tradedoubler,B,Fashion,Fashion,True,True,6.0,0.2,17.56,292.64,17.36,8.0,4.0,False
+Streetstyle24,6.0,%,7.85,up_to_%,,not_found,3.46,up_to_%,3.46,%,7.85,1.85,LOWER,2026-04-16,AWIN,C,Bags & Accessories,Fashion,True,True,6.9,89.88,456.69,6599.56,366.81,11.0,3.0,False
+Mountain Warehouse,6.0,%,7.85,up_to_%,1.8,%,3.0,up_to_%,3.0,%,7.85,1.85,LOWER,2026-04-16,AWIN,B,Fashion,Fashion,True,True,6.0,0.0,8.67,144.46,8.67,1.0,1.0,False
+PRM,6.0,%,7.85,up_to_%,,not_found,2.0,up_to_%,,not_found,7.85,1.85,LOWER,2026-04-16,Commission Junction,B,Fashion,Fashion,True,True,10.0,10.54,28.73,287.31,18.19,5.0,3.0,False
+Puma,6.0,%,7.85,up_to_%,,not_found,1.0,up_to_%,2.0,up_to_%,7.85,1.85,LOWER,2026-04-16,Commission Junction,B,Sport Fashion,Fashion,True,True,6.0,0.0,155.05,2584.07,155.05,2.0,2.0,False
+Medicine,6.0,%,7.85,up_to_%,1.8,%,3.0,up_to_%,,not_found,7.85,1.85,LOWER,2026-04-16,AWIN,D,Fashion,Fashion,True,True,6.0,1.59,4.76,79.37,3.17,8.0,4.0,False
+iBOOD,1.0,%,,not_found,1.2,up_to_%,2.0,up_to_%,2.0,up_to_%,2.0,1.0,LOWER,2026-04-16,Webgains,B,Multi-Departments,Multi-Category,True,True,2.33,3.18,4.31,140.35,0.59,5.0,3.0,False
+Shark,4.0,%,3.0,up_to_%,,not_found,2.5,up_to_%,5.0,%,5.0,1.0,LOWER,2026-04-16,AWIN,F,Home & Garden,Multi-Category,True,True,7.5,212.28,320.84,4874.01,108.56,3.0,2.0,False
+Xiaomi,2.0,%,3.0,up_to_%,,not_found,1.5,up_to_%,2.5,%,3.0,1.0,LOWER,2026-04-16,,,,,,,,,,,,,,
+Van Graaf,7.0,%,7.85,up_to_%,,not_found,5.0,up_to_%,,no cashback,7.85,0.85,LOWER,2026-04-16,Tradedoubler,D,Fashion,Fashion,True,True,9.75,8.54,99.76,1068.77,91.22,4.0,4.0,False
+NEONAIL,7.0,%,7.85,up_to_%,2.1,%,3.5,up_to_%,3.5,%,7.85,0.85,LOWER,2026-04-16,AWIN,C,Health & Beauty,Multi-Category,True,True,7.0,0.0,1.34,19.15,1.34,1.0,1.0,False
+Eveline,7.0,%,7.85,up_to_%,2.1,%,,not_found,,not_found,7.85,0.85,LOWER,2026-04-16,Tradedoubler,C,Health & Beauty,Multi-Category,True,True,7.0,-0.09,124.03,1771.87,124.12,8.0,4.0,True
+Estro,7.0,%,7.85,up_to_%,2.1,%,3.5,up_to_%,3.5,%,7.85,0.85,LOWER,2026-04-16,Commission Junction,F,Fashion,Fashion,True,True,7.0,0.0,20.65,295.02,18.14,2.0,2.0,False
+Philips Hue,7.0,%,7.85,up_to_%,,not_found,3.5,up_to_%,3.5,%,7.85,0.85,LOWER,2026-04-16,,,,,,,,,,,,,,
+Philips,7.0,%,7.85,up_to_%,,not_found,2.5,up_to_%,5.0,%,7.85,0.85,LOWER,2026-04-16,Tradedoubler,D,Appliance,Technology,True,True,3.5,12.69,14.42,412.04,1.73,4.0,1.0,False
+Nike,7.0,%,7.85,up_to_%,,not_found,5.0,up_to_%,,no cashback,7.85,0.85,LOWER,2026-04-16,No Affiliate Network,A+,Sport Fashion,Fashion,True,False,3.0,-8.71,8.09,269.7,16.8,15.0,4.0,True
+eBilet,1.0,%,1.7,up_to_%,,zł,0.4,up_to_%,0.4,%,1.7,0.7,LOWER,2026-04-16,Tradedoubler,C,Entertainment,Lifestyle,True,True,1.4,0.37,1.41,103.39,1.04,1.0,1.0,False
+Lidl,1.0,%,1.0,%,1.7,%,,no cashback,0.5,up_to_%,1.7,0.7,LOWER,2026-04-16,Tradedoubler,D,Food & Drink,Lifestyle,True,True,1.0,-90.94,10.06,1005.96,101.0,18.0,4.0,True
+Stylevana,7.19,%,7.85,up_to_%,,not_found,3.6,up_to_%,,not_found,7.85,0.66,LOWER,2026-04-16,Admitad,F,not_attributed,not_attributed,True,True,7.2,0.0,7.99,111.27,0.0,1.0,1.0,False
+Pyszne.pl,2.0,%,2.5,up_to_%,,not_found,1.5,up_to_%,1.5,up_to_%,2.5,0.5,LOWER,2026-04-16,AWIN,AA,Food & Drink,Lifestyle,True,True,3.34,-49.81,9.81,299.59,59.62,120.0,8.0,True
+Ceneo,1.0,%,,not_found,,zł,1.32,up_to_%,,not_found,1.32,0.32,LOWER,2026-04-16,Tradedoubler,B,Multi-Departments,Multi-Category,True,True,50.9,7.74,14.72,708.64,6.98,33.0,4.0,False
+Allegro,1.9,%,1.7,up_to_%,,zł,2.2,up_to_%,2.2,up_to_%,2.2,0.3,LOWER,2026-04-16,Admitad,AA,Multi-Departments,Multi-Category,True,True,1.74,-983.82,449.32,26335.38,1433.14,17234.0,12.0,True
+Vobis,1.5,%,1.75,up_to_%,,not_found,1.5,up_to_%,1.75,up_to_%,1.75,0.25,LOWER,2026-04-16,Tradedoubler,A,Electronics,Technology,True,True,4.62,-0.03,113.42,2679.38,65.48,4.0,4.0,True
+Desigual,7.7,%,7.85,up_to_%,,zł,4.36,up_to_%,3.85,%,7.85,0.15,LOWER,2026-04-16,,,,,,,,,,,,,,
+Huawei,3.5,%,3.2,up_to_%,,zł,3.46,up_to_%,3.6,up_to_%,3.6,0.1,LOWER,2026-04-16,Tradedoubler,B,Electronics,Technology,True,True,3.8,0.58,6.37,165.83,5.79,1.0,1.0,False
+Modivo,4.0,%,3.5,up_to_%,,zł,4.0,up_to_%,4.0,up_to_%,4.0,0.0,OK,2026-04-16,Tradedoubler,AA+,Fashion,Fashion,True,True,5.24,-0.66,13.15,291.9,13.81,21.0,7.0,True
+zooplus,1.5,%,1.5,up_to_%,,not_found,1.5,up_to_%,1.5,up_to_%,1.5,0.0,OK,2026-04-16,Tradedoubler,A+,Pets,Lifestyle,True,True,2.06,-137.15,343.76,13883.43,480.91,509.0,10.0,True
+Lookfantastic,5.0,%,5.0,up_to_%,3.0,up_to_%,5.0,up_to_%,5.0,up_to_%,5.0,0.0,OK,2026-04-16,AWIN,C,Health & Beauty,Multi-Category,True,True,4.8,-0.44,2.2,45.38,2.64,2.0,1.0,True
+Cyfrowe.pl,2.0,%,,not_found,,zł,1.05,up_to_%,2.0,up_to_%,2.0,0.0,OK,2026-04-16,Tradetracker,B,Electronics,Technology,True,True,1.75,-5.93,62.57,3425.87,68.22,9.0,4.0,True
+Hebe,4.0,%,4.0,%,1.8,%,2.5,up_to_%,,no cashback,4.0,0.0,OK,2026-04-16,Tradedoubler,A,Health & Beauty,Multi-Category,True,True,6.21,-6.0,12.74,203.88,18.74,68.0,8.0,True
+Udemy,10.0,%,6.5,up_to_%,,not_found,10.0,up_to_%,,no cashback,10.0,0.0,OK,2026-04-16,Impact Radius,C,Business / Office,Technology,True,True,19.9,0.0,2.27,9.81,2.27,5.0,3.0,False
+Kinguin,5.0,%,,not_found,3.4,up_to_%,5.0,up_to_%,2.5,up_to_%,5.0,0.0,OK,2026-04-16,Admitad,A,Online Gaming,Technology,True,True,2.16,-4.61,1.93,88.5,6.54,37.0,7.0,True
+Senpo.pl,8.0,%,7.85,up_to_%,,not_found,,not_found,,not_found,7.85,-0.15,OK,2026-04-16,No Affiliate Network,F,Home & Garden,Multi-Category,True,False,9.6,-34.34,758.17,7916.93,792.51,14.0,3.0,True
+Lacoste,8.0,%,7.85,up_to_%,2.4,%,4.0,up_to_%,5.6,%,7.85,-0.15,OK,2026-04-16,,,,,,,,,,,,,,
+Pan Materac,8.0,%,7.85,up_to_%,,not_found,4.0,up_to_%,4.0,%,7.85,-0.15,OK,2026-04-16,Tradedoubler,AA,Home & Garden,Multi-Category,True,True,8.0,0.14,320.86,4010.79,320.72,11.0,6.0,False
+Colorland,8.0,%,7.85,up_to_%,3.5,%,5.75,up_to_%,5.75,%,7.85,-0.15,OK,2026-04-16,Tradetracker,A,Gifts & Flowers,Lifestyle,True,True,10.1,-1.68,2.82,28.55,2.86,4.0,3.0,True
+Converse,5.0,%,4.8,up_to_%,3.6,up_to_%,4.8,up_to_%,3.0,%,4.8,-0.2,OK,2026-04-16,,,,,,,,,,,,,,
+Ubisoft,0.5,%,,not_found,,not_found,,not_found,0.21,%,0.21,-0.29,OK,2026-04-16,,,,,,,,,,,,,,
+Eventim,2.0,%,1.7,up_to_%,,zł,1.0,up_to_%,1.0,%,1.7,-0.3,OK,2026-04-16,AWIN,C,Unknown,Unknown,True,True,2.0,1.07,4.92,245.62,3.84,5.0,2.0,False
+Samsung,3.0,%,2.5,up_to_%,,not_found,,not_found,2.5,up_to_%,2.5,-0.5,OK,2026-04-16,AWIN,A+,Appliance,Technology,True,True,4.5,5.06,49.92,1256.95,44.86,4.0,4.0,False
+Carrefour,3.0,%,2.5,up_to_%,,zł,1.5,up_to_%,1.75,%,2.5,-0.5,OK,2026-04-16,Admitad,A,Multi-Departments,Multi-Category,True,True,3.0,0.03,2.79,91.98,2.76,8.0,5.0,False
+Answear,3.0,%,2.0,up_to_%,1.2,up_to_%,1.75,up_to_%,2.5,%,2.5,-0.5,OK,2026-04-16,AWIN,AAA,Fashion,Fashion,True,True,3.54,56.47,154.21,4324.54,97.74,25.0,7.0,False
+Komputronik,1.5,%,1.0,%,0.5,%,0.95,up_to_%,0.75,%,1.0,-0.5,OK,2026-04-16,Admitad,B,Electronics,Technology,True,True,1.5,1.2,57.91,3831.6,56.72,4.0,2.0,False
+Alibaba,8.4,%,7.85,up_to_%,2.5,up_to_%,3.08,up_to_%,2.7,%,7.85,-0.55,OK,2026-04-16,Admitad,F,not_attributed,not_attributed,True,True,7.9,-1.26,9.88,125.65,11.14,3.0,1.0,True
+iDream,3.0,%,,not_found,1.3,up_to_%,2.17,up_to_%,,no cashback,2.17,-0.83,OK,2026-04-16,Tradetracker,A+,Electronics,Technology,True,True,2.6,-0.62,25.65,875.43,26.26,3.0,2.0,True
+Sun & Snow,4.5,%,2.25,up_to_%,,not_found,2.25,up_to_%,3.5,%,3.5,-1.0,OK,2026-04-16,Webgains,B,Tourism & Attraction,Travel,True,True,7.0,4.87,13.64,194.79,8.76,1.0,1.0,False
+Kiwi,3.0,%,2.0,up_to_%,,zł,1.5,up_to_%,,no cashback,2.0,-1.0,OK,2026-04-16,,,,,,,,,,,,,,
+Katalog Marzeń,2.8,%,1.7,up_to_%,0.8,%,,not_found,1.35,%,1.7,-1.1,OK,2026-04-16,Admitad,F,Gifts & Flowers,Lifestyle,True,True,2.8,0.0,1.11,39.61,0.72,2.0,2.0,False
+BIG STAR,9.0,%,7.85,up_to_%,0.6,%,3.0,up_to_%,3.0,%,7.85,-1.15,OK,2026-04-16,,,,,,,,,,,,,,
+Dstreet,9.0,%,7.85,up_to_%,2.7,%,4.5,up_to_%,4.5,%,7.85,-1.15,OK,2026-04-16,AWIN,B,Fashion,Fashion,True,True,9.0,0.0,144.98,1610.88,144.98,14.0,5.0,False
+Endo,9.0,%,7.85,up_to_%,2.7,%,4.5,up_to_%,4.5,%,7.85,-1.15,OK,2026-04-16,AWIN,D,Fashion,Fashion,True,True,9.0,0.0,45.0,499.96,45.0,1.0,1.0,False
+KFC,4.0,%,2.5,up_to_%,1.7,%,2.76,up_to_%,2.77,%,2.77,-1.23,OK,2026-04-16,Commission Junction,A,Food & Drink,Lifestyle,True,True,5.5,-0.15,2.37,42.77,2.51,12.0,5.0,True
+Znak,3.0,%,1.7,up_to_%,,not_found,1.6,up_to_%,1.6,%,1.7,-1.3,OK,2026-04-16,,,,,,,,,,,,,,
+Gamivo,4.0,%,1.7,up_to_%,0.8,%,2.5,up_to_%,2.5,%,2.5,-1.5,OK,2026-04-16,Commission Junction,D,Electronics,Technology,True,True,10.0,-518.84,80.76,807.59,597.84,37.0,2.0,True
+Eltrox,4.5,%,2.75,up_to_%,1.8,%,3.0,up_to_%,2.75,up_to_%,3.0,-1.5,OK,2026-04-16,Tradetracker,D,Electronics,Technology,True,True,4.5,0.0,48.18,1070.75,48.19,3.0,3.0,False
+Leo Express,4.0,%,,not_found,1.5,%,2.5,up_to_%,2.5,%,2.5,-1.5,OK,2026-04-16,Commission Junction,F,not_attributed,not_attributed,True,True,14.0,0.0,5.79,41.33,5.79,1.0,1.0,False
+Mamyito,4.5,%,2.5,up_to_%,,zł,2.8,up_to_%,2.4,%,2.8,-1.7,OK,2026-04-16,Tradedoubler,F,not_attributed,not_attributed,True,True,4.8,0.02,4.36,90.83,4.34,6.0,3.0,False
+eSky,3.5,%,1.75,up_to_%,1.1,%,1.75,up_to_%,1.75,%,1.75,-1.75,OK,2026-04-16,Admitad,D,Travel agencies,Travel,True,True,3.5,0.0,30.06,858.95,30.06,4.0,4.0,False
+CCC,5.0,%,3.25,up_to_%,2.0,up_to_%,3.25,up_to_%,3.25,up_to_%,3.25,-1.75,OK,2026-04-16,AWIN,A+,Footwear,Fashion,True,True,6.21,2.41,12.31,200.84,9.9,27.0,7.0,False
+home&you,6.5,%,3.25,up_to_%,1.2,up_to_%,,not_found,4.75,up_to_%,4.75,-1.75,OK,2026-04-16,Tradedoubler,A,Home & Garden,Multi-Category,True,True,6.42,2.9,35.9,560.74,32.99,26.0,4.0,False
+Olimp Store,4.0,%,,not_found,1.3,%,2.1,up_to_%,,no cashback,2.1,-1.9,OK,2026-04-16,Admitad,D,Health & Beauty,Multi-Category,True,True,4.2,0.0,1.51,36.03,0.0,1.0,1.0,False
+Maxi Zoo,5.0,%,3.0,up_to_%,1.8,up_to_%,3.0,up_to_%,3.0,up_to_%,3.0,-2.0,OK,2026-04-16,AWIN,D,Pets,Lifestyle,True,True,3.18,-24.8,528.9,17136.32,553.69,816.0,6.0,True
+Lampy.pl,8.0,%,6.0,up_to_%,2.4,up_to_%,4.0,up_to_%,4.0,up_to_%,6.0,-2.0,OK,2026-04-16,AWIN,B,Home & Garden,Multi-Category,True,True,7.5,-0.75,71.59,904.2,72.33,4.0,3.0,True
+Fielmann,6.0,%,,not_found,2.4,%,4.0,up_to_%,4.0,%,4.0,-2.0,OK,2026-04-16,AWIN,C,Health & Beauty,Multi-Category,True,True,8.0,0.0,21.2,265.07,21.2,3.0,1.0,False
+Gameseal,5.0,%,1.5,up_to_%,3.0,up_to_%,1.5,up_to_%,1.5,%,3.0,-2.0,OK,2026-04-16,Commission Junction,F,not_attributed,not_attributed,True,True,6.0,-293.68,26.8,446.7,320.48,42.0,4.0,True
+Adidas,5.0,%,3.0,up_to_%,1.8,up_to_%,3.0,up_to_%,3.0,up_to_%,3.0,-2.0,OK,2026-04-16,AWIN,A+,Sport Fashion,Fashion,True,True,4.17,9.23,14.89,445.18,5.65,74.0,10.0,False
+Bimba Y Lola,6.0,%,,not_found,2.4,%,4.0,up_to_%,4.0,%,4.0,-2.0,OK,2026-04-16,,,,,,,,,,,,,,
+Ucando,4.0,%,2.0,up_to_%,,not_found,2.0,up_to_%,2.0,%,2.0,-2.0,OK,2026-04-16,Tradetracker,D,Automotive,Lifestyle,True,True,4.0,0.0,6.09,152.21,6.09,1.0,1.0,False
+Trip.com,5.5,%,3.5,up_to_%,,not_found,,not_found,2.75,up_to_%,3.5,-2.0,OK,2026-04-16,Admitad,F,not_attributed,not_attributed,True,True,2.55,28.22,52.9,2342.32,24.68,10.0,2.0,False
+Geekbuying.pl,6.0,%,4.0,up_to_%,2.4,up_to_%,2.5,up_to_%,4.0,up_to_%,4.0,-2.0,OK,2026-04-16,Admitad,A,Electronics,Technology,True,True,5.0,0.0,42.28,844.38,0.0,1.0,1.0,False
+Abra,4.2,%,,not_found,1.5,%,,not_found,2.1,%,2.1,-2.1,OK,2026-04-16,Tradedoubler,A,Home & Garden,Multi-Category,True,True,4.2,6.39,160.06,3811.05,153.68,6.0,4.0,False
+Leroy Merlin,10.0,%,7.85,up_to_%,,zł,1.0,up_to_%,1.09,%,7.85,-2.15,OK,2026-04-16,Commission Junction,B,Home & Garden,Multi-Category,True,True,3.85,-5.7,57.68,1607.39,63.38,82.0,10.0,True
+MyProtein,10.0,%,7.85,up_to_%,3.6,up_to_%,5.0,up_to_%,4.0,%,7.85,-2.15,OK,2026-04-16,,,,,,,,,,,,,,
+New Balance,10.0,%,7.85,up_to_%,1.7,up_to_%,2.5,up_to_%,5.0,%,7.85,-2.15,OK,2026-04-16,AWIN,A+,Sport Fashion,Fashion,True,True,5.47,-5.7,10.27,252.73,10.74,8.0,3.0,True
+Wrangler,10.0,%,7.85,up_to_%,,not_found,5.0,up_to_%,5.0,%,7.85,-2.15,OK,2026-04-16,,,,,,,,,,,,,,
+LOT,3.0,%,,not_found,,zł,0.75,up_to_%,,not_found,0.75,-2.25,OK,2026-04-16,Commission Junction,B,Airlines,Travel,True,True,1.5,0.0,25.94,1728.89,25.94,9.0,3.0,False
+Joom,9.75,%,,no cashback,4.5,up_to_%,7.5,up_to_%,5.25,up_to_%,7.5,-2.25,OK,2026-04-16,Admitad,C,Multi-Departments,Multi-Category,True,True,9.8,0.0,5.19,53.03,5.19,5.0,1.0,False
+Banggood,10.0,%,6.5,up_to_%,4.7,up_to_%,6.5,up_to_%,7.75,up_to_%,7.75,-2.25,OK,2026-04-16,Tradetracker,C,Electronics,Technology,True,True,6.0,0.25,0.76,12.58,0.5,1.0,1.0,False
+Przyjaciele Kawy,6.0,%,3.7,up_to_%,,not_found,3.55,up_to_%,3.7,up_to_%,3.7,-2.3,OK,2026-04-16,Tradedoubler,B,Food & Drink,Lifestyle,True,True,4.94,1064.29,1518.77,31964.56,454.48,32.0,5.0,False
+JD Sports,5.0,%,2.5,up_to_%,1.5,up_to_%,2.5,up_to_%,2.5,%,2.5,-2.5,OK,2026-04-16,AWIN,C,Footwear,Fashion,True,True,6.75,-0.48,4.72,90.04,5.2,4.0,4.0,True
+Flexispot,5.0,%,,not_found,1.5,%,2.5,up_to_%,2.5,%,2.5,-2.5,OK,2026-04-16,,,,,,,,,,,,,,
+e-torty,10.0,%,2.5,up_to_%,4.5,%,7.5,up_to_%,7.5,%,7.5,-2.5,OK,2026-04-16,Tradedoubler,F,not_attributed,not_attributed,True,True,15.0,2.3,9.08,60.56,3.68,4.0,2.0,False
+eobuwie,6.0,%,3.5,up_to_%,3.0,%,3.5,up_to_%,3.5,up_to_%,3.5,-2.5,OK,2026-04-16,Tradedoubler,AAA,Footwear,Fashion,True,True,3.54,2.3,21.83,539.19,19.52,47.0,8.0,False
+Flixbus,5.0,%,0.75,%,1.5,up_to_%,2.5,up_to_%,2.5,up_to_%,2.5,-2.5,OK,2026-04-16,AWIN,A,Transports & Car rental,Travel,True,True,3.6,0.0,0.88,25.54,0.88,22.0,6.0,False
+Świat supli,5.0,%,,not_found,,not_found,2.5,up_to_%,,not_found,2.5,-2.5,OK,2026-04-16,AWIN,C,Food & Drink,Lifestyle,True,True,5.0,0.0,34.02,680.47,34.02,8.0,4.0,False
+Footshop,5.0,%,2.5,up_to_%,2.1,up_to_%,2.5,up_to_%,2.5,up_to_%,2.5,-2.5,OK,2026-04-16,Commission Junction,D,Footwear,Fashion,True,True,4.0,72.89,96.92,2403.37,24.03,3.0,1.0,False
+Mango Outlet,3.0,%,,not_found,,zł,0.5,up_to_%,,not_found,0.5,-2.5,OK,2026-04-16,Rakuten,B,Fashion,Fashion,True,True,15.0,-16.67,64.73,431.51,81.4,4.0,1.0,True
+Loaded,5.0,%,2.5,up_to_%,1.5,up_to_%,1.0,up_to_%,,not_found,2.5,-2.5,OK,2026-04-16,,,,,,,,,,,,,,
+GetYourGuide,4.0,%,1.15,up_to_%,0.7,%,1.15,up_to_%,1.15,%,1.15,-2.85,OK,2026-04-16,Tradedoubler,B,Travel agencies,Travel,True,True,5.0,-6.82,10.36,207.2,17.18,6.0,2.0,True
+Sephora,7.5,%,4.5,up_to_%,3.3,up_to_%,3.0,up_to_%,4.5,up_to_%,4.5,-3.0,OK,2026-04-16,AWIN,A,Fashion,Fashion,True,True,3.35,-2.5,4.28,126.45,6.78,18.0,8.0,True
+SportStyleStory,6.0,%,3.0,up_to_%,,not_found,3.0,up_to_%,3.0,up_to_%,3.0,-3.0,OK,2026-04-16,Tradedoubler,C,Sport Fashion,Fashion,True,True,6.0,4.32,319.24,5320.8,314.92,12.0,4.0,False
+Marilyn,6.0,%,,not_found,1.8,%,3.0,up_to_%,3.0,%,3.0,-3.0,OK,2026-04-16,Webgains,D,Fashion,Fashion,True,True,6.0,0.0,39.72,661.97,39.72,2.0,2.0,False
+Gomez,6.5,%,3.3,up_to_%,2.0,up_to_%,3.33,up_to_%,3.33,up_to_%,3.33,-3.17,OK,2026-04-16,Tradedoubler,A+,Fashion,Fashion,True,True,6.7,2.86,74.89,1124.5,72.03,2.0,1.0,False
+Airalo,9.0,%,,not_found,3.5,up_to_%,5.76,up_to_%,5.0,%,5.76,-3.24,OK,2026-04-16,,,,,,,,,,,,,,
+EMP,7.0,%,3.5,up_to_%,2.1,up_to_%,,not_found,,not_found,3.5,-3.5,OK,2026-04-16,,,,,,,,,,,,,,
+HP,7.0,%,3.5,up_to_%,,zł,3.5,up_to_%,3.5,up_to_%,3.5,-3.5,OK,2026-04-16,,,,,,,,,,,,,,
+ESET,10.0,%,6.0,up_to_%,3.6,up_to_%,5.5,up_to_%,5.5,%,6.0,-4.0,OK,2026-04-16,Commission Junction,A,Electronics,Technology,True,True,10.0,0.0,7.69,76.88,0.0,1.0,1.0,False
+Dedoles,8.0,%,,not_found,2.4,%,4.0,up_to_%,,not_found,4.0,-4.0,OK,2026-04-16,,,,,,,,,,,,,,
+Temu,40.0,%,7.85,up_to_%,36.0,up_to_%,7.5,up_to_%,16.0,up_to_%,36.0,-4.0,OK,2026-04-16,Impact Radius,AAA,Multi-Departments,Multi-Category,True,True,12.16,106.0,960.72,6255.29,854.71,2734.0,9.0,False
+Lounge by Zalando,10.0,%,6.0,up_to_%,,zł,6.0,up_to_%,6.0,up_to_%,6.0,-4.0,OK,2026-04-16,AWIN,AAA,Fashion,Fashion,True,True,4.8,6.78,56.78,1138.41,50.0,152.0,9.0,False
+AUTODOC,8.0,%,4.0,up_to_%,,zł,4.0,up_to_%,4.0,up_to_%,4.0,-4.0,OK,2026-04-16,Tradedoubler,B,Automotive,Lifestyle,True,True,8.0,0.09,6.48,81.02,6.39,1.0,1.0,False
+Parfumdreams,12.0,%,7.85,up_to_%,,not_found,5.0,up_to_%,5.0,up_to_%,7.85,-4.15,OK,2026-04-16,,,,,,,,,,,,,,
+Skechers,8.5,%,,not_found,,not_found,4.25,up_to_%,,no cashback,4.25,-4.25,OK,2026-04-16,,,,,,,,,,,,,,
+Dermacol,7.0,%,,not_found,,not_found,2.0,up_to_%,,not_found,2.0,-5.0,OK,2026-04-16,Commission Junction,F,not_attributed,not_attributed,True,True,4.0,-4.91,6.98,174.54,11.9,4.0,4.0,True
+AliExpress,10.0,%,5.0,up_to_%,,zł,5.0,up_to_%,4.5,up_to_%,5.0,-5.0,OK,2026-04-16,AWIN,AAA,Multi-Departments,Multi-Category,True,True,5.22,267.12,439.78,8423.53,172.65,9288.0,12.0,False
+Sinsay,10.0,%,5.0,%,,not_found,5.0,up_to_%,5.0,up_to_%,5.0,-5.0,OK,2026-04-16,No Affiliate Network,AA+,Fashion,Fashion,True,False,8.0,0.67,3.27,40.89,2.6,1.0,1.0,False
+Empik Foto,10.0,%,5.0,up_to_%,,zł,5.0,up_to_%,5.0,up_to_%,5.0,-5.0,OK,2026-04-16,,,,,,,,,,,,,,
+Petkarma,10.0,%,,not_found,,not_found,5.0,up_to_%,,no cashback,5.0,-5.0,OK,2026-04-16,Commission Junction,F,Pets,Lifestyle,True,True,5.0,0.0,8.72,174.38,8.72,1.0,1.0,False
+Legimi,15.0,%,7.5,up_to_%,4.8,%,7.5,up_to_%,9.2,up_to_%,9.2,-5.8,OK,2026-04-16,AWIN,A,Entertainment,Lifestyle,True,True,866.3,0.0,247.06,4.1,247.06,436.0,5.0,False
+Bibliotheque De Parfum,12.0,%,,not_found,3.6,%,6.0,up_to_%,,not_found,6.0,-6.0,OK,2026-04-16,,,,,,,,,,,,,,
+Euroflorist,12.0,%,2.5,up_to_%,3.6,%,6.0,up_to_%,6.0,%,6.0,-6.0,OK,2026-04-16,Tradedoubler,C,Unknown,Unknown,True,True,12.0,0.05,3.01,25.06,2.96,1.0,1.0,False
+Erli,8.8,%,2.2,up_to_%,1.3,up_to_%,2.5,up_to_%,2.2,up_to_%,2.5,-6.3,OK,2026-04-16,Admitad,A,Multi-Departments,Multi-Category,True,True,3.19,0.33,280.65,8759.91,280.32,98.0,7.0,False
+RTV Euro AGD,10.0,%,3.5,up_to_%,,zł,3.0,up_to_%,1.54,up_to_%,3.5,-6.5,OK,2026-04-16,Tradedoubler,AAA,Electronics,Technology,True,True,2.66,-73.63,143.74,6669.1,217.37,106.0,7.0,True
+BeDiet,14.0,%,7.0,up_to_%,4.2,up_to_%,7.0,up_to_%,7.0,up_to_%,7.0,-7.0,OK,2026-04-16,,,,,,,,,,,,,,
+Notino,10.0,%,2.5,up_to_%,3.0,up_to_%,,not_found,2.5,up_to_%,3.0,-7.0,OK,2026-04-16,Commission Junction,AAA,Health & Beauty,Multi-Category,True,True,4.63,-19.14,331.28,6772.22,350.42,69.0,6.0,True
+Byrokko,14.0,%,,not_found,,not_found,4.5,up_to_%,6.5,up_to_%,6.5,-7.5,OK,2026-04-16,Commission Junction,D,Health & Beauty,Multi-Category,True,True,17.0,31.22,37.9,222.97,6.69,1.0,1.0,False
+AirHelp,20.0,%,2.5,up_to_%,4.5,%,12.5,up_to_%,10.0,up_to_%,12.5,-7.5,OK,2026-04-16,Commission Junction,F,not_attributed,not_attributed,True,True,20.0,-9.67,19.33,96.66,29.0,1.0,1.0,True
+SHEIN,18.0,%,5.0,up_to_%,6.0,up_to_%,7.5,up_to_%,10.0,up_to_%,10.0,-8.0,OK,2026-04-16,Commission Junction,A,Fashion,Fashion,True,True,3.86,-6.91,26.26,617.42,33.16,139.0,8.0,True
+Groupon,14.0,%,3.5,up_to_%,2.1,up_to_%,3.0,up_to_%,3.0,up_to_%,3.5,-10.5,OK,2026-04-16,AWIN,A+,Multi-Departments,Multi-Category,True,True,5.0,-0.16,17.19,293.68,17.36,13.0,4.0,True
+Foreo,20.0,%,7.85,up_to_%,6.9,%,3.75,up_to_%,3.75,%,7.85,-12.15,OK,2026-04-16,,,,,,,,,,,,,,
+Empik,20.0,%,6.25,up_to_%,,zł,6.25,up_to_%,7.5,up_to_%,7.5,-12.5,OK,2026-04-16,Tradedoubler,AAA,Multi-Departments,Multi-Category,True,True,2.41,-127.08,31.2,1875.16,158.27,169.0,9.0,True
+norton,25.0,%,7.85,up_to_%,,not_found,12.5,up_to_%,12.5,up_to_%,12.5,-12.5,OK,2026-04-16,,,,,,,,,,,,,,
+MediaMarkt,18.0,%,3.5,up_to_%,1.8,up_to_%,3.0,up_to_%,3.0,up_to_%,3.5,-14.5,OK,2026-04-16,Tradedoubler,AAA,Electronics,Technology,True,True,2.19,-49.24,44.34,2104.24,93.58,57.0,8.0,True
+NordVPN,40.0,%,20.0,up_to_%,,not_found,21.97,up_to_%,20.0,%,21.97,-18.03,OK,2026-04-16,AWIN,B,Connectivity - Telco,Services,True,True,40.0,0.0,24.54,61.36,24.54,2.0,2.0,False
+Douglas,25.0,%,5.0,up_to_%,3.0,up_to_%,4.0,up_to_%,4.0,up_to_%,5.0,-20.0,OK,2026-04-16,AWIN,A,Health & Beauty,Multi-Category,True,True,7.12,-4.28,16.11,179.66,20.39,9.0,4.0,True
+Bee.pl,,no cashback,7.85,up_to_%,,not_found,,not_found,,not_found,7.85,,OK,2026-04-16,,,,,,,,,,,,,,
+Broń.pl,,no cashback,,not_found,2.7,%,,not_found,,not_found,2.7,,OK,2026-04-16,No Affiliate Network,F,not_attributed,not_attributed,True,False,8.0,0.27,360.85,4510.6,360.58,16.0,3.0,False
+Canal Plus,,no cashback,2.5,up_to_%,,not_found,,not_found,,not_found,2.5,,OK,2026-04-16,,,,,,,,,,,,,,
+DHL,,no cashback,,zł,,zł,5.0,up_to_%,,no cashback,5.0,,OK,2026-04-16,Tradedoubler,B,Utilities,Services,True,True,6.8,0.7,1.4,20.67,0.7,2.0,1.0,False
+Ecco,,no cashback,7.85,up_to_%,1.5,%,1.0,up_to_%,2.5,up_to_%,7.85,,OK,2026-04-16,,,,,,,,,,,,,,
+Eurofirany,,no cashback,7.85,up_to_%,1.7,%,2.85,up_to_%,2.85,%,7.85,,OK,2026-04-16,No Affiliate Network,C,Home & Garden,Multi-Category,True,False,5.0,-0.32,101.26,2031.72,101.59,2.0,1.0,True
+FotoForma,,zł,,not_found,0.8,%,1.25,up_to_%,1.5,%,1.5,,OK,2026-04-16,Tradedoubler,B,Utilities,Services,True,True,2.5,2.78,268.03,10721.34,265.26,3.0,1.0,False
+Gabriella,,no cashback,7.85,up_to_%,1.1,%,2.5,up_to_%,,no cashback,7.85,,OK,2026-04-16,No Affiliate Network,D,Fashion,Fashion,True,False,4.5,0.0,0.98,21.82,0.98,1.0,1.0,False
+Herbapol,,no cashback,,not_found,,not_found,,no cashback,,no cashback,,,OK,2026-04-16,,,,,,,,,,,,,,
+Kazar,,no cashback,7.85,up_to_%,1.1,up_to_%,,not_found,,no cashback,7.85,,OK,2026-04-16,No Affiliate Network,AA,Fashion,Fashion,True,False,6.5,0.0,400.66,6164.0,400.66,3.0,1.0,False
+Konesso,,no cashback,2.5,up_to_%,1.2,up_to_%,5.0,up_to_%,,no cashback,5.0,,OK,2026-04-16,No Affiliate Network,A+,Food & Drink,Lifestyle,True,False,3.2,-6.1,27.8,915.62,33.9,8.0,4.0,True
+Król Materacy,,no cashback,,not_found,,not_found,4.0,up_to_%,,not_found,4.0,,OK,2026-04-16,No Affiliate Network,F,not_attributed,not_attributed,True,False,8.0,0.0,61.87,773.4,61.87,2.0,1.0,False
+lionelo,,no cashback,7.85,up_to_%,2.4,%,3.0,up_to_%,3.0,%,7.85,,OK,2026-04-16,No Affiliate Network,D,not_attributed,not_attributed,True,False,6.0,224.27,842.91,14048.29,618.64,32.0,3.0,False
+Merkury Market,,zł,7.85,up_to_%,1.2,up_to_%,1.75,up_to_%,,no cashback,7.85,,OK,2026-04-16,Tradetracker,A+,Home & Garden,Multi-Category,True,True,3.5,1.47,166.28,4750.86,128.86,16.0,4.0,False
+Morele.net,,no cashback,7.85,up_to_%,,zł,5.0,up_to_%,0.25,%,7.85,,OK,2026-04-16,,,,,,,,,,,,,,
+Novakid,,no cashback,5.0,up_to_%,10.0,up_to_%,5.0,up_to_%,,no cashback,10.0,,OK,2026-04-16,Commission Junction,C,Baby & Child,Multi-Category,True,True,0.0,0.0,0.0,0.0,0.0,2.0,1.0,False
+Ombre,,no cashback,7.85,up_to_%,2.7,up_to_%,4.56,up_to_%,,no cashback,7.85,,OK,2026-04-16,,,,,,,,,,,,,,
+Play,,no cashback,,zł,,not_found,5.0,up_to_%,,no cashback,5.0,,OK,2026-04-16,Tradedoubler,C,Connectivity - Telco,Services,True,True,234.4,-0.61,116.64,49.76,117.25,2.0,1.0,True
+Radisson Hotels,,zł,4.0,up_to_%,,not_found,2.0,up_to_%,2.0,up_to_%,4.0,,OK,2026-04-16,Tradedoubler,F,Hotel & Accommodations,Travel,True,True,8.0,-0.08,61.18,764.79,61.26,2.0,1.0,True
+SkyShowtime,,zł,,zł,,not_found,5.0,up_to_%,,no cashback,5.0,,OK,2026-04-16,AWIN,F,not_attributed,not_attributed,True,True,132.6,-150.04,159.86,86.19,309.9,25.0,2.0,True
+Stradivarius,,no cashback,3.0,up_to_%,,not_found,3.0,up_to_%,2.5,%,3.0,,OK,2026-04-16,,,,,,,,,,,,,,
+Surfshark,,no cashback,7.85,up_to_%,,not_found,20.0,up_to_%,20.0,%,20.0,,OK,2026-04-16,,,,,,,,,,,,,,
+Top Secret,,no cashback,7.85,up_to_%,,not_found,5.0,up_to_%,,no cashback,7.85,,OK,2026-04-16,No Affiliate Network,C,Fashion,Fashion,True,False,7.0,0.0,24.78,354.08,24.78,2.0,2.0,False
+Volcano,,no cashback,7.85,up_to_%,,not_found,3.5,up_to_%,3.5,%,7.85,,OK,2026-04-16,No Affiliate Network,C,Fashion,Fashion,True,False,7.0,-0.57,233.63,3337.6,234.2,1.0,1.0,True
+Wolt,,zł,2.5,up_to_%,,not_found,,no cashback,,no cashback,2.5,,OK,2026-04-16,No Affiliate Network,A,Food & Drink,Lifestyle,True,False,14.1,-0.3,2.18,17.76,2.48,4.0,4.0,True
+x-kom,,no cashback,0.65,%,,not_found,,no cashback,0.63,%,0.65,,OK,2026-04-16,,,,,,,,,,,,,,
+4Home,,no cashback,7.85,up_to_%,,not_found,,no cashback,,no cashback,7.85,,OK,2026-04-16,No Affiliate Network,D,Multi-Departments,Multi-Category,True,False,6.0,-0.63,125.93,2098.69,126.56,3.0,1.0,True
