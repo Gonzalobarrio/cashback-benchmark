@@ -15,9 +15,9 @@ NO_CASHBACK_PHRASES = [
     "brak cashbacku",
 ]
 
-# ══════════════════════════════════════════════════════════════════
+# ══════════════════════════════════════════════════════════════════════════════
 # RATE PARSER
-# ══════════════════════════════════════════════════════════════════
+# ══════════════════════════════════════════════════════════════════════════════
 
 def _parse_rate(text: str):
     # Fixed zł
@@ -55,15 +55,15 @@ def _parse_rate(text: str):
     return None, None
 
 
-# ══════════════════════════════════════════════════════════════════
+# ══════════════════════════════════════════════════════════════════════════════
 # BROWSER WITH AUTO-LOGIN
-# ══════════════════════════════════════════════════════════════════
+# ══════════════════════════════════════════════════════════════════════════════
 
 class LetyshopsBrowser:
     def __init__(self):
-        self._pw      = None
-        self._browser = None
-        self._page    = None
+        self._pw        = None
+        self._browser   = None
+        self._page      = None
         self._logged_in = False
 
     def start(self):
@@ -81,47 +81,157 @@ class LetyshopsBrowser:
         return self
 
     def login(self, email: str, password: str) -> bool:
-        """
-        Login to Letyshops. Returns True if successful.
-        Credentials come from environment variables (GitHub Secrets).
-        """
         if not email or not password:
             print("  ⚠️  No credentials found — scraping without login")
             return False
 
         try:
             print("  🔐 Logging in to Letyshops...")
-            self._page.goto(LETYSHOPS_LOGIN, timeout=20000,
+            self._page.goto(LETYSHOPS_LOGIN, timeout=30000,
                             wait_until="networkidle")
-            self._page.wait_for_timeout(2000)
-
-            # Fill email
-            self._page.fill('input[type="email"], input[name="email"]', email)
-            time.sleep(0.5)
-
-            # Fill password
-            self._page.fill('input[type="password"], input[name="password"]',
-                            password)
-            time.sleep(0.5)
-
-            # Submit
-            self._page.click('button[type="submit"]')
             self._page.wait_for_timeout(3000)
 
-            # Verify login success
+            # ── Debug: ver qué inputs existen en la página ────────────────
+            inputs = self._page.evaluate('''() => {
+                return Array.from(document.querySelectorAll("input")).map(i => ({
+                    type: i.type,
+                    name: i.name,
+                    placeholder: i.placeholder,
+                    id: i.id,
+                    className: i.className.substring(0, 50)
+                }));
+            }''')
+            print(f"  📋 Inputs found on login page: {inputs}")
+
+            # ── Selectores email ───────────────────────────────────────────
+            email_selectors = [
+                'input[type="email"]',
+                'input[name="email"]',
+                'input[name="login"]',
+                'input[name="username"]',
+                'input[placeholder*="mail" i]',
+                'input[placeholder*="login" i]',
+                'input[id*="email" i]',
+                'input[id*="login" i]',
+                'form input:first-of-type',
+            ]
+
+            # ── Selectores password ────────────────────────────────────────
+            password_selectors = [
+                'input[type="password"]',
+                'input[name="password"]',
+                'input[name="pass"]',
+                'input[placeholder*="hasło" i]',
+                'input[placeholder*="password" i]',
+                'input[id*="password" i]',
+                'input[id*="pass" i]',
+            ]
+
+            # ── Encontrar y rellenar email ─────────────────────────────────
+            email_filled = False
+            for sel in email_selectors:
+                try:
+                    el = self._page.locator(sel).first
+                    if el.count() > 0:
+                        el.wait_for(timeout=3000, state="visible")
+                        el.fill(email)
+                        print(f"  ✅ Email filled with selector: {sel}")
+                        email_filled = True
+                        break
+                except Exception:
+                    continue
+
+            if not email_filled:
+                print("  ❌ Could not find email input")
+                return False
+
+            time.sleep(0.5)
+
+            # ── Encontrar y rellenar password ──────────────────────────────
+            pass_filled = False
+            for sel in password_selectors:
+                try:
+                    el = self._page.locator(sel).first
+                    if el.count() > 0:
+                        el.wait_for(timeout=3000, state="visible")
+                        el.fill(password)
+                        print(f"  ✅ Password filled with selector: {sel}")
+                        pass_filled = True
+                        break
+                except Exception:
+                    continue
+
+            if not pass_filled:
+                print("  ❌ Could not find password input")
+                return False
+
+            time.sleep(0.5)
+
+            # ── Submit ─────────────────────────────────────────────────────
+            submit_selectors = [
+                'button[type="submit"]',
+                'input[type="submit"]',
+                'button:has-text("Zaloguj")',
+                'button:has-text("Login")',
+                'button:has-text("Sign in")',
+                'form button',
+            ]
+
+            submitted = False
+            for sel in submit_selectors:
+                try:
+                    el = self._page.locator(sel).first
+                    if el.count() > 0:
+                        el.click()
+                        print(f"  ✅ Submitted with selector: {sel}")
+                        submitted = True
+                        break
+                except Exception:
+                    continue
+
+            if not submitted:
+                self._page.keyboard.press("Enter")
+                print("  ⚠️  Submit via Enter key")
+
+            self._page.wait_for_timeout(4000)
+
+            # ── Verificar login ────────────────────────────────────────────
             current_url = self._page.url
             page_text   = self._page.inner_text("body").lower()
+            print(f"  📍 URL after login: {current_url}")
 
-            if ("login" not in current_url and
-                    "zaloguj" not in current_url and
-                    "error" not in page_text and
-                    "błąd" not in page_text):
+            if any(fail in page_text for fail in
+                   ["nieprawidłowe", "błędne", "invalid", "incorrect",
+                    "wrong", "error", "błąd"]):
+                print("  ❌ Login failed — wrong credentials")
+                return False
+
+            if any(ok in current_url for ok in
+                   ["shops", "dashboard", "profile", "account", "pl/"]):
                 print("  ✅ Login successful")
                 self._logged_in = True
                 return True
-            else:
-                print("  ❌ Login failed — check credentials in GitHub Secrets")
-                return False
+
+            # ── Verificar elemento de usuario logueado ────────────────────
+            logged_in_indicators = [
+                '[class*="user" i]',
+                '[class*="account" i]',
+                '[class*="profile" i]',
+                'a[href*="logout"]',
+                'a[href*="wyloguj"]',
+            ]
+            for indicator in logged_in_indicators:
+                try:
+                    if self._page.locator(indicator).count() > 0:
+                        print("  ✅ Login successful (element detected)")
+                        self._logged_in = True
+                        return True
+                except Exception:
+                    continue
+
+            print("  ⚠️  Login status unclear — continuing anyway")
+            self._logged_in = True
+            return True
 
         except Exception as e:
             print(f"  ❌ Login error: {e}")
@@ -143,17 +253,37 @@ class LetyshopsBrowser:
             self._pw.stop()
 
 
-# ══════════════════════════════════════════════════════════════════
+# ══════════════════════════════════════════════════════════════════════════════
 # LISTING PAGE
-# ══════════════════════════════════════════════════════════════════
+# ══════════════════════════════════════════════════════════════════════════════
 
 def get_letyshops_listing(browser: LetyshopsBrowser) -> dict:
     from bs4 import BeautifulSoup
 
     print("  📋 Fetching listing page...")
-    browser._page.goto(LETYSHOPS_LISTING, timeout=20000,
+    browser._page.goto(LETYSHOPS_LISTING, timeout=30000,
                        wait_until="networkidle")
-    browser._page.wait_for_timeout(2500)
+    browser._page.wait_for_timeout(3000)
+
+    # ── Scroll para cargar todos los shops (lazy loading) ─────────
+    print("  📋 Scrolling to load all shops...")
+    prev_count = 0
+    for scroll_attempt in range(15):
+        browser._page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
+        browser._page.wait_for_timeout(1500)
+
+        current_count = browser._page.evaluate('''() => {
+            return document.querySelectorAll('a[href*="/pl/shops/"]').length;
+        }''')
+        print(f"  📋 Scroll {scroll_attempt + 1}: {current_count} links found")
+
+        if current_count == prev_count and scroll_attempt > 3:
+            break
+        prev_count = current_count
+
+    # ── Scroll back to top ────────────────────────────────────────
+    browser._page.evaluate("window.scrollTo(0, 0)")
+    browser._page.wait_for_timeout(1000)
 
     content = browser._page.content()
     soup    = BeautifulSoup(content, "html.parser")
@@ -175,13 +305,13 @@ def get_letyshops_listing(browser: LetyshopsBrowser) -> dict:
             "letyshops_url"      : LETYSHOPS_BASE + href,
         }
 
-    print(f"  📋 Listing: {len(shops)} shops found")
+    print(f"  📋 Listing complete: {len(shops)} shops found")
     return shops
 
 
-# ══════════════════════════════════════════════════════════════════
+# ══════════════════════════════════════════════════════════════════════════════
 # INDIVIDUAL PAGE
-# ══════════════════════════════════════════════════════════════════
+# ══════════════════════════════════════════════════════════════════════════════
 
 def extract_rate_from_url(browser: LetyshopsBrowser, url: str):
     text = browser.get_text(url)
@@ -195,9 +325,9 @@ def extract_rate_from_url(browser: LetyshopsBrowser, url: str):
     return _parse_rate(text)
 
 
-# ══════════════════════════════════════════════════════════════════
+# ══════════════════════════════════════════════════════════════════════════════
 # SLUG LOGIC
-# ══════════════════════════════════════════════════════════════════
+# ══════════════════════════════════════════════════════════════════════════════
 
 def generate_slug_variants(retailer_name: str, igraal_slug: str) -> list:
     camel_slug = re.sub(r"[^a-z0-9]+", "-",
@@ -215,9 +345,9 @@ def generate_slug_variants(retailer_name: str, igraal_slug: str) -> list:
     return list(dict.fromkeys(variants))
 
 
-# ══════════════════════════════════════════════════════════════════
+# ══════════════════════════════════════════════════════════════════════════════
 # STORE RESOLVER
-# ══════════════════════════════════════════════════════════════════
+# ══════════════════════════════════════════════════════════════════════════════
 
 def find_letyshops_store(
     browser: LetyshopsBrowser,
@@ -228,7 +358,7 @@ def find_letyshops_store(
     variants          = generate_slug_variants(retailer_name, igraal_slug)
     found_no_cashback = False
 
-    # Pass 1: listing
+    # ── Pass 1: listing ───────────────────────────────────────────
     for slug in variants:
         if slug not in listing:
             continue
@@ -244,7 +374,7 @@ def find_letyshops_store(
         if rate == "no cashback":
             found_no_cashback = True
 
-    # Pass 2: direct URL probing
+    # ── Pass 2: direct URL probing ────────────────────────────────
     url_bases = [
         LETYSHOPS_BASE + "/pl/shops/",
         LETYSHOPS_BASE + "/pl-en/shops/",
@@ -264,17 +394,17 @@ def find_letyshops_store(
     return "not_found", None, None
 
 
-# ══════════════════════════════════════════════════════════════════
+# ══════════════════════════════════════════════════════════════════════════════
 # MAIN SCRAPER
-# ══════════════════════════════════════════════════════════════════
+# ══════════════════════════════════════════════════════════════════════════════
 
 def scrape_letyshops(df_igraal: pd.DataFrame) -> pd.DataFrame:
-    # ── Credentials from GitHub Secrets (env vars) ────────────────
+    # ── Credentials from GitHub Secrets ──────────────────────────
     email    = os.environ.get("LETYSHOPS_EMAIL", "")
     password = os.environ.get("LETYSHOPS_PASSWORD", "")
 
     browser = LetyshopsBrowser().start()
-    browser.login(email, password)          # ← auto-login, no cookies needed
+    browser.login(email, password)
     listing = get_letyshops_listing(browser)
 
     today   = datetime.today().strftime("%Y-%m-%d")
@@ -297,9 +427,9 @@ def scrape_letyshops(df_igraal: pd.DataFrame) -> pd.DataFrame:
                 "retailer"           : retailer,
                 "igraal_slug"        : slug,
                 "letyshops_rate"     : (rate if rate not in
-                                        ("no cashback","not_found") else None),
+                                        ("no cashback", "not_found") else None),
                 "letyshops_rate_type": (rtype if rate not in
-                                        ("no cashback","not_found") else rate),
+                                        ("no cashback", "not_found") else rate),
                 "letyshops_url"      : url,
             })
             time.sleep(0.4)
@@ -310,9 +440,9 @@ def scrape_letyshops(df_igraal: pd.DataFrame) -> pd.DataFrame:
     return pd.DataFrame(results)
 
 
-# ══════════════════════════════════════════════════════════════════
+# ══════════════════════════════════════════════════════════════════════════════
 # ENTRY POINT
-# ══════════════════════════════════════════════════════════════════
+# ══════════════════════════════════════════════════════════════════════════════
 
 if __name__ == "__main__":
     os.makedirs("data", exist_ok=True)
