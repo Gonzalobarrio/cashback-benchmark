@@ -8,6 +8,7 @@ from playwright.sync_api import sync_playwright
 LETYSHOPS_BASE    = "https://letyshops.com"
 LETYSHOPS_LISTING = "https://letyshops.com/pl/shops"
 LETYSHOPS_LOGIN   = "https://letyshops.com/pl/login"
+LETYSHOPS_HOME    = "https://letyshops.com/pl"
 
 NO_CASHBACK_PHRASES = [
     "w tej chwili nie ma cashbacku w tym sklepie",
@@ -91,7 +92,7 @@ class LetyshopsBrowser:
                             wait_until="networkidle")
             self._page.wait_for_timeout(3000)
 
-            # ── Debug: ver qué inputs existen en la página ────────────────
+            # Debug inputs
             inputs = self._page.evaluate('''() => {
                 return Array.from(document.querySelectorAll("input")).map(i => ({
                     type: i.type,
@@ -103,7 +104,6 @@ class LetyshopsBrowser:
             }''')
             print(f"  📋 Inputs found on login page: {inputs}")
 
-            # ── Selectores email ───────────────────────────────────────────
             email_selectors = [
                 'input[type="email"]',
                 'input[name="email"]',
@@ -116,7 +116,6 @@ class LetyshopsBrowser:
                 'form input:first-of-type',
             ]
 
-            # ── Selectores password ────────────────────────────────────────
             password_selectors = [
                 'input[type="password"]',
                 'input[name="password"]',
@@ -127,7 +126,6 @@ class LetyshopsBrowser:
                 'input[id*="pass" i]',
             ]
 
-            # ── Encontrar y rellenar email ─────────────────────────────────
             email_filled = False
             for sel in email_selectors:
                 try:
@@ -147,7 +145,6 @@ class LetyshopsBrowser:
 
             time.sleep(0.5)
 
-            # ── Encontrar y rellenar password ──────────────────────────────
             pass_filled = False
             for sel in password_selectors:
                 try:
@@ -167,7 +164,6 @@ class LetyshopsBrowser:
 
             time.sleep(0.5)
 
-            # ── Submit ─────────────────────────────────────────────────────
             submit_selectors = [
                 'button[type="submit"]',
                 'input[type="submit"]',
@@ -195,7 +191,6 @@ class LetyshopsBrowser:
 
             self._page.wait_for_timeout(4000)
 
-            # ── Verificar login ────────────────────────────────────────────
             current_url = self._page.url
             page_text   = self._page.inner_text("body").lower()
             print(f"  📍 URL after login: {current_url}")
@@ -212,7 +207,6 @@ class LetyshopsBrowser:
                 self._logged_in = True
                 return True
 
-            # ── Verificar elemento de usuario logueado ────────────────────
             logged_in_indicators = [
                 '[class*="user" i]',
                 '[class*="account" i]',
@@ -254,6 +248,84 @@ class LetyshopsBrowser:
 
 
 # ══════════════════════════════════════════════════════════════════════════════
+# HOMEPAGE BOOSTS
+# ══════════════════════════════════════════════════════════════════════════════
+
+def get_letyshops_boosts(browser: LetyshopsBrowser) -> dict:
+    """
+    Scrape homepage for active cashback boosts (3X, 4X, 7X, etc).
+    Returns dict: {slug: boosted_rate_float}
+    """
+    from bs4 import BeautifulSoup
+
+    print("  🔥 Fetching homepage boosts...")
+    browser._page.goto(LETYSHOPS_HOME, timeout=30000, wait_until="networkidle")
+    browser._page.wait_for_timeout(3000)
+
+    # Scroll to load all boost cards
+    browser._page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
+    browser._page.wait_for_timeout(2000)
+    browser._page.evaluate("window.scrollTo(0, 0)")
+    browser._page.wait_for_timeout(1000)
+
+    content = browser._page.content()
+    soup    = BeautifulSoup(content, "html.parser")
+
+    boosts  = {}
+    pattern = re.compile(r"/pl/shops/([^/?#]+)")
+
+    # Find all links pointing to /pl/shops/
+    for link in soup.find_all("a", href=pattern):
+        href  = link.get("href", "")
+        match = pattern.search(href)
+        if not match:
+            continue
+        slug = match.group(1).strip("/")
+        if slug in boosts:
+            continue
+
+        # Walk up DOM to find card container with rate info
+        card = link
+        card_text = ""
+        for _ in range(6):
+            if card.parent:
+                card = card.parent
+                candidate = card.get_text(separator=" ", strip=True)
+                if "cashback" in candidate.lower() and "%" in candidate:
+                    card_text = candidate
+                    break
+
+        if not card_text:
+            continue
+
+        # Check for multiplier badge (3X, 4X, 7X...)
+        multiplier = re.search(r"(\d+)[Xx]\b", card_text)
+        if not multiplier:
+            continue  # Not a boosted card
+
+        # Extract all % values from card
+        pct_values = []
+        for v in re.findall(r"(\d+(?:[.,]\d+)?)\s*%", card_text):
+            try:
+                f = float(v.replace(",", "."))
+                if 0 < f <= 95:
+                    pct_values.append(f)
+            except ValueError:
+                continue
+
+        if not pct_values:
+            continue
+
+        # Boosted rate = highest value in card
+        boosted_rate = max(pct_values)
+        boosts[slug] = boosted_rate
+        print(f"    🔥 {slug}: {multiplier.group()}× → {boosted_rate}%")
+
+    print(f"  🔥 {len(boosts)} active boosts found\n")
+    return boosts
+
+
+# ══════════════════════════════════════════════════════════════════════════════
 # LISTING PAGE
 # ══════════════════════════════════════════════════════════════════════════════
 
@@ -265,7 +337,6 @@ def get_letyshops_listing(browser: LetyshopsBrowser) -> dict:
                        wait_until="networkidle")
     browser._page.wait_for_timeout(3000)
 
-    # ── Scroll para cargar todos los shops (lazy loading) ─────────
     print("  📋 Scrolling to load all shops...")
     prev_count = 0
     for scroll_attempt in range(15):
@@ -281,7 +352,6 @@ def get_letyshops_listing(browser: LetyshopsBrowser) -> dict:
             break
         prev_count = current_count
 
-    # ── Scroll back to top ────────────────────────────────────────
     browser._page.evaluate("window.scrollTo(0, 0)")
     browser._page.wait_for_timeout(1000)
 
@@ -358,7 +428,7 @@ def find_letyshops_store(
     variants          = generate_slug_variants(retailer_name, igraal_slug)
     found_no_cashback = False
 
-    # ── Pass 1: listing ───────────────────────────────────────────
+    # Pass 1: listing
     for slug in variants:
         if slug not in listing:
             continue
@@ -374,7 +444,7 @@ def find_letyshops_store(
         if rate == "no cashback":
             found_no_cashback = True
 
-    # ── Pass 2: direct URL probing ────────────────────────────────
+    # Pass 2: direct URL probing
     url_bases = [
         LETYSHOPS_BASE + "/pl/shops/",
         LETYSHOPS_BASE + "/pl-en/shops/",
@@ -399,12 +469,16 @@ def find_letyshops_store(
 # ══════════════════════════════════════════════════════════════════════════════
 
 def scrape_letyshops(df_igraal: pd.DataFrame) -> pd.DataFrame:
-    # ── Credentials from GitHub Secrets ──────────────────────────
     email    = os.environ.get("LETYSHOPS_EMAIL", "")
     password = os.environ.get("LETYSHOPS_PASSWORD", "")
 
     browser = LetyshopsBrowser().start()
     browser.login(email, password)
+
+    # ── 1. Homepage boosts ────────────────────────────────────────
+    boosts = get_letyshops_boosts(browser)
+
+    # ── 2. Full listing ───────────────────────────────────────────
     listing = get_letyshops_listing(browser)
 
     today   = datetime.today().strftime("%Y-%m-%d")
@@ -417,10 +491,35 @@ def scrape_letyshops(df_igraal: pd.DataFrame) -> pd.DataFrame:
             slug     = row["slug"]
             print(f"  [{i:>3}/{total}] {retailer} ({slug})", end=" → ")
 
+            # Base rate from listing / individual page
             rate, rtype, url = find_letyshops_store(
                 browser, retailer, slug, listing
             )
-            print(rate or "—")
+
+            # ── Check for active boost ────────────────────────────
+            variants     = generate_slug_variants(retailer, slug)
+            boosted_rate = None
+            for v in variants:
+                if v in boosts:
+                    boosted_rate = boosts[v]
+                    break
+
+            is_boosted = False
+            if boosted_rate is not None:
+                try:
+                    base = float(rate) if rate not in (
+                        "no cashback", "not_found", None) else 0.0
+                    if boosted_rate > base:
+                        print(f"{rate or '—'} → 🔥 {boosted_rate}%")
+                        rate       = str(boosted_rate)
+                        rtype      = "boosted_%"
+                        is_boosted = True
+                    else:
+                        print(rate or "—")
+                except (ValueError, TypeError):
+                    print(rate or "—")
+            else:
+                print(rate or "—")
 
             results.append({
                 "date"               : today,
@@ -430,6 +529,7 @@ def scrape_letyshops(df_igraal: pd.DataFrame) -> pd.DataFrame:
                                         ("no cashback", "not_found") else None),
                 "letyshops_rate_type": (rtype if rate not in
                                         ("no cashback", "not_found") else rate),
+                "letyshops_boosted"  : is_boosted,
                 "letyshops_url"      : url,
             })
             time.sleep(0.4)
@@ -456,12 +556,15 @@ if __name__ == "__main__":
     df_out.to_csv(dated_file,  index=False)
     df_out.to_csv(latest_file, index=False)
 
-    found = df_out["letyshops_rate_type"].isin(["%", "up_to_%", "zł"]).sum()
-    nc    = (df_out["letyshops_rate_type"] == "no cashback").sum()
-    nf    = (df_out["letyshops_rate_type"] == "not_found").sum()
+    found   = df_out["letyshops_rate_type"].isin(
+                  ["%", "up_to_%", "zł", "boosted_%"]).sum()
+    boosted = df_out["letyshops_boosted"].sum()
+    nc      = (df_out["letyshops_rate_type"] == "no cashback").sum()
+    nf      = (df_out["letyshops_rate_type"] == "not_found").sum()
 
     print(f"\n✅ Saved → {dated_file}")
     print(f"✅ Saved → {latest_file}")
     print(f"   Rates found : {found}")
+    print(f"   🔥 Boosted  : {boosted}")
     print(f"   No cashback : {nc}")
     print(f"   Not found   : {nf}")
