@@ -26,22 +26,28 @@ def clean_zl(df, rate_col, type_col):
 def sanity_check(df, rate_col, source: str):
     """
     Remove suspicious rates.
-    Threshold by source — Letyshops legitimately has 60-80% for VPNs/digital.
+    Boosted rates are exempt from sanity check (they are real).
     """
     df = df.copy()
     threshold = {
-        "letyshops" : 95,   # generous — VPN/digital cashback can be 75-80%
+        "letyshops" : 95,
         "picodi"    : 80,
         "alerabat"  : 80,
         "goodie"    : 80,
         "igraal"    : 95,
     }.get(source, 80)
-    suspicious = df[rate_col] > threshold
-    if suspicious.any():
-        print(f"   ⚠️  Sanity check [{source}]: nulled {suspicious.sum()} "
+
+    # ── Si es letyshops, excluir boosted del sanity check ─────────
+    if source == "letyshops" and "letyshops_boosted" in df.columns:
+        mask_suspicious = (df[rate_col] > threshold) & (~df["letyshops_boosted"])
+    else:
+        mask_suspicious = df[rate_col] > threshold
+
+    if mask_suspicious.any():
+        print(f"   ⚠️  Sanity check [{source}]: nulled {mask_suspicious.sum()} "
               f"rates > {threshold}%: "
-              f"{df.loc[suspicious, 'retailer'].tolist()}")
-    df.loc[suspicious, rate_col] = None
+              f"{df.loc[mask_suspicious, 'retailer'].tolist()}")
+    df.loc[mask_suspicious, rate_col] = None
     return df
 
 # ══════════════════════════════════════════════════════════════════
@@ -72,17 +78,17 @@ print(f"   ✅ {len(df_gd)} retailers\n")
 # 2. CLEAN — zł + sanity (BEFORE saving _latest)
 # ══════════════════════════════════════════════════════════════════
 
-df_ig = clean_zl(df_ig, "igraal_rate",   "cashback_type")
-df_lt = clean_zl(df_lt, "letyshops_rate","letyshops_rate_type")
-df_pc = clean_zl(df_pc, "picodi_rate",   "picodi_rate_type")
-df_al = clean_zl(df_al, "alerabat_rate", "alerabat_rate_type")
-df_gd = clean_zl(df_gd, "goodie_rate",   "goodie_rate_type")
+df_ig = clean_zl(df_ig, "igraal_rate",    "cashback_type")
+df_lt = clean_zl(df_lt, "letyshops_rate", "letyshops_rate_type")
+df_pc = clean_zl(df_pc, "picodi_rate",    "picodi_rate_type")
+df_al = clean_zl(df_al, "alerabat_rate",  "alerabat_rate_type")
+df_gd = clean_zl(df_gd, "goodie_rate",    "goodie_rate_type")
 
-df_ig = sanity_check(df_ig, "igraal_rate",   "igraal")
-df_lt = sanity_check(df_lt, "letyshops_rate","letyshops")
-df_pc = sanity_check(df_pc, "picodi_rate",   "picodi")
-df_al = sanity_check(df_al, "alerabat_rate", "alerabat")
-df_gd = sanity_check(df_gd, "goodie_rate",   "goodie")
+df_ig = sanity_check(df_ig, "igraal_rate",    "igraal")
+df_lt = sanity_check(df_lt, "letyshops_rate", "letyshops")
+df_pc = sanity_check(df_pc, "picodi_rate",    "picodi")
+df_al = sanity_check(df_al, "alerabat_rate",  "alerabat")
+df_gd = sanity_check(df_gd, "goodie_rate",    "goodie")
 
 # ══════════════════════════════════════════════════════════════════
 # 3. SAVE _latest.csv (AFTER cleaning)
@@ -100,17 +106,58 @@ print("✅ All _latest.csv saved (cleaned)\n")
 # ══════════════════════════════════════════════════════════════════
 
 print("📊 Building benchmark dataset...")
-df = df_ig[["retailer","igraal_rate","cashback_type"]].copy()
-df = df.merge(df_lt[["retailer","letyshops_rate","letyshops_rate_type"]], on="retailer", how="left")
-df = df.merge(df_pc[["retailer","picodi_rate","picodi_rate_type"]],       on="retailer", how="left")
-df = df.merge(df_al[["retailer","alerabat_rate","alerabat_rate_type"]],   on="retailer", how="left")
-df = df.merge(df_gd[["retailer","goodie_rate","goodie_rate_type"]],       on="retailer", how="left")
+df = df_ig[["retailer", "igraal_rate", "cashback_type"]].copy()
 
-competitor_cols = ["letyshops_rate","picodi_rate","alerabat_rate","goodie_rate"]
+df = df.merge(
+    df_lt[["retailer", "letyshops_rate", "letyshops_rate_type",
+           "letyshops_boosted", "letyshops_url"]],
+    on="retailer", how="left"
+)
+df = df.merge(
+    df_pc[["retailer", "picodi_rate", "picodi_rate_type", "picodi_url"]],
+    on="retailer", how="left"
+)
+df = df.merge(
+    df_al[["retailer", "alerabat_rate", "alerabat_rate_type", "alerabat_url"]],
+    on="retailer", how="left"
+)
+df = df.merge(
+    df_gd[["retailer", "goodie_rate", "goodie_rate_type", "goodie_url"]],
+    on="retailer", how="left"
+)
+
+# ── Ensure numeric ────────────────────────────────────────────────
+competitor_cols = ["letyshops_rate", "picodi_rate", "alerabat_rate", "goodie_rate"]
 df[competitor_cols] = df[competitor_cols].apply(pd.to_numeric, errors="coerce")
 df["igraal_rate"]   = pd.to_numeric(df["igraal_rate"], errors="coerce")
 
+# ── Best competitor ───────────────────────────────────────────────
 df["best_competitor_rate"] = df[competitor_cols].max(axis=1)
+
+# ── Best competitor name ──────────────────────────────────────────
+def get_best_competitor_name(row):
+    candidates = {
+        "letyshops": row["letyshops_rate"],
+        "picodi"   : row["picodi_rate"],
+        "alerabat" : row["alerabat_rate"],
+        "goodie"   : row["goodie_rate"],
+    }
+    valid = {k: v for k, v in candidates.items() if pd.notna(v)}
+    if not valid:
+        return None
+    return max(valid, key=valid.get)
+
+df["best_competitor"] = df.apply(get_best_competitor_name, axis=1)
+
+# ── Add 🔥 flag to best_competitor if boosted ─────────────────────
+def flag_boost(row):
+    if row.get("best_competitor") == "letyshops" and row.get("letyshops_boosted"):
+        return "letyshops 🔥"
+    return row.get("best_competitor")
+
+df["best_competitor"] = df.apply(flag_boost, axis=1)
+
+# ── Delta & alert ─────────────────────────────────────────────────
 df["delta"] = (df["best_competitor_rate"] - df["igraal_rate"]).round(2)
 df["alert"] = df.apply(
     lambda r: "LOWER"
@@ -119,6 +166,19 @@ df["alert"] = df.apply(
     axis=1
 )
 df["date"] = datetime.today().strftime("%Y-%m-%d")
+
+# ── Order columns ─────────────────────────────────────────────────
+col_order = [
+    "date", "retailer", "igraal_rate", "cashback_type",
+    "letyshops_rate", "letyshops_rate_type", "letyshops_boosted",
+    "picodi_rate", "picodi_rate_type",
+    "alerabat_rate", "alerabat_rate_type",
+    "goodie_rate", "goodie_rate_type",
+    "best_competitor", "best_competitor_rate",
+    "delta", "alert",
+    "letyshops_url", "picodi_url", "alerabat_url", "goodie_url",
+]
+df = df[[c for c in col_order if c in df.columns]]
 df = df.sort_values("delta", ascending=False)
 df.to_csv("data/benchmark_data.csv", index=False)
 
@@ -130,7 +190,9 @@ history_file = "data/benchmark_history.csv"
 if os.path.exists(history_file):
     df_history = pd.read_csv(history_file)
     df_history = pd.concat([df_history, df], ignore_index=True)
-    df_history = df_history.drop_duplicates(subset=["date","retailer"], keep="last")
+    df_history = df_history.drop_duplicates(
+        subset=["date", "retailer"], keep="last"
+    )
 else:
     df_history = df.copy()
 df_history.to_csv(history_file, index=False)
@@ -176,10 +238,12 @@ if os.path.exists(metadata_file):
         left_on ="retailer_preset",
         right_on="retailer",
         how="left",
-        suffixes=("","_meta")
+        suffixes=("", "_meta")
     )
-    df_enriched.drop(columns=["retailer_preset","retailer_meta"],
-                     errors="ignore", inplace=True)
+    df_enriched.drop(
+        columns=["retailer_preset", "retailer_meta"],
+        errors="ignore", inplace=True
+    )
     df_enriched.to_csv("data/benchmark_data_enriched.csv", index=False)
     print(f"✅ benchmark_data_enriched.csv — "
           f"{df_enriched['affiliate_network'].notna().sum()} retailers enriched")
@@ -190,7 +254,10 @@ else:
 # SUMMARY
 # ══════════════════════════════════════════════════════════════════
 
+boosted_today = df.get("letyshops_boosted", pd.Series(dtype=bool)).sum()
+
 print(f"\n✅ benchmark_data.csv    — {len(df)} retailers")
 print(f"✅ benchmark_history.csv — {len(df_history)} rows total")
-print(f"   ⚠️  LOWER : {(df['alert']=='LOWER').sum()}")
-print(f"   ✅  OK    : {(df['alert']=='OK').sum()}")
+print(f"   🔥 Boosted rates      : {int(boosted_today)}")
+print(f"   ⚠️  LOWER             : {(df['alert']=='LOWER').sum()}")
+print(f"   ✅  OK                : {(df['alert']=='OK').sum()}")
