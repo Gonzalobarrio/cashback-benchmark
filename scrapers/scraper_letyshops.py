@@ -88,16 +88,9 @@ class LetyshopsBrowser:
                             wait_until="networkidle")
             self._page.wait_for_timeout(3000)
 
-            # Debug inputs
-            inputs = self._page.evaluate('''() => {
-                return Array.from(document.querySelectorAll("input")).map(i => ({
-                    type: i.type,
-                    name: i.name,
-                    placeholder: i.placeholder,
-                    id: i.id,
-                    className: i.className.substring(0, 50)
-                }));
-            }''')
+            inputs = self._page.evaluate(
+                "() => Array.from(document.querySelectorAll('input')).map(i => ({type: i.type, name: i.name, placeholder: i.placeholder, id: i.id}))"
+            )
             print(f"  📋 Inputs found on login page: {inputs}")
 
             email_selectors = [
@@ -121,7 +114,6 @@ class LetyshopsBrowser:
                 'input[placeholder*="hasło" i]',
                 'input[placeholder*="password" i]',
                 'input[id*="password" i]',
-                'input[id*="pass" i]',
             ]
 
             email_filled = False
@@ -190,14 +182,13 @@ class LetyshopsBrowser:
             self._page.wait_for_timeout(4000)
             print(f"  📍 URL after login: {self._page.url}")
 
-            # ── Forzar locale polaco independientemente del redirect ───────
+            # Forzar locale polaco
             print("  🌍 Forcing Polish locale...")
             self._page.goto(LETYSHOPS_HOME, timeout=30000,
                             wait_until="networkidle")
             self._page.wait_for_timeout(3000)
             print(f"  📍 URL after locale fix: {self._page.url}")
 
-            # ── Verificar que estamos logueados ───────────────────────────
             page_text = self._page.inner_text("body").lower()
             if any(fail in page_text for fail in
                    ["nieprawidłowe", "błędne", "invalid", "incorrect",
@@ -234,20 +225,330 @@ class LetyshopsBrowser:
 # ══════════════════════════════════════════════════════════════════════════════
 
 def get_letyshops_boosts(browser: LetyshopsBrowser) -> dict:
-    """
-    Scrape homepage for active cashback boosts (3X, 4X, 7X...).
-    Returns dict: {slug: boosted_rate_float}
-    """
     print("  🔥 Fetching homepage boosts...")
     browser._page.goto(LETYSHOPS_HOME, timeout=30000, wait_until="networkidle")
     browser._page.wait_for_timeout(4000)
 
-    # ── Scroll to load lazy content ───────────────────────────────
     for _ in range(4):
         browser._page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
         browser._page.wait_for_timeout(1500)
     browser._page.evaluate("window.scrollTo(0, 0)")
     browser._page.wait_for_timeout(1000)
 
-    # ── Debug — cuántos links /pl/shops/ hay en la homepage ───────
-    shop_links_count = browser._page.evaluate('''()
+    shop_links_count = browser._page.evaluate(
+        "() => document.querySelectorAll('a[href*=\"/pl/shops/\"]').length"
+    )
+    print(f"  🔥 Shop links found on homepage: {shop_links_count}")
+
+    body_preview = browser._page.evaluate(
+        "() => document.body.innerText.substring(0, 500)"
+    )
+    print(f"  🔥 Homepage body preview: {body_preview}")
+
+    boost_data = browser._page.evaluate("""
+        () => {
+            const results = [];
+            const seen = new Set();
+            const links = document.querySelectorAll('a[href*="/pl/shops/"]');
+
+            links.forEach(link => {
+                const href = link.getAttribute("href") || "";
+                const slugMatch = href.match(/\\/pl\\/shops\\/([^\\/?#]+)/);
+                if (!slugMatch) return;
+                const slug = slugMatch[1];
+                if (seen.has(slug)) return;
+
+                let card = link;
+                for (let i = 0; i < 8; i++) {
+                    if (!card.parentElement) break;
+                    card = card.parentElement;
+                    const text = card.innerText || "";
+
+                    const multMatch = text.match(/(\\d+)[Xx]\\b/) ||
+                                      text.match(/boost/i);
+                    if (!multMatch) continue;
+
+                    const pcts = [];
+                    const pctMatches = text.matchAll(/(\\d+(?:[.,]\\d+)?)\\s*%/g);
+                    for (const m of pctMatches) {
+                        const val = parseFloat(m[1].replace(",", "."));
+                        if (val > 0 && val <= 95) pcts.push(val);
+                    }
+                    if (pcts.length === 0) continue;
+
+                    const boostedRate = Math.max(...pcts);
+                    seen.add(slug);
+                    results.push({
+                        slug: slug,
+                        multiplier: multMatch[0],
+                        boosted_rate: boostedRate,
+                        text_sample: text.substring(0, 150)
+                    });
+                    break;
+                }
+            });
+            return results;
+        }
+    """)
+
+    print(f"  🔥 Raw boost entries found: {len(boost_data)}")
+    for entry in boost_data:
+        print(f"    slug={entry['slug']} | {entry['multiplier']} "
+              f"| {entry['boosted_rate']}% | "
+              f"text: {entry['text_sample'][:100]}")
+
+    boosts = {}
+    for entry in boost_data:
+        slug = entry["slug"]
+        rate = entry["boosted_rate"]
+        if slug not in boosts or rate > boosts[slug]:
+            boosts[slug] = rate
+
+    print(f"  🔥 {len(boosts)} unique boosts: {boosts}\n")
+    return boosts
+
+
+# ══════════════════════════════════════════════════════════════════════════════
+# LISTING PAGE
+# ══════════════════════════════════════════════════════════════════════════════
+
+def get_letyshops_listing(browser: LetyshopsBrowser) -> dict:
+    from bs4 import BeautifulSoup
+
+    print("  📋 Fetching listing page...")
+    browser._page.goto(LETYSHOPS_LISTING, timeout=30000,
+                       wait_until="networkidle")
+    browser._page.wait_for_timeout(3000)
+
+    print("  📋 Scrolling to load all shops...")
+    prev_count = 0
+    for scroll_attempt in range(15):
+        browser._page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
+        browser._page.wait_for_timeout(1500)
+
+        current_count = browser._page.evaluate(
+            "() => document.querySelectorAll('a[href*=\"/pl/shops/\"]').length"
+        )
+        print(f"  📋 Scroll {scroll_attempt + 1}: {current_count} links found")
+
+        if current_count == prev_count and scroll_attempt > 3:
+            break
+        prev_count = current_count
+
+    browser._page.evaluate("window.scrollTo(0, 0)")
+    browser._page.wait_for_timeout(1000)
+
+    content = browser._page.content()
+    soup    = BeautifulSoup(content, "html.parser")
+
+    pattern = re.compile(r"^/pl/shops/[^/?#]+$")
+    seen, shops = set(), {}
+
+    for link in soup.find_all("a", href=pattern):
+        href = link.get("href", "")
+        slug = href.split("/pl/shops/")[-1].strip("/")
+        if slug in seen:
+            continue
+        seen.add(slug)
+
+        rate, rtype = _parse_rate(link.get_text(separator=" ", strip=True))
+        shops[slug] = {
+            "letyshops_rate"     : rate,
+            "letyshops_rate_type": rtype,
+            "letyshops_url"      : LETYSHOPS_BASE + href,
+        }
+
+    print(f"  📋 Listing complete: {len(shops)} shops found")
+    return shops
+
+
+# ══════════════════════════════════════════════════════════════════════════════
+# INDIVIDUAL PAGE
+# ══════════════════════════════════════════════════════════════════════════════
+
+def extract_rate_from_url(browser: LetyshopsBrowser, url: str):
+    text = browser.get_text(url)
+    if not text:
+        return None, None
+
+    tl = text.lower()
+    if any(phrase in tl for phrase in NO_CASHBACK_PHRASES):
+        return "no cashback", None
+
+    return _parse_rate(text)
+
+
+# ══════════════════════════════════════════════════════════════════════════════
+# SLUG LOGIC
+# ══════════════════════════════════════════════════════════════════════════════
+
+def generate_slug_variants(retailer_name: str, igraal_slug: str) -> list:
+    camel_slug = re.sub(r"[^a-z0-9]+", "-",
+                        re.sub(r"([a-z])([A-Z])", r"\1-\2",
+                               retailer_name).lower()).strip("-")
+    name_slug  = re.sub(r"[^a-z0-9]+", "-",
+                        retailer_name.lower()).strip("-")
+    bases = list(dict.fromkeys([igraal_slug, name_slug, camel_slug]))
+
+    variants = (
+        [b + "-pl"     for b in bases] +
+        [b + "-polska" for b in bases] +
+        [b             for b in bases]
+    )
+    return list(dict.fromkeys(variants))
+
+
+# ══════════════════════════════════════════════════════════════════════════════
+# STORE RESOLVER
+# ══════════════════════════════════════════════════════════════════════════════
+
+def find_letyshops_store(
+    browser: LetyshopsBrowser,
+    retailer_name: str,
+    igraal_slug: str,
+    listing: dict
+):
+    variants          = generate_slug_variants(retailer_name, igraal_slug)
+    found_no_cashback = False
+
+    for slug in variants:
+        if slug not in listing:
+            continue
+        info = listing[slug]
+        if info["letyshops_rate"]:
+            return (info["letyshops_rate"],
+                    info["letyshops_rate_type"],
+                    info["letyshops_url"])
+
+        rate, rtype = extract_rate_from_url(browser, info["letyshops_url"])
+        if rate and rate != "no cashback":
+            return rate, rtype, info["letyshops_url"]
+        if rate == "no cashback":
+            found_no_cashback = True
+
+    url_bases = [
+        LETYSHOPS_BASE + "/pl/shops/",
+        LETYSHOPS_BASE + "/pl-en/shops/",
+    ]
+    for slug in variants:
+        for base in url_bases:
+            url  = base + slug
+            rate, rtype = extract_rate_from_url(browser, url)
+            if rate and rate != "no cashback":
+                return rate, rtype, url
+            if rate == "no cashback":
+                found_no_cashback = True
+            time.sleep(0.3)
+
+    if found_no_cashback:
+        return "no cashback", None, None
+    return "not_found", None, None
+
+
+# ══════════════════════════════════════════════════════════════════════════════
+# MAIN SCRAPER
+# ══════════════════════════════════════════════════════════════════════════════
+
+def scrape_letyshops(df_igraal: pd.DataFrame) -> pd.DataFrame:
+    email    = os.environ.get("LETYSHOPS_EMAIL", "")
+    password = os.environ.get("LETYSHOPS_PASSWORD", "")
+
+    browser = LetyshopsBrowser().start()
+    browser.login(email, password)
+
+    boosts  = get_letyshops_boosts(browser)
+    listing = get_letyshops_listing(browser)
+
+    today   = datetime.today().strftime("%Y-%m-%d")
+    results = []
+    total   = len(df_igraal)
+
+    try:
+        for i, (_, row) in enumerate(df_igraal.iterrows(), 1):
+            retailer = row["retailer"]
+            slug     = row["slug"]
+            print(f"  [{i:>3}/{total}] {retailer} ({slug})", end=" → ")
+
+            rate, rtype, url = find_letyshops_store(
+                browser, retailer, slug, listing
+            )
+
+            variants = generate_slug_variants(retailer, slug)
+            extra_slugs = [
+                retailer.lower(),
+                retailer.lower().replace(" ", "-"),
+                retailer.lower().replace(".", ""),
+                slug.replace("-pl", ""),
+            ]
+            all_variants = list(dict.fromkeys(variants + extra_slugs))
+
+            boosted_rate = None
+            for v in all_variants:
+                if v in boosts:
+                    boosted_rate = boosts[v]
+                    break
+
+            is_boosted = False
+            if boosted_rate is not None:
+                try:
+                    base = float(rate) if rate not in (
+                        "no cashback", "not_found", None) else 0.0
+                    if boosted_rate > base:
+                        print(f"{rate or '—'} → 🔥 BOOST {boosted_rate}%")
+                        rate       = str(boosted_rate)
+                        rtype      = "boosted_%"
+                        is_boosted = True
+                    else:
+                        print(rate or "—")
+                except (ValueError, TypeError):
+                    print(rate or "—")
+            else:
+                print(rate or "—")
+
+            results.append({
+                "date"               : today,
+                "retailer"           : retailer,
+                "igraal_slug"        : slug,
+                "letyshops_rate"     : (rate if rate not in
+                                        ("no cashback", "not_found") else None),
+                "letyshops_rate_type": (rtype if rate not in
+                                        ("no cashback", "not_found") else rate),
+                "letyshops_boosted"  : is_boosted,
+                "letyshops_url"      : url,
+            })
+            time.sleep(0.4)
+
+    finally:
+        browser.stop()
+
+    return pd.DataFrame(results)
+
+
+# ══════════════════════════════════════════════════════════════════════════════
+# ENTRY POINT
+# ══════════════════════════════════════════════════════════════════════════════
+
+if __name__ == "__main__":
+    os.makedirs("data", exist_ok=True)
+    df_ig  = pd.read_csv("data/igraal_rates_latest.csv")
+    df_out = scrape_letyshops(df_ig)
+
+    today       = datetime.today().strftime("%Y%m%d")
+    dated_file  = f"data/letyshops_rates_{today}.csv"
+    latest_file = "data/letyshops_rates_latest.csv"
+
+    df_out.to_csv(dated_file,  index=False)
+    df_out.to_csv(latest_file, index=False)
+
+    found   = df_out["letyshops_rate_type"].isin(
+                  ["%", "up_to_%", "zł", "boosted_%"]).sum()
+    boosted = df_out["letyshops_boosted"].sum()
+    nc      = (df_out["letyshops_rate_type"] == "no cashback").sum()
+    nf      = (df_out["letyshops_rate_type"] == "not_found").sum()
+
+    print(f"\n✅ Saved → {dated_file}")
+    print(f"✅ Saved → {latest_file}")
+    print(f"   Rates found : {found}")
+    print(f"   🔥 Boosted  : {boosted}")
+    print(f"   No cashback : {nc}")
+    print(f"   Not found   : {nf}")
