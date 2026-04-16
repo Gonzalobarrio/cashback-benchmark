@@ -53,7 +53,7 @@ def _parse_rate(text: str):
 
 
 # ══════════════════════════════════════════════════════════════════════════════
-# BROWSER WITH AUTO-LOGIN
+# BROWSER
 # ══════════════════════════════════════════════════════════════════════════════
 
 class LetyshopsBrowser:
@@ -68,6 +68,7 @@ class LetyshopsBrowser:
         self._browser = self._pw.chromium.launch(headless=True)
         context       = self._browser.new_context(
             locale="pl-PL",
+            timezone_id="Europe/Warsaw",
             user_agent=(
                 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
                 "AppleWebKit/537.36 (KHTML, like Gecko) "
@@ -76,6 +77,85 @@ class LetyshopsBrowser:
         )
         self._page = context.new_page()
         return self
+
+    def _force_polish_locale(self) -> bool:
+        """
+        Detecta el modal de selección de país y elige Poland.
+        Returns True si se cambió correctamente.
+        """
+        try:
+            page_text = self._page.inner_text("body")
+            current_url = self._page.url
+
+            # Detectar si estamos en versión no-polaca
+            is_us = "/us" in current_url or "/us/" in current_url
+            has_country_modal = "Select a different country" in page_text or \
+                                "Confirm that the selected country" in page_text
+
+            print(f"  🌍 Current URL: {current_url}")
+            print(f"  🌍 US locale detected: {is_us}")
+            print(f"  🌍 Country modal: {has_country_modal}")
+
+            if has_country_modal:
+                # Click "Select a different country"
+                selectors = [
+                    'text="Select a different country"',
+                    'text="Wybierz inny kraj"',
+                    'button:has-text("Select a different country")',
+                    'a:has-text("Select a different country")',
+                ]
+                for sel in selectors:
+                    try:
+                        el = self._page.locator(sel).first
+                        if el.count() > 0:
+                            el.click()
+                            print(f"  ✅ Clicked 'Select a different country' ({sel})")
+                            self._page.wait_for_timeout(2000)
+                            break
+                    except Exception:
+                        continue
+
+                # Buscar y click Poland
+                poland_selectors = [
+                    'text="Poland"',
+                    'text="Polska"',
+                    'a[href*="/pl"]',
+                    'a[href*="poland"]',
+                    'button:has-text("Poland")',
+                    'li:has-text("Poland")',
+                ]
+                for sel in poland_selectors:
+                    try:
+                        el = self._page.locator(sel).first
+                        if el.count() > 0:
+                            el.click()
+                            print(f"  ✅ Selected Poland ({sel})")
+                            self._page.wait_for_timeout(3000)
+                            print(f"  📍 URL after country select: {self._page.url}")
+                            return True
+                    except Exception:
+                        continue
+
+            # Si no hay modal pero estamos en /us → navegar directamente a /pl
+            if is_us or "/pl" not in current_url:
+                print("  🌍 Navigating directly to /pl...")
+                self._page.goto(LETYSHOPS_HOME, timeout=30000,
+                                wait_until="networkidle")
+                self._page.wait_for_timeout(3000)
+
+                # Verificar si aparece el modal de nuevo
+                page_text2 = self._page.inner_text("body")
+                if "Select a different country" in page_text2:
+                    print("  🌍 Country modal appeared again — handling...")
+                    return self._force_polish_locale()
+
+                print(f"  📍 URL: {self._page.url}")
+
+            return "/pl" in self._page.url
+
+        except Exception as e:
+            print(f"  ⚠️  Locale fix error: {e}")
+            return False
 
     def login(self, email: str, password: str) -> bool:
         if not email or not password:
@@ -89,9 +169,10 @@ class LetyshopsBrowser:
             self._page.wait_for_timeout(3000)
 
             inputs = self._page.evaluate(
-                "() => Array.from(document.querySelectorAll('input')).map(i => ({type: i.type, name: i.name, placeholder: i.placeholder, id: i.id}))"
+                "() => Array.from(document.querySelectorAll('input')).map(i => "
+                "({type: i.type, name: i.name, placeholder: i.placeholder, id: i.id}))"
             )
-            print(f"  📋 Inputs found on login page: {inputs}")
+            print(f"  📋 Inputs found: {inputs}")
 
             email_selectors = [
                 'input[name="_username"]',
@@ -100,9 +181,7 @@ class LetyshopsBrowser:
                 'input[name="login"]',
                 'input[name="username"]',
                 'input[placeholder*="mail" i]',
-                'input[placeholder*="login" i]',
                 'input[id*="email" i]',
-                'input[id*="login" i]',
                 'form input[type="text"]:not([placeholder*="Search" i])',
             ]
 
@@ -111,9 +190,6 @@ class LetyshopsBrowser:
                 'input[type="password"]',
                 'input[name="password"]',
                 'input[name="pass"]',
-                'input[placeholder*="hasło" i]',
-                'input[placeholder*="password" i]',
-                'input[id*="password" i]',
             ]
 
             email_filled = False
@@ -123,7 +199,7 @@ class LetyshopsBrowser:
                     if el.count() > 0:
                         el.wait_for(timeout=3000, state="visible")
                         el.fill(email)
-                        print(f"  ✅ Email filled with selector: {sel}")
+                        print(f"  ✅ Email filled: {sel}")
                         email_filled = True
                         break
                 except Exception:
@@ -142,7 +218,7 @@ class LetyshopsBrowser:
                     if el.count() > 0:
                         el.wait_for(timeout=3000, state="visible")
                         el.fill(password)
-                        print(f"  ✅ Password filled with selector: {sel}")
+                        print(f"  ✅ Password filled: {sel}")
                         pass_filled = True
                         break
                 except Exception:
@@ -169,7 +245,7 @@ class LetyshopsBrowser:
                     el = self._page.locator(sel).first
                     if el.count() > 0:
                         el.click()
-                        print(f"  ✅ Submitted with selector: {sel}")
+                        print(f"  ✅ Submitted: {sel}")
                         submitted = True
                         break
                 except Exception:
@@ -177,26 +253,23 @@ class LetyshopsBrowser:
 
             if not submitted:
                 self._page.keyboard.press("Enter")
-                print("  ⚠️  Submit via Enter key")
+                print("  ⚠️  Submit via Enter")
 
             self._page.wait_for_timeout(4000)
-            print(f"  📍 URL after login: {self._page.url}")
+            print(f"  📍 URL after submit: {self._page.url}")
 
-            # Forzar locale polaco
-            print("  🌍 Forcing Polish locale...")
-            self._page.goto(LETYSHOPS_HOME, timeout=30000,
-                            wait_until="networkidle")
-            self._page.wait_for_timeout(3000)
-            print(f"  📍 URL after locale fix: {self._page.url}")
+            # ── Forzar locale polaco ───────────────────────────────
+            self._force_polish_locale()
 
-            page_text = self._page.inner_text("body").lower()
-            if any(fail in page_text for fail in
-                   ["nieprawidłowe", "błędne", "invalid", "incorrect",
-                    "wrong", "błąd"]):
-                print("  ❌ Login failed — wrong credentials")
-                return False
+            # ── Verificar locale final ─────────────────────────────
+            final_url = self._page.url
+            print(f"  📍 Final URL: {final_url}")
 
-            print("  ✅ Login successful — Polish locale active")
+            if "/pl" in final_url:
+                print("  ✅ Login successful — Polish locale confirmed")
+            else:
+                print("  ⚠️  Still not in /pl — will try on listing page")
+
             self._logged_in = True
             return True
 
@@ -229,45 +302,51 @@ def get_letyshops_boosts(browser: LetyshopsBrowser) -> dict:
     browser._page.goto(LETYSHOPS_HOME, timeout=30000, wait_until="networkidle")
     browser._page.wait_for_timeout(4000)
 
+    # Manejar modal de país si aparece de nuevo
+    page_text = browser._page.inner_text("body")
+    if "Select a different country" in page_text or "Confirm that" in page_text:
+        print("  🌍 Country modal on homepage — fixing...")
+        browser._force_polish_locale()
+        browser._page.wait_for_timeout(3000)
+
+    # Scroll
     for _ in range(4):
         browser._page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
         browser._page.wait_for_timeout(1500)
     browser._page.evaluate("window.scrollTo(0, 0)")
     browser._page.wait_for_timeout(1000)
 
+    current_url = browser._page.url
+    print(f"  🔥 Boost page URL: {current_url}")
+
     shop_links_count = browser._page.evaluate(
         "() => document.querySelectorAll('a[href*=\"/pl/shops/\"]').length"
     )
-    print(f"  🔥 Shop links found on homepage: {shop_links_count}")
+    print(f"  🔥 Shop links on homepage: {shop_links_count}")
 
     body_preview = browser._page.evaluate(
-        "() => document.body.innerText.substring(0, 500)"
+        "() => document.body.innerText.substring(0, 300)"
     )
-    print(f"  🔥 Homepage body preview: {body_preview}")
+    print(f"  🔥 Body preview: {body_preview}")
 
     boost_data = browser._page.evaluate("""
         () => {
             const results = [];
             const seen = new Set();
             const links = document.querySelectorAll('a[href*="/pl/shops/"]');
-
             links.forEach(link => {
                 const href = link.getAttribute("href") || "";
                 const slugMatch = href.match(/\\/pl\\/shops\\/([^\\/?#]+)/);
                 if (!slugMatch) return;
                 const slug = slugMatch[1];
                 if (seen.has(slug)) return;
-
                 let card = link;
                 for (let i = 0; i < 8; i++) {
                     if (!card.parentElement) break;
                     card = card.parentElement;
                     const text = card.innerText || "";
-
-                    const multMatch = text.match(/(\\d+)[Xx]\\b/) ||
-                                      text.match(/boost/i);
+                    const multMatch = text.match(/(\\d+)[Xx]\\b/) || text.match(/boost/i);
                     if (!multMatch) continue;
-
                     const pcts = [];
                     const pctMatches = text.matchAll(/(\\d+(?:[.,]\\d+)?)\\s*%/g);
                     for (const m of pctMatches) {
@@ -275,7 +354,6 @@ def get_letyshops_boosts(browser: LetyshopsBrowser) -> dict:
                         if (val > 0 && val <= 95) pcts.push(val);
                     }
                     if (pcts.length === 0) continue;
-
                     const boostedRate = Math.max(...pcts);
                     seen.add(slug);
                     results.push({
@@ -291,11 +369,9 @@ def get_letyshops_boosts(browser: LetyshopsBrowser) -> dict:
         }
     """)
 
-    print(f"  🔥 Raw boost entries found: {len(boost_data)}")
+    print(f"  🔥 Raw boost entries: {len(boost_data)}")
     for entry in boost_data:
-        print(f"    slug={entry['slug']} | {entry['multiplier']} "
-              f"| {entry['boosted_rate']}% | "
-              f"text: {entry['text_sample'][:100]}")
+        print(f"    {entry['slug']} | {entry['multiplier']} | {entry['boosted_rate']}%")
 
     boosts = {}
     for entry in boost_data:
@@ -320,18 +396,27 @@ def get_letyshops_listing(browser: LetyshopsBrowser) -> dict:
                        wait_until="networkidle")
     browser._page.wait_for_timeout(3000)
 
-    print("  📋 Scrolling to load all shops...")
+    # Manejar modal de país
+    page_text = browser._page.inner_text("body")
+    if "Select a different country" in page_text or "Confirm that" in page_text:
+        print("  🌍 Country modal on listing — fixing...")
+        browser._force_polish_locale()
+        browser._page.goto(LETYSHOPS_LISTING, timeout=30000,
+                           wait_until="networkidle")
+        browser._page.wait_for_timeout(3000)
+
+    print(f"  📋 Listing URL: {browser._page.url}")
+    print("  📋 Scrolling...")
+
     prev_count = 0
-    for scroll_attempt in range(15):
+    for attempt in range(15):
         browser._page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
         browser._page.wait_for_timeout(1500)
-
         current_count = browser._page.evaluate(
             "() => document.querySelectorAll('a[href*=\"/pl/shops/\"]').length"
         )
-        print(f"  📋 Scroll {scroll_attempt + 1}: {current_count} links found")
-
-        if current_count == prev_count and scroll_attempt > 3:
+        print(f"  📋 Scroll {attempt + 1}: {current_count} links")
+        if current_count == prev_count and attempt > 3:
             break
         prev_count = current_count
 
@@ -339,8 +424,7 @@ def get_letyshops_listing(browser: LetyshopsBrowser) -> dict:
     browser._page.wait_for_timeout(1000)
 
     content = browser._page.content()
-    soup    = BeautifulSoup(content, "html.parser")
-
+    soup    = __import__("bs4").BeautifulSoup(content, "html.parser")
     pattern = re.compile(r"^/pl/shops/[^/?#]+$")
     seen, shops = set(), {}
 
@@ -350,7 +434,6 @@ def get_letyshops_listing(browser: LetyshopsBrowser) -> dict:
         if slug in seen:
             continue
         seen.add(slug)
-
         rate, rtype = _parse_rate(link.get_text(separator=" ", strip=True))
         shops[slug] = {
             "letyshops_rate"     : rate,
@@ -370,11 +453,9 @@ def extract_rate_from_url(browser: LetyshopsBrowser, url: str):
     text = browser.get_text(url)
     if not text:
         return None, None
-
     tl = text.lower()
     if any(phrase in tl for phrase in NO_CASHBACK_PHRASES):
         return "no cashback", None
-
     return _parse_rate(text)
 
 
@@ -389,7 +470,6 @@ def generate_slug_variants(retailer_name: str, igraal_slug: str) -> list:
     name_slug  = re.sub(r"[^a-z0-9]+", "-",
                         retailer_name.lower()).strip("-")
     bases = list(dict.fromkeys([igraal_slug, name_slug, camel_slug]))
-
     variants = (
         [b + "-pl"     for b in bases] +
         [b + "-polska" for b in bases] +
@@ -419,7 +499,6 @@ def find_letyshops_store(
             return (info["letyshops_rate"],
                     info["letyshops_rate_type"],
                     info["letyshops_url"])
-
         rate, rtype = extract_rate_from_url(browser, info["letyshops_url"])
         if rate and rate != "no cashback":
             return rate, rtype, info["letyshops_url"]
