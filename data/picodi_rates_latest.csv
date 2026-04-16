@@ -103,19 +103,19 @@ date,retailer,igraal_slug,picodi_rate,picodi_rate_type,picodi_url
 2026-04-16,Homla,homla,,zł,https://www.picodi.com/pl/homla
 2026-04-16,HP,hp,,zł,https://www.picodi.com/pl/hp
 2026-04-16,Huawei,huawei,,zł,https://www.picodi.com/pl/huawei
-2026-04-16,iBOOD,ibood,1.2,up_to_%,https://www.picodi.com/pl/ibood
-2026-04-16,iDream,idream,1.3,up_to_%,https://www.picodi.com/pl/idream-pl
-2026-04-16,iHerb,iherb,1.5,%,https://www.picodi.com/pl/iherb
-2026-04-16,iParts,iparts,1.1,%,https://www.picodi.com/pl/iparts-pl
-2026-04-16,JD Sports,jdsports,1.5,up_to_%,https://www.picodi.com/pl/jdsports
-2026-04-16,Joom,joom,4.5,up_to_%,https://www.picodi.com/pl/joom
-2026-04-16,Katalog Marzeń,katalog-marzen,0.8,%,https://www.picodi.com/pl/katalogmarzen
-2026-04-16,Kazar,kazar,1.1,up_to_%,https://www.picodi.com/pl/kazar
+2026-04-16,iBOOD,ibood,,not_found,
+2026-04-16,iDream,idream,,not_found,
+2026-04-16,iHerb,iherb,,not_found,
+2026-04-16,iParts,iparts,,not_found,
+2026-04-16,JD Sports,jdsports,,not_found,
+2026-04-16,Joom,joom,,not_found,
+2026-04-16,Katalog Marzeń,katalog-marzen,,not_found,
+2026-04-16,Kazar,kazar,,not_found,
 2026-04-16,Kenwood,kenwood,,not_found,
-2026-04-16,KFC,kfc,1.7,%,https://www.picodi.com/pl/kfc
-2026-04-16,Kinguin,kinguin,3.4,up_to_%,https://www.picodi.com/pl/kinguin
-2026-04-16,Kiwi,kiwi,,zł,https://www.picodi.com/pl/kiwi
-2026-04-16,Komputronik,komputronik,0.5,%,https://www.picodi.com/pl/komputronik
+2026-04-16,KFC,kfc,,not_found,
+2026-04-16,Kinguin,kinguin,,not_found,
+2026-04-16,Kiwi,kiwi,,not_found,
+2026-04-16,Komputronik,komputronik,,not_found,
 2026-04-16,Konesso,konesso,,not_found,
 2026-04-16,Krakvet,krakvet,,not_found,
 2026-04-16,Król Materacy,krolmateracy,,not_found,
