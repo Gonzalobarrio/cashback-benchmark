@@ -60,14 +60,25 @@ class LetyshopsBrowser:
     def __init__(self):
         self._pw        = None
         self._browser   = None
+        self._context   = None
         self._page      = None
-        self._logged_in = False
-        self._locale_ok = False
+
+    def _force_pl_route(self, route):
+        """
+        Intercept ALL requests — rewrite /us/ → /pl/ to bypass geo-detection.
+        """
+        url = route.request.url
+        if "letyshops.com/us" in url:
+            pl_url = url.replace("letyshops.com/us", "letyshops.com/pl")
+            print(f"  🌍 Route rewrite: {url[:60]} → {pl_url[:60]}")
+            route.continue_(url=pl_url)
+        else:
+            route.continue_()
 
     def start(self):
         self._pw      = sync_playwright().start()
         self._browser = self._pw.chromium.launch(headless=True)
-        context       = self._browser.new_context(
+        self._context = self._browser.new_context(
             locale="pl-PL",
             timezone_id="Europe/Warsaw",
             user_agent=(
@@ -76,135 +87,12 @@ class LetyshopsBrowser:
                 "Chrome/122.0.0.0 Safari/537.36"
             )
         )
-        self._page = context.new_page()
+        self._page = self._context.new_page()
+
+        # ── Intercept /us/ → /pl/ BEFORE any navigation ───────────
+        self._page.route("**/*", self._force_pl_route)
+        print("  🌍 Route interceptor active: /us/ → /pl/")
         return self
-
-    def _handle_country_modal(self) -> bool:
-        """
-        Detecta y maneja el modal de selección de país usando JavaScript.
-        Returns True si Poland fue seleccionado correctamente.
-        """
-        try:
-            self._page.wait_for_timeout(2000)
-            page_text = self._page.inner_text("body")
-
-            if "Select a different country" not in page_text and \
-               "Confirm that" not in page_text:
-                return "/pl" in self._page.url
-
-            print("  🌍 Country modal detected")
-
-            # ── Click "Select a different country" via JS ──────────
-            clicked = self._page.evaluate("""
-                () => {
-                    const all = Array.from(document.querySelectorAll('a, button, span, div, p'));
-                    const btn = all.find(el =>
-                        el.textContent.trim() === 'Select a different country' ||
-                        el.textContent.trim() === 'Wybierz inny kraj'
-                    );
-                    if (btn) { btn.click(); return btn.textContent.trim(); }
-                    return null;
-                }
-            """)
-            print(f"  🌍 Clicked: '{clicked}'")
-
-            if not clicked:
-                print("  ❌ 'Select a different country' button not found")
-                debug = self._page.evaluate(
-                    "() => document.body.innerText.substring(0, 400)"
-                )
-                print(f"  🔍 Page text: {debug}")
-                return False
-
-            self._page.wait_for_timeout(3000)
-
-            # ── Debug: qué links están disponibles ahora ───────────
-            available_links = self._page.evaluate("""
-                () => Array.from(document.querySelectorAll('a'))
-                    .map(a => ({href: a.href, text: a.textContent.trim()}))
-                    .filter(x => x.text.length > 0 && x.text.length < 50)
-                    .slice(0, 30)
-            """)
-            print(f"  🔍 Available links after click: {available_links}")
-
-            # ── Click Poland via JS ────────────────────────────────
-            poland_clicked = self._page.evaluate("""
-                () => {
-                    // Try links with /pl in href
-                    const links = Array.from(document.querySelectorAll('a'));
-
-                    // Exact Poland text + /pl href
-                    let poland = links.find(a =>
-                        a.href.includes('/pl') &&
-                        (a.textContent.trim() === 'Poland' ||
-                         a.textContent.trim() === 'Polska')
-                    );
-                    if (poland) { poland.click(); return 'link: ' + poland.href; }
-
-                    // Any element with exact Poland text
-                    const all = Array.from(document.querySelectorAll('*'));
-                    const polandEl = all.find(el =>
-                        el.children.length === 0 &&
-                        (el.textContent.trim() === 'Poland' ||
-                         el.textContent.trim() === 'Polska')
-                    );
-                    if (polandEl) { polandEl.click(); return 'element: ' + polandEl.tagName; }
-
-                    // Fallback: any link containing /pl
-                    const plLink = links.find(a =>
-                        a.href.match(/letyshops\\.com\\/pl$/) ||
-                        a.href.match(/letyshops\\.com\\/pl\\//)
-                    );
-                    if (plLink) { plLink.click(); return 'fallback: ' + plLink.href; }
-
-                    return null;
-                }
-            """)
-
-            print(f"  🌍 Poland click result: {poland_clicked}")
-
-            if poland_clicked:
-                self._page.wait_for_timeout(4000)
-                print(f"  📍 URL after Poland selection: {self._page.url}")
-                return "/pl" in self._page.url
-
-            print("  ❌ Could not find Poland option")
-            return False
-
-        except Exception as e:
-            print(f"  ⚠️ Modal handler error: {e}")
-            return False
-
-    def _ensure_polish_locale(self) -> bool:
-        """
-        Garantiza que estamos en locale polaco.
-        Intenta hasta 3 veces con distintas estrategias.
-        """
-        for attempt in range(3):
-            current_url = self._page.url
-            print(f"  🌍 Locale check {attempt+1}: {current_url}")
-
-            # Ya estamos en /pl y sin modal
-            if "/pl" in current_url:
-                page_text = self._page.inner_text("body")
-                if "Confirm that" not in page_text and "Select a different country" not in page_text:
-                    print("  ✅ Polish locale confirmed")
-                    self._locale_ok = True
-                    return True
-
-            # Manejar modal si existe
-            result = self._handle_country_modal()
-            if result:
-                self._locale_ok = True
-                return True
-
-            # Navegar directamente a /pl y reintentar
-            print(f"  🌍 Navigating to /pl (attempt {attempt+1})...")
-            self._page.goto(LETYSHOPS_HOME, timeout=30000, wait_until="networkidle")
-            self._page.wait_for_timeout(3000)
-
-        print("  ❌ Could not set Polish locale after 3 attempts")
-        return False
 
     def login(self, email: str, password: str) -> bool:
         if not email or not password:
@@ -217,16 +105,7 @@ class LetyshopsBrowser:
                             wait_until="networkidle")
             self._page.wait_for_timeout(3000)
 
-            # Handle country modal if it appears on login page
-            page_text = self._page.inner_text("body")
-            if "Confirm that" in page_text or "Select a different country" in page_text:
-                print("  🌍 Country modal on login page — handling first...")
-                self._handle_country_modal()
-                self._page.wait_for_timeout(2000)
-                # Navigate back to login
-                self._page.goto(LETYSHOPS_LOGIN, timeout=30000,
-                                wait_until="networkidle")
-                self._page.wait_for_timeout(3000)
+            print(f"  📍 Login page URL: {self._page.url}")
 
             inputs = self._page.evaluate(
                 "() => Array.from(document.querySelectorAll('input')).map(i => "
@@ -314,10 +193,17 @@ class LetyshopsBrowser:
             self._page.wait_for_timeout(4000)
             print(f"  📍 URL after submit: {self._page.url}")
 
-            # ── Forzar locale polaco ───────────────────────────────
-            self._ensure_polish_locale()
+            # ── Navigate to /pl home to confirm locale ─────────────
+            self._page.goto(LETYSHOPS_HOME, timeout=30000,
+                            wait_until="networkidle")
+            self._page.wait_for_timeout(2000)
+            print(f"  📍 Final URL: {self._page.url}")
 
-            self._logged_in = True
+            body_preview = self._page.evaluate(
+                "() => document.body.innerText.substring(0, 200)"
+            )
+            print(f"  📋 Body preview: {body_preview}")
+            print("  ✅ Login complete")
             return True
 
         except Exception as e:
@@ -328,15 +214,6 @@ class LetyshopsBrowser:
         try:
             self._page.goto(url, timeout=20000, wait_until="networkidle")
             self._page.wait_for_timeout(wait_ms)
-
-            # Check for country modal on individual pages too
-            page_text = self._page.inner_text("body")
-            if "Confirm that" in page_text or "Select a different country" in page_text:
-                self._handle_country_modal()
-                self._page.wait_for_timeout(2000)
-                self._page.goto(url, timeout=20000, wait_until="networkidle")
-                self._page.wait_for_timeout(wait_ms)
-
             return self._page.inner_text("body")
         except Exception as e:
             print(f"    ⚠ Playwright error on {url}: {e}")
@@ -355,23 +232,13 @@ class LetyshopsBrowser:
 
 def get_letyshops_boosts(browser: LetyshopsBrowser) -> dict:
     print("  🔥 Fetching homepage boosts...")
-
-    # Solo capturar boosts si estamos en locale polaco
-    if not browser._locale_ok:
-        print("  ⚠️  Skipping boosts — Polish locale not confirmed")
-        return {}
-
     browser._page.goto(LETYSHOPS_HOME, timeout=30000, wait_until="networkidle")
     browser._page.wait_for_timeout(4000)
 
-    # Verificar que seguimos en /pl
     current_url = browser._page.url
-    print(f"  🔥 Boost page URL: {current_url}")
-    if "/pl" not in current_url:
-        print("  ⚠️  Not in Polish locale — skipping boosts")
-        return {}
+    print(f"  🔥 URL: {current_url}")
 
-    # Scroll
+    # Scroll to load all content
     for _ in range(4):
         browser._page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
         browser._page.wait_for_timeout(1500)
@@ -388,6 +255,11 @@ def get_letyshops_boosts(browser: LetyshopsBrowser) -> dict:
     )
     print(f"  🔥 Body preview: {body_preview}")
 
+    # Only process boosts if we're on the Polish version
+    if shop_links_count < 5:
+        print("  ⚠️  Too few shop links — skipping boosts")
+        return {}
+
     boost_data = browser._page.evaluate("""
         () => {
             const results = [];
@@ -399,27 +271,40 @@ def get_letyshops_boosts(browser: LetyshopsBrowser) -> dict:
                 if (!slugMatch) return;
                 const slug = slugMatch[1];
                 if (seen.has(slug)) return;
+
                 let card = link;
                 for (let i = 0; i < 8; i++) {
                     if (!card.parentElement) break;
                     card = card.parentElement;
                     const text = card.innerText || "";
-                    const multMatch = text.match(/(\\d+)[Xx]\\b/) || text.match(/boost/i);
+
+                    // Must have multiplier badge
+                    const multMatch = text.match(/(\\d+)[Xx]\\b/);
                     if (!multMatch) continue;
+
+                    // Extract all % values
                     const pcts = [];
                     const pctMatches = text.matchAll(/(\\d+(?:[.,]\\d+)?)\\s*%/g);
                     for (const m of pctMatches) {
                         const val = parseFloat(m[1].replace(",", "."));
                         if (val > 0 && val <= 95) pcts.push(val);
                     }
-                    if (pcts.length === 0) continue;
+
+                    // Need at least 2 different values (base + boosted)
+                    if (pcts.length < 2) continue;
                     const boostedRate = Math.max(...pcts);
+                    const baseRate    = Math.min(...pcts);
+
+                    // Skip if base == boosted (US default rate applied to all)
+                    if (boostedRate === baseRate) continue;
+
                     seen.add(slug);
                     results.push({
-                        slug: slug,
-                        multiplier: multMatch[0],
-                        boosted_rate: boostedRate,
-                        text_sample: text.substring(0, 150)
+                        slug         : slug,
+                        multiplier   : multMatch[0],
+                        base_rate    : baseRate,
+                        boosted_rate : boostedRate,
+                        text_sample  : text.substring(0, 150)
                     });
                     break;
                 }
@@ -430,7 +315,8 @@ def get_letyshops_boosts(browser: LetyshopsBrowser) -> dict:
 
     print(f"  🔥 Raw boost entries: {len(boost_data)}")
     for entry in boost_data:
-        print(f"    {entry['slug']} | {entry['multiplier']} | {entry['boosted_rate']}%")
+        print(f"    {entry['slug']} | {entry['multiplier']} "
+              f"| base:{entry['base_rate']}% → boost:{entry['boosted_rate']}%")
 
     boosts = {}
     for entry in boost_data:
@@ -454,16 +340,6 @@ def get_letyshops_listing(browser: LetyshopsBrowser) -> dict:
     browser._page.goto(LETYSHOPS_LISTING, timeout=30000,
                        wait_until="networkidle")
     browser._page.wait_for_timeout(3000)
-
-    # Handle modal if appears
-    page_text = browser._page.inner_text("body")
-    if "Confirm that" in page_text or "Select a different country" in page_text:
-        print("  🌍 Country modal on listing — fixing...")
-        browser._ensure_polish_locale()
-        browser._page.goto(LETYSHOPS_LISTING, timeout=30000,
-                           wait_until="networkidle")
-        browser._page.wait_for_timeout(3000)
-
     print(f"  📋 Listing URL: {browser._page.url}")
 
     prev_count = 0
@@ -482,7 +358,6 @@ def get_letyshops_listing(browser: LetyshopsBrowser) -> dict:
     browser._page.wait_for_timeout(1000)
 
     content = browser._page.content()
-    from bs4 import BeautifulSoup
     soup    = BeautifulSoup(content, "html.parser")
     pattern = re.compile(r"^/pl/shops/[^/?#]+$")
     seen, shops = set(), {}
