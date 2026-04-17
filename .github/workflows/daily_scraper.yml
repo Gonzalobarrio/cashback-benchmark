@@ -26,15 +26,12 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install requests beautifulsoup4 pandas playwright
-          playwright install chromium
-          playwright install-deps chromium
+          pip install requests beautifulsoup4 pandas
 
       - name: Run scrapers
         run: python main.py
         env:
-          LETYSHOPS_EMAIL:    ${{ secrets.LETYSHOPS_EMAIL }}
-          LETYSHOPS_PASSWORD: ${{ secrets.LETYSHOPS_PASSWORD }}
+          LETYSHOPS_COOKIES: ${{ secrets.LETYSHOPS_COOKIES }}
 
       - name: Commit and push results
         run: |
