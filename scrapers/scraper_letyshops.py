@@ -17,6 +17,8 @@ HEADERS = {
     "Accept-Language": "pl-PL,pl;q=0.9,en;q=0.8",
     "Accept"         : "text/html,application/xhtml+xml,application/xml;"
                        "q=0.9,*/*;q=0.8",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Connection"     : "keep-alive",
 }
 
 NO_CASHBACK_PHRASES = [
@@ -67,38 +69,44 @@ def _parse_rate(text: str):
 # ══════════════════════════════════════════════════════════════════════════════
 
 def build_session() -> requests.Session:
-    """
-    Build a requests session with Letyshops cookies from GitHub Secret.
-    Cookies establish Polish locale (ls_country=PL).
-    """
     session = requests.Session()
     session.headers.update(HEADERS)
 
     cookies_json = os.environ.get("LETYSHOPS_COOKIES", "")
     if not cookies_json:
-        print("  ⚠️  No LETYSHOPS_COOKIES secret found — using unauthenticated session")
+        print("  ⚠️  No LETYSHOPS_COOKIES secret found")
         return session
 
     try:
         raw_cookies = json.loads(cookies_json)
-        for c in raw_cookies:
-            session.cookies.set(
-                name   = c["name"],
-                value  = c["value"],
-                domain = c.get("domain", "letyshops.com").lstrip("."),
-                path   = c.get("path", "/"),
-            )
-        print(f"  ✅ {len(raw_cookies)} cookies loaded — Polish session active")
 
-        # Verify locale
+        # ── Enviar cookies como header directo ────────────────────
+        cookie_header = "; ".join([
+            f"{c['name']}={c['value']}"
+            for c in raw_cookies
+        ])
+        session.headers.update({"Cookie": cookie_header})
+        print(f"  ✅ {len(raw_cookies)} cookies loaded as header")
+
         locale_cookie = next(
             (c for c in raw_cookies if c["name"] == "hl"), None
         )
         if locale_cookie:
-            print(f"  📍 Locale: {locale_cookie['value']}")
+            print(f"  📍 Locale cookie: {locale_cookie['value']}")
+
+        # ── Test de sesión ────────────────────────────────────────
+        print("  🔍 Testing session with Allegro page...")
+        test = session.get(
+            "https://letyshops.com/pl/shops/allegro-pl",
+            timeout=15
+        )
+        print(f"  📍 Test URL after redirect: {test.url}")
+        test_text = BeautifulSoup(test.text, "html.parser").get_text(separator=" ")
+        test_rate, _ = _parse_rate(test_text)
+        print(f"  📊 Allegro test rate: {test_rate} (expected ~5.1%)")
 
     except Exception as e:
-        print(f"  ⚠️  Cookie loading error: {e}")
+        print(f"  ⚠️  Session setup error: {e}")
 
     return session
 
@@ -110,7 +118,8 @@ def build_session() -> requests.Session:
 def get_letyshops_listing(session: requests.Session) -> dict:
     print("  📋 Fetching listing page...")
     try:
-        r    = session.get(LETYSHOPS_LISTING, timeout=15)
+        r = session.get(LETYSHOPS_LISTING, timeout=15)
+        print(f"  📋 Listing final URL: {r.url}")
         soup = BeautifulSoup(r.text, "html.parser")
     except Exception as e:
         print(f"  ⚠️  Listing fetch error: {e}")
@@ -147,6 +156,10 @@ def extract_rate_from_url(session: requests.Session, url: str):
             return None, None
         if r.status_code != 200:
             return None, None
+
+        # Debug: log final URL to detect redirects
+        if r.url != url:
+            print(f"    🔀 Redirect: {url} → {r.url}")
 
         text = BeautifulSoup(r.text, "html.parser").get_text(separator=" ")
         tl   = text.lower()
@@ -211,7 +224,7 @@ def find_letyshops_store(
         if rate == "no cashback":
             found_no_cashback = True
 
-    # ── Pass 2: direct URL probing ────────────────────────────────
+    # ── Pass 2: direct /pl/shops/ ─────────────────────────────────
     url_bases = [
         LETYSHOPS_BASE + "/pl/shops/",
         LETYSHOPS_BASE + "/pl-en/shops/",
