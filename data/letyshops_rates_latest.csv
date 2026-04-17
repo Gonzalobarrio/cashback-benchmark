@@ -75,7 +75,7 @@ date,retailer,igraal_slug,letyshops_rate,letyshops_rate_type,letyshops_boosted,l
 2026-04-17,eobuwie,eobuwie,3.5,up_to_%,False,https://letyshops.com/pl/shops/eobuwie-pl
 2026-04-17,Erli,erli,2.2,up_to_%,False,https://letyshops.com/pl/shops/erli
 2026-04-17,ESET,eset,6.0,up_to_%,False,https://letyshops.com/pl/shops/eset-pl
-2026-04-17,eSky,esky,1.75,%,False,https://letyshops.com/pl/shops/esky
+2026-04-17,eSky,esky,1.75,up_to_%,False,https://letyshops.com/pl/shops/esky
 2026-04-17,Estro,estro,7.85,up_to_%,False,https://letyshops.com/pl/shops/estro-pl
 2026-04-17,Eurofirany,eurofirany,7.85,up_to_%,False,https://letyshops.com/pl/shops/eurofirany
 2026-04-17,Euroflorist,euroflorist,2.5,up_to_%,False,https://letyshops.com/pl/shops/euroflorist-pl
@@ -93,7 +93,7 @@ date,retailer,igraal_slug,letyshops_rate,letyshops_rate_type,letyshops_boosted,l
 2026-04-17,Gameseal,gameseal,1.5,up_to_%,False,https://letyshops.com/pl/shops/gameseal
 2026-04-17,Gamivo,gamivo,1.7,up_to_%,False,https://letyshops.com/pl/shops/gamivo
 2026-04-17,Geekbuying.pl,geekbuying,4.0,up_to_%,False,https://letyshops.com/pl/shops/geekbuying-pl
-2026-04-17,GetYourGuide,getyourguide,1.15,%,False,https://letyshops.com/pl/shops/getyourguide-pl
+2026-04-17,GetYourGuide,getyourguide,1.15,up_to_%,False,https://letyshops.com/pl/shops/getyourguide-pl
 2026-04-17,Giacomo Conti,giacomo,7.85,up_to_%,False,https://letyshops.com/pl/shops/giacomo-conti
 2026-04-17,GOG,gog,7.85,up_to_%,False,https://letyshops.com/pl/shops/gog
 2026-04-17,Gomez,gomez,3.3,up_to_%,False,https://letyshops.com/pl/shops/gomez-pl
@@ -114,7 +114,7 @@ date,retailer,igraal_slug,letyshops_rate,letyshops_rate_type,letyshops_boosted,l
 2026-04-17,Kenwood,kenwood,7.85,up_to_%,False,https://letyshops.com/pl/shops/kenwood-pl
 2026-04-17,KFC,kfc,2.5,up_to_%,False,https://letyshops.com/pl/shops/kfc-polska
 2026-04-17,Kinguin,kinguin,,not_found,False,
-2026-04-17,Kiwi,kiwi,2.0,%,False,https://letyshops.com/pl/shops/kiwi
+2026-04-17,Kiwi,kiwi,2.0,up_to_%,False,https://letyshops.com/pl/shops/kiwi
 2026-04-17,Komputronik,komputronik,7.85,up_to_%,False,https://letyshops.com/pl/shops/komputronik-pl
 2026-04-17,Konesso,konesso,2.5,up_to_%,False,https://letyshops.com/pl/shops/konesso
 2026-04-17,Krakvet,krakvet,7.85,up_to_%,False,https://letyshops.com/pl/shops/krakvet
@@ -169,7 +169,7 @@ date,retailer,igraal_slug,letyshops_rate,letyshops_rate_type,letyshops_boosted,l
 2026-04-17,Przyjaciele Kawy,przyjacielekawy,3.7,up_to_%,False,https://letyshops.com/pl/shops/przyjaciele-kawy-pl
 2026-04-17,Puma,puma,7.85,up_to_%,False,https://letyshops.com/pl/shops/puma-pl
 2026-04-17,Pyszne.pl,pyszne,2.5,up_to_%,False,https://letyshops.com/pl/shops/pyszne-pl
-2026-04-17,Radisson Hotels,radissonhotels,4.0,%,False,https://letyshops.com/pl/shops/radisson-hotels-pl
+2026-04-17,Radisson Hotels,radissonhotels,4.0,up_to_%,False,https://letyshops.com/pl/shops/radisson-hotels-pl
 2026-04-17,Recman,recman,7.85,up_to_%,False,https://letyshops.com/pl/shops/recman
 2026-04-17,Regatta,regatta,7.85,up_to_%,False,https://letyshops.com/pl/shops/regatta-pl
 2026-04-17,Remix,remix,7.85,up_to_%,False,https://letyshops.com/pl/shops/remix-pl
@@ -187,7 +187,7 @@ date,retailer,igraal_slug,letyshops_rate,letyshops_rate_type,letyshops_boosted,l
 2026-04-17,Stradivarius,stradivarius,3.0,up_to_%,False,https://letyshops.com/pl/shops/stradivarius-pl
 2026-04-17,Streetstyle24,streetstyle24,7.85,up_to_%,False,https://letyshops.com/pl/shops/streetstyle24-pl
 2026-04-17,Stylevana,stylevana,7.85,up_to_%,False,https://letyshops.com/pl/shops/stylevana
-2026-04-17,Sun & Snow,sun-and-snow,2.25,%,False,https://letyshops.com/pl/shops/sun-snow-pl
+2026-04-17,Sun & Snow,sun-and-snow,2.25,up_to_%,False,https://letyshops.com/pl/shops/sun-snow-pl
 2026-04-17,Surfshark,surfshark,7.85,up_to_%,False,https://letyshops.com/pl/shops/surfshark-pl
 2026-04-17,Świat supli,swiatsupli,,not_found,False,
 2026-04-17,Tagomago,tagomago,7.85,up_to_%,False,https://letyshops.com/pl/shops/tagomago-pl
