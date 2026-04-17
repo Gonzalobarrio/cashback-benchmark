@@ -108,9 +108,9 @@ date,retailer,igraal_slug,picodi_rate,picodi_rate_type,picodi_url
 2026-04-17,iHerb,iherb,1.5,%,https://www.picodi.com/pl/iherb
 2026-04-17,iParts,iparts,1.1,%,https://www.picodi.com/pl/iparts-pl
 2026-04-17,JD Sports,jdsports,1.5,up_to_%,https://www.picodi.com/pl/jdsports
-2026-04-17,Joom,joom,4.5,up_to_%,https://www.picodi.com/pl/joom
-2026-04-17,Katalog Marzeń,katalog-marzen,0.8,%,https://www.picodi.com/pl/katalogmarzen
-2026-04-17,Kazar,kazar,1.1,up_to_%,https://www.picodi.com/pl/kazar
+2026-04-17,Joom,joom,,not_found,
+2026-04-17,Katalog Marzeń,katalog-marzen,,not_found,
+2026-04-17,Kazar,kazar,,not_found,
 2026-04-17,Kenwood,kenwood,,not_found,
 2026-04-17,KFC,kfc,,not_found,
 2026-04-17,Kinguin,kinguin,,not_found,
@@ -209,6 +209,7 @@ date,retailer,igraal_slug,picodi_rate,picodi_rate_type,picodi_url
 2026-04-17,Wrangler,wrangler,,not_found,
 2026-04-17,x-kom,x-kom,,not_found,
 2026-04-17,Xiaomi,mi,,not_found,
+2026-04-17,Yanosik,yanosik,,not_found,
 2026-04-17,Yves Rocher,yves-rocher,,not_found,
 2026-04-17,Znak,znak,,not_found,
 2026-04-17,zooplus,zooplus,,not_found,

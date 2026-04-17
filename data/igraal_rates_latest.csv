@@ -74,7 +74,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-04-17,Endo,endo,9.0,%
 2026-04-17,eobuwie,eobuwie,6.0,%
 2026-04-17,Erli,erli,8.8,%
-2026-04-17,ESET,eset,,no cashback
+2026-04-17,ESET,eset,10.0,%
 2026-04-17,eSky,esky,3.5,%
 2026-04-17,Estro,estro,7.0,%
 2026-04-17,Eurofirany,eurofirany,,no cashback
@@ -209,6 +209,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-04-17,Wrangler,wrangler,10.0,%
 2026-04-17,x-kom,x-kom,,no cashback
 2026-04-17,Xiaomi,mi,2.0,%
+2026-04-17,Yanosik,yanosik,3.0,%
 2026-04-17,Yves Rocher,yves-rocher,5.0,%
 2026-04-17,Znak,znak,3.0,%
 2026-04-17,zooplus,zooplus,1.5,%
