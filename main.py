@@ -23,6 +23,7 @@ def clean_zl(df, rate_col, type_col):
     df.loc[mask, rate_col] = None
     return df
 
+
 def sanity_check(df, rate_col, source: str):
     """Remove suspicious rates. Boosted rates exempt."""
     df = df.copy()
@@ -40,7 +41,8 @@ def sanity_check(df, rate_col, source: str):
         mask = df[rate_col] > threshold
 
     if mask.any():
-        print(f"   ⚠️  Sanity [{source}]: nulled {mask.sum()} rates > {threshold}%: "
+        print(f"   ⚠️  Sanity [{source}]: nulled {mask.sum()} "
+              f"rates > {threshold}%: "
               f"{df.loc[mask, 'retailer'].tolist()}")
     df.loc[mask, rate_col] = None
     return df
@@ -57,21 +59,27 @@ def compute_status(row) -> tuple:
       better rate + margin+ → OPTIMISE / NONE
 
     WITHOUT margin → use CPA IN as proxy:
-      worse rate + rate < CPA → ACT NOW  / UP
-      worse rate + rate > CPA → REVIEW   / UP
-      better rate + rate < CPA → MONITOR / NONE
+      worse rate + rate < CPA  → ACT NOW  / UP
+      worse rate + rate > CPA  → REVIEW   / UP
+      better rate + rate < CPA → MONITOR  / NONE
       better rate + rate > CPA → OPTIMISE / NONE
+
+    FALLBACK → only delta:
+      delta >= 3  → ACT NOW
+      delta 1-3   → REVIEW
+      delta 0-1   → MONITOR
+      delta < 0   → OPTIMISE
     """
-    igraal_rate = pd.to_numeric(row.get("igraal_rate"), errors="coerce")
+    igraal_rate = pd.to_numeric(row.get("igraal_rate"),          errors="coerce")
     best_comp   = pd.to_numeric(row.get("best_competitor_rate"), errors="coerce")
-    margin      = pd.to_numeric(row.get("margin_eur"), errors="coerce")
-    cpa_in      = pd.to_numeric(row.get("cpa_in"), errors="coerce")
+    margin      = pd.to_numeric(row.get("margin_eur"),           errors="coerce")
+    cpa_in      = pd.to_numeric(row.get("cpa_in"),               errors="coerce")
 
     # ── No iGraal rate → can't compute ───────────────────────────
     if pd.isna(igraal_rate):
         return "NO DATA", "NONE"
 
-    # ── Determine competitive position ────────────────────────────
+    # ── Competitive position ──────────────────────────────────────
     if pd.isna(best_comp):
         better_than_comp = True   # no competitor data → assume ok
     else:
@@ -109,7 +117,7 @@ def compute_status(row) -> tuple:
         if better_than_comp and rate_above_cpa:
             return "OPTIMISE", "NONE"
 
-    # ══ FALLBACK → only delta available ═══════════════════════════
+    # ══ FALLBACK → delta only ═════════════════════════════════════
     delta = pd.to_numeric(row.get("delta"), errors="coerce")
     if pd.notna(delta):
         if delta >= 3:
@@ -201,7 +209,8 @@ df = df.merge(
 )
 
 # ── Numeric conversion ────────────────────────────────────────────
-competitor_cols = ["letyshops_rate", "picodi_rate", "alerabat_rate", "goodie_rate"]
+competitor_cols = ["letyshops_rate", "picodi_rate",
+                   "alerabat_rate",  "goodie_rate"]
 df[competitor_cols] = df[competitor_cols].apply(pd.to_numeric, errors="coerce")
 df["igraal_rate"]   = pd.to_numeric(df["igraal_rate"], errors="coerce")
 
@@ -223,7 +232,6 @@ def get_best_competitor_name(row):
 
 df["best_competitor"] = df.apply(get_best_competitor_name, axis=1)
 
-# Flag boost in best_competitor name
 def flag_boost(row):
     if row.get("best_competitor") == "letyshops" and row.get("letyshops_boosted"):
         return "letyshops 🔥"
@@ -234,24 +242,42 @@ df["best_competitor"] = df.apply(flag_boost, axis=1)
 # ── Delta ─────────────────────────────────────────────────────────
 df["delta"] = (df["best_competitor_rate"] - df["igraal_rate"]).round(2)
 
-# ── Merge financials for status computation ───────────────────────
+# ── Merge financials ──────────────────────────────────────────────
 financials_file = "data/retailer_financials.csv"
 if os.path.exists(financials_file):
     df_fin = pd.read_csv(financials_file)
-    # Expected columns: retailer, margin_eur, cpa_in
-    fin_cols = [c for c in ["retailer", "margin_eur", "cpa_in"]
-                if c in df_fin.columns]
-    df = df.merge(df_fin[fin_cols], on="retailer", how="left")
-    print(f"✅ Financials merged — "
-          f"{df['margin_eur'].notna().sum()} retailers with margin data")
+    df_fin["month"] = df_fin["month"].astype(str)
+
+    df_fin_agg = df_fin.groupby("retailer").agg(
+        margin_eur   = ("margin",       "sum"),
+        cpa_in       = ("cpa_in",       "last"),
+        revenue      = ("revenue",      "sum"),
+        gmv          = ("gmv",          "sum"),
+        transactions = ("transactions", "sum"),
+        cb_total     = ("cb_total",     "sum"),
+    ).reset_index()
+
+    print(f"   📋 Financials: {len(df_fin_agg)} retailers | "
+          f"months: {df_fin['month'].nunique()} | "
+          f"latest: {df_fin['month'].max()}")
+
+    df = df.merge(df_fin_agg, on="retailer", how="left")
+
+    with_margin = df["margin_eur"].notna().sum()
+    print(f"✅ Financials merged — {with_margin} retailers with margin data")
+
 else:
-    df["margin_eur"] = np.nan
-    df["cpa_in"]     = np.nan
+    df["margin_eur"]   = np.nan
+    df["cpa_in"]       = np.nan
+    df["revenue"]      = np.nan
+    df["gmv"]          = np.nan
+    df["transactions"] = np.nan
+    df["cb_total"]     = np.nan
     print("⚠️  retailer_financials.csv not found — status will use delta only")
 
 # ── Compute status ────────────────────────────────────────────────
-status_results       = df.apply(compute_status, axis=1)
-df["status"]         = status_results.apply(lambda x: x[0])
+status_results         = df.apply(compute_status, axis=1)
+df["status"]           = status_results.apply(lambda x: x[0])
 df["action_direction"] = status_results.apply(lambda x: x[1])
 
 # ── is_best_rate flag ─────────────────────────────────────────────
@@ -261,7 +287,7 @@ df["is_best_rate"] = (
     (df["igraal_rate"] >= df["best_competitor_rate"])
 ).astype(bool)
 
-# ── Legacy alert column (keep for backwards compatibility) ────────
+# ── Legacy alert column (backwards compatibility) ─────────────────
 df["alert"] = df["delta"].apply(
     lambda d: "LOWER" if pd.notna(d) and d > 0 else "OK"
 )
@@ -277,7 +303,7 @@ col_order = [
     "goodie_rate",    "goodie_rate_type",
     "best_competitor", "best_competitor_rate",
     "delta", "alert",
-    "margin_eur", "cpa_in",
+    "margin_eur", "cpa_in", "revenue", "gmv", "transactions", "cb_total",
     "status", "action_direction", "is_best_rate",
     "letyshops_url", "picodi_url", "alerabat_url", "goodie_url",
 ]
@@ -349,7 +375,8 @@ if os.path.exists(metadata_file):
     )
     df_enriched.to_csv("data/benchmark_data_enriched.csv", index=False)
     print(f"✅ benchmark_data_enriched.csv — "
-          f"{df_enriched['affiliate_network'].notna().sum()} retailers enriched")
+          f"{df_enriched['affiliate_network'].notna().sum()} "
+          f"retailers enriched")
 else:
     print("⚠️  retailer_metadata.csv not found — skipping enrichment")
 
@@ -357,7 +384,7 @@ else:
 # SUMMARY
 # ══════════════════════════════════════════════════════════════════════════════
 
-boosted_today = df.get("letyshops_boosted", pd.Series(dtype=bool)).sum()
+boosted_today   = df.get("letyshops_boosted", pd.Series(dtype=bool)).sum()
 best_rate_count = df["is_best_rate"].sum()
 
 print(f"\n✅ benchmark_data.csv    — {len(df)} retailers")
@@ -366,7 +393,14 @@ print(f"")
 print(f"   📊 STATUS BREAKDOWN:")
 for status in ["ACT NOW", "REVIEW", "MONITOR", "OPTIMISE", "NO DATA"]:
     count = (df["status"] == status).sum()
-    print(f"   {status:<12} : {count}")
+    emoji = {
+        "ACT NOW" : "🔴",
+        "REVIEW"  : "🟡",
+        "MONITOR" : "🔵",
+        "OPTIMISE": "🟣",
+        "NO DATA" : "⚪",
+    }.get(status, "  ")
+    print(f"   {emoji} {status:<12} : {count}")
 print(f"")
 print(f"   🏆 Best Rate (iGraal leads) : {best_rate_count}")
 print(f"   🔥 Boosted rates today      : {int(boosted_today)}")
