@@ -1,20 +1,30 @@
 import re
 import time
+import json
+import requests
+from bs4 import BeautifulSoup
 import pandas as pd
 from datetime import datetime
 import os
-from playwright.sync_api import sync_playwright
 
 LETYSHOPS_BASE    = "https://letyshops.com"
 LETYSHOPS_LISTING = "https://letyshops.com/pl/shops"
-LETYSHOPS_LOGIN   = "https://letyshops.com/pl/login"
-LETYSHOPS_HOME    = "https://letyshops.com/pl"
+
+HEADERS = {
+    "User-Agent"     : "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                       "AppleWebKit/537.36 (KHTML, like Gecko) "
+                       "Chrome/122.0.0.0 Safari/537.36",
+    "Accept-Language": "pl-PL,pl;q=0.9,en;q=0.8",
+    "Accept"         : "text/html,application/xhtml+xml,application/xml;"
+                       "q=0.9,*/*;q=0.8",
+}
 
 NO_CASHBACK_PHRASES = [
     "w tej chwili nie ma cashbacku w tym sklepie",
     "there is no cashback in this store at the moment",
     "brak cashbacku",
 ]
+
 
 # ══════════════════════════════════════════════════════════════════════════════
 # RATE PARSER
@@ -53,312 +63,59 @@ def _parse_rate(text: str):
 
 
 # ══════════════════════════════════════════════════════════════════════════════
-# BROWSER
+# SESSION WITH COOKIES
 # ══════════════════════════════════════════════════════════════════════════════
 
-class LetyshopsBrowser:
-    def __init__(self):
-        self._pw        = None
-        self._browser   = None
-        self._context   = None
-        self._page      = None
+def build_session() -> requests.Session:
+    """
+    Build a requests session with Letyshops cookies from GitHub Secret.
+    Cookies establish Polish locale (ls_country=PL).
+    """
+    session = requests.Session()
+    session.headers.update(HEADERS)
 
-    def _force_pl_route(self, route):
-        """
-        Intercept ALL requests — rewrite /us/ → /pl/ to bypass geo-detection.
-        """
-        url = route.request.url
-        if "letyshops.com/us" in url:
-            pl_url = url.replace("letyshops.com/us", "letyshops.com/pl")
-            print(f"  🌍 Route rewrite: {url[:60]} → {pl_url[:60]}")
-            route.continue_(url=pl_url)
-        else:
-            route.continue_()
+    cookies_json = os.environ.get("LETYSHOPS_COOKIES", "")
+    if not cookies_json:
+        print("  ⚠️  No LETYSHOPS_COOKIES secret found — using unauthenticated session")
+        return session
 
-    def start(self):
-        self._pw      = sync_playwright().start()
-        self._browser = self._pw.chromium.launch(headless=True)
-        self._context = self._browser.new_context(
-            locale="pl-PL",
-            timezone_id="Europe/Warsaw",
-            user_agent=(
-                "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-                "AppleWebKit/537.36 (KHTML, like Gecko) "
-                "Chrome/122.0.0.0 Safari/537.36"
+    try:
+        raw_cookies = json.loads(cookies_json)
+        for c in raw_cookies:
+            session.cookies.set(
+                name   = c["name"],
+                value  = c["value"],
+                domain = c.get("domain", "letyshops.com").lstrip("."),
+                path   = c.get("path", "/"),
             )
+        print(f"  ✅ {len(raw_cookies)} cookies loaded — Polish session active")
+
+        # Verify locale
+        locale_cookie = next(
+            (c for c in raw_cookies if c["name"] == "hl"), None
         )
-        self._page = self._context.new_page()
+        if locale_cookie:
+            print(f"  📍 Locale: {locale_cookie['value']}")
 
-        # ── Intercept /us/ → /pl/ BEFORE any navigation ───────────
-        self._page.route("**/*", self._force_pl_route)
-        print("  🌍 Route interceptor active: /us/ → /pl/")
-        return self
+    except Exception as e:
+        print(f"  ⚠️  Cookie loading error: {e}")
 
-    def login(self, email: str, password: str) -> bool:
-        if not email or not password:
-            print("  ⚠️  No credentials — scraping without login")
-            return False
-
-        try:
-            print("  🔐 Logging in to Letyshops...")
-            self._page.goto(LETYSHOPS_LOGIN, timeout=30000,
-                            wait_until="networkidle")
-            self._page.wait_for_timeout(3000)
-
-            print(f"  📍 Login page URL: {self._page.url}")
-
-            inputs = self._page.evaluate(
-                "() => Array.from(document.querySelectorAll('input')).map(i => "
-                "({type: i.type, name: i.name, placeholder: i.placeholder}))"
-            )
-            print(f"  📋 Inputs: {inputs}")
-
-            email_selectors = [
-                'input[name="_username"]',
-                'input[type="email"]',
-                'input[name="email"]',
-                'input[name="login"]',
-                'input[name="username"]',
-                'form input[type="text"]:not([placeholder*="Search" i])',
-            ]
-            password_selectors = [
-                'input[name="_password"]',
-                'input[type="password"]',
-                'input[name="password"]',
-                'input[name="pass"]',
-            ]
-
-            email_filled = False
-            for sel in email_selectors:
-                try:
-                    el = self._page.locator(sel).first
-                    if el.count() > 0:
-                        el.wait_for(timeout=3000, state="visible")
-                        el.fill(email)
-                        print(f"  ✅ Email filled: {sel}")
-                        email_filled = True
-                        break
-                except Exception:
-                    continue
-
-            if not email_filled:
-                print("  ❌ Email input not found")
-                return False
-
-            time.sleep(0.5)
-
-            pass_filled = False
-            for sel in password_selectors:
-                try:
-                    el = self._page.locator(sel).first
-                    if el.count() > 0:
-                        el.wait_for(timeout=3000, state="visible")
-                        el.fill(password)
-                        print(f"  ✅ Password filled: {sel}")
-                        pass_filled = True
-                        break
-                except Exception:
-                    continue
-
-            if not pass_filled:
-                print("  ❌ Password input not found")
-                return False
-
-            time.sleep(0.5)
-
-            submit_selectors = [
-                'button[type="submit"]',
-                'button:has-text("Zaloguj")',
-                'button:has-text("Login")',
-                'button:has-text("Sign in")',
-                'form button',
-            ]
-
-            submitted = False
-            for sel in submit_selectors:
-                try:
-                    el = self._page.locator(sel).first
-                    if el.count() > 0:
-                        el.click()
-                        print(f"  ✅ Submitted: {sel}")
-                        submitted = True
-                        break
-                except Exception:
-                    continue
-
-            if not submitted:
-                self._page.keyboard.press("Enter")
-                print("  ⚠️  Submit via Enter")
-
-            self._page.wait_for_timeout(4000)
-            print(f"  📍 URL after submit: {self._page.url}")
-
-            # ── Navigate to /pl home to confirm locale ─────────────
-            self._page.goto(LETYSHOPS_HOME, timeout=30000,
-                            wait_until="networkidle")
-            self._page.wait_for_timeout(2000)
-            print(f"  📍 Final URL: {self._page.url}")
-
-            body_preview = self._page.evaluate(
-                "() => document.body.innerText.substring(0, 200)"
-            )
-            print(f"  📋 Body preview: {body_preview}")
-            print("  ✅ Login complete")
-            return True
-
-        except Exception as e:
-            print(f"  ❌ Login error: {e}")
-            return False
-
-    def get_text(self, url: str, wait_ms: int = 2000) -> str | None:
-        try:
-            self._page.goto(url, timeout=20000, wait_until="networkidle")
-            self._page.wait_for_timeout(wait_ms)
-            return self._page.inner_text("body")
-        except Exception as e:
-            print(f"    ⚠ Playwright error on {url}: {e}")
-            return None
-
-    def stop(self):
-        if self._browser:
-            self._browser.close()
-        if self._pw:
-            self._pw.stop()
-
-
-# ══════════════════════════════════════════════════════════════════════════════
-# HOMEPAGE BOOSTS
-# ══════════════════════════════════════════════════════════════════════════════
-
-def get_letyshops_boosts(browser: LetyshopsBrowser) -> dict:
-    print("  🔥 Fetching homepage boosts...")
-    browser._page.goto(LETYSHOPS_HOME, timeout=30000, wait_until="networkidle")
-    browser._page.wait_for_timeout(4000)
-
-    current_url = browser._page.url
-    print(f"  🔥 URL: {current_url}")
-
-    # Scroll to load all content
-    for _ in range(4):
-        browser._page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
-        browser._page.wait_for_timeout(1500)
-    browser._page.evaluate("window.scrollTo(0, 0)")
-    browser._page.wait_for_timeout(1000)
-
-    shop_links_count = browser._page.evaluate(
-        "() => document.querySelectorAll('a[href*=\"/pl/shops/\"]').length"
-    )
-    print(f"  🔥 Shop links on homepage: {shop_links_count}")
-
-    body_preview = browser._page.evaluate(
-        "() => document.body.innerText.substring(0, 300)"
-    )
-    print(f"  🔥 Body preview: {body_preview}")
-
-    # Only process boosts if we're on the Polish version
-    if shop_links_count < 5:
-        print("  ⚠️  Too few shop links — skipping boosts")
-        return {}
-
-    boost_data = browser._page.evaluate("""
-        () => {
-            const results = [];
-            const seen = new Set();
-            const links = document.querySelectorAll('a[href*="/pl/shops/"]');
-            links.forEach(link => {
-                const href = link.getAttribute("href") || "";
-                const slugMatch = href.match(/\\/pl\\/shops\\/([^\\/?#]+)/);
-                if (!slugMatch) return;
-                const slug = slugMatch[1];
-                if (seen.has(slug)) return;
-
-                let card = link;
-                for (let i = 0; i < 8; i++) {
-                    if (!card.parentElement) break;
-                    card = card.parentElement;
-                    const text = card.innerText || "";
-
-                    // Must have multiplier badge
-                    const multMatch = text.match(/(\\d+)[Xx]\\b/);
-                    if (!multMatch) continue;
-
-                    // Extract all % values
-                    const pcts = [];
-                    const pctMatches = text.matchAll(/(\\d+(?:[.,]\\d+)?)\\s*%/g);
-                    for (const m of pctMatches) {
-                        const val = parseFloat(m[1].replace(",", "."));
-                        if (val > 0 && val <= 95) pcts.push(val);
-                    }
-
-                    // Need at least 2 different values (base + boosted)
-                    if (pcts.length < 2) continue;
-                    const boostedRate = Math.max(...pcts);
-                    const baseRate    = Math.min(...pcts);
-
-                    // Skip if base == boosted (US default rate applied to all)
-                    if (boostedRate === baseRate) continue;
-
-                    seen.add(slug);
-                    results.push({
-                        slug         : slug,
-                        multiplier   : multMatch[0],
-                        base_rate    : baseRate,
-                        boosted_rate : boostedRate,
-                        text_sample  : text.substring(0, 150)
-                    });
-                    break;
-                }
-            });
-            return results;
-        }
-    """)
-
-    print(f"  🔥 Raw boost entries: {len(boost_data)}")
-    for entry in boost_data:
-        print(f"    {entry['slug']} | {entry['multiplier']} "
-              f"| base:{entry['base_rate']}% → boost:{entry['boosted_rate']}%")
-
-    boosts = {}
-    for entry in boost_data:
-        slug = entry["slug"]
-        rate = entry["boosted_rate"]
-        if slug not in boosts or rate > boosts[slug]:
-            boosts[slug] = rate
-
-    print(f"  🔥 {len(boosts)} unique boosts: {boosts}\n")
-    return boosts
+    return session
 
 
 # ══════════════════════════════════════════════════════════════════════════════
 # LISTING PAGE
 # ══════════════════════════════════════════════════════════════════════════════
 
-def get_letyshops_listing(browser: LetyshopsBrowser) -> dict:
-    from bs4 import BeautifulSoup
-
+def get_letyshops_listing(session: requests.Session) -> dict:
     print("  📋 Fetching listing page...")
-    browser._page.goto(LETYSHOPS_LISTING, timeout=30000,
-                       wait_until="networkidle")
-    browser._page.wait_for_timeout(3000)
-    print(f"  📋 Listing URL: {browser._page.url}")
+    try:
+        r    = session.get(LETYSHOPS_LISTING, timeout=15)
+        soup = BeautifulSoup(r.text, "html.parser")
+    except Exception as e:
+        print(f"  ⚠️  Listing fetch error: {e}")
+        return {}
 
-    prev_count = 0
-    for attempt in range(15):
-        browser._page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
-        browser._page.wait_for_timeout(1500)
-        current_count = browser._page.evaluate(
-            "() => document.querySelectorAll('a[href*=\"/pl/shops/\"]').length"
-        )
-        print(f"  📋 Scroll {attempt+1}: {current_count} links")
-        if current_count == prev_count and attempt > 3:
-            break
-        prev_count = current_count
-
-    browser._page.evaluate("window.scrollTo(0, 0)")
-    browser._page.wait_for_timeout(1000)
-
-    content = browser._page.content()
-    soup    = BeautifulSoup(content, "html.parser")
     pattern = re.compile(r"^/pl/shops/[^/?#]+$")
     seen, shops = set(), {}
 
@@ -375,7 +132,7 @@ def get_letyshops_listing(browser: LetyshopsBrowser) -> dict:
             "letyshops_url"      : LETYSHOPS_BASE + href,
         }
 
-    print(f"  📋 Listing complete: {len(shops)} shops found")
+    print(f"  📋 Listing: {len(shops)} shops found")
     return shops
 
 
@@ -383,14 +140,25 @@ def get_letyshops_listing(browser: LetyshopsBrowser) -> dict:
 # INDIVIDUAL PAGE
 # ══════════════════════════════════════════════════════════════════════════════
 
-def extract_rate_from_url(browser: LetyshopsBrowser, url: str):
-    text = browser.get_text(url)
-    if not text:
+def extract_rate_from_url(session: requests.Session, url: str):
+    try:
+        r = session.get(url, timeout=15)
+        if r.status_code == 404:
+            return None, None
+        if r.status_code != 200:
+            return None, None
+
+        text = BeautifulSoup(r.text, "html.parser").get_text(separator=" ")
+        tl   = text.lower()
+
+        if any(phrase in tl for phrase in NO_CASHBACK_PHRASES):
+            return "no cashback", None
+
+        return _parse_rate(text)
+
+    except Exception as e:
+        print(f"    ⚠ Error fetching {url}: {e}")
         return None, None
-    tl = text.lower()
-    if any(phrase in tl for phrase in NO_CASHBACK_PHRASES):
-        return "no cashback", None
-    return _parse_rate(text)
 
 
 # ══════════════════════════════════════════════════════════════════════════════
@@ -404,6 +172,7 @@ def generate_slug_variants(retailer_name: str, igraal_slug: str) -> list:
     name_slug  = re.sub(r"[^a-z0-9]+", "-",
                         retailer_name.lower()).strip("-")
     bases = list(dict.fromkeys([igraal_slug, name_slug, camel_slug]))
+
     variants = (
         [b + "-pl"     for b in bases] +
         [b + "-polska" for b in bases] +
@@ -417,7 +186,7 @@ def generate_slug_variants(retailer_name: str, igraal_slug: str) -> list:
 # ══════════════════════════════════════════════════════════════════════════════
 
 def find_letyshops_store(
-    browser: LetyshopsBrowser,
+    session: requests.Session,
     retailer_name: str,
     igraal_slug: str,
     listing: dict
@@ -425,6 +194,7 @@ def find_letyshops_store(
     variants          = generate_slug_variants(retailer_name, igraal_slug)
     found_no_cashback = False
 
+    # ── Pass 1: listing ───────────────────────────────────────────
     for slug in variants:
         if slug not in listing:
             continue
@@ -432,13 +202,16 @@ def find_letyshops_store(
         if info["letyshops_rate"]:
             return (info["letyshops_rate"],
                     info["letyshops_rate_type"],
-                    info["letyshops_url"])
-        rate, rtype = extract_rate_from_url(browser, info["letyshops_url"])
+                    info["letyshops_url"],
+                    "listing")
+
+        rate, rtype = extract_rate_from_url(session, info["letyshops_url"])
         if rate and rate != "no cashback":
-            return rate, rtype, info["letyshops_url"]
+            return rate, rtype, info["letyshops_url"], "listing_page"
         if rate == "no cashback":
             found_no_cashback = True
 
+    # ── Pass 2: direct URL probing ────────────────────────────────
     url_bases = [
         LETYSHOPS_BASE + "/pl/shops/",
         LETYSHOPS_BASE + "/pl-en/shops/",
@@ -446,16 +219,16 @@ def find_letyshops_store(
     for slug in variants:
         for base in url_bases:
             url  = base + slug
-            rate, rtype = extract_rate_from_url(browser, url)
+            rate, rtype = extract_rate_from_url(session, url)
             if rate and rate != "no cashback":
-                return rate, rtype, url
+                return rate, rtype, url, "direct"
             if rate == "no cashback":
                 found_no_cashback = True
-            time.sleep(0.3)
+            time.sleep(0.2)
 
     if found_no_cashback:
-        return "no cashback", None, None
-    return "not_found", None, None
+        return "no cashback", None, None, "direct"
+    return "not_found", None, None, "direct"
 
 
 # ══════════════════════════════════════════════════════════════════════════════
@@ -463,76 +236,39 @@ def find_letyshops_store(
 # ══════════════════════════════════════════════════════════════════════════════
 
 def scrape_letyshops(df_igraal: pd.DataFrame) -> pd.DataFrame:
-    email    = os.environ.get("LETYSHOPS_EMAIL", "")
-    password = os.environ.get("LETYSHOPS_PASSWORD", "")
-
-    browser = LetyshopsBrowser().start()
-    browser.login(email, password)
-
-    boosts  = get_letyshops_boosts(browser)
-    listing = get_letyshops_listing(browser)
+    session = build_session()
+    listing = get_letyshops_listing(session)
 
     today   = datetime.today().strftime("%Y-%m-%d")
     results = []
     total   = len(df_igraal)
 
-    try:
-        for i, (_, row) in enumerate(df_igraal.iterrows(), 1):
-            retailer = row["retailer"]
-            slug     = row["slug"]
-            print(f"  [{i:>3}/{total}] {retailer} ({slug})", end=" → ")
+    for i, (_, row) in enumerate(df_igraal.iterrows(), 1):
+        retailer = row["retailer"]
+        slug     = row["slug"]
+        print(f"  [{i:>3}/{total}] {retailer} ({slug})", end=" → ")
 
-            rate, rtype, url = find_letyshops_store(
-                browser, retailer, slug, listing
-            )
+        rate, rtype, url, method = find_letyshops_store(
+            session, retailer, slug, listing
+        )
 
-            variants = generate_slug_variants(retailer, slug)
-            extra_slugs = [
-                retailer.lower(),
-                retailer.lower().replace(" ", "-"),
-                retailer.lower().replace(".", ""),
-                slug.replace("-pl", ""),
-            ]
-            all_variants = list(dict.fromkeys(variants + extra_slugs))
+        if rate in ("no cashback", "not_found"):
+            print(f"{'🚫' if rate == 'no cashback' else '❓'} {rate}  [{method}]")
+        else:
+            print(f"✅ {rate}%  [{method}]")
 
-            boosted_rate = None
-            for v in all_variants:
-                if v in boosts:
-                    boosted_rate = boosts[v]
-                    break
-
-            is_boosted = False
-            if boosted_rate is not None:
-                try:
-                    base = float(rate) if rate not in (
-                        "no cashback", "not_found", None) else 0.0
-                    if boosted_rate > base:
-                        print(f"{rate or '—'} → 🔥 BOOST {boosted_rate}%")
-                        rate       = str(boosted_rate)
-                        rtype      = "boosted_%"
-                        is_boosted = True
-                    else:
-                        print(rate or "—")
-                except (ValueError, TypeError):
-                    print(rate or "—")
-            else:
-                print(rate or "—")
-
-            results.append({
-                "date"               : today,
-                "retailer"           : retailer,
-                "igraal_slug"        : slug,
-                "letyshops_rate"     : (rate if rate not in
-                                        ("no cashback", "not_found") else None),
-                "letyshops_rate_type": (rtype if rate not in
-                                        ("no cashback", "not_found") else rate),
-                "letyshops_boosted"  : is_boosted,
-                "letyshops_url"      : url,
-            })
-            time.sleep(0.4)
-
-    finally:
-        browser.stop()
+        results.append({
+            "date"               : today,
+            "retailer"           : retailer,
+            "igraal_slug"        : slug,
+            "letyshops_rate"     : (rate if rate not in
+                                    ("no cashback", "not_found") else None),
+            "letyshops_rate_type": (rtype if rate not in
+                                    ("no cashback", "not_found") else rate),
+            "letyshops_boosted"  : False,
+            "letyshops_url"      : url,
+        })
+        time.sleep(0.3)
 
     return pd.DataFrame(results)
 
@@ -553,15 +289,12 @@ if __name__ == "__main__":
     df_out.to_csv(dated_file,  index=False)
     df_out.to_csv(latest_file, index=False)
 
-    found   = df_out["letyshops_rate_type"].isin(
-                  ["%", "up_to_%", "zł", "boosted_%"]).sum()
-    boosted = df_out["letyshops_boosted"].sum()
-    nc      = (df_out["letyshops_rate_type"] == "no cashback").sum()
-    nf      = (df_out["letyshops_rate_type"] == "not_found").sum()
+    found = df_out["letyshops_rate_type"].isin(["%", "up_to_%", "zł"]).sum()
+    nc    = (df_out["letyshops_rate_type"] == "no cashback").sum()
+    nf    = (df_out["letyshops_rate_type"] == "not_found").sum()
 
     print(f"\n✅ Saved → {dated_file}")
     print(f"✅ Saved → {latest_file}")
-    print(f"   Rates found : {found}")
-    print(f"   🔥 Boosted  : {boosted}")
-    print(f"   No cashback : {nc}")
-    print(f"   Not found   : {nf}")
+    print(f"   ✅ Rates found : {found}")
+    print(f"   🚫 No cashback : {nc}")
+    print(f"   ❓ Not found   : {nf}")
