@@ -39,9 +39,18 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/
+          git fetch origin main
+          git merge origin/main --no-edit --strategy-option=ours
+          git add data/benchmark_data.csv \
+                  data/benchmark_data_enriched.csv \
+                  data/benchmark_history.csv \
+                  data/igraal_rates_latest.csv \
+                  data/letyshops_rates_latest.csv \
+                  data/picodi_rates_latest.csv \
+                  data/alerabat_rates_latest.csv \
+                  data/goodie_rates_latest.csv
           git commit -m "Daily update $(date +'%Y-%m-%d')" --allow-empty
-          git push origin main --force-with-lease
+          git push origin main
 
       - name: Send Slack alerts
         if: always()
