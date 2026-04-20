@@ -1,38 +1,37 @@
 import re
 import time
 import json
-import requests
-from bs4 import BeautifulSoup
+import os
 import pandas as pd
 from datetime import datetime
-import os
+from playwright.sync_api import sync_playwright
 
 LETYSHOPS_BASE    = "https://letyshops.com"
 LETYSHOPS_LISTING = "https://letyshops.com/pl/shops"
 
-HEADERS = {
-    "User-Agent"     : "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-                       "AppleWebKit/537.36 (KHTML, like Gecko) "
-                       "Chrome/122.0.0.0 Safari/537.36",
-    "Accept-Language": "pl-PL,pl;q=0.9,en;q=0.8",
-    "Accept"         : "text/html,application/xhtml+xml,application/xml;"
-                       "q=0.9,*/*;q=0.8",
-    "Accept-Encoding": "gzip, deflate, br",
-    "Connection"     : "keep-alive",
-}
-
 NO_CASHBACK_PHRASES = [
-    "w tej chwili nie ma cashbacku w tym sklepie",
-    "there is no cashback in this store at the moment",
+    "there is no cashback in this store",
+    "w tej chwili nie ma cashbacku",
     "brak cashbacku",
+    "nie ma cashbacku",
 ]
 
-
 # ══════════════════════════════════════════════════════════════════════════════
-# RATE PARSER
+# RATE PARSER v2
 # ══════════════════════════════════════════════════════════════════════════════
 
 def _parse_rate(text: str):
+    # ── Prioridad 1: "X% cashback" directo ───────────────────────
+    pct_direct = re.search(
+        r"(\d+(?:[.,]\d+)?)\s*%\s*\n?\s*cashback",
+        text, re.IGNORECASE
+    )
+    if pct_direct:
+        val = float(pct_direct.group(1).replace(",", "."))
+        if 0 < val <= 95:
+            return str(val), "%"
+
+    # ── Prioridad 2: zł cashback ──────────────────────────────────
     zl = re.search(
         r"(\d+(?:[.,]\d+)?)\s*(?:\xa0)?zł\s*cashback",
         text, re.IGNORECASE
@@ -40,97 +39,179 @@ def _parse_rate(text: str):
     if zl:
         return str(float(zl.group(1).replace(",", "."))), "zł"
 
+    # ── Prioridad 3: "up to X%" ───────────────────────────────────
     up = re.search(
-        r"(?:do|up\s+to)\s+(\d+(?:[.,]\d+)?)\s*(?:\xa0)?%",
+        r"(?:do|up\s+to)\s+(\d+(?:[.,]\d+)?)\s*%",
         text, re.IGNORECASE
     )
     if up:
-        return str(float(up.group(1).replace(",", "."))), "up_to_%"
+        val = float(up.group(1).replace(",", "."))
+        if 0 < val <= 95:
+            return str(val), "up_to_%"
 
-    pct_cb = re.search(
-        r"(\d+(?:[.,]\d+)?)\s*(?:\xa0)?%\s*cashback",
-        text, re.IGNORECASE
-    )
-    if pct_cb:
-        return str(float(pct_cb.group(1).replace(",", "."))), "%"
-
-    hits = re.findall(r"(\d+(?:[.,]\d+)?)\s*(?:\xa0)?%", text)
-    if hits:
-        values = [float(v.replace(",", ".")) for v in hits
-                  if 0 < float(v.replace(",", ".")) <= 95]
-        if values:
-            return str(max(values)), "%"
+    # ── Prioridad 4: % con cashback en ventana cercana ────────────
+    for m in re.finditer(r"(\d+(?:[.,]\d+)?)\s*%", text):
+        val = float(m.group(1).replace(",", "."))
+        if not (0 < val <= 95):
+            continue
+        start = max(0, m.start() - 60)
+        end   = min(len(text), m.end() + 60)
+        if "cashback" in text[start:end].lower():
+            return str(val), "%"
 
     return None, None
 
 
 # ══════════════════════════════════════════════════════════════════════════════
-# SESSION WITH COOKIES
+# SLUG VARIANTS
 # ══════════════════════════════════════════════════════════════════════════════
 
-def build_session() -> requests.Session:
-    session = requests.Session()
-    session.headers.update(HEADERS)
+def generate_slug_variants(retailer_name: str, igraal_slug: str) -> list:
+    name_lower  = retailer_name.lower()
+    name_slug   = re.sub(r"[^a-z0-9]+", "-", name_lower).strip("-")
+    camel_slug  = re.sub(r"[^a-z0-9]+", "-",
+                         re.sub(r"([a-z])([A-Z])", r"\1-\2",
+                                retailer_name).lower()).strip("-")
+    words_slug  = "-".join(name_lower.split())
 
-    cookies_json = os.environ.get("LETYSHOPS_COOKIES", "")
-    if not cookies_json:
-        print("  ⚠️  No LETYSHOPS_COOKIES secret found")
-        return session
+    bases = list(dict.fromkeys([
+        igraal_slug, name_slug, camel_slug, words_slug
+    ]))
 
-    try:
-        raw_cookies = json.loads(cookies_json)
+    variants = []
+    for b in bases:
+        variants.append(b + "-pl")
+        variants.append(b + "-polska")
+        variants.append(b)
 
-        # ── Enviar cookies como header directo ────────────────────
-        cookie_header = "; ".join([
-            f"{c['name']}={c['value']}"
-            for c in raw_cookies
-        ])
-        session.headers.update({"Cookie": cookie_header})
-        print(f"  ✅ {len(raw_cookies)} cookies loaded as header")
+    return list(dict.fromkeys(variants))
 
-        locale_cookie = next(
-            (c for c in raw_cookies if c["name"] == "hl"), None
+
+# ══════════════════════════════════════════════════════════════════════════════
+# BROWSER WITH COOKIES
+# ══════════════════════════════════════════════════════════════════════════════
+
+class LetyshopsBrowser:
+    def __init__(self):
+        self._pw      = None
+        self._browser = None
+        self._context = None
+        self._page    = None
+
+    def start(self):
+        cookies_json = os.environ.get("LETYSHOPS_COOKIES", "")
+        raw_cookies  = []
+
+        if not cookies_json:
+            print("  ⚠️  No LETYSHOPS_COOKIES secret found")
+        else:
+            try:
+                raw_cookies = json.loads(cookies_json)
+                print(f"  ✅ {len(raw_cookies)} cookies loaded")
+            except Exception as e:
+                print(f"  ⚠️  Cookie parse error: {e}")
+
+        self._pw      = sync_playwright().start()
+        self._browser = self._pw.chromium.launch(
+            headless=True,
+            args=["--no-sandbox", "--disable-setuid-sandbox",
+                  "--disable-dev-shm-usage"]
         )
-        if locale_cookie:
-            print(f"  📍 Locale cookie: {locale_cookie['value']}")
+        self._context = self._browser.new_context(
+            locale="pl-PL",
+            timezone_id="Europe/Warsaw",
+            user_agent=(
+                "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                "AppleWebKit/537.36 (KHTML, like Gecko) "
+                "Chrome/122.0.0.0 Safari/537.36"
+            )
+        )
+
+        if raw_cookies:
+            self._context.add_cookies(raw_cookies)
+
+        self._page = self._context.new_page()
 
         # ── Test de sesión ────────────────────────────────────────
-        print("  🔍 Testing session with Allegro page...")
-        test = session.get(
-            "https://letyshops.com/pl/shops/allegro-pl",
-            timeout=15
-        )
-        print(f"  📍 Test URL after redirect: {test.url}")
-        test_text = BeautifulSoup(test.text, "html.parser").get_text(separator=" ")
-        test_rate, _ = _parse_rate(test_text)
-        print(f"  📊 Allegro test rate: {test_rate} (expected ~5.1%)")
+        self._test_session()
+        return self
 
-    except Exception as e:
-        print(f"  ⚠️  Session setup error: {e}")
+    def _test_session(self):
+        try:
+            self._page.goto(
+                "https://letyshops.com/pl/shops/allegro-pl",
+                timeout=20000, wait_until="domcontentloaded"
+            )
+            self._page.wait_for_timeout(3000)
+            text = self._page.inner_text("body")
+            rate, _ = _parse_rate(text)
+            print(f"  🔍 Session test — Allegro: {rate}% "
+                  f"(URL: {self._page.url})")
+        except Exception as e:
+            print(f"  ⚠️  Session test error: {e}")
 
-    return session
+    def get_text(self, url: str, wait_ms: int = 3000) -> str | None:
+        try:
+            self._page.goto(url, timeout=20000,
+                            wait_until="domcontentloaded")
+            self._page.wait_for_timeout(wait_ms)
+            return self._page.inner_text("body")
+        except Exception as e:
+            print(f"    ⚠ Error on {url}: {e}")
+            return None
+
+    def stop(self):
+        if self._browser:
+            self._browser.close()
+        if self._pw:
+            self._pw.stop()
 
 
 # ══════════════════════════════════════════════════════════════════════════════
 # LISTING PAGE
 # ══════════════════════════════════════════════════════════════════════════════
 
-def get_letyshops_listing(session: requests.Session) -> dict:
+def get_letyshops_listing(browser: LetyshopsBrowser) -> dict:
+    from bs4 import BeautifulSoup
+
     print("  📋 Fetching listing page...")
     try:
-        r = session.get(LETYSHOPS_LISTING, timeout=15)
-        print(f"  📋 Listing final URL: {r.url}")
-        soup = BeautifulSoup(r.text, "html.parser")
+        browser._page.goto(LETYSHOPS_LISTING, timeout=30000,
+                           wait_until="domcontentloaded")
+        browser._page.wait_for_timeout(3000)
     except Exception as e:
-        print(f"  ⚠️  Listing fetch error: {e}")
-        return {}
+        print(f"  ⚠️  Listing timeout: {e}")
 
-    pattern = re.compile(r"^/pl/shops/[^/?#]+$")
+    print(f"  📋 Listing URL: {browser._page.url}")
+
+    # Scroll para cargar todos los shops
+    prev_count = 0
+    for attempt in range(15):
+        browser._page.evaluate(
+            "window.scrollTo(0, document.body.scrollHeight)"
+        )
+        browser._page.wait_for_timeout(1500)
+        current_count = browser._page.evaluate(
+            "() => document.querySelectorAll('a[href*=\"/shops/\"]').length"
+        )
+        print(f"  📋 Scroll {attempt+1}: {current_count} links")
+        if current_count == prev_count and attempt > 3:
+            break
+        prev_count = current_count
+
+    browser._page.evaluate("window.scrollTo(0, 0)")
+    browser._page.wait_for_timeout(1000)
+
+    content = browser._page.content()
+    soup    = BeautifulSoup(content, "html.parser")
+
+    # Acepta /pl/shops/ y /pl-en/shops/
+    pattern = re.compile(r"^/pl(?:-en)?/shops/[^/?#]+$")
     seen, shops = set(), {}
 
     for link in soup.find_all("a", href=pattern):
         href = link.get("href", "")
-        slug = href.split("/pl/shops/")[-1].strip("/")
+        slug = re.split(r"/shops/", href)[-1].strip("/")
         if slug in seen:
             continue
         seen.add(slug)
@@ -141,7 +222,7 @@ def get_letyshops_listing(session: requests.Session) -> dict:
             "letyshops_url"      : LETYSHOPS_BASE + href,
         }
 
-    print(f"  📋 Listing: {len(shops)} shops found")
+    print(f"  📋 Listing complete: {len(shops)} shops found")
     return shops
 
 
@@ -149,49 +230,16 @@ def get_letyshops_listing(session: requests.Session) -> dict:
 # INDIVIDUAL PAGE
 # ══════════════════════════════════════════════════════════════════════════════
 
-def extract_rate_from_url(session: requests.Session, url: str):
-    try:
-        r = session.get(url, timeout=15)
-        if r.status_code == 404:
-            return None, None
-        if r.status_code != 200:
-            return None, None
-
-        # Debug: log final URL to detect redirects
-        if r.url != url:
-            print(f"    🔀 Redirect: {url} → {r.url}")
-
-        text = BeautifulSoup(r.text, "html.parser").get_text(separator=" ")
-        tl   = text.lower()
-
-        if any(phrase in tl for phrase in NO_CASHBACK_PHRASES):
-            return "no cashback", None
-
-        return _parse_rate(text)
-
-    except Exception as e:
-        print(f"    ⚠ Error fetching {url}: {e}")
+def extract_rate_from_url(browser: LetyshopsBrowser, url: str):
+    text = browser.get_text(url)
+    if not text:
         return None, None
 
+    tl = text.lower()
+    if any(phrase in tl for phrase in NO_CASHBACK_PHRASES):
+        return "no cashback", None
 
-# ══════════════════════════════════════════════════════════════════════════════
-# SLUG LOGIC
-# ══════════════════════════════════════════════════════════════════════════════
-
-def generate_slug_variants(retailer_name: str, igraal_slug: str) -> list:
-    camel_slug = re.sub(r"[^a-z0-9]+", "-",
-                        re.sub(r"([a-z])([A-Z])", r"\1-\2",
-                               retailer_name).lower()).strip("-")
-    name_slug  = re.sub(r"[^a-z0-9]+", "-",
-                        retailer_name.lower()).strip("-")
-    bases = list(dict.fromkeys([igraal_slug, name_slug, camel_slug]))
-
-    variants = (
-        [b + "-pl"     for b in bases] +
-        [b + "-polska" for b in bases] +
-        [b             for b in bases]
-    )
-    return list(dict.fromkeys(variants))
+    return _parse_rate(text)
 
 
 # ══════════════════════════════════════════════════════════════════════════════
@@ -199,7 +247,7 @@ def generate_slug_variants(retailer_name: str, igraal_slug: str) -> list:
 # ══════════════════════════════════════════════════════════════════════════════
 
 def find_letyshops_store(
-    session: requests.Session,
+    browser: LetyshopsBrowser,
     retailer_name: str,
     igraal_slug: str,
     listing: dict
@@ -217,14 +265,13 @@ def find_letyshops_store(
                     info["letyshops_rate_type"],
                     info["letyshops_url"],
                     "listing")
-
-        rate, rtype = extract_rate_from_url(session, info["letyshops_url"])
+        rate, rtype = extract_rate_from_url(browser, info["letyshops_url"])
         if rate and rate != "no cashback":
             return rate, rtype, info["letyshops_url"], "listing_page"
         if rate == "no cashback":
             found_no_cashback = True
 
-    # ── Pass 2: direct /pl/shops/ ─────────────────────────────────
+    # ── Pass 2: direct URL probing ────────────────────────────────
     url_bases = [
         LETYSHOPS_BASE + "/pl/shops/",
         LETYSHOPS_BASE + "/pl-en/shops/",
@@ -232,7 +279,7 @@ def find_letyshops_store(
     for slug in variants:
         for base in url_bases:
             url  = base + slug
-            rate, rtype = extract_rate_from_url(session, url)
+            rate, rtype = extract_rate_from_url(browser, url)
             if rate and rate != "no cashback":
                 return rate, rtype, url, "direct"
             if rate == "no cashback":
@@ -249,39 +296,44 @@ def find_letyshops_store(
 # ══════════════════════════════════════════════════════════════════════════════
 
 def scrape_letyshops(df_igraal: pd.DataFrame) -> pd.DataFrame:
-    session = build_session()
-    listing = get_letyshops_listing(session)
+    browser = LetyshopsBrowser().start()
+    listing = get_letyshops_listing(browser)
 
     today   = datetime.today().strftime("%Y-%m-%d")
     results = []
     total   = len(df_igraal)
 
-    for i, (_, row) in enumerate(df_igraal.iterrows(), 1):
-        retailer = row["retailer"]
-        slug     = row["slug"]
-        print(f"  [{i:>3}/{total}] {retailer} ({slug})", end=" → ")
+    try:
+        for i, (_, row) in enumerate(df_igraal.iterrows(), 1):
+            retailer = row["retailer"]
+            slug     = row["slug"]
+            print(f"  [{i:>3}/{total}] {retailer} ({slug})", end=" → ")
 
-        rate, rtype, url, method = find_letyshops_store(
-            session, retailer, slug, listing
-        )
+            rate, rtype, url, method = find_letyshops_store(
+                browser, retailer, slug, listing
+            )
 
-        if rate in ("no cashback", "not_found"):
-            print(f"{'🚫' if rate == 'no cashback' else '❓'} {rate}  [{method}]")
-        else:
-            print(f"✅ {rate}%  [{method}]")
+            if rate in ("no cashback", "not_found"):
+                print(f"{'🚫' if rate == 'no cashback' else '❓'} "
+                      f"{rate}  [{method}]")
+            else:
+                print(f"✅ {rate}%  [{method}]")
 
-        results.append({
-            "date"               : today,
-            "retailer"           : retailer,
-            "igraal_slug"        : slug,
-            "letyshops_rate"     : (rate if rate not in
-                                    ("no cashback", "not_found") else None),
-            "letyshops_rate_type": (rtype if rate not in
-                                    ("no cashback", "not_found") else rate),
-            "letyshops_boosted"  : False,
-            "letyshops_url"      : url,
-        })
-        time.sleep(0.3)
+            results.append({
+                "date"               : today,
+                "retailer"           : retailer,
+                "igraal_slug"        : slug,
+                "letyshops_rate"     : (rate if rate not in
+                                        ("no cashback", "not_found") else None),
+                "letyshops_rate_type": (rtype if rate not in
+                                        ("no cashback", "not_found") else rate),
+                "letyshops_boosted"  : False,
+                "letyshops_url"      : url,
+            })
+            time.sleep(0.3)
+
+    finally:
+        browser.stop()
 
     return pd.DataFrame(results)
 
