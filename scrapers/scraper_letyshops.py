@@ -17,11 +17,43 @@ NO_CASHBACK_PHRASES = [
 ]
 
 # ══════════════════════════════════════════════════════════════════════════════
+# COOKIE NORMALIZER
+# ══════════════════════════════════════════════════════════════════════════════
+
+SAMESITE_MAP = {
+    "no_restriction": "None",
+    "unspecified"   : "Lax",
+    "lax"           : "Lax",
+    "strict"        : "Strict",
+    "none"          : "None",
+}
+
+def _normalize_cookies(raw_cookies: list) -> list:
+    normalized = []
+    for c in raw_cookies:
+        cookie = {
+            "name"    : c["name"],
+            "value"   : c["value"],
+            "domain"  : c.get("domain", "letyshops.com"),
+            "path"    : c.get("path", "/"),
+            "sameSite": SAMESITE_MAP.get(
+                (c.get("sameSite") or "lax").lower(), "Lax"
+            ),
+        }
+        if c.get("secure"):
+            cookie["secure"] = True
+        if c.get("httpOnly"):
+            cookie["httpOnly"] = True
+        normalized.append(cookie)
+    return normalized
+
+
+# ══════════════════════════════════════════════════════════════════════════════
 # RATE PARSER v2
 # ══════════════════════════════════════════════════════════════════════════════
 
 def _parse_rate(text: str):
-    # ── Prioridad 1: "X% cashback" directo ───────────────────────
+    # Prioridad 1: "X% cashback" directo
     pct_direct = re.search(
         r"(\d+(?:[.,]\d+)?)\s*%\s*\n?\s*cashback",
         text, re.IGNORECASE
@@ -31,7 +63,7 @@ def _parse_rate(text: str):
         if 0 < val <= 95:
             return str(val), "%"
 
-    # ── Prioridad 2: zł cashback ──────────────────────────────────
+    # Prioridad 2: zł cashback
     zl = re.search(
         r"(\d+(?:[.,]\d+)?)\s*(?:\xa0)?zł\s*cashback",
         text, re.IGNORECASE
@@ -39,7 +71,7 @@ def _parse_rate(text: str):
     if zl:
         return str(float(zl.group(1).replace(",", "."))), "zł"
 
-    # ── Prioridad 3: "up to X%" ───────────────────────────────────
+    # Prioridad 3: "up to X%"
     up = re.search(
         r"(?:do|up\s+to)\s+(\d+(?:[.,]\d+)?)\s*%",
         text, re.IGNORECASE
@@ -49,7 +81,7 @@ def _parse_rate(text: str):
         if 0 < val <= 95:
             return str(val), "up_to_%"
 
-    # ── Prioridad 4: % con cashback en ventana cercana ────────────
+    # Prioridad 4: % con cashback en ventana cercana
     for m in re.finditer(r"(\d+(?:[.,]\d+)?)\s*%", text):
         val = float(m.group(1).replace(",", "."))
         if not (0 < val <= 95):
@@ -67,12 +99,12 @@ def _parse_rate(text: str):
 # ══════════════════════════════════════════════════════════════════════════════
 
 def generate_slug_variants(retailer_name: str, igraal_slug: str) -> list:
-    name_lower  = retailer_name.lower()
-    name_slug   = re.sub(r"[^a-z0-9]+", "-", name_lower).strip("-")
-    camel_slug  = re.sub(r"[^a-z0-9]+", "-",
-                         re.sub(r"([a-z])([A-Z])", r"\1-\2",
-                                retailer_name).lower()).strip("-")
-    words_slug  = "-".join(name_lower.split())
+    name_lower = retailer_name.lower()
+    name_slug  = re.sub(r"[^a-z0-9]+", "-", name_lower).strip("-")
+    camel_slug = re.sub(r"[^a-z0-9]+", "-",
+                        re.sub(r"([a-z])([A-Z])", r"\1-\2",
+                               retailer_name).lower()).strip("-")
+    words_slug = "-".join(name_lower.split())
 
     bases = list(dict.fromkeys([
         igraal_slug, name_slug, camel_slug, words_slug
@@ -128,11 +160,11 @@ class LetyshopsBrowser:
         )
 
         if raw_cookies:
-            self._context.add_cookies(raw_cookies)
+            normalized = _normalize_cookies(raw_cookies)
+            self._context.add_cookies(normalized)
+            print(f"  ✅ {len(normalized)} cookies normalized and loaded")
 
         self._page = self._context.new_page()
-
-        # ── Test de sesión ────────────────────────────────────────
         self._test_session()
         return self
 
@@ -184,7 +216,6 @@ def get_letyshops_listing(browser: LetyshopsBrowser) -> dict:
 
     print(f"  📋 Listing URL: {browser._page.url}")
 
-    # Scroll para cargar todos los shops
     prev_count = 0
     for attempt in range(15):
         browser._page.evaluate(
@@ -205,7 +236,6 @@ def get_letyshops_listing(browser: LetyshopsBrowser) -> dict:
     content = browser._page.content()
     soup    = BeautifulSoup(content, "html.parser")
 
-    # Acepta /pl/shops/ y /pl-en/shops/
     pattern = re.compile(r"^/pl(?:-en)?/shops/[^/?#]+$")
     seen, shops = set(), {}
 
@@ -255,7 +285,7 @@ def find_letyshops_store(
     variants          = generate_slug_variants(retailer_name, igraal_slug)
     found_no_cashback = False
 
-    # ── Pass 1: listing ───────────────────────────────────────────
+    # Pass 1: listing
     for slug in variants:
         if slug not in listing:
             continue
@@ -271,7 +301,7 @@ def find_letyshops_store(
         if rate == "no cashback":
             found_no_cashback = True
 
-    # ── Pass 2: direct URL probing ────────────────────────────────
+    # Pass 2: direct URL probing
     url_bases = [
         LETYSHOPS_BASE + "/pl/shops/",
         LETYSHOPS_BASE + "/pl-en/shops/",
