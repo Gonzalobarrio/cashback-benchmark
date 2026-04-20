@@ -13,6 +13,7 @@ HEADERS = {
 PICODI_BASE    = "https://www.picodi.com"
 PICODI_LISTING = "https://www.picodi.com/pl/sklepy"
 
+
 def get_picodi_listing():
     r    = requests.get(PICODI_LISTING, headers=HEADERS, timeout=15)
     soup = BeautifulSoup(r.text, "html.parser")
@@ -21,57 +22,70 @@ def get_picodi_listing():
         href = link.get("href", "")
         slug = href.replace("/pl/", "").strip("/")
         name = link.get_text(strip=True)
-        if slug in ("sklepy","kategorie-sklepow","kontakt") or not slug:
+        if slug in ("sklepy", "kategorie-sklepow", "kontakt") or not slug:
             continue
         if slug not in seen:
             seen.add(slug)
             shops[slug] = {"name": name, "picodi_url": PICODI_BASE + href}
     return shops
 
+
 def get_picodi_rate(url):
     try:
-        r    = requests.get(url, headers=HEADERS, timeout=15)
+        r = requests.get(url, headers=HEADERS, timeout=15)
         if r.status_code != 200:
             return None, None
+
         text = BeautifulSoup(r.text, "html.parser").get_text(separator=" ")
 
-        zl_hits = re.findall(
-            r"cashback\s+(?:do\s+)?(\d+(?:[.,]\d+)?)\s*(?:PLN|zł|zl)",
-            text, re.IGNORECASE
-        )
-        if zl_hits:
-            return str(float(zl_hits[0].replace(",", "."))), "zł"
-
-        DISCOUNT_WORDS = ["zniżki","zniżka","rabat","taniej","promocj","kupon","kod"]
+        # ── Prioridad 1: % cashback ────────────────────────────
+        DISCOUNT_WORDS = [
+            "zniżki", "zniżka", "rabat", "taniej",
+            "promocj", "kupon", "kod"
+        ]
         pct_values = []
         for m in re.finditer(
-            r"cashback\s+(?:do\s+)?(\d+(?:[.,]\d+)?)\s*%", text, re.IGNORECASE
+            r"cashback\s+(?:up\s+to\s+|do\s+)?(\d+(?:[.,]\d+)?)\s*%",
+            text, re.IGNORECASE
         ):
             context = text[max(0, m.start()-100):m.end()+100].lower()
             if any(w in context for w in DISCOUNT_WORDS):
                 continue
-            pct_values.append(float(m.group(1).replace(",", ".")))
-
-        if not pct_values:
-            all_hits = re.findall(
-                r"cashback\s+(?:do\s+)?(\d+(?:[.,]\d+)?)\s*%", text, re.IGNORECASE
-            )
-            pct_values = [
-                float(h.replace(",",".")) for h in all_hits
-                if float(h.replace(",",".")) <= 50
-            ]
+            val = float(m.group(1).replace(",", "."))
+            if val <= 80:
+                pct_values.append(val)
 
         if pct_values:
             try:
                 best = mode(pct_values)
             except StatisticsError:
-                best = pct_values[0]
-            has_do = bool(re.search(r"cashback\s+do\s+\d", text, re.IGNORECASE))
+                best = max(pct_values)
+            has_do = bool(re.search(
+                r"cashback\s+(?:up\s+to|do)\s+\d",
+                text, re.IGNORECASE
+            ))
             return str(best), ("up_to_%" if has_do else "%")
+
+        # ── Prioridad 2: zł cashback (filtrado) ───────────────
+        zl_filtered = []
+        for m in re.finditer(
+            r"cashback\s+(?:do\s+)?(\d+(?:[.,]\d+)?)\s*(?:PLN|zł|zl)",
+            text, re.IGNORECASE
+        ):
+            context = text[max(0, m.start()-50):m.end()+50].lower()
+            if any(w in context for w in ["bonus", "share", "refer", "invite"]):
+                continue
+            zl_filtered.append(float(m.group(1).replace(",", ".")))
+
+        if zl_filtered:
+            return str(zl_filtered[0]), "zł"
+
+        return "no cashback", None
 
     except Exception as e:
         print(f"  Error {url}: {e}")
     return "no cashback", None
+
 
 def find_picodi_store(retailer_name, igraal_slug, listing):
     name_slug  = re.sub(r"[^a-z0-9]+", "-", retailer_name.lower()).strip("-")
@@ -79,18 +93,23 @@ def find_picodi_store(retailer_name, igraal_slug, listing):
     camel_slug = re.sub(r"[^a-z0-9]+", "-", camel.lower()).strip("-")
 
     variants = list(dict.fromkeys([
-        igraal_slug,        igraal_slug + "-pl",
+        igraal_slug,
+        igraal_slug + "-pl",
         igraal_slug + "-com",
-        name_slug,          name_slug + "-pl",
-        camel_slug,         camel_slug + "-pl",
+        name_slug,
+        name_slug + "-pl",
+        camel_slug,
+        camel_slug + "-pl",
     ]))
 
+    # Pass 1: listing
     for v in variants:
         if v in listing:
             rate, rtype = get_picodi_rate(listing[v]["picodi_url"])
             if rate and rate not in ("no cashback", None):
                 return rate, rtype, listing[v]["picodi_url"]
 
+    # Pass 2: name matching
     name_clean = re.sub(r"[^a-z0-9]", "", retailer_name.lower())
     for slug, data in listing.items():
         shop_clean = re.sub(r"[^a-z0-9]", "", data["name"].lower())
@@ -99,6 +118,7 @@ def find_picodi_store(retailer_name, igraal_slug, listing):
             if rate and rate not in ("no cashback", None):
                 return rate, rtype, data["picodi_url"]
 
+    # Pass 3: direct URL probing
     for v in variants:
         url  = f"{PICODI_BASE}/pl/{v}"
         rate, rtype = get_picodi_rate(url)
@@ -108,24 +128,39 @@ def find_picodi_store(retailer_name, igraal_slug, listing):
 
     return "not_found", None, None
 
-def scrape_picodi(df_igraal):
+
+def scrape_picodi(df_igraal: pd.DataFrame) -> pd.DataFrame:
     listing = get_picodi_listing()
     today   = datetime.today().strftime("%Y-%m-%d")
     results = []
-    for _, row in df_igraal.iterrows():
+    total   = len(df_igraal)
+
+    for i, (_, row) in enumerate(df_igraal.iterrows(), 1):
         retailer = row["retailer"]
         slug     = row["slug"]
+        print(f"  [{i:>3}/{total}] {retailer} ({slug})", end=" → ")
+
         rate, rtype, url = find_picodi_store(retailer, slug, listing)
+
+        if rate in ("no cashback", "not_found"):
+            print(f"{'🚫' if rate == 'no cashback' else '❓'} {rate}")
+        else:
+            print(f"✅ {rate}%")
+
         results.append({
             "date"            : today,
             "retailer"        : retailer,
             "igraal_slug"     : slug,
-            "picodi_rate"     : rate if rate not in ("no cashback","not_found") else None,
-            "picodi_rate_type": rtype if rate not in ("no cashback","not_found") else rate,
+            "picodi_rate"     : (rate if rate not in
+                                 ("no cashback", "not_found") else None),
+            "picodi_rate_type": (rtype if rate not in
+                                 ("no cashback", "not_found") else rate),
             "picodi_url"      : url,
         })
         time.sleep(0.4)
+
     return pd.DataFrame(results)
+
 
 if __name__ == "__main__":
     import os
@@ -133,4 +168,14 @@ if __name__ == "__main__":
     df_ig = pd.read_csv("data/igraal_rates_latest.csv")
     df    = scrape_picodi(df_ig)
     df.to_csv("data/picodi_rates_latest.csv", index=False)
-    print(f"✅ Picodi: {len(df)} retailers")
+
+    found = df["picodi_rate_type"].isin(["%", "up_to_%"]).sum()
+    zl    = (df["picodi_rate_type"] == "zł").sum()
+    nc    = (df["picodi_rate_type"] == "no cashback").sum()
+    nf    = (df["picodi_rate_type"] == "not_found").sum()
+
+    print(f"\n✅ Picodi: {len(df)} retailers")
+    print(f"   ✅ Rates found : {found}")
+    print(f"   💰 zł rates   : {zl}")
+    print(f"   🚫 No cashback: {nc}")
+    print(f"   ❓ Not found  : {nf}")
