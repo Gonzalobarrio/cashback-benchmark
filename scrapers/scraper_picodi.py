@@ -13,6 +13,61 @@ HEADERS = {
 PICODI_BASE    = "https://www.picodi.com"
 PICODI_LISTING = "https://www.picodi.com/pl/sklepy"
 
+DISCOUNT_WORDS = [
+    "zniżki", "zniżka", "rabat", "taniej",
+    "promocj", "kupon", "kod"
+]
+
+# ── Manual slug overrides ─────────────────────────────────────────────────────
+# igraal_slug → picodi_slug (when auto-detection fails)
+MANUAL_SLUGS = {
+    "kfc"              : "kfc",
+    "kinguin"          : "kinguin",
+    "kiwi"             : "kiwi",
+    "komputronik"      : "komputronik",
+    "konesso"          : "konesso-pl",
+    "krakvet"          : "krakvet-pl",
+    "lacoste"          : "lacoste",
+    "lampy"            : "lampy-pl",
+    "legimi"           : "legimi",
+    "lego"             : "lego",
+    "leoexpress"       : "leo-express",
+    "levis"            : "levis",
+    "lg"               : "lg",
+    "lionelo"          : "lionelo",
+    "cdkeys"           : "loaded",
+    "lookfantastic"    : "lookfantastic",
+    "lot"              : "lot",
+    "mamyito"          : "mamyito",
+    "mango-outlet"     : "mango-outlet",
+    "marilyn"          : "marilyn",
+    "maxelektro"       : "max-elektro",
+    "maxizoo"          : "maxi-zoo",
+    "meblemwm"         : "meblemwm",
+    "wearmedicine"     : "medicine",
+    "merkurymarket"    : "merkury-market",
+    "michaelkors"      : "michael-kors",
+    "modivo.pl"        : "modivo",
+    "morele"           : "morele-net",
+    "mountainwarehouse": "mountain-warehouse",
+    "myprotein"        : "myprotein",
+    "naoko"            : "naoko",
+    "neness"           : "neness-pl",
+    "neonail"          : "neonail",
+    "nbsklep"          : "new-balance",
+    "ninja"            : "ninja",
+    "nordvpn"          : "nordvpn",
+    "norton"           : "norton",
+    "notino"           : "notino",
+    "novakid"          : "novakid",
+    "oleole"           : "oleole",
+    "canalplus"        : "nc",
+}
+
+
+# ══════════════════════════════════════════════════════════════════════════════
+# LISTING
+# ══════════════════════════════════════════════════════════════════════════════
 
 def get_picodi_listing():
     r    = requests.get(PICODI_LISTING, headers=HEADERS, timeout=15)
@@ -30,6 +85,10 @@ def get_picodi_listing():
     return shops
 
 
+# ══════════════════════════════════════════════════════════════════════════════
+# RATE PARSER v3
+# ══════════════════════════════════════════════════════════════════════════════
+
 def get_picodi_rate(url):
     try:
         r = requests.get(url, headers=HEADERS, timeout=15)
@@ -39,10 +98,6 @@ def get_picodi_rate(url):
         text = BeautifulSoup(r.text, "html.parser").get_text(separator=" ")
 
         # ── Prioridad 1: % cashback ────────────────────────────
-        DISCOUNT_WORDS = [
-            "zniżki", "zniżka", "rabat", "taniej",
-            "promocj", "kupon", "kod"
-        ]
         pct_values = []
         for m in re.finditer(
             r"cashback\s+(?:up\s+to\s+|do\s+)?(\d+(?:[.,]\d+)?)\s*%",
@@ -80,6 +135,20 @@ def get_picodi_rate(url):
         if zl_filtered:
             return str(zl_filtered[0]), "zł"
 
+        # ── Prioridad 3: USD cashback ──────────────────────────
+        dollar_hits = []
+        for m in re.finditer(
+            r"cashback\s+(?:up\s+to\s+|do\s+)?(\d+(?:[.,]\d+)?)\s*(?:USD|\$)",
+            text, re.IGNORECASE
+        ):
+            context = text[max(0, m.start()-50):m.end()+50].lower()
+            if any(w in context for w in ["bonus", "share", "refer", "invite"]):
+                continue
+            dollar_hits.append(float(m.group(1).replace(",", ".")))
+
+        if dollar_hits:
+            return str(dollar_hits[0]), "usd"
+
         return "no cashback", None
 
     except Exception as e:
@@ -87,7 +156,19 @@ def get_picodi_rate(url):
     return "no cashback", None
 
 
+# ══════════════════════════════════════════════════════════════════════════════
+# STORE RESOLVER
+# ══════════════════════════════════════════════════════════════════════════════
+
 def find_picodi_store(retailer_name, igraal_slug, listing):
+    # ── Check manual slug override first ──────────────────────
+    if igraal_slug in MANUAL_SLUGS:
+        picodi_slug = MANUAL_SLUGS[igraal_slug]
+        url  = f"{PICODI_BASE}/pl/{picodi_slug}"
+        rate, rtype = get_picodi_rate(url)
+        if rate and rate not in ("no cashback", None):
+            return rate, rtype, url
+
     name_slug  = re.sub(r"[^a-z0-9]+", "-", retailer_name.lower()).strip("-")
     camel      = re.sub(r"([a-z])([A-Z])", r"\1-\2", retailer_name)
     camel_slug = re.sub(r"[^a-z0-9]+", "-", camel.lower()).strip("-")
@@ -129,6 +210,10 @@ def find_picodi_store(retailer_name, igraal_slug, listing):
     return "not_found", None, None
 
 
+# ══════════════════════════════════════════════════════════════════════════════
+# MAIN SCRAPER
+# ══════════════════════════════════════════════════════════════════════════════
+
 def scrape_picodi(df_igraal: pd.DataFrame) -> pd.DataFrame:
     listing = get_picodi_listing()
     today   = datetime.today().strftime("%Y-%m-%d")
@@ -145,7 +230,7 @@ def scrape_picodi(df_igraal: pd.DataFrame) -> pd.DataFrame:
         if rate in ("no cashback", "not_found"):
             print(f"{'🚫' if rate == 'no cashback' else '❓'} {rate}")
         else:
-            print(f"✅ {rate}%")
+            print(f"✅ {rate} ({rtype})")
 
         results.append({
             "date"            : today,
@@ -162,6 +247,10 @@ def scrape_picodi(df_igraal: pd.DataFrame) -> pd.DataFrame:
     return pd.DataFrame(results)
 
 
+# ══════════════════════════════════════════════════════════════════════════════
+# ENTRY POINT
+# ══════════════════════════════════════════════════════════════════════════════
+
 if __name__ == "__main__":
     import os
     os.makedirs("data", exist_ok=True)
@@ -171,11 +260,13 @@ if __name__ == "__main__":
 
     found = df["picodi_rate_type"].isin(["%", "up_to_%"]).sum()
     zl    = (df["picodi_rate_type"] == "zł").sum()
+    usd   = (df["picodi_rate_type"] == "usd").sum()
     nc    = (df["picodi_rate_type"] == "no cashback").sum()
     nf    = (df["picodi_rate_type"] == "not_found").sum()
 
     print(f"\n✅ Picodi: {len(df)} retailers")
-    print(f"   ✅ Rates found : {found}")
-    print(f"   💰 zł rates   : {zl}")
-    print(f"   🚫 No cashback: {nc}")
-    print(f"   ❓ Not found  : {nf}")
+    print(f"   ✅ Rates % found : {found}")
+    print(f"   💰 zł rates     : {zl}")
+    print(f"   💵 USD rates    : {usd}")
+    print(f"   🚫 No cashback  : {nc}")
+    print(f"   ❓ Not found    : {nf}")
