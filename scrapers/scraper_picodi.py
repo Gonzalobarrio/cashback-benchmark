@@ -19,8 +19,8 @@ DISCOUNT_WORDS = [
 ]
 
 # ── Manual slug overrides ─────────────────────────────────────────────────────
-# igraal_slug → picodi_slug (when auto-detection fails)
 MANUAL_SLUGS = {
+    # Tanda 1
     "kfc"              : "kfc",
     "kinguin"          : "kinguin",
     "kiwi"             : "kiwi",
@@ -62,6 +62,64 @@ MANUAL_SLUGS = {
     "novakid"          : "novakid",
     "oleole"           : "oleole",
     "canalplus"        : "nc",
+    # Tanda 2
+    "olimp-store"      : "olimp-store",
+    "ombre"            : "ombre-pl",
+    "panmaterac"       : "pan-materac",
+    "parfumdreams"     : "parfumdreams",
+    "perfumeria.pl"    : "perfumeria",
+    "perfumy"          : "perfumy-pl",
+    "philips"          : "philips",
+    "philips-hue"      : "philips-hue",
+    "play"             : "play",
+    "prm"              : "prm",
+    "przyjacielekawy"  : "przyjaciele-kawy",
+    "puma"             : "puma",
+    "pyszne"           : "pyszne-pl",
+    "radissonhotels"   : "radisson-hotels",
+    "regatta"          : "regatta",
+    "remix"            : "remix",
+    "renee"            : "renee",
+    "reporteryoung"    : "reporter-young",
+    "ryobi"            : "ryobi",
+    "samsung"          : "samsung",
+    "senpo.pl"         : "senpo",
+    "sferis"           : "sferis",
+    "shark"            : "shark",
+    "sinsay"           : "sinsay",
+    "skechers"         : "skechers",
+    "skyshowtime"      : "sky-showtime",
+    "sportstylestory"  : "sportstylestory",
+    "stradivarius"     : "stradivarius",
+    "stylevana"        : "stylevana",
+    "surfshark"        : "surfshark",
+    "swiatsupli"       : "swiat-supli",
+    "tagomago"         : "tagomago",
+    "teufel"           : "teufel",
+    "topsecret"        : "topsecret",
+    "trip-com"         : "trip-com",
+    "ubisoft"          : "ubisoft",
+    "ucando"           : "ucando-pl",
+    "udemy"            : "udemy",
+    "under-armour"     : "under-armour",
+    "vangraaf"         : "van-graaf",
+    "vans"             : "vans",
+    "vidaxl"           : "vida-xl",
+    "visionexpress"    : "vision-express",
+    "volcano"          : "volcano",
+    # Tanda 3
+    "recman"           : "recman-com",
+    "sun-and-snow"     : "sunandsnow",
+    "mi"               : "xiaomi",
+    "streetstyle24"    : "street-style",
+    "victorias-secret" : "victoria-s-secret",
+    "wrangler"         : "wrangler",
+    "yanosik"          : "yanosik",
+    "yves-rocher"      : "yves-rocher",
+    "znak"             : "znak",
+    "zooplus"          : "zooplus",
+    "4kidspoint"       : "4kidspoint",
+    "7way"             : "7way",
 }
 
 
@@ -90,6 +148,10 @@ def get_picodi_listing():
 # ══════════════════════════════════════════════════════════════════════════════
 
 def get_picodi_rate(url):
+    # Asegurar que la URL termina en /offers
+    if not url.rstrip("/").endswith("/offers"):
+        url = url.rstrip("/") + "/offers"
+
     try:
         r = requests.get(url, headers=HEADERS, timeout=15)
         if r.status_code != 200:
@@ -164,7 +226,7 @@ def find_picodi_store(retailer_name, igraal_slug, listing):
     # ── Check manual slug override first ──────────────────────
     if igraal_slug in MANUAL_SLUGS:
         picodi_slug = MANUAL_SLUGS[igraal_slug]
-        url  = f"{PICODI_BASE}/pl/{picodi_slug}"
+        url  = f"{PICODI_BASE}/pl/{picodi_slug}/offers"
         rate, rtype = get_picodi_rate(url)
         if rate and rate not in ("no cashback", None):
             return rate, rtype, url
@@ -186,22 +248,24 @@ def find_picodi_store(retailer_name, igraal_slug, listing):
     # Pass 1: listing
     for v in variants:
         if v in listing:
-            rate, rtype = get_picodi_rate(listing[v]["picodi_url"])
+            url  = listing[v]["picodi_url"].rstrip("/") + "/offers"
+            rate, rtype = get_picodi_rate(url)
             if rate and rate not in ("no cashback", None):
-                return rate, rtype, listing[v]["picodi_url"]
+                return rate, rtype, url
 
     # Pass 2: name matching
     name_clean = re.sub(r"[^a-z0-9]", "", retailer_name.lower())
     for slug, data in listing.items():
         shop_clean = re.sub(r"[^a-z0-9]", "", data["name"].lower())
         if name_clean == shop_clean:
-            rate, rtype = get_picodi_rate(data["picodi_url"])
+            url  = data["picodi_url"].rstrip("/") + "/offers"
+            rate, rtype = get_picodi_rate(url)
             if rate and rate not in ("no cashback", None):
-                return rate, rtype, data["picodi_url"]
+                return rate, rtype, url
 
-    # Pass 3: direct URL probing
+    # Pass 3: direct URL probing with /offers
     for v in variants:
-        url  = f"{PICODI_BASE}/pl/{v}"
+        url  = f"{PICODI_BASE}/pl/{v}/offers"
         rate, rtype = get_picodi_rate(url)
         if rate and rate not in ("no cashback", None):
             return rate, rtype, url
