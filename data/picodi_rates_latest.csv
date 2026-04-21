@@ -1,121 +1,121 @@
 date,retailer,igraal_slug,picodi_rate,picodi_rate_type,picodi_url
-2026-04-21,AliExpress,aliexpress,20.7,up_to_%,https://www.picodi.com/pl/aliexpress
-2026-04-21,Allegro,allegro,0.7,up_to_%,https://www.picodi.com/pl/allegro
-2026-04-21,Answear,answear,1.2,up_to_%,https://www.picodi.com/pl/answear-com
-2026-04-21,Decathlon,decathlon,1.4,up_to_%,https://www.picodi.com/pl/decathlon
-2026-04-21,Empik,empik-test,7.5,up_to_%,https://www.picodi.com/pl/empik
-2026-04-21,Lounge by Zalando,zalando-lounge,3.6,up_to_%,https://www.picodi.com/pl/zalando-lounge
-2026-04-21,MediaMarkt,mediamarkt,1.8,up_to_%,https://www.picodi.com/pl/mediamarkt
-2026-04-21,Temu,temu,16.0,up_to_%,https://www.picodi.com/pl/temu
-2026-04-21,SHEIN,shein,6.0,up_to_%,https://www.picodi.com/pl/shein
-2026-04-21,RTV Euro AGD,rtveuro,1.8,up_to_%,https://www.picodi.com/pl/rtveuroagd
-2026-04-21,Lidl,lidl,1.7,%,https://www.picodi.com/pl/lidl
-2026-04-21,Leroy Merlin,leroymerlin,0.7,%,https://www.picodi.com/pl/leroy-merlin
-2026-04-21,CCC,ccc,2.0,up_to_%,https://www.picodi.com/pl/ccc
-2026-04-21,Hebe,hebe,1.8,%,https://www.picodi.com/pl/hebe
-2026-04-21,OBI,obi,1.5,%,https://www.picodi.com/pl/obi
-2026-04-21,Adidas,adidas,1.8,up_to_%,https://www.picodi.com/pl/adidas-pl
-2026-04-21,Sephora,sephora,3.3,up_to_%,https://www.picodi.com/pl/sephora
-2026-04-21,Douglas,douglas,3.0,up_to_%,https://www.picodi.com/pl/douglas
-2026-04-21,home&you,home-you,1.2,up_to_%,https://www.picodi.com/pl/home-you
-2026-04-21,Abra,abra,1.5,%,https://www.picodi.com/pl/abra
-2026-04-21,Acer,acer,2.1,%,https://www.picodi.com/pl/acer
-2026-04-21,Airalo,airalo,3.5,up_to_%,https://www.picodi.com/pl/airalo
-2026-04-21,AirHelp,airhelp,4.5,%,https://www.picodi.com/pl/air-help
-2026-04-21,ALAB Laboratoria,alab-laboratoria,1.9,%,https://www.picodi.com/pl/alablaboratoria
-2026-04-21,Alibaba,alibaba.com,2.5,up_to_%,https://www.picodi.com/pl/alibaba
-2026-04-21,AUTODOC,autodoc,2.4,up_to_%,https://www.picodi.com/pl/autodoc
-2026-04-21,AXA Partners,axa-partners,6.0,%,https://www.picodi.com/pl/axa-assistance
-2026-04-21,Banggood,banggood,4.7,up_to_%,https://www.picodi.com/pl/banggood-com
-2026-04-21,Baseus,baseus,1.2,%,https://www.picodi.com/pl/baseus
-2026-04-21,BasicLab,basiclab,1.2,%,https://www.picodi.com/pl/basiclab
-2026-04-21,BeDiet,bediet,4.2,up_to_%,https://www.picodi.com/pl/bediet
+2026-04-21,AliExpress,aliexpress,20.7,up_to_%,https://www.picodi.com/pl/aliexpress/offers
+2026-04-21,Allegro,allegro,0.7,up_to_%,https://www.picodi.com/pl/allegro/offers
+2026-04-21,Answear,answear,1.2,up_to_%,https://www.picodi.com/pl/answear-com/offers
+2026-04-21,Decathlon,decathlon,1.4,up_to_%,https://www.picodi.com/pl/decathlon/offers
+2026-04-21,Empik,empik-test,7.5,up_to_%,https://www.picodi.com/pl/empik/offers
+2026-04-21,Lounge by Zalando,zalando-lounge,3.6,up_to_%,https://www.picodi.com/pl/zalando-lounge/offers
+2026-04-21,MediaMarkt,mediamarkt,1.8,up_to_%,https://www.picodi.com/pl/mediamarkt/offers
+2026-04-21,Temu,temu,16.0,up_to_%,https://www.picodi.com/pl/temu/offers
+2026-04-21,SHEIN,shein,6.0,up_to_%,https://www.picodi.com/pl/shein/offers
+2026-04-21,RTV Euro AGD,rtveuro,1.8,up_to_%,https://www.picodi.com/pl/rtveuroagd/offers
+2026-04-21,Lidl,lidl,1.7,%,https://www.picodi.com/pl/lidl/offers
+2026-04-21,Leroy Merlin,leroymerlin,0.7,%,https://www.picodi.com/pl/leroy-merlin/offers
+2026-04-21,CCC,ccc,2.0,up_to_%,https://www.picodi.com/pl/ccc/offers
+2026-04-21,Hebe,hebe,1.8,%,https://www.picodi.com/pl/hebe/offers
+2026-04-21,OBI,obi,1.5,%,https://www.picodi.com/pl/obi/offers
+2026-04-21,Adidas,adidas,1.8,up_to_%,https://www.picodi.com/pl/adidas-pl/offers
+2026-04-21,Sephora,sephora,3.3,up_to_%,https://www.picodi.com/pl/sephora/offers
+2026-04-21,Douglas,douglas,3.0,up_to_%,https://www.picodi.com/pl/douglas/offers
+2026-04-21,home&you,home-you,1.2,up_to_%,https://www.picodi.com/pl/home-you/offers
+2026-04-21,Abra,abra,1.5,%,https://www.picodi.com/pl/abra/offers
+2026-04-21,Acer,acer,2.1,%,https://www.picodi.com/pl/acer/offers
+2026-04-21,Airalo,airalo,3.5,up_to_%,https://www.picodi.com/pl/airalo/offers
+2026-04-21,AirHelp,airhelp,4.5,%,https://www.picodi.com/pl/air-help/offers
+2026-04-21,ALAB Laboratoria,alab-laboratoria,1.9,%,https://www.picodi.com/pl/alablaboratoria/offers
+2026-04-21,Alibaba,alibaba.com,2.5,up_to_%,https://www.picodi.com/pl/alibaba/offers
+2026-04-21,AUTODOC,autodoc,2.4,up_to_%,https://www.picodi.com/pl/autodoc/offers
+2026-04-21,AXA Partners,axa-partners,6.0,%,https://www.picodi.com/pl/axa-assistance/offers
+2026-04-21,Banggood,banggood,4.7,up_to_%,https://www.picodi.com/pl/banggood-com/offers
+2026-04-21,Baseus,baseus,1.2,%,https://www.picodi.com/pl/baseus/offers
+2026-04-21,BasicLab,basiclab,1.2,%,https://www.picodi.com/pl/basiclab/offers
+2026-04-21,BeDiet,bediet,4.2,up_to_%,https://www.picodi.com/pl/bediet/offers
 2026-04-21,Bee.pl,bee.pl,,not_found,
 2026-04-21,Bezpieczna Rodzina,bezpiecznarodzina,,not_found,
-2026-04-21,Bibliotheque De Parfum,bibliotheque-de-parfum,3.6,%,https://www.picodi.com/pl/bibliotheque-de-parfum
-2026-04-21,BIG STAR,bigstar,0.6,%,https://www.picodi.com/pl/big-star
-2026-04-21,Bimba Y Lola,bimbaylola,2.4,%,https://www.picodi.com/pl/bimba-y-lola
-2026-04-21,Bonprix,bonprix,1.2,%,https://www.picodi.com/pl/bonprix
-2026-04-21,Born2Be,born2be,1.8,%,https://www.picodi.com/pl/born2be
-2026-04-21,Brasty,brasty,1.8,up_to_%,https://www.picodi.com/pl/brasty
+2026-04-21,Bibliotheque De Parfum,bibliotheque-de-parfum,3.6,%,https://www.picodi.com/pl/bibliotheque-de-parfum/offers
+2026-04-21,BIG STAR,bigstar,0.6,%,https://www.picodi.com/pl/big-star/offers
+2026-04-21,Bimba Y Lola,bimbaylola,2.4,%,https://www.picodi.com/pl/bimba-y-lola/offers
+2026-04-21,Bonprix,bonprix,1.2,%,https://www.picodi.com/pl/bonprix/offers
+2026-04-21,Born2Be,born2be,1.8,%,https://www.picodi.com/pl/born2be/offers
+2026-04-21,Brasty,brasty,1.8,up_to_%,https://www.picodi.com/pl/brasty/offers
 2026-04-21,Bricoman,bricoman,,not_found,
-2026-04-21,Bricomarche,bricomarche,1.4,%,https://www.picodi.com/pl/bricomarche
-2026-04-21,Broń.pl,bron.pl,2.7,%,https://www.picodi.com/pl/bron-pl
+2026-04-21,Bricomarche,bricomarche,,not_found,
+2026-04-21,Broń.pl,bron.pl,,not_found,
 2026-04-21,Byrokko,byrokko,,not_found,
-2026-04-21,Canal Plus,canalplus,,zł,https://www.picodi.com/pl/nc
-2026-04-21,Carrefour,carrefour,0.9,%,https://www.picodi.com/pl/carrefour
-2026-04-21,Castorama,castorama,1.2,%,https://www.picodi.com/pl/castorama
-2026-04-21,Ceneo,ceneo,0.0,%,https://www.picodi.com/pl/ceneo
-2026-04-21,Cobi,cobi,0.9,%,https://www.picodi.com/pl/cobi
-2026-04-21,Cocolita,cocolita,1.4,%,https://www.picodi.com/pl/cocolita-pl
-2026-04-21,Colorland,colorland,3.5,%,https://www.picodi.com/pl/colorland
-2026-04-21,Converse,converse,3.6,up_to_%,https://www.picodi.com/pl/converse
-2026-04-21,Crocs,crocs,1.2,%,https://www.picodi.com/pl/crocs
-2026-04-21,Cropp,cropp,10.0,%,https://www.picodi.com/pl/cropp
-2026-04-21,Cyfrowe.pl,cyfrowe.pl,1.2,up_to_%,https://www.picodi.com/pl/cyfrowe-pl
-2026-04-21,Dedoles,dedoles,2.4,%,https://www.picodi.com/pl/dedoles
-2026-04-21,DeLonghi,delonghi,1.8,%,https://www.picodi.com/pl/delonghi
+2026-04-21,Canal Plus,canalplus,,not_found,
+2026-04-21,Carrefour,carrefour,,not_found,
+2026-04-21,Castorama,castorama,,not_found,
+2026-04-21,Ceneo,ceneo,,not_found,
+2026-04-21,Cobi,cobi,,not_found,
+2026-04-21,Cocolita,cocolita,,not_found,
+2026-04-21,Colorland,colorland,,not_found,
+2026-04-21,Converse,converse,,not_found,
+2026-04-21,Crocs,crocs,,not_found,
+2026-04-21,Cropp,cropp,,not_found,
+2026-04-21,Cyfrowe.pl,cyfrowe.pl,,not_found,
+2026-04-21,Dedoles,dedoles,,not_found,
+2026-04-21,DeLonghi,delonghi,,not_found,
 2026-04-21,Dermacol,dermacol,,not_found,
-2026-04-21,Desigual,desigual,2.3,%,https://www.picodi.com/pl/desigual
-2026-04-21,DHgate,dhgate,15.3,up_to_%,https://www.picodi.com/pl/dh-gate
-2026-04-21,DHL,dhl,,zł,https://www.picodi.com/pl/dhl
-2026-04-21,Diablo Chairs,diablochairs,2.1,up_to_%,https://www.picodi.com/pl/diablo-chairs
-2026-04-21,Drogeria.pl,drogeria.pl,1.4,%,https://www.picodi.com/pl/drogeria-pl
-2026-04-21,Drop,drop,1.6,%,https://www.picodi.com/pl/drop
-2026-04-21,Dstreet,dstreet,2.7,%,https://www.picodi.com/pl/dstreet
-2026-04-21,Dyson,dyson,1.4,%,https://www.picodi.com/pl/dyson
-2026-04-21,e-torty,e-torty,4.5,%,https://www.picodi.com/pl/e-torty-pl
-2026-04-21,eBilet,ebilet,0.2,%,https://www.picodi.com/pl/ebilet
-2026-04-21,Ecco,ecco,1.5,%,https://www.picodi.com/pl/ecco
-2026-04-21,Electrolux,electrolux,1.2,%,https://www.picodi.com/pl/electrolux
-2026-04-21,Eltrox,eltrox,1.8,%,https://www.picodi.com/pl/eltrox-pl
-2026-04-21,EMP,emp,2.1,up_to_%,https://www.picodi.com/pl/emp-shop
-2026-04-21,Empik Foto,empikfoto,3.0,up_to_%,https://www.picodi.com/pl/empikfoto-pl
-2026-04-21,Endo,endo,2.7,%,https://www.picodi.com/pl/endo
-2026-04-21,eobuwie,eobuwie,5.0,up_to_%,https://www.picodi.com/pl/eobuwie
-2026-04-21,Erli,erli,1.3,up_to_%,https://www.picodi.com/pl/erli-pl
-2026-04-21,ESET,eset,3.6,up_to_%,https://www.picodi.com/pl/eset
-2026-04-21,eSky,esky,1.1,%,https://www.picodi.com/pl/esky-pl
-2026-04-21,Estro,estro,2.1,%,https://www.picodi.com/pl/estro
-2026-04-21,Eurofirany,eurofirany,1.7,%,https://www.picodi.com/pl/eurofirany
-2026-04-21,Euroflorist,euroflorist,3.6,%,https://www.picodi.com/pl/euro-florist
-2026-04-21,Eveline,eveline,2.1,%,https://www.picodi.com/pl/eveline
-2026-04-21,Eventim,eventim,0.6,%,https://www.picodi.com/pl/eventim
-2026-04-21,Fera,fera,1.2,%,https://www.picodi.com/pl/fera-pl
-2026-04-21,Fielmann,fielmann,2.4,%,https://www.picodi.com/pl/fielmann
-2026-04-21,Flexispot,flexispot,1.5,%,https://www.picodi.com/pl/flexispot
-2026-04-21,Flixbus,flixbus,1.5,up_to_%,https://www.picodi.com/pl/flixbus
-2026-04-21,Footshop,footshop,2.1,up_to_%,https://www.picodi.com/pl/footshop
-2026-04-21,Foreo,foreo,6.9,%,https://www.picodi.com/pl/foreo
-2026-04-21,FotoForma,fotoforma,0.8,%,https://www.picodi.com/pl/fotoforma
+2026-04-21,Desigual,desigual,,not_found,
+2026-04-21,DHgate,dhgate,,not_found,
+2026-04-21,DHL,dhl,,not_found,
+2026-04-21,Diablo Chairs,diablochairs,,not_found,
+2026-04-21,Drogeria.pl,drogeria.pl,,not_found,
+2026-04-21,Drop,drop,,not_found,
+2026-04-21,Dstreet,dstreet,,not_found,
+2026-04-21,Dyson,dyson,,not_found,
+2026-04-21,e-torty,e-torty,,not_found,
+2026-04-21,eBilet,ebilet,,not_found,
+2026-04-21,Ecco,ecco,,not_found,
+2026-04-21,Electrolux,electrolux,,not_found,
+2026-04-21,Eltrox,eltrox,,not_found,
+2026-04-21,EMP,emp,,not_found,
+2026-04-21,Empik Foto,empikfoto,,not_found,
+2026-04-21,Endo,endo,,not_found,
+2026-04-21,eobuwie,eobuwie,,not_found,
+2026-04-21,Erli,erli,,not_found,
+2026-04-21,ESET,eset,,not_found,
+2026-04-21,eSky,esky,,not_found,
+2026-04-21,Estro,estro,,not_found,
+2026-04-21,Eurofirany,eurofirany,,not_found,
+2026-04-21,Euroflorist,euroflorist,,not_found,
+2026-04-21,Eveline,eveline,,not_found,
+2026-04-21,Eventim,eventim,,not_found,
+2026-04-21,Fera,fera,,not_found,
+2026-04-21,Fielmann,fielmann,,not_found,
+2026-04-21,Flexispot,flexispot,,not_found,
+2026-04-21,Flixbus,flixbus,,not_found,
+2026-04-21,Footshop,footshop,,not_found,
+2026-04-21,Foreo,foreo,,not_found,
+2026-04-21,FotoForma,fotoforma,,not_found,
 2026-04-21,G2A,g2a,,not_found,
-2026-04-21,Gabriella,gabriella,1.1,%,https://www.picodi.com/pl/gabriella
-2026-04-21,Gameseal,gameseal,3.0,up_to_%,https://www.picodi.com/pl/gameseal
-2026-04-21,Gamivo,gamivo,0.8,%,https://www.picodi.com/pl/gamivo
-2026-04-21,Geekbuying.pl,geekbuying,2.4,up_to_%,https://www.picodi.com/pl/geekbuying
-2026-04-21,GetYourGuide,getyourguide,0.7,%,https://www.picodi.com/pl/getyourguide
-2026-04-21,Giacomo Conti,giacomo,3.0,%,https://www.picodi.com/pl/giacomo-pl
-2026-04-21,GOG,gog,1.9,%,https://www.picodi.com/pl/gog
-2026-04-21,Gomez,gomez,2.0,up_to_%,https://www.picodi.com/pl/gomez
-2026-04-21,Greenpoint,greenpoint,1.2,%,https://www.picodi.com/pl/greenpoint
-2026-04-21,Groupon,groupon,2.1,up_to_%,https://www.picodi.com/pl/groupon
+2026-04-21,Gabriella,gabriella,,not_found,
+2026-04-21,Gameseal,gameseal,,not_found,
+2026-04-21,Gamivo,gamivo,,not_found,
+2026-04-21,Geekbuying.pl,geekbuying,,not_found,
+2026-04-21,GetYourGuide,getyourguide,,not_found,
+2026-04-21,Giacomo Conti,giacomo,,not_found,
+2026-04-21,GOG,gog,,not_found,
+2026-04-21,Gomez,gomez,,not_found,
+2026-04-21,Greenpoint,greenpoint,,not_found,
+2026-04-21,Groupon,groupon,,not_found,
 2026-04-21,Herbapol,herbapol,,not_found,
-2026-04-21,Homla,homla,1.2,%,https://www.picodi.com/pl/homla
-2026-04-21,HP,hp,2.1,up_to_%,https://www.picodi.com/pl/hp
-2026-04-21,Huawei,huawei,1.8,up_to_%,https://www.picodi.com/pl/huawei
-2026-04-21,iBOOD,ibood,1.2,up_to_%,https://www.picodi.com/pl/ibood
-2026-04-21,iDream,idream,1.3,up_to_%,https://www.picodi.com/pl/idream-pl
-2026-04-21,iHerb,iherb,1.5,%,https://www.picodi.com/pl/iherb
-2026-04-21,iParts,iparts,1.1,%,https://www.picodi.com/pl/iparts-pl
-2026-04-21,JD Sports,jdsports,1.5,up_to_%,https://www.picodi.com/pl/jdsports
-2026-04-21,Joom,joom,4.5,up_to_%,https://www.picodi.com/pl/joom
-2026-04-21,Katalog Marzeń,katalog-marzen,0.8,%,https://www.picodi.com/pl/katalogmarzen
-2026-04-21,Kazar,kazar,1.2,up_to_%,https://www.picodi.com/pl/kazar
+2026-04-21,Homla,homla,,not_found,
+2026-04-21,HP,hp,,not_found,
+2026-04-21,Huawei,huawei,,not_found,
+2026-04-21,iBOOD,ibood,,not_found,
+2026-04-21,iDream,idream,,not_found,
+2026-04-21,iHerb,iherb,,not_found,
+2026-04-21,iParts,iparts,,not_found,
+2026-04-21,JD Sports,jdsports,,not_found,
+2026-04-21,Joom,joom,,not_found,
+2026-04-21,Katalog Marzeń,katalog-marzen,,not_found,
+2026-04-21,Kazar,kazar,,not_found,
 2026-04-21,Kenwood,kenwood,,not_found,
-2026-04-21,KFC,kfc,1.7,%,https://www.picodi.com/pl/kfc
-2026-04-21,Kinguin,kinguin,3.4,up_to_%,https://www.picodi.com/pl/kinguin
-2026-04-21,Kiwi,kiwi,0.9,%,https://www.picodi.com/pl/kiwi
-2026-04-21,Komputronik,komputronik,0.5,%,https://www.picodi.com/pl/komputronik
+2026-04-21,KFC,kfc,,not_found,
+2026-04-21,Kinguin,kinguin,,not_found,
+2026-04-21,Kiwi,kiwi,,not_found,
+2026-04-21,Komputronik,komputronik,,not_found,
 2026-04-21,Konesso,konesso,,not_found,
 2026-04-21,Krakvet,krakvet,,not_found,
 2026-04-21,Król Materacy,krolmateracy,,not_found,
