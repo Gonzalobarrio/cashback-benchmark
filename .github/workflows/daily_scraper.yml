@@ -30,6 +30,11 @@ jobs:
           playwright install chromium
           playwright install-deps chromium
 
+      - name: Sync with remote before scraping
+        run: |
+          git fetch origin main
+          git reset --hard origin/main
+
       - name: Run scrapers
         run: python main.py
         env:
@@ -39,8 +44,6 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git fetch origin main
-          git merge origin/main --no-edit --strategy-option=ours
           git add data/benchmark_data.csv \
                   data/benchmark_data_enriched.csv \
                   data/benchmark_history.csv \
