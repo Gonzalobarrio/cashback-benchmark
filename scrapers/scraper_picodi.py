@@ -1,247 +1,314 @@
-name: Daily Cashback Benchmark
+import requests
+from bs4 import BeautifulSoup
+import re
+import time
+import pandas as pd
+from datetime import datetime
+from statistics import mode, StatisticsError
 
-on:
-  schedule:
-    - cron: '0 7 * * *'
-    - cron: '0 13 * * *'
-  workflow_dispatch:
+HEADERS = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "Accept-Language": "pl-PL,pl;q=0.9",
+}
+PICODI_BASE    = "https://www.picodi.com"
+PICODI_LISTING = "https://www.picodi.com/pl/sklepy"
 
-jobs:
-  scrape:
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
+DISCOUNT_WORDS = [
+    "zniżki", "zniżka", "rabat", "taniej",
+    "promocj", "kupon", "kod"
+]
 
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-          token: ${{ secrets.GITHUB_TOKEN }}
+MANUAL_SLUGS = {
+    # Tanda 1
+    "kfc"              : "kfc",
+    "kinguin"          : "kinguin",
+    "kiwi"             : "kiwi",
+    "komputronik"      : "komputronik",
+    "konesso"          : "konesso-pl",
+    "krakvet"          : "krakvet-pl",
+    "lacoste"          : "lacoste",
+    "lampy"            : "lampy-pl",
+    "legimi"           : "legimi",
+    "lego"             : "lego",
+    "leoexpress"       : "leo-express",
+    "levis"            : "levis",
+    "lg"               : "lg",
+    "lionelo"          : "lionelo",
+    "cdkeys"           : "loaded",
+    "lookfantastic"    : "lookfantastic",
+    "lot"              : "lot",
+    "mamyito"          : "mamyito",
+    "mango-outlet"     : "mango-outlet",
+    "marilyn"          : "marilyn",
+    "maxelektro"       : "max-elektro",
+    "maxizoo"          : "maxi-zoo",
+    "meblemwm"         : "meblemwm",
+    "wearmedicine"     : "medicine",
+    "merkurymarket"    : "merkury-market",
+    "michaelkors"      : "michael-kors",
+    "modivo.pl"        : "modivo",
+    "morele"           : "morele-net",
+    "mountainwarehouse": "mountain-warehouse",
+    "myprotein"        : "myprotein",
+    "naoko"            : "naoko",
+    "neness"           : "neness-pl",
+    "neonail"          : "neonail",
+    "nbsklep"          : "new-balance",
+    "ninja"            : "ninja",
+    "nordvpn"          : "nordvpn",
+    "norton"           : "norton",
+    "notino"           : "notino",
+    "novakid"          : "novakid",
+    "oleole"           : "oleole",
+    "canalplus"        : "nc",
+    # Tanda 2
+    "olimp-store"      : "olimp-store",
+    "ombre"            : "ombre-pl",
+    "panmaterac"       : "pan-materac",
+    "parfumdreams"     : "parfumdreams",
+    "perfumeria.pl"    : "perfumeria",
+    "perfumy"          : "perfumy-pl",
+    "philips"          : "philips",
+    "philips-hue"      : "philips-hue",
+    "play"             : "play",
+    "prm"              : "prm",
+    "przyjacielekawy"  : "przyjaciele-kawy",
+    "puma"             : "puma",
+    "pyszne"           : "pyszne-pl",
+    "radissonhotels"   : "radisson-hotels",
+    "regatta"          : "regatta",
+    "remix"            : "remix",
+    "renee"            : "renee",
+    "reporteryoung"    : "reporter-young",
+    "ryobi"            : "ryobi",
+    "samsung"          : "samsung",
+    "senpo.pl"         : "senpo",
+    "sferis"           : "sferis",
+    "shark"            : "shark",
+    "sinsay"           : "sinsay",
+    "skechers"         : "skechers",
+    "skyshowtime"      : "sky-showtime",
+    "sportstylestory"  : "sportstylestory",
+    "stradivarius"     : "stradivarius",
+    "stylevana"        : "stylevana",
+    "surfshark"        : "surfshark",
+    "swiatsupli"       : "swiat-supli",
+    "tagomago"         : "tagomago",
+    "teufel"           : "teufel",
+    "topsecret"        : "topsecret",
+    "trip-com"         : "trip-com",
+    "ubisoft"          : "ubisoft",
+    "ucando"           : "ucando-pl",
+    "udemy"            : "udemy",
+    "under-armour"     : "under-armour",
+    "vangraaf"         : "van-graaf",
+    "vans"             : "vans",
+    "vidaxl"           : "vida-xl",
+    "visionexpress"    : "vision-express",
+    "volcano"          : "volcano",
+    # Tanda 3
+    "recman"           : "recman-com",
+    "sun-and-snow"     : "sunandsnow",
+    "mi"               : "xiaomi",
+    "streetstyle24"    : "street-style",
+    "victorias-secret" : "victoria-s-secret",
+    "wrangler"         : "wrangler",
+    "yanosik"          : "yanosik",
+    "yves-rocher"      : "yves-rocher",
+    "znak"             : "znak",
+    "zooplus"          : "zooplus",
+    "4kidspoint"       : "4kidspoint",
+    "7way"             : "7way",
+}
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
 
-      - name: Install dependencies
-        run: |
-          pip install requests beautifulsoup4 pandas playwright
-          playwright install chromium
-          playwright install-deps chromium
+def get_picodi_listing():
+    r    = requests.get(PICODI_LISTING, headers=HEADERS, timeout=15)
+    soup = BeautifulSoup(r.text, "html.parser")
+    seen, shops = set(), {}
+    for link in soup.find_all("a", href=re.compile(r"^/pl/[^/?#]{2,}$")):
+        href = link.get("href", "")
+        slug = href.replace("/pl/", "").strip("/")
+        name = link.get_text(strip=True)
+        if slug in ("sklepy", "kategorie-sklepow", "kontakt") or not slug:
+            continue
+        if slug not in seen:
+            seen.add(slug)
+            shops[slug] = {"name": name, "picodi_url": PICODI_BASE + href}
+    return shops
 
-      - name: Sync with remote before scraping
-        run: |
-          git fetch origin main
-          git reset --hard origin/main
 
-      - name: Run scrapers
-        run: python main.py
-        env:
-          LETYSHOPS_COOKIES: ${{ secrets.LETYSHOPS_COOKIES }}
+def get_picodi_rate(url):
+    if not url.rstrip("/").endswith("/offers"):
+        url = url.rstrip("/") + "/offers"
 
-      - name: Commit and push results
-        run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/benchmark_data.csv \
-                  data/benchmark_data_enriched.csv \
-                  data/benchmark_history.csv \
-                  data/igraal_rates_latest.csv \
-                  data/letyshops_rates_latest.csv \
-                  data/picodi_rates_latest.csv \
-                  data/alerabat_rates_latest.csv \
-                  data/goodie_rates_latest.csv
-          git commit -m "Daily update $(date +'%Y-%m-%d')" --allow-empty
-          git pull --rebase origin main --strategy-option=ours
-          git push origin main
+    try:
+        r = requests.get(url, headers=HEADERS, timeout=15)
+        if r.status_code != 200:
+            return None, None
 
-      - name: Send Slack alerts
-        if: always()
-        env:
-          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
-        run: |
-          python - <<'EOF'
-          import pandas as pd
-          import json
-          import urllib.request
-          import os
+        text = BeautifulSoup(r.text, "html.parser").get_text(separator=" ")
 
-          webhook_url = os.environ.get("SLACK_WEBHOOK_URL", "")
-          if not webhook_url:
-              print("No Slack webhook configured, skipping")
-              exit()
+        # Prioridad 1: %
+        pct_values = []
+        for m in re.finditer(
+            r"cashback\s+(?:up\s+to\s+|do\s+)?(\d+(?:[.,]\d+)?)\s*%",
+            text, re.IGNORECASE
+        ):
+            context = text[max(0, m.start()-100):m.end()+100].lower()
+            if any(w in context for w in DISCOUNT_WORDS):
+                continue
+            val = float(m.group(1).replace(",", "."))
+            if val <= 80:
+                pct_values.append(val)
 
-          df = pd.read_csv("data/benchmark_data.csv")
-          alerts = df[
-              (df["alert"] == "LOWER") &
-              (df["delta"] >= 5) &
-              (df["igraal_rate"].notna())
-          ].sort_values("delta", ascending=False).head(10)
+        if pct_values:
+            try:
+                best = mode(pct_values)
+            except StatisticsError:
+                best = max(pct_values)
+            has_do = bool(re.search(
+                r"cashback\s+(?:up\s+to|do)\s+\d",
+                text, re.IGNORECASE
+            ))
+            return str(best), ("up_to_%" if has_do else "%")
 
-          if len(alerts) == 0:
-              print("No alerts to send")
-              exit()
+        # Prioridad 2: zł
+        zl_filtered = []
+        for m in re.finditer(
+            r"cashback\s+(?:do\s+)?(\d+(?:[.,]\d+)?)\s*(?:PLN|zł|zl)",
+            text, re.IGNORECASE
+        ):
+            context = text[max(0, m.start()-50):m.end()+50].lower()
+            if any(w in context for w in ["bonus", "share", "refer", "invite"]):
+                continue
+            zl_filtered.append(float(m.group(1).replace(",", ".")))
 
-          lines = [f"*🚨 iGraal Cashback Alert — {pd.Timestamp.today().strftime('%Y-%m-%d')}*"]
-          lines.append("Top retailers where competitors beat iGraal by >5%:\n")
-          for _, row in alerts.iterrows():
-              lines.append(
-                  f"• *{row['retailer']}* — iGraal: {row['igraal_rate']}% | "
-                  f"Best competitor: {row['best_competitor_rate']}% | "
-                  f"Delta: +{row['delta']}%"
-              )
-          lines.append(
-              f"\n_Total retailers where competitor beats iGraal: "
-              f"{(df['alert']=='LOWER').sum()}_"
-          )
-          message = {"text": "\n".join(lines)}
-          req = urllib.request.Request(
-              webhook_url,
-              data=json.dumps(message).encode("utf-8"),
-              headers={"Content-Type": "application/json"}
-          )
-          urllib.request.urlopen(req)
-          print(f"✅ Slack alert sent with {len(alerts)} retailers")
-          EOF
+        if zl_filtered:
+            return str(zl_filtered[0]), "zł"
 
-      - name: Send email report
-        if: always()
-        env:
-          BREVO_API_KEY: ${{ secrets.BREVO_API_KEY }}
-        run: |
-          python - <<'EOF'
-          import pandas as pd
-          import json
-          import urllib.request
-          import os
+        # Prioridad 3: USD
+        dollar_hits = []
+        for m in re.finditer(
+            r"cashback\s+(?:up\s+to\s+|do\s+)?(\d+(?:[.,]\d+)?)\s*(?:USD|\$)",
+            text, re.IGNORECASE
+        ):
+            context = text[max(0, m.start()-50):m.end()+50].lower()
+            if any(w in context for w in ["bonus", "share", "refer", "invite"]):
+                continue
+            dollar_hits.append(float(m.group(1).replace(",", ".")))
 
-          api_key = os.environ.get("BREVO_API_KEY", "")
-          if not api_key:
-              print("No Brevo API key configured, skipping")
-              exit()
+        if dollar_hits:
+            return str(dollar_hits[0]), "usd"
 
-          to_email = "gonzalo.barrio@atolls.com"
-          today    = pd.Timestamp.today().strftime("%Y-%m-%d")
-          df       = pd.read_csv("data/benchmark_data.csv")
+        return "no cashback", None
 
-          alerts = df[
-              (df["alert"] == "LOWER") &
-              (df["delta"] >= 5) &
-              (df["igraal_rate"].notna())
-          ].sort_values("delta", ascending=False)
+    except Exception as e:
+        print(f"  Error {url}: {e}")
+    return "no cashback", None
 
-          total      = len(df)
-          igral_best = (df["alert"] == "OK").sum()
-          comp_beats = (df["alert"] == "LOWER").sum()
-          avg_rate   = round(pd.to_numeric(
-              df["igraal_rate"], errors="coerce").mean(), 2)
 
-          alert_rows = ""
-          for _, row in alerts.iterrows():
-              alert_rows += f"""
-              <tr>
-                <td style="padding:8px;border-bottom:1px solid #2a2a2a">{row['retailer']}</td>
-                <td style="padding:8px;border-bottom:1px solid #2a2a2a;text-align:center">{row['igraal_rate']}%</td>
-                <td style="padding:8px;border-bottom:1px solid #2a2a2a;text-align:center;color:#e53e3e;font-weight:bold">{row['best_competitor_rate']}%</td>
-                <td style="padding:8px;border-bottom:1px solid #2a2a2a;text-align:center;color:#e53e3e;font-weight:bold">+{row['delta']}%</td>
-              </tr>"""
+def find_picodi_store(retailer_name, igraal_slug, listing):
+    # Manual slug override
+    if igraal_slug in MANUAL_SLUGS:
+        picodi_slug = MANUAL_SLUGS[igraal_slug]
+        url  = f"{PICODI_BASE}/pl/{picodi_slug}/offers"
+        rate, rtype = get_picodi_rate(url)
+        if rate and rate not in ("no cashback", None):
+            return rate, rtype, url
 
-          html = f"""
-          <html><body style="font-family:Arial,sans-serif;max-width:700px;margin:0 auto;
-                             padding:20px;background:#0f1117;color:#ffffff">
-            <div style="background:#FF6B35;padding:20px;border-radius:8px;margin-bottom:24px">
-              <h1 style="color:white;margin:0;font-size:20px">📊 iGraal Cashback Benchmark</h1>
-              <p style="color:white;margin:4px 0 0;opacity:0.9">Daily Report — {today}</p>
-            </div>
-            <div style="display:flex;gap:12px;margin-bottom:24px">
-              <div style="flex:1;background:#1a1a2e;padding:16px;border-radius:8px;text-align:center">
-                <div style="font-size:28px;font-weight:bold;color:#FF6B35">{total}</div>
-                <div style="font-size:12px;color:#888">Total Retailers</div>
-              </div>
-              <div style="flex:1;background:#1a1a2e;padding:16px;border-radius:8px;text-align:center">
-                <div style="font-size:28px;font-weight:bold;color:#38a169">{igral_best}</div>
-                <div style="font-size:12px;color:#888">iGraal Best</div>
-              </div>
-              <div style="flex:1;background:#1a1a2e;padding:16px;border-radius:8px;text-align:center">
-                <div style="font-size:28px;font-weight:bold;color:#e53e3e">{comp_beats}</div>
-                <div style="font-size:12px;color:#888">Competitor Wins</div>
-              </div>
-              <div style="flex:1;background:#1a1a2e;padding:16px;border-radius:8px;text-align:center">
-                <div style="font-size:28px;font-weight:bold;color:#FF6B35">{avg_rate}%</div>
-                <div style="font-size:12px;color:#888">Avg iGraal Rate</div>
-              </div>
-            </div>
-            <h2 style="color:#ffffff;font-size:16px">🚨 Act Now — gap &gt; 5%</h2>
-            <table style="width:100%;border-collapse:collapse;font-size:14px;
-                          background:#1a1a2e;border-radius:8px">
-              <thead>
-                <tr style="background:#2a2a3e">
-                  <th style="padding:10px;text-align:left;color:#888">Retailer</th>
-                  <th style="padding:10px;text-align:center;color:#888">iGraal</th>
-                  <th style="padding:10px;text-align:center;color:#888">Best Comp.</th>
-                  <th style="padding:10px;text-align:center;color:#888">Delta</th>
-                </tr>
-              </thead>
-              <tbody>{alert_rows if alert_rows else
-                '<tr><td colspan="4" style="padding:16px;text-align:center;color:#888">'
-                'No critical gaps today 🎉</td></tr>'}</tbody>
-            </table>
-            <p style="margin-top:24px;font-size:11px;color:#555;text-align:center">
-              iGraal.pl Cashback Benchmark — automated daily report
-            </p>
-          </body></html>
-          """
+    name_slug  = re.sub(r"[^a-z0-9]+", "-", retailer_name.lower()).strip("-")
+    camel      = re.sub(r"([a-z])([A-Z])", r"\1-\2", retailer_name)
+    camel_slug = re.sub(r"[^a-z0-9]+", "-", camel.lower()).strip("-")
 
-          payload = {
-              "sender"     : {"name": "iGraal Benchmark",
-                              "email": "noreply@sendinblue.com"},
-              "to"         : [{"email": to_email}],
-              "subject"    : f"📊 iGraal Cashback Benchmark — {today}",
-              "htmlContent": html
-          }
-          req = urllib.request.Request(
-              "https://api.brevo.com/v3/smtp/email",
-              data=json.dumps(payload).encode("utf-8"),
-              headers={
-                  "api-key"     : api_key,
-                  "Content-Type": "application/json"
-              }
-          )
-          resp = urllib.request.urlopen(req)
-          print(f"✅ Email sent to {to_email} — status: {resp.status}")
-          EOF
+    variants = list(dict.fromkeys([
+        igraal_slug,
+        igraal_slug + "-pl",
+        igraal_slug + "-com",
+        name_slug,
+        name_slug + "-pl",
+        camel_slug,
+        camel_slug + "-pl",
+    ]))
 
-      - name: Notify on failure
-        if: failure()
-        env:
-          BREVO_API_KEY: ${{ secrets.BREVO_API_KEY }}
-        run: |
-          python - <<'EOF'
-          import urllib.request, json, os
-          from datetime import datetime
+    # Pass 1: listing
+    for v in variants:
+        if v in listing:
+            url  = listing[v]["picodi_url"].rstrip("/") + "/offers"
+            rate, rtype = get_picodi_rate(url)
+            if rate and rate not in ("no cashback", None):
+                return rate, rtype, url
 
-          api_key = os.environ.get("BREVO_API_KEY", "")
-          if not api_key:
-              exit()
+    # Pass 2: name matching
+    name_clean = re.sub(r"[^a-z0-9]", "", retailer_name.lower())
+    for slug, data in listing.items():
+        shop_clean = re.sub(r"[^a-z0-9]", "", data["name"].lower())
+        if name_clean == shop_clean:
+            url  = data["picodi_url"].rstrip("/") + "/offers"
+            rate, rtype = get_picodi_rate(url)
+            if rate and rate not in ("no cashback", None):
+                return rate, rtype, url
 
-          payload = {
-              "sender"     : {"name": "iGraal Benchmark",
-                              "email": "noreply@sendinblue.com"},
-              "to"         : [{"email": "gonzalo.barrio@atolls.com"}],
-              "subject"    : (f"❌ Benchmark scraper FAILED — "
-                              f"{datetime.today().strftime('%Y-%m-%d')}"),
-              "htmlContent": (
-                  "<p>El scraper diario ha fallado. "
-                  "Revisa GitHub Actions.</p>"
-              )
-          }
-          req = urllib.request.Request(
-              "https://api.brevo.com/v3/smtp/email",
-              data=json.dumps(payload).encode("utf-8"),
-              headers={"api-key": api_key,
-                       "Content-Type": "application/json"}
-          )
-          urllib.request.urlopen(req)
-          print("✅ Failure email sent")
-          EOF
+    # Pass 3: direct probing with /offers
+    for v in variants:
+        url  = f"{PICODI_BASE}/pl/{v}/offers"
+        rate, rtype = get_picodi_rate(url)
+        if rate and rate not in ("no cashback", None):
+            return rate, rtype, url
+        time.sleep(0.3)
+
+    return "not_found", None, None
+
+
+def scrape_picodi(df_igraal: pd.DataFrame) -> pd.DataFrame:
+    listing = get_picodi_listing()
+    today   = datetime.today().strftime("%Y-%m-%d")
+    results = []
+    total   = len(df_igraal)
+
+    for i, (_, row) in enumerate(df_igraal.iterrows(), 1):
+        retailer = row["retailer"]
+        slug     = row["slug"]
+        print(f"  [{i:>3}/{total}] {retailer} ({slug})", end=" → ")
+
+        rate, rtype, url = find_picodi_store(retailer, slug, listing)
+
+        if rate in ("no cashback", "not_found"):
+            print(f"{'🚫' if rate == 'no cashback' else '❓'} {rate}")
+        else:
+            print(f"✅ {rate} ({rtype})")
+
+        results.append({
+            "date"            : today,
+            "retailer"        : retailer,
+            "igraal_slug"     : slug,
+            "picodi_rate"     : (rate if rate not in
+                                 ("no cashback", "not_found") else None),
+            "picodi_rate_type": (rtype if rate not in
+                                 ("no cashback", "not_found") else rate),
+            "picodi_url"      : url,
+        })
+        time.sleep(0.4)
+
+    return pd.DataFrame(results)
+
+
+if __name__ == "__main__":
+    import os
+    os.makedirs("data", exist_ok=True)
+    df_ig = pd.read_csv("data/igraal_rates_latest.csv")
+    df    = scrape_picodi(df_ig)
+    df.to_csv("data/picodi_rates_latest.csv", index=False)
+
+    found = df["picodi_rate_type"].isin(["%", "up_to_%"]).sum()
+    zl    = (df["picodi_rate_type"] == "zł").sum()
+    usd   = (df["picodi_rate_type"] == "usd").sum()
+    nc    = (df["picodi_rate_type"] == "no cashback").sum()
+    nf    = (df["picodi_rate_type"] == "not_found").sum()
+
+    print(f"\n✅ Picodi: {len(df)} retailers")
+    print(f"   ✅ Rates % found : {found}")
+    print(f"   💰 zł rates     : {zl}")
+    print(f"   💵 USD rates    : {usd}")
+    print(f"   🚫 No cashback  : {nc}")
+    print(f"   ❓ Not found    : {nf}")
