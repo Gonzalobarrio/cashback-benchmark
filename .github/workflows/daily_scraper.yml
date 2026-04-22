@@ -2,9 +2,9 @@ name: Daily Cashback Benchmark
 
 on:
   schedule:
-    - cron: '0 7 * * *'   # 09:00 CET
-    - cron: '0 9 * * *'   # 11:00 CET
-    - cron: '0 13 * * *'  # 15:00 CET
+    - cron: '0 7 * * *'
+    - cron: '0 9 * * *'
+    - cron: '0 13 * * *'
   workflow_dispatch:
 
 jobs:
@@ -54,6 +54,7 @@ jobs:
                   data/alerabat_rates_latest.csv \
                   data/goodie_rates_latest.csv
           git commit -m "Daily update $(date +'%Y-%m-%d')" --allow-empty
+          git pull --rebase origin main --strategy-option=ours
           git push origin main
 
       - name: Send Slack alerts
