@@ -16,16 +16,13 @@ print("🚀 Starting daily cashback benchmark scraping...\n")
 # ══════════════════════════════════════════════════════════════════════════════
 
 def clean_zl(df, rate_col, type_col):
-    """Null out fixed-amount zł rates (incomparable with %)."""
     df = df.copy()
     df[rate_col] = pd.to_numeric(df[rate_col], errors="coerce")
     mask = df[type_col].str.lower().str.contains("zł|zl", na=False)
     df.loc[mask, rate_col] = None
     return df
 
-
 def sanity_check(df, rate_col, source: str):
-    """Remove suspicious rates. Boosted rates exempt."""
     df = df.copy()
     threshold = {
         "letyshops" : 95,
@@ -48,76 +45,64 @@ def sanity_check(df, rate_col, source: str):
     return df
 
 
+# ── Retailers where cpa_in is a fixed amount (zł), NOT a % ───────────────────
+CPA_ZL_RETAILERS = {
+    "orange",
+    "legimi",
+    "play",
+    "skyshowtime",
+    "ceneo",
+    "wolt",
+}
+
+
 def compute_status(row) -> tuple:
-    """
-    Returns (status, action_direction) based on:
-
-    WITH margin data:
-      worse rate + margin+  → ACT NOW  / UP
-      worse rate + margin-  → REVIEW   / UP
-      better rate + margin- → ACT NOW  / DOWN
-      better rate + margin+ → OPTIMISE / NONE
-
-    WITHOUT margin → use CPA IN as proxy:
-      worse rate + rate < CPA  → ACT NOW  / UP
-      worse rate + rate > CPA  → REVIEW   / UP
-      better rate + rate < CPA → MONITOR  / NONE
-      better rate + rate > CPA → OPTIMISE / NONE
-
-    FALLBACK → only delta:
-      delta >= 3  → ACT NOW
-      delta 1-3   → REVIEW
-      delta 0-1   → MONITOR
-      delta < 0   → OPTIMISE
-    """
     igraal_rate = pd.to_numeric(row.get("igraal_rate"),          errors="coerce")
     best_comp   = pd.to_numeric(row.get("best_competitor_rate"), errors="coerce")
     margin      = pd.to_numeric(row.get("margin_eur"),           errors="coerce")
     cpa_in      = pd.to_numeric(row.get("cpa_in"),               errors="coerce")
 
-    # ── No iGraal rate → can't compute ───────────────────────────
     if pd.isna(igraal_rate):
         return "NO DATA", "NONE"
 
-    # ── Competitive position ──────────────────────────────────────
     if pd.isna(best_comp):
-        better_than_comp = True   # no competitor data → assume ok
+        better_than_comp = True
     else:
         better_than_comp = igraal_rate >= best_comp
 
-    # ══ WITH MARGIN DATA ══════════════════════════════════════════
+    # ── WITH MARGIN ───────────────────────────────────────────
     if pd.notna(margin):
         positive_margin = margin >= 0
-
         if not better_than_comp and positive_margin:
             return "ACT NOW", "UP"
-
         if not better_than_comp and not positive_margin:
             return "REVIEW", "UP"
-
         if better_than_comp and not positive_margin:
             return "ACT NOW", "DOWN"
-
         if better_than_comp and positive_margin:
             return "OPTIMISE", "NONE"
 
-    # ══ WITHOUT MARGIN → use CPA IN ═══════════════════════════════
-    if pd.notna(cpa_in) and cpa_in > 0:
-        rate_above_cpa = igraal_rate > cpa_in
+    # ── WITHOUT MARGIN → CPA IN proxy ────────────────────────
+    retailer_key = str(row.get("retailer", "")).lower().strip()
+    cpa_is_valid_pct = (
+        pd.notna(cpa_in) and
+        cpa_in > 0 and
+        cpa_in <= 20 and
+        retailer_key not in CPA_ZL_RETAILERS
+    )
 
+    if cpa_is_valid_pct:
+        rate_above_cpa = igraal_rate > cpa_in
         if not better_than_comp and not rate_above_cpa:
             return "ACT NOW", "UP"
-
         if not better_than_comp and rate_above_cpa:
             return "REVIEW", "UP"
-
         if better_than_comp and not rate_above_cpa:
             return "MONITOR", "NONE"
-
         if better_than_comp and rate_above_cpa:
             return "OPTIMISE", "NONE"
 
-    # ══ FALLBACK → delta only ═════════════════════════════════════
+    # ── FALLBACK → delta only ─────────────────────────────────
     delta = pd.to_numeric(row.get("delta"), errors="coerce")
     if pd.notna(delta):
         if delta >= 3:
@@ -157,7 +142,7 @@ df_gd = scrape_goodie(df_ig)
 print(f"   ✅ {len(df_gd)} retailers\n")
 
 # ══════════════════════════════════════════════════════════════════════════════
-# 2. CLEAN (BEFORE saving _latest)
+# 2. CLEAN
 # ══════════════════════════════════════════════════════════════════════════════
 
 df_ig = clean_zl(df_ig, "igraal_rate",    "cashback_type")
@@ -173,7 +158,7 @@ df_al = sanity_check(df_al, "alerabat_rate",  "alerabat")
 df_gd = sanity_check(df_gd, "goodie_rate",    "goodie")
 
 # ══════════════════════════════════════════════════════════════════════════════
-# 3. SAVE _latest.csv (AFTER cleaning)
+# 3. SAVE _latest.csv
 # ══════════════════════════════════════════════════════════════════════════════
 
 df_ig.to_csv("data/igraal_rates_latest.csv",    index=False)
@@ -208,16 +193,15 @@ df = df.merge(
     on="retailer", how="left"
 )
 
-# ── Numeric conversion ────────────────────────────────────────────
+# ── Numeric conversion ────────────────────────────────────────
 competitor_cols = ["letyshops_rate", "picodi_rate",
                    "alerabat_rate",  "goodie_rate"]
 df[competitor_cols] = df[competitor_cols].apply(pd.to_numeric, errors="coerce")
 df["igraal_rate"]   = pd.to_numeric(df["igraal_rate"], errors="coerce")
 
-# ── Best competitor rate ──────────────────────────────────────────
+# ── Best competitor ───────────────────────────────────────────
 df["best_competitor_rate"] = df[competitor_cols].max(axis=1)
 
-# ── Best competitor name ──────────────────────────────────────────
 def get_best_competitor_name(row):
     candidates = {
         "letyshops": row["letyshops_rate"],
@@ -239,10 +223,10 @@ def flag_boost(row):
 
 df["best_competitor"] = df.apply(flag_boost, axis=1)
 
-# ── Delta ─────────────────────────────────────────────────────────
+# ── Delta ─────────────────────────────────────────────────────
 df["delta"] = (df["best_competitor_rate"] - df["igraal_rate"]).round(2)
 
-# ── Merge financials ──────────────────────────────────────────────
+# ── Merge financials ──────────────────────────────────────────
 financials_file = "data/retailer_financials.csv"
 if os.path.exists(financials_file):
     df_fin = pd.read_csv(financials_file)
@@ -262,10 +246,8 @@ if os.path.exists(financials_file):
           f"latest: {df_fin['month'].max()}")
 
     df = df.merge(df_fin_agg, on="retailer", how="left")
-
-    with_margin = df["margin_eur"].notna().sum()
-    print(f"✅ Financials merged — {with_margin} retailers with margin data")
-
+    print(f"✅ Financials merged — "
+          f"{df['margin_eur'].notna().sum()} retailers with margin data")
 else:
     df["margin_eur"]   = np.nan
     df["cpa_in"]       = np.nan
@@ -275,26 +257,26 @@ else:
     df["cb_total"]     = np.nan
     print("⚠️  retailer_financials.csv not found — status will use delta only")
 
-# ── Compute status ────────────────────────────────────────────────
+# ── Compute status ────────────────────────────────────────────
 status_results         = df.apply(compute_status, axis=1)
 df["status"]           = status_results.apply(lambda x: x[0])
 df["action_direction"] = status_results.apply(lambda x: x[1])
 
-# ── is_best_rate flag ─────────────────────────────────────────────
+# ── is_best_rate ──────────────────────────────────────────────
 df["is_best_rate"] = (
     df["igraal_rate"].notna() &
     df["best_competitor_rate"].notna() &
     (df["igraal_rate"] >= df["best_competitor_rate"])
 ).astype(bool)
 
-# ── Legacy alert column (backwards compatibility) ─────────────────
+# ── Legacy alert ──────────────────────────────────────────────
 df["alert"] = df["delta"].apply(
     lambda d: "LOWER" if pd.notna(d) and d > 0 else "OK"
 )
 
 df["date"] = datetime.today().strftime("%Y-%m-%d")
 
-# ── Column order ──────────────────────────────────────────────────
+# ── Column order ──────────────────────────────────────────────
 col_order = [
     "date", "retailer", "igraal_rate", "cashback_type",
     "letyshops_rate", "letyshops_rate_type", "letyshops_boosted",
