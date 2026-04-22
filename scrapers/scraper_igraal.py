@@ -10,15 +10,22 @@ HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
     "Accept-Language": "pl-PL,pl;q=0.9",
 }
-BASE_URL    = "https://igraal.pl"
-LISTING_URL = "https://igraal.pl/wszystkie-sklepy"
+BASE_URL       = "https://igraal.pl"
+LISTING_URL    = "https://igraal.pl/wszystkie-sklepy"
 NOISE_KEYWORDS = ["OFERTA DNIA", "oferta dnia"]
+
+
+# ══════════════════════════════════════════════════════════════════════════════
+# LISTING
+# ══════════════════════════════════════════════════════════════════════════════
 
 def get_all_retailers():
     r    = requests.get(LISTING_URL, headers=HEADERS, timeout=15)
     soup = BeautifulSoup(r.text, "html.parser")
     seen, retailers = set(), []
-    for link in soup.find_all("a", href=re.compile(r"/wszystkie-sklepy/[^/?#]+")):
+    for link in soup.find_all(
+        "a", href=re.compile(r"/wszystkie-sklepy/[^/?#]+")
+    ):
         href     = link.get("href", "")
         slug     = href.split("/wszystkie-sklepy/")[-1].strip("/")
         full_url = href if href.startswith("http") else BASE_URL + href
@@ -31,25 +38,29 @@ def get_all_retailers():
             })
     return retailers
 
+
+# ══════════════════════════════════════════════════════════════════════════════
+# RATE PARSER v3
+# ══════════════════════════════════════════════════════════════════════════════
+
 def get_cashback_rate(url):
     try:
         r    = requests.get(url, headers=HEADERS, timeout=15)
         soup = BeautifulSoup(r.text, "html.parser")
         text = soup.get_text(separator=" ")
 
-        zl_hits = re.findall(
-            r"cashback\s+(?:do\s+)?(\d+(?:[.,]\d+)?)\s*(?:PLN|zł|zl)",
-            text, re.IGNORECASE
-        )
-        if zl_hits:
-            return str(float(zl_hits[0].replace(",", "."))), "zł"
-
+        # ── Prioridad 1: X% cashback* ──────────────────────────
         pct_values = []
-        for m in re.finditer(r"(\d+(?:[.,]\d+)?)\s*%\s*cashback", text, re.IGNORECASE):
+        for m in re.finditer(
+            r"(\d+(?:[.,]\d+)?)\s*%\s*cashback\w*",
+            text, re.IGNORECASE
+        ):
             context = text[max(0, m.start()-150):m.end()+150]
             if any(noise in context for noise in NOISE_KEYWORDS):
                 continue
-            pct_values.append(float(m.group(1).replace(",", ".")))
+            val = float(m.group(1).replace(",", "."))
+            if 0 < val <= 80:
+                pct_values.append(val)
 
         if pct_values:
             try:
@@ -57,29 +68,93 @@ def get_cashback_rate(url):
             except StatisticsError:
                 return str(pct_values[0]), "%"
 
+        # ── Prioridad 2: X zł cashback* ────────────────────────
+        for m in re.finditer(
+            r"(\d+(?:[.,]\d+)?)\s*(?:PLN|zł|zl)\s*cashback\w*",
+            text, re.IGNORECASE
+        ):
+            val = float(m.group(1).replace(",", "."))
+            if val > 0:
+                return str(val), "zł"
+
+        # ── Prioridad 3: cashback* X zł ────────────────────────
+        for m in re.finditer(
+            r"cashback\w*\s+(?:do\s+)?(\d+(?:[.,]\d+)?)\s*(?:PLN|zł|zl)",
+            text, re.IGNORECASE
+        ):
+            context = text[max(0, m.start()-50):m.end()+50].lower()
+            if any(w in context for w in
+                   ["bonus", "nagroda", "polecenie"]):
+                continue
+            val = float(m.group(1).replace(",", "."))
+            if val > 0:
+                return str(val), "zł"
+
+        # ── Prioridad 4: "+X cashbacku" en título (sin zł) ─────
+        title_text = text[:800]
+        for m in re.finditer(
+            r"\+\s*(\d+(?:[.,]\d+)?)\s*cashback\w*",
+            title_text, re.IGNORECASE
+        ):
+            val = float(m.group(1).replace(",", "."))
+            if val > 80:
+                return str(val), "zł"
+            elif val > 0:
+                return str(val), "%"
+
     except Exception as e:
         print(f"  Error {url}: {e}")
     return "no cashback", None
 
-def scrape_igraal():
+
+# ══════════════════════════════════════════════════════════════════════════════
+# MAIN SCRAPER
+# ══════════════════════════════════════════════════════════════════════════════
+
+def scrape_igraal() -> pd.DataFrame:
     retailers = get_all_retailers()
     today     = datetime.today().strftime("%Y-%m-%d")
     results   = []
-    for r in retailers:
+    total     = len(retailers)
+
+    print(f"  🔍 Found {total} retailers on iGraal.pl")
+
+    for i, r in enumerate(retailers, 1):
+        print(f"  [{i:>3}/{total}] {r['name']} ({r['slug']})", end=" → ")
         rate, tipo = get_cashback_rate(r["url"])
+
+        if rate == "no cashback":
+            print("🚫 no cashback")
+        else:
+            print(f"✅ {rate} ({tipo})")
+
         results.append({
             "date"         : today,
             "retailer"     : r["name"],
             "slug"         : r["slug"],
             "igraal_rate"  : rate if rate != "no cashback" else None,
-            "cashback_type": tipo if rate != "no cashback" else "no cashback"
+            "cashback_type": tipo if rate != "no cashback" else "no cashback",
         })
         time.sleep(0.8)
+
     return pd.DataFrame(results)
+
+
+# ══════════════════════════════════════════════════════════════════════════════
+# ENTRY POINT
+# ══════════════════════════════════════════════════════════════════════════════
 
 if __name__ == "__main__":
     import os
     os.makedirs("data", exist_ok=True)
     df = scrape_igraal()
     df.to_csv("data/igraal_rates_latest.csv", index=False)
-    print(f"✅ iGraal: {len(df)} retailers")
+
+    pct = (df["cashback_type"] == "%").sum()
+    zl  = (df["cashback_type"] == "zł").sum()
+    nc  = (df["cashback_type"] == "no cashback").sum()
+
+    print(f"\n✅ iGraal: {len(df)} retailers")
+    print(f"   ✅ % rates     : {pct}")
+    print(f"   💰 zł rates   : {zl}")
+    print(f"   🚫 No cashback : {nc}")
