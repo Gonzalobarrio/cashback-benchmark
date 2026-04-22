@@ -20,6 +20,7 @@ date,retailer,igraal_slug,picodi_rate,picodi_rate_type,picodi_url
 2026-04-22,home&you,home-you,1.2,up_to_%,https://www.picodi.com/pl/home-you/offers
 2026-04-22,Abra,abra,1.5,%,https://www.picodi.com/pl/abra/offers
 2026-04-22,Acer,acer,2.1,%,https://www.picodi.com/pl/acer/offers
+2026-04-22,Aelia,aelia,2.0,%,https://www.picodi.com/pl/aelia/offers
 2026-04-22,Airalo,airalo,3.5,up_to_%,https://www.picodi.com/pl/airalo/offers
 2026-04-22,AirHelp,airhelp,4.5,%,https://www.picodi.com/pl/air-help/offers
 2026-04-22,ALAB Laboratoria,alab-laboratoria,1.9,%,https://www.picodi.com/pl/alablaboratoria/offers
@@ -128,6 +129,7 @@ date,retailer,igraal_slug,picodi_rate,picodi_rate_type,picodi_url
 2026-04-22,LG,lg,,not_found,
 2026-04-22,lionelo,lionelo,,not_found,
 2026-04-22,Loaded,cdkeys,,not_found,
+2026-04-22,Lokalny Rolnik,lokalnyrolnik,,not_found,
 2026-04-22,Lookfantastic,lookfantastic,,not_found,
 2026-04-22,LOT,lot,,not_found,
 2026-04-22,Mamyito,mamyito,,not_found,
@@ -183,6 +185,7 @@ date,retailer,igraal_slug,picodi_rate,picodi_rate_type,picodi_url
 2026-04-22,Sinsay,sinsay,,not_found,
 2026-04-22,Skechers,skechers,,not_found,
 2026-04-22,SkyShowtime,skyshowtime,,not_found,
+2026-04-22,Sony.pl,sony,,not_found,
 2026-04-22,SportStyleStory,sportstylestory,,not_found,
 2026-04-22,Stradivarius,stradivarius,,not_found,
 2026-04-22,Streetstyle24,streetstyle24,,not_found,

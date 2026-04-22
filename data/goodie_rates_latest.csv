@@ -1,7 +1,7 @@
 date,retailer,igraal_slug,goodie_rate,goodie_rate_type,goodie_url
 2026-04-22,AliExpress,aliexpress,4.5,up_to_%,https://goodie.pl/marka/aliexpress
 2026-04-22,Allegro,allegro,2.2,up_to_%,https://goodie.pl/marka/allegro
-2026-04-22,Answear,answear,2.5,%,https://goodie.pl/marka/answear-com
+2026-04-22,Answear,answear,2.0,up_to_%,https://goodie.pl/marka/answear-com
 2026-04-22,Decathlon,decathlon,2.5,%,https://goodie.pl/marka/decathlon
 2026-04-22,Empik,empik,7.5,up_to_%,https://goodie.pl/marka/empik
 2026-04-22,Lounge by Zalando,zalando-lounge,6.0,up_to_%,https://goodie.pl/marka/lounge-by-zalando
@@ -20,6 +20,7 @@ date,retailer,igraal_slug,goodie_rate,goodie_rate_type,goodie_url
 2026-04-22,home&you,home-you,4.75,up_to_%,https://goodie.pl/marka/homeyou
 2026-04-22,Abra,abra,2.1,%,https://goodie.pl/marka/abra
 2026-04-22,Acer,acer,4.0,%,https://goodie.pl/marka/acer
+2026-04-22,Aelia,aelia,3.25,%,https://goodie.pl/marka/aelia
 2026-04-22,Airalo,airalo,5.0,%,https://goodie.pl/marka/airalo
 2026-04-22,AirHelp,airhelp,10.0,up_to_%,https://goodie.pl/marka/airhelp
 2026-04-22,ALAB Laboratoria,alab-laboratoria,3.12,%,https://goodie.pl/marka/alab-laboratoria
@@ -128,6 +129,7 @@ date,retailer,igraal_slug,goodie_rate,goodie_rate_type,goodie_url
 2026-04-22,LG,lg,1.25,%,https://goodie.pl/marka/lg
 2026-04-22,lionelo,lionelo,3.0,%,https://goodie.pl/marka/lionelo
 2026-04-22,Loaded,cdkeys,,not_found,
+2026-04-22,Lokalny Rolnik,lokalnyrolnik,2.8,%,https://goodie.pl/marka/lokalny-rolnik
 2026-04-22,Lookfantastic,lookfantastic,5.0,up_to_%,https://goodie.pl/marka/lookfantastic
 2026-04-22,LOT,lot,,not_found,
 2026-04-22,Mamyito,mamyito,2.4,%,https://goodie.pl/marka/mamyito-pl
@@ -183,6 +185,7 @@ date,retailer,igraal_slug,goodie_rate,goodie_rate_type,goodie_url
 2026-04-22,Sinsay,sinsay,5.0,up_to_%,https://goodie.pl/marka/sinsay
 2026-04-22,Skechers,skechers,,no cashback,https://goodie.pl/marka/skechers
 2026-04-22,SkyShowtime,skyshowtime,,no cashback,https://goodie.pl/marka/sky-showtime
+2026-04-22,Sony.pl,sony,1.5,up_to_%,https://goodie.pl/marka/sony-pl
 2026-04-22,SportStyleStory,sportstylestory,3.0,up_to_%,https://goodie.pl/marka/sportstylestory-com
 2026-04-22,Stradivarius,stradivarius,2.5,%,https://goodie.pl/marka/stradivarius
 2026-04-22,Streetstyle24,streetstyle24,3.46,%,https://goodie.pl/marka/streetstyle24-pl

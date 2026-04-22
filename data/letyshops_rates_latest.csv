@@ -20,6 +20,7 @@ date,retailer,igraal_slug,letyshops_rate,letyshops_rate_type,letyshops_boosted,l
 2026-04-22,home&you,home-you,3.25,%,False,https://letyshops.com/pl/shops/home-you
 2026-04-22,Abra,abra,,not_found,False,
 2026-04-22,Acer,acer,4.0,%,False,https://letyshops.com/pl/shops/acer-pl
+2026-04-22,Aelia,aelia,3.25,%,False,https://letyshops.com/pl/shops/aelia
 2026-04-22,Airalo,airalo,,not_found,False,
 2026-04-22,AirHelp,airhelp,7.5,%,False,https://letyshops.com/pl/shops/airhelp
 2026-04-22,ALAB Laboratoria,alab-laboratoria,4.6,%,False,https://letyshops.com/pl/shops/alab-laboratoria-pl
@@ -128,6 +129,7 @@ date,retailer,igraal_slug,letyshops_rate,letyshops_rate_type,letyshops_boosted,l
 2026-04-22,LG,lg,1.0,%,False,https://letyshops.com/pl/shops/lg-pl
 2026-04-22,lionelo,lionelo,3.0,%,False,https://letyshops.com/pl/shops/lionelo-pl
 2026-04-22,Loaded,cdkeys,2.5,%,False,https://letyshops.com/pl/shops/cdkeys
+2026-04-22,Lokalny Rolnik,lokalnyrolnik,,not_found,False,
 2026-04-22,Lookfantastic,lookfantastic,5.0,%,False,https://letyshops.com/pl/shops/lookfantastic-pl
 2026-04-22,LOT,lot,,not_found,False,
 2026-04-22,Mamyito,mamyito,2.8,%,False,https://letyshops.com/pl/shops/mamyito-pl
@@ -183,6 +185,7 @@ date,retailer,igraal_slug,letyshops_rate,letyshops_rate_type,letyshops_boosted,l
 2026-04-22,Sinsay,sinsay,5.0,%,False,https://letyshops.com/pl-en/shops/sinsay-pl
 2026-04-22,Skechers,skechers,,not_found,False,
 2026-04-22,SkyShowtime,skyshowtime,1.7,%,False,https://letyshops.com/pl/shops/skyshowtime-pl
+2026-04-22,Sony.pl,sony,2.5,%,False,https://letyshops.com/pl/shops/sony-pl
 2026-04-22,SportStyleStory,sportstylestory,3.0,%,False,https://letyshops.com/pl/shops/sportstylestory-pl
 2026-04-22,Stradivarius,stradivarius,3.0,%,False,https://letyshops.com/pl/shops/stradivarius-pl
 2026-04-22,Streetstyle24,streetstyle24,3.45,%,False,https://letyshops.com/pl/shops/streetstyle24-pl

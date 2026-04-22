@@ -2,7 +2,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-04-22,AliExpress,aliexpress,10.0,%
 2026-04-22,Allegro,allegro,1.9,%
 2026-04-22,Answear,answear,3.0,%
-2026-04-22,Decathlon,decathlon,50.0,%
+2026-04-22,Decathlon,decathlon,2.0,%
 2026-04-22,Empik,empik,1.6,%
 2026-04-22,Lounge by Zalando,zalando-lounge,10.0,%
 2026-04-22,MediaMarkt,mediamarkt,6.0,%
@@ -20,12 +20,13 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-04-22,home&you,home-you,6.5,%
 2026-04-22,Abra,abra,4.2,%
 2026-04-22,Acer,acer,5.0,%
+2026-04-22,Aelia,aelia,5.0,%
 2026-04-22,Airalo,airalo,9.0,%
 2026-04-22,AirHelp,airhelp,20.0,%
 2026-04-22,ALAB Laboratoria,alab-laboratoria,6.0,%
 2026-04-22,Alibaba,alibaba.com,8.4,%
 2026-04-22,AUTODOC,autodoc,8.0,%
-2026-04-22,AXA Partners,axa-partners,6.0,%
+2026-04-22,AXA Partners,axa-partners,15.0,%
 2026-04-22,Banggood,banggood,10.0,%
 2026-04-22,Baseus,baseus,4.0,%
 2026-04-22,BasicLab,basiclab,3.0,%
@@ -128,6 +129,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-04-22,LG,lg,2.5,%
 2026-04-22,lionelo,lionelo,,no cashback
 2026-04-22,Loaded,cdkeys,5.0,%
+2026-04-22,Lokalny Rolnik,lokalnyrolnik,4.5,%
 2026-04-22,Lookfantastic,lookfantastic,5.0,%
 2026-04-22,LOT,lot,1.5,%
 2026-04-22,Mamyito,mamyito,4.5,%
@@ -183,6 +185,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-04-22,Sinsay,sinsay,10.0,%
 2026-04-22,Skechers,skechers,8.5,%
 2026-04-22,SkyShowtime,skyshowtime,,zł
+2026-04-22,Sony.pl,sony,2.5,%
 2026-04-22,SportStyleStory,sportstylestory,6.0,%
 2026-04-22,Stradivarius,stradivarius,,no cashback
 2026-04-22,Streetstyle24,streetstyle24,6.0,%
