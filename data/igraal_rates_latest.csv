@@ -12,7 +12,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-04-23,Lidl,lidl,1.0,%
 2026-04-23,Leroy Merlin,leroymerlin,4.0,%
 2026-04-23,CCC,ccc,5.0,%
-2026-04-23,Hebe,hebe,50.0,%
+2026-04-23,Hebe,hebe,4.0,%
 2026-04-23,OBI,obi,5.0,%
 2026-04-23,Adidas,adidas,5.0,%
 2026-04-23,Sephora,sephora,7.5,%
@@ -176,7 +176,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-04-23,Regatta,regatta,5.0,%
 2026-04-23,Remix,remix,12.25,%
 2026-04-23,Renee,renee,6.0,%
-2026-04-23,Reporter Young,reporteryoung,3.5,%
+2026-04-23,Reporter Young,reporteryoung,,no cashback
 2026-04-23,Ryobi,ryobi,4.0,%
 2026-04-23,Samsung,samsung,3.0,%
 2026-04-23,Senpo.pl,senpo.pl,8.0,%
