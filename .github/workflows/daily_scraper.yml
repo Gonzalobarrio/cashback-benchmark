@@ -2,9 +2,9 @@ name: Daily Cashback Benchmark
 
 on:
   schedule:
-    - cron: '0 7 * * *'
-    - cron: '0 9 * * *'
-    - cron: '0 13 * * *'
+    - cron: '0 3 * * *'   # 03:00 UTC = 05:00 CET
+    - cron: '0 5 * * *'   # 05:00 UTC = 07:00 CET backup
+    - cron: '0 9 * * *'   # 09:00 UTC = 11:00 CET segundo backup
   workflow_dispatch:
 
 jobs:
