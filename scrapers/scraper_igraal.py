@@ -40,16 +40,31 @@ def get_all_retailers():
 
 
 # ══════════════════════════════════════════════════════════════════════════════
-# RATE PARSER v3
+# RATE PARSER v5
 # ══════════════════════════════════════════════════════════════════════════════
 
 def get_cashback_rate(url):
     try:
         r    = requests.get(url, headers=HEADERS, timeout=15)
+        if r.status_code != 200:
+            return "no cashback", None
+
         soup = BeautifulSoup(r.text, "html.parser")
         text = soup.get_text(separator=" ")
 
-        # ── Prioridad 1: X% cashback* ──────────────────────────
+        # ── Prioridad 0: "do X% cashbacku" en header ──────────
+        # Más fiable — es el rate principal en el bloque superior
+        header_text = text[:1500]
+        header_match = re.search(
+            r"do\s+(\d+(?:[.,]\d+)?)\s*%\s*cashback\w*",
+            header_text, re.IGNORECASE
+        )
+        if header_match:
+            val = float(header_match.group(1).replace(",", "."))
+            if 0 < val <= 100:
+                return str(val), "%"
+
+        # ── Prioridad 1: X% cashback* en texto completo ────────
         pct_values = []
         for m in re.finditer(
             r"(\d+(?:[.,]\d+)?)\s*%\s*cashback\w*",
@@ -59,7 +74,7 @@ def get_cashback_rate(url):
             if any(noise in context for noise in NOISE_KEYWORDS):
                 continue
             val = float(m.group(1).replace(",", "."))
-            if 0 < val <= 80:
+            if 0 < val <= 100:
                 pct_values.append(val)
 
         if pct_values:
@@ -84,13 +99,13 @@ def get_cashback_rate(url):
         ):
             context = text[max(0, m.start()-50):m.end()+50].lower()
             if any(w in context for w in
-                   ["bonus", "nagroda", "polecenie"]):
+                   ["bonus", "nagroda", "polecenie", "zaproś"]):
                 continue
             val = float(m.group(1).replace(",", "."))
             if val > 0:
                 return str(val), "zł"
 
-        # ── Prioridad 4: "+X cashbacku" en título (sin zł) ─────
+        # ── Prioridad 4: +X cashbacku en título ───────────────
         title_text = text[:800]
         for m in re.finditer(
             r"\+\s*(\d+(?:[.,]\d+)?)\s*cashback\w*",
@@ -99,7 +114,7 @@ def get_cashback_rate(url):
             val = float(m.group(1).replace(",", "."))
             if val > 80:
                 return str(val), "zł"
-            elif val > 0:
+            elif 0 < val <= 100:
                 return str(val), "%"
 
     except Exception as e:
