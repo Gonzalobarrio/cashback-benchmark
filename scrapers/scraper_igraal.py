@@ -15,10 +15,6 @@ LISTING_URL    = "https://igraal.pl/wszystkie-sklepy"
 NOISE_KEYWORDS = ["OFERTA DNIA", "oferta dnia"]
 
 
-# ══════════════════════════════════════════════════════════════════════════════
-# LISTING
-# ══════════════════════════════════════════════════════════════════════════════
-
 def get_all_retailers():
     r    = requests.get(LISTING_URL, headers=HEADERS, timeout=15)
     soup = BeautifulSoup(r.text, "html.parser")
@@ -39,10 +35,6 @@ def get_all_retailers():
     return retailers
 
 
-# ══════════════════════════════════════════════════════════════════════════════
-# RATE PARSER v5
-# ══════════════════════════════════════════════════════════════════════════════
-
 def get_cashback_rate(url):
     try:
         r    = requests.get(url, headers=HEADERS, timeout=15)
@@ -52,15 +44,15 @@ def get_cashback_rate(url):
         soup = BeautifulSoup(r.text, "html.parser")
         text = soup.get_text(separator=" ")
 
-        # ── Prioridad 0: "do X% cashbacku" en header ──────────
-        # Más fiable — es el rate principal en el bloque superior
-        header_text = text[:1500]
-        header_match = re.search(
-            r"do\s+(\d+(?:[.,]\d+)?)\s*%\s*cashback\w*",
-            header_text, re.IGNORECASE
+        # ── Prioridad 0: rate en el TÍTULO de la página ────────
+        # "Retailer kod | X taniej + Y% cashbacku - Zweryfikowane"
+        title_text = text[:200]
+        title_match = re.search(
+            r"\+\s*(\d+(?:[.,]\d+)?)\s*%\s*cashback\w*",
+            title_text, re.IGNORECASE
         )
-        if header_match:
-            val = float(header_match.group(1).replace(",", "."))
+        if title_match:
+            val = float(title_match.group(1).replace(",", "."))
             if 0 < val <= 100:
                 return str(val), "%"
 
@@ -105,8 +97,7 @@ def get_cashback_rate(url):
             if val > 0:
                 return str(val), "zł"
 
-        # ── Prioridad 4: +X cashbacku en título ───────────────
-        title_text = text[:800]
+        # ── Prioridad 4: +X cashbacku en título (zł) ──────────
         for m in re.finditer(
             r"\+\s*(\d+(?:[.,]\d+)?)\s*cashback\w*",
             title_text, re.IGNORECASE
@@ -114,17 +105,11 @@ def get_cashback_rate(url):
             val = float(m.group(1).replace(",", "."))
             if val > 80:
                 return str(val), "zł"
-            elif 0 < val <= 100:
-                return str(val), "%"
 
     except Exception as e:
         print(f"  Error {url}: {e}")
     return "no cashback", None
 
-
-# ══════════════════════════════════════════════════════════════════════════════
-# MAIN SCRAPER
-# ══════════════════════════════════════════════════════════════════════════════
 
 def scrape_igraal() -> pd.DataFrame:
     retailers = get_all_retailers()
@@ -154,10 +139,6 @@ def scrape_igraal() -> pd.DataFrame:
 
     return pd.DataFrame(results)
 
-
-# ══════════════════════════════════════════════════════════════════════════════
-# ENTRY POINT
-# ══════════════════════════════════════════════════════════════════════════════
 
 if __name__ == "__main__":
     import os
