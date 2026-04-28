@@ -80,7 +80,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-04-28,Estro,estro,7.0,%
 2026-04-28,Eurofirany,eurofirany,,no cashback
 2026-04-28,Euroflorist,euroflorist,12.0,%
-2026-04-28,Eveline,eveline,7.0,%
+2026-04-28,Eveline,eveline,30.0,%
 2026-04-28,Eventim,eventim,2.0,%
 2026-04-28,Fera,fera,4.0,%
 2026-04-28,Fielmann,fielmann,6.0,%
@@ -149,7 +149,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-04-28,Neness,neness,6.0,%
 2026-04-28,NEONAIL,neonail,7.0,%
 2026-04-28,New Balance,nbsklep,18.0,%
-2026-04-28,Nike,nike,,no cashback
+2026-04-28,Nike,nike,7.0,%
 2026-04-28,Ninja,ninja,4.0,%
 2026-04-28,NordVPN,nordvpn,40.0,%
 2026-04-28,norton,norton,25.0,%
@@ -215,7 +215,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-04-28,Yanosik,yanosik,3.0,%
 2026-04-28,Yves Rocher,yves-rocher,5.0,%
 2026-04-28,Znak,znak,3.0,%
-2026-04-28,zooplus,zooplus,,no cashback
+2026-04-28,zooplus,zooplus,1.5,%
 2026-04-28,4Home,4home,,no cashback
 2026-04-28,4kidspoint,4kidspoint,3.5,%
 2026-04-28,7way,7way,3.5,%
