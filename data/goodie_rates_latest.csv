@@ -1,6 +1,6 @@
 date,retailer,igraal_slug,goodie_rate,goodie_rate_type,goodie_url
 2026-04-29,AliExpress,aliexpress,4.5,up_to_%,https://goodie.pl/marka/aliexpress
-2026-04-29,Allegro,allegro,2.2,up_to_%,https://goodie.pl/marka/allegro
+2026-04-29,Allegro,allegro-test,2.2,up_to_%,https://goodie.pl/marka/allegro
 2026-04-29,Answear,answear,2.0,up_to_%,https://goodie.pl/marka/answear-com
 2026-04-29,Decathlon,decathlon,2.5,%,https://goodie.pl/marka/decathlon
 2026-04-29,Empik,empik,7.5,up_to_%,https://goodie.pl/marka/empik
@@ -194,6 +194,7 @@ date,retailer,igraal_slug,goodie_rate,goodie_rate_type,goodie_url
 2026-04-29,Surfshark,surfshark,20.0,%,https://goodie.pl/marka/surfshark
 2026-04-29,Świat supli,swiatsupli,,not_found,
 2026-04-29,Tagomago,tagomago,2.5,%,https://goodie.pl/marka/tagomago-pl
+2026-04-29,TestDNA,testdna,,not_found,
 2026-04-29,Teufel,teufel,2.0,%,https://goodie.pl/marka/teufel
 2026-04-29,Top Secret,topsecret,,no cashback,https://goodie.pl/marka/top-secret
 2026-04-29,Trip.com,trip-com,2.75,up_to_%,https://goodie.pl/marka/trip-com

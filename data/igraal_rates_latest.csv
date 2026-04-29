@@ -1,6 +1,6 @@
 date,retailer,slug,igraal_rate,cashback_type
 2026-04-29,AliExpress,aliexpress,40.0,%
-2026-04-29,Allegro,allegro,1.9,%
+2026-04-29,Allegro,allegro-test,1.9,%
 2026-04-29,Answear,answear,15.0,%
 2026-04-29,Decathlon,decathlon,2.0,%
 2026-04-29,Empik,empik,1.6,%
@@ -85,7 +85,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-04-29,Fera,fera,4.0,%
 2026-04-29,Fielmann,fielmann,6.0,%
 2026-04-29,Flexispot,flexispot,4.0,%
-2026-04-29,Flixbus,flixbus,50.0,%
+2026-04-29,Flixbus,flixbus,10.0,%
 2026-04-29,Footshop,footshop,5.0,%
 2026-04-29,Foreo,foreo,20.0,%
 2026-04-29,FotoForma,fotoforma,2.5,%
@@ -194,6 +194,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-04-29,Surfshark,surfshark,,zł
 2026-04-29,Świat supli,swiatsupli,5.0,%
 2026-04-29,Tagomago,tagomago,3.0,%
+2026-04-29,TestDNA,testdna,3.5,%
 2026-04-29,Teufel,teufel,4.0,%
 2026-04-29,Top Secret,topsecret,,zł
 2026-04-29,Trip.com,trip-com,5.5,%

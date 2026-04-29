@@ -1,6 +1,6 @@
 date,retailer,igraal_slug,picodi_rate,picodi_rate_type,picodi_url
 2026-04-29,AliExpress,aliexpress,20.7,up_to_%,https://www.picodi.com/pl/aliexpress/offers
-2026-04-29,Allegro,allegro,2.0,up_to_%,https://www.picodi.com/pl/allegro/offers
+2026-04-29,Allegro,allegro-test,2.0,up_to_%,https://www.picodi.com/pl/allegro/offers
 2026-04-29,Answear,answear,1.2,up_to_%,https://www.picodi.com/pl/answear-com/offers
 2026-04-29,Decathlon,decathlon,1.4,up_to_%,https://www.picodi.com/pl/decathlon/offers
 2026-04-29,Empik,empik,7.5,up_to_%,https://www.picodi.com/pl/empik/offers
@@ -37,8 +37,8 @@ date,retailer,igraal_slug,picodi_rate,picodi_rate_type,picodi_url
 2026-04-29,BIG STAR,bigstar,0.6,%,https://www.picodi.com/pl/big-star/offers
 2026-04-29,Bimba Y Lola,bimbaylola,2.4,%,https://www.picodi.com/pl/bimba-y-lola/offers
 2026-04-29,Bonprix,bonprix,1.2,%,https://www.picodi.com/pl/bonprix/offers
-2026-04-29,Born2Be,born2be,1.8,%,https://www.picodi.com/pl/born2be/offers
-2026-04-29,Brasty,brasty,1.8,up_to_%,https://www.picodi.com/pl/brasty/offers
+2026-04-29,Born2Be,born2be,,not_found,
+2026-04-29,Brasty,brasty,,not_found,
 2026-04-29,Bricoman,bricoman,,not_found,
 2026-04-29,Bricomarche,bricomarche,,not_found,
 2026-04-29,Broń.pl,bron.pl,,not_found,
@@ -194,6 +194,7 @@ date,retailer,igraal_slug,picodi_rate,picodi_rate_type,picodi_url
 2026-04-29,Surfshark,surfshark,,not_found,
 2026-04-29,Świat supli,swiatsupli,,not_found,
 2026-04-29,Tagomago,tagomago,,not_found,
+2026-04-29,TestDNA,testdna,,not_found,
 2026-04-29,Teufel,teufel,,not_found,
 2026-04-29,Top Secret,topsecret,,not_found,
 2026-04-29,Trip.com,trip-com,,not_found,

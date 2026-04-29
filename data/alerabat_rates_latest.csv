@@ -1,6 +1,6 @@
 date,retailer,igraal_slug,alerabat_rate,alerabat_rate_type,alerabat_url
 2026-04-29,AliExpress,aliexpress,5.0,up_to_%,https://alerabat.com/kod-rabatowy/aliexpress
-2026-04-29,Allegro,allegro,2.2,up_to_%,https://alerabat.com/kody-promocyjne/allegro
+2026-04-29,Allegro,allegro-test,2.2,up_to_%,https://alerabat.com/kody-promocyjne/allegro
 2026-04-29,Answear,answear,1.75,up_to_%,https://alerabat.com/kod-promocyjny/answear-com
 2026-04-29,Decathlon,decathlon,4.0,up_to_%,https://alerabat.com/kod-promocyjny/decathlon-pl
 2026-04-29,Empik,empik,6.25,up_to_%,https://alerabat.com/kod-promocyjny/empik-com
@@ -194,6 +194,7 @@ date,retailer,igraal_slug,alerabat_rate,alerabat_rate_type,alerabat_url
 2026-04-29,Surfshark,surfshark,20.0,up_to_%,https://alerabat.com/kody-promocyjne/surfshark
 2026-04-29,Świat supli,swiatsupli,2.5,up_to_%,https://alerabat.com/kody-promocyjne/swiat-supli
 2026-04-29,Tagomago,tagomago,2.5,up_to_%,https://alerabat.com/kod-promocyjny/tagomago-pl
+2026-04-29,TestDNA,testdna,2.1,up_to_%,https://alerabat.com/kody-promocyjne/testdna
 2026-04-29,Teufel,teufel,4.0,up_to_%,https://alerabat.com/kody-promocyjne/teufel
 2026-04-29,Top Secret,topsecret,5.0,up_to_%,https://alerabat.com/kod-rabatowy/topsecret
 2026-04-29,Trip.com,trip-com,,not_found,

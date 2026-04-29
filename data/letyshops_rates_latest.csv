@@ -1,9 +1,9 @@
 date,retailer,igraal_slug,letyshops_rate,letyshops_rate_type,letyshops_boosted,letyshops_url
 2026-04-29,AliExpress,aliexpress,5.0,%,False,https://letyshops.com/pl/shops/aliexpress
-2026-04-29,Allegro,allegro,1.7,%,False,https://letyshops.com/pl-en/shops/allegro-pl
+2026-04-29,Allegro,allegro-test,1.7,%,False,https://letyshops.com/pl-en/shops/allegro-pl
 2026-04-29,Answear,answear,2.0,%,False,https://letyshops.com/pl/shops/answear
 2026-04-29,Decathlon,decathlon,2.25,%,False,https://letyshops.com/pl/shops/decathlon-pl
-2026-04-29,Empik,empik,6.25,%,False,https://letyshops.com/pl/shops/empik-pl
+2026-04-29,Empik,empik,31.25,%,False,https://letyshops.com/pl-en/shops/empik-pl
 2026-04-29,Lounge by Zalando,zalando-lounge,6.0,%,False,https://letyshops.com/pl-en/shops/zalando-lounge-pl
 2026-04-29,MediaMarkt,mediamarkt,3.5,%,False,https://letyshops.com/pl/shops/media-markt-pl
 2026-04-29,Temu,temu,10.0,up_to_%,False,https://letyshops.com/pl/shops/temu
@@ -49,7 +49,7 @@ date,retailer,igraal_slug,letyshops_rate,letyshops_rate_type,letyshops_boosted,l
 2026-04-29,Ceneo,ceneo,,not_found,False,
 2026-04-29,Cobi,cobi,1.75,%,False,https://letyshops.com/pl/shops/cobi-pl
 2026-04-29,Cocolita,cocolita,2.25,%,False,https://letyshops.com/pl/shops/cocolita-pl
-2026-04-29,Colorland,colorland,2.2,%,False,https://letyshops.com/pl/shops/colorland-pl
+2026-04-29,Colorland,colorland,,no cashback,False,
 2026-04-29,Converse,converse,4.8,%,False,https://letyshops.com/pl/shops/converse-pl
 2026-04-29,Crocs,crocs,,no cashback,False,
 2026-04-29,Cropp,cropp,3.5,%,False,https://letyshops.com/pl/shops/cropp-pl
@@ -194,6 +194,7 @@ date,retailer,igraal_slug,letyshops_rate,letyshops_rate_type,letyshops_boosted,l
 2026-04-29,Surfshark,surfshark,2.5,%,False,https://letyshops.com/pl/shops/surfshark
 2026-04-29,Świat supli,swiatsupli,,not_found,False,
 2026-04-29,Tagomago,tagomago,2.5,%,False,https://letyshops.com/pl/shops/tagomago-pl
+2026-04-29,TestDNA,testdna,,not_found,False,
 2026-04-29,Teufel,teufel,2.0,%,False,https://letyshops.com/pl/shops/teufel-pl
 2026-04-29,Top Secret,topsecret,,no cashback,False,
 2026-04-29,Trip.com,trip-com,3.5,%,False,https://letyshops.com/pl/shops/trip-com
