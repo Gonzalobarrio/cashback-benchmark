@@ -38,7 +38,7 @@ date,retailer,igraal_slug,picodi_rate,picodi_rate_type,picodi_url
 2026-04-30,Bimba Y Lola,bimbaylola,2.4,%,https://www.picodi.com/pl/bimba-y-lola/offers
 2026-04-30,Bonprix,bonprix,1.2,%,https://www.picodi.com/pl/bonprix/offers
 2026-04-30,Born2Be,born2be,1.8,%,https://www.picodi.com/pl/born2be/offers
-2026-04-30,Brasty,brasty,,not_found,
+2026-04-30,Brasty,brasty,1.8,up_to_%,https://www.picodi.com/pl/brasty/offers
 2026-04-30,Bricoman,bricoman,,not_found,
 2026-04-30,Bricomarche,bricomarche,,not_found,
 2026-04-30,Broń.pl,bron.pl,,not_found,
@@ -168,6 +168,7 @@ date,retailer,igraal_slug,picodi_rate,picodi_rate_type,picodi_url
 2026-04-30,Philips Hue,philips-hue,,not_found,
 2026-04-30,Play,play,,not_found,
 2026-04-30,PRM,prm,,not_found,
+2026-04-30,Proton VPN,protonvpn,,not_found,
 2026-04-30,Przyjaciele Kawy,przyjacielekawy,,not_found,
 2026-04-30,Puma,puma,,not_found,
 2026-04-30,Pyszne.pl,pyszne,,not_found,
@@ -194,6 +195,7 @@ date,retailer,igraal_slug,picodi_rate,picodi_rate_type,picodi_url
 2026-04-30,Surfshark,surfshark,,not_found,
 2026-04-30,Świat supli,swiatsupli,,not_found,
 2026-04-30,Tagomago,tagomago,,not_found,
+2026-04-30,Tefal,tefal,,not_found,
 2026-04-30,TestDNA,testdna,,not_found,
 2026-04-30,Teufel,teufel,,not_found,
 2026-04-30,Top Secret,topsecret,,not_found,
@@ -214,6 +216,7 @@ date,retailer,igraal_slug,picodi_rate,picodi_rate_type,picodi_url
 2026-04-30,x-kom,x-kom,,not_found,
 2026-04-30,Xiaomi,mi,,not_found,
 2026-04-30,Yanosik,yanosik,,not_found,
+2026-04-30,Your KAYA,yourkaya,,not_found,
 2026-04-30,Yves Rocher,yves-rocher,,not_found,
 2026-04-30,Znak,znak,,not_found,
 2026-04-30,zooplus,zooplus,,not_found,
@@ -227,12 +230,9 @@ date,retailer,igraal_slug,picodi_rate,picodi_rate_type,picodi_url
 2026-04-30,KurJerzy.pl,kurjerzy.pl,,not_found,
 2026-04-30,Orange Flex,orangeflex,,not_found,
 2026-04-30,Peek & Cloppenburg,peek-and-cloppenburg,,not_found,
-2026-04-30,Proton VPN,protonvpn,,not_found,
 2026-04-30,SeePlaces,seeplaces,,not_found,
-2026-04-30,Tefal,tefal,,not_found,
 2026-04-30,Tescoma,tescoma,,not_found,
 2026-04-30,Vasco Electronics,vascoelectronics,,not_found,
-2026-04-30,Your KAYA,yourkaya,,not_found,
 2026-04-30,Zwieger,zwieger,,not_found,
 2026-04-30,Airbnb,airbnb,,not_found,
 2026-04-30,Carinii,carinii,,not_found,

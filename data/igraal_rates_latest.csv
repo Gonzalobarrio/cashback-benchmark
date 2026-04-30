@@ -149,7 +149,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-04-30,Neness,neness,6.0,%
 2026-04-30,NEONAIL,neonail,7.0,%
 2026-04-30,New Balance,nbsklep,18.0,%
-2026-04-30,Nike,nike,,no cashback
+2026-04-30,Nike,nike,7.0,%
 2026-04-30,Ninja,ninja,4.0,%
 2026-04-30,NordVPN,nordvpn,40.0,%
 2026-04-30,norton,norton,25.0,%
@@ -168,6 +168,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-04-30,Philips Hue,philips-hue,7.0,%
 2026-04-30,Play,play,,zł
 2026-04-30,PRM,prm,15.0,%
+2026-04-30,Proton VPN,protonvpn,70.0,%
 2026-04-30,Przyjaciele Kawy,przyjacielekawy,6.0,%
 2026-04-30,Puma,puma,6.0,%
 2026-04-30,Pyszne.pl,pyszne,50.0,%
@@ -194,6 +195,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-04-30,Surfshark,surfshark,,zł
 2026-04-30,Świat supli,swiatsupli,5.0,%
 2026-04-30,Tagomago,tagomago,3.0,%
+2026-04-30,Tefal,tefal,5.0,%
 2026-04-30,TestDNA,testdna,3.5,%
 2026-04-30,Teufel,teufel,4.0,%
 2026-04-30,Top Secret,topsecret,,zł
@@ -214,6 +216,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-04-30,x-kom,x-kom,,no cashback
 2026-04-30,Xiaomi,mi,2.0,%
 2026-04-30,Yanosik,yanosik,3.0,%
+2026-04-30,Your KAYA,yourkaya,5.5,%
 2026-04-30,Yves Rocher,yves-rocher,5.0,%
 2026-04-30,Znak,znak,3.0,%
 2026-04-30,zooplus,zooplus,1.5,%
@@ -227,12 +230,9 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-04-30,KurJerzy.pl,kurjerzy.pl,3.0,%
 2026-04-30,Orange Flex,orangeflex,,zł
 2026-04-30,Peek & Cloppenburg,peek-and-cloppenburg,2.5,%
-2026-04-30,Proton VPN,protonvpn,70.0,%
 2026-04-30,SeePlaces,seeplaces,3.15,%
-2026-04-30,Tefal,tefal,5.0,%
 2026-04-30,Tescoma,tescoma,3.5,%
 2026-04-30,Vasco Electronics,vascoelectronics,3.0,%
-2026-04-30,Your KAYA,yourkaya,5.5,%
 2026-04-30,Zwieger,zwieger,3.0,%
 2026-04-30,Airbnb,airbnb,,no cashback
 2026-04-30,Carinii,carinii,,no cashback

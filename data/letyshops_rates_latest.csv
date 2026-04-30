@@ -168,6 +168,7 @@ date,retailer,igraal_slug,letyshops_rate,letyshops_rate_type,letyshops_boosted,l
 2026-04-30,Philips Hue,philips-hue,3.5,%,False,https://letyshops.com/pl/shops/philips-hue-pl
 2026-04-30,Play,play,3.5,%,False,https://letyshops.com/pl/shops/play-pl
 2026-04-30,PRM,prm,7.0,%,False,https://letyshops.com/pl/shops/prm-pl
+2026-04-30,Proton VPN,protonvpn,,not_found,False,
 2026-04-30,Przyjaciele Kawy,przyjacielekawy,3.7,%,False,https://letyshops.com/pl/shops/przyjaciele-kawy-pl
 2026-04-30,Puma,puma,,no cashback,False,
 2026-04-30,Pyszne.pl,pyszne,1.5,%,False,https://letyshops.com/pl-en/shops/pyszne-pl
@@ -194,6 +195,7 @@ date,retailer,igraal_slug,letyshops_rate,letyshops_rate_type,letyshops_boosted,l
 2026-04-30,Surfshark,surfshark,3.5,%,False,https://letyshops.com/pl/shops/surfshark
 2026-04-30,Świat supli,swiatsupli,,not_found,False,
 2026-04-30,Tagomago,tagomago,2.5,%,False,https://letyshops.com/pl/shops/tagomago-pl
+2026-04-30,Tefal,tefal,3.85,%,False,https://letyshops.com/pl/shops/tefal-pl
 2026-04-30,TestDNA,testdna,,not_found,False,
 2026-04-30,Teufel,teufel,2.0,%,False,https://letyshops.com/pl/shops/teufel-pl
 2026-04-30,Top Secret,topsecret,,no cashback,False,
@@ -214,6 +216,7 @@ date,retailer,igraal_slug,letyshops_rate,letyshops_rate_type,letyshops_boosted,l
 2026-04-30,x-kom,x-kom,0.65,%,False,https://letyshops.com/pl-en/shops/x-kom-pl
 2026-04-30,Xiaomi,mi,3.0,%,False,https://letyshops.com/pl/shops/xiaomi-pl
 2026-04-30,Yanosik,yanosik,2.5,%,False,https://letyshops.com/pl/shops/yanosik-pl
+2026-04-30,Your KAYA,yourkaya,,no cashback,False,
 2026-04-30,Yves Rocher,yves-rocher,2.5,%,False,https://letyshops.com/pl/shops/yves-rocher-pl
 2026-04-30,Znak,znak,1.5,%,False,https://letyshops.com/pl/shops/znak
 2026-04-30,zooplus,zooplus,1.5,%,False,https://letyshops.com/pl/shops/zooplus-pl
@@ -227,12 +230,9 @@ date,retailer,igraal_slug,letyshops_rate,letyshops_rate_type,letyshops_boosted,l
 2026-04-30,KurJerzy.pl,kurjerzy.pl,2.8,%,False,https://letyshops.com/pl/shops/kurjerzy-pl
 2026-04-30,Orange Flex,orangeflex,,not_found,False,
 2026-04-30,Peek & Cloppenburg,peek-and-cloppenburg,1.5,%,False,https://letyshops.com/pl/shops/peek-cloppenburg-pl
-2026-04-30,Proton VPN,protonvpn,,not_found,False,
 2026-04-30,SeePlaces,seeplaces,2.25,%,False,https://letyshops.com/pl/shops/seeplaces-pl
-2026-04-30,Tefal,tefal,3.85,%,False,https://letyshops.com/pl/shops/tefal-pl
 2026-04-30,Tescoma,tescoma,,not_found,False,
 2026-04-30,Vasco Electronics,vascoelectronics,3.0,%,False,https://letyshops.com/pl/shops/vasco-electronics-pl
-2026-04-30,Your KAYA,yourkaya,,no cashback,False,
 2026-04-30,Zwieger,zwieger,2.0,%,False,https://letyshops.com/pl/shops/zwieger-pl
 2026-04-30,Airbnb,airbnb,,not_found,False,
 2026-04-30,Carinii,carinii,,no cashback,False,
