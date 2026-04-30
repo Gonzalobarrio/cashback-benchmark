@@ -14,6 +14,49 @@ BASE_URL       = "https://igraal.pl"
 LISTING_URL    = "https://igraal.pl/wszystkie-sklepy"
 NOISE_KEYWORDS = ["OFERTA DNIA", "oferta dnia"]
 
+# ─── SUPPLEMENTAL: retailers no encontrados por el scraper dinámico ───────────
+# Causa probable: carga JS / lazy load en el listing page
+# Fuente: Preset export pl_igraalpl_ap_global_rlp_full (v15), todos PUBLISHED
+SUPPLEMENTAL_SLUGS = {
+    # Grupo A — tienen afiliado, deberían tener cashback rate
+    "24mx":                  "24mx",
+    "Footdistrict":          "footdistrict",
+    "Agoda":                 "agoda",
+    "Brainmarket":           "brainmarket",
+    "KurJerzy.pl":           "kurjerzy.pl",
+    "Orange Flex":           "orangeflex",
+    "Peek & Cloppenburg":    "peek-and-cloppenburg",
+    "Proton VPN":            "protonvpn",
+    "SeePlaces":             "seeplaces",
+    "Tefal":                 "tefal",
+    "Tescoma":               "tescoma",
+    "Vasco Electronics":     "vascoelectronics",
+    "Your KAYA":             "yourkaya",
+    "Zwieger":               "zwieger",
+    # Grupo B — sin afiliado, esperamos "no cashback" pero deben estar en CSV
+    "Airbnb":                "airbnb",
+    "Carinii":               "carinii",
+    "Duka":                  "duka",
+    "H&M":                   "hm",
+    "IKEA":                  "ikea",
+    "Kaufland":              "kaufland",
+    "Kolba":                 "kolba",
+    "KROSS":                 "kross",
+    "LycaMobile":            "lyca-mobile",
+    "Mango":                 "mango",
+    "Nintendo eShop":        "nintendo-eshop",
+    "OnePlus":               "oneplus",
+    "Sportofino":            "sportofino",
+    "Spotify":               "spotify",
+    "Ticketmaster":          "ticketmaster",
+    "Tołpa":                 "tolpa",
+    "Top Hi Fi":             "tophifi",
+    "UBER":                  "uber",
+    "YES":                   "yes",
+    "Zalando":               "zalando.pl",
+    "Zegarownia":            "zegarownia",
+}
+
 
 def get_all_retailers():
     r    = requests.get(LISTING_URL, headers=HEADERS, timeout=15)
@@ -32,6 +75,22 @@ def get_all_retailers():
                 "slug": slug,
                 "url" : full_url
             })
+
+    # ── Merge supplemental (sólo los que no encontró el scraper dinámico) ──
+    supplemental_added = 0
+    for name, slug in SUPPLEMENTAL_SLUGS.items():
+        if slug not in seen:
+            seen.add(slug)
+            retailers.append({
+                "name": name,
+                "slug": slug,
+                "url" : f"{BASE_URL}/wszystkie-sklepy/{slug}"
+            })
+            supplemental_added += 1
+
+    if supplemental_added:
+        print(f"  ➕ Supplemental: {supplemental_added} retailers añadidos al listado dinámico")
+
     return retailers
 
 
@@ -45,7 +104,6 @@ def get_cashback_rate(url):
         text = soup.get_text(separator=" ")
 
         # ── Prioridad 0: rate en el TÍTULO de la página ────────
-        # "Retailer kod | X taniej + Y% cashbacku - Zweryfikowane"
         title_text = text[:200]
         title_match = re.search(
             r"\+\s*(\d+(?:[.,]\d+)?)\s*%\s*cashback\w*",
@@ -117,7 +175,7 @@ def scrape_igraal() -> pd.DataFrame:
     results   = []
     total     = len(retailers)
 
-    print(f"  🔍 Found {total} retailers on iGraal.pl")
+    print(f"  🔍 Found {total} retailers on iGraal.pl (dinámico + supplemental)")
 
     for i, r in enumerate(retailers, 1):
         print(f"  [{i:>3}/{total}] {r['name']} ({r['slug']})", end=" → ")
@@ -154,3 +212,6 @@ if __name__ == "__main__":
     print(f"   ✅ % rates     : {pct}")
     print(f"   💰 zł rates   : {zl}")
     print(f"   🚫 No cashback : {nc}")
+    print(f"\n   📊 Esperado: 256 retailers (Preset v15)")
+    if len(df) < 256:
+        print(f"   ⚠️  Faltan aún: {256 - len(df)} retailers")
