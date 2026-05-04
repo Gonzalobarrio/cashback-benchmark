@@ -107,6 +107,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-05-04,iBOOD,ibood,1.0,%
 2026-05-04,iDream,idream,3.0,%
 2026-05-04,iHerb,iherb,3.0,%
+2026-05-04,IKEA,ikea,4.0,%
 2026-05-04,iParts,iparts,3.5,%
 2026-05-04,JD Sports,jdsports,5.0,%
 2026-05-04,Joom,joom,9.0,%
@@ -200,6 +201,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-05-04,Teufel,teufel,4.0,%
 2026-05-04,Top Secret,topsecret,,zł
 2026-05-04,Trip.com,trip-com,5.5,%
+2026-05-04,UBER,uber,4.0,%
 2026-05-04,Ubisoft,ubisoft,0.5,%
 2026-05-04,Ucando,ucando,4.0,%
 2026-05-04,Udemy,udemy,10.0,%
@@ -218,6 +220,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-05-04,Yanosik,yanosik,3.0,%
 2026-05-04,Your KAYA,yourkaya,5.5,%
 2026-05-04,Yves Rocher,yves-rocher,5.0,%
+2026-05-04,Zalando,zalando.pl,8.0,%
 2026-05-04,Znak,znak,3.0,%
 2026-05-04,zooplus,zooplus,1.5,%
 2026-05-04,4Home,4home,,no cashback
@@ -238,7 +241,6 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-05-04,Carinii,carinii,,no cashback
 2026-05-04,Duka,duka,4.0,%
 2026-05-04,H&M,hm,8.0,%
-2026-05-04,IKEA,ikea,4.0,%
 2026-05-04,Kaufland,kaufland,1.0,%
 2026-05-04,Kolba,kolba,,no cashback
 2026-05-04,KROSS,kross,4.0,%
@@ -251,7 +253,5 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-05-04,Ticketmaster,ticketmaster,7.0,%
 2026-05-04,Tołpa,tolpa,,no cashback
 2026-05-04,Top Hi Fi,tophifi,,no cashback
-2026-05-04,UBER,uber,4.0,%
 2026-05-04,YES,yes,3.0,%
-2026-05-04,Zalando,zalando.pl,8.0,%
 2026-05-04,Zegarownia,zegarownia,2.0,%

@@ -107,6 +107,7 @@ date,retailer,igraal_slug,alerabat_rate,alerabat_rate_type,alerabat_url
 2026-05-04,iBOOD,ibood,2.0,up_to_%,https://alerabat.com/kody-promocyjne/ibood
 2026-05-04,iDream,idream,2.17,up_to_%,https://alerabat.com/kody-promocyjne/idream
 2026-05-04,iHerb,iherb,0.5,up_to_%,https://alerabat.com/kody-promocyjne/iherb
+2026-05-04,IKEA,ikea,,no cashback,https://alerabat.com/kody-promocyjne/ikea
 2026-05-04,iParts,iparts,1.75,up_to_%,https://alerabat.com/kody-promocyjne/iparts-pl
 2026-05-04,JD Sports,jdsports,2.5,up_to_%,https://alerabat.com/kody-promocyjne/jd-sports
 2026-05-04,Joom,joom,7.5,up_to_%,https://alerabat.com/kody-promocyjne/joom
@@ -200,6 +201,7 @@ date,retailer,igraal_slug,alerabat_rate,alerabat_rate_type,alerabat_url
 2026-05-04,Teufel,teufel,4.0,up_to_%,https://alerabat.com/kody-promocyjne/teufel
 2026-05-04,Top Secret,topsecret,5.0,up_to_%,https://alerabat.com/kod-rabatowy/topsecret
 2026-05-04,Trip.com,trip-com,,not_found,
+2026-05-04,UBER,uber,5.0,up_to_%,https://alerabat.com/kody-promocyjne/uber
 2026-05-04,Ubisoft,ubisoft,,not_found,
 2026-05-04,Ucando,ucando,2.0,up_to_%,https://alerabat.com/kody-promocyjne/ucando-pl
 2026-05-04,Udemy,udemy,10.0,up_to_%,https://alerabat.com/kody-promocyjne/udemy-com
@@ -218,6 +220,7 @@ date,retailer,igraal_slug,alerabat_rate,alerabat_rate_type,alerabat_url
 2026-05-04,Yanosik,yanosik,2.0,up_to_%,https://alerabat.com/kody-promocyjne/yanosik
 2026-05-04,Your KAYA,yourkaya,5.0,up_to_%,https://alerabat.com/kody-promocyjne/your-kaya
 2026-05-04,Yves Rocher,yves-rocher,2.5,up_to_%,https://alerabat.com/kod-promocyjny/yves-rocher
+2026-05-04,Zalando,zalando.pl,4.0,up_to_%,https://alerabat.com/kod-promocyjny/zalando-pl
 2026-05-04,Znak,znak,1.6,up_to_%,https://alerabat.com/kod-promocyjny/znak
 2026-05-04,zooplus,zooplus,1.5,up_to_%,https://alerabat.com/kod-promocyjny/zooplus-pl
 2026-05-04,4Home,4home,,no cashback,https://alerabat.com/kod-promocyjny/4home
@@ -238,7 +241,6 @@ date,retailer,igraal_slug,alerabat_rate,alerabat_rate_type,alerabat_url
 2026-05-04,Carinii,carinii,,no cashback,https://alerabat.com/kody-promocyjne/carinii
 2026-05-04,Duka,duka,,no cashback,https://alerabat.com/kody-promocyjne/duka
 2026-05-04,H&M,hm,1.0,up_to_%,https://alerabat.com/kody-promocyjne/h-m
-2026-05-04,IKEA,ikea,,no cashback,https://alerabat.com/kody-promocyjne/ikea
 2026-05-04,Kaufland,kaufland,5.0,up_to_%,https://alerabat.com/kody-promocyjne/kaufland
 2026-05-04,Kolba,kolba,,no cashback,https://alerabat.com/kod-promocyjny/kolba-pl
 2026-05-04,KROSS,kross,,no cashback,https://alerabat.com/kody-promocyjne/kross
@@ -251,7 +253,5 @@ date,retailer,igraal_slug,alerabat_rate,alerabat_rate_type,alerabat_url
 2026-05-04,Ticketmaster,ticketmaster,,no cashback,https://alerabat.com/kody-promocyjne/ticketmaster
 2026-05-04,Tołpa,tolpa,1.5,up_to_%,https://alerabat.com/kod-promocyjny/tolpa
 2026-05-04,Top Hi Fi,tophifi,,no cashback,https://alerabat.com/kody-promocyjne/tophifi
-2026-05-04,UBER,uber,5.0,up_to_%,https://alerabat.com/kody-promocyjne/uber
 2026-05-04,YES,yes,,no cashback,https://alerabat.com/kody-promocyjne/yes
-2026-05-04,Zalando,zalando.pl,4.0,up_to_%,https://alerabat.com/kod-promocyjny/zalando-pl
 2026-05-04,Zegarownia,zegarownia,5.0,up_to_%,https://alerabat.com/kody-promocyjne/zegarownia

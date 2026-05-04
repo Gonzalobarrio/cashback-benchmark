@@ -107,6 +107,7 @@ date,retailer,igraal_slug,goodie_rate,goodie_rate_type,goodie_url
 2026-05-04,iBOOD,ibood,2.0,up_to_%,https://goodie.pl/marka/ibood
 2026-05-04,iDream,idream,,no cashback,https://goodie.pl/marka/idream
 2026-05-04,iHerb,iherb,2.0,up_to_%,https://goodie.pl/marka/iherb
+2026-05-04,IKEA,ikea,2.5,%,https://goodie.pl/marka/ikea
 2026-05-04,iParts,iparts,,no cashback,https://goodie.pl/marka/iparts
 2026-05-04,JD Sports,jdsports,2.5,%,https://goodie.pl/marka/jdsports
 2026-05-04,Joom,joom,5.25,up_to_%,https://goodie.pl/marka/joom
@@ -200,6 +201,7 @@ date,retailer,igraal_slug,goodie_rate,goodie_rate_type,goodie_url
 2026-05-04,Teufel,teufel,2.0,%,https://goodie.pl/marka/teufel
 2026-05-04,Top Secret,topsecret,,no cashback,https://goodie.pl/marka/top-secret
 2026-05-04,Trip.com,trip-com,2.75,up_to_%,https://goodie.pl/marka/trip-com
+2026-05-04,UBER,uber,,no cashback,https://goodie.pl/marka/uber
 2026-05-04,Ubisoft,ubisoft,0.21,%,https://goodie.pl/marka/ubisoft
 2026-05-04,Ucando,ucando,2.0,%,https://goodie.pl/marka/ucando-pl
 2026-05-04,Udemy,udemy,,no cashback,https://goodie.pl/marka/udemy
@@ -218,6 +220,7 @@ date,retailer,igraal_slug,goodie_rate,goodie_rate_type,goodie_url
 2026-05-04,Yanosik,yanosik,2.0,%,https://goodie.pl/marka/yanosik-pl
 2026-05-04,Your KAYA,yourkaya,3.5,%,https://goodie.pl/marka/yourkaya
 2026-05-04,Yves Rocher,yves-rocher,2.5,%,https://goodie.pl/marka/yves-rocher
+2026-05-04,Zalando,zalando.pl,,no cashback,https://goodie.pl/marka/zalando
 2026-05-04,Znak,znak,1.6,%,https://goodie.pl/marka/znak
 2026-05-04,zooplus,zooplus,1.5,up_to_%,https://goodie.pl/marka/zooplus
 2026-05-04,4Home,4home,,no cashback,https://goodie.pl/marka/4home
@@ -238,7 +241,6 @@ date,retailer,igraal_slug,goodie_rate,goodie_rate_type,goodie_url
 2026-05-04,Carinii,carinii,,no cashback,https://goodie.pl/marka/carinii
 2026-05-04,Duka,duka,,no cashback,https://goodie.pl/marka/duka
 2026-05-04,H&M,hm,,no cashback,https://goodie.pl/marka/hm
-2026-05-04,IKEA,ikea,2.5,%,https://goodie.pl/marka/ikea
 2026-05-04,Kaufland,kaufland,,no cashback,https://goodie.pl/marka/kaufland
 2026-05-04,Kolba,kolba,,no cashback,https://goodie.pl/marka/kolba-pl
 2026-05-04,KROSS,kross,,no cashback,https://goodie.pl/marka/kross
@@ -251,7 +253,5 @@ date,retailer,igraal_slug,goodie_rate,goodie_rate_type,goodie_url
 2026-05-04,Ticketmaster,ticketmaster,,no cashback,https://goodie.pl/marka/ticketmaster-pl
 2026-05-04,Tołpa,tolpa,,no cashback,https://goodie.pl/marka/tolpa
 2026-05-04,Top Hi Fi,tophifi,,no cashback,https://goodie.pl/marka/tophifi-pl
-2026-05-04,UBER,uber,,no cashback,https://goodie.pl/marka/uber
 2026-05-04,YES,yes,,no cashback,https://goodie.pl/marka/yes
-2026-05-04,Zalando,zalando.pl,,no cashback,https://goodie.pl/marka/zalando
 2026-05-04,Zegarownia,zegarownia,,no cashback,https://goodie.pl/marka/zegarownia

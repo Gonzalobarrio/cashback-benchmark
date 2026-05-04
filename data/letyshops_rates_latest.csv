@@ -107,6 +107,7 @@ date,retailer,igraal_slug,letyshops_rate,letyshops_rate_type,letyshops_boosted,l
 2026-05-04,iBOOD,ibood,,not_found,False,
 2026-05-04,iDream,idream,,not_found,False,
 2026-05-04,iHerb,iherb,2.0,%,False,https://letyshops.com/pl/shops/iherb
+2026-05-04,IKEA,ikea,,no cashback,False,
 2026-05-04,iParts,iparts,,no cashback,False,
 2026-05-04,JD Sports,jdsports,2.5,%,False,https://letyshops.com/pl/shops/jd-sports-pl
 2026-05-04,Joom,joom,,no cashback,False,
@@ -173,7 +174,7 @@ date,retailer,igraal_slug,letyshops_rate,letyshops_rate_type,letyshops_boosted,l
 2026-05-04,Puma,puma,,no cashback,False,
 2026-05-04,Pyszne.pl,pyszne,1.5,%,False,https://letyshops.com/pl-en/shops/pyszne-pl
 2026-05-04,Radisson Hotels,radissonhotels,4.0,%,False,https://letyshops.com/pl/shops/radisson-hotels-pl
-2026-05-04,Recman,recman,2.5,%,False,https://letyshops.com/pl/shops/recman
+2026-05-04,Recman,recman,,no cashback,False,
 2026-05-04,Regatta,regatta,2.5,%,False,https://letyshops.com/pl/shops/regatta-pl
 2026-05-04,Remix,remix,2.25,%,False,https://letyshops.com/pl/shops/remix-pl
 2026-05-04,Renee,renee,3.0,%,False,https://letyshops.com/pl-en/shops/renee
@@ -200,6 +201,7 @@ date,retailer,igraal_slug,letyshops_rate,letyshops_rate_type,letyshops_boosted,l
 2026-05-04,Teufel,teufel,2.0,%,False,https://letyshops.com/pl/shops/teufel-pl
 2026-05-04,Top Secret,topsecret,,no cashback,False,
 2026-05-04,Trip.com,trip-com,3.5,%,False,https://letyshops.com/pl/shops/trip-com
+2026-05-04,UBER,uber,,no cashback,False,
 2026-05-04,Ubisoft,ubisoft,,not_found,False,
 2026-05-04,Ucando,ucando,2.0,%,False,https://letyshops.com/pl/shops/ucando
 2026-05-04,Udemy,udemy,6.5,%,False,https://letyshops.com/pl/shops/udemy
@@ -218,6 +220,7 @@ date,retailer,igraal_slug,letyshops_rate,letyshops_rate_type,letyshops_boosted,l
 2026-05-04,Yanosik,yanosik,2.5,%,False,https://letyshops.com/pl/shops/yanosik-pl
 2026-05-04,Your KAYA,yourkaya,,no cashback,False,
 2026-05-04,Yves Rocher,yves-rocher,2.5,%,False,https://letyshops.com/pl/shops/yves-rocher-pl
+2026-05-04,Zalando,zalando.pl,,no cashback,False,
 2026-05-04,Znak,znak,1.5,%,False,https://letyshops.com/pl/shops/znak
 2026-05-04,zooplus,zooplus,1.5,%,False,https://letyshops.com/pl/shops/zooplus-pl
 2026-05-04,4Home,4home,,no cashback,False,
@@ -238,7 +241,6 @@ date,retailer,igraal_slug,letyshops_rate,letyshops_rate_type,letyshops_boosted,l
 2026-05-04,Carinii,carinii,,no cashback,False,
 2026-05-04,Duka,duka,,no cashback,False,
 2026-05-04,H&M,hm,1.5,%,False,https://letyshops.com/pl-en/shops/h-m-pl
-2026-05-04,IKEA,ikea,,no cashback,False,
 2026-05-04,Kaufland,kaufland,,not_found,False,
 2026-05-04,Kolba,kolba,,no cashback,False,
 2026-05-04,KROSS,kross,,not_found,False,
@@ -251,7 +253,5 @@ date,retailer,igraal_slug,letyshops_rate,letyshops_rate_type,letyshops_boosted,l
 2026-05-04,Ticketmaster,ticketmaster,,no cashback,False,
 2026-05-04,Tołpa,tolpa,,no cashback,False,
 2026-05-04,Top Hi Fi,tophifi,,no cashback,False,
-2026-05-04,UBER,uber,,no cashback,False,
 2026-05-04,YES,yes,,not_found,False,
-2026-05-04,Zalando,zalando.pl,,no cashback,False,
 2026-05-04,Zegarownia,zegarownia,,no cashback,False,
