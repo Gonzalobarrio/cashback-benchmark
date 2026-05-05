@@ -29,7 +29,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-05-05,AXA Partners,axa-partners,15.0,%
 2026-05-05,Banggood,banggood,10.0,%
 2026-05-05,Baseus,baseus,4.0,%
-2026-05-05,BasicLab,basiclab,3.0,%
+2026-05-05,BasicLab,basiclab,,no cashback
 2026-05-05,BeDiet,bediet,14.0,%
 2026-05-05,Bee.pl,bee.pl,,no cashback
 2026-05-05,Bezpieczna Rodzina,bezpiecznarodzina,5.0,%
@@ -64,7 +64,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-05-05,Drogeria.pl,drogeria.pl,4.5,%
 2026-05-05,Drop,drop,5.38,%
 2026-05-05,Dstreet,dstreet,9.0,%
-2026-05-05,Dyson,dyson,,no cashback
+2026-05-05,Dyson,dyson,4.0,%
 2026-05-05,e-torty,e-torty,10.0,%
 2026-05-05,eBilet,ebilet,1.0,%
 2026-05-05,Ecco,ecco,,no cashback

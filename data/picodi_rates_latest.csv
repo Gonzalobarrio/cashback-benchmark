@@ -1,6 +1,6 @@
 date,retailer,igraal_slug,picodi_rate,picodi_rate_type,picodi_url
 2026-05-05,AliExpress,aliexpress,20.7,up_to_%,https://www.picodi.com/pl/aliexpress/offers
-2026-05-05,Allegro,allegro,0.7,up_to_%,https://www.picodi.com/pl/allegro/offers
+2026-05-05,Allegro,allegro,1.1,up_to_%,https://www.picodi.com/pl/allegro/offers
 2026-05-05,Answear,answear,1.2,up_to_%,https://www.picodi.com/pl/answear-com/offers
 2026-05-05,Decathlon,decathlon,1.4,up_to_%,https://www.picodi.com/pl/decathlon/offers
 2026-05-05,Empik,empik,7.5,up_to_%,https://www.picodi.com/pl/empik/offers
@@ -15,7 +15,7 @@ date,retailer,igraal_slug,picodi_rate,picodi_rate_type,picodi_url
 2026-05-05,Hebe,hebe,1.8,%,https://www.picodi.com/pl/hebe/offers
 2026-05-05,OBI,obi,1.5,%,https://www.picodi.com/pl/obi/offers
 2026-05-05,Adidas,adidas,1.8,up_to_%,https://www.picodi.com/pl/adidas-pl/offers
-2026-05-05,Sephora,sephora,3.3,up_to_%,https://www.picodi.com/pl/sephora/offers
+2026-05-05,Sephora,sephora,5.0,up_to_%,https://www.picodi.com/pl/sephora/offers
 2026-05-05,Douglas,douglas,3.0,up_to_%,https://www.picodi.com/pl/douglas/offers
 2026-05-05,home&you,home-you,1.2,up_to_%,https://www.picodi.com/pl/home-you/offers
 2026-05-05,Abra,abra,1.5,%,https://www.picodi.com/pl/abra/offers
