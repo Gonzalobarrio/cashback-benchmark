@@ -64,7 +64,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-05-05,Drogeria.pl,drogeria.pl,4.5,%
 2026-05-05,Drop,drop,5.38,%
 2026-05-05,Dstreet,dstreet,9.0,%
-2026-05-05,Dyson,dyson,4.0,%
+2026-05-05,Dyson,dyson,,no cashback
 2026-05-05,e-torty,e-torty,10.0,%
 2026-05-05,eBilet,ebilet,1.0,%
 2026-05-05,Ecco,ecco,,no cashback
@@ -217,7 +217,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-05-05,Wrangler,wrangler,10.0,%
 2026-05-05,x-kom,x-kom,,no cashback
 2026-05-05,Xiaomi,mi,2.0,%
-2026-05-05,Yanosik,yanosik,3.0,%
+2026-05-05,Yanosik,yanosik,4.0,%
 2026-05-05,Your KAYA,yourkaya,5.5,%
 2026-05-05,Yves Rocher,yves-rocher,5.0,%
 2026-05-05,Zalando,zalando.pl,8.0,%
