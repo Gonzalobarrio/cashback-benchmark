@@ -37,8 +37,8 @@ date,retailer,igraal_slug,picodi_rate,picodi_rate_type,picodi_url
 2026-05-06,BIG STAR,bigstar,1.8,%,https://www.picodi.com/pl/big-star/offers
 2026-05-06,Bimba Y Lola,bimbaylola,2.4,%,https://www.picodi.com/pl/bimba-y-lola/offers
 2026-05-06,Bonprix,bonprix,1.2,%,https://www.picodi.com/pl/bonprix/offers
-2026-05-06,Born2Be,born2be,,not_found,
-2026-05-06,Brasty,brasty,,not_found,
+2026-05-06,Born2Be,born2be,1.8,%,https://www.picodi.com/pl/born2be/offers
+2026-05-06,Brasty,brasty,1.8,up_to_%,https://www.picodi.com/pl/brasty/offers
 2026-05-06,Bricoman,bricoman,,not_found,
 2026-05-06,Bricomarche,bricomarche,,not_found,
 2026-05-06,Broń.pl,bron.pl,,not_found,
@@ -108,6 +108,7 @@ date,retailer,igraal_slug,picodi_rate,picodi_rate_type,picodi_url
 2026-05-06,iDream,idream,,not_found,
 2026-05-06,iHerb,iherb,,not_found,
 2026-05-06,IKEA,ikea,,not_found,
+2026-05-06,Intymna,intymna,,not_found,
 2026-05-06,iParts,iparts,,not_found,
 2026-05-06,JD Sports,jdsports,,not_found,
 2026-05-06,Joom,joom,,not_found,

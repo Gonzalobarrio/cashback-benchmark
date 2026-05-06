@@ -88,7 +88,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-05-06,Flixbus,flixbus,7.0,%
 2026-05-06,Footshop,footshop,5.0,%
 2026-05-06,Foreo,foreo,3.5,%
-2026-05-06,FotoForma,fotoforma,2.5,%
+2026-05-06,FotoForma,fotoforma,,no cashback
 2026-05-06,G2A,g2a,5.0,%
 2026-05-06,Gabriella,gabriella,,no cashback
 2026-05-06,Gameseal,gameseal,5.0,%
@@ -108,6 +108,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-05-06,iDream,idream,3.0,%
 2026-05-06,iHerb,iherb,3.0,%
 2026-05-06,IKEA,ikea,4.0,%
+2026-05-06,Intymna,intymna,4.4,%
 2026-05-06,iParts,iparts,3.5,%
 2026-05-06,JD Sports,jdsports,5.0,%
 2026-05-06,Joom,joom,9.0,%
