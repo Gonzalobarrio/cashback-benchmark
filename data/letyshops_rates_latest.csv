@@ -1,6 +1,6 @@
 date,retailer,igraal_slug,letyshops_rate,letyshops_rate_type,letyshops_boosted,letyshops_url
 2026-05-08,AliExpress,aliexpress,5.0,%,False,https://letyshops.com/pl/shops/aliexpress
-2026-05-08,Allegro,allegro,1.7,%,False,https://letyshops.com/pl/shops/allegro-pl
+2026-05-08,Allegro,allegro,5.1,%,False,https://letyshops.com/pl-en/shops/allegro-pl
 2026-05-08,Answear,answear,2.0,%,False,https://letyshops.com/pl/shops/answear
 2026-05-08,Decathlon,decathlon,2.25,%,False,https://letyshops.com/pl/shops/decathlon-pl
 2026-05-08,Empik,empik,6.25,%,False,https://letyshops.com/pl/shops/empik-pl
@@ -9,7 +9,7 @@ date,retailer,igraal_slug,letyshops_rate,letyshops_rate_type,letyshops_boosted,l
 2026-05-08,Temu,temu,7.85,%,False,https://letyshops.com/pl/shops/temu
 2026-05-08,SHEIN,shein,5.0,%,False,https://letyshops.com/pl/shops/shein-pl
 2026-05-08,RTV Euro AGD,rtveuro,3.5,%,False,https://letyshops.com/pl/shops/rtv-euro-agd
-2026-05-08,Lidl,lidl,1.0,%,False,https://letyshops.com/pl-en/shops/lidl-pl
+2026-05-08,Lidl,lidl,1.0,%,False,https://letyshops.com/pl/shops/lidl-pl
 2026-05-08,Leroy Merlin,leroymerlin,1.1,%,False,https://letyshops.com/pl/shops/leroy-merlin
 2026-05-08,CCC,ccc,3.0,%,False,https://letyshops.com/pl/shops/ccc-pl
 2026-05-08,Hebe,hebe,4.0,%,False,https://letyshops.com/pl-en/shops/hebe
@@ -17,7 +17,7 @@ date,retailer,igraal_slug,letyshops_rate,letyshops_rate_type,letyshops_boosted,l
 2026-05-08,Adidas,adidas,3.0,%,False,https://letyshops.com/pl/shops/adidas-polska
 2026-05-08,Sephora,sephora,4.5,%,False,https://letyshops.com/pl-en/shops/sephora-pl
 2026-05-08,Douglas,douglas,4.0,%,False,https://letyshops.com/pl/shops/douglas
-2026-05-08,home&you,home-you,3.25,%,False,https://letyshops.com/pl/shops/home-you
+2026-05-08,home&you,home-you,2.0,%,False,https://letyshops.com/pl/shops/home-you
 2026-05-08,Abra,abra,,not_found,False,
 2026-05-08,Acer,acer,4.0,%,False,https://letyshops.com/pl/shops/acer-pl
 2026-05-08,Aelia,aelia,3.25,%,False,https://letyshops.com/pl/shops/aelia
@@ -169,6 +169,7 @@ date,retailer,igraal_slug,letyshops_rate,letyshops_rate_type,letyshops_boosted,l
 2026-05-08,Philips,philips,,no cashback,False,
 2026-05-08,Philips Hue,philips-hue,3.5,%,False,https://letyshops.com/pl/shops/philips-hue-pl
 2026-05-08,Play,play,3.5,%,False,https://letyshops.com/pl/shops/play-pl
+2026-05-08,Primodo,primodo,,not_found,False,
 2026-05-08,PRM,prm,7.0,%,False,https://letyshops.com/pl/shops/prm-pl
 2026-05-08,Proton VPN,protonvpn,,not_found,False,
 2026-05-08,Przyjaciele Kawy,przyjacielekawy,3.7,%,False,https://letyshops.com/pl/shops/przyjaciele-kawy-pl
@@ -187,7 +188,7 @@ date,retailer,igraal_slug,letyshops_rate,letyshops_rate_type,letyshops_boosted,l
 2026-05-08,Shark,shark,3.0,%,False,https://letyshops.com/pl/shops/shark
 2026-05-08,Sinsay,sinsay,5.0,%,False,https://letyshops.com/pl-en/shops/sinsay-pl
 2026-05-08,Skechers,skechers,,not_found,False,
-2026-05-08,SkyShowtime,skyshowtime,1.7,%,False,https://letyshops.com/pl/shops/skyshowtime-pl
+2026-05-08,SkyShowtime,skyshowtime,5.1,%,False,https://letyshops.com/pl/shops/skyshowtime-pl
 2026-05-08,Sony.pl,sony,2.5,%,False,https://letyshops.com/pl/shops/sony-pl
 2026-05-08,SportStyleStory,sportstylestory,6.0,%,False,https://letyshops.com/pl/shops/sportstylestory-pl
 2026-05-08,Stradivarius,stradivarius,3.0,%,False,https://letyshops.com/pl/shops/stradivarius-pl

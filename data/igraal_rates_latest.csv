@@ -9,7 +9,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-05-08,Temu,temu,40.0,%
 2026-05-08,SHEIN,shein,18.0,%
 2026-05-08,RTV Euro AGD,rtveuro,1.5,%
-2026-05-08,Lidl,lidl,5.0,%
+2026-05-08,Lidl,lidl,3.0,%
 2026-05-08,Leroy Merlin,leroymerlin,4.0,%
 2026-05-08,CCC,ccc,5.0,%
 2026-05-08,Hebe,hebe,6.0,%
@@ -169,6 +169,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-05-08,Philips,philips,7.0,%
 2026-05-08,Philips Hue,philips-hue,7.0,%
 2026-05-08,Play,play,,zł
+2026-05-08,Primodo,primodo,5.0,%
 2026-05-08,PRM,prm,6.0,%
 2026-05-08,Proton VPN,protonvpn,70.0,%
 2026-05-08,Przyjaciele Kawy,przyjacielekawy,6.0,%
