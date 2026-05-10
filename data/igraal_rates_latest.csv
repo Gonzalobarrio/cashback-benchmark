@@ -145,11 +145,11 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-05-10,Michael Kors,michaelkors,3.0,%
 2026-05-10,Modivo,modivo.pl,4.0,%
 2026-05-10,Morele.net,morele,,zł
-2026-05-10,Mountain Warehouse,mountainwarehouse,6.0,%
-2026-05-10,MyProtein,myprotein,10.0,%
-2026-05-10,NAOKO,naoko,5.0,%
-2026-05-10,Neness,neness,6.0,%
-2026-05-10,NEONAIL,neonail,7.0,%
+2026-05-10,Mountain Warehouse,mountainwarehouse,,no cashback
+2026-05-10,MyProtein,myprotein,,no cashback
+2026-05-10,NAOKO,naoko,,no cashback
+2026-05-10,Neness,neness,,no cashback
+2026-05-10,NEONAIL,neonail,,no cashback
 2026-05-10,New Balance,nbsklep,3.0,%
 2026-05-10,Nike,nike,7.0,%
 2026-05-10,Ninja,ninja,4.0,%
@@ -163,8 +163,8 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-05-10,Orange,orange,2.11,%
 2026-05-10,Pan Materac,panmaterac,8.0,%
 2026-05-10,Parfumdreams,parfumdreams,12.0,%
-2026-05-10,Perfumeria,perfumeria.pl,,no cashback
-2026-05-10,Perfumy.pl,perfumy,,no cashback
+2026-05-10,Perfumeria,perfumeria.pl,3.84,%
+2026-05-10,Perfumy.pl,perfumy,5.0,%
 2026-05-10,Petkarma,petkarma,10.0,%
 2026-05-10,Philips,philips,7.0,%
 2026-05-10,Philips Hue,philips-hue,7.0,%
@@ -173,7 +173,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-05-10,PRM,prm,6.0,%
 2026-05-10,Proton VPN,protonvpn,70.0,%
 2026-05-10,Przyjaciele Kawy,przyjacielekawy,6.0,%
-2026-05-10,Puma,puma,,no cashback
+2026-05-10,Puma,puma,6.0,%
 2026-05-10,Pyszne.pl,pyszne,20.0,%
 2026-05-10,Radisson Hotels,radissonhotels,4.0,%
 2026-05-10,Recman,recman,5.0,%
