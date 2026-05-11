@@ -1,174 +1,174 @@
 retailer,affiliate_network,quality,category,category_group,is_merchant_active,is_merchant_monetized,avg_cpa_in,avg_margin_eur,avg_revenue_eur,avg_gmv_eur,avg_cb_total_eur,total_transactions,months_with_data,margin_alert
-4Home,No Affiliate Network,D,Multi-Departments,Multi-Category,True,,6.0,-0.63,125.93,2098.69,126.56,3,1,True
+4Home,No Affiliate Network,D,Multi-Departments,Multi-Category,True,False,6.0,-0.63,125.93,2098.69,126.56,3,1,True
 Abra,Tradedoubler,A,Home & Garden,Multi-Category,True,True,4.2,5.64,234.15,5574.96,228.5,7,4,False
 Acer,AWIN,C,Electronics,Technology,True,True,8.5,2.02,4.91,57.75,2.89,1,1,False
 Aelia,Tradedoubler,B,Health & Beauty,Multi-Category,True,True,6.5,1.32,5.83,89.66,4.51,1,1,False
-AirHelp,Commission Junction,F,not_attributed,not_attributed,True,,20.0,-9.67,19.33,96.66,29.0,1,1,True
-ALAB Laboratoria,Tradedoubler,B,Health & Beauty,Multi-Category,True,,6.2,0.27,7.3,117.1,7.04,4,2,False
-AliExpress,AWIN,AAA,Multi-Departments,Multi-Category,True,,5.13,254.22,477.52,9418.45,223.29,11208,13,False
+AirHelp,Commission Junction,F,not_attributed,not_attributed,True,True,20.0,-9.67,19.33,96.66,29.0,1,1,True
+ALAB Laboratoria,Tradedoubler,B,Health & Beauty,Multi-Category,True,True,6.2,0.27,7.3,117.1,7.04,4,2,False
+AliExpress,AWIN,AAA,Multi-Departments,Multi-Category,True,True,5.13,254.22,477.52,9418.45,223.29,11208,13,False
 Alibaba,Admitad,F,not_attributed,not_attributed,True,True,7.9,-1.26,11.23,141.82,12.49,4,1,True
-Allegro,Admitad,AA,Multi-Departments,Multi-Category,True,,1.68,-934.87,491.4,30157.32,1426.27,20039,13,True
-Answear,AWIN,AAA,Fashion,Fashion,True,,3.4,46.76,137.59,3875.51,90.83,30,8,False
+Allegro,Admitad,AA,Multi-Departments,Multi-Category,True,True,1.68,-934.87,491.4,30157.32,1426.27,20039,13,True
+Answear,AWIN,AAA,Fashion,Fashion,True,True,3.4,46.76,137.59,3875.51,90.83,30,8,False
 AUTODOC,Tradedoubler,B,Automotive,Lifestyle,True,True,8.0,0.06,6.48,81.02,6.42,1,1,False
-Brasty,Commission Junction,B,Health & Beauty,Multi-Category,True,,1.5,0.5,82.93,4235.18,82.33,10,4,False
+Brasty,Commission Junction,B,Health & Beauty,Multi-Category,True,True,1.5,0.5,82.93,4235.18,82.33,10,4,False
 Banggood,Tradetracker,C,Electronics,Technology,True,True,6.0,0.25,0.76,12.58,0.5,1,1,False
 Baseus,Admitad,D,Electronics,Technology,True,True,4.0,2.51,14.92,372.85,12.4,2,1,False
 BasicLab,AWIN,B,Health & Beauty,Multi-Category,True,True,3.0,0.0,90.94,3031.39,90.94,9,4,False
 Bonprix,Tradedoubler,C,Fashion,Fashion,True,True,4.0,-0.37,0.75,18.86,1.12,1,1,True
 Born2Be,Tradedoubler,B,Fashion,Fashion,True,True,6.14,3.85,34.89,578.12,31.04,12,5,False
-Bricomarche,Tradedoubler,B,Food & Drink,Lifestyle,True,,6.12,3.21,27.85,514.3,24.64,14,6,False
+Bricomarche,Tradedoubler,B,Food & Drink,Lifestyle,True,True,6.12,3.21,27.85,514.3,24.64,14,6,False
 Broń.pl,No Affiliate Network,F,not_attributed,not_attributed,True,False,8.0,0.27,360.85,4510.6,360.58,16,3,False
 Byrokko,Commission Junction,D,Health & Beauty,Multi-Category,True,True,17.0,31.22,37.9,222.97,6.69,1,1,False
 CCC,AWIN,A+,Footwear,Fashion,True,True,6.21,3.35,16.38,263.38,13.03,33,7,False
 CDKeys,Admitad,B,Online Gaming,Technology,True,True,2.93,0.2,0.83,40.0,0.28,4,3,False
 Carrefour,Admitad,A,Multi-Departments,Multi-Category,True,True,3.0,0.03,2.79,91.98,2.76,8,5,False
 Castorama,Admitad,D,Home & Garden,Multi-Category,True,True,4.0,7.79,64.55,1613.81,56.76,21,7,False
-Ceneo,Tradedoubler,B,Multi-Departments,Multi-Category,True,,40.94,6.2,11.92,579.81,5.72,34,5,False
+Ceneo,Tradedoubler,B,Multi-Departments,Multi-Category,True,True,40.94,6.2,11.92,579.81,5.72,34,5,False
 Cocolita,Tradedoubler,B,Health & Beauty,Multi-Category,True,True,5.7,32.88,60.82,1146.99,27.94,9,4,False
-Colorland,Tradetracker,A,Gifts & Flowers,Lifestyle,True,,10.1,-1.68,2.82,28.55,2.86,4,3,True
+Colorland,Tradetracker,A,Gifts & Flowers,Lifestyle,True,True,10.1,-1.68,2.82,28.55,2.86,4,3,True
 Crocs,AWIN,C,Footwear,Fashion,True,True,4.0,0.0,34.64,865.98,34.64,2,1,False
-Cropp,Commission Junction,A,Fashion,Fashion,True,,6.4,1.94,7.23,112.32,4.48,13,4,False
-Cyfrowe.pl,Tradetracker,B,Electronics,Technology,True,,1.75,-5.63,63.15,3453.56,68.78,11,4,True
+Cropp,Commission Junction,A,Fashion,Fashion,True,True,6.4,1.94,7.23,112.32,4.48,13,4,False
+Cyfrowe.pl,Tradetracker,B,Electronics,Technology,True,True,1.75,-5.63,63.15,3453.56,68.78,11,4,True
 DHL,Tradedoubler,B,Utilities,Services,True,True,6.8,0.7,1.4,20.67,0.7,2,1,False
-Dstreet,AWIN,B,Fashion,Fashion,True,,9.0,0.0,144.98,1610.88,144.98,14,5,False
+Dstreet,AWIN,B,Fashion,Fashion,True,True,9.0,0.0,144.98,1610.88,144.98,14,5,False
 Decathlon,Webgains,A+,Sport Fashion,Fashion,True,True,2.3,-15.04,6.87,298.0,21.92,24,8,True
 DeLonghi,Tradedoubler,B,Appliance,Technology,True,True,6.0,1.58,37.7,628.27,36.12,5,2,False
-Dermacol,Commission Junction,F,not_attributed,not_attributed,True,,4.0,-4.91,6.98,174.54,11.9,4,4,True
-Diablo Chairs,Commission Junction,A+,Home & Garden,Multi-Category,True,,5.17,0.0,225.15,4639.75,225.15,7,3,False
+Dermacol,Commission Junction,F,not_attributed,not_attributed,True,True,4.0,-4.91,6.98,174.54,11.9,4,4,True
+Diablo Chairs,Commission Junction,A+,Home & Garden,Multi-Category,True,True,5.17,0.0,225.15,4639.75,225.15,7,3,False
 Douglas,AWIN,A,Health & Beauty,Multi-Category,True,True,6.92,-2.26,12.57,144.12,14.82,12,6,True
-Drogeria.pl,Tradedoubler,F,not_attributed,not_attributed,True,,5.0,10.94,59.05,1250.64,48.11,9,5,False
-Dyson,Tradedoubler,AA+,Electronics,Technology,True,,1.0,0.0,3.66,91.35,3.66,4,4,False
-eBilet,Tradedoubler,C,Entertainment,Lifestyle,True,,1.0,-0.0,0.95,94.55,0.95,4,3,False
+Drogeria.pl,Tradedoubler,F,not_attributed,not_attributed,True,True,5.0,10.94,59.05,1250.64,48.11,9,5,False
+Dyson,Tradedoubler,AA+,Electronics,Technology,True,True,1.0,0.0,3.66,91.35,3.66,4,4,False
+eBilet,Tradedoubler,C,Entertainment,Lifestyle,True,True,1.0,-0.0,0.95,94.55,0.95,4,3,False
 EMP,AWIN,D,Entertainment,Lifestyle,True,True,4.0,0.0,1.96,49.04,1.96,1,1,False
-ESET,Commission Junction,A,Electronics,Technology,True,,10.0,0.0,7.26,72.65,3.42,2,2,False
-Electrolux,Tradedoubler,A,Appliance,Technology,True,,4.24,36.99,412.27,9456.29,375.28,11,5,False
-Eltrox,Tradetracker,D,Electronics,Technology,True,,4.5,0.0,72.41,1609.04,72.41,4,4,False
+ESET,Commission Junction,A,Electronics,Technology,True,True,10.0,0.0,7.26,72.65,3.42,2,2,False
+Electrolux,Tradedoubler,A,Appliance,Technology,True,True,4.24,36.99,412.27,9456.29,375.28,11,5,False
+Eltrox,Tradetracker,D,Electronics,Technology,True,True,4.5,0.0,72.41,1609.04,72.41,4,4,False
 Empik,Tradedoubler,AAA,Multi-Departments,Multi-Category,True,True,2.35,-125.08,32.52,1932.91,157.59,218,10,True
-Endo,AWIN,D,Fashion,Fashion,True,,9.0,0.0,54.96,610.61,54.96,2,2,False
+Endo,AWIN,D,Fashion,Fashion,True,True,9.0,0.0,54.96,610.61,54.96,2,2,False
 Erli,Admitad,A,Multi-Departments,Multi-Category,True,True,3.2,0.38,251.86,7862.93,251.48,182,8,False
 Estro,Commission Junction,F,Fashion,Fashion,True,True,7.0,0.0,20.65,295.02,18.14,2,2,False
-Eurofirany,No Affiliate Network,C,Home & Garden,Multi-Category,True,,5.0,-0.32,101.26,2031.72,101.59,2,1,True
-Euroflorist,Tradedoubler,C,Unknown,Unknown,True,,12.0,0.03,3.01,25.06,2.98,1,1,False
+Eurofirany,No Affiliate Network,C,Home & Garden,Multi-Category,True,False,5.0,-0.32,101.26,2031.72,101.59,2,1,True
+Euroflorist,Tradedoubler,C,Unknown,Unknown,True,True,12.0,0.03,3.01,25.06,2.98,1,1,False
 Eveline,Tradedoubler,C,Health & Beauty,Multi-Category,True,True,7.0,-0.45,83.73,1196.21,84.18,13,6,True
 Eventim,AWIN,C,Unknown,Unknown,True,True,2.0,0.71,3.39,169.58,2.68,6,3,False
-Fera,AWIN,D,Pets,Lifestyle,True,,4.0,0.0,1.09,27.18,1.09,2,2,False
-Fielmann,AWIN,C,Health & Beauty,Multi-Category,True,,8.0,0.0,21.2,265.07,21.2,3,1,False
+Fera,AWIN,D,Pets,Lifestyle,True,True,4.0,0.0,1.09,27.18,1.09,2,2,False
+Fielmann,AWIN,C,Health & Beauty,Multi-Category,True,True,8.0,0.0,21.2,265.07,21.2,3,1,False
 Flexispot,Webgains,F,not_attributed,not_attributed,True,True,5.0,3.52,17.58,351.66,14.07,1,1,False
 Flixbus,AWIN,A,Transports & Car rental,Travel,True,True,3.8,0.09,1.22,34.9,1.13,28,7,False
-Footshop,Commission Junction,D,Footwear,Fashion,True,,4.0,72.89,96.92,2403.37,24.03,3,1,False
-FotoForma,Tradedoubler,B,Utilities,Services,True,,2.5,1.67,268.03,10721.34,266.36,3,1,False
-G2A,AWIN,A,Online Gaming,Technology,True,,4.1,-0.61,2.64,64.97,3.25,15,4,True
-GOG,Commission Junction,B,Online Gaming,Technology,True,,6.0,0.01,1.06,17.68,0.79,7,3,False
+Footshop,Commission Junction,D,Footwear,Fashion,True,True,4.0,72.89,96.92,2403.37,24.03,3,1,False
+FotoForma,Tradedoubler,B,Utilities,Services,True,True,2.5,1.67,268.03,10721.34,266.36,3,1,False
+G2A,AWIN,A,Online Gaming,Technology,True,True,4.1,-0.61,2.64,64.97,3.25,15,4,True
+GOG,Commission Junction,B,Online Gaming,Technology,True,True,6.0,0.01,1.06,17.68,0.79,7,3,False
 Gabriella,No Affiliate Network,D,Fashion,Fashion,True,False,4.5,0.0,0.98,21.82,0.98,1,1,False
-Gameseal,Commission Junction,F,not_attributed,not_attributed,True,,6.0,-247.09,22.26,370.95,269.35,47,5,True
-Gamivo,Commission Junction,D,Electronics,Technology,True,,10.0,-518.84,80.76,807.59,597.84,37,2,True
-Geekbuying.pl,Admitad,A,Electronics,Technology,True,,5.0,0.0,42.28,844.38,0.0,1,1,False
+Gameseal,Commission Junction,F,not_attributed,not_attributed,True,True,6.0,-247.09,22.26,370.95,269.35,47,5,True
+Gamivo,Commission Junction,D,Electronics,Technology,True,True,10.0,-518.84,80.76,807.59,597.84,37,2,True
+Geekbuying.pl,Admitad,A,Electronics,Technology,True,True,5.0,0.0,42.28,844.38,0.0,1,1,False
 GetYourGuide,Tradedoubler,B,Travel agencies,Travel,True,True,5.0,-1.73,12.86,257.05,14.59,8,3,True
-Giacomo Conti,Tradetracker,B,Fashion,Fashion,True,,5.0,51.07,206.13,4122.56,155.06,6,3,False
-Gomez,Tradedoubler,A+,Fashion,Fashion,True,,6.7,2.82,74.89,1124.5,72.07,2,1,False
+Giacomo Conti,Tradetracker,B,Fashion,Fashion,True,True,5.0,51.07,206.13,4122.56,155.06,6,3,False
+Gomez,Tradedoubler,A+,Fashion,Fashion,True,True,6.7,2.82,74.89,1124.5,72.07,2,1,False
 Greenpoint,Webgains,B,Fashion,Fashion,True,True,8.0,10.62,22.95,286.94,12.33,9,6,False
 Groupon,AWIN,A+,Multi-Departments,Multi-Category,True,True,5.92,-0.13,18.07,301.84,18.2,15,4,True
 Hebe,Tradedoubler,A,Health & Beauty,Multi-Category,True,True,6.24,-8.19,13.53,215.23,21.73,82,9,True
 Homla,Tradedoubler,A,Home & Garden,Multi-Category,True,True,4.8,0.01,4.39,91.5,4.38,10,6,False
-Huawei,Tradedoubler,B,Electronics,Technology,True,,3.8,0.58,6.37,165.83,5.79,1,1,False
-Intymna,Tradedoubler,C,Fashion,Fashion,True,,6.2,0.42,1.45,23.46,1.03,1,1,False
+Huawei,Tradedoubler,B,Electronics,Technology,True,True,3.8,0.58,6.37,165.83,5.79,1,1,False
+Intymna,Tradedoubler,C,Fashion,Fashion,True,False,6.2,0.42,1.45,23.46,1.03,1,1,False
 JD Sports,AWIN,C,Footwear,Fashion,True,True,6.75,-0.48,4.72,90.04,5.2,4,4,True
-Joom,Admitad,C,Multi-Departments,Multi-Category,True,,9.8,0.06,3.38,34.62,3.32,6,2,False
-KFC,Commission Junction,A,Food & Drink,Lifestyle,True,,5.5,-0.12,2.49,45.05,2.61,13,5,True
-Katalog Marzeń,Admitad,F,Gifts & Flowers,Lifestyle,True,,2.8,0.0,1.11,39.61,0.72,2,2,False
-Kazar,No Affiliate Network,AA,Fashion,Fashion,True,,6.5,0.0,400.66,6164.0,400.66,3,1,False
-Kinguin,Admitad,A,Online Gaming,Technology,True,,2.29,-4.86,2.43,104.34,7.29,46,8,True
-Komputronik,Admitad,B,Electronics,Technology,True,,1.5,0.8,43.37,2869.27,37.81,5,3,False
-Konesso,No Affiliate Network,A+,Food & Drink,Lifestyle,True,,3.2,-6.1,27.8,915.62,33.9,8,4,True
-Krakvet,Tradedoubler,B,Pets,Lifestyle,True,,4.0,-7.46,9.86,246.6,17.32,5,2,True
-Król Materacy,No Affiliate Network,F,not_attributed,not_attributed,True,,8.0,0.0,61.87,773.4,61.87,2,1,False
+Joom,Admitad,C,Multi-Departments,Multi-Category,True,True,9.8,0.06,3.38,34.62,3.32,6,2,False
+KFC,Commission Junction,A,Food & Drink,Lifestyle,True,True,5.5,-0.12,2.49,45.05,2.61,13,5,True
+Katalog Marzeń,Admitad,F,Gifts & Flowers,Lifestyle,True,True,2.8,0.0,1.11,39.61,0.72,2,2,False
+Kazar,No Affiliate Network,AA,Fashion,Fashion,True,False,6.5,0.0,400.66,6164.0,400.66,3,1,False
+Kinguin,Admitad,A,Online Gaming,Technology,True,True,2.29,-4.86,2.43,104.34,7.29,46,8,True
+Komputronik,Admitad,B,Electronics,Technology,True,True,1.5,0.8,43.37,2869.27,37.81,5,3,False
+Konesso,No Affiliate Network,A+,Food & Drink,Lifestyle,True,False,3.2,-6.1,27.8,915.62,33.9,8,4,True
+Krakvet,Tradedoubler,B,Pets,Lifestyle,True,True,4.0,-7.46,9.86,246.6,17.32,5,2,True
+Król Materacy,No Affiliate Network,F,not_attributed,not_attributed,True,False,8.0,0.0,61.87,773.4,61.87,2,1,False
 LEGO,Rakuten,A+,Entertainment,Lifestyle,True,True,4.0,3.8,7.02,122.69,3.18,6,4,False
 LG,AWIN,B,Appliance,Technology,True,True,2.0,-3.01,12.02,601.06,15.03,3,3,True
 LOT,Commission Junction,B,Airlines,Travel,True,True,1.5,0.38,39.06,2603.71,38.68,15,3,False
-Lampy.pl,AWIN,B,Home & Garden,Multi-Category,True,,7.5,-0.75,71.59,904.2,72.33,4,3,True
-Legimi,AWIN,A,Entertainment,Lifestyle,True,,1758.12,0.0,315.25,5.94,315.25,557,5,False
-Leo Express,Commission Junction,F,not_attributed,not_attributed,True,,14.0,0.0,5.79,41.33,5.79,1,1,False
-Leroy Merlin,Commission Junction,B,Home & Garden,Multi-Category,True,,3.9,-1.33,68.36,1875.86,69.69,98,11,True
+Lampy.pl,AWIN,B,Home & Garden,Multi-Category,True,True,7.5,-0.75,71.59,904.2,72.33,4,3,True
+Legimi,AWIN,A,Entertainment,Lifestyle,True,True,1758.12,0.0,315.25,5.94,315.25,557,5,False
+Leo Express,Commission Junction,F,not_attributed,not_attributed,True,True,14.0,0.0,5.79,41.33,5.79,1,1,False
+Leroy Merlin,Commission Junction,B,Home & Garden,Multi-Category,True,True,3.9,-1.33,68.36,1875.86,69.69,98,11,True
 Lidl,Tradedoubler,D,Food & Drink,Lifestyle,True,True,1.32,-61.34,7.45,712.04,68.78,24,6,True
-Lookfantastic,AWIN,C,Health & Beauty,Multi-Category,True,,4.8,-0.44,2.2,45.38,2.64,2,1,True
+Lookfantastic,AWIN,C,Health & Beauty,Multi-Category,True,True,4.8,-0.44,2.2,45.38,2.64,2,1,True
 Mamyito,Tradedoubler,F,not_attributed,not_attributed,True,True,4.8,0.0,4.36,90.83,4.36,6,3,False
 Mango Outlet,Rakuten,B,Fashion,Fashion,True,True,15.0,-12.03,64.73,431.51,76.76,4,1,True
 Marilyn,Webgains,D,Fashion,Fashion,True,True,6.0,0.0,39.72,661.97,39.72,2,2,False
-Max Elektro,Tradedoubler,B,Appliance,Technology,True,,4.0,22.62,94.36,2358.83,71.74,6,5,False
+Max Elektro,Tradedoubler,B,Appliance,Technology,True,True,4.0,22.62,94.36,2358.83,71.74,6,5,False
 Maxi Zoo,AWIN,D,Pets,Lifestyle,True,True,3.18,-24.8,528.9,17136.32,553.69,816,6,True
-MebleMWM,Tradedoubler,D,Home & Garden,Multi-Category,True,,6.4,621.0,1160.63,18134.91,539.64,47,7,False
-MediaMarkt,Tradedoubler,AAA,Electronics,Technology,True,,2.36,-40.82,54.8,2392.37,95.63,65,9,True
-Medicine,AWIN,D,Fashion,Fashion,True,,6.0,2.32,5.69,94.87,3.37,10,4,False
-Merkury Market,Tradetracker,A+,Home & Garden,Multi-Category,True,,3.5,1.47,166.28,4750.86,128.86,16,4,False
+MebleMWM,Tradedoubler,D,Home & Garden,Multi-Category,True,True,6.4,621.0,1160.63,18134.91,539.64,47,7,False
+MediaMarkt,Tradedoubler,AAA,Electronics,Technology,True,True,2.36,-40.82,54.8,2392.37,95.63,65,9,True
+Medicine,AWIN,D,Fashion,Fashion,True,True,6.0,2.32,5.69,94.87,3.37,10,4,False
+Merkury Market,Tradetracker,A+,Home & Garden,Multi-Category,True,True,3.5,1.47,166.28,4750.86,128.86,16,4,False
 Modivo,Tradedoubler,AA+,Fashion,Fashion,True,True,4.8,-1.38,13.62,307.3,15.0,29,8,True
 Mountain Warehouse,AWIN,B,Fashion,Fashion,True,True,6.0,0.0,8.67,144.46,8.67,1,1,False
 NEONAIL,AWIN,C,Health & Beauty,Multi-Category,True,True,7.0,0.0,1.34,19.15,1.34,1,1,False
 New Balance,AWIN,A+,Sport Fashion,Fashion,True,True,5.38,-4.28,8.9,191.22,10.04,10,5,True
 Nike,No Affiliate Network,A+,Sport Fashion,Fashion,True,False,3.0,-8.71,8.09,269.7,16.8,15,4,True
-Ninja,AWIN,F,Home & Garden,Multi-Category,True,,7.62,277.19,333.01,4205.38,55.82,12,6,False
+Ninja,AWIN,F,Home & Garden,Multi-Category,True,True,7.62,277.19,333.01,4205.38,55.82,12,6,False
 NordVPN,AWIN,B,Connectivity - Telco,Services,True,True,40.0,0.0,24.54,61.36,24.54,2,2,False
 Notino,Commission Junction,AAA,Health & Beauty,Multi-Category,True,True,4.54,-10.45,323.08,6648.52,333.53,94,7,True
 Novakid,Commission Junction,C,Baby & Child,Multi-Category,True,True,0.0,0.0,0.0,0.0,0.0,2,1,False
-OBI,Commission Junction,A,Home & Garden,Multi-Category,True,,5.0,19.77,63.67,1273.32,43.89,22,4,False
-OleOle!,Tradedoubler,A+,Electronics,Technology,True,,2.12,117.58,290.73,13586.22,173.16,24,6,False
-Olimp Store,Admitad,D,Health & Beauty,Multi-Category,True,,4.2,0.0,1.51,36.03,0.0,1,1,False
+OBI,Commission Junction,A,Home & Garden,Multi-Category,True,True,5.0,19.77,63.67,1273.32,43.89,22,4,False
+OleOle!,Tradedoubler,A+,Electronics,Technology,True,True,2.12,117.58,290.73,13586.22,173.16,24,6,False
+Olimp Store,Admitad,D,Health & Beauty,Multi-Category,True,True,4.2,0.0,1.51,36.03,0.0,1,1,False
 Orange,Tradedoubler,A+,Connectivity - Telco,Services,True,True,26213.55,1.47,181.68,0.71,180.21,13,4,False
 Orange Store,Tradedoubler,B,not_attributed,not_attributed,False,True,2.1,4.58,84.37,3998.12,79.79,4,1,False
-PRM,Commission Junction,B,Fashion,Fashion,True,,10.0,8.96,31.91,319.06,22.95,6,3,False
+PRM,Commission Junction,B,Fashion,Fashion,True,True,10.0,8.96,31.91,319.06,22.95,6,3,False
 Pan Materac,Tradedoubler,AA,Home & Garden,Multi-Category,True,True,8.0,-1.17,412.35,5154.34,413.52,13,6,True
 Peek & Cloppenburg,AWIN,B,Fashion,Fashion,True,True,3.0,0.71,4.25,141.74,3.54,1,1,False
 Perfumy.pl,AWIN,B,Health & Beauty,Multi-Category,True,True,2.85,3.27,27.33,481.12,24.06,2,2,False
 Petkarma,Commission Junction,F,Pets,Lifestyle,True,True,5.0,0.0,36.74,734.77,36.74,2,2,False
-Philips,Tradedoubler,D,Appliance,Technology,True,,3.5,12.69,14.42,412.04,1.73,4,1,False
+Philips,Tradedoubler,D,Appliance,Technology,True,True,3.5,12.69,14.42,412.04,1.73,4,1,False
 Play,Tradedoubler,C,Connectivity - Telco,Services,True,True,234.4,-0.61,116.64,49.76,117.25,2,1,True
-Przyjaciele Kawy,Tradedoubler,B,Food & Drink,Lifestyle,True,,5.0,1088.78,1551.56,32426.35,462.78,34,5,False
-Puma,Commission Junction,B,Sport Fashion,Fashion,True,,6.0,0.0,155.05,2584.07,155.05,2,2,False
-Pyszne.pl,AWIN,AA,Food & Drink,Lifestyle,True,,3.3,-47.98,10.07,311.27,58.05,142,9,True
-RTV Euro AGD,Tradedoubler,AAA,Electronics,Technology,True,,2.52,-89.55,138.08,6538.55,227.63,126,8,True
+Przyjaciele Kawy,Tradedoubler,B,Food & Drink,Lifestyle,True,True,5.0,1088.78,1551.56,32426.35,462.78,34,5,False
+Puma,Commission Junction,B,Sport Fashion,Fashion,True,True,6.0,0.0,155.05,2584.07,155.05,2,2,False
+Pyszne.pl,AWIN,AA,Food & Drink,Lifestyle,True,True,3.3,-47.98,10.07,311.27,58.05,142,9,True
+RTV Euro AGD,Tradedoubler,AAA,Electronics,Technology,True,True,2.52,-89.55,138.08,6538.55,227.63,126,8,True
 Radisson Hotels,Tradedoubler,F,Hotel & Accommodations,Travel,True,True,8.0,-0.08,61.18,764.79,61.26,2,1,True
 Regatta,Webgains,C,Sport Fashion,Fashion,True,True,7.45,-2.17,261.77,2659.02,263.95,13,2,True
 Remix,Webgains,D,Fashion,Fashion,True,True,4.5,0.0,4.61,102.42,4.61,1,1,False
 Renee,Tradedoubler,B,Fashion,Fashion,True,True,6.0,-0.07,17.56,292.64,17.63,8,4,True
-Samsung,AWIN,A+,Appliance,Technology,True,,4.5,5.06,49.92,1256.95,44.86,4,4,False
+Samsung,AWIN,A+,Appliance,Technology,True,True,4.5,5.06,49.92,1256.95,44.86,4,4,False
 Senpo.pl,No Affiliate Network,F,Home & Garden,Multi-Category,True,False,9.6,-34.34,758.17,7916.93,792.51,14,3,True
-Sephora,AWIN,A,Fashion,Fashion,True,,3.35,-2.5,4.28,126.45,6.78,18,8,True
+Sephora,AWIN,A,Fashion,Fashion,True,True,3.35,-2.5,4.28,126.45,6.78,18,8,True
 Sferis,Tradedoubler,AA+,Electronics,Technology,True,True,2.05,0.26,36.55,1763.04,36.29,6,4,False
-Shark,AWIN,F,Home & Garden,Multi-Category,True,,7.5,263.09,395.26,6362.56,132.18,4,2,False
+Shark,AWIN,F,Home & Garden,Multi-Category,True,True,7.5,263.09,395.26,6362.56,132.18,4,2,False
 SHEIN,Commission Junction,A,Fashion,Fashion,True,True,3.69,-10.34,27.09,609.4,37.43,168,9,True
 Sinsay,No Affiliate Network,AA+,Fashion,Fashion,True,False,8.0,0.67,3.27,40.89,2.6,1,1,False
 SkyShowtime,AWIN,F,not_attributed,not_attributed,True,True,108.4,-100.03,108.94,61.4,208.97,26,3,True
 SportStyleStory,Tradedoubler,C,Sport Fashion,Fashion,True,True,6.0,2.29,256.72,4278.7,254.43,13,5,False
-Streetstyle24,AWIN,C,Bags & Accessories,Fashion,True,,6.9,67.64,344.27,4974.98,276.62,12,4,False
-Stylevana,Admitad,F,not_attributed,not_attributed,True,,7.2,7.98,11.88,165.58,3.9,2,1,False
-Sun & Snow,Webgains,B,Tourism & Attraction,Travel,True,,7.0,4.87,13.64,194.79,8.76,1,1,False
+Streetstyle24,AWIN,C,Bags & Accessories,Fashion,True,True,6.9,67.64,344.27,4974.98,276.62,12,4,False
+Stylevana,Admitad,F,not_attributed,not_attributed,True,True,7.2,7.98,11.88,165.58,3.9,2,1,False
+Sun & Snow,Webgains,B,Tourism & Attraction,Travel,True,True,7.0,4.87,13.64,194.79,8.76,1,1,False
 Tagomago,Admitad,B,Health & Beauty,Multi-Category,True,True,4.6,-0.17,1.81,36.34,1.98,2,2,True
-Temu,Impact Radius,AAA,Multi-Departments,Multi-Category,True,,12.43,106.41,981.08,6412.9,874.68,3154,10,False
+Temu,Impact Radius,AAA,Multi-Departments,Multi-Category,True,True,12.43,106.41,981.08,6412.9,874.68,3154,10,False
 Tescoma,Commission Junction,F,Home & Garden,Multi-Category,True,False,7.0,33.66,67.32,961.78,33.66,1,1,False
-Teufel,Rakuten,B,Electronics,Technology,True,,4.0,0.0,47.54,1188.58,47.54,2,2,False
-Top Secret,No Affiliate Network,C,Fashion,Fashion,True,,7.0,0.0,24.78,354.08,24.78,2,2,False
+Teufel,Rakuten,B,Electronics,Technology,True,True,4.0,0.0,47.54,1188.58,47.54,2,2,False
+Top Secret,No Affiliate Network,C,Fashion,Fashion,True,False,7.0,0.0,24.78,354.08,24.78,2,2,False
 Trip.com,Admitad,F,not_attributed,not_attributed,True,True,3.53,19.83,80.23,2379.04,15.43,12,3,False
 Ucando,Tradetracker,D,Automotive,Lifestyle,True,True,4.0,0.0,6.09,152.21,6.09,1,1,False
-Udemy,Impact Radius,C,Business / Office,Technology,True,,19.93,0.0,2.45,11.64,2.45,6,3,False
+Udemy,Impact Radius,C,Business / Office,Technology,True,True,19.93,0.0,2.45,11.64,2.45,6,3,False
 Van Graaf,Tradedoubler,D,Fashion,Fashion,True,True,9.6,47.84,130.25,1415.47,82.41,5,5,False
 Victoria's Secret,Webgains,B,Fashion,Fashion,True,True,4.0,0.05,0.4,9.93,0.35,1,1,False
-VidaXL,Tradetracker,B,Health & Beauty,Multi-Category,True,,2.9,0.0,2.29,78.95,2.29,1,1,False
+VidaXL,Tradetracker,B,Health & Beauty,Multi-Category,True,True,2.9,0.0,2.29,78.95,2.29,1,1,False
 Vision Express,Tradetracker,B,Bags & Accessories,Fashion,True,True,4.8,-0.61,1.64,38.31,2.25,5,5,True
 Vobis,Tradedoubler,A,Electronics,Technology,True,True,4.2,29.47,97.62,2418.91,68.15,6,5,False
 Volcano,No Affiliate Network,C,Fashion,Fashion,True,False,7.0,-0.57,233.63,3337.6,234.2,1,1,True
-Wolt,No Affiliate Network,A,Food & Drink,Lifestyle,True,,14.1,-0.3,2.18,17.76,2.48,4,4,True
+Wolt,No Affiliate Network,A,Food & Drink,Lifestyle,True,False,14.1,-0.3,2.18,17.76,2.48,4,4,True
 Your KAYA,Tradetracker,D,Health & Beauty,Multi-Category,True,True,7.0,0.0,4.46,63.66,4.46,1,1,False
 Yves Rocher,Commission Junction,C,Health & Beauty,Multi-Category,True,True,5.0,0.0,2.5,50.14,2.5,2,2,False
 Lounge by Zalando,AWIN,AAA,Fashion,Fashion,True,True,4.53,9.74,63.39,1451.67,53.65,200,10,False
 Zwieger,Tradedoubler,C,Home & Garden,Multi-Category,True,True,4.0,3.52,14.07,351.77,10.55,1,1,False
 Adidas,AWIN,A+,Sport Fashion,Fashion,True,True,4.16,9.18,15.01,451.34,5.83,76,10,False
 e-torty,Tradedoubler,F,not_attributed,not_attributed,True,True,15.0,2.3,9.08,60.56,3.68,4,2,False
-eSky,Admitad,D,Travel agencies,Travel,True,,3.5,0.0,30.06,858.95,30.06,4,4,False
+eSky,Admitad,D,Travel agencies,Travel,True,True,3.5,0.0,30.06,858.95,30.06,4,4,False
 eobuwie,Tradedoubler,AAA,Footwear,Fashion,True,True,3.52,2.91,22.63,573.28,19.73,64,9,False
 home&you,Tradedoubler,A,Home & Garden,Multi-Category,True,True,5.62,1.93,24.75,394.2,22.26,29,6,False
-iBOOD,Webgains,B,Multi-Departments,Multi-Category,True,,2.33,3.18,4.31,140.35,0.59,5,3,False
+iBOOD,Webgains,B,Multi-Departments,Multi-Category,True,True,2.33,3.18,4.31,140.35,0.59,5,3,False
 iDream,Tradetracker,A+,Electronics,Technology,True,True,2.1,-0.41,30.2,1753.0,17.51,6,3,True
-iHerb,Admitad,D,Health & Beauty,Multi-Category,True,,5.78,-5.46,9.62,145.45,15.08,13,6,True
+iHerb,Admitad,D,Health & Beauty,Multi-Category,True,True,5.78,-5.46,9.62,145.45,15.08,13,6,True
 iParts,Tradetracker,D,Automotive,Lifestyle,True,True,3.5,0.0,5.69,162.49,5.69,2,2,False
 lionelo,No Affiliate Network,D,not_attributed,not_attributed,True,False,6.0,224.27,842.91,14048.29,618.64,32,3,False
-zooplus,Tradedoubler,A+,Pets,Lifestyle,True,,1.96,-127.81,313.92,12744.33,441.73,539,11,True
-Świat supli,AWIN,C,Food & Drink,Lifestyle,True,,5.0,0.0,34.02,680.47,34.02,8,4,False
+zooplus,Tradedoubler,A+,Pets,Lifestyle,True,True,1.96,-127.81,313.92,12744.33,441.73,539,11,True
+Świat supli,AWIN,C,Food & Drink,Lifestyle,True,True,5.0,0.0,34.02,680.47,34.02,8,4,False
