@@ -35,10 +35,10 @@ date,retailer,igraal_slug,picodi_rate,picodi_rate_type,picodi_url
 2026-05-11,Bezpieczna Rodzina,bezpiecznarodzina,,not_found,
 2026-05-11,Bibliotheque De Parfum,bibliotheque-de-parfum,3.6,%,https://www.picodi.com/pl/bibliotheque-de-parfum/offers
 2026-05-11,BIG STAR,bigstar,1.8,%,https://www.picodi.com/pl/big-star/offers
-2026-05-11,Bimba Y Lola,bimbaylola,,not_found,
-2026-05-11,Bonprix,bonprix,,not_found,
-2026-05-11,Born2Be,born2be,,not_found,
-2026-05-11,Brasty,brasty,,not_found,
+2026-05-11,Bimba Y Lola,bimbaylola,2.4,%,https://www.picodi.com/pl/bimba-y-lola/offers
+2026-05-11,Bonprix,bonprix,1.2,%,https://www.picodi.com/pl/bonprix/offers
+2026-05-11,Born2Be,born2be,1.8,%,https://www.picodi.com/pl/born2be/offers
+2026-05-11,Brasty,brasty,1.8,up_to_%,https://www.picodi.com/pl/brasty/offers
 2026-05-11,Bricoman,bricoman,,not_found,
 2026-05-11,Bricomarche,bricomarche,,not_found,
 2026-05-11,Broń.pl,bron.pl,,not_found,
@@ -100,6 +100,7 @@ date,retailer,igraal_slug,picodi_rate,picodi_rate_type,picodi_url
 2026-05-11,Gomez,gomez,,not_found,
 2026-05-11,Greenpoint,greenpoint,,not_found,
 2026-05-11,Groupon,groupon,,not_found,
+2026-05-11,H&M,hm,,not_found,
 2026-05-11,Herbapol,herbapol,,not_found,
 2026-05-11,Homla,homla,,not_found,
 2026-05-11,HP,hp,,not_found,
@@ -242,7 +243,6 @@ date,retailer,igraal_slug,picodi_rate,picodi_rate_type,picodi_url
 2026-05-11,Airbnb,airbnb,,not_found,
 2026-05-11,Carinii,carinii,,not_found,
 2026-05-11,Duka,duka,,not_found,
-2026-05-11,H&M,hm,,not_found,
 2026-05-11,Kaufland,kaufland,,not_found,
 2026-05-11,Kolba,kolba,,not_found,
 2026-05-11,KROSS,kross,,not_found,

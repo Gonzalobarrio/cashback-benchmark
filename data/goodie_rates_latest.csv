@@ -100,6 +100,7 @@ date,retailer,igraal_slug,goodie_rate,goodie_rate_type,goodie_url
 2026-05-11,Gomez,gomez,3.33,up_to_%,https://goodie.pl/marka/gomez-pl
 2026-05-11,Greenpoint,greenpoint,4.0,%,https://goodie.pl/marka/greenpoint
 2026-05-11,Groupon,groupon,3.0,up_to_%,https://goodie.pl/marka/groupon-pl
+2026-05-11,H&M,hm,,no cashback,https://goodie.pl/marka/hm
 2026-05-11,Herbapol,herbapol,,no cashback,https://goodie.pl/marka/herbapol
 2026-05-11,Homla,homla,2.0,%,https://goodie.pl/marka/homla
 2026-05-11,HP,hp,3.5,up_to_%,https://goodie.pl/marka/hp
@@ -242,7 +243,6 @@ date,retailer,igraal_slug,goodie_rate,goodie_rate_type,goodie_url
 2026-05-11,Airbnb,airbnb,,not_found,
 2026-05-11,Carinii,carinii,,no cashback,https://goodie.pl/marka/carinii
 2026-05-11,Duka,duka,,no cashback,https://goodie.pl/marka/duka
-2026-05-11,H&M,hm,,no cashback,https://goodie.pl/marka/hm
 2026-05-11,Kaufland,kaufland,,no cashback,https://goodie.pl/marka/kaufland
 2026-05-11,Kolba,kolba,,no cashback,https://goodie.pl/marka/kolba-pl
 2026-05-11,KROSS,kross,,no cashback,https://goodie.pl/marka/kross

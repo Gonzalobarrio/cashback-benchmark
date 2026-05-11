@@ -74,7 +74,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-05-11,Empik Foto,empikfoto,10.0,%
 2026-05-11,Endo,endo,9.0,%
 2026-05-11,eobuwie,eobuwie,6.0,%
-2026-05-11,Erli,erli,,no cashback
+2026-05-11,Erli,erli,4.0,%
 2026-05-11,ESET,eset,10.0,%
 2026-05-11,eSky,esky,3.5,%
 2026-05-11,Estro,estro,7.0,%
@@ -100,6 +100,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-05-11,Gomez,gomez,6.5,%
 2026-05-11,Greenpoint,greenpoint,4.0,%
 2026-05-11,Groupon,groupon,4.0,%
+2026-05-11,H&M,hm,8.0,%
 2026-05-11,Herbapol,herbapol,,no cashback
 2026-05-11,Homla,homla,4.8,%
 2026-05-11,HP,hp,7.0,%
@@ -242,7 +243,6 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-05-11,Airbnb,airbnb,,no cashback
 2026-05-11,Carinii,carinii,,no cashback
 2026-05-11,Duka,duka,,no cashback
-2026-05-11,H&M,hm,8.0,%
 2026-05-11,Kaufland,kaufland,1.0,%
 2026-05-11,Kolba,kolba,,no cashback
 2026-05-11,KROSS,kross,4.0,%

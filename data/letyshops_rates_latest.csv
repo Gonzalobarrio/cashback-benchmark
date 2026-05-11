@@ -100,6 +100,7 @@ date,retailer,igraal_slug,letyshops_rate,letyshops_rate_type,letyshops_boosted,l
 2026-05-11,Gomez,gomez,3.3,%,False,https://letyshops.com/pl/shops/gomez-pl
 2026-05-11,Greenpoint,greenpoint,2.0,%,False,https://letyshops.com/pl/shops/greenpoint-pl
 2026-05-11,Groupon,groupon,3.5,%,False,https://letyshops.com/pl/shops/groupon-pl
+2026-05-11,H&M,hm,1.5,%,False,https://letyshops.com/pl-en/shops/h-m-pl
 2026-05-11,Herbapol,herbapol,,not_found,False,
 2026-05-11,Homla,homla,,no cashback,False,
 2026-05-11,HP,hp,3.5,%,False,https://letyshops.com/pl/shops/hp-pl
@@ -242,7 +243,6 @@ date,retailer,igraal_slug,letyshops_rate,letyshops_rate_type,letyshops_boosted,l
 2026-05-11,Airbnb,airbnb,,not_found,False,
 2026-05-11,Carinii,carinii,,no cashback,False,
 2026-05-11,Duka,duka,,no cashback,False,
-2026-05-11,H&M,hm,1.5,%,False,https://letyshops.com/pl-en/shops/h-m-pl
 2026-05-11,Kaufland,kaufland,,not_found,False,
 2026-05-11,Kolba,kolba,,no cashback,False,
 2026-05-11,KROSS,kross,,not_found,False,
