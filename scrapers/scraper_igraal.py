@@ -14,11 +14,7 @@ BASE_URL       = "https://igraal.pl"
 LISTING_URL    = "https://igraal.pl/wszystkie-sklepy"
 NOISE_KEYWORDS = ["OFERTA DNIA", "oferta dnia"]
 
-# ─── SUPPLEMENTAL: retailers no encontrados por el scraper dinámico ───────────
-# Causa probable: carga JS / lazy load en el listing page
-# Fuente: Preset export pl_igraalpl_ap_global_rlp_full (v15), todos PUBLISHED
 SUPPLEMENTAL_SLUGS = {
-    # Grupo A — tienen afiliado, deberían tener cashback rate
     "24mx":                  "24mx",
     "Footdistrict":          "footdistrict",
     "Agoda":                 "agoda",
@@ -33,7 +29,6 @@ SUPPLEMENTAL_SLUGS = {
     "Vasco Electronics":     "vascoelectronics",
     "Your KAYA":             "yourkaya",
     "Zwieger":               "zwieger",
-    # Grupo B — sin afiliado, esperamos "no cashback" pero deben estar en CSV
     "Airbnb":                "airbnb",
     "Carinii":               "carinii",
     "Duka":                  "duka",
@@ -76,7 +71,6 @@ def get_all_retailers():
                 "url" : full_url
             })
 
-    # ── Merge supplemental (sólo los que no encontró el scraper dinámico) ──
     supplemental_added = 0
     for name, slug in SUPPLEMENTAL_SLUGS.items():
         if slug not in seen:
@@ -89,32 +83,49 @@ def get_all_retailers():
             supplemental_added += 1
 
     if supplemental_added:
-        print(f"  ➕ Supplemental: {supplemental_added} retailers añadidos al listado dinámico")
+        print(f"  ➕ Supplemental: {supplemental_added} retailers añadidos")
 
     return retailers
 
 
 def get_cashback_rate(url):
+    """
+    v2 — usa <title> tag como fuente primaria.
+    Captura boosts/MEGA WZROST y base_rate (zamiast X%).
+    """
     try:
-        r    = requests.get(url, headers=HEADERS, timeout=15)
+        r = requests.get(url, headers=HEADERS, timeout=15)
         if r.status_code != 200:
             return "no cashback", None
 
         soup = BeautifulSoup(r.text, "html.parser")
         text = soup.get_text(separator=" ")
 
-        # ── Prioridad 0: rate en el TÍTULO de la página ────────
-        title_text = text[:200]
-        title_match = re.search(
+        # ── Prioridad 0: <title> tag ────────────────────────────
+        title_tag  = soup.find("title")
+        title_text = title_tag.get_text(strip=True) if title_tag else ""
+
+        # "+ X% cashbacku" en título (boost/MEGA WZROST)
+        title_boost = re.search(
             r"\+\s*(\d+(?:[.,]\d+)?)\s*%\s*cashback\w*",
             title_text, re.IGNORECASE
         )
-        if title_match:
-            val = float(title_match.group(1).replace(",", "."))
+        if title_boost:
+            val = float(title_boost.group(1).replace(",", "."))
             if 0 < val <= 100:
                 return str(val), "%"
 
-        # ── Prioridad 1: X% cashback* en texto completo ────────
+        # "X% cashbacku" en título sin +
+        title_pct = re.search(
+            r"(\d+(?:[.,]\d+)?)\s*%\s*cashback\w*",
+            title_text, re.IGNORECASE
+        )
+        if title_pct:
+            val = float(title_pct.group(1).replace(",", "."))
+            if 0 < val <= 100:
+                return str(val), "%"
+
+        # ── Prioridad 1: X% cashback* en texto completo ─────────
         pct_values = []
         for m in re.finditer(
             r"(\d+(?:[.,]\d+)?)\s*%\s*cashback\w*",
@@ -131,9 +142,9 @@ def get_cashback_rate(url):
             try:
                 return str(mode(pct_values)), "%"
             except StatisticsError:
-                return str(pct_values[0]), "%"
+                return str(max(pct_values)), "%"  # más alto si empate
 
-        # ── Prioridad 2: X zł cashback* ────────────────────────
+        # ── Prioridad 2: X zł cashback* ─────────────────────────
         for m in re.finditer(
             r"(\d+(?:[.,]\d+)?)\s*(?:PLN|zł|zl)\s*cashback\w*",
             text, re.IGNORECASE
@@ -142,7 +153,7 @@ def get_cashback_rate(url):
             if val > 0:
                 return str(val), "zł"
 
-        # ── Prioridad 3: cashback* X zł ────────────────────────
+        # ── Prioridad 3: cashback* X zł ─────────────────────────
         for m in re.finditer(
             r"cashback\w*\s+(?:do\s+)?(\d+(?:[.,]\d+)?)\s*(?:PLN|zł|zl)",
             text, re.IGNORECASE
@@ -155,7 +166,7 @@ def get_cashback_rate(url):
             if val > 0:
                 return str(val), "zł"
 
-        # ── Prioridad 4: +X cashbacku en título (zł) ──────────
+        # ── Prioridad 4: +X cashbacku en título (zł) ────────────
         for m in re.finditer(
             r"\+\s*(\d+(?:[.,]\d+)?)\s*cashback\w*",
             title_text, re.IGNORECASE
@@ -166,6 +177,7 @@ def get_cashback_rate(url):
 
     except Exception as e:
         print(f"  Error {url}: {e}")
+
     return "no cashback", None
 
 
@@ -175,7 +187,7 @@ def scrape_igraal() -> pd.DataFrame:
     results   = []
     total     = len(retailers)
 
-    print(f"  🔍 Found {total} retailers on iGraal.pl (dinámico + supplemental)")
+    print(f"  🔍 Found {total} retailers on iGraal.pl")
 
     for i, r in enumerate(retailers, 1):
         print(f"  [{i:>3}/{total}] {r['name']} ({r['slug']})", end=" → ")
