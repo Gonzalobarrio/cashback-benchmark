@@ -74,7 +74,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-05-12,Empik Foto,empikfoto,10.0,%
 2026-05-12,Endo,endo,9.0,%
 2026-05-12,eobuwie,eobuwie,6.0,%
-2026-05-12,Erli,erli,4.0,%
+2026-05-12,Erli,erli,5.0,%
 2026-05-12,ESET,eset,10.0,%
 2026-05-12,eSky,esky,3.5,%
 2026-05-12,Estro,estro,7.0,%
@@ -115,16 +115,16 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-05-12,Joom,joom,9.0,%
 2026-05-12,Katalog Marzeń,katalog-marzen,2.8,%
 2026-05-12,Kazar,kazar,,no cashback
-2026-05-12,Kenwood,kenwood,6.0,%
+2026-05-12,Kenwood,kenwood,,no cashback
 2026-05-12,KFC,kfc,4.0,%
-2026-05-12,Kinguin,kinguin,5.0,%
-2026-05-12,Kiwi,kiwi,3.0,%
-2026-05-12,Komputronik,komputronik,1.5,%
+2026-05-12,Kinguin,kinguin,,no cashback
+2026-05-12,Kiwi,kiwi,,no cashback
+2026-05-12,Komputronik,komputronik,,no cashback
 2026-05-12,Konesso,konesso,,no cashback
-2026-05-12,Krakvet,krakvet,2.0,%
+2026-05-12,Krakvet,krakvet,,no cashback
 2026-05-12,Król Materacy,krolmateracy,,no cashback
-2026-05-12,Lacoste,lacoste,8.0,%
-2026-05-12,Lampy.pl,lampy,8.0,%
+2026-05-12,Lacoste,lacoste,,no cashback
+2026-05-12,Lampy.pl,lampy,,no cashback
 2026-05-12,Legimi,legimi,15.0,%
 2026-05-12,LEGO,lego,3.0,%
 2026-05-12,Leo Express,leoexpress,4.0,%
