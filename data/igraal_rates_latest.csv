@@ -117,7 +117,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-05-17,Katalog Marzeń,katalog-marzen,2.8,%
 2026-05-17,Kazar,kazar,,no cashback
 2026-05-17,Kenwood,kenwood,6.0,%
-2026-05-17,KFC,kfc,,no cashback
+2026-05-17,KFC,kfc,4.0,%
 2026-05-17,Kinguin,kinguin,8.0,%
 2026-05-17,Kiwi,kiwi,3.0,%
 2026-05-17,Komputronik,komputronik,1.5,%
@@ -249,7 +249,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-05-17,Kolba,kolba,,no cashback
 2026-05-17,KROSS,kross,4.0,%
 2026-05-17,LycaMobile,lyca-mobile,,no cashback
-2026-05-17,Mango,mango,7.5,%
+2026-05-17,Mango,mango,,no cashback
 2026-05-17,Nintendo eShop,nintendo-eshop,6.0,%
 2026-05-17,OnePlus,oneplus,,no cashback
 2026-05-17,Sportofino,sportofino,4.2,%
