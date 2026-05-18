@@ -7,7 +7,7 @@ date,retailer,igraal_slug,picodi_rate,picodi_rate_type,picodi_url
 2026-05-18,Lounge by Zalando,zalando-lounge,3.6,up_to_%,https://www.picodi.com/pl/zalando-lounge/offers
 2026-05-18,MediaMarkt,mediamarkt,1.8,up_to_%,https://www.picodi.com/pl/mediamarkt/offers
 2026-05-18,Temu,temu,16.0,up_to_%,https://www.picodi.com/pl/temu/offers
-2026-05-18,SHEIN,shein,6.0,up_to_%,https://www.picodi.com/pl/shein/offers
+2026-05-18,SHEIN,shein,4.5,up_to_%,https://www.picodi.com/pl/shein/offers
 2026-05-18,RTV Euro AGD,rtveuro,1.8,up_to_%,https://www.picodi.com/pl/rtveuroagd/offers
 2026-05-18,Lidl,lidl,1.7,%,https://www.picodi.com/pl/lidl/offers
 2026-05-18,Leroy Merlin,leroymerlin,1.3,%,https://www.picodi.com/pl/leroy-merlin/offers
@@ -38,7 +38,7 @@ date,retailer,igraal_slug,picodi_rate,picodi_rate_type,picodi_url
 2026-05-18,Bimba Y Lola,bimbaylola,2.4,%,https://www.picodi.com/pl/bimba-y-lola/offers
 2026-05-18,Bonprix,bonprix,1.2,%,https://www.picodi.com/pl/bonprix/offers
 2026-05-18,Born2Be,born2be,1.8,%,https://www.picodi.com/pl/born2be/offers
-2026-05-18,Brasty,brasty,1.8,up_to_%,https://www.picodi.com/pl/brasty/offers
+2026-05-18,Brasty,brasty,,not_found,
 2026-05-18,Bricoman,bricoman,,not_found,
 2026-05-18,Bricomarche,bricomarche,,not_found,
 2026-05-18,Broń.pl,bron.pl,,not_found,

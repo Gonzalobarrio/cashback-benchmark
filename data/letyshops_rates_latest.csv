@@ -16,7 +16,7 @@ date,retailer,igraal_slug,letyshops_rate,letyshops_rate_type,letyshops_boosted,l
 2026-05-18,OBI,obi,2.5,%,False,https://letyshops.com/pl/shops/obi-pl
 2026-05-18,Adidas,adidas,3.0,%,False,https://letyshops.com/pl/shops/adidas-polska
 2026-05-18,Sephora,sephora,4.5,%,False,https://letyshops.com/pl-en/shops/sephora-pl
-2026-05-18,Douglas,douglas,4.0,%,False,https://letyshops.com/pl/shops/douglas
+2026-05-18,Douglas,douglas,16.0,%,False,https://letyshops.com/pl/shops/douglas
 2026-05-18,home&you,home-you,2.0,%,False,https://letyshops.com/pl/shops/home-you
 2026-05-18,Abra,abra,,not_found,False,
 2026-05-18,Acer,acer,4.0,%,False,https://letyshops.com/pl/shops/acer-pl
@@ -206,7 +206,7 @@ date,retailer,igraal_slug,letyshops_rate,letyshops_rate_type,letyshops_boosted,l
 2026-05-18,TestDNA,testdna,,not_found,False,
 2026-05-18,Teufel,teufel,2.0,%,False,https://letyshops.com/pl/shops/teufel-pl
 2026-05-18,Top Secret,topsecret,,no cashback,False,
-2026-05-18,Trip.com,trip-com,,no cashback,False,
+2026-05-18,Trip.com,trip-com,3.5,%,False,https://letyshops.com/pl/shops/trip-com
 2026-05-18,UBER,uber,,no cashback,False,
 2026-05-18,Ubisoft,ubisoft,,not_found,False,
 2026-05-18,Ucando,ucando,2.0,%,False,https://letyshops.com/pl/shops/ucando
