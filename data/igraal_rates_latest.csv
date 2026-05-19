@@ -1,6 +1,6 @@
 date,retailer,slug,igraal_rate,cashback_type
 2026-05-19,AliExpress,aliexpress,25.0,%
-2026-05-19,Allegro,allegro,6.0,%
+2026-05-19,Allegro,allegro,25.0,%
 2026-05-19,Answear,answear,10.0,%
 2026-05-19,Decathlon,decathlon,2.0,%
 2026-05-19,Empik,empik,10.0,%
@@ -40,7 +40,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-05-19,Born2Be,born2be,5.0,%
 2026-05-19,Brasty,brasty,2.0,%
 2026-05-19,Bricoman,bricoman,6.0,%
-2026-05-19,Bricomarche,bricomarche,4.0,%
+2026-05-19,Bricomarche,bricomarche,6.0,%
 2026-05-19,Broń.pl,bron.pl,,zł
 2026-05-19,Byrokko,byrokko,14.0,%
 2026-05-19,Canal Plus,canalplus,,zł
