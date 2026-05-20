@@ -1,5 +1,5 @@
 date,retailer,igraal_slug,goodie_rate,goodie_rate_type,goodie_url
-2026-05-20,AliExpress,aliexpress,60.0,up_to_%,https://goodie.pl/marka/aliexpress
+2026-05-20,AliExpress,aliexpress,4.5,up_to_%,https://goodie.pl/marka/aliexpress
 2026-05-20,Allegro,allegro,2.2,up_to_%,https://goodie.pl/marka/allegro
 2026-05-20,Answear,answear,2.0,up_to_%,https://goodie.pl/marka/answear-com
 2026-05-20,Decathlon,decathlon,1.75,%,https://goodie.pl/marka/decathlon
@@ -168,7 +168,7 @@ date,retailer,igraal_slug,goodie_rate,goodie_rate_type,goodie_url
 2026-05-20,Perfumeria,perfumeria.pl,1.92,%,https://goodie.pl/marka/perfumeria-pl
 2026-05-20,Perfumy.pl,perfumy,2.8,%,https://goodie.pl/marka/perfumy
 2026-05-20,Petkarma,petkarma,,no cashback,https://goodie.pl/marka/petkarma-pl
-2026-05-20,Philips,philips,5.0,%,https://goodie.pl/marka/philips
+2026-05-20,Philips,philips,5.0,up_to_%,https://goodie.pl/marka/philips
 2026-05-20,Philips Hue,philips-hue,3.5,%,https://goodie.pl/marka/philips-hue
 2026-05-20,Play,play,,no cashback,https://goodie.pl/marka/play
 2026-05-20,Pleso,plesotherapy,,not_found,

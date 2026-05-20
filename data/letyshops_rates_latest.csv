@@ -7,7 +7,7 @@ date,retailer,igraal_slug,letyshops_rate,letyshops_rate_type,letyshops_boosted,l
 2026-05-20,Lounge by Zalando,zalando-lounge,6.0,%,False,https://letyshops.com/pl-en/shops/zalando-lounge-pl
 2026-05-20,MediaMarkt,mediamarkt,3.5,%,False,https://letyshops.com/pl/shops/media-markt-pl
 2026-05-20,Temu,temu,7.85,%,False,https://letyshops.com/pl/shops/temu
-2026-05-20,SHEIN,shein,5.0,%,False,https://letyshops.com/pl-en/shops/shein-pl
+2026-05-20,SHEIN,shein,5.0,%,False,https://letyshops.com/pl/shops/shein-pl
 2026-05-20,RTV Euro AGD,rtveuro,3.5,%,False,https://letyshops.com/pl/shops/rtv-euro-agd
 2026-05-20,Lidl,lidl,1.0,%,False,https://letyshops.com/pl/shops/lidl-pl
 2026-05-20,Leroy Merlin,leroymerlin,1.1,%,False,https://letyshops.com/pl/shops/leroy-merlin
@@ -183,7 +183,7 @@ date,retailer,igraal_slug,letyshops_rate,letyshops_rate_type,letyshops_boosted,l
 2026-05-20,Recman,recman,,no cashback,False,
 2026-05-20,Regatta,regatta,2.5,%,False,https://letyshops.com/pl/shops/regatta-pl
 2026-05-20,Remix,remix,2.25,%,False,https://letyshops.com/pl/shops/remix-pl
-2026-05-20,Renee,renee,3.0,%,False,https://letyshops.com/pl/shops/renee
+2026-05-20,Renee,renee,3.0,%,False,https://letyshops.com/pl-en/shops/renee
 2026-05-20,Reporter Young,reporteryoung,3.0,%,False,https://letyshops.com/pl/shops/reporter-young-pl
 2026-05-20,Ryobi,ryobi,6.0,%,False,https://letyshops.com/pl/shops/ryobi-pl
 2026-05-20,Samsung,samsung,2.5,%,False,https://letyshops.com/pl/shops/samsung-pl
