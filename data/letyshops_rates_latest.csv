@@ -167,6 +167,7 @@ date,retailer,igraal_slug,letyshops_rate,letyshops_rate_type,letyshops_boosted,l
 2026-05-21,Orange,orange,3.5,%,False,https://letyshops.com/pl/shops/orange-pl
 2026-05-21,Pan Materac,panmaterac,4.0,%,False,https://letyshops.com/pl/shops/pan-materac
 2026-05-21,Parfumdreams,parfumdreams,7.0,%,False,https://letyshops.com/pl/shops/parfumdreams-pl
+2026-05-21,Peek & Cloppenburg,peek-and-cloppenburg,1.5,%,False,https://letyshops.com/pl/shops/peek-cloppenburg-pl
 2026-05-21,Perfumeria,perfumeria.pl,2.5,%,False,https://letyshops.com/pl/shops/perfumeria-pl
 2026-05-21,Perfumy.pl,perfumy,3.25,%,False,https://letyshops.com/pl/shops/perfumy
 2026-05-21,Petkarma,petkarma,,not_found,False,
@@ -242,7 +243,6 @@ date,retailer,igraal_slug,letyshops_rate,letyshops_rate_type,letyshops_boosted,l
 2026-05-21,Brainmarket,brainmarket,,not_found,False,
 2026-05-21,KurJerzy.pl,kurjerzy.pl,2.8,%,False,https://letyshops.com/pl/shops/kurjerzy-pl
 2026-05-21,Orange Flex,orangeflex,,not_found,False,
-2026-05-21,Peek & Cloppenburg,peek-and-cloppenburg,1.5,%,False,https://letyshops.com/pl/shops/peek-cloppenburg-pl
 2026-05-21,Tescoma,tescoma,,not_found,False,
 2026-05-21,Vasco Electronics,vascoelectronics,3.0,%,False,https://letyshops.com/pl/shops/vasco-electronics-pl
 2026-05-21,Airbnb,airbnb,,not_found,False,

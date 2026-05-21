@@ -41,16 +41,16 @@ date,retailer,igraal_slug,picodi_rate,picodi_rate_type,picodi_url
 2026-05-21,Brasty,brasty,1.8,up_to_%,https://www.picodi.com/pl/brasty/offers
 2026-05-21,Bricoman,bricoman,,not_found,
 2026-05-21,Bricomarche,bricomarche,1.4,%,https://www.picodi.com/pl/bricomarche/offers
-2026-05-21,Broń.pl,bron.pl,2.7,%,https://www.picodi.com/pl/bron-pl/offers
-2026-05-21,Byrokko,byrokko,2.4,up_to_%,https://www.picodi.com/pl/byrokko/offers
-2026-05-21,Canal Plus,canalplus,,zł,https://www.picodi.com/pl/nc/offers
-2026-05-21,Carrefour,carrefour,0.9,%,https://www.picodi.com/pl/carrefour/offers
-2026-05-21,Castorama,castorama,1.2,%,https://www.picodi.com/pl/castorama/offers
-2026-05-21,Ceneo,ceneo,0.0,%,https://www.picodi.com/pl/ceneo/offers
-2026-05-21,Cobi,cobi,0.9,%,https://www.picodi.com/pl/cobi/offers
-2026-05-21,Cocolita,cocolita,1.4,%,https://www.picodi.com/pl/cocolita-pl/offers
-2026-05-21,Colorland,colorland,1.1,%,https://www.picodi.com/pl/colorland/offers
-2026-05-21,Converse,converse,3.6,up_to_%,https://www.picodi.com/pl/converse/offers
+2026-05-21,Broń.pl,bron.pl,,not_found,
+2026-05-21,Byrokko,byrokko,,not_found,
+2026-05-21,Canal Plus,canalplus,,not_found,
+2026-05-21,Carrefour,carrefour,,not_found,
+2026-05-21,Castorama,castorama,,not_found,
+2026-05-21,Ceneo,ceneo,,not_found,
+2026-05-21,Cobi,cobi,,not_found,
+2026-05-21,Cocolita,cocolita,,not_found,
+2026-05-21,Colorland,colorland,,not_found,
+2026-05-21,Converse,converse,,not_found,
 2026-05-21,Crocs,crocs,,not_found,
 2026-05-21,Cropp,cropp,,not_found,
 2026-05-21,Cyfrowe.pl,cyfrowe.pl,,not_found,
@@ -167,6 +167,7 @@ date,retailer,igraal_slug,picodi_rate,picodi_rate_type,picodi_url
 2026-05-21,Orange,orange,,not_found,
 2026-05-21,Pan Materac,panmaterac,,not_found,
 2026-05-21,Parfumdreams,parfumdreams,,not_found,
+2026-05-21,Peek & Cloppenburg,peek-and-cloppenburg,,not_found,
 2026-05-21,Perfumeria,perfumeria.pl,,not_found,
 2026-05-21,Perfumy.pl,perfumy,,not_found,
 2026-05-21,Petkarma,petkarma,,not_found,
@@ -242,7 +243,6 @@ date,retailer,igraal_slug,picodi_rate,picodi_rate_type,picodi_url
 2026-05-21,Brainmarket,brainmarket,,not_found,
 2026-05-21,KurJerzy.pl,kurjerzy.pl,,not_found,
 2026-05-21,Orange Flex,orangeflex,,not_found,
-2026-05-21,Peek & Cloppenburg,peek-and-cloppenburg,,not_found,
 2026-05-21,Tescoma,tescoma,,not_found,
 2026-05-21,Vasco Electronics,vascoelectronics,,not_found,
 2026-05-21,Airbnb,airbnb,,not_found,

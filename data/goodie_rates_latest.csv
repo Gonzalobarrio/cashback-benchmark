@@ -167,6 +167,7 @@ date,retailer,igraal_slug,goodie_rate,goodie_rate_type,goodie_url
 2026-05-21,Orange,orange,1.06,up_to_%,https://goodie.pl/marka/orange
 2026-05-21,Pan Materac,panmaterac,4.0,%,https://goodie.pl/marka/pan-materac
 2026-05-21,Parfumdreams,parfumdreams,5.0,up_to_%,https://goodie.pl/marka/parfumdreams
+2026-05-21,Peek & Cloppenburg,peek-and-cloppenburg,1.5,%,https://goodie.pl/marka/peekcloppenburg
 2026-05-21,Perfumeria,perfumeria.pl,1.92,%,https://goodie.pl/marka/perfumeria-pl
 2026-05-21,Perfumy.pl,perfumy,2.8,%,https://goodie.pl/marka/perfumy
 2026-05-21,Petkarma,petkarma,,no cashback,https://goodie.pl/marka/petkarma-pl
@@ -242,7 +243,6 @@ date,retailer,igraal_slug,goodie_rate,goodie_rate_type,goodie_url
 2026-05-21,Brainmarket,brainmarket,,not_found,
 2026-05-21,KurJerzy.pl,kurjerzy.pl,,not_found,
 2026-05-21,Orange Flex,orangeflex,,no cashback,https://goodie.pl/marka/orange-flex
-2026-05-21,Peek & Cloppenburg,peek-and-cloppenburg,1.5,%,https://goodie.pl/marka/peekcloppenburg
 2026-05-21,Tescoma,tescoma,3.5,%,https://goodie.pl/marka/tescoma
 2026-05-21,Vasco Electronics,vascoelectronics,2.0,%,https://goodie.pl/marka/vasco-electronics
 2026-05-21,Airbnb,airbnb,,not_found,

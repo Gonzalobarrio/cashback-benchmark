@@ -6,20 +6,20 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-05-21,Empik,empik,30.0,%
 2026-05-21,Lounge by Zalando,zalando-lounge,10.0,%
 2026-05-21,MediaMarkt,mediamarkt,10.0,%
-2026-05-21,Temu,temu,50.0,%
+2026-05-21,Temu,temu,40.0,%
 2026-05-21,SHEIN,shein,15.0,%
 2026-05-21,RTV Euro AGD,rtveuro,1.5,%
 2026-05-21,Lidl,lidl,3.0,%
 2026-05-21,Leroy Merlin,leroymerlin,4.0,%
 2026-05-21,CCC,ccc,5.0,%
 2026-05-21,Hebe,hebe,15.0,%
-2026-05-21,OBI,obi,5.0,%
+2026-05-21,OBI,obi,2.5,%
 2026-05-21,Adidas,adidas,5.0,%
 2026-05-21,Sephora,sephora,7.5,%
 2026-05-21,Douglas,douglas,20.0,%
 2026-05-21,home&you,home-you,6.5,%
 2026-05-21,Abra,abra,4.2,%
-2026-05-21,Acer,acer,5.0,%
+2026-05-21,Acer,acer,4.0,%
 2026-05-21,Aelia,aelia,5.0,%
 2026-05-21,Airalo,airalo,9.0,%
 2026-05-21,AirHelp,airhelp,20.0,%
@@ -29,7 +29,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-05-21,AXA Partners,axa-partners,15.0,%
 2026-05-21,Banggood,banggood,10.0,%
 2026-05-21,Baseus,baseus,4.0,%
-2026-05-21,BasicLab,basiclab,3.0,%
+2026-05-21,BasicLab,basiclab,2.0,%
 2026-05-21,BeDiet,bediet,14.0,%
 2026-05-21,Bee.pl,bee.pl,,no cashback
 2026-05-21,Bezpieczna Rodzina,bezpiecznarodzina,5.0,%
@@ -37,7 +37,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-05-21,BIG STAR,bigstar,9.0,%
 2026-05-21,Bimba Y Lola,bimbaylola,6.0,%
 2026-05-21,Bonprix,bonprix,4.0,%
-2026-05-21,Born2Be,born2be,5.0,%
+2026-05-21,Born2Be,born2be,3.0,%
 2026-05-21,Brasty,brasty,2.0,%
 2026-05-21,Bricoman,bricoman,6.0,%
 2026-05-21,Bricomarche,bricomarche,6.0,%
@@ -51,76 +51,76 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-05-21,Cocolita,cocolita,25.0,%
 2026-05-21,Colorland,colorland,8.0,%
 2026-05-21,Converse,converse,5.0,%
-2026-05-21,Crocs,crocs,4.0,%
+2026-05-21,Crocs,crocs,2.0,%
 2026-05-21,Cropp,cropp,4.0,%
 2026-05-21,Cyfrowe.pl,cyfrowe.pl,2.0,%
-2026-05-21,Dedoles,dedoles,,no cashback
+2026-05-21,Dedoles,dedoles,8.0,%
 2026-05-21,DeLonghi,delonghi,6.0,%
 2026-05-21,Dermacol,dermacol,20.0,%
 2026-05-21,Desigual,desigual,7.7,%
 2026-05-21,DHgate,dhgate,2.0,%
 2026-05-21,DHL,dhl,,zł
-2026-05-21,Diablo Chairs,diablochairs,4.5,%
+2026-05-21,Diablo Chairs,diablochairs,4.0,%
 2026-05-21,Drogeria.pl,drogeria.pl,15.0,%
 2026-05-21,Drop,drop,5.38,%
 2026-05-21,Dstreet,dstreet,9.0,%
-2026-05-21,Dyson,dyson,4.0,%
+2026-05-21,Dyson,dyson,2.5,%
 2026-05-21,e-torty,e-torty,10.0,%
 2026-05-21,eBilet,ebilet,1.0,%
 2026-05-21,Ecco,ecco,,no cashback
-2026-05-21,Electrolux,electrolux,4.0,%
+2026-05-21,Electrolux,electrolux,2.0,%
 2026-05-21,Eltrox,eltrox,4.5,%
 2026-05-21,EMP,emp,7.0,%
 2026-05-21,Empik Foto,empikfoto,10.0,%
 2026-05-21,Endo,endo,9.0,%
-2026-05-21,eobuwie,eobuwie,6.0,%
+2026-05-21,eobuwie,eobuwie,4.0,%
 2026-05-21,Erli,erli,5.0,%
-2026-05-21,ESET,eset,10.0,%
-2026-05-21,eSky,esky,3.5,%
+2026-05-21,ESET,eset,8.5,%
+2026-05-21,eSky,esky,2.0,%
 2026-05-21,Estro,estro,7.0,%
 2026-05-21,Eurofirany,eurofirany,,no cashback
 2026-05-21,Euroflorist,euroflorist,12.0,%
 2026-05-21,Eveline,eveline,6.0,%
-2026-05-21,Eventim,eventim,2.0,%
+2026-05-21,Eventim,eventim,1.0,%
 2026-05-21,eZebra,ezebra,4.0,%
-2026-05-21,Fera,fera,4.0,%
+2026-05-21,Fera,fera,2.0,%
 2026-05-21,Fielmann,fielmann,6.0,%
 2026-05-21,Flexispot,flexispot,8.0,%
 2026-05-21,Flixbus,flixbus,7.0,%
 2026-05-21,Footdistrict,footdistrict,8.0,%
-2026-05-21,Footshop,footshop,5.0,%
+2026-05-21,Footshop,footshop,3.0,%
 2026-05-21,Foreo,foreo,3.5,%
-2026-05-21,FotoForma,fotoforma,2.5,%
-2026-05-21,G2A,g2a,5.0,%
+2026-05-21,FotoForma,fotoforma,2.0,%
+2026-05-21,G2A,g2a,3.0,%
 2026-05-21,Gabriella,gabriella,,no cashback
 2026-05-21,Gameseal,gameseal,5.0,%
 2026-05-21,Gamivo,gamivo,4.0,%
-2026-05-21,Geekbuying.pl,geekbuying,6.0,%
+2026-05-21,Geekbuying.pl,geekbuying,5.0,%
 2026-05-21,GetYourGuide,getyourguide,4.0,%
 2026-05-21,Giacomo Conti,giacomo,5.0,%
-2026-05-21,GOG,gog,6.0,%
-2026-05-21,Gomez,gomez,6.5,%
+2026-05-21,GOG,gog,3.0,%
+2026-05-21,Gomez,gomez,4.0,%
 2026-05-21,Greenpoint,greenpoint,4.0,%
 2026-05-21,Groupon,groupon,25.0,%
 2026-05-21,H&M,hm,8.0,%
 2026-05-21,Herbapol,herbapol,,no cashback
-2026-05-21,Homla,homla,4.8,%
+2026-05-21,Homla,homla,2.5,%
 2026-05-21,HP,hp,7.0,%
 2026-05-21,Huawei,huawei,3.5,%
 2026-05-21,iBOOD,ibood,1.0,%
 2026-05-21,iDream,idream,3.0,%
 2026-05-21,iHerb,iherb,25.0,%
 2026-05-21,IKEA,ikea,4.0,%
-2026-05-21,Intymna,intymna,4.4,%
-2026-05-21,iParts,iparts,3.5,%
+2026-05-21,Intymna,intymna,3.0,%
+2026-05-21,iParts,iparts,1.8,%
 2026-05-21,JD Sports,jdsports,8.0,%
 2026-05-21,Joom,joom,9.0,%
 2026-05-21,Justjoinit,justjoinit,13.0,%
 2026-05-21,Katalog Marzeń,katalog-marzen,2.8,%
 2026-05-21,Kazar,kazar,,no cashback
 2026-05-21,Kenwood,kenwood,6.0,%
-2026-05-21,KFC,kfc,4.0,%
-2026-05-21,Kinguin,kinguin,5.0,%
+2026-05-21,KFC,kfc,3.0,%
+2026-05-21,Kinguin,kinguin,4.0,%
 2026-05-21,Kiwi,kiwi,3.0,%
 2026-05-21,Komputronik,komputronik,1.5,%
 2026-05-21,Konesso,konesso,,no cashback
@@ -137,19 +137,19 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-05-21,Loaded,cdkeys,5.0,%
 2026-05-21,Lokalny Rolnik,lokalnyrolnik,4.5,%
 2026-05-21,Lookfantastic,lookfantastic,5.0,%
-2026-05-21,LOT,lot,1.5,%
+2026-05-21,LOT,lot,1.0,%
 2026-05-21,Mamyito,mamyito,4.5,%
 2026-05-21,Mango Outlet,mango-outlet,3.0,%
 2026-05-21,Marilyn,marilyn,10.0,%
 2026-05-21,Max Elektro,maxelektro,2.0,%
 2026-05-21,Maxi Zoo,maxizoo,5.0,%
-2026-05-21,MebleMWM,meblemwm,6.0,%
-2026-05-21,Medicine,wearmedicine,6.0,%
-2026-05-21,Merkury Market,merkurymarket,3.5,%
+2026-05-21,MebleMWM,meblemwm,3.5,%
+2026-05-21,Medicine,wearmedicine,3.0,%
+2026-05-21,Merkury Market,merkurymarket,2.0,%
 2026-05-21,Michael Kors,michaelkors,3.0,%
-2026-05-21,Modivo,modivo.pl,4.0,%
+2026-05-21,Modivo,modivo.pl,3.5,%
 2026-05-21,Morele.net,morele,,zł
-2026-05-21,Mountain Warehouse,mountainwarehouse,6.0,%
+2026-05-21,Mountain Warehouse,mountainwarehouse,3.0,%
 2026-05-21,MyProtein,myprotein,10.0,%
 2026-05-21,NAOKO,naoko,5.0,%
 2026-05-21,Neness,neness,6.0,%
@@ -157,20 +157,21 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-05-21,New Balance,nbsklep,3.0,%
 2026-05-21,Nike,nike,7.0,%
 2026-05-21,Ninja,ninja,4.0,%
-2026-05-21,NordVPN,nordvpn,40.0,%
+2026-05-21,NordVPN,nordvpn,30.0,%
 2026-05-21,norton,norton,25.0,%
 2026-05-21,Notino,notino,12.0,%
 2026-05-21,Novakid,novakid,,zł
 2026-05-21,OleOle!,oleole,10.0,%
-2026-05-21,Olimp Store,olimp-store,4.0,%
+2026-05-21,Olimp Store,olimp-store,2.5,%
 2026-05-21,Ombre,ombre,,zł
 2026-05-21,Orange,orange,2.11,%
 2026-05-21,Pan Materac,panmaterac,8.0,%
 2026-05-21,Parfumdreams,parfumdreams,12.0,%
+2026-05-21,Peek & Cloppenburg,peek-and-cloppenburg,2.0,%
 2026-05-21,Perfumeria,perfumeria.pl,3.84,%
 2026-05-21,Perfumy.pl,perfumy,5.0,%
 2026-05-21,Petkarma,petkarma,10.0,%
-2026-05-21,Philips,philips,7.0,%
+2026-05-21,Philips,philips,4.0,%
 2026-05-21,Philips Hue,philips-hue,7.0,%
 2026-05-21,Play,play,,zł
 2026-05-21,Pleso,plesotherapy,,zł
@@ -178,12 +179,12 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-05-21,Primodo,primodo,5.0,%
 2026-05-21,PRM,prm,6.0,%
 2026-05-21,Proton VPN,protonvpn,70.0,%
-2026-05-21,Przyjaciele Kawy,przyjacielekawy,6.0,%
+2026-05-21,Przyjaciele Kawy,przyjacielekawy,4.0,%
 2026-05-21,Puma,puma,6.0,%
 2026-05-21,Pyszne.pl,pyszne,2.0,%
 2026-05-21,Radisson Hotels,radissonhotels,4.0,%
 2026-05-21,Recman,recman,5.0,%
-2026-05-21,Regatta,regatta,5.0,%
+2026-05-21,Regatta,regatta,3.0,%
 2026-05-21,Remix,remix,12.25,%
 2026-05-21,Renee,renee,6.0,%
 2026-05-21,Reporter Young,reporteryoung,3.5,%
@@ -200,11 +201,11 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-05-21,Sony.pl,sony,2.5,%
 2026-05-21,SportStyleStory,sportstylestory,6.0,%
 2026-05-21,Stradivarius,stradivarius,,no cashback
-2026-05-21,Streetstyle24,streetstyle24,6.0,%
+2026-05-21,Streetstyle24,streetstyle24,4.5,%
 2026-05-21,Stylevana,stylevana,12.0,%
 2026-05-21,Sun & Snow,sun-and-snow,4.5,%
 2026-05-21,Surfshark,surfshark,,zł
-2026-05-21,Świat supli,swiatsupli,5.0,%
+2026-05-21,Świat supli,swiatsupli,2.5,%
 2026-05-21,Tagomago,tagomago,3.0,%
 2026-05-21,Tefal,tefal,5.0,%
 2026-05-21,TestDNA,testdna,3.5,%
@@ -218,10 +219,10 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-05-21,Under Armour,under-armour,6.0,%
 2026-05-21,Van Graaf,vangraaf,7.0,%
 2026-05-21,Vans,vans,4.0,%
-2026-05-21,Victoria's Secret,victorias-secret,3.5,%
-2026-05-21,VidaXL,vidaxl,2.9,%
+2026-05-21,Victoria's Secret,victorias-secret,3.0,%
+2026-05-21,VidaXL,vidaxl,2.5,%
 2026-05-21,Vision Express,visionexpress,6.0,%
-2026-05-21,Vobis,vobis,4.0,%
+2026-05-21,Vobis,vobis,2.5,%
 2026-05-21,Volcano,volcano,7.0,%
 2026-05-21,Wolt,wolt,,zł
 2026-05-21,Wrangler,wrangler,10.0,%
@@ -242,7 +243,6 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-05-21,Brainmarket,brainmarket,4.0,%
 2026-05-21,KurJerzy.pl,kurjerzy.pl,3.0,%
 2026-05-21,Orange Flex,orangeflex,,zł
-2026-05-21,Peek & Cloppenburg,peek-and-cloppenburg,2.5,%
 2026-05-21,Tescoma,tescoma,3.5,%
 2026-05-21,Vasco Electronics,vascoelectronics,3.0,%
 2026-05-21,Airbnb,airbnb,,no cashback
