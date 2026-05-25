@@ -10,7 +10,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-05-25,SHEIN,shein,15.0,%
 2026-05-25,RTV Euro AGD,rtveuro,1.5,%
 2026-05-25,Lidl,lidl,3.0,%
-2026-05-25,Leroy Merlin,leroymerlin,4.0,%
+2026-05-25,Leroy Merlin,leroymerlin,3.0,%
 2026-05-25,CCC,ccc,5.0,%
 2026-05-25,Hebe,hebe,5.0,%
 2026-05-25,OBI,obi,2.5,%
@@ -38,7 +38,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-05-25,Bimba Y Lola,bimbaylola,6.0,%
 2026-05-25,Bonprix,bonprix,4.0,%
 2026-05-25,Born2Be,born2be,3.0,%
-2026-05-25,Brasty,brasty,2.0,%
+2026-05-25,Brasty,brasty,,no cashback
 2026-05-25,Bricoman,bricoman,6.0,%
 2026-05-25,Bricomarche,bricomarche,6.0,%
 2026-05-25,Broń.pl,bron.pl,,zł
@@ -116,7 +116,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-05-25,JD Sports,jdsports,5.0,%
 2026-05-25,Joom,joom,9.0,%
 2026-05-25,Justjoinit,justjoinit,13.0,%
-2026-05-25,Katalog Marzeń,katalog-marzen,2.8,%
+2026-05-25,Katalog Marzeń,katalog-marzen,10.0,%
 2026-05-25,Kazar,kazar,,no cashback
 2026-05-25,Kenwood,kenwood,6.0,%
 2026-05-25,KFC,kfc,3.0,%

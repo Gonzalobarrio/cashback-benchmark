@@ -120,7 +120,7 @@ date,retailer,igraal_slug,goodie_rate,goodie_rate_type,goodie_url
 2026-05-25,Kazar,kazar,,no cashback,https://goodie.pl/marka/kazar
 2026-05-25,Kenwood,kenwood,,no cashback,https://goodie.pl/marka/kenwood
 2026-05-25,KFC,kfc,2.77,%,https://goodie.pl/marka/kfc
-2026-05-25,Kinguin,kinguin,2.5,up_to_%,https://goodie.pl/marka/kinguin
+2026-05-25,Kinguin,kinguin,,no cashback,https://goodie.pl/marka/kinguin
 2026-05-25,Kiwi,kiwi,,no cashback,https://goodie.pl/marka/kiwi
 2026-05-25,Komputronik,komputronik,0.75,%,https://goodie.pl/marka/komputronik
 2026-05-25,Konesso,konesso,,no cashback,https://goodie.pl/marka/konesso
@@ -207,7 +207,7 @@ date,retailer,igraal_slug,goodie_rate,goodie_rate_type,goodie_url
 2026-05-25,Surfshark,surfshark,20.0,%,https://goodie.pl/marka/surfshark
 2026-05-25,Świat supli,swiatsupli,,not_found,
 2026-05-25,Tagomago,tagomago,2.5,%,https://goodie.pl/marka/tagomago-pl
-2026-05-25,Tefal,tefal,3.08,%,https://goodie.pl/marka/tefal
+2026-05-25,Tefal,tefal,3.08,up_to_%,https://goodie.pl/marka/tefal
 2026-05-25,TestDNA,testdna,,not_found,
 2026-05-25,Teufel,teufel,2.0,%,https://goodie.pl/marka/teufel
 2026-05-25,Top Secret,topsecret,,no cashback,https://goodie.pl/marka/top-secret
