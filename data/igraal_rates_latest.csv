@@ -30,7 +30,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-05-27,Banggood,banggood,10.0,%
 2026-05-27,Baseus,baseus,4.0,%
 2026-05-27,BasicLab,basiclab,2.0,%
-2026-05-27,BeDiet,bediet,14.0,%
+2026-05-27,BeDiet,bediet,,no cashback
 2026-05-27,Bee.pl,bee.pl,,no cashback
 2026-05-27,Bezpieczna Rodzina,bezpiecznarodzina,5.0,%
 2026-05-27,Bibliotheque De Parfum,bibliotheque-de-parfum,12.0,%
@@ -109,14 +109,14 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-05-27,Huawei,huawei,3.5,%
 2026-05-27,iBOOD,ibood,1.0,%
 2026-05-27,iDream,idream,3.0,%
-2026-05-27,iHerb,iherb,,no cashback
+2026-05-27,iHerb,iherb,3.0,%
 2026-05-27,IKEA,ikea,4.0,%
-2026-05-27,Intymna,intymna,3.0,%
+2026-05-27,Intymna,intymna,,no cashback
 2026-05-27,iParts,iparts,1.8,%
 2026-05-27,JD Sports,jdsports,5.0,%
 2026-05-27,Joom,joom,9.0,%
 2026-05-27,Justjoinit,justjoinit,13.0,%
-2026-05-27,Katalog Marzeń,katalog-marzen,,no cashback
+2026-05-27,Katalog Marzeń,katalog-marzen,2.8,%
 2026-05-27,Kazar,kazar,,no cashback
 2026-05-27,Kenwood,kenwood,6.0,%
 2026-05-27,KFC,kfc,3.0,%
@@ -206,7 +206,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-05-27,Sun & Snow,sun-and-snow,4.5,%
 2026-05-27,Surfshark,surfshark,,zł
 2026-05-27,Świat supli,swiatsupli,2.5,%
-2026-05-27,Tagomago,tagomago,3.0,%
+2026-05-27,Tagomago,tagomago,,no cashback
 2026-05-27,Tefal,tefal,5.0,%
 2026-05-27,TestDNA,testdna,3.5,%
 2026-05-27,Teufel,teufel,4.0,%
