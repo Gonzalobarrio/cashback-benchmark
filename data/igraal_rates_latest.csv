@@ -2,7 +2,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-05-30,AliExpress,aliexpress,25.0,%
 2026-05-30,Allegro,allegro,1.9,%
 2026-05-30,Answear,answear,3.5,%
-2026-05-30,Decathlon,decathlon,2.0,%
+2026-05-30,Decathlon,decathlon,20.0,%
 2026-05-30,Empik,empik,1.6,%
 2026-05-30,Lounge by Zalando,zalando-lounge,10.0,%
 2026-05-30,MediaMarkt,mediamarkt,4.0,%
@@ -159,7 +159,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-05-30,Nike,nike,7.0,%
 2026-05-30,Ninja,ninja,4.0,%
 2026-05-30,NordVPN,nordvpn,30.0,%
-2026-05-30,norton,norton,,no cashback
+2026-05-30,norton,norton,25.0,%
 2026-05-30,Notino,notino,5.0,%
 2026-05-30,Novakid,novakid,,zł
 2026-05-30,OleOle!,oleole,1.0,%
