@@ -40,7 +40,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-05-31,Born2Be,born2be,3.0,%
 2026-05-31,Brasty,brasty,2.0,%
 2026-05-31,Bricoman,bricoman,6.0,%
-2026-05-31,Bricomarche,bricomarche,6.0,%
+2026-05-31,Bricomarche,bricomarche,20.0,%
 2026-05-31,Broń.pl,bron.pl,,zł
 2026-05-31,Brooks,brooks,6.0,%
 2026-05-31,Byrokko,byrokko,14.0,%
@@ -96,7 +96,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-05-31,Gabriella,gabriella,,no cashback
 2026-05-31,Gameseal,gameseal,10.0,%
 2026-05-31,Gamivo,gamivo,4.0,%
-2026-05-31,Geekbuying.pl,geekbuying,5.0,%
+2026-05-31,Geekbuying.pl,geekbuying,,no cashback
 2026-05-31,GetYourGuide,getyourguide,4.0,%
 2026-05-31,Giacomo Conti,giacomo,5.0,%
 2026-05-31,GOG,gog,3.0,%
