@@ -38,6 +38,7 @@ date,retailer,igraal_slug,alerabat_rate,alerabat_rate_type,alerabat_url
 2026-06-01,Bimba Y Lola,bimbaylola,4.0,up_to_%,https://alerabat.com/kody-promocyjne/bimba-y-lola
 2026-06-01,Bonprix,bonprix,2.5,up_to_%,https://alerabat.com/kod-promocyjny/bonprix
 2026-06-01,Born2Be,born2be,3.0,up_to_%,https://alerabat.com/kody-promocyjne/born2be-pl
+2026-06-01,Brainmarket,brainmarket,1.25,up_to_%,https://alerabat.com/kody-promocyjne/brainmarket
 2026-06-01,Brasty,brasty,1.0,up_to_%,https://alerabat.com/kody-promocyjne/brasty-pl
 2026-06-01,Bricoman,bricoman,,no cashback,https://alerabat.com/kody-promocyjne/bricoman-pl
 2026-06-01,Bricomarche,bricomarche,3.2,up_to_%,https://alerabat.com/kody-promocyjne/bricomarche
@@ -49,7 +50,7 @@ date,retailer,igraal_slug,alerabat_rate,alerabat_rate_type,alerabat_url
 2026-06-01,Castorama,castorama,2.0,up_to_%,https://alerabat.com/kody-promocyjne/castorama
 2026-06-01,Ceneo,ceneo,1.32,up_to_%,https://alerabat.com/kody-promocyjne/ceneo
 2026-06-01,Cobi,cobi,1.75,up_to_%,https://alerabat.com/kody-promocyjne/cobi
-2026-06-01,Cocolita,cocolita,,no cashback,https://alerabat.com/kody-promocyjne/cocolita-pl
+2026-06-01,Cocolita,cocolita,15.0,up_to_%,https://alerabat.com/kody-promocyjne/cocolita-pl
 2026-06-01,Colorland,colorland,1.75,up_to_%,https://alerabat.com/kody-promocyjne/colorland
 2026-06-01,Converse,converse,4.8,up_to_%,https://alerabat.com/kody-promocyjne/converse-pl
 2026-06-01,Crocs,crocs,2.0,up_to_%,https://alerabat.com/kod-promocyjny/crocs-pl
@@ -241,7 +242,6 @@ date,retailer,igraal_slug,alerabat_rate,alerabat_rate_type,alerabat_url
 2026-06-01,7way,7way,1.75,up_to_%,https://alerabat.com/kody-promocyjne/7way
 2026-06-01,24mx,24mx,2.5,up_to_%,https://alerabat.com/kody-promocyjne/24mx
 2026-06-01,Agoda,agoda,3.0,up_to_%,https://alerabat.com/kody-promocyjne/agoda-com
-2026-06-01,Brainmarket,brainmarket,1.25,up_to_%,https://alerabat.com/kody-promocyjne/brainmarket
 2026-06-01,KurJerzy.pl,kurjerzy.pl,,not_found,
 2026-06-01,Orange Flex,orangeflex,15.0,up_to_%,https://alerabat.com/kody-promocyjne/orange-flex
 2026-06-01,Tescoma,tescoma,3.5,up_to_%,https://alerabat.com/kody-promocyjne/tescoma

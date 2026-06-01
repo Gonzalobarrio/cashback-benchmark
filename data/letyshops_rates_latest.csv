@@ -38,6 +38,7 @@ date,retailer,igraal_slug,letyshops_rate,letyshops_rate_type,letyshops_boosted,l
 2026-06-01,Bimba Y Lola,bimbaylola,,not_found,False,
 2026-06-01,Bonprix,bonprix,6.0,%,False,https://letyshops.com/pl/shops/bonprix-pl
 2026-06-01,Born2Be,born2be,3.0,%,False,https://letyshops.com/pl/shops/born2be-pl
+2026-06-01,Brainmarket,brainmarket,,not_found,False,
 2026-06-01,Brasty,brasty,0.5,%,False,https://letyshops.com/pl/shops/brasty-pl
 2026-06-01,Bricoman,bricoman,,no cashback,False,
 2026-06-01,Bricomarche,bricomarche,2.4,%,False,https://letyshops.com/pl/shops/bricomarche-pl
@@ -241,7 +242,6 @@ date,retailer,igraal_slug,letyshops_rate,letyshops_rate_type,letyshops_boosted,l
 2026-06-01,7way,7way,1.75,%,False,https://letyshops.com/pl/shops/7way
 2026-06-01,24mx,24mx,2.5,%,False,https://letyshops.com/pl/shops/24mx-pl
 2026-06-01,Agoda,agoda,,no cashback,False,
-2026-06-01,Brainmarket,brainmarket,,not_found,False,
 2026-06-01,KurJerzy.pl,kurjerzy.pl,2.8,%,False,https://letyshops.com/pl/shops/kurjerzy-pl
 2026-06-01,Orange Flex,orangeflex,,not_found,False,
 2026-06-01,Tescoma,tescoma,,not_found,False,

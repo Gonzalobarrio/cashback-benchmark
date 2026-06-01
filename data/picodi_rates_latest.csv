@@ -9,7 +9,7 @@ date,retailer,igraal_slug,picodi_rate,picodi_rate_type,picodi_url
 2026-06-01,Temu,temu,12.0,up_to_%,https://www.picodi.com/pl/temu/offers
 2026-06-01,SHEIN,shein,4.5,up_to_%,https://www.picodi.com/pl/shein/offers
 2026-06-01,RTV Euro AGD,rtveuro,1.8,up_to_%,https://www.picodi.com/pl/rtveuroagd/offers
-2026-06-01,Lidl,lidl,1.7,%,https://www.picodi.com/pl/lidl/offers
+2026-06-01,Lidl,lidl,1.2,%,https://www.picodi.com/pl/lidl/offers
 2026-06-01,Leroy Merlin,leroymerlin,1.3,%,https://www.picodi.com/pl/leroy-merlin/offers
 2026-06-01,CCC,ccc,2.0,up_to_%,https://www.picodi.com/pl/ccc/offers
 2026-06-01,Hebe,hebe,1.8,%,https://www.picodi.com/pl/hebe/offers
@@ -34,10 +34,11 @@ date,retailer,igraal_slug,picodi_rate,picodi_rate_type,picodi_url
 2026-06-01,Bee.pl,bee.pl,,not_found,
 2026-06-01,Bezpieczna Rodzina,bezpiecznarodzina,,not_found,
 2026-06-01,Bibliotheque De Parfum,bibliotheque-de-parfum,3.6,%,https://www.picodi.com/pl/bibliotheque-de-parfum/offers
-2026-06-01,BIG STAR,bigstar,1.8,%,https://www.picodi.com/pl/big-star/offers
+2026-06-01,BIG STAR,bigstar,,not_found,
 2026-06-01,Bimba Y Lola,bimbaylola,,not_found,
 2026-06-01,Bonprix,bonprix,,not_found,
 2026-06-01,Born2Be,born2be,,not_found,
+2026-06-01,Brainmarket,brainmarket,,not_found,
 2026-06-01,Brasty,brasty,,not_found,
 2026-06-01,Bricoman,bricoman,,not_found,
 2026-06-01,Bricomarche,bricomarche,,not_found,
@@ -241,7 +242,6 @@ date,retailer,igraal_slug,picodi_rate,picodi_rate_type,picodi_url
 2026-06-01,7way,7way,,not_found,
 2026-06-01,24mx,24mx,,not_found,
 2026-06-01,Agoda,agoda,,not_found,
-2026-06-01,Brainmarket,brainmarket,,not_found,
 2026-06-01,KurJerzy.pl,kurjerzy.pl,,not_found,
 2026-06-01,Orange Flex,orangeflex,,not_found,
 2026-06-01,Tescoma,tescoma,,not_found,

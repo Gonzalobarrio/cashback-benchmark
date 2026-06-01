@@ -38,6 +38,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-06-01,Bimba Y Lola,bimbaylola,6.0,%
 2026-06-01,Bonprix,bonprix,4.0,%
 2026-06-01,Born2Be,born2be,3.0,%
+2026-06-01,Brainmarket,brainmarket,4.0,%
 2026-06-01,Brasty,brasty,2.0,%
 2026-06-01,Bricoman,bricoman,6.0,%
 2026-06-01,Bricomarche,bricomarche,3.5,%
@@ -45,7 +46,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-06-01,Brooks,brooks,6.0,%
 2026-06-01,Byrokko,byrokko,14.0,%
 2026-06-01,Canal Plus,canalplus,,zł
-2026-06-01,Carrefour,carrefour,2.0,%
+2026-06-01,Carrefour,carrefour,3.0,%
 2026-06-01,Castorama,castorama,2.5,%
 2026-06-01,Ceneo,ceneo,1.0,%
 2026-06-01,Cobi,cobi,3.5,%
@@ -169,7 +170,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-06-01,Pan Materac,panmaterac,8.0,%
 2026-06-01,Parfumdreams,parfumdreams,12.0,%
 2026-06-01,Peek & Cloppenburg,peek-and-cloppenburg,2.0,%
-2026-06-01,Perfumeria,perfumeria.pl,3.84,%
+2026-06-01,Perfumeria,perfumeria.pl,4.0,%
 2026-06-01,Perfumy.pl,perfumy,5.0,%
 2026-06-01,Petkarma,petkarma,10.0,%
 2026-06-01,Philips,philips,4.0,%
@@ -241,7 +242,6 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-06-01,7way,7way,3.5,%
 2026-06-01,24mx,24mx,2.5,%
 2026-06-01,Agoda,agoda,5.0,%
-2026-06-01,Brainmarket,brainmarket,4.0,%
 2026-06-01,KurJerzy.pl,kurjerzy.pl,3.0,%
 2026-06-01,Orange Flex,orangeflex,,zł
 2026-06-01,Tescoma,tescoma,3.5,%
