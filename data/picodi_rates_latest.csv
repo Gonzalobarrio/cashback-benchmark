@@ -9,7 +9,7 @@ date,retailer,igraal_slug,picodi_rate,picodi_rate_type,picodi_url
 2026-06-02,Temu,temu,12.0,up_to_%,https://www.picodi.com/pl/temu/offers
 2026-06-02,SHEIN,shein,4.5,up_to_%,https://www.picodi.com/pl/shein/offers
 2026-06-02,RTV Euro AGD,rtveuro,1.8,up_to_%,https://www.picodi.com/pl/rtveuroagd/offers
-2026-06-02,Lidl,lidl,1.2,%,https://www.picodi.com/pl/lidl/offers
+2026-06-02,Lidl,lidl,0.5,%,https://www.picodi.com/pl/lidl/offers
 2026-06-02,Leroy Merlin,leroymerlin,1.3,%,https://www.picodi.com/pl/leroy-merlin/offers
 2026-06-02,CCC,ccc,2.0,up_to_%,https://www.picodi.com/pl/ccc/offers
 2026-06-02,Hebe,hebe,1.8,%,https://www.picodi.com/pl/hebe/offers
@@ -230,6 +230,7 @@ date,retailer,igraal_slug,picodi_rate,picodi_rate_type,picodi_url
 2026-06-02,Wrangler,wrangler,,not_found,
 2026-06-02,x-kom,x-kom,,not_found,
 2026-06-02,Xiaomi,mi,,not_found,
+2026-06-02,xlmoto,xlmoto,,not_found,
 2026-06-02,Yanosik,yanosik,,not_found,
 2026-06-02,Your KAYA,yourkaya,,not_found,
 2026-06-02,Yves Rocher,yves-rocher,,not_found,

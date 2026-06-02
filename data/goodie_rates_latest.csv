@@ -135,7 +135,7 @@ date,retailer,igraal_slug,goodie_rate,goodie_rate_type,goodie_url
 2026-06-02,Leo Express,leoexpress,2.5,%,https://goodie.pl/marka/leoexpress
 2026-06-02,Levi's,levis,,not_found,
 2026-06-02,LG,lg,1.25,%,https://goodie.pl/marka/lg
-2026-06-02,lionelo,lionelo,3.0,%,https://goodie.pl/marka/lionelo
+2026-06-02,lionelo,lionelo,,no cashback,https://goodie.pl/marka/lionelo
 2026-06-02,Loaded,cdkeys,,not_found,
 2026-06-02,Lokalny Rolnik,lokalnyrolnik,2.8,%,https://goodie.pl/marka/lokalny-rolnik
 2026-06-02,Lookfantastic,lookfantastic,5.0,up_to_%,https://goodie.pl/marka/lookfantastic
@@ -230,6 +230,7 @@ date,retailer,igraal_slug,goodie_rate,goodie_rate_type,goodie_url
 2026-06-02,Wrangler,wrangler,5.0,%,https://goodie.pl/marka/wrangler
 2026-06-02,x-kom,x-kom,0.63,%,https://goodie.pl/marka/x-kom-pl
 2026-06-02,Xiaomi,mi,2.5,%,https://goodie.pl/marka/xiaomi
+2026-06-02,xlmoto,xlmoto,,not_found,
 2026-06-02,Yanosik,yanosik,2.0,%,https://goodie.pl/marka/yanosik-pl
 2026-06-02,Your KAYA,yourkaya,,no cashback,https://goodie.pl/marka/yourkaya
 2026-06-02,Yves Rocher,yves-rocher,2.5,%,https://goodie.pl/marka/yves-rocher
