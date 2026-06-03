@@ -121,7 +121,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-06-03,Katalog Marzeń,katalog-marzen,2.8,%
 2026-06-03,Kazar,kazar,,no cashback
 2026-06-03,Kenwood,kenwood,6.0,%
-2026-06-03,KFC,kfc,,no cashback
+2026-06-03,KFC,kfc,3.0,%
 2026-06-03,Kinguin,kinguin,4.0,%
 2026-06-03,Kiwi,kiwi,3.0,%
 2026-06-03,Komputronik,komputronik,1.5,%
@@ -175,6 +175,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-06-03,Petkarma,petkarma,10.0,%
 2026-06-03,Philips,philips,4.0,%
 2026-06-03,Philips Hue,philips-hue,7.0,%
+2026-06-03,Pitbull,pitbull,5.0,%
 2026-06-03,Play,play,,zł
 2026-06-03,Pleso,plesotherapy,,zł
 2026-06-03,Preply,preply,,zł
