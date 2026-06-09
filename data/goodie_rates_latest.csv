@@ -9,7 +9,7 @@ date,retailer,igraal_slug,goodie_rate,goodie_rate_type,goodie_url
 2026-06-09,Temu,temu,16.0,up_to_%,https://goodie.pl/marka/temu
 2026-06-09,SHEIN,shein,7.5,up_to_%,https://goodie.pl/marka/shein
 2026-06-09,RTV Euro AGD,rtveuro,1.54,up_to_%,https://goodie.pl/marka/rtv-euro-agd
-2026-06-09,Lidl,lidl,0.5,%,https://goodie.pl/marka/lidl
+2026-06-09,Lidl,lidl,1.0,%,https://goodie.pl/marka/lidl
 2026-06-09,Leroy Merlin,leroymerlin,1.09,%,https://goodie.pl/marka/leroy-merlin
 2026-06-09,CCC,ccc,3.25,up_to_%,https://goodie.pl/marka/ccc
 2026-06-09,Hebe,hebe,,no cashback,https://goodie.pl/marka/hebe
@@ -28,6 +28,7 @@ date,retailer,igraal_slug,goodie_rate,goodie_rate_type,goodie_url
 2026-06-09,AUTODOC,autodoc,4.0,up_to_%,https://goodie.pl/marka/autodoc
 2026-06-09,AXA Partners,axa-partners,10.0,%,https://goodie.pl/marka/axa-partners
 2026-06-09,Banggood,banggood,7.75,up_to_%,https://goodie.pl/marka/banggood
+2026-06-09,Bank Pekao,bank-pekao,,not_found,
 2026-06-09,Baseus,baseus,,not_found,
 2026-06-09,BasicLab,basiclab,,not_found,
 2026-06-09,BeDiet,bediet,7.0,up_to_%,https://goodie.pl/marka/bediet

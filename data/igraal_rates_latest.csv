@@ -28,6 +28,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-06-09,AUTODOC,autodoc,7.0,%
 2026-06-09,AXA Partners,axa-partners,15.0,%
 2026-06-09,Banggood,banggood,10.0,%
+2026-06-09,Bank Pekao,bank-pekao,,zł
 2026-06-09,Baseus,baseus,4.0,%
 2026-06-09,BasicLab,basiclab,2.0,%
 2026-06-09,BeDiet,bediet,,no cashback
@@ -87,7 +88,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-06-09,Eventim,eventim,1.0,%
 2026-06-09,eZebra,ezebra,4.0,%
 2026-06-09,Fera,fera,2.0,%
-2026-06-09,Fielmann,fielmann,6.0,%
+2026-06-09,Fielmann,fielmann,,no cashback
 2026-06-09,Flexispot,flexispot,4.0,%
 2026-06-09,Flixbus,flixbus,7.0,%
 2026-06-09,Footdistrict,footdistrict,8.0,%
@@ -235,7 +236,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-06-09,Xiaomi,mi,2.0,%
 2026-06-09,xlmoto,xlmoto,4.0,%
 2026-06-09,Yanosik,yanosik,3.0,%
-2026-06-09,Your KAYA,yourkaya,5.5,%
+2026-06-09,Your KAYA,yourkaya,,no cashback
 2026-06-09,Yves Rocher,yves-rocher,5.0,%
 2026-06-09,Zalando,zalando.pl,8.0,%
 2026-06-09,Znak,znak,3.0,%
