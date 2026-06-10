@@ -7,7 +7,7 @@ date,retailer,igraal_slug,letyshops_rate,letyshops_rate_type,letyshops_boosted,l
 2026-06-10,Lounge by Zalando,zalando-lounge,6.0,%,False,https://letyshops.com/pl-en/shops/zalando-lounge-pl
 2026-06-10,MediaMarkt,mediamarkt,3.5,%,False,https://letyshops.com/pl/shops/media-markt-pl
 2026-06-10,Temu,temu,7.85,%,False,https://letyshops.com/pl/shops/temu
-2026-06-10,SHEIN,shein,5.0,%,False,https://letyshops.com/pl/shops/shein-pl
+2026-06-10,SHEIN,shein,,no cashback,False,
 2026-06-10,RTV Euro AGD,rtveuro,3.5,%,False,https://letyshops.com/pl/shops/rtv-euro-agd
 2026-06-10,Lidl,lidl,2.0,%,False,https://letyshops.com/pl-en/shops/lidl-pl
 2026-06-10,Leroy Merlin,leroymerlin,2.15,%,False,https://letyshops.com/pl/shops/leroy-merlin

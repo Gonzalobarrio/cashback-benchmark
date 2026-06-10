@@ -6,10 +6,10 @@ date,retailer,igraal_slug,picodi_rate,picodi_rate_type,picodi_url
 2026-06-10,Empik,empik,7.5,up_to_%,https://www.picodi.com/pl/empik/offers
 2026-06-10,Lounge by Zalando,zalando-lounge,3.6,up_to_%,https://www.picodi.com/pl/zalando-lounge/offers
 2026-06-10,MediaMarkt,mediamarkt,1.8,up_to_%,https://www.picodi.com/pl/mediamarkt/offers
-2026-06-10,Temu,temu,12.0,up_to_%,https://www.picodi.com/pl/temu/offers
+2026-06-10,Temu,temu,20.7,up_to_%,https://www.picodi.com/pl/temu/offers
 2026-06-10,SHEIN,shein,4.5,up_to_%,https://www.picodi.com/pl/shein/offers
 2026-06-10,RTV Euro AGD,rtveuro,5.0,up_to_%,https://www.picodi.com/pl/rtveuroagd/offers
-2026-06-10,Lidl,lidl,1.2,%,https://www.picodi.com/pl/lidl/offers
+2026-06-10,Lidl,lidl,0.5,%,https://www.picodi.com/pl/lidl/offers
 2026-06-10,Leroy Merlin,leroymerlin,1.3,%,https://www.picodi.com/pl/leroy-merlin/offers
 2026-06-10,CCC,ccc,2.0,up_to_%,https://www.picodi.com/pl/ccc/offers
 2026-06-10,Hebe,hebe,1.8,%,https://www.picodi.com/pl/hebe/offers
@@ -35,7 +35,7 @@ date,retailer,igraal_slug,picodi_rate,picodi_rate_type,picodi_url
 2026-06-10,Bee.pl,bee.pl,,not_found,
 2026-06-10,Bezpieczna Rodzina,bezpiecznarodzina,,not_found,
 2026-06-10,Bibliotheque De Parfum,bibliotheque-de-parfum,3.6,%,https://www.picodi.com/pl/bibliotheque-de-parfum/offers
-2026-06-10,BIG STAR,bigstar,1.8,%,https://www.picodi.com/pl/big-star/offers
+2026-06-10,BIG STAR,bigstar,,not_found,
 2026-06-10,Bimba Y Lola,bimbaylola,,not_found,
 2026-06-10,Bonprix,bonprix,,not_found,
 2026-06-10,Born2Be,born2be,,not_found,
