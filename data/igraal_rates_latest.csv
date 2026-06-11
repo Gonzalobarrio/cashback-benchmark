@@ -25,6 +25,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-06-11,AirHelp,airhelp,20.0,%
 2026-06-11,ALAB Laboratoria,alab-laboratoria,8.0,%
 2026-06-11,Alibaba,alibaba.com,8.4,%
+2026-06-11,Audioteka,audioteka,2.5,%
 2026-06-11,AUTODOC,autodoc,7.0,%
 2026-06-11,AXA Partners,axa-partners,15.0,%
 2026-06-11,Banggood,banggood,10.0,%
@@ -225,6 +226,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-06-11,Under Armour,under-armour,6.0,%
 2026-06-11,Van Graaf,vangraaf,7.0,%
 2026-06-11,Vans,vans,4.0,%
+2026-06-11,Vasco Electronics,vascoelectronics,3.0,%
 2026-06-11,Victoria's Secret,victorias-secret,3.0,%
 2026-06-11,VidaXL,vidaxl,2.5,%
 2026-06-11,Vision Express,visionexpress,6.3,%
@@ -250,7 +252,6 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-06-11,KurJerzy.pl,kurjerzy.pl,3.0,%
 2026-06-11,Orange Flex,orangeflex,,zł
 2026-06-11,Tescoma,tescoma,3.5,%
-2026-06-11,Vasco Electronics,vascoelectronics,3.0,%
 2026-06-11,Airbnb,airbnb,,no cashback
 2026-06-11,Carinii,carinii,,no cashback
 2026-06-11,Duka,duka,,no cashback

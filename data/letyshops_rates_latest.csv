@@ -25,6 +25,7 @@ date,retailer,igraal_slug,letyshops_rate,letyshops_rate_type,letyshops_boosted,l
 2026-06-11,AirHelp,airhelp,7.5,%,False,https://letyshops.com/pl/shops/airhelp
 2026-06-11,ALAB Laboratoria,alab-laboratoria,4.6,%,False,https://letyshops.com/pl/shops/alab-laboratoria-pl
 2026-06-11,Alibaba,alibaba.com,,no cashback,False,
+2026-06-11,Audioteka,audioteka,,not_found,False,
 2026-06-11,AUTODOC,autodoc,4.0,%,False,https://letyshops.com/pl/shops/autodoc-pl
 2026-06-11,AXA Partners,axa-partners,,not_found,False,
 2026-06-11,Banggood,banggood,6.5,%,False,https://letyshops.com/pl/shops/banggood
@@ -205,7 +206,7 @@ date,retailer,igraal_slug,letyshops_rate,letyshops_rate_type,letyshops_boosted,l
 2026-06-11,Skechers,skechers,,not_found,False,
 2026-06-11,SkyShowtime,skyshowtime,1.7,%,False,https://letyshops.com/pl/shops/skyshowtime-pl
 2026-06-11,Sony.pl,sony,2.5,%,False,https://letyshops.com/pl/shops/sony-pl
-2026-06-11,SportStyleStory,sportstylestory,3.0,%,False,https://letyshops.com/pl/shops/sportstylestory-pl
+2026-06-11,SportStyleStory,sportstylestory,6.0,%,False,https://letyshops.com/pl/shops/sportstylestory-pl
 2026-06-11,Stradivarius,stradivarius,3.0,%,False,https://letyshops.com/pl/shops/stradivarius-pl
 2026-06-11,Streetstyle24,streetstyle24,3.45,%,False,https://letyshops.com/pl/shops/streetstyle24-pl
 2026-06-11,Stylevana,stylevana,5.0,%,False,https://letyshops.com/pl/shops/stylevana
@@ -225,6 +226,7 @@ date,retailer,igraal_slug,letyshops_rate,letyshops_rate_type,letyshops_boosted,l
 2026-06-11,Under Armour,under-armour,2.5,%,False,https://letyshops.com/pl/shops/under-armour-pl
 2026-06-11,Van Graaf,vangraaf,4.5,%,False,https://letyshops.com/pl/shops/van-graaf-pl
 2026-06-11,Vans,vans,,no cashback,False,
+2026-06-11,Vasco Electronics,vascoelectronics,3.0,%,False,https://letyshops.com/pl/shops/vasco-electronics-pl
 2026-06-11,Victoria's Secret,victorias-secret,2.5,%,False,https://letyshops.com/pl/shops/victorias-secret-pl
 2026-06-11,VidaXL,vidaxl,1.45,%,False,https://letyshops.com/pl/shops/vida-xl
 2026-06-11,Vision Express,visionexpress,4.2,%,False,https://letyshops.com/pl/shops/vision-express-pl
@@ -250,7 +252,6 @@ date,retailer,igraal_slug,letyshops_rate,letyshops_rate_type,letyshops_boosted,l
 2026-06-11,KurJerzy.pl,kurjerzy.pl,2.8,%,False,https://letyshops.com/pl/shops/kurjerzy-pl
 2026-06-11,Orange Flex,orangeflex,,not_found,False,
 2026-06-11,Tescoma,tescoma,,not_found,False,
-2026-06-11,Vasco Electronics,vascoelectronics,3.0,%,False,https://letyshops.com/pl/shops/vasco-electronics-pl
 2026-06-11,Airbnb,airbnb,,not_found,False,
 2026-06-11,Carinii,carinii,,no cashback,False,
 2026-06-11,Duka,duka,,no cashback,False,

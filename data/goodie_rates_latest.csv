@@ -25,6 +25,7 @@ date,retailer,igraal_slug,goodie_rate,goodie_rate_type,goodie_url
 2026-06-11,AirHelp,airhelp,10.0,up_to_%,https://goodie.pl/marka/airhelp
 2026-06-11,ALAB Laboratoria,alab-laboratoria,3.12,%,https://goodie.pl/marka/alab-laboratoria
 2026-06-11,Alibaba,alibaba.com,2.7,%,https://goodie.pl/marka/alibaba-pl
+2026-06-11,Audioteka,audioteka,6.0,up_to_%,https://goodie.pl/marka/audioteka
 2026-06-11,AUTODOC,autodoc,4.0,up_to_%,https://goodie.pl/marka/autodoc
 2026-06-11,AXA Partners,axa-partners,10.0,%,https://goodie.pl/marka/axa-partners
 2026-06-11,Banggood,banggood,7.75,up_to_%,https://goodie.pl/marka/banggood
@@ -225,6 +226,7 @@ date,retailer,igraal_slug,goodie_rate,goodie_rate_type,goodie_url
 2026-06-11,Under Armour,under-armour,3.0,%,https://goodie.pl/marka/under-armour
 2026-06-11,Van Graaf,vangraaf,,no cashback,https://goodie.pl/marka/van-graaf
 2026-06-11,Vans,vans,5.0,%,https://goodie.pl/marka/vans
+2026-06-11,Vasco Electronics,vascoelectronics,2.0,%,https://goodie.pl/marka/vasco-electronics
 2026-06-11,Victoria's Secret,victorias-secret,,not_found,
 2026-06-11,VidaXL,vidaxl,2.0,%,https://goodie.pl/marka/vida-xl
 2026-06-11,Vision Express,visionexpress,4.25,%,https://goodie.pl/marka/vision-express
@@ -250,7 +252,6 @@ date,retailer,igraal_slug,goodie_rate,goodie_rate_type,goodie_url
 2026-06-11,KurJerzy.pl,kurjerzy.pl,,not_found,
 2026-06-11,Orange Flex,orangeflex,,no cashback,https://goodie.pl/marka/orange-flex
 2026-06-11,Tescoma,tescoma,3.5,%,https://goodie.pl/marka/tescoma
-2026-06-11,Vasco Electronics,vascoelectronics,2.0,%,https://goodie.pl/marka/vasco-electronics
 2026-06-11,Airbnb,airbnb,,not_found,
 2026-06-11,Carinii,carinii,,no cashback,https://goodie.pl/marka/carinii
 2026-06-11,Duka,duka,,no cashback,https://goodie.pl/marka/duka
