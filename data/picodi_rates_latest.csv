@@ -1,37 +1,37 @@
 date,retailer,igraal_slug,picodi_rate,picodi_rate_type,picodi_url
-2026-06-17,AliExpress,aliexpress,20.7,up_to_%,https://www.picodi.com/pl/aliexpress/offers
-2026-06-17,Allegro,allegro,0.7,up_to_%,https://www.picodi.com/pl/allegro/offers
-2026-06-17,Answear,answear,1.2,up_to_%,https://www.picodi.com/pl/answear-com/offers
-2026-06-17,Decathlon,decathlon,1.4,up_to_%,https://www.picodi.com/pl/decathlon/offers
-2026-06-17,Empik,empik,7.5,up_to_%,https://www.picodi.com/pl/empik/offers
-2026-06-17,Lounge by Zalando,zalando-lounge,3.6,up_to_%,https://www.picodi.com/pl/zalando-lounge/offers
-2026-06-17,MediaMarkt,mediamarkt,1.8,up_to_%,https://www.picodi.com/pl/mediamarkt/offers
-2026-06-17,Temu,temu,20.7,up_to_%,https://www.picodi.com/pl/temu/offers
-2026-06-17,SHEIN,shein,4.5,up_to_%,https://www.picodi.com/pl/shein/offers
-2026-06-17,RTV Euro AGD,rtveuro,1.8,up_to_%,https://www.picodi.com/pl/rtveuroagd/offers
-2026-06-17,Lidl,lidl,0.5,%,https://www.picodi.com/pl/lidl/offers
-2026-06-17,Leroy Merlin,leroymerlin,1.3,%,https://www.picodi.com/pl/leroy-merlin/offers
-2026-06-17,CCC,ccc,2.0,up_to_%,https://www.picodi.com/pl/ccc/offers
-2026-06-17,Hebe,hebe,1.8,%,https://www.picodi.com/pl/hebe/offers
-2026-06-17,OBI,obi,1.5,%,https://www.picodi.com/pl/obi/offers
-2026-06-17,Adidas,adidas,1.8,up_to_%,https://www.picodi.com/pl/adidas-pl/offers
-2026-06-17,Sephora,sephora,3.3,up_to_%,https://www.picodi.com/pl/sephora/offers
-2026-06-17,Douglas,douglas,9.0,up_to_%,https://www.picodi.com/pl/douglas/offers
-2026-06-17,home&you,home-you,1.2,up_to_%,https://www.picodi.com/pl/home-you/offers
-2026-06-17,Abra,abra,1.5,%,https://www.picodi.com/pl/abra/offers
-2026-06-17,Acer,acer,2.1,%,https://www.picodi.com/pl/acer/offers
-2026-06-17,Aelia,aelia,2.0,%,https://www.picodi.com/pl/aelia/offers
-2026-06-17,Airalo,airalo,3.5,up_to_%,https://www.picodi.com/pl/airalo/offers
-2026-06-17,AirHelp,airhelp,4.5,%,https://www.picodi.com/pl/air-help/offers
-2026-06-17,ALAB Laboratoria,alab-laboratoria,1.9,%,https://www.picodi.com/pl/alablaboratoria/offers
-2026-06-17,Alibaba,alibaba.com,2.5,up_to_%,https://www.picodi.com/pl/alibaba/offers
-2026-06-17,Audioteka,audioteka,2.1,%,https://www.picodi.com/pl/audioteka-pl/offers
-2026-06-17,AUTODOC,autodoc,3.0,up_to_%,https://www.picodi.com/pl/autodoc/offers
-2026-06-17,AXA Partners,axa-partners,6.0,%,https://www.picodi.com/pl/axa-assistance/offers
-2026-06-17,Banggood,banggood,4.7,up_to_%,https://www.picodi.com/pl/banggood-com/offers
+2026-06-17,AliExpress,aliexpress,,not_found,
+2026-06-17,Allegro,allegro,,not_found,
+2026-06-17,Answear,answear,,not_found,
+2026-06-17,Decathlon,decathlon,,not_found,
+2026-06-17,Empik,empik,,not_found,
+2026-06-17,Lounge by Zalando,zalando-lounge,,not_found,
+2026-06-17,MediaMarkt,mediamarkt,,not_found,
+2026-06-17,Temu,temu,,not_found,
+2026-06-17,SHEIN,shein,,not_found,
+2026-06-17,RTV Euro AGD,rtveuro,,not_found,
+2026-06-17,Lidl,lidl,,not_found,
+2026-06-17,Leroy Merlin,leroymerlin,,not_found,
+2026-06-17,CCC,ccc,,not_found,
+2026-06-17,Hebe,hebe,,not_found,
+2026-06-17,OBI,obi,,not_found,
+2026-06-17,Adidas,adidas,,not_found,
+2026-06-17,Sephora,sephora,,not_found,
+2026-06-17,Douglas,douglas,,not_found,
+2026-06-17,home&you,home-you,,not_found,
+2026-06-17,Abra,abra,,not_found,
+2026-06-17,Acer,acer,,not_found,
+2026-06-17,Aelia,aelia,,not_found,
+2026-06-17,Airalo,airalo,,not_found,
+2026-06-17,AirHelp,airhelp,,not_found,
+2026-06-17,ALAB Laboratoria,alab-laboratoria,,not_found,
+2026-06-17,Alibaba,alibaba.com,,not_found,
+2026-06-17,Audioteka,audioteka,,not_found,
+2026-06-17,AUTODOC,autodoc,,not_found,
+2026-06-17,AXA Partners,axa-partners,,not_found,
+2026-06-17,Banggood,banggood,,not_found,
 2026-06-17,Bank Pekao,bank-pekao,,not_found,
-2026-06-17,Baseus,baseus,1.2,%,https://www.picodi.com/pl/baseus/offers
-2026-06-17,BasicLab,basiclab,1.2,%,https://www.picodi.com/pl/basiclab/offers
+2026-06-17,Baseus,baseus,,not_found,
+2026-06-17,BasicLab,basiclab,,not_found,
 2026-06-17,BeDiet,bediet,,not_found,
 2026-06-17,Bee.pl,bee.pl,,not_found,
 2026-06-17,Bezpieczna Rodzina,bezpiecznarodzina,,not_found,
