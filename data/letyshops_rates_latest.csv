@@ -10,7 +10,7 @@ date,retailer,igraal_slug,letyshops_rate,letyshops_rate_type,letyshops_boosted,l
 2026-06-19,SHEIN,shein,5.0,%,False,https://letyshops.com/pl/shops/shein-pl
 2026-06-19,RTV Euro AGD,rtveuro,3.5,%,False,https://letyshops.com/pl/shops/rtv-euro-agd
 2026-06-19,Lidl,lidl,1.0,%,False,https://letyshops.com/pl-en/shops/lidl-pl
-2026-06-19,Leroy Merlin,leroymerlin,2.15,%,False,https://letyshops.com/pl/shops/leroy-merlin
+2026-06-19,Leroy Merlin,leroymerlin,1.75,%,False,https://letyshops.com/pl/shops/leroy-merlin
 2026-06-19,CCC,ccc,3.25,%,False,https://letyshops.com/pl-en/shops/ccc-pl
 2026-06-19,Hebe,hebe,4.0,%,False,https://letyshops.com/pl-en/shops/hebe
 2026-06-19,OBI,obi,2.5,%,False,https://letyshops.com/pl/shops/obi-pl
@@ -19,7 +19,7 @@ date,retailer,igraal_slug,letyshops_rate,letyshops_rate_type,letyshops_boosted,l
 2026-06-19,Douglas,douglas,4.0,%,False,https://letyshops.com/pl/shops/douglas
 2026-06-19,home&you,home-you,2.0,%,False,https://letyshops.com/pl/shops/home-you
 2026-06-19,Abra,abra,,not_found,False,
-2026-06-19,Acer,acer,4.5,%,False,https://letyshops.com/pl/shops/acer-pl
+2026-06-19,Acer,acer,4.0,%,False,https://letyshops.com/pl/shops/acer-pl
 2026-06-19,Aelia,aelia,3.25,%,False,https://letyshops.com/pl/shops/aelia
 2026-06-19,Airalo,airalo,,not_found,False,
 2026-06-19,AirHelp,airhelp,7.5,%,False,https://letyshops.com/pl/shops/airhelp
@@ -200,7 +200,7 @@ date,retailer,igraal_slug,letyshops_rate,letyshops_rate_type,letyshops_boosted,l
 2026-06-19,Reporter Young,reporteryoung,,no cashback,False,
 2026-06-19,Rocketjobs.pl,rocketjobs,,not_found,False,
 2026-06-19,Ryobi,ryobi,6.0,%,False,https://letyshops.com/pl/shops/ryobi-pl
-2026-06-19,Samsung,samsung,2.5,%,False,https://letyshops.com/pl-en/shops/samsung-pl
+2026-06-19,Samsung,samsung,2.5,%,False,https://letyshops.com/pl/shops/samsung-pl
 2026-06-19,SeePlaces,seeplaces,2.25,%,False,https://letyshops.com/pl/shops/seeplaces-pl
 2026-06-19,Sferis,sferis,7.5,%,False,https://letyshops.com/pl/shops/sferis-pl
 2026-06-19,Sinsay,sinsay,5.0,%,False,https://letyshops.com/pl-en/shops/sinsay-pl
@@ -236,7 +236,7 @@ date,retailer,igraal_slug,letyshops_rate,letyshops_rate_type,letyshops_boosted,l
 2026-06-19,Wolt,wolt,,no cashback,False,
 2026-06-19,Wrangler,wrangler,5.0,%,False,https://letyshops.com/pl/shops/wrangler-pl
 2026-06-19,x-kom,x-kom,0.65,%,False,https://letyshops.com/pl-en/shops/x-kom-pl
-2026-06-19,Xiaomi,mi,2.5,%,False,https://letyshops.com/pl/shops/xiaomi-pl
+2026-06-19,Xiaomi,mi,3.75,%,False,https://letyshops.com/pl/shops/xiaomi-pl
 2026-06-19,xlmoto,xlmoto,,not_found,False,
 2026-06-19,Yanosik,yanosik,2.5,%,False,https://letyshops.com/pl/shops/yanosik-pl
 2026-06-19,Yope,yope,4.5,%,False,https://letyshops.com/pl/shops/yope-pl
