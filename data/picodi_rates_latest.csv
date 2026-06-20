@@ -23,7 +23,7 @@ date,retailer,igraal_slug,picodi_rate,picodi_rate_type,picodi_url
 2026-06-20,Aelia,aelia,2.0,up_to_%,https://www.picodi.com/pl/aelia/offers
 2026-06-20,Airalo,airalo,3.5,up_to_%,https://www.picodi.com/pl/airalo/offers
 2026-06-20,AirHelp,airhelp,4.5,up_to_%,https://www.picodi.com/pl/air-help/offers
-2026-06-20,ALAB Laboratoria,alab-laboratoria,20.0,up_to_%,https://www.picodi.com/pl/alablaboratoria/offers
+2026-06-20,ALAB Laboratoria,alab-laboratoria,1.9,up_to_%,https://www.picodi.com/pl/alablaboratoria/offers
 2026-06-20,Alibaba,alibaba.com,2.5,up_to_%,https://www.picodi.com/pl/alibaba/offers
 2026-06-20,Audioteka,audioteka,2.1,up_to_%,https://www.picodi.com/pl/audioteka-pl/offers
 2026-06-20,AUTODOC,autodoc,3.0,up_to_%,https://www.picodi.com/pl/autodoc/offers
@@ -35,7 +35,7 @@ date,retailer,igraal_slug,picodi_rate,picodi_rate_type,picodi_url
 2026-06-20,BeDiet,bediet,,not_found,
 2026-06-20,Bee.pl,bee.pl,,not_found,
 2026-06-20,Bibliotheque De Parfum,bibliotheque-de-parfum,,not_found,
-2026-06-20,BIG STAR,bigstar,,not_found,
+2026-06-20,BIG STAR,bigstar,1.8,up_to_%,https://www.picodi.com/pl/big-star/offers
 2026-06-20,Bimba Y Lola,bimbaylola,,not_found,
 2026-06-20,Bonprix,bonprix,,not_found,
 2026-06-20,Born2Be,born2be,,not_found,
