@@ -26,6 +26,7 @@ date,retailer,igraal_slug,letyshops_rate,letyshops_rate_type,letyshops_boosted,l
 2026-06-23,AirHelp,airhelp,7.5,%,False,https://letyshops.com/pl/shops/airhelp
 2026-06-23,ALAB Laboratoria,alab-laboratoria,4.6,%,False,https://letyshops.com/pl/shops/alab-laboratoria-pl
 2026-06-23,Alibaba,alibaba.com,,no cashback,False,
+2026-06-23,Amazon,amazon,5.0,%,False,https://letyshops.com/pl/shops/amazon-pl
 2026-06-23,Audioteka,audioteka,,not_found,False,
 2026-06-23,AUTODOC,autodoc,4.0,%,False,https://letyshops.com/pl/shops/autodoc-pl
 2026-06-23,AXA Partners,axa-partners,,not_found,False,
@@ -218,6 +219,7 @@ date,retailer,igraal_slug,letyshops_rate,letyshops_rate_type,letyshops_boosted,l
 2026-06-23,Świat supli,swiatsupli,,not_found,False,
 2026-06-23,Tagomago,tagomago,2.5,%,False,https://letyshops.com/pl/shops/tagomago-pl
 2026-06-23,Tefal,tefal,3.0,%,False,https://letyshops.com/pl/shops/tefal-pl
+2026-06-23,Tescoma,tescoma,,not_found,False,
 2026-06-23,TestDNA,testdna,,not_found,False,
 2026-06-23,Teufel,teufel,2.0,%,False,https://letyshops.com/pl/shops/teufel-pl
 2026-06-23,Top Secret,topsecret,,no cashback,False,
@@ -254,7 +256,6 @@ date,retailer,igraal_slug,letyshops_rate,letyshops_rate_type,letyshops_boosted,l
 2026-06-23,4kidspoint,4kidspoint,1.75,%,False,https://letyshops.com/pl/shops/4kidspoint-pl
 2026-06-23,7way,7way,1.75,%,False,https://letyshops.com/pl/shops/7way
 2026-06-23,KurJerzy.pl,kurjerzy.pl,2.8,%,False,https://letyshops.com/pl/shops/kurjerzy-pl
-2026-06-23,Tescoma,tescoma,,not_found,False,
 2026-06-23,Airbnb,airbnb,,not_found,False,
 2026-06-23,Carinii,carinii,,no cashback,False,
 2026-06-23,Duka,duka,,no cashback,False,

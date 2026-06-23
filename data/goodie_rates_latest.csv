@@ -26,6 +26,7 @@ date,retailer,igraal_slug,goodie_rate,goodie_rate_type,goodie_url
 2026-06-23,AirHelp,airhelp,10.0,up_to_%,https://goodie.pl/marka/airhelp
 2026-06-23,ALAB Laboratoria,alab-laboratoria,3.12,%,https://goodie.pl/marka/alab-laboratoria
 2026-06-23,Alibaba,alibaba.com,2.7,%,https://goodie.pl/marka/alibaba-pl
+2026-06-23,Amazon,amazon,5.0,up_to_%,https://goodie.pl/marka/amazon
 2026-06-23,Audioteka,audioteka,6.0,up_to_%,https://goodie.pl/marka/audioteka
 2026-06-23,AUTODOC,autodoc,4.0,up_to_%,https://goodie.pl/marka/autodoc
 2026-06-23,AXA Partners,axa-partners,10.0,%,https://goodie.pl/marka/axa-partners
@@ -218,6 +219,7 @@ date,retailer,igraal_slug,goodie_rate,goodie_rate_type,goodie_url
 2026-06-23,Świat supli,swiatsupli,,not_found,
 2026-06-23,Tagomago,tagomago,2.5,%,https://goodie.pl/marka/tagomago-pl
 2026-06-23,Tefal,tefal,3.08,up_to_%,https://goodie.pl/marka/tefal
+2026-06-23,Tescoma,tescoma,3.5,%,https://goodie.pl/marka/tescoma
 2026-06-23,TestDNA,testdna,,not_found,
 2026-06-23,Teufel,teufel,2.0,%,https://goodie.pl/marka/teufel
 2026-06-23,Top Secret,topsecret,,no cashback,https://goodie.pl/marka/top-secret
@@ -254,7 +256,6 @@ date,retailer,igraal_slug,goodie_rate,goodie_rate_type,goodie_url
 2026-06-23,4kidspoint,4kidspoint,,no cashback,https://goodie.pl/marka/4kidspoint-pl
 2026-06-23,7way,7way,1.75,%,https://goodie.pl/marka/7way
 2026-06-23,KurJerzy.pl,kurjerzy.pl,,not_found,
-2026-06-23,Tescoma,tescoma,3.5,%,https://goodie.pl/marka/tescoma
 2026-06-23,Airbnb,airbnb,,not_found,
 2026-06-23,Carinii,carinii,,no cashback,https://goodie.pl/marka/carinii
 2026-06-23,Duka,duka,,no cashback,https://goodie.pl/marka/duka

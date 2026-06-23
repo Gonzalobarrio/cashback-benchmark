@@ -26,6 +26,7 @@ date,retailer,igraal_slug,picodi_rate,picodi_rate_type,picodi_url
 2026-06-23,AirHelp,airhelp,4.5,%,https://www.picodi.com/pl/air-help/offers
 2026-06-23,ALAB Laboratoria,alab-laboratoria,1.9,%,https://www.picodi.com/pl/alablaboratoria/offers
 2026-06-23,Alibaba,alibaba.com,2.5,up_to_%,https://www.picodi.com/pl/alibaba/offers
+2026-06-23,Amazon,amazon,3.0,up_to_%,https://www.picodi.com/pl/amazon-com/offers
 2026-06-23,Audioteka,audioteka,2.1,%,https://www.picodi.com/pl/audioteka-pl/offers
 2026-06-23,AUTODOC,autodoc,3.0,up_to_%,https://www.picodi.com/pl/autodoc/offers
 2026-06-23,AXA Partners,axa-partners,6.0,%,https://www.picodi.com/pl/axa-assistance/offers
@@ -37,7 +38,7 @@ date,retailer,igraal_slug,picodi_rate,picodi_rate_type,picodi_url
 2026-06-23,Bee.pl,bee.pl,,not_found,
 2026-06-23,Bibliotheque De Parfum,bibliotheque-de-parfum,,not_found,
 2026-06-23,BIG STAR,bigstar,1.8,%,https://www.picodi.com/pl/big-star/offers
-2026-06-23,Bimba Y Lola,bimbaylola,2.4,%,https://www.picodi.com/pl/bimba-y-lola/offers
+2026-06-23,Bimba Y Lola,bimbaylola,,not_found,
 2026-06-23,Bonprix,bonprix,,not_found,
 2026-06-23,Born2Be,born2be,,not_found,
 2026-06-23,Brainmarket,brainmarket,,not_found,
@@ -80,169 +81,170 @@ date,retailer,igraal_slug,picodi_rate,picodi_rate_type,picodi_url
 2026-06-23,Endo,endo,,not_found,
 2026-06-23,eobuwie,eobuwie,,not_found,
 2026-06-23,Erli,erli,,not_found,
-2026-06-23,ESET,eset,3.6,up_to_%,https://www.picodi.com/pl/eset/offers
+2026-06-23,ESET,eset,,not_found,
 2026-06-23,eSky,esky,,not_found,
 2026-06-23,Estro,estro,,not_found,
 2026-06-23,Eurofirany,eurofirany,,not_found,
 2026-06-23,Euroflorist,euroflorist,,not_found,
 2026-06-23,Eveline,eveline,,not_found,
-2026-06-23,Eventim,eventim,0.6,%,https://www.picodi.com/pl/eventim/offers
+2026-06-23,Eventim,eventim,,not_found,
 2026-06-23,eZebra,ezebra,,not_found,
 2026-06-23,Fera,fera,,not_found,
 2026-06-23,Fielmann,fielmann,,not_found,
 2026-06-23,Flexispot,flexispot,,not_found,
-2026-06-23,Flixbus,flixbus,1.5,up_to_%,https://www.picodi.com/pl/flixbus/offers
+2026-06-23,Flixbus,flixbus,,not_found,
 2026-06-23,Footdistrict,footdistrict,,not_found,
-2026-06-23,Footshop,footshop,2.1,up_to_%,https://www.picodi.com/pl/footshop/offers
+2026-06-23,Footshop,footshop,,not_found,
 2026-06-23,Foreo,foreo,,not_found,
-2026-06-23,FotoForma,fotoforma,0.8,%,https://www.picodi.com/pl/fotoforma/offers
+2026-06-23,FotoForma,fotoforma,,not_found,
 2026-06-23,G2A,g2a,,not_found,
 2026-06-23,Gabriella,gabriella,,not_found,
-2026-06-23,Gameseal,gameseal,3.0,up_to_%,https://www.picodi.com/pl/gameseal/offers
-2026-06-23,Gamivo,gamivo,0.8,%,https://www.picodi.com/pl/gamivo/offers
-2026-06-23,Geekbuying.pl,geekbuying,3.0,up_to_%,https://www.picodi.com/pl/geekbuying-com/offers
-2026-06-23,GetYourGuide,getyourguide,0.7,%,https://www.picodi.com/pl/getyourguide/offers
+2026-06-23,Gameseal,gameseal,,not_found,
+2026-06-23,Gamivo,gamivo,,not_found,
+2026-06-23,Geekbuying.pl,geekbuying,,not_found,
+2026-06-23,GetYourGuide,getyourguide,,not_found,
 2026-06-23,Giacomo Conti,giacomo,,not_found,
-2026-06-23,GOG,gog,1.9,%,https://www.picodi.com/pl/gog/offers
-2026-06-23,Gomez,gomez,2.0,up_to_%,https://www.picodi.com/pl/gomez/offers
-2026-06-23,Greenpoint,greenpoint,1.2,%,https://www.picodi.com/pl/greenpoint/offers
-2026-06-23,Groupon,groupon,2.1,up_to_%,https://www.picodi.com/pl/groupon/offers
-2026-06-23,H&M,hm,0.6,up_to_%,https://www.picodi.com/pl/h-m/offers
-2026-06-23,Homla,homla,1.2,%,https://www.picodi.com/pl/homla/offers
-2026-06-23,HP,hp,2.1,up_to_%,https://www.picodi.com/pl/hp/offers
-2026-06-23,Huawei,huawei,2.1,up_to_%,https://www.picodi.com/pl/huawei/offers
-2026-06-23,iBOOD,ibood,1.2,up_to_%,https://www.picodi.com/pl/ibood/offers
-2026-06-23,iDream,idream,1.3,up_to_%,https://www.picodi.com/pl/idream-pl/offers
-2026-06-23,iHerb,iherb,2.3,%,https://www.picodi.com/pl/iherb/offers
+2026-06-23,GOG,gog,,not_found,
+2026-06-23,Gomez,gomez,,not_found,
+2026-06-23,Greenpoint,greenpoint,,not_found,
+2026-06-23,Groupon,groupon,,not_found,
+2026-06-23,H&M,hm,,not_found,
+2026-06-23,Homla,homla,,not_found,
+2026-06-23,HP,hp,,not_found,
+2026-06-23,Huawei,huawei,,not_found,
+2026-06-23,iBOOD,ibood,,not_found,
+2026-06-23,iDream,idream,,not_found,
+2026-06-23,iHerb,iherb,,not_found,
 2026-06-23,IKEA,ikea,,not_found,
-2026-06-23,Intymna,intymna,1.9,%,https://www.picodi.com/pl/intymna/offers
-2026-06-23,iParts,iparts,1.1,%,https://www.picodi.com/pl/iparts-pl/offers
-2026-06-23,JD Sports,jdsports,1.5,up_to_%,https://www.picodi.com/pl/jdsports/offers
-2026-06-23,Joom,joom,4.5,up_to_%,https://www.picodi.com/pl/joom/offers
-2026-06-23,Josera,josera,2.3,%,https://www.picodi.com/pl/josera/offers
+2026-06-23,Intymna,intymna,,not_found,
+2026-06-23,iParts,iparts,,not_found,
+2026-06-23,JD Sports,jdsports,,not_found,
+2026-06-23,Joom,joom,,not_found,
+2026-06-23,Josera,josera,,not_found,
 2026-06-23,Justjoinit,justjoinit,,not_found,
-2026-06-23,Katalog Marzeń,katalog-marzen,0.8,%,https://www.picodi.com/pl/katalogmarzen/offers
+2026-06-23,Katalog Marzeń,katalog-marzen,,not_found,
 2026-06-23,Kazar,kazar,,not_found,
-2026-06-23,Kenwood,kenwood,1.8,%,https://www.picodi.com/pl/kenwood/offers
-2026-06-23,KFC,kfc,1.7,%,https://www.picodi.com/pl/kfc/offers
-2026-06-23,Kinguin,kinguin,3.4,up_to_%,https://www.picodi.com/pl/kinguin/offers
-2026-06-23,Kiwi,kiwi,1.3,%,https://www.picodi.com/pl/kiwi/offers
-2026-06-23,Komputronik,komputronik,0.5,%,https://www.picodi.com/pl/komputronik/offers
-2026-06-23,Konesso,konesso,1.2,up_to_%,https://www.picodi.com/pl/konesso-pl/offers
+2026-06-23,Kenwood,kenwood,,not_found,
+2026-06-23,KFC,kfc,,not_found,
+2026-06-23,Kinguin,kinguin,,not_found,
+2026-06-23,Kiwi,kiwi,,not_found,
+2026-06-23,Komputronik,komputronik,,not_found,
+2026-06-23,Konesso,konesso,,not_found,
 2026-06-23,Krakvet,krakvet,,not_found,
-2026-06-23,Kubota,kubota,2.1,%,https://www.picodi.com/pl/kubota/offers
-2026-06-23,Lacoste,lacoste,2.4,%,https://www.picodi.com/pl/lacoste/offers
-2026-06-23,Lampy.pl,lampy,3.6,up_to_%,https://www.picodi.com/pl/lampy-pl/offers
-2026-06-23,Legimi,legimi,4.8,%,https://www.picodi.com/pl/legimi/offers
-2026-06-23,LEGO,lego,10.0,%,https://www.picodi.com/pl/lego/offers
-2026-06-23,Leo Express,leoexpress,1.5,%,https://www.picodi.com/pl/leo-express/offers
-2026-06-23,Levi's,levis,1.5,up_to_%,https://www.picodi.com/pl/levis/offers
-2026-06-23,LG,lg,0.8,up_to_%,https://www.picodi.com/pl/lg/offers
-2026-06-23,lionelo,lionelo,2.4,%,https://www.picodi.com/pl/lionelo/offers
-2026-06-23,Loaded,cdkeys,1.5,up_to_%,https://www.picodi.com/pl/loaded/offers
-2026-06-23,Lokalny Rolnik,lokalnyrolnik,1.7,%,https://www.picodi.com/pl/lokalnyrolnik-pl/offers
+2026-06-23,Kubota,kubota,,not_found,
+2026-06-23,Lacoste,lacoste,,not_found,
+2026-06-23,Lampy.pl,lampy,,not_found,
+2026-06-23,Legimi,legimi,,not_found,
+2026-06-23,LEGO,lego,,not_found,
+2026-06-23,Leo Express,leoexpress,,not_found,
+2026-06-23,Levi's,levis,,not_found,
+2026-06-23,LG,lg,,not_found,
+2026-06-23,lionelo,lionelo,,not_found,
+2026-06-23,Loaded,cdkeys,,not_found,
+2026-06-23,Lokalny Rolnik,lokalnyrolnik,,not_found,
 2026-06-23,Lookfantastic,lookfantastic,,not_found,
-2026-06-23,LOT,lot,0.5,%,https://www.picodi.com/pl/lot/offers
-2026-06-23,Lufthansa,lufthansa,0.8,up_to_%,https://www.picodi.com/pl/lufthansa/offers
-2026-06-23,Mamyito,mamyito,1.7,%,https://www.picodi.com/pl/mamyito/offers
+2026-06-23,LOT,lot,,not_found,
+2026-06-23,Lufthansa,lufthansa,,not_found,
+2026-06-23,Mamyito,mamyito,,not_found,
 2026-06-23,Mango Outlet,mango-outlet,,not_found,
 2026-06-23,Marilyn,marilyn,,not_found,
 2026-06-23,Max Elektro,maxelektro,,not_found,
 2026-06-23,Maxi Zoo,maxizoo,,not_found,
 2026-06-23,MebleMWM,meblemwm,,not_found,
-2026-06-23,Medicine,wearmedicine,1.8,%,https://www.picodi.com/pl/medicine/offers
-2026-06-23,Merkury Market,merkurymarket,1.2,up_to_%,https://www.picodi.com/pl/merkury-market/offers
+2026-06-23,Medicine,wearmedicine,,not_found,
+2026-06-23,Merkury Market,merkurymarket,,not_found,
 2026-06-23,Michael Kors,michaelkors,,not_found,
-2026-06-23,Modivo,modivo.pl,3.5,%,https://www.picodi.com/pl/modivo/offers
+2026-06-23,Modivo,modivo.pl,,not_found,
 2026-06-23,Morele.net,morele,,not_found,
 2026-06-23,Mountain Warehouse,mountainwarehouse,,not_found,
 2026-06-23,MyHeritage DNA,myheritagedna,,not_found,
 2026-06-23,MyProtein,myprotein,,not_found,
 2026-06-23,NAOKO,naoko,,not_found,
-2026-06-23,Neness,neness,6.0,up_to_%,https://www.picodi.com/pl/neness-pl/offers
+2026-06-23,Neness,neness,,not_found,
 2026-06-23,NEONAIL,neonail,,not_found,
 2026-06-23,New Balance,nbsklep,,not_found,
 2026-06-23,Nike,nike,,not_found,
 2026-06-23,Ninja,ninja,,not_found,
-2026-06-23,NordVPN,nordvpn,13.2,%,https://www.picodi.com/pl/nordvpn/offers
+2026-06-23,NordVPN,nordvpn,,not_found,
 2026-06-23,norton,norton,,not_found,
 2026-06-23,Notino,notino,,not_found,
-2026-06-23,Novakid,novakid,29.56,usd,https://www.picodi.com/pl/novakid/offers
+2026-06-23,Novakid,novakid,,not_found,
 2026-06-23,OleOle!,oleole,,not_found,
-2026-06-23,Olimp Store,olimp-store,1.3,%,https://www.picodi.com/pl/olimp-store/offers
-2026-06-23,Ombre,ombre,2.7,up_to_%,https://www.picodi.com/pl/ombre-pl/offers
+2026-06-23,Olimp Store,olimp-store,,not_found,
+2026-06-23,Ombre,ombre,,not_found,
 2026-06-23,Orange,orange,,not_found,
 2026-06-23,Orange Flex,orangeflex,,not_found,
-2026-06-23,Pan Materac,panmaterac,2.4,%,https://www.picodi.com/pl/pan-materac/offers
-2026-06-23,Pandora,pandora,1.8,%,https://www.picodi.com/pl/pandora/offers
+2026-06-23,Pan Materac,panmaterac,,not_found,
+2026-06-23,Pandora,pandora,,not_found,
 2026-06-23,Parfumdreams,parfumdreams,,not_found,
-2026-06-23,Peek & Cloppenburg,peek-and-cloppenburg,0.9,up_to_%,https://www.picodi.com/pl/peek-and-cloppenburg/offers
+2026-06-23,Peek & Cloppenburg,peek-and-cloppenburg,,not_found,
 2026-06-23,Perfumeria,perfumeria.pl,,not_found,
 2026-06-23,Perfumy.pl,perfumy,,not_found,
 2026-06-23,Petkarma,petkarma,,not_found,
-2026-06-23,Philips,philips,2.1,%,https://www.picodi.com/pl/philips/offers
-2026-06-23,Philips Hue,philips-hue,2.1,%,https://www.picodi.com/pl/philips-hue/offers
-2026-06-23,Pitbull,pitbull,2.1,%,https://www.picodi.com/pl/pitbull/offers
-2026-06-23,Play,play,,zł,https://www.picodi.com/pl/play/offers
+2026-06-23,Philips,philips,,not_found,
+2026-06-23,Philips Hue,philips-hue,,not_found,
+2026-06-23,Pitbull,pitbull,,not_found,
+2026-06-23,Play,play,,not_found,
 2026-06-23,Pleso,plesotherapy,,not_found,
 2026-06-23,Plus,plus,,not_found,
 2026-06-23,Preply,preply,,not_found,
 2026-06-23,Primodo,primodo,,not_found,
 2026-06-23,PRM,prm,,not_found,
-2026-06-23,Proton VPN,protonvpn,30.0,up_to_%,https://www.picodi.com/pl/protonvpn/offers
-2026-06-23,Przyjaciele Kawy,przyjacielekawy,2.2,up_to_%,https://www.picodi.com/pl/przyjaciele-kawy/offers
-2026-06-23,Puma,puma,1.2,up_to_%,https://www.picodi.com/pl/puma/offers
-2026-06-23,Pyszne.pl,pyszne,1.2,%,https://www.picodi.com/pl/pyszne-pl/offers
-2026-06-23,Radisson Hotels,radissonhotels,2.1,%,https://www.picodi.com/pl/radisson-hotels/offers
+2026-06-23,Proton VPN,protonvpn,,not_found,
+2026-06-23,Przyjaciele Kawy,przyjacielekawy,,not_found,
+2026-06-23,Puma,puma,,not_found,
+2026-06-23,Pyszne.pl,pyszne,,not_found,
+2026-06-23,Radisson Hotels,radissonhotels,,not_found,
 2026-06-23,Recman,recman,,not_found,
-2026-06-23,RedBull Mobile,redbullmobile,,zł,https://www.picodi.com/pl/redbullmobile/offers
-2026-06-23,Regatta,regatta,1.5,%,https://www.picodi.com/pl/regatta/offers
+2026-06-23,RedBull Mobile,redbullmobile,,not_found,
+2026-06-23,Regatta,regatta,,not_found,
 2026-06-23,Remix,remix,,not_found,
 2026-06-23,Renee,renee,,not_found,
 2026-06-23,Reporter Young,reporteryoung,,not_found,
 2026-06-23,Rocketjobs.pl,rocketjobs,,not_found,
-2026-06-23,Ryobi,ryobi,1.2,%,https://www.picodi.com/pl/ryobi/offers
-2026-06-23,Samsung,samsung,1.5,up_to_%,https://www.picodi.com/pl/samsung/offers
+2026-06-23,Ryobi,ryobi,,not_found,
+2026-06-23,Samsung,samsung,,not_found,
 2026-06-23,SeePlaces,seeplaces,,not_found,
-2026-06-23,Sferis,sferis,6.0,up_to_%,https://www.picodi.com/pl/sferis/offers
-2026-06-23,Sinsay,sinsay,3.0,%,https://www.picodi.com/pl/sinsay/offers
+2026-06-23,Sferis,sferis,,not_found,
+2026-06-23,Sinsay,sinsay,,not_found,
 2026-06-23,Skechers,skechers,,not_found,
-2026-06-23,SkyShowtime,skyshowtime,,zł,https://www.picodi.com/pl/sky-showtime/offers
+2026-06-23,SkyShowtime,skyshowtime,,not_found,
 2026-06-23,Sony.pl,sony,,not_found,
-2026-06-23,SportStyleStory,sportstylestory,2.4,up_to_%,https://www.picodi.com/pl/sportstylestory/offers
+2026-06-23,SportStyleStory,sportstylestory,,not_found,
 2026-06-23,Stradivarius,stradivarius,,not_found,
 2026-06-23,Streetstyle24,streetstyle24,,not_found,
-2026-06-23,Stylevana,stylevana,2.2,%,https://www.picodi.com/pl/stylevana/offers
+2026-06-23,Stylevana,stylevana,,not_found,
 2026-06-23,Sun & Snow,sun-and-snow,,not_found,
-2026-06-23,Surfshark,surfshark,8.45,usd,https://www.picodi.com/pl/surfshark/offers
-2026-06-23,Świat supli,swiatsupli,1.5,%,https://www.picodi.com/pl/swiat-supli/offers
-2026-06-23,Tagomago,tagomago,1.5,%,https://www.picodi.com/pl/tagomago/offers
-2026-06-23,Tefal,tefal,2.3,%,https://www.picodi.com/pl/tefal/offers
-2026-06-23,TestDNA,testdna,1.3,up_to_%,https://www.picodi.com/pl/testdna/offers
-2026-06-23,Teufel,teufel,1.2,%,https://www.picodi.com/pl/teufel/offers
-2026-06-23,Top Secret,topsecret,2.1,%,https://www.picodi.com/pl/topsecret/offers
-2026-06-23,Trip.com,trip-com,1.7,up_to_%,https://www.picodi.com/pl/trip-com/offers
+2026-06-23,Surfshark,surfshark,,not_found,
+2026-06-23,Świat supli,swiatsupli,,not_found,
+2026-06-23,Tagomago,tagomago,,not_found,
+2026-06-23,Tefal,tefal,,not_found,
+2026-06-23,Tescoma,tescoma,,not_found,
+2026-06-23,TestDNA,testdna,,not_found,
+2026-06-23,Teufel,teufel,,not_found,
+2026-06-23,Top Secret,topsecret,,not_found,
+2026-06-23,Trip.com,trip-com,,not_found,
 2026-06-23,Triverna,triverna,,not_found,
 2026-06-23,UBER,uber,,not_found,
-2026-06-23,Ubisoft,ubisoft,0.1,%,https://www.picodi.com/pl/ubisoft/offers
-2026-06-23,Ucando,ucando,1.2,%,https://www.picodi.com/pl/ucando-pl/offers
-2026-06-23,Udemy,udemy,6.0,up_to_%,https://www.picodi.com/pl/udemy/offers
+2026-06-23,Ubisoft,ubisoft,,not_found,
+2026-06-23,Ucando,ucando,,not_found,
+2026-06-23,Udemy,udemy,,not_found,
 2026-06-23,Under Armour,under-armour,,not_found,
-2026-06-23,Van Graaf,vangraaf,2.7,%,https://www.picodi.com/pl/van-graaf/offers
-2026-06-23,Vans,vans,0.3,up_to_%,https://www.picodi.com/pl/vans/offers
-2026-06-23,Vasco Electronics,vascoelectronics,1.2,%,https://www.picodi.com/pl/vasco-electronics-pl/offers
-2026-06-23,Victoria's Secret,victorias-secret,1.5,up_to_%,https://www.picodi.com/pl/victoria-s-secret/offers
-2026-06-23,VidaXL,vidaxl,1.5,%,https://www.picodi.com/pl/vida-xl/offers
-2026-06-23,Vision Express,visionexpress,2.5,%,https://www.picodi.com/pl/vision-express/offers
+2026-06-23,Van Graaf,vangraaf,,not_found,
+2026-06-23,Vans,vans,,not_found,
+2026-06-23,Vasco Electronics,vascoelectronics,,not_found,
+2026-06-23,Victoria's Secret,victorias-secret,,not_found,
+2026-06-23,VidaXL,vidaxl,,not_found,
+2026-06-23,Vision Express,visionexpress,,not_found,
 2026-06-23,Vobis,vobis,,not_found,
 2026-06-23,Volcano,volcano,,not_found,
 2026-06-23,Wolt,wolt,,not_found,
 2026-06-23,Wrangler,wrangler,,not_found,
 2026-06-23,x-kom,x-kom,,not_found,
-2026-06-23,Xiaomi,mi,0.9,%,https://www.picodi.com/pl/xiaomi/offers
-2026-06-23,xlmoto,xlmoto,1.5,%,https://www.picodi.com/pl/xlmoto/offers
-2026-06-23,Yanosik,yanosik,1.5,%,https://www.picodi.com/pl/yanosik/offers
-2026-06-23,Yope,yope,2.7,%,https://www.picodi.com/pl/yope/offers
+2026-06-23,Xiaomi,mi,,not_found,
+2026-06-23,xlmoto,xlmoto,,not_found,
+2026-06-23,Yanosik,yanosik,,not_found,
+2026-06-23,Yope,yope,,not_found,
 2026-06-23,Your KAYA,yourkaya,,not_found,
 2026-06-23,Yves Rocher,yves-rocher,,not_found,
 2026-06-23,Zalando,zalando.pl,,not_found,
@@ -254,7 +256,6 @@ date,retailer,igraal_slug,picodi_rate,picodi_rate_type,picodi_url
 2026-06-23,4kidspoint,4kidspoint,,not_found,
 2026-06-23,7way,7way,,not_found,
 2026-06-23,KurJerzy.pl,kurjerzy.pl,,not_found,
-2026-06-23,Tescoma,tescoma,,not_found,
 2026-06-23,Airbnb,airbnb,,not_found,
 2026-06-23,Carinii,carinii,,not_found,
 2026-06-23,Duka,duka,,not_found,
