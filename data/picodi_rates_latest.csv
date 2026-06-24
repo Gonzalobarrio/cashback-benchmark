@@ -9,35 +9,35 @@ date,retailer,igraal_slug,picodi_rate,picodi_rate_type,picodi_url
 2026-06-24,Temu,temu,20.7,up_to_%,https://www.picodi.com/pl/temu/offers
 2026-06-24,SHEIN,shein,4.5,up_to_%,https://www.picodi.com/pl/shein/offers
 2026-06-24,RTV Euro AGD,rtveuro,1.8,up_to_%,https://www.picodi.com/pl/rtveuroagd/offers
-2026-06-24,Lidl,lidl,0.5,%,https://www.picodi.com/pl/lidl/offers
-2026-06-24,Leroy Merlin,leroymerlin,1.3,%,https://www.picodi.com/pl/leroy-merlin/offers
+2026-06-24,Lidl,lidl,0.5,up_to_%,https://www.picodi.com/pl/lidl/offers
+2026-06-24,Leroy Merlin,leroymerlin,1.3,up_to_%,https://www.picodi.com/pl/leroy-merlin/offers
 2026-06-24,CCC,ccc,2.0,up_to_%,https://www.picodi.com/pl/ccc/offers
-2026-06-24,Hebe,hebe,1.8,%,https://www.picodi.com/pl/hebe/offers
-2026-06-24,OBI,obi,1.5,%,https://www.picodi.com/pl/obi/offers
+2026-06-24,Hebe,hebe,1.8,up_to_%,https://www.picodi.com/pl/hebe/offers
+2026-06-24,OBI,obi,1.5,up_to_%,https://www.picodi.com/pl/obi/offers
 2026-06-24,Adidas,adidas,1.8,up_to_%,https://www.picodi.com/pl/adidas-pl/offers
 2026-06-24,Sephora,sephora,3.3,up_to_%,https://www.picodi.com/pl/sephora/offers
 2026-06-24,Douglas,douglas,3.0,up_to_%,https://www.picodi.com/pl/douglas/offers
 2026-06-24,home&you,home-you,1.2,up_to_%,https://www.picodi.com/pl/home-you/offers
-2026-06-24,Abra,abra,1.5,%,https://www.picodi.com/pl/abra/offers
-2026-06-24,Acer,acer,2.1,%,https://www.picodi.com/pl/acer/offers
-2026-06-24,Aelia,aelia,2.0,%,https://www.picodi.com/pl/aelia/offers
-2026-06-24,Agoda,agoda,1.8,%,https://www.picodi.com/pl/agoda/offers
+2026-06-24,Abra,abra,1.5,up_to_%,https://www.picodi.com/pl/abra/offers
+2026-06-24,Acer,acer,2.1,up_to_%,https://www.picodi.com/pl/acer/offers
+2026-06-24,Aelia,aelia,2.0,up_to_%,https://www.picodi.com/pl/aelia/offers
+2026-06-24,Agoda,agoda,1.8,up_to_%,https://www.picodi.com/pl/agoda/offers
 2026-06-24,Airalo,airalo,3.5,up_to_%,https://www.picodi.com/pl/airalo/offers
-2026-06-24,AirHelp,airhelp,4.5,%,https://www.picodi.com/pl/air-help/offers
-2026-06-24,ALAB Laboratoria,alab-laboratoria,1.9,%,https://www.picodi.com/pl/alablaboratoria/offers
+2026-06-24,AirHelp,airhelp,4.5,up_to_%,https://www.picodi.com/pl/air-help/offers
+2026-06-24,ALAB Laboratoria,alab-laboratoria,1.9,up_to_%,https://www.picodi.com/pl/alablaboratoria/offers
 2026-06-24,Alibaba,alibaba.com,2.5,up_to_%,https://www.picodi.com/pl/alibaba/offers
 2026-06-24,Amazon,amazon,3.0,up_to_%,https://www.picodi.com/pl/amazon-com/offers
-2026-06-24,Audioteka,audioteka,2.1,%,https://www.picodi.com/pl/audioteka-pl/offers
+2026-06-24,Audioteka,audioteka,2.1,up_to_%,https://www.picodi.com/pl/audioteka-pl/offers
 2026-06-24,AUTODOC,autodoc,3.0,up_to_%,https://www.picodi.com/pl/autodoc/offers
-2026-06-24,AXA Partners,axa-partners,6.0,%,https://www.picodi.com/pl/axa-assistance/offers
+2026-06-24,AXA Partners,axa-partners,6.0,up_to_%,https://www.picodi.com/pl/axa-assistance/offers
 2026-06-24,Banggood,banggood,4.7,up_to_%,https://www.picodi.com/pl/banggood-com/offers
 2026-06-24,Bank Pekao,bank-pekao,,not_found,
-2026-06-24,Baseus,baseus,1.2,%,https://www.picodi.com/pl/baseus/offers
-2026-06-24,BasicLab,basiclab,1.2,%,https://www.picodi.com/pl/basiclab/offers
+2026-06-24,Baseus,baseus,1.2,up_to_%,https://www.picodi.com/pl/baseus/offers
+2026-06-24,BasicLab,basiclab,1.2,up_to_%,https://www.picodi.com/pl/basiclab/offers
 2026-06-24,BeDiet,bediet,,not_found,
 2026-06-24,Bee.pl,bee.pl,,not_found,
 2026-06-24,Bibliotheque De Parfum,bibliotheque-de-parfum,,not_found,
-2026-06-24,BIG STAR,bigstar,1.8,%,https://www.picodi.com/pl/big-star/offers
+2026-06-24,BIG STAR,bigstar,,not_found,
 2026-06-24,Bimba Y Lola,bimbaylola,,not_found,
 2026-06-24,Bonprix,bonprix,,not_found,
 2026-06-24,Born2Be,born2be,,not_found,
@@ -123,7 +123,6 @@ date,retailer,igraal_slug,picodi_rate,picodi_rate_type,picodi_url
 2026-06-24,Josera,josera,,not_found,
 2026-06-24,Justjoinit,justjoinit,,not_found,
 2026-06-24,Katalog Marzeń,katalog-marzen,,not_found,
-2026-06-24,Kazar,kazar,,not_found,
 2026-06-24,Kenwood,kenwood,,not_found,
 2026-06-24,KFC,kfc,,not_found,
 2026-06-24,Kinguin,kinguin,,not_found,

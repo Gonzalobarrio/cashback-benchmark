@@ -11,7 +11,7 @@ date,retailer,igraal_slug,alerabat_rate,alerabat_rate_type,alerabat_url
 2026-06-24,RTV Euro AGD,rtveuro,3.0,up_to_%,https://alerabat.com/kod-promocyjny/rtv-euro-agd
 2026-06-24,Lidl,lidl,,no cashback,https://alerabat.com/kody-promocyjne/lidl
 2026-06-24,Leroy Merlin,leroymerlin,1.75,up_to_%,https://alerabat.com/kod-promocyjny/leroy-merlin
-2026-06-24,CCC,ccc,,no cashback,https://alerabat.com/kody-promocyjne/ccc
+2026-06-24,CCC,ccc,5.0,up_to_%,https://alerabat.com/kody-promocyjne/ccc
 2026-06-24,Hebe,hebe,2.5,up_to_%,https://alerabat.com/kody-promocyjne/hebe
 2026-06-24,OBI,obi,2.5,up_to_%,https://alerabat.com/kody-promocyjne/obi
 2026-06-24,Adidas,adidas,3.0,up_to_%,https://alerabat.com/kod-promocyjny/adidas-pl
@@ -123,7 +123,6 @@ date,retailer,igraal_slug,alerabat_rate,alerabat_rate_type,alerabat_url
 2026-06-24,Josera,josera,3.75,up_to_%,https://alerabat.com/kody-promocyjne/josera
 2026-06-24,Justjoinit,justjoinit,,no cashback,https://alerabat.com/kody-promocyjne/justjoin-it
 2026-06-24,Katalog Marzeń,katalog-marzen,,not_found,
-2026-06-24,Kazar,kazar,,no cashback,https://alerabat.com/kody-promocyjne/kazar
 2026-06-24,Kenwood,kenwood,3.0,up_to_%,https://alerabat.com/kody-promocyjne/kenwood
 2026-06-24,KFC,kfc,2.76,up_to_%,https://alerabat.com/kody-promocyjne/kfc
 2026-06-24,Kinguin,kinguin,5.0,up_to_%,https://alerabat.com/kody-promocyjne/kinguin-net

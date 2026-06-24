@@ -1,17 +1,17 @@
 date,retailer,igraal_slug,letyshops_rate,letyshops_rate_type,letyshops_boosted,letyshops_url
 2026-06-24,AliExpress,aliexpress,5.0,%,False,https://letyshops.com/pl/shops/aliexpress
-2026-06-24,Allegro,allegro,1.7,%,False,https://letyshops.com/pl/shops/allegro-pl
+2026-06-24,Allegro,allegro,1.7,%,False,https://letyshops.com/pl-en/shops/allegro-pl
 2026-06-24,Answear,answear,2.0,%,False,https://letyshops.com/pl/shops/answear
 2026-06-24,Decathlon,decathlon,2.25,%,False,https://letyshops.com/pl/shops/decathlon-pl
 2026-06-24,Empik,empik,6.25,%,False,https://letyshops.com/pl/shops/empik-pl
 2026-06-24,Lounge by Zalando,zalando-lounge,6.0,%,False,https://letyshops.com/pl-en/shops/zalando-lounge-pl
 2026-06-24,MediaMarkt,mediamarkt,3.5,%,False,https://letyshops.com/pl/shops/media-markt-pl
 2026-06-24,Temu,temu,10.0,%,False,https://letyshops.com/pl/shops/temu
-2026-06-24,SHEIN,shein,5.0,%,False,https://letyshops.com/pl-en/shops/shein-pl
+2026-06-24,SHEIN,shein,5.0,%,False,https://letyshops.com/pl/shops/shein-pl
 2026-06-24,RTV Euro AGD,rtveuro,3.5,%,False,https://letyshops.com/pl/shops/rtv-euro-agd
 2026-06-24,Lidl,lidl,0.5,%,False,https://letyshops.com/pl-en/shops/lidl-pl
 2026-06-24,Leroy Merlin,leroymerlin,1.75,%,False,https://letyshops.com/pl/shops/leroy-merlin
-2026-06-24,CCC,ccc,,no cashback,False,
+2026-06-24,CCC,ccc,3.25,%,False,https://letyshops.com/pl-en/shops/ccc-pl
 2026-06-24,Hebe,hebe,4.0,%,False,https://letyshops.com/pl-en/shops/hebe
 2026-06-24,OBI,obi,2.5,%,False,https://letyshops.com/pl/shops/obi-pl
 2026-06-24,Adidas,adidas,3.0,%,False,https://letyshops.com/pl/shops/adidas-polska
@@ -123,7 +123,6 @@ date,retailer,igraal_slug,letyshops_rate,letyshops_rate_type,letyshops_boosted,l
 2026-06-24,Josera,josera,3.75,%,False,https://letyshops.com/pl/shops/josera-pl
 2026-06-24,Justjoinit,justjoinit,,not_found,False,
 2026-06-24,Katalog Marzeń,katalog-marzen,1.35,%,False,https://letyshops.com/pl/shops/katalog-marzen-pl
-2026-06-24,Kazar,kazar,,no cashback,False,
 2026-06-24,Kenwood,kenwood,3.0,%,False,https://letyshops.com/pl/shops/kenwood-pl
 2026-06-24,KFC,kfc,2.75,%,False,https://letyshops.com/pl/shops/kfc-polska
 2026-06-24,Kinguin,kinguin,,not_found,False,
