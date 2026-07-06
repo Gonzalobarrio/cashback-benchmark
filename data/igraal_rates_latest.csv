@@ -134,7 +134,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-07-06,KurJerzy.pl,kurjerzy.pl,3.0,%
 2026-07-06,Lacoste,lacoste,8.0,%
 2026-07-06,Lampy.pl,lampy,8.0,%
-2026-07-06,Legimi,legimi,,zł
+2026-07-06,Legimi,legimi,15.0,%
 2026-07-06,LEGO,lego,3.0,%
 2026-07-06,Leo Express,leoexpress,4.0,%
 2026-07-06,Levi's,levis,5.0,%
@@ -225,7 +225,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-07-06,Trip.com,trip-com,3.85,%
 2026-07-06,Triverna,triverna,2.0,%
 2026-07-06,UBER,uber,4.0,%
-2026-07-06,Ubisoft,ubisoft,,zł
+2026-07-06,Ubisoft,ubisoft,0.5,%
 2026-07-06,Ucando,ucando,4.0,%
 2026-07-06,Udemy,udemy,10.0,%
 2026-07-06,Under Armour,under-armour,6.0,%
@@ -262,7 +262,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-07-06,Kaufland,kaufland,1.0,%
 2026-07-06,Kolba,kolba,,no cashback
 2026-07-06,KROSS,kross,4.0,%
-2026-07-06,LycaMobile,lyca-mobile,,no cashback
+2026-07-06,LycaMobile,lyca-mobile,12.0,%
 2026-07-06,Mango,mango,7.5,%
 2026-07-06,Nintendo eShop,nintendo-eshop,6.0,%
 2026-07-06,OnePlus,oneplus,,no cashback
