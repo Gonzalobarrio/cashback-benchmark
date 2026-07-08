@@ -44,7 +44,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-07-08,Bricoman,bricoman,6.0,%
 2026-07-08,Bricomarche,bricomarche,3.5,%
 2026-07-08,Brooks,brooks,6.0,%
-2026-07-08,Byrokko,byrokko,11.0,%
+2026-07-08,Byrokko,byrokko,10.0,%
 2026-07-08,Canal Plus,canalplus,,zł
 2026-07-08,Carrefour,carrefour,2.0,%
 2026-07-08,Castorama,castorama,4.0,%
@@ -69,7 +69,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-07-08,Dstreet,dstreet,9.0,%
 2026-07-08,Dyson,dyson,2.5,%
 2026-07-08,E-Kwiaty,e-kwiaty,4.0,%
-2026-07-08,e-torty,e-torty,10.0,%
+2026-07-08,e-torty,e-torty,,no cashback
 2026-07-08,eBilet,ebilet,1.0,%
 2026-07-08,Ecco,ecco,,no cashback
 2026-07-08,Electrolux,electrolux,2.0,%
@@ -181,7 +181,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-07-08,Philips Hue,philips-hue,7.0,%
 2026-07-08,Pitbull,pitbull,5.0,%
 2026-07-08,Play,play,,zł
-2026-07-08,Pleso,plesotherapy,,no cashback
+2026-07-08,Pleso,plesotherapy,,zł
 2026-07-08,Plus,plus,,zł
 2026-07-08,Preply,preply,,zł
 2026-07-08,Primodo,primodo,5.0,%
@@ -218,7 +218,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-07-08,Tescoma,tescoma,3.5,%
 2026-07-08,TestDNA,testdna,3.5,%
 2026-07-08,Teufel,teufel,4.0,%
-2026-07-08,Top Secret,topsecret,,zł
+2026-07-08,Top Secret,topsecret,4.2,%
 2026-07-08,Trip.com,trip-com,3.85,%
 2026-07-08,Triverna,triverna,2.0,%
 2026-07-08,UBER,uber,4.0,%
