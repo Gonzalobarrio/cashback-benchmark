@@ -1,5 +1,5 @@
 date,retailer,slug,igraal_rate,cashback_type
-2026-07-11,AliExpress,aliexpress,25.0,%
+2026-07-11,AliExpress,aliexpress,30.0,%
 2026-07-11,Allegro,allegro,1.9,%
 2026-07-11,Answear,answear,3.0,%
 2026-07-11,Decathlon,decathlon,2.0,%
@@ -216,7 +216,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-07-11,Świat supli,swiatsupli,2.5,%
 2026-07-11,Tagomago,tagomago,3.0,%
 2026-07-11,Tefal,tefal,5.0,%
-2026-07-11,Tescoma,tescoma,,no cashback
+2026-07-11,Tescoma,tescoma,3.5,%
 2026-07-11,TestDNA,testdna,3.5,%
 2026-07-11,Teufel,teufel,4.0,%
 2026-07-11,Top Secret,topsecret,4.2,%
