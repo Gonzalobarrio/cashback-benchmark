@@ -42,12 +42,12 @@ date,retailer,igraal_slug,picodi_rate,picodi_rate_type,picodi_url
 2026-07-13,Brainmarket,brainmarket,,not_found,
 2026-07-13,Brasty,brasty,1.8,up_to_%,https://www.picodi.com/pl/brasty/offers
 2026-07-13,Bricoman,bricoman,,not_found,
-2026-07-13,Bricomarche,bricomarche,,not_found,
-2026-07-13,Brooks,brooks,,not_found,
-2026-07-13,Byrokko,byrokko,,not_found,
-2026-07-13,Canal Plus,canalplus,,not_found,
-2026-07-13,Carrefour,carrefour,,not_found,
-2026-07-13,Castorama,castorama,,not_found,
+2026-07-13,Bricomarche,bricomarche,1.4,%,https://www.picodi.com/pl/bricomarche/offers
+2026-07-13,Brooks,brooks,3.0,up_to_%,https://www.picodi.com/pl/brooks/offers
+2026-07-13,Byrokko,byrokko,2.4,up_to_%,https://www.picodi.com/pl/byrokko/offers
+2026-07-13,Canal Plus,canalplus,,zł,https://www.picodi.com/pl/nc/offers
+2026-07-13,Carrefour,carrefour,0.9,%,https://www.picodi.com/pl/carrefour/offers
+2026-07-13,Castorama,castorama,1.2,%,https://www.picodi.com/pl/castorama/offers
 2026-07-13,Ceneo,ceneo,,not_found,
 2026-07-13,Cobi,cobi,,not_found,
 2026-07-13,Cocolita,cocolita,,not_found,

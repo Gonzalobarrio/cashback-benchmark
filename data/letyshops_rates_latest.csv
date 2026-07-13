@@ -7,7 +7,7 @@ date,retailer,igraal_slug,letyshops_rate,letyshops_rate_type,letyshops_boosted,l
 2026-07-13,Lounge by Zalando,zalando-lounge,6.0,%,False,https://letyshops.com/pl-en/shops/zalando-lounge-pl
 2026-07-13,MediaMarkt,mediamarkt,3.5,%,False,https://letyshops.com/pl/shops/media-markt-pl
 2026-07-13,Temu,temu,7.85,%,False,https://letyshops.com/pl/shops/temu
-2026-07-13,SHEIN,shein,5.0,%,False,https://letyshops.com/pl-en/shops/shein-pl
+2026-07-13,SHEIN,shein,5.0,%,False,https://letyshops.com/pl/shops/shein-pl
 2026-07-13,RTV Euro AGD,rtveuro,3.5,%,False,https://letyshops.com/pl/shops/rtv-euro-agd
 2026-07-13,Lidl,lidl,0.5,%,False,https://letyshops.com/pl-en/shops/lidl-pl
 2026-07-13,Leroy Merlin,leroymerlin,1.75,%,False,https://letyshops.com/pl/shops/leroy-merlin
@@ -227,7 +227,7 @@ date,retailer,igraal_slug,letyshops_rate,letyshops_rate_type,letyshops_boosted,l
 2026-07-13,Ucando,ucando,2.0,%,False,https://letyshops.com/pl/shops/ucando
 2026-07-13,Udemy,udemy,6.5,%,False,https://letyshops.com/pl/shops/udemy
 2026-07-13,Under Armour,under-armour,2.5,%,False,https://letyshops.com/pl/shops/under-armour-pl
-2026-07-13,uPacjenta,upacjenta,,not_found,False,
+2026-07-13,uPacjenta,upacjenta,2.8,%,False,https://letyshops.com/pl/shops/upacjenta-pl
 2026-07-13,Van Graaf,vangraaf,4.5,%,False,https://letyshops.com/pl/shops/van-graaf-pl
 2026-07-13,Vans,vans,,no cashback,False,
 2026-07-13,Vasco Electronics,vascoelectronics,3.0,%,False,https://letyshops.com/pl/shops/vasco-electronics-pl
