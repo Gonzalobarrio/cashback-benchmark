@@ -1,5 +1,5 @@
 date,retailer,igraal_slug,goodie_rate,goodie_rate_type,goodie_url
-2026-07-14,AliExpress,aliexpress,4.5,up_to_%,https://goodie.pl/marka/aliexpress
+2026-07-14,AliExpress,aliexpress,60.0,up_to_%,https://goodie.pl/marka/aliexpress
 2026-07-14,Allegro,allegro,2.2,up_to_%,https://goodie.pl/marka/allegro
 2026-07-14,Answear,answear,2.0,up_to_%,https://goodie.pl/marka/answear-com
 2026-07-14,Decathlon,decathlon,1.75,%,https://goodie.pl/marka/decathlon
@@ -12,7 +12,7 @@ date,retailer,igraal_slug,goodie_rate,goodie_rate_type,goodie_url
 2026-07-14,Lidl,lidl,0.5,%,https://goodie.pl/marka/lidl
 2026-07-14,Leroy Merlin,leroymerlin,1.75,%,https://goodie.pl/marka/leroy-merlin
 2026-07-14,CCC,ccc,3.25,up_to_%,https://goodie.pl/marka/ccc
-2026-07-14,Hebe,hebe,,no cashback,https://goodie.pl/marka/hebe
+2026-07-14,Hebe,hebe,3.0,up_to_%,https://goodie.pl/marka/hebe
 2026-07-14,OBI,obi,2.5,up_to_%,https://goodie.pl/marka/obi
 2026-07-14,Adidas,adidas,3.0,up_to_%,https://goodie.pl/marka/adidas
 2026-07-14,Sephora,sephora,4.5,up_to_%,https://goodie.pl/marka/sephora
@@ -190,7 +190,7 @@ date,retailer,igraal_slug,goodie_rate,goodie_rate_type,goodie_url
 2026-07-14,Proton VPN,protonvpn,,not_found,
 2026-07-14,Przyjaciele Kawy,przyjacielekawy,3.7,up_to_%,https://goodie.pl/marka/przyjacielekawy-pl
 2026-07-14,Puma,puma,2.0,up_to_%,https://goodie.pl/marka/puma
-2026-07-14,Pyszne.pl,pyszne,1.5,%,https://goodie.pl/marka/pyszne-pl
+2026-07-14,Pyszne.pl,pyszne,1.5,up_to_%,https://goodie.pl/marka/pyszne-pl
 2026-07-14,Radisson Hotels,radissonhotels,2.0,%,https://goodie.pl/marka/radisson-hotels
 2026-07-14,Recman,recman,,no cashback,https://goodie.pl/marka/recman
 2026-07-14,RedBull Mobile,redbullmobile,,no cashback,https://goodie.pl/marka/red-bull-mobile
