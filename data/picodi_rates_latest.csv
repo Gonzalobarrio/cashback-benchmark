@@ -3,7 +3,7 @@ date,retailer,igraal_slug,picodi_rate,picodi_rate_type,picodi_url
 2026-07-15,Allegro,allegro,1.1,up_to_%,https://www.picodi.com/pl/allegro/offers
 2026-07-15,Answear,answear,1.2,up_to_%,https://www.picodi.com/pl/answear-com/offers
 2026-07-15,Decathlon,decathlon,1.4,up_to_%,https://www.picodi.com/pl/decathlon/offers
-2026-07-15,Empik,empik,7.5,up_to_%,https://www.picodi.com/pl/empik/offers
+2026-07-15,Empik,empik,15.0,up_to_%,https://www.picodi.com/pl/empik/offers
 2026-07-15,Lounge by Zalando,zalando-lounge,3.6,up_to_%,https://www.picodi.com/pl/zalando-lounge/offers
 2026-07-15,MediaMarkt,mediamarkt,1.8,up_to_%,https://www.picodi.com/pl/mediamarkt/offers
 2026-07-15,Temu,temu,20.7,up_to_%,https://www.picodi.com/pl/temu/offers
@@ -42,7 +42,7 @@ date,retailer,igraal_slug,picodi_rate,picodi_rate_type,picodi_url
 2026-07-15,Brainmarket,brainmarket,,not_found,
 2026-07-15,Brasty,brasty,1.8,up_to_%,https://www.picodi.com/pl/brasty/offers
 2026-07-15,Bricoman,bricoman,,not_found,
-2026-07-15,Bricomarche,bricomarche,1.4,%,https://www.picodi.com/pl/bricomarche/offers
+2026-07-15,Bricomarche,bricomarche,,not_found,
 2026-07-15,Brooks,brooks,,not_found,
 2026-07-15,Byrokko,byrokko,,not_found,
 2026-07-15,Canal Plus,canalplus,,not_found,
