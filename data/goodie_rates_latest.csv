@@ -232,7 +232,7 @@ date,retailer,igraal_slug,goodie_rate,goodie_rate_type,goodie_url
 2026-07-18,Van Graaf,vangraaf,,no cashback,https://goodie.pl/marka/van-graaf
 2026-07-18,Vans,vans,,no cashback,https://goodie.pl/marka/vans
 2026-07-18,Vasco Electronics,vascoelectronics,2.0,%,https://goodie.pl/marka/vasco-electronics
-2026-07-18,Victoria's Secret,victorias-secret,2.5,%,https://goodie.pl/marka/victoria's-secret
+2026-07-18,Victoria's Secret,victorias-secret,,not_found,
 2026-07-18,VidaXL,vidaxl,2.0,%,https://goodie.pl/marka/vida-xl
 2026-07-18,Vision Express,visionexpress,4.25,%,https://goodie.pl/marka/vision-express
 2026-07-18,Vobis,vobis,1.75,up_to_%,https://goodie.pl/marka/vobis
