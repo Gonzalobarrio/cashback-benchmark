@@ -7,7 +7,7 @@ date,retailer,igraal_slug,letyshops_rate,letyshops_rate_type,letyshops_boosted,l
 2026-07-20,Lounge by Zalando,zalando-lounge,6.0,%,False,https://letyshops.com/pl-en/shops/zalando-lounge-pl
 2026-07-20,MediaMarkt,mediamarkt,3.5,%,False,https://letyshops.com/pl/shops/media-markt-pl
 2026-07-20,Temu,temu,5.5,%,False,https://letyshops.com/pl/shops/temu
-2026-07-20,SHEIN,shein,5.0,%,False,https://letyshops.com/pl-en/shops/shein-pl
+2026-07-20,SHEIN,shein,5.0,%,False,https://letyshops.com/pl/shops/shein-pl
 2026-07-20,RTV Euro AGD,rtveuro,3.5,%,False,https://letyshops.com/pl/shops/rtv-euro-agd
 2026-07-20,Lidl,lidl,1.0,%,False,https://letyshops.com/pl-en/shops/lidl-pl
 2026-07-20,Leroy Merlin,leroymerlin,1.75,%,False,https://letyshops.com/pl/shops/leroy-merlin
@@ -131,7 +131,7 @@ date,retailer,igraal_slug,letyshops_rate,letyshops_rate_type,letyshops_boosted,l
 2026-07-20,Kubota,kubota,,not_found,False,
 2026-07-20,KurJerzy.pl,kurjerzy.pl,2.8,%,False,https://letyshops.com/pl/shops/kurjerzy-pl
 2026-07-20,Lacoste,lacoste,5.0,%,False,https://letyshops.com/pl/shops/lacoste-pl
-2026-07-20,Lampy.pl,lampy,4.0,%,False,https://letyshops.com/pl/shops/lampy-pl
+2026-07-20,Lampy.pl,lampy,6.0,%,False,https://letyshops.com/pl/shops/lampy-pl
 2026-07-20,Legimi,legimi,7.5,%,False,https://letyshops.com/pl/shops/legimi-pl
 2026-07-20,LEGO,lego,,no cashback,False,
 2026-07-20,Leo Express,leoexpress,,not_found,False,
@@ -174,7 +174,7 @@ date,retailer,igraal_slug,letyshops_rate,letyshops_rate_type,letyshops_boosted,l
 2026-07-20,Pan Materac,panmaterac,4.0,%,False,https://letyshops.com/pl/shops/pan-materac
 2026-07-20,Pandora,pandora,3.0,%,False,https://letyshops.com/pl/shops/pandora-pl
 2026-07-20,Parfumdreams,parfumdreams,,no cashback,False,
-2026-07-20,Peek & Cloppenburg,peek-and-cloppenburg,1.5,%,False,https://letyshops.com/pl/shops/peek-cloppenburg-pl
+2026-07-20,Peek & Cloppenburg,peek-and-cloppenburg,2.5,%,False,https://letyshops.com/pl/shops/peek-cloppenburg-pl
 2026-07-20,Perfumeria,perfumeria.pl,2.5,%,False,https://letyshops.com/pl/shops/perfumeria-pl
 2026-07-20,Perfumy.pl,perfumy,3.25,%,False,https://letyshops.com/pl/shops/perfumy
 2026-07-20,Petkarma,petkarma,,not_found,False,
