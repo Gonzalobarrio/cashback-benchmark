@@ -86,7 +86,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-07-22,Euroflorist,euroflorist,10.0,%
 2026-07-22,Eveline,eveline,12.0,%
 2026-07-22,Eventim,eventim,1.0,%
-2026-07-22,eZebra,ezebra,4.0,%
+2026-07-22,eZebra,ezebra,,no cashback
 2026-07-22,Fera,fera,2.0,%
 2026-07-22,Fielmann,fielmann,6.0,%
 2026-07-22,Flexispot,flexispot,4.0,%
