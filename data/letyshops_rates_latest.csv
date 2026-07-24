@@ -9,7 +9,7 @@ date,retailer,igraal_slug,letyshops_rate,letyshops_rate_type,letyshops_boosted,l
 2026-07-24,Temu,temu,5.5,%,False,https://letyshops.com/pl/shops/temu
 2026-07-24,SHEIN,shein,5.0,%,False,https://letyshops.com/pl/shops/shein-pl
 2026-07-24,RTV Euro AGD,rtveuro,3.5,%,False,https://letyshops.com/pl/shops/rtv-euro-agd
-2026-07-24,Lidl,lidl,1.0,%,False,https://letyshops.com/pl-en/shops/lidl-pl
+2026-07-24,Lidl,lidl,1.5,%,False,https://letyshops.com/pl-en/shops/lidl-pl
 2026-07-24,Leroy Merlin,leroymerlin,1.75,%,False,https://letyshops.com/pl/shops/leroy-merlin
 2026-07-24,CCC,ccc,3.25,%,False,https://letyshops.com/pl-en/shops/ccc-pl
 2026-07-24,Hebe,hebe,4.0,%,False,https://letyshops.com/pl-en/shops/hebe
@@ -89,7 +89,7 @@ date,retailer,igraal_slug,letyshops_rate,letyshops_rate_type,letyshops_boosted,l
 2026-07-24,eZebra,ezebra,4.75,%,False,https://letyshops.com/pl/shops/ezebra
 2026-07-24,Fera,fera,2.0,%,False,https://letyshops.com/pl/shops/fera-pl
 2026-07-24,Fielmann,fielmann,,not_found,False,
-2026-07-24,Flexispot,flexispot,,not_found,False,
+2026-07-24,Flexispot,flexispot,2.5,%,False,https://letyshops.com/pl/shops/flexispot-pl
 2026-07-24,Flixbus,flixbus,,no cashback,False,
 2026-07-24,Footdistrict,footdistrict,,not_found,False,
 2026-07-24,Footshop,footshop,2.5,%,False,https://letyshops.com/pl/shops/footshop-pl

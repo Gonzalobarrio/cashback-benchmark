@@ -219,7 +219,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-07-24,Tagomago,tagomago,3.0,%
 2026-07-24,Tefal,tefal,5.0,%
 2026-07-24,Tescoma,tescoma,3.5,%
-2026-07-24,TestDNA,testdna,3.5,%
+2026-07-24,TestDNA,testdna,,no cashback
 2026-07-24,Teufel,teufel,4.0,%
 2026-07-24,Top Secret,topsecret,4.2,%
 2026-07-24,Trip.com,trip-com,3.85,%
