@@ -1,45 +1,45 @@
 date,retailer,igraal_slug,picodi_rate,picodi_rate_type,picodi_url
-2026-07-27,AliExpress,aliexpress,,not_found,
-2026-07-27,Allegro,allegro,,not_found,
-2026-07-27,Answear,answear,,not_found,
-2026-07-27,Decathlon,decathlon,,not_found,
-2026-07-27,Empik,empik,,not_found,
-2026-07-27,Lounge by Zalando,zalando-lounge,,not_found,
-2026-07-27,MediaMarkt,mediamarkt,,not_found,
-2026-07-27,Temu,temu,,not_found,
-2026-07-27,SHEIN,shein,,not_found,
-2026-07-27,RTV Euro AGD,rtveuro,,not_found,
-2026-07-27,Lidl,lidl,,not_found,
-2026-07-27,Leroy Merlin,leroymerlin,,not_found,
-2026-07-27,CCC,ccc,,not_found,
-2026-07-27,Hebe,hebe,,not_found,
-2026-07-27,OBI,obi,,not_found,
-2026-07-27,Adidas,adidas,,not_found,
-2026-07-27,Sephora,sephora,,not_found,
-2026-07-27,Douglas,douglas,,not_found,
-2026-07-27,home&you,home-you,,not_found,
-2026-07-27,Abra,abra,,not_found,
-2026-07-27,Acer,acer,,not_found,
-2026-07-27,Aelia,aelia,,not_found,
-2026-07-27,Agoda,agoda,,not_found,
-2026-07-27,Airalo,airalo,,not_found,
-2026-07-27,AirHelp,airhelp,,not_found,
-2026-07-27,ALAB Laboratoria,alab-laboratoria,,not_found,
-2026-07-27,Alibaba,alibaba.com,,not_found,
-2026-07-27,Alpine Pro,alpinepro,,not_found,
-2026-07-27,Amazon,amazon,,not_found,
-2026-07-27,Audioteka,audioteka,,not_found,
-2026-07-27,AUTODOC,autodoc,,not_found,
-2026-07-27,AXA Partners,axa-partners,,not_found,
-2026-07-27,Banggood,banggood,,not_found,
+2026-07-27,AliExpress,aliexpress,20.7,up_to_%,https://www.picodi.com/pl/aliexpress/offers
+2026-07-27,Allegro,allegro,1.1,up_to_%,https://www.picodi.com/pl/allegro/offers
+2026-07-27,Answear,answear,1.2,up_to_%,https://www.picodi.com/pl/answear-com/offers
+2026-07-27,Decathlon,decathlon,1.4,up_to_%,https://www.picodi.com/pl/decathlon/offers
+2026-07-27,Empik,empik,15.0,up_to_%,https://www.picodi.com/pl/empik/offers
+2026-07-27,Lounge by Zalando,zalando-lounge,3.6,up_to_%,https://www.picodi.com/pl/zalando-lounge/offers
+2026-07-27,MediaMarkt,mediamarkt,1.8,up_to_%,https://www.picodi.com/pl/mediamarkt/offers
+2026-07-27,Temu,temu,20.7,up_to_%,https://www.picodi.com/pl/temu/offers
+2026-07-27,SHEIN,shein,4.5,up_to_%,https://www.picodi.com/pl/shein/offers
+2026-07-27,RTV Euro AGD,rtveuro,1.8,up_to_%,https://www.picodi.com/pl/rtveuroagd/offers
+2026-07-27,Lidl,lidl,0.5,%,https://www.picodi.com/pl/lidl/offers
+2026-07-27,Leroy Merlin,leroymerlin,1.3,%,https://www.picodi.com/pl/leroy-merlin/offers
+2026-07-27,CCC,ccc,2.0,up_to_%,https://www.picodi.com/pl/ccc/offers
+2026-07-27,Hebe,hebe,1.8,%,https://www.picodi.com/pl/hebe/offers
+2026-07-27,OBI,obi,1.5,%,https://www.picodi.com/pl/obi/offers
+2026-07-27,Adidas,adidas,1.8,up_to_%,https://www.picodi.com/pl/adidas-pl/offers
+2026-07-27,Sephora,sephora,3.3,up_to_%,https://www.picodi.com/pl/sephora/offers
+2026-07-27,Douglas,douglas,3.0,up_to_%,https://www.picodi.com/pl/douglas/offers
+2026-07-27,home&you,home-you,1.2,up_to_%,https://www.picodi.com/pl/home-you/offers
+2026-07-27,Abra,abra,1.5,%,https://www.picodi.com/pl/abra/offers
+2026-07-27,Acer,acer,2.1,%,https://www.picodi.com/pl/acer/offers
+2026-07-27,Aelia,aelia,2.0,%,https://www.picodi.com/pl/aelia/offers
+2026-07-27,Agoda,agoda,1.8,%,https://www.picodi.com/pl/agoda/offers
+2026-07-27,Airalo,airalo,3.5,up_to_%,https://www.picodi.com/pl/airalo/offers
+2026-07-27,AirHelp,airhelp,4.5,%,https://www.picodi.com/pl/air-help/offers
+2026-07-27,ALAB Laboratoria,alab-laboratoria,1.9,%,https://www.picodi.com/pl/alablaboratoria/offers
+2026-07-27,Alibaba,alibaba.com,2.5,up_to_%,https://www.picodi.com/pl/alibaba/offers
+2026-07-27,Alpine Pro,alpinepro,2.4,%,https://www.picodi.com/pl/alpinepro/offers
+2026-07-27,Amazon,amazon,3.0,up_to_%,https://www.picodi.com/pl/amazon-com/offers
+2026-07-27,Audioteka,audioteka,2.1,%,https://www.picodi.com/pl/audioteka-pl/offers
+2026-07-27,AUTODOC,autodoc,3.0,up_to_%,https://www.picodi.com/pl/autodoc/offers
+2026-07-27,AXA Partners,axa-partners,6.0,%,https://www.picodi.com/pl/axa-assistance/offers
+2026-07-27,Banggood,banggood,4.7,up_to_%,https://www.picodi.com/pl/banggood-com/offers
 2026-07-27,Bank Pekao,bank-pekao,,not_found,
-2026-07-27,Baseus,baseus,,not_found,
-2026-07-27,BasicLab,basiclab,,not_found,
+2026-07-27,Baseus,baseus,1.2,%,https://www.picodi.com/pl/baseus/offers
+2026-07-27,BasicLab,basiclab,1.2,%,https://www.picodi.com/pl/basiclab/offers
 2026-07-27,BeDiet,bediet,,not_found,
-2026-07-27,BIG STAR,bigstar,,not_found,
-2026-07-27,Bimba Y Lola,bimbaylola,,not_found,
-2026-07-27,Bonprix,bonprix,,not_found,
-2026-07-27,Born2Be,born2be,,not_found,
+2026-07-27,BIG STAR,bigstar,1.8,%,https://www.picodi.com/pl/big-star/offers
+2026-07-27,Bimba Y Lola,bimbaylola,2.4,%,https://www.picodi.com/pl/bimba-y-lola/offers
+2026-07-27,Bonprix,bonprix,1.2,%,https://www.picodi.com/pl/bonprix/offers
+2026-07-27,Born2Be,born2be,1.8,%,https://www.picodi.com/pl/born2be/offers
 2026-07-27,Brainmarket,brainmarket,,not_found,
 2026-07-27,Brasty,brasty,,not_found,
 2026-07-27,Bricoman,bricoman,,not_found,
