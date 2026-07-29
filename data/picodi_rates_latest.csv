@@ -9,7 +9,7 @@ date,retailer,igraal_slug,picodi_rate,picodi_rate_type,picodi_url
 2026-07-29,Temu,temu,20.7,up_to_%,https://www.picodi.com/pl/temu/offers
 2026-07-29,SHEIN,shein,4.5,up_to_%,https://www.picodi.com/pl/shein/offers
 2026-07-29,RTV Euro AGD,rtveuro,1.8,up_to_%,https://www.picodi.com/pl/rtveuroagd/offers
-2026-07-29,Lidl,lidl,0.5,up_to_%,https://www.picodi.com/pl/lidl/offers
+2026-07-29,Lidl,lidl,1.2,up_to_%,https://www.picodi.com/pl/lidl/offers
 2026-07-29,Leroy Merlin,leroymerlin,1.3,up_to_%,https://www.picodi.com/pl/leroy-merlin/offers
 2026-07-29,CCC,ccc,2.0,up_to_%,https://www.picodi.com/pl/ccc/offers
 2026-07-29,Hebe,hebe,1.8,up_to_%,https://www.picodi.com/pl/hebe/offers
@@ -42,11 +42,11 @@ date,retailer,igraal_slug,picodi_rate,picodi_rate_type,picodi_url
 2026-07-29,Bonprix,bonprix,1.2,up_to_%,https://www.picodi.com/pl/bonprix/offers
 2026-07-29,Born2Be,born2be,1.8,up_to_%,https://www.picodi.com/pl/born2be/offers
 2026-07-29,Brainmarket,brainmarket,,not_found,
-2026-07-29,Brasty,brasty,,not_found,
+2026-07-29,Brasty,brasty,1.8,up_to_%,https://www.picodi.com/pl/brasty/offers
 2026-07-29,Bricoman,bricoman,,not_found,
-2026-07-29,Bricomarche,bricomarche,,not_found,
-2026-07-29,Brooks,brooks,,not_found,
-2026-07-29,Byrokko,byrokko,,not_found,
+2026-07-29,Bricomarche,bricomarche,1.4,up_to_%,https://www.picodi.com/pl/bricomarche/offers
+2026-07-29,Brooks,brooks,3.0,up_to_%,https://www.picodi.com/pl/brooks/offers
+2026-07-29,Byrokko,byrokko,2.4,up_to_%,https://www.picodi.com/pl/byrokko/offers
 2026-07-29,Canal Plus,canalplus,,not_found,
 2026-07-29,Carrefour,carrefour,,not_found,
 2026-07-29,Castorama,castorama,,not_found,
