@@ -126,7 +126,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-07-30,Kenwood,kenwood,6.0,%
 2026-07-30,KFC,kfc,3.0,%
 2026-07-30,Kinguin,kinguin,4.0,%
-2026-07-30,Kiwi,kiwi,3.0,%
+2026-07-30,Kiwi,kiwi,,no cashback
 2026-07-30,Komputronik,komputronik,1.5,%
 2026-07-30,Konesso,konesso,,no cashback
 2026-07-30,Krakvet,krakvet,2.0,%
@@ -206,7 +206,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-07-30,Samsung,samsung,3.0,%
 2026-07-30,SeePlaces,seeplaces,3.15,%
 2026-07-30,Sferis,sferis,1.6,%
-2026-07-30,Sinsay,sinsay,10.0,%
+2026-07-30,Sinsay,sinsay,5.0,%
 2026-07-30,Skechers,skechers,18.0,%
 2026-07-30,SkyShowtime,skyshowtime,,zł
 2026-07-30,Smyk,smyk,1.26,%
