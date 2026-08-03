@@ -9,7 +9,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-08-03,Temu,temu,40.0,%
 2026-08-03,SHEIN,shein,13.5,%
 2026-08-03,RTV Euro AGD,rtveuro,1.5,%
-2026-08-03,Lidl,lidl,1.0,%
+2026-08-03,Lidl,lidl,5.0,%
 2026-08-03,Leroy Merlin,leroymerlin,2.5,%
 2026-08-03,CCC,ccc,5.0,%
 2026-08-03,Hebe,hebe,5.0,%
@@ -105,7 +105,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-08-03,GetYourGuide,getyourguide,4.0,%
 2026-08-03,Giacomo Conti,giacomo,5.0,%
 2026-08-03,GOG,gog,3.0,%
-2026-08-03,Gomez,gomez,,no cashback
+2026-08-03,Gomez,gomez,4.0,%
 2026-08-03,Greenpoint,greenpoint,4.0,%
 2026-08-03,Groupon,groupon,8.0,%
 2026-08-03,H&M,hm,8.0,%
@@ -215,7 +215,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-08-03,Stradivarius,stradivarius,,no cashback
 2026-08-03,Streetstyle24,streetstyle24,4.5,%
 2026-08-03,Stylevana,stylevana,7.19,%
-2026-08-03,Sun & Snow,sun-and-snow,,no cashback
+2026-08-03,Sun & Snow,sun-and-snow,4.5,%
 2026-08-03,Surfshark,surfshark,,zł
 2026-08-03,Świat supli,swiatsupli,2.5,%
 2026-08-03,Tagomago,tagomago,3.0,%
