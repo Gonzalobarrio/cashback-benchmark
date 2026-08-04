@@ -115,7 +115,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-08-04,iBOOD,ibood,1.0,%
 2026-08-04,iDream,idream,3.0,%
 2026-08-04,iHerb,iherb,3.0,%
-2026-08-04,IKEA,ikea,4.0,%
+2026-08-04,IKEA,ikea,25.0,%
 2026-08-04,Intymna,intymna,3.0,%
 2026-08-04,iParts,iparts,1.8,%
 2026-08-04,JD Sports,jdsports,5.0,%
@@ -186,7 +186,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-08-04,Pitbull,pitbull,5.0,%
 2026-08-04,Play,play,25.0,%
 2026-08-04,Pleso,plesotherapy,25.0,%
-2026-08-04,Plus,plus,25.0,%
+2026-08-04,Plus,plus,,no cashback
 2026-08-04,Preply,preply,25.0,%
 2026-08-04,Primodo,primodo,5.0,%
 2026-08-04,PRM,prm,6.0,%
