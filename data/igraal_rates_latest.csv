@@ -108,7 +108,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-08-05,Gomez,gomez,4.0,%
 2026-08-05,Greenpoint,greenpoint,4.0,%
 2026-08-05,Groupon,groupon,8.0,%
-2026-08-05,H&M,hm,8.0,%
+2026-08-05,H&M,hm,,no cashback
 2026-08-05,Homla,homla,2.5,%
 2026-08-05,HP,hp,7.0,%
 2026-08-05,Huawei,huawei,3.5,%
@@ -117,7 +117,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-08-05,iHerb,iherb,3.0,%
 2026-08-05,IKEA,ikea,4.0,%
 2026-08-05,Intymna,intymna,3.0,%
-2026-08-05,iParts,iparts,,no cashback
+2026-08-05,iParts,iparts,1.8,%
 2026-08-05,JD Sports,jdsports,5.0,%
 2026-08-05,Joom,joom,9.0,%
 2026-08-05,Josera,josera,5.5,%
