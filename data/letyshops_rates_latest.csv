@@ -9,7 +9,7 @@ date,retailer,igraal_slug,letyshops_rate,letyshops_rate_type,letyshops_boosted,l
 2026-08-07,Temu,temu,5.5,%,False,https://letyshops.com/pl/shops/temu
 2026-08-07,SHEIN,shein,5.0,%,False,https://letyshops.com/pl/shops/shein-pl
 2026-08-07,RTV Euro AGD,rtveuro,3.5,%,False,https://letyshops.com/pl/shops/rtv-euro-agd
-2026-08-07,Lidl,lidl,0.75,%,False,https://letyshops.com/pl-en/shops/lidl-pl
+2026-08-07,Lidl,lidl,1.0,%,False,https://letyshops.com/pl-en/shops/lidl-pl
 2026-08-07,Leroy Merlin,leroymerlin,1.75,%,False,https://letyshops.com/pl/shops/leroy-merlin
 2026-08-07,CCC,ccc,3.25,%,False,https://letyshops.com/pl-en/shops/ccc-pl
 2026-08-07,Hebe,hebe,4.0,%,False,https://letyshops.com/pl-en/shops/hebe
@@ -167,7 +167,7 @@ date,retailer,igraal_slug,letyshops_rate,letyshops_rate_type,letyshops_boosted,l
 2026-08-07,NEONAIL,neonail,3.5,%,False,https://letyshops.com/pl/shops/neonail
 2026-08-07,New Balance,nbsklep,3.5,%,False,https://letyshops.com/pl/shops/new-balance-pl
 2026-08-07,Nike,nike,,no cashback,False,
-2026-08-07,Ninja,ninja,2.5,%,False,https://letyshops.com/pl/shops/ninja-pl
+2026-08-07,Ninja,ninja,5.0,%,False,https://letyshops.com/pl/shops/ninja-pl
 2026-08-07,NordVPN,nordvpn,20.0,%,False,https://letyshops.com/pl/shops/nord-vpn
 2026-08-07,norton,norton,,no cashback,False,
 2026-08-07,Notino,notino,2.5,%,False,https://letyshops.com/pl-en/shops/notino-pl
