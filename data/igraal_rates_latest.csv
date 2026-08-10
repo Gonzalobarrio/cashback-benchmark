@@ -104,7 +104,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-08-10,Geekbuying.pl,geekbuying,5.0,%
 2026-08-10,GetYourGuide,getyourguide,4.0,%
 2026-08-10,Giacomo Conti,giacomo,5.0,%
-2026-08-10,GOG,gog,3.0,%
+2026-08-10,GOG,gog,,no cashback
 2026-08-10,Gomez,gomez,4.0,%
 2026-08-10,Green Touch,greentouch,3.3,%
 2026-08-10,Greenpoint,greenpoint,4.0,%
@@ -176,7 +176,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-08-10,OleOle!,oleole,1.0,%
 2026-08-10,Olimp Store,olimp-store,2.5,%
 2026-08-10,Orange,orange,5.5,%
-2026-08-10,Pan Materac,panmaterac,8.0,%
+2026-08-10,Pan Materac,panmaterac,,no cashback
 2026-08-10,Pandora,pandora,4.0,%
 2026-08-10,Parfumdreams,parfumdreams,12.0,%
 2026-08-10,Peek & Cloppenburg,peek-and-cloppenburg,2.0,%
