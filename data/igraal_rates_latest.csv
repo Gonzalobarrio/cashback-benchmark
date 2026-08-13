@@ -1,11 +1,11 @@
 date,retailer,slug,igraal_rate,cashback_type
-2026-08-13,AliExpress,aliexpress,25.0,%
-2026-08-13,Allegro,allegro,5.5,%
-2026-08-13,Answear,answear,3.0,%
+2026-08-13,AliExpress,aliexpress,,no cashback
+2026-08-13,Allegro,allegro,,no cashback
+2026-08-13,Answear,answear,,no cashback
 2026-08-13,Decathlon,decathlon,2.0,%
-2026-08-13,Empik,empik,1.6,%
-2026-08-13,Lounge by Zalando,zalando-lounge,10.0,%
-2026-08-13,MediaMarkt,mediamarkt,4.0,%
+2026-08-13,Empik,empik,,no cashback
+2026-08-13,Lounge by Zalando,zalando-lounge,,no cashback
+2026-08-13,MediaMarkt,mediamarkt,,no cashback
 2026-08-13,Temu,temu,40.0,%
 2026-08-13,SHEIN,shein,13.5,%
 2026-08-13,RTV Euro AGD,rtveuro,2.0,%
@@ -62,14 +62,14 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-08-13,DeLonghi,delonghi,6.0,%
 2026-08-13,Dermacol,dermacol,3.0,%
 2026-08-13,Desigual,desigual,7.7,%
-2026-08-13,DHgate,dhgate,2.0,%
-2026-08-13,DHL,dhl,10.0,%
+2026-08-13,DHgate,dhgate,,no cashback
+2026-08-13,DHL,dhl,,no cashback
 2026-08-13,Diablo Chairs,diablochairs,4.0,%
-2026-08-13,Disney+,disneyplus,10.0,%
-2026-08-13,Drogeria.pl,drogeria.pl,7.0,%
-2026-08-13,Drop,drop,10.0,%
-2026-08-13,Dstreet,dstreet,9.0,%
-2026-08-13,Dyson,dyson,2.5,%
+2026-08-13,Disney+,disneyplus,,no cashback
+2026-08-13,Drogeria.pl,drogeria.pl,,no cashback
+2026-08-13,Drop,drop,,no cashback
+2026-08-13,Dstreet,dstreet,,no cashback
+2026-08-13,Dyson,dyson,,no cashback
 2026-08-13,E-Kwiaty,e-kwiaty,4.0,%
 2026-08-13,e-torty,e-torty,10.0,%
 2026-08-13,eBilet,ebilet,1.0,%
@@ -113,35 +113,35 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-08-13,H&M,hm,8.0,%
 2026-08-13,Homla,homla,2.5,%
 2026-08-13,HP,hp,7.0,%
-2026-08-13,Huawei,huawei,3.5,%
-2026-08-13,iBOOD,ibood,1.0,%
-2026-08-13,iDream,idream,3.0,%
-2026-08-13,iHerb,iherb,3.0,%
+2026-08-13,Huawei,huawei,,no cashback
+2026-08-13,iBOOD,ibood,,no cashback
+2026-08-13,iDream,idream,,no cashback
+2026-08-13,iHerb,iherb,,no cashback
 2026-08-13,IKEA,ikea,4.0,%
-2026-08-13,Intymna,intymna,3.0,%
-2026-08-13,iParts,iparts,1.8,%
-2026-08-13,JD Sports,jdsports,5.0,%
-2026-08-13,Joom,joom,9.0,%
-2026-08-13,Josera,josera,5.5,%
-2026-08-13,Justjoinit,justjoinit,10.0,%
-2026-08-13,Katalog Marzeń,katalog-marzen,2.8,%
-2026-08-13,Kenwood,kenwood,6.0,%
-2026-08-13,KFC,kfc,3.0,%
-2026-08-13,Kinguin,kinguin,10.0,%
-2026-08-13,Kiwi,kiwi,3.0,%
-2026-08-13,Komputronik,komputronik,1.5,%
-2026-08-13,Konesso,konesso,10.0,%
-2026-08-13,Krakvet,krakvet,2.0,%
-2026-08-13,Kubenz,kubenz,2.76,%
-2026-08-13,Kubota,kubota,4.5,%
-2026-08-13,KurJerzy.pl,kurjerzy.pl,3.0,%
-2026-08-13,Lacoste,lacoste,8.0,%
-2026-08-13,Lampy.pl,lampy,8.0,%
-2026-08-13,Legimi,legimi,15.0,%
-2026-08-13,LEGO,lego,3.0,%
-2026-08-13,Leo Express,leoexpress,4.0,%
-2026-08-13,Levi's,levis,5.0,%
-2026-08-13,LG,lg,1.75,%
+2026-08-13,Intymna,intymna,,no cashback
+2026-08-13,iParts,iparts,,no cashback
+2026-08-13,JD Sports,jdsports,,no cashback
+2026-08-13,Joom,joom,,no cashback
+2026-08-13,Josera,josera,,no cashback
+2026-08-13,Justjoinit,justjoinit,,no cashback
+2026-08-13,Katalog Marzeń,katalog-marzen,,no cashback
+2026-08-13,Kenwood,kenwood,,no cashback
+2026-08-13,KFC,kfc,,no cashback
+2026-08-13,Kinguin,kinguin,,no cashback
+2026-08-13,Kiwi,kiwi,,no cashback
+2026-08-13,Komputronik,komputronik,,no cashback
+2026-08-13,Konesso,konesso,,no cashback
+2026-08-13,Krakvet,krakvet,,no cashback
+2026-08-13,Kubenz,kubenz,,no cashback
+2026-08-13,Kubota,kubota,,no cashback
+2026-08-13,KurJerzy.pl,kurjerzy.pl,,no cashback
+2026-08-13,Lacoste,lacoste,,no cashback
+2026-08-13,Lampy.pl,lampy,,no cashback
+2026-08-13,Legimi,legimi,,no cashback
+2026-08-13,LEGO,lego,,no cashback
+2026-08-13,Leo Express,leoexpress,,no cashback
+2026-08-13,Levi's,levis,,no cashback
+2026-08-13,LG,lg,,no cashback
 2026-08-13,Loaded,cdkeys,5.0,%
 2026-08-13,Lokalny Rolnik,lokalnyrolnik,4.5,%
 2026-08-13,Lookfantastic,lookfantastic,5.0,%
@@ -152,68 +152,68 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-08-13,Marilyn,marilyn,6.0,%
 2026-08-13,Max Elektro,maxelektro,2.0,%
 2026-08-13,Maxi Zoo,maxizoo,5.0,%
-2026-08-13,MebleMWM,meblemwm,3.5,%
-2026-08-13,Medicine,wearmedicine,3.0,%
-2026-08-13,Merkury Market,merkurymarket,2.0,%
+2026-08-13,MebleMWM,meblemwm,,no cashback
+2026-08-13,Medicine,wearmedicine,,no cashback
+2026-08-13,Merkury Market,merkurymarket,,no cashback
 2026-08-13,Michael Kors,michaelkors,3.0,%
-2026-08-13,Modivo,modivo.pl,3.5,%
-2026-08-13,ModnaKiecka.pl,modnakiecka.pl,4.0,%
+2026-08-13,Modivo,modivo.pl,,no cashback
+2026-08-13,ModnaKiecka.pl,modnakiecka.pl,,no cashback
 2026-08-13,Morele.net,morele,10.0,%
 2026-08-13,Mountain Warehouse,mountainwarehouse,3.0,%
 2026-08-13,Mova,mova,4.2,%
-2026-08-13,MyHeritage DNA,myheritagedna,4.0,%
-2026-08-13,MyProtein,myprotein,10.0,%
+2026-08-13,MyHeritage DNA,myheritagedna,,no cashback
+2026-08-13,MyProtein,myprotein,,no cashback
 2026-08-13,NAOKO,naoko,5.0,%
-2026-08-13,Neness,neness,6.0,%
-2026-08-13,NEONAIL,neonail,7.0,%
-2026-08-13,New Balance,nbsklep,5.0,%
-2026-08-13,Nike,nike,10.0,%
+2026-08-13,Neness,neness,,no cashback
+2026-08-13,NEONAIL,neonail,,no cashback
+2026-08-13,New Balance,nbsklep,,no cashback
+2026-08-13,Nike,nike,,no cashback
 2026-08-13,Ninja,ninja,4.0,%
-2026-08-13,NordVPN,nordvpn,30.0,%
-2026-08-13,norton,norton,10.0,%
+2026-08-13,NordVPN,nordvpn,,no cashback
+2026-08-13,norton,norton,,no cashback
 2026-08-13,Notino,notino,3.5,%
-2026-08-13,Novakid,novakid,10.0,%
-2026-08-13,OleOle!,oleole,1.0,%
-2026-08-13,Olimp Store,olimp-store,2.5,%
-2026-08-13,Orange,orange,10.0,%
+2026-08-13,Novakid,novakid,,no cashback
+2026-08-13,OleOle!,oleole,,no cashback
+2026-08-13,Olimp Store,olimp-store,,no cashback
+2026-08-13,Orange,orange,,no cashback
 2026-08-13,Pan Materac,panmaterac,8.0,%
 2026-08-13,Pandora,pandora,4.0,%
-2026-08-13,Parfumdreams,parfumdreams,12.0,%
-2026-08-13,Peek & Cloppenburg,peek-and-cloppenburg,2.0,%
-2026-08-13,Perfumeria,perfumeria.pl,3.84,%
+2026-08-13,Parfumdreams,parfumdreams,,no cashback
+2026-08-13,Peek & Cloppenburg,peek-and-cloppenburg,,no cashback
+2026-08-13,Perfumeria,perfumeria.pl,,no cashback
 2026-08-13,Perfumy.pl,perfumy,5.0,%
-2026-08-13,Petkarma,petkarma,8.0,%
-2026-08-13,Philips,philips,4.0,%
-2026-08-13,Philips Hue,philips-hue,7.0,%
-2026-08-13,Pitbull,pitbull,5.0,%
-2026-08-13,Play,play,10.0,%
-2026-08-13,Pleso,plesotherapy,10.0,%
-2026-08-13,Plus,plus,10.0,%
-2026-08-13,Preply,preply,10.0,%
-2026-08-13,Primodo,primodo,5.0,%
-2026-08-13,PRM,prm,6.0,%
-2026-08-13,Proton VPN,protonvpn,70.0,%
-2026-08-13,Przyjaciele Kawy,przyjacielekawy,4.0,%
+2026-08-13,Petkarma,petkarma,,no cashback
+2026-08-13,Philips,philips,,no cashback
+2026-08-13,Philips Hue,philips-hue,,no cashback
+2026-08-13,Pitbull,pitbull,,no cashback
+2026-08-13,Play,play,,no cashback
+2026-08-13,Pleso,plesotherapy,,no cashback
+2026-08-13,Plus,plus,,no cashback
+2026-08-13,Preply,preply,,no cashback
+2026-08-13,Primodo,primodo,,no cashback
+2026-08-13,PRM,prm,,no cashback
+2026-08-13,Proton VPN,protonvpn,,no cashback
+2026-08-13,Przyjaciele Kawy,przyjacielekawy,,no cashback
 2026-08-13,Puma,puma,6.0,%
 2026-08-13,PWN,pwn,2.7,%
-2026-08-13,Pyszne.pl,pyszne,2.0,%
+2026-08-13,Pyszne.pl,pyszne,,no cashback
 2026-08-13,Radisson Hotels,radissonhotels,2.0,%
 2026-08-13,Recman,recman,5.0,%
 2026-08-13,RedBull Mobile,redbullmobile,10.0,%
 2026-08-13,Regatta,regatta,8.0,%
-2026-08-13,Remix,remix,10.0,%
-2026-08-13,Renee,renee,6.0,%
-2026-08-13,Reporter Young,reporteryoung,3.5,%
-2026-08-13,Rocketjobs.pl,rocketjobs,10.0,%
+2026-08-13,Remix,remix,,no cashback
+2026-08-13,Renee,renee,,no cashback
+2026-08-13,Reporter Young,reporteryoung,,no cashback
+2026-08-13,Rocketjobs.pl,rocketjobs,,no cashback
 2026-08-13,Ryobi,ryobi,4.0,%
 2026-08-13,Samsung,samsung,3.0,%
-2026-08-13,SeePlaces,seeplaces,3.15,%
-2026-08-13,Sferis,sferis,1.6,%
+2026-08-13,SeePlaces,seeplaces,,no cashback
+2026-08-13,Sferis,sferis,,no cashback
 2026-08-13,Sinsay,sinsay,10.0,%
-2026-08-13,Skechers,skechers,8.5,%
-2026-08-13,SkyShowtime,skyshowtime,10.0,%
-2026-08-13,Smyk,smyk,1.26,%
-2026-08-13,Sony.pl,sony,2.5,%
+2026-08-13,Skechers,skechers,,no cashback
+2026-08-13,SkyShowtime,skyshowtime,,no cashback
+2026-08-13,Smyk,smyk,,no cashback
+2026-08-13,Sony.pl,sony,,no cashback
 2026-08-13,SportStyleStory,sportstylestory,6.0,%
 2026-08-13,Stradivarius,stradivarius,10.0,%
 2026-08-13,Streetstyle24,streetstyle24,4.5,%
@@ -221,62 +221,62 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-08-13,Sun & Snow,sun-and-snow,4.5,%
 2026-08-13,Surfshark,surfshark,10.0,%
 2026-08-13,Świat supli,swiatsupli,2.5,%
-2026-08-13,Tagomago,tagomago,3.0,%
+2026-08-13,Tagomago,tagomago,,no cashback
 2026-08-13,Tefal,tefal,5.0,%
 2026-08-13,Tescoma,tescoma,3.5,%
 2026-08-13,TestDNA,testdna,10.0,%
 2026-08-13,Teufel,teufel,4.0,%
-2026-08-13,Top Secret,topsecret,4.2,%
-2026-08-13,Trip.com,trip-com,3.85,%
-2026-08-13,Triverna,triverna,2.0,%
-2026-08-13,Twojemeble.pl,twojemeble.pl,2.7,%
-2026-08-13,UBER,uber,10.0,%
-2026-08-13,Ubisoft,ubisoft,0.5,%
-2026-08-13,Ucando,ucando,4.0,%
+2026-08-13,Top Secret,topsecret,,no cashback
+2026-08-13,Trip.com,trip-com,,no cashback
+2026-08-13,Triverna,triverna,,no cashback
+2026-08-13,Twojemeble.pl,twojemeble.pl,,no cashback
+2026-08-13,UBER,uber,,no cashback
+2026-08-13,Ubisoft,ubisoft,,no cashback
+2026-08-13,Ucando,ucando,,no cashback
 2026-08-13,Udemy,udemy,10.0,%
 2026-08-13,Under Armour,under-armour,6.0,%
-2026-08-13,Unisono,unisono,6.0,%
-2026-08-13,uPacjenta,upacjenta,3.36,%
-2026-08-13,Van Graaf,vangraaf,7.0,%
-2026-08-13,Vans,vans,4.0,%
-2026-08-13,Vasco Electronics,vascoelectronics,3.0,%
+2026-08-13,Unisono,unisono,,no cashback
+2026-08-13,uPacjenta,upacjenta,,no cashback
+2026-08-13,Van Graaf,vangraaf,,no cashback
+2026-08-13,Vans,vans,,no cashback
+2026-08-13,Vasco Electronics,vascoelectronics,,no cashback
 2026-08-13,Venezia,venezia,4.0,%
-2026-08-13,Victoria's Secret,victorias-secret,3.0,%
-2026-08-13,VidaXL,vidaxl,2.5,%
-2026-08-13,Vision Express,visionexpress,6.3,%
-2026-08-13,Vobis,vobis,1.0,%
-2026-08-13,Wolt,wolt,10.0,%
-2026-08-13,Wrangler,wrangler,10.0,%
-2026-08-13,x-kom,x-kom,10.0,%
-2026-08-13,Xiaomi,mi,2.0,%
-2026-08-13,xlmoto,xlmoto,4.0,%
+2026-08-13,Victoria's Secret,victorias-secret,,no cashback
+2026-08-13,VidaXL,vidaxl,,no cashback
+2026-08-13,Vision Express,visionexpress,,no cashback
+2026-08-13,Vobis,vobis,,no cashback
+2026-08-13,Wolt,wolt,,no cashback
+2026-08-13,Wrangler,wrangler,,no cashback
+2026-08-13,x-kom,x-kom,,no cashback
+2026-08-13,Xiaomi,mi,,no cashback
+2026-08-13,xlmoto,xlmoto,,no cashback
 2026-08-13,Yanosik,yanosik,3.0,%
-2026-08-13,Yope,yope,7.0,%
-2026-08-13,Yves Rocher,yves-rocher,5.0,%
-2026-08-13,Zalando,zalando.pl,10.0,%
-2026-08-13,Zelmer,zelmer,3.3,%
-2026-08-13,Znak,znak,3.0,%
-2026-08-13,zooplus,zooplus,2.1,%
-2026-08-13,Zwieger,zwieger,3.0,%
-2026-08-13,24mx,24mx,2.5,%
-2026-08-13,4kidspoint,4kidspoint,3.5,%
-2026-08-13,7way,7way,3.5,%
+2026-08-13,Yope,yope,,no cashback
+2026-08-13,Yves Rocher,yves-rocher,,no cashback
+2026-08-13,Zalando,zalando.pl,,no cashback
+2026-08-13,Zelmer,zelmer,,no cashback
+2026-08-13,Znak,znak,,no cashback
+2026-08-13,zooplus,zooplus,,no cashback
+2026-08-13,Zwieger,zwieger,,no cashback
+2026-08-13,24mx,24mx,,no cashback
+2026-08-13,4kidspoint,4kidspoint,,no cashback
+2026-08-13,7way,7way,,no cashback
 2026-08-13,Orange Flex,orangeflex,,no cashback
 2026-08-13,Your KAYA,yourkaya,,no cashback
-2026-08-13,Airbnb,airbnb,10.0,%
-2026-08-13,Carinii,carinii,10.0,%
+2026-08-13,Airbnb,airbnb,,no cashback
+2026-08-13,Carinii,carinii,,no cashback
 2026-08-13,Duka,duka,,no cashback
-2026-08-13,Kaufland,kaufland,10.0,%
+2026-08-13,Kaufland,kaufland,,no cashback
 2026-08-13,Kolba,kolba,,no cashback
-2026-08-13,KROSS,kross,10.0,%
-2026-08-13,LycaMobile,lyca-mobile,42.0,%
-2026-08-13,Mango,mango,10.0,%
-2026-08-13,Nintendo eShop,nintendo-eshop,10.0,%
-2026-08-13,OnePlus,oneplus,0.84,%
+2026-08-13,KROSS,kross,,no cashback
+2026-08-13,LycaMobile,lyca-mobile,,no cashback
+2026-08-13,Mango,mango,,no cashback
+2026-08-13,Nintendo eShop,nintendo-eshop,,no cashback
+2026-08-13,OnePlus,oneplus,,no cashback
 2026-08-13,Sportofino,sportofino,,no cashback
 2026-08-13,Spotify,spotify,,no cashback
-2026-08-13,Ticketmaster,ticketmaster,10.0,%
+2026-08-13,Ticketmaster,ticketmaster,,no cashback
 2026-08-13,Tołpa,tolpa,,no cashback
 2026-08-13,Top Hi Fi,tophifi,,no cashback
-2026-08-13,YES,yes,10.0,%
-2026-08-13,Zegarownia,zegarownia,10.0,%
+2026-08-13,YES,yes,,no cashback
+2026-08-13,Zegarownia,zegarownia,,no cashback
