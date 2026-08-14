@@ -167,7 +167,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-08-14,Neness,neness,6.0,%
 2026-08-14,NEONAIL,neonail,7.0,%
 2026-08-14,New Balance,nbsklep,5.0,%
-2026-08-14,Nike,nike,,no cashback
+2026-08-14,Nike,nike,7.0,%
 2026-08-14,Ninja,ninja,4.0,%
 2026-08-14,NordVPN,nordvpn,30.0,%
 2026-08-14,norton,norton,,no cashback
@@ -230,7 +230,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-08-14,Trip.com,trip-com,3.85,%
 2026-08-14,Triverna,triverna,2.0,%
 2026-08-14,Twojemeble.pl,twojemeble.pl,2.7,%
-2026-08-14,UBER,uber,,no cashback
+2026-08-14,UBER,uber,4.0,%
 2026-08-14,Ubisoft,ubisoft,0.5,%
 2026-08-14,Ucando,ucando,4.0,%
 2026-08-14,Udemy,udemy,10.0,%
@@ -253,7 +253,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-08-14,Yanosik,yanosik,3.0,%
 2026-08-14,Yope,yope,7.0,%
 2026-08-14,Yves Rocher,yves-rocher,5.0,%
-2026-08-14,Zalando,zalando.pl,,zł
+2026-08-14,Zalando,zalando.pl,8.0,%
 2026-08-14,Zelmer,zelmer,3.3,%
 2026-08-14,Znak,znak,3.0,%
 2026-08-14,zooplus,zooplus,2.1,%
@@ -266,17 +266,17 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-08-14,Airbnb,airbnb,,no cashback
 2026-08-14,Carinii,carinii,,no cashback
 2026-08-14,Duka,duka,,no cashback
-2026-08-14,Kaufland,kaufland,,no cashback
+2026-08-14,Kaufland,kaufland,1.0,%
 2026-08-14,Kolba,kolba,,no cashback
-2026-08-14,KROSS,kross,,no cashback
+2026-08-14,KROSS,kross,4.0,%
 2026-08-14,LycaMobile,lyca-mobile,42.0,%
-2026-08-14,Mango,mango,,no cashback
-2026-08-14,Nintendo eShop,nintendo-eshop,,no cashback
+2026-08-14,Mango,mango,7.5,%
+2026-08-14,Nintendo eShop,nintendo-eshop,6.0,%
 2026-08-14,OnePlus,oneplus,0.84,%
 2026-08-14,Sportofino,sportofino,,no cashback
 2026-08-14,Spotify,spotify,,no cashback
-2026-08-14,Ticketmaster,ticketmaster,,no cashback
+2026-08-14,Ticketmaster,ticketmaster,7.0,%
 2026-08-14,Tołpa,tolpa,,no cashback
 2026-08-14,Top Hi Fi,tophifi,,no cashback
-2026-08-14,YES,yes,,no cashback
-2026-08-14,Zegarownia,zegarownia,,no cashback
+2026-08-14,YES,yes,3.0,%
+2026-08-14,Zegarownia,zegarownia,2.0,%

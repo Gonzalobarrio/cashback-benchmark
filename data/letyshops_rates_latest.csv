@@ -87,7 +87,7 @@ date,retailer,igraal_slug,letyshops_rate,letyshops_rate_type,letyshops_boosted,l
 2026-08-14,Eurofirany,eurofirany,3.5,%,False,https://letyshops.com/pl/shops/eurofirany
 2026-08-14,Euroflorist,euroflorist,7.5,%,False,https://letyshops.com/pl/shops/euroflorist-pl
 2026-08-14,Eveline,eveline,3.5,%,False,https://letyshops.com/pl/shops/eveline-pl
-2026-08-14,Eventim,eventim,1.5,%,False,https://letyshops.com/pl/shops/eventim-pl
+2026-08-14,Eventim,eventim,,not_found,False,
 2026-08-14,eZebra,ezebra,4.0,%,False,https://letyshops.com/pl/shops/ezebra
 2026-08-14,Feniko,feniko,,not_found,False,
 2026-08-14,Fera,fera,2.0,%,False,https://letyshops.com/pl/shops/fera-pl
