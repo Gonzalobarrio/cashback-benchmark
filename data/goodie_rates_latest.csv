@@ -1,5 +1,5 @@
 date,retailer,igraal_slug,goodie_rate,goodie_rate_type,goodie_url
-2026-08-17,AliExpress,aliexpress,4.5,up_to_%,https://goodie.pl/marka/aliexpress
+2026-08-17,AliExpress,aliexpress,80.0,up_to_%,https://goodie.pl/marka/aliexpress
 2026-08-17,Allegro,allegro,2.2,up_to_%,https://goodie.pl/marka/allegro
 2026-08-17,Answear,answear,2.0,up_to_%,https://goodie.pl/marka/answear-com
 2026-08-17,Decathlon,decathlon,1.75,%,https://goodie.pl/marka/decathlon
@@ -22,7 +22,7 @@ date,retailer,igraal_slug,goodie_rate,goodie_rate_type,goodie_url
 2026-08-17,Acer,acer,4.0,%,https://goodie.pl/marka/acer
 2026-08-17,Aclari,aclari,,not_found,
 2026-08-17,Aelia,aelia,3.25,%,https://goodie.pl/marka/aelia
-2026-08-17,Agoda,agoda,3.0,%,https://goodie.pl/marka/agoda
+2026-08-17,Agoda,agoda,,no cashback,https://goodie.pl/marka/agoda
 2026-08-17,Airalo,airalo,5.0,%,https://goodie.pl/marka/airalo
 2026-08-17,AirHelp,airhelp,10.0,up_to_%,https://goodie.pl/marka/airhelp
 2026-08-17,ALAB Laboratoria,alab-laboratoria,3.12,%,https://goodie.pl/marka/alab-laboratoria
@@ -200,7 +200,7 @@ date,retailer,igraal_slug,goodie_rate,goodie_rate_type,goodie_url
 2026-08-17,Radisson Hotels,radissonhotels,2.0,%,https://goodie.pl/marka/radisson-hotels
 2026-08-17,Recman,recman,,no cashback,https://goodie.pl/marka/recman
 2026-08-17,RedBull Mobile,redbullmobile,80.0,%,https://goodie.pl/marka/red-bull-mobile
-2026-08-17,Regatta,regatta,2.5,%,https://goodie.pl/marka/regatta
+2026-08-17,Regatta,regatta,2.5,up_to_%,https://goodie.pl/marka/regatta
 2026-08-17,Remix,remix,,not_found,
 2026-08-17,Renee,renee,5.0,%,https://goodie.pl/marka/renee-pl
 2026-08-17,Reporter Young,reporteryoung,,not_found,
@@ -240,7 +240,7 @@ date,retailer,igraal_slug,goodie_rate,goodie_rate_type,goodie_url
 2026-08-17,Van Graaf,vangraaf,,no cashback,https://goodie.pl/marka/van-graaf
 2026-08-17,Vans,vans,,no cashback,https://goodie.pl/marka/vans
 2026-08-17,Vasco Electronics,vascoelectronics,2.0,%,https://goodie.pl/marka/vasco-electronics
-2026-08-17,Venezia,venezia,,no cashback,https://goodie.pl/marka/venezia
+2026-08-17,Venezia,venezia,2.0,up_to_%,https://goodie.pl/marka/venezia
 2026-08-17,Victoria's Secret,victorias-secret,,not_found,
 2026-08-17,VidaXL,vidaxl,2.0,%,https://goodie.pl/marka/vida-xl
 2026-08-17,Vision Express,visionexpress,4.25,%,https://goodie.pl/marka/vision-express

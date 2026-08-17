@@ -21,7 +21,7 @@ date,retailer,igraal_slug,letyshops_rate,letyshops_rate_type,letyshops_boosted,l
 2026-08-17,Abra,abra,,not_found,False,
 2026-08-17,Acer,acer,4.5,%,False,https://letyshops.com/pl/shops/acer-pl
 2026-08-17,Aclari,aclari,,not_found,False,
-2026-08-17,Aelia,aelia,4.0,%,False,https://letyshops.com/pl/shops/aelia
+2026-08-17,Aelia,aelia,3.25,%,False,https://letyshops.com/pl/shops/aelia
 2026-08-17,Agoda,agoda,,no cashback,False,
 2026-08-17,Airalo,airalo,,not_found,False,
 2026-08-17,AirHelp,airhelp,7.5,%,False,https://letyshops.com/pl/shops/airhelp
@@ -76,7 +76,7 @@ date,retailer,igraal_slug,letyshops_rate,letyshops_rate_type,letyshops_boosted,l
 2026-08-17,Egmont,egmont,3.25,%,False,https://letyshops.com/pl/shops/egmont
 2026-08-17,Electrolux,electrolux,2.0,%,False,https://letyshops.com/pl/shops/electrolux-pl
 2026-08-17,Eltrox,eltrox,2.75,%,False,https://letyshops.com/pl/shops/eltrox-pl
-2026-08-17,EMP,emp,3.5,%,False,https://letyshops.com/pl/shops/emp-pl
+2026-08-17,EMP,emp,5.0,%,False,https://letyshops.com/pl/shops/emp-pl
 2026-08-17,Empik Foto,empikfoto,5.0,%,False,https://letyshops.com/pl/shops/empikfoto-pl
 2026-08-17,Endo,endo,,no cashback,False,
 2026-08-17,eobuwie,eobuwie,3.5,%,False,https://letyshops.com/pl/shops/eobuwie-pl
@@ -136,7 +136,7 @@ date,retailer,igraal_slug,letyshops_rate,letyshops_rate_type,letyshops_boosted,l
 2026-08-17,Kubota,kubota,,not_found,False,
 2026-08-17,KurJerzy.pl,kurjerzy.pl,2.8,%,False,https://letyshops.com/pl/shops/kurjerzy-pl
 2026-08-17,Lacoste,lacoste,5.0,%,False,https://letyshops.com/pl/shops/lacoste-pl
-2026-08-17,Lampy.pl,lampy,6.0,%,False,https://letyshops.com/pl/shops/lampy-pl
+2026-08-17,Lampy.pl,lampy,4.0,%,False,https://letyshops.com/pl/shops/lampy-pl
 2026-08-17,Legimi,legimi,7.5,%,False,https://letyshops.com/pl/shops/legimi-pl
 2026-08-17,LEGO,lego,,no cashback,False,
 2026-08-17,Leo Express,leoexpress,,not_found,False,
