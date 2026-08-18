@@ -1,6 +1,6 @@
 date,retailer,slug,igraal_rate,cashback_type
 2026-08-18,AliExpress,aliexpress,25.0,%
-2026-08-18,Allegro,allegro,,no cashback
+2026-08-18,Allegro,allegro,1.9,%
 2026-08-18,Answear,answear,3.0,%
 2026-08-18,Decathlon,decathlon,2.0,%
 2026-08-18,Empik,empik,1.6,%
@@ -147,7 +147,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-08-18,Lookfantastic,lookfantastic,5.0,%
 2026-08-18,LOT,lot,1.0,%
 2026-08-18,Lufthansa,lufthansa,1.2,%
-2026-08-18,Mamyito,mamyito,,no cashback
+2026-08-18,Mamyito,mamyito,4.5,%
 2026-08-18,Mango Outlet,mango-outlet,3.0,%
 2026-08-18,Marilyn,marilyn,6.0,%
 2026-08-18,Max Elektro,maxelektro,2.0,%
@@ -199,7 +199,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-08-18,Pyszne.pl,pyszne,2.0,%
 2026-08-18,Radisson Hotels,radissonhotels,2.0,%
 2026-08-18,Recman,recman,5.0,%
-2026-08-18,RedBull Mobile,redbullmobile,10.0,%
+2026-08-18,RedBull Mobile,redbullmobile,,no cashback
 2026-08-18,Regatta,regatta,8.0,%
 2026-08-18,Remix,remix,10.0,%
 2026-08-18,Renee,renee,6.0,%

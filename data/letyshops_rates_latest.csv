@@ -7,7 +7,7 @@ date,retailer,igraal_slug,letyshops_rate,letyshops_rate_type,letyshops_boosted,l
 2026-08-18,Lounge by Zalando,zalando-lounge,6.0,%,False,https://letyshops.com/pl-en/shops/zalando-lounge-pl
 2026-08-18,MediaMarkt,mediamarkt,3.5,%,False,https://letyshops.com/pl/shops/media-markt-pl
 2026-08-18,Temu,temu,5.5,%,False,https://letyshops.com/pl/shops/temu
-2026-08-18,SHEIN,shein,5.0,%,False,https://letyshops.com/pl-en/shops/shein-pl
+2026-08-18,SHEIN,shein,5.0,%,False,https://letyshops.com/pl/shops/shein-pl
 2026-08-18,RTV Euro AGD,rtveuro,3.5,%,False,https://letyshops.com/pl/shops/rtv-euro-agd
 2026-08-18,Lidl,lidl,1.0,%,False,https://letyshops.com/pl-en/shops/lidl-pl
 2026-08-18,Leroy Merlin,leroymerlin,1.75,%,False,https://letyshops.com/pl/shops/leroy-merlin
@@ -21,7 +21,7 @@ date,retailer,igraal_slug,letyshops_rate,letyshops_rate_type,letyshops_boosted,l
 2026-08-18,Abra,abra,,not_found,False,
 2026-08-18,Acer,acer,4.5,%,False,https://letyshops.com/pl/shops/acer-pl
 2026-08-18,Aclari,aclari,,not_found,False,
-2026-08-18,Aelia,aelia,3.25,%,False,https://letyshops.com/pl/shops/aelia
+2026-08-18,Aelia,aelia,4.0,%,False,https://letyshops.com/pl/shops/aelia
 2026-08-18,Agoda,agoda,,no cashback,False,
 2026-08-18,Airalo,airalo,,not_found,False,
 2026-08-18,AirHelp,airhelp,7.5,%,False,https://letyshops.com/pl/shops/airhelp
@@ -109,7 +109,7 @@ date,retailer,igraal_slug,letyshops_rate,letyshops_rate_type,letyshops_boosted,l
 2026-08-18,Green Touch,greentouch,1.75,%,False,https://letyshops.com/pl/shops/green-touch-pl
 2026-08-18,Greenpoint,greenpoint,2.0,%,False,https://letyshops.com/pl/shops/greenpoint-pl
 2026-08-18,Groupon,groupon,3.5,%,False,https://letyshops.com/pl/shops/groupon-pl
-2026-08-18,Gunfire,gunfire,3.15,%,False,https://letyshops.com/pl/shops/gunfire-pl
+2026-08-18,Gunfire,gunfire,,no cashback,False,
 2026-08-18,H&M,hm,1.5,%,False,https://letyshops.com/pl-en/shops/h-m-pl
 2026-08-18,Homla,homla,,no cashback,False,
 2026-08-18,HP,hp,3.5,%,False,https://letyshops.com/pl/shops/hp-pl
