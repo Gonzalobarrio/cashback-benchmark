@@ -1,283 +1,284 @@
 date,retailer,slug,igraal_rate,cashback_type
-2026-08-18,AliExpress,aliexpress,25.0,%
-2026-08-18,Allegro,allegro,1.9,%
-2026-08-18,Answear,answear,3.0,%
-2026-08-18,Decathlon,decathlon,2.0,%
-2026-08-18,Empik,empik,1.6,%
-2026-08-18,Lounge by Zalando,zalando-lounge,10.0,%
-2026-08-18,MediaMarkt,mediamarkt,4.0,%
-2026-08-18,Temu,temu,40.0,%
-2026-08-18,SHEIN,shein,13.5,%
-2026-08-18,RTV Euro AGD,rtveuro,1.5,%
-2026-08-18,Lidl,lidl,1.0,%
-2026-08-18,Leroy Merlin,leroymerlin,2.5,%
-2026-08-18,CCC,ccc,5.0,%
-2026-08-18,Hebe,hebe,5.0,%
-2026-08-18,OBI,obi,2.5,%
-2026-08-18,Adidas,adidas,5.0,%
-2026-08-18,Sephora,sephora,7.5,%
-2026-08-18,Douglas,douglas,8.0,%
-2026-08-18,home&you,home-you,6.5,%
-2026-08-18,Abra,abra,4.2,%
-2026-08-18,Acer,acer,4.0,%
-2026-08-18,Aclari,aclari,1.8,%
-2026-08-18,Aelia,aelia,5.0,%
-2026-08-18,Agoda,agoda,5.0,%
-2026-08-18,Airalo,airalo,9.0,%
-2026-08-18,AirHelp,airhelp,20.0,%
-2026-08-18,ALAB Laboratoria,alab-laboratoria,6.0,%
-2026-08-18,Alibaba,alibaba.com,8.4,%
-2026-08-18,Alpine Pro,alpinepro,4.8,%
-2026-08-18,Amazon,amazon,10.0,%
-2026-08-18,Audioteka,audioteka,2.5,%
-2026-08-18,AUTODOC,autodoc,8.0,%
-2026-08-18,AXA Partners,axa-partners,15.0,%
-2026-08-18,Banggood,banggood,10.0,%
-2026-08-18,Bank Pekao,bank-pekao,10.0,%
-2026-08-18,Baseus,baseus,4.0,%
-2026-08-18,BasicLab,basiclab,2.0,%
-2026-08-18,BeDiet,bediet,10.0,%
-2026-08-18,BIG STAR,bigstar,10.0,%
-2026-08-18,Bimba Y Lola,bimbaylola,6.0,%
-2026-08-18,Bonprix,bonprix,4.0,%
-2026-08-18,Born2Be,born2be,3.0,%
-2026-08-18,Brainmarket,brainmarket,1.75,%
-2026-08-18,Brasty,brasty,2.0,%
-2026-08-18,Bricoman,bricoman,6.0,%
-2026-08-18,Bricomarche,bricomarche,3.5,%
-2026-08-18,Brooks,brooks,6.0,%
-2026-08-18,Byrokko,byrokko,15.0,%
-2026-08-18,Canal Plus,canalplus,10.0,%
-2026-08-18,Carrefour,carrefour,2.0,%
-2026-08-18,Castorama,castorama,2.5,%
-2026-08-18,Ceneo,ceneo,1.0,%
-2026-08-18,Cobi,cobi,3.5,%
-2026-08-18,Cocolita,cocolita,3.5,%
-2026-08-18,Colorland,colorland,8.0,%
-2026-08-18,Converse,converse,5.0,%
-2026-08-18,Crocs,crocs,2.0,%
-2026-08-18,Cropp,cropp,4.0,%
-2026-08-18,Cyfrowe.pl,cyfrowe.pl,2.0,%
-2026-08-18,Dedoles,dedoles,10.0,%
-2026-08-18,DeLonghi,delonghi,6.0,%
-2026-08-18,Dermacol,dermacol,3.0,%
-2026-08-18,Desigual,desigual,7.7,%
-2026-08-18,DHgate,dhgate,2.0,%
-2026-08-18,DHL,dhl,10.0,%
-2026-08-18,Diablo Chairs,diablochairs,4.0,%
-2026-08-18,Disney+,disneyplus,10.0,%
-2026-08-18,Drogeria.pl,drogeria.pl,7.0,%
-2026-08-18,Dstreet,dstreet,9.0,%
-2026-08-18,Dyson,dyson,2.5,%
-2026-08-18,E-Kwiaty,e-kwiaty,4.0,%
-2026-08-18,e-torty,e-torty,10.0,%
-2026-08-18,eBilet,ebilet,1.0,%
-2026-08-18,Ecco,ecco,10.0,%
-2026-08-18,Egmont,egmont,3.6,%
-2026-08-18,Electrolux,electrolux,2.0,%
-2026-08-18,Eltrox,eltrox,4.5,%
-2026-08-18,EMP,emp,7.0,%
-2026-08-18,Empik Foto,empikfoto,10.0,%
-2026-08-18,Endo,endo,9.0,%
-2026-08-18,eobuwie,eobuwie,4.0,%
-2026-08-18,Erli,erli,3.5,%
-2026-08-18,ESET,eset,8.5,%
-2026-08-18,eSky,esky,2.0,%
-2026-08-18,Estro,estro,7.0,%
-2026-08-18,Eurofirany,eurofirany,10.0,%
-2026-08-18,Euroflorist,euroflorist,10.0,%
-2026-08-18,Eveline,eveline,6.0,%
-2026-08-18,Eventim,eventim,1.0,%
-2026-08-18,eZebra,ezebra,4.0,%
-2026-08-18,Feniko,feniko,10.0,%
-2026-08-18,Fera,fera,2.0,%
-2026-08-18,Fielmann,fielmann,6.0,%
-2026-08-18,Flexispot,flexispot,4.0,%
-2026-08-18,Flixbus,flixbus,4.0,%
-2026-08-18,Footdistrict,footdistrict,8.0,%
-2026-08-18,Footshop,footshop,3.0,%
-2026-08-18,Foreo,foreo,3.5,%
-2026-08-18,FotoForma,fotoforma,2.0,%
-2026-08-18,G2A,g2a,3.0,%
-2026-08-18,Gameseal,gameseal,3.0,%
-2026-08-18,Gamivo,gamivo,4.0,%
-2026-08-18,Geekbuying.pl,geekbuying,5.0,%
-2026-08-18,GetYourGuide,getyourguide,4.0,%
-2026-08-18,Giacomo Conti,giacomo,5.0,%
-2026-08-18,GOG,gog,3.0,%
-2026-08-18,Gomez,gomez,4.0,%
-2026-08-18,Green Touch,greentouch,3.3,%
-2026-08-18,Greenpoint,greenpoint,4.0,%
-2026-08-18,Groupon,groupon,5.6,%
-2026-08-18,Gunfire,gunfire,3.78,%
-2026-08-18,H&M,hm,8.0,%
-2026-08-18,Homla,homla,2.5,%
-2026-08-18,HP,hp,7.0,%
-2026-08-18,Huawei,huawei,3.5,%
-2026-08-18,iBOOD,ibood,1.0,%
-2026-08-18,iDream,idream,3.0,%
-2026-08-18,iHerb,iherb,3.0,%
-2026-08-18,IKEA,ikea,4.0,%
-2026-08-18,Intymna,intymna,3.0,%
-2026-08-18,iParts,iparts,1.8,%
-2026-08-18,JD Sports,jdsports,5.0,%
-2026-08-18,Joom,joom,9.0,%
-2026-08-18,Josera,josera,5.5,%
-2026-08-18,Justjoinit,justjoinit,10.0,%
-2026-08-18,Katalog Marzeń,katalog-marzen,2.8,%
-2026-08-18,Kenwood,kenwood,6.0,%
-2026-08-18,KFC,kfc,3.0,%
-2026-08-18,Kinguin,kinguin,10.0,%
-2026-08-18,Kiwi,kiwi,3.0,%
-2026-08-18,Komputronik,komputronik,1.5,%
-2026-08-18,Konesso,konesso,10.0,%
-2026-08-18,Krakvet,krakvet,2.0,%
-2026-08-18,Kubenz,kubenz,2.76,%
-2026-08-18,Kubota,kubota,4.5,%
-2026-08-18,KurJerzy.pl,kurjerzy.pl,3.0,%
-2026-08-18,Lacoste,lacoste,8.0,%
-2026-08-18,Lampy.pl,lampy,8.0,%
-2026-08-18,Legimi,legimi,15.0,%
-2026-08-18,LEGO,lego,3.0,%
-2026-08-18,Leo Express,leoexpress,4.0,%
-2026-08-18,Levi's,levis,5.0,%
-2026-08-18,LG,lg,1.75,%
-2026-08-18,Loaded,cdkeys,5.0,%
-2026-08-18,Lokalny Rolnik,lokalnyrolnik,4.5,%
-2026-08-18,Lookfantastic,lookfantastic,5.0,%
-2026-08-18,LOT,lot,1.0,%
-2026-08-18,Lufthansa,lufthansa,1.2,%
-2026-08-18,Mamyito,mamyito,4.5,%
-2026-08-18,Mango Outlet,mango-outlet,3.0,%
-2026-08-18,Marilyn,marilyn,6.0,%
-2026-08-18,Max Elektro,maxelektro,2.0,%
-2026-08-18,Maxi Zoo,maxizoo,5.0,%
-2026-08-18,MebleMWM,meblemwm,3.5,%
-2026-08-18,Medicine,wearmedicine,3.0,%
-2026-08-18,Merkury Market,merkurymarket,2.0,%
-2026-08-18,Michael Kors,michaelkors,3.0,%
-2026-08-18,Modivo,modivo.pl,3.5,%
-2026-08-18,ModnaKiecka.pl,modnakiecka.pl,4.0,%
-2026-08-18,Morele.net,morele,10.0,%
-2026-08-18,Mountain Warehouse,mountainwarehouse,3.0,%
-2026-08-18,Mova,mova,4.2,%
-2026-08-18,MyHeritage DNA,myheritagedna,4.0,%
-2026-08-18,MyProtein,myprotein,10.0,%
-2026-08-18,NAOKO,naoko,5.0,%
-2026-08-18,Neness,neness,6.0,%
-2026-08-18,NEONAIL,neonail,7.0,%
-2026-08-18,New Balance,nbsklep,5.0,%
-2026-08-18,Nike,nike,10.0,%
-2026-08-18,Ninja,ninja,4.0,%
-2026-08-18,NordVPN,nordvpn,30.0,%
-2026-08-18,norton,norton,10.0,%
-2026-08-18,Notino,notino,3.5,%
-2026-08-18,Novakid,novakid,10.0,%
-2026-08-18,OleOle!,oleole,1.0,%
-2026-08-18,Olimp Store,olimp-store,2.5,%
-2026-08-18,Orange,orange,10.0,%
-2026-08-18,Pan Materac,panmaterac,8.0,%
-2026-08-18,Pandora,pandora,4.0,%
-2026-08-18,Parfumdreams,parfumdreams,12.0,%
-2026-08-18,Peek & Cloppenburg,peek-and-cloppenburg,2.0,%
-2026-08-18,Perfumeria,perfumeria.pl,3.84,%
-2026-08-18,Perfumy.pl,perfumy,5.0,%
-2026-08-18,Petkarma,petkarma,8.0,%
-2026-08-18,Philips,philips,4.0,%
-2026-08-18,Philips Hue,philips-hue,7.0,%
-2026-08-18,Pitbull,pitbull,5.0,%
-2026-08-18,Play,play,10.0,%
-2026-08-18,Pleso,plesotherapy,10.0,%
-2026-08-18,Plus,plus,10.0,%
-2026-08-18,Preply,preply,10.0,%
-2026-08-18,Primodo,primodo,5.0,%
-2026-08-18,PRM,prm,6.0,%
-2026-08-18,Proton VPN,protonvpn,70.0,%
-2026-08-18,Przyjaciele Kawy,przyjacielekawy,4.0,%
-2026-08-18,Puma,puma,6.0,%
-2026-08-18,PWN,pwn,2.7,%
-2026-08-18,Pyszne.pl,pyszne,2.0,%
-2026-08-18,Radisson Hotels,radissonhotels,2.0,%
-2026-08-18,Recman,recman,5.0,%
-2026-08-18,RedBull Mobile,redbullmobile,,no cashback
-2026-08-18,Regatta,regatta,8.0,%
-2026-08-18,Remix,remix,10.0,%
-2026-08-18,Renee,renee,6.0,%
-2026-08-18,Reporter Young,reporteryoung,3.5,%
-2026-08-18,Rocketjobs.pl,rocketjobs,10.0,%
-2026-08-18,Ryobi,ryobi,4.0,%
-2026-08-18,Samsung,samsung,3.0,%
-2026-08-18,SeePlaces,seeplaces,3.15,%
-2026-08-18,Sferis,sferis,1.6,%
-2026-08-18,Sinsay,sinsay,10.0,%
-2026-08-18,Skechers,skechers,8.5,%
-2026-08-18,SkyShowtime,skyshowtime,10.0,%
-2026-08-18,Smyk,smyk,1.26,%
-2026-08-18,Sony.pl,sony,2.5,%
-2026-08-18,SportStyleStory,sportstylestory,6.0,%
-2026-08-18,Stradivarius,stradivarius,10.0,%
-2026-08-18,Streetstyle24,streetstyle24,4.5,%
-2026-08-18,Stylevana,stylevana,7.19,%
-2026-08-18,Sun & Snow,sun-and-snow,4.5,%
-2026-08-18,Surfshark,surfshark,10.0,%
-2026-08-18,Świat supli,swiatsupli,2.5,%
-2026-08-18,Tagomago,tagomago,3.0,%
-2026-08-18,Tanie-opony.pl,tanie-opony.pl,1.8,%
-2026-08-18,Tefal,tefal,5.0,%
-2026-08-18,Tescoma,tescoma,3.5,%
-2026-08-18,TestDNA,testdna,10.0,%
-2026-08-18,Teufel,teufel,4.0,%
-2026-08-18,Top Secret,topsecret,4.2,%
-2026-08-18,Trip.com,trip-com,3.85,%
-2026-08-18,Triverna,triverna,2.0,%
-2026-08-18,Twojemeble.pl,twojemeble.pl,2.7,%
-2026-08-18,UBER,uber,10.0,%
-2026-08-18,Ubisoft,ubisoft,0.5,%
-2026-08-18,Ucando,ucando,4.0,%
-2026-08-18,Udemy,udemy,10.0,%
-2026-08-18,Under Armour,under-armour,6.0,%
-2026-08-18,Unisono,unisono,3.0,%
-2026-08-18,uPacjenta,upacjenta,3.36,%
-2026-08-18,Van Graaf,vangraaf,7.0,%
-2026-08-18,Vans,vans,4.0,%
-2026-08-18,Vasco Electronics,vascoelectronics,3.0,%
-2026-08-18,Venezia,venezia,2.5,%
-2026-08-18,Victoria's Secret,victorias-secret,3.0,%
-2026-08-18,VidaXL,vidaxl,2.5,%
-2026-08-18,Vision Express,visionexpress,6.3,%
-2026-08-18,Vobis,vobis,1.0,%
-2026-08-18,Wolt,wolt,10.0,%
-2026-08-18,Wrangler,wrangler,10.0,%
-2026-08-18,x-kom,x-kom,10.0,%
-2026-08-18,Xiaomi,mi,2.0,%
-2026-08-18,xlmoto,xlmoto,4.0,%
-2026-08-18,Yanosik,yanosik,3.0,%
-2026-08-18,Yope,yope,7.0,%
-2026-08-18,Yves Rocher,yves-rocher,5.0,%
-2026-08-18,Zalando,zalando.pl,10.0,%
-2026-08-18,Zelmer,zelmer,3.3,%
-2026-08-18,Znak,znak,3.0,%
-2026-08-18,zooplus,zooplus,2.1,%
-2026-08-18,Zwieger,zwieger,3.0,%
-2026-08-18,24mx,24mx,2.5,%
-2026-08-18,4kidspoint,4kidspoint,3.5,%
-2026-08-18,7way,7way,3.5,%
-2026-08-18,Orange Flex,orangeflex,,no cashback
-2026-08-18,Your KAYA,yourkaya,,no cashback
-2026-08-18,Airbnb,airbnb,10.0,%
-2026-08-18,Carinii,carinii,10.0,%
-2026-08-18,Duka,duka,,no cashback
-2026-08-18,Kaufland,kaufland,10.0,%
-2026-08-18,Kolba,kolba,,no cashback
-2026-08-18,KROSS,kross,10.0,%
-2026-08-18,LycaMobile,lyca-mobile,42.0,%
-2026-08-18,Mango,mango,10.0,%
-2026-08-18,Nintendo eShop,nintendo-eshop,10.0,%
-2026-08-18,OnePlus,oneplus,0.84,%
-2026-08-18,Sportofino,sportofino,,no cashback
-2026-08-18,Spotify,spotify,,no cashback
-2026-08-18,Ticketmaster,ticketmaster,10.0,%
-2026-08-18,Tołpa,tolpa,,no cashback
-2026-08-18,Top Hi Fi,tophifi,,no cashback
-2026-08-18,YES,yes,10.0,%
-2026-08-18,Zegarownia,zegarownia,10.0,%
+2026-08-19,AliExpress,aliexpress,25.0,%
+2026-08-19,Allegro,allegro,1.9,%
+2026-08-19,Answear,answear,3.0,%
+2026-08-19,Decathlon,decathlon,2.0,%
+2026-08-19,Empik,empik,1.6,%
+2026-08-19,Lounge by Zalando,zalando-lounge,10.0,%
+2026-08-19,MediaMarkt,mediamarkt,4.0,%
+2026-08-19,Temu,temu,40.0,%
+2026-08-19,SHEIN,shein,13.5,%
+2026-08-19,RTV Euro AGD,rtveuro,1.5,%
+2026-08-19,Lidl,lidl,1.0,%
+2026-08-19,Leroy Merlin,leroymerlin,2.5,%
+2026-08-19,CCC,ccc,5.0,%
+2026-08-19,Hebe,hebe,5.0,%
+2026-08-19,OBI,obi,2.5,%
+2026-08-19,Adidas,adidas,5.0,%
+2026-08-19,Sephora,sephora,7.5,%
+2026-08-19,Douglas,douglas,8.0,%
+2026-08-19,home&you,home-you,6.5,%
+2026-08-19,Abra,abra,4.2,%
+2026-08-19,Acer,acer,4.0,%
+2026-08-19,Aclari,aclari,1.8,%
+2026-08-19,Aelia,aelia,5.0,%
+2026-08-19,Agoda,agoda,5.0,%
+2026-08-19,Airalo,airalo,9.0,%
+2026-08-19,AirHelp,airhelp,20.0,%
+2026-08-19,ALAB Laboratoria,alab-laboratoria,6.0,%
+2026-08-19,Alibaba,alibaba.com,8.4,%
+2026-08-19,Alpine Pro,alpinepro,4.8,%
+2026-08-19,Amazon,amazon,7.0,%
+2026-08-19,Audioteka,audioteka,2.5,%
+2026-08-19,AUTODOC,autodoc,8.0,%
+2026-08-19,AXA Partners,axa-partners,15.0,%
+2026-08-19,Banggood,banggood,10.0,%
+2026-08-19,Bank Pekao,bank-pekao,7.0,%
+2026-08-19,Baseus,baseus,4.0,%
+2026-08-19,BasicLab,basiclab,2.0,%
+2026-08-19,BeDiet,bediet,7.0,%
+2026-08-19,BIG STAR,bigstar,7.0,%
+2026-08-19,Bimba Y Lola,bimbaylola,6.0,%
+2026-08-19,Bonprix,bonprix,4.0,%
+2026-08-19,Born2Be,born2be,3.0,%
+2026-08-19,Brainmarket,brainmarket,1.75,%
+2026-08-19,Brasty,brasty,2.0,%
+2026-08-19,Bricoman,bricoman,6.0,%
+2026-08-19,Bricomarche,bricomarche,3.5,%
+2026-08-19,Brooks,brooks,6.0,%
+2026-08-19,Byrokko,byrokko,15.0,%
+2026-08-19,Canal Plus,canalplus,7.0,%
+2026-08-19,Carrefour,carrefour,2.0,%
+2026-08-19,Castorama,castorama,2.5,%
+2026-08-19,Ceneo,ceneo,1.0,%
+2026-08-19,Cobi,cobi,3.5,%
+2026-08-19,Cocolita,cocolita,3.5,%
+2026-08-19,Colorland,colorland,8.0,%
+2026-08-19,Converse,converse,5.0,%
+2026-08-19,Crocs,crocs,2.0,%
+2026-08-19,Cropp,cropp,4.0,%
+2026-08-19,Cyfrowe.pl,cyfrowe.pl,2.0,%
+2026-08-19,Dedoles,dedoles,7.0,%
+2026-08-19,DeLonghi,delonghi,6.0,%
+2026-08-19,Dermacol,dermacol,3.0,%
+2026-08-19,Desigual,desigual,7.7,%
+2026-08-19,DHgate,dhgate,2.0,%
+2026-08-19,DHL,dhl,7.0,%
+2026-08-19,Diablo Chairs,diablochairs,4.0,%
+2026-08-19,Disney+,disneyplus,7.0,%
+2026-08-19,Drogeria.pl,drogeria.pl,7.0,%
+2026-08-19,Dstreet,dstreet,9.0,%
+2026-08-19,Dyson,dyson,2.5,%
+2026-08-19,E-Kwiaty,e-kwiaty,4.0,%
+2026-08-19,e-torty,e-torty,10.0,%
+2026-08-19,eBilet,ebilet,1.0,%
+2026-08-19,Ecco,ecco,7.0,%
+2026-08-19,Egmont,egmont,3.6,%
+2026-08-19,Electrolux,electrolux,2.0,%
+2026-08-19,Eltrox,eltrox,4.5,%
+2026-08-19,EMP,emp,7.0,%
+2026-08-19,Empik Foto,empikfoto,10.0,%
+2026-08-19,Endo,endo,9.0,%
+2026-08-19,eobuwie,eobuwie,4.0,%
+2026-08-19,Erli,erli,3.5,%
+2026-08-19,ESET,eset,8.5,%
+2026-08-19,eSky,esky,2.0,%
+2026-08-19,Estro,estro,7.0,%
+2026-08-19,Eurofirany,eurofirany,7.0,%
+2026-08-19,Euroflorist,euroflorist,10.0,%
+2026-08-19,Eveline,eveline,6.0,%
+2026-08-19,Eventim,eventim,1.0,%
+2026-08-19,eZebra,ezebra,4.0,%
+2026-08-19,Feniko,feniko,7.0,%
+2026-08-19,Fera,fera,2.0,%
+2026-08-19,Fielmann,fielmann,6.0,%
+2026-08-19,Flexispot,flexispot,4.0,%
+2026-08-19,Flixbus,flixbus,4.0,%
+2026-08-19,Footdistrict,footdistrict,8.0,%
+2026-08-19,Footshop,footshop,3.0,%
+2026-08-19,Foreo,foreo,3.5,%
+2026-08-19,FotoForma,fotoforma,2.0,%
+2026-08-19,G2A,g2a,3.0,%
+2026-08-19,Gameseal,gameseal,3.0,%
+2026-08-19,Gamivo,gamivo,4.0,%
+2026-08-19,Geekbuying.pl,geekbuying,5.0,%
+2026-08-19,GetYourGuide,getyourguide,4.0,%
+2026-08-19,Giacomo Conti,giacomo,5.0,%
+2026-08-19,GOG,gog,3.0,%
+2026-08-19,Gomez,gomez,4.0,%
+2026-08-19,Green Touch,greentouch,3.3,%
+2026-08-19,Greenpoint,greenpoint,4.0,%
+2026-08-19,Groupon,groupon,5.6,%
+2026-08-19,Gunfire,gunfire,3.78,%
+2026-08-19,H&M,hm,8.0,%
+2026-08-19,Homla,homla,2.5,%
+2026-08-19,HP,hp,7.0,%
+2026-08-19,Huawei,huawei,3.5,%
+2026-08-19,iBOOD,ibood,1.0,%
+2026-08-19,iDream,idream,3.0,%
+2026-08-19,iHerb,iherb,3.0,%
+2026-08-19,IKEA,ikea,4.0,%
+2026-08-19,Intymna,intymna,3.0,%
+2026-08-19,iParts,iparts,1.8,%
+2026-08-19,JD Sports,jdsports,5.0,%
+2026-08-19,Joom,joom,9.0,%
+2026-08-19,Josera,josera,5.5,%
+2026-08-19,Justjoinit,justjoinit,7.0,%
+2026-08-19,Katalog Marzeń,katalog-marzen,2.8,%
+2026-08-19,Kenwood,kenwood,6.0,%
+2026-08-19,KFC,kfc,3.0,%
+2026-08-19,Kinguin,kinguin,10.0,%
+2026-08-19,Kiwi,kiwi,3.0,%
+2026-08-19,Komputronik,komputronik,1.5,%
+2026-08-19,Konesso,konesso,7.0,%
+2026-08-19,Krakvet,krakvet,2.0,%
+2026-08-19,Kubenz,kubenz,2.76,%
+2026-08-19,Kubota,kubota,4.5,%
+2026-08-19,KurJerzy.pl,kurjerzy.pl,3.0,%
+2026-08-19,Lacoste,lacoste,8.0,%
+2026-08-19,Lampy.pl,lampy,8.0,%
+2026-08-19,Legimi,legimi,15.0,%
+2026-08-19,LEGO,lego,3.0,%
+2026-08-19,Leo Express,leoexpress,4.0,%
+2026-08-19,Levi's,levis,5.0,%
+2026-08-19,LG,lg,1.75,%
+2026-08-19,Loaded,cdkeys,5.0,%
+2026-08-19,Lokalny Rolnik,lokalnyrolnik,4.5,%
+2026-08-19,Lookfantastic,lookfantastic,5.0,%
+2026-08-19,LOT,lot,1.0,%
+2026-08-19,Lufthansa,lufthansa,1.2,%
+2026-08-19,Mamyito,mamyito,4.5,%
+2026-08-19,Mango Outlet,mango-outlet,3.0,%
+2026-08-19,Marilyn,marilyn,6.0,%
+2026-08-19,Max Elektro,maxelektro,2.0,%
+2026-08-19,Maxi Zoo,maxizoo,5.0,%
+2026-08-19,MebleMWM,meblemwm,3.5,%
+2026-08-19,Medicine,wearmedicine,3.0,%
+2026-08-19,Merkury Market,merkurymarket,2.0,%
+2026-08-19,Michael Kors,michaelkors,3.0,%
+2026-08-19,Modivo,modivo.pl,3.5,%
+2026-08-19,ModnaKiecka.pl,modnakiecka.pl,4.0,%
+2026-08-19,Morele.net,morele,7.0,%
+2026-08-19,Mountain Warehouse,mountainwarehouse,3.0,%
+2026-08-19,Mova,mova,4.2,%
+2026-08-19,MyHeritage DNA,myheritagedna,4.0,%
+2026-08-19,MyProtein,myprotein,10.0,%
+2026-08-19,NAOKO,naoko,5.0,%
+2026-08-19,Neness,neness,6.0,%
+2026-08-19,NEONAIL,neonail,7.0,%
+2026-08-19,Neonet,neonet,0.75,%
+2026-08-19,New Balance,nbsklep,5.0,%
+2026-08-19,Nike,nike,7.0,%
+2026-08-19,Ninja,ninja,4.0,%
+2026-08-19,NordVPN,nordvpn,30.0,%
+2026-08-19,norton,norton,7.0,%
+2026-08-19,Notino,notino,3.5,%
+2026-08-19,Novakid,novakid,7.0,%
+2026-08-19,OleOle!,oleole,1.0,%
+2026-08-19,Olimp Store,olimp-store,2.5,%
+2026-08-19,Orange,orange,7.0,%
+2026-08-19,Pan Materac,panmaterac,8.0,%
+2026-08-19,Pandora,pandora,4.0,%
+2026-08-19,Parfumdreams,parfumdreams,12.0,%
+2026-08-19,Peek & Cloppenburg,peek-and-cloppenburg,2.0,%
+2026-08-19,Perfumeria,perfumeria.pl,3.84,%
+2026-08-19,Perfumy.pl,perfumy,5.0,%
+2026-08-19,Petkarma,petkarma,8.0,%
+2026-08-19,Philips,philips,4.0,%
+2026-08-19,Philips Hue,philips-hue,7.0,%
+2026-08-19,Pitbull,pitbull,5.0,%
+2026-08-19,Play,play,7.0,%
+2026-08-19,Pleso,plesotherapy,7.0,%
+2026-08-19,Plus,plus,7.0,%
+2026-08-19,Preply,preply,7.0,%
+2026-08-19,Primodo,primodo,5.0,%
+2026-08-19,PRM,prm,6.0,%
+2026-08-19,Proton VPN,protonvpn,70.0,%
+2026-08-19,Przyjaciele Kawy,przyjacielekawy,4.0,%
+2026-08-19,Puma,puma,6.0,%
+2026-08-19,PWN,pwn,2.7,%
+2026-08-19,Pyszne.pl,pyszne,2.0,%
+2026-08-19,Radisson Hotels,radissonhotels,2.0,%
+2026-08-19,Recman,recman,5.0,%
+2026-08-19,RedBull Mobile,redbullmobile,7.0,%
+2026-08-19,Regatta,regatta,8.0,%
+2026-08-19,Remix,remix,7.0,%
+2026-08-19,Renee,renee,6.0,%
+2026-08-19,Reporter Young,reporteryoung,3.5,%
+2026-08-19,Rocketjobs.pl,rocketjobs,7.0,%
+2026-08-19,Ryobi,ryobi,4.0,%
+2026-08-19,Samsung,samsung,3.0,%
+2026-08-19,SeePlaces,seeplaces,3.15,%
+2026-08-19,Sferis,sferis,1.6,%
+2026-08-19,Sinsay,sinsay,10.0,%
+2026-08-19,Skechers,skechers,8.5,%
+2026-08-19,SkyShowtime,skyshowtime,7.0,%
+2026-08-19,Smyk,smyk,1.26,%
+2026-08-19,Sony.pl,sony,2.5,%
+2026-08-19,SportStyleStory,sportstylestory,6.0,%
+2026-08-19,Stradivarius,stradivarius,7.0,%
+2026-08-19,Streetstyle24,streetstyle24,4.5,%
+2026-08-19,Stylevana,stylevana,7.19,%
+2026-08-19,Sun & Snow,sun-and-snow,4.5,%
+2026-08-19,Surfshark,surfshark,7.0,%
+2026-08-19,Świat supli,swiatsupli,2.5,%
+2026-08-19,Tagomago,tagomago,3.0,%
+2026-08-19,Tanie-opony.pl,tanie-opony.pl,1.8,%
+2026-08-19,Tefal,tefal,5.0,%
+2026-08-19,Tescoma,tescoma,3.5,%
+2026-08-19,TestDNA,testdna,7.0,%
+2026-08-19,Teufel,teufel,4.0,%
+2026-08-19,Top Secret,topsecret,4.2,%
+2026-08-19,Trip.com,trip-com,3.85,%
+2026-08-19,Triverna,triverna,2.0,%
+2026-08-19,Twojemeble.pl,twojemeble.pl,2.7,%
+2026-08-19,UBER,uber,7.0,%
+2026-08-19,Ubisoft,ubisoft,0.5,%
+2026-08-19,Ucando,ucando,4.0,%
+2026-08-19,Udemy,udemy,10.0,%
+2026-08-19,Under Armour,under-armour,6.0,%
+2026-08-19,Unisono,unisono,3.0,%
+2026-08-19,uPacjenta,upacjenta,3.36,%
+2026-08-19,Van Graaf,vangraaf,7.0,%
+2026-08-19,Vans,vans,4.0,%
+2026-08-19,Vasco Electronics,vascoelectronics,3.0,%
+2026-08-19,Venezia,venezia,2.5,%
+2026-08-19,Victoria's Secret,victorias-secret,3.0,%
+2026-08-19,VidaXL,vidaxl,2.5,%
+2026-08-19,Vision Express,visionexpress,6.3,%
+2026-08-19,Vobis,vobis,1.0,%
+2026-08-19,Wolt,wolt,7.0,%
+2026-08-19,Wrangler,wrangler,10.0,%
+2026-08-19,x-kom,x-kom,7.0,%
+2026-08-19,Xiaomi,mi,2.0,%
+2026-08-19,xlmoto,xlmoto,4.0,%
+2026-08-19,Yanosik,yanosik,3.0,%
+2026-08-19,Yope,yope,7.0,%
+2026-08-19,Yves Rocher,yves-rocher,5.0,%
+2026-08-19,Zalando,zalando.pl,7.0,%
+2026-08-19,Zelmer,zelmer,3.3,%
+2026-08-19,Znak,znak,3.0,%
+2026-08-19,zooplus,zooplus,2.1,%
+2026-08-19,Zwieger,zwieger,3.0,%
+2026-08-19,24mx,24mx,2.5,%
+2026-08-19,4kidspoint,4kidspoint,3.5,%
+2026-08-19,7way,7way,3.5,%
+2026-08-19,Orange Flex,orangeflex,,no cashback
+2026-08-19,Your KAYA,yourkaya,,no cashback
+2026-08-19,Airbnb,airbnb,7.0,%
+2026-08-19,Carinii,carinii,7.0,%
+2026-08-19,Duka,duka,,no cashback
+2026-08-19,Kaufland,kaufland,7.0,%
+2026-08-19,Kolba,kolba,,no cashback
+2026-08-19,KROSS,kross,7.0,%
+2026-08-19,LycaMobile,lyca-mobile,42.0,%
+2026-08-19,Mango,mango,7.0,%
+2026-08-19,Nintendo eShop,nintendo-eshop,7.0,%
+2026-08-19,OnePlus,oneplus,0.84,%
+2026-08-19,Sportofino,sportofino,,no cashback
+2026-08-19,Spotify,spotify,,no cashback
+2026-08-19,Ticketmaster,ticketmaster,7.0,%
+2026-08-19,Tołpa,tolpa,,no cashback
+2026-08-19,Top Hi Fi,tophifi,,no cashback
+2026-08-19,YES,yes,7.0,%
+2026-08-19,Zegarownia,zegarownia,7.0,%
