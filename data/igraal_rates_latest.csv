@@ -69,12 +69,12 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-08-25,Drogeria.pl,drogeria.pl,7.0,%
 2026-08-25,Dstreet,dstreet,9.0,%
 2026-08-25,Dyson,dyson,2.5,%
-2026-08-25,E-Kwiaty,e-kwiaty,4.0,%
+2026-08-25,E-Kwiaty,e-kwiaty,,no cashback
 2026-08-25,e-torty,e-torty,10.0,%
 2026-08-25,eBilet,ebilet,1.0,%
 2026-08-25,Ecco,ecco,25.0,%
 2026-08-25,Egmont,egmont,3.6,%
-2026-08-25,Electrolux,electrolux,2.0,%
+2026-08-25,Electrolux,electrolux,,no cashback
 2026-08-25,Eltrox,eltrox,4.5,%
 2026-08-25,EMP,emp,7.0,%
 2026-08-25,Empik Foto,empikfoto,10.0,%
@@ -231,7 +231,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-08-25,Trip.com,trip-com,3.85,%
 2026-08-25,Triverna,triverna,2.0,%
 2026-08-25,Twojemeble.pl,twojemeble.pl,2.7,%
-2026-08-25,UBER,uber,25.0,%
+2026-08-25,Uber,uber,25.0,%
 2026-08-25,Ubisoft,ubisoft,0.5,%
 2026-08-25,Ucando,ucando,4.0,%
 2026-08-25,Udemy,udemy,10.0,%

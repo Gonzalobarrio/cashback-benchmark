@@ -1,5 +1,5 @@
 date,retailer,igraal_slug,goodie_rate,goodie_rate_type,goodie_url
-2026-08-25,AliExpress,aliexpress,4.5,up_to_%,https://goodie.pl/marka/aliexpress
+2026-08-25,AliExpress,aliexpress,80.0,up_to_%,https://goodie.pl/marka/aliexpress
 2026-08-25,Allegro,allegro,2.2,up_to_%,https://goodie.pl/marka/allegro
 2026-08-25,Answear,answear,2.0,up_to_%,https://goodie.pl/marka/answear-com
 2026-08-25,Decathlon,decathlon,1.75,%,https://goodie.pl/marka/decathlon
@@ -79,7 +79,7 @@ date,retailer,igraal_slug,goodie_rate,goodie_rate_type,goodie_url
 2026-08-25,EMP,emp,,not_found,
 2026-08-25,Empik Foto,empikfoto,5.0,up_to_%,https://goodie.pl/marka/empik-foto
 2026-08-25,Endo,endo,4.5,%,https://goodie.pl/marka/endo
-2026-08-25,eobuwie,eobuwie,3.5,%,https://goodie.pl/marka/eobuwie-pl
+2026-08-25,eobuwie,eobuwie,5.0,up_to_%,https://goodie.pl/marka/eobuwie-pl
 2026-08-25,Erli,erli,2.2,up_to_%,https://goodie.pl/marka/erli-pl
 2026-08-25,ESET,eset,5.5,%,https://goodie.pl/marka/eset-pl
 2026-08-25,eSky,esky,1.75,%,https://goodie.pl/marka/esky-pl
@@ -156,7 +156,7 @@ date,retailer,igraal_slug,goodie_rate,goodie_rate_type,goodie_url
 2026-08-25,Medicine,wearmedicine,,not_found,
 2026-08-25,Merkury Market,merkurymarket,,no cashback,https://goodie.pl/marka/merkurymarket-pl
 2026-08-25,Michael Kors,michaelkors,,no cashback,https://goodie.pl/marka/michael-kors
-2026-08-25,Modivo,modivo.pl,4.0,%,https://goodie.pl/marka/modivo
+2026-08-25,Modivo,modivo.pl,5.0,up_to_%,https://goodie.pl/marka/modivo
 2026-08-25,ModnaKiecka.pl,modnakiecka.pl,3.33,%,https://goodie.pl/marka/modnakiecka-pl
 2026-08-25,Morele.net,morele,0.25,%,https://goodie.pl/marka/morele-net
 2026-08-25,Mountain Warehouse,mountainwarehouse,3.0,%,https://goodie.pl/marka/mountain-warehouse
@@ -231,7 +231,7 @@ date,retailer,igraal_slug,goodie_rate,goodie_rate_type,goodie_url
 2026-08-25,Trip.com,trip-com,2.75,up_to_%,https://goodie.pl/marka/trip-com
 2026-08-25,Triverna,triverna,2.4,up_to_%,https://goodie.pl/marka/triverna
 2026-08-25,Twojemeble.pl,twojemeble.pl,2.5,%,https://goodie.pl/marka/twojemeble-pl
-2026-08-25,UBER,uber,,no cashback,https://goodie.pl/marka/uber
+2026-08-25,Uber,uber,,no cashback,https://goodie.pl/marka/uber
 2026-08-25,Ubisoft,ubisoft,0.21,%,https://goodie.pl/marka/ubisoft
 2026-08-25,Ucando,ucando,2.0,%,https://goodie.pl/marka/ucando-pl
 2026-08-25,Udemy,udemy,,no cashback,https://goodie.pl/marka/udemy
