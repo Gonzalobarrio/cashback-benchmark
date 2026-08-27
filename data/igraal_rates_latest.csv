@@ -65,9 +65,9 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-08-27,DHgate,dhgate,2.0,%
 2026-08-27,DHL,dhl,7.0,%
 2026-08-27,Diablo Chairs,diablochairs,4.0,%
-2026-08-27,Disney+,disneyplus,7.0,%
+2026-08-27,Disney+,disneyplus,,no cashback
 2026-08-27,Drogeria.pl,drogeria.pl,7.0,%
-2026-08-27,Dstreet,dstreet,9.0,%
+2026-08-27,Dstreet,dstreet,,no cashback
 2026-08-27,Dyson,dyson,2.5,%
 2026-08-27,E-Kwiaty,e-kwiaty,4.0,%
 2026-08-27,e-torty,e-torty,10.0,%
@@ -75,8 +75,8 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-08-27,Ecco,ecco,7.0,%
 2026-08-27,Egmont,egmont,3.6,%
 2026-08-27,Electrolux,electrolux,2.0,%
-2026-08-27,Eltrox,eltrox,4.5,%
-2026-08-27,EMP,emp,7.0,%
+2026-08-27,Eltrox,eltrox,,no cashback
+2026-08-27,EMP,emp,,no cashback
 2026-08-27,Empik Foto,empikfoto,10.0,%
 2026-08-27,Endo,endo,9.0,%
 2026-08-27,eobuwie,eobuwie,4.0,%
@@ -238,7 +238,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-08-27,Under Armour,under-armour,6.0,%
 2026-08-27,Unisono,unisono,3.0,%
 2026-08-27,uPacjenta,upacjenta,3.36,%
-2026-08-27,Van Graaf,vangraaf,7.0,%
+2026-08-27,Van Graaf,vangraaf,,no cashback
 2026-08-27,Vans,vans,4.0,%
 2026-08-27,Vasco Electronics,vascoelectronics,3.0,%
 2026-08-27,Venezia,venezia,2.5,%
