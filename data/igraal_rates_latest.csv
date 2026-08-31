@@ -69,12 +69,12 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-08-31,Drogeria.pl,drogeria.pl,7.0,%
 2026-08-31,Dstreet,dstreet,9.0,%
 2026-08-31,Dyson,dyson,2.5,%
-2026-08-31,E-Kwiaty,e-kwiaty,4.0,%
+2026-08-31,E-Kwiaty,e-kwiaty,,no cashback
 2026-08-31,e-torty,e-torty,10.0,%
 2026-08-31,eBilet,ebilet,1.0,%
 2026-08-31,Ecco,ecco,10.0,%
 2026-08-31,Egmont,egmont,3.6,%
-2026-08-31,Electrolux,electrolux,,no cashback
+2026-08-31,Electrolux,electrolux,2.0,%
 2026-08-31,Eltrox,eltrox,4.5,%
 2026-08-31,EMP,emp,7.0,%
 2026-08-31,Empik Foto,empikfoto,10.0,%
@@ -154,7 +154,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-08-31,Maxi Zoo,maxizoo,5.0,%
 2026-08-31,MebleMWM,meblemwm,3.5,%
 2026-08-31,Medicine,wearmedicine,3.0,%
-2026-08-31,Merkury Market,merkurymarket,,no cashback
+2026-08-31,Merkury Market,merkurymarket,2.0,%
 2026-08-31,Michael Kors,michaelkors,3.0,%
 2026-08-31,Modivo,modivo.pl,3.5,%
 2026-08-31,ModnaKiecka.pl,modnakiecka.pl,4.0,%
@@ -240,7 +240,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-08-31,uPacjenta,upacjenta,3.36,%
 2026-08-31,Van Graaf,vangraaf,7.0,%
 2026-08-31,Vans,vans,4.0,%
-2026-08-31,Vasco Electronics,vascoelectronics,3.0,%
+2026-08-31,Vasco Electronics,vascoelectronics,10.0,%
 2026-08-31,Venezia,venezia,2.5,%
 2026-08-31,Victoria's Secret,victorias-secret,3.0,%
 2026-08-31,VidaXL,vidaxl,2.5,%
