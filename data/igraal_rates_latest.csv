@@ -1,5 +1,5 @@
 date,retailer,slug,igraal_rate,cashback_type
-2026-09-01,AliExpress,aliexpress,1.0,%
+2026-09-01,AliExpress,aliexpress,10.0,%
 2026-09-01,Allegro,allegro,1.9,%
 2026-09-01,Answear,answear,3.0,%
 2026-09-01,Decathlon,decathlon,2.0,%
@@ -117,7 +117,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-09-01,iBOOD,ibood,1.0,%
 2026-09-01,iDream,idream,3.0,%
 2026-09-01,iHerb,iherb,3.0,%
-2026-09-01,IKEA,ikea,8.0,%
+2026-09-01,IKEA,ikea,4.0,%
 2026-09-01,Intymna,intymna,3.0,%
 2026-09-01,iParts,iparts,1.8,%
 2026-09-01,JD Sports,jdsports,5.0,%
@@ -264,7 +264,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-09-01,7way,7way,3.5,%
 2026-09-01,Orange Flex,orangeflex,,no cashback
 2026-09-01,Your KAYA,yourkaya,,no cashback
-2026-09-01,Airbnb,airbnb,8.0,%
+2026-09-01,Airbnb,airbnb,,no cashback
 2026-09-01,Carinii,carinii,8.0,%
 2026-09-01,Duka,duka,,no cashback
 2026-09-01,Kaufland,kaufland,8.0,%
