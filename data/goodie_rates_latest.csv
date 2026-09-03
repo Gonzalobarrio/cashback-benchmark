@@ -197,7 +197,7 @@ date,retailer,igraal_slug,goodie_rate,goodie_rate_type,goodie_url
 2026-09-03,Przyjaciele Kawy,przyjacielekawy,3.7,up_to_%,https://goodie.pl/marka/przyjacielekawy-pl
 2026-09-03,Puma,puma,2.0,up_to_%,https://goodie.pl/marka/puma
 2026-09-03,PWN,pwn,,not_found,
-2026-09-03,Pyszne.pl,pyszne,1.5,up_to_%,https://goodie.pl/marka/pyszne-pl
+2026-09-03,Pyszne.pl,pyszne,1.5,%,https://goodie.pl/marka/pyszne-pl
 2026-09-03,Radisson Hotels,radissonhotels,2.0,%,https://goodie.pl/marka/radisson-hotels
 2026-09-03,Recman,recman,,no cashback,https://goodie.pl/marka/recman
 2026-09-03,RedBull Mobile,redbullmobile,,no cashback,https://goodie.pl/marka/red-bull-mobile
@@ -209,7 +209,7 @@ date,retailer,igraal_slug,goodie_rate,goodie_rate_type,goodie_url
 2026-09-03,Samsung,samsung,2.5,up_to_%,https://goodie.pl/marka/samsung
 2026-09-03,SeePlaces,seeplaces,2.25,%,https://goodie.pl/marka/seeplaces
 2026-09-03,Sferis,sferis,7.5,up_to_%,https://goodie.pl/marka/sferis
-2026-09-03,Sinsay,sinsay,5.0,up_to_%,https://goodie.pl/marka/sinsay
+2026-09-03,Sinsay,sinsay,5.0,%,https://goodie.pl/marka/sinsay
 2026-09-03,Skechers,skechers,,no cashback,https://goodie.pl/marka/skechers
 2026-09-03,SkyShowtime,skyshowtime,,no cashback,https://goodie.pl/marka/sky-showtime
 2026-09-03,Smyk,smyk,1.5,up_to_%,https://goodie.pl/marka/smyk
