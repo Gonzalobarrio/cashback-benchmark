@@ -25,7 +25,7 @@ date,retailer,igraal_slug,picodi_rate,picodi_rate_type,picodi_url
 2026-09-08,Agoda,agoda,1.8,%,https://www.picodi.com/pl/agoda/offers
 2026-09-08,Airalo,airalo,3.5,up_to_%,https://www.picodi.com/pl/airalo/offers
 2026-09-08,AirHelp,airhelp,4.5,%,https://www.picodi.com/pl/air-help/offers
-2026-09-08,ALAB Laboratoria,alab-laboratoria,20.0,%,https://www.picodi.com/pl/alablaboratoria/offers
+2026-09-08,ALAB Laboratoria,alab-laboratoria,1.9,%,https://www.picodi.com/pl/alablaboratoria/offers
 2026-09-08,Alibaba,alibaba.com,2.5,up_to_%,https://www.picodi.com/pl/alibaba/offers
 2026-09-08,Alpine Pro,alpinepro,2.4,%,https://www.picodi.com/pl/alpinepro/offers
 2026-09-08,Amazon,amazon,3.0,up_to_%,https://www.picodi.com/pl/amazon-com/offers
@@ -40,7 +40,7 @@ date,retailer,igraal_slug,picodi_rate,picodi_rate_type,picodi_url
 2026-09-08,BIG STAR,bigstar,1.8,%,https://www.picodi.com/pl/big-star/offers
 2026-09-08,Bimba Y Lola,bimbaylola,2.4,%,https://www.picodi.com/pl/bimba-y-lola/offers
 2026-09-08,Bonprix,bonprix,1.2,%,https://www.picodi.com/pl/bonprix/offers
-2026-09-08,Born2Be,born2be,1.8,%,https://www.picodi.com/pl/born2be/offers
+2026-09-08,Born2Be,born2be,,not_found,
 2026-09-08,Brainmarket,brainmarket,,not_found,
 2026-09-08,Brasty,brasty,,not_found,
 2026-09-08,Bricoman,bricoman,,not_found,
@@ -131,7 +131,6 @@ date,retailer,igraal_slug,picodi_rate,picodi_rate_type,picodi_url
 2026-09-08,Kiwi,kiwi,,not_found,
 2026-09-08,Komputronik,komputronik,,not_found,
 2026-09-08,Konesso,konesso,,not_found,
-2026-09-08,Krakvet,krakvet,,not_found,
 2026-09-08,Kubenz,kubenz,,not_found,
 2026-09-08,Kubota,kubota,,not_found,
 2026-09-08,KurJerzy.pl,kurjerzy.pl,,not_found,
@@ -257,6 +256,7 @@ date,retailer,igraal_slug,picodi_rate,picodi_rate_type,picodi_url
 2026-09-08,Zalando,zalando.pl,,not_found,
 2026-09-08,Zelmer,zelmer,,not_found,
 2026-09-08,Znak,znak,,not_found,
+2026-09-08,ZooFaster,krakvet,,not_found,
 2026-09-08,zooplus,zooplus,,not_found,
 2026-09-08,Zwieger,zwieger,,not_found,
 2026-09-08,24mx,24mx,,not_found,

@@ -74,7 +74,7 @@ date,retailer,igraal_slug,letyshops_rate,letyshops_rate_type,letyshops_boosted,l
 2026-09-08,eBilet,ebilet,0.4,%,False,https://letyshops.com/pl/shops/ebilet-pl
 2026-09-08,Ecco,ecco,,no cashback,False,
 2026-09-08,Egmont,egmont,3.25,%,False,https://letyshops.com/pl/shops/egmont
-2026-09-08,Electrolux,electrolux,2.0,%,False,https://letyshops.com/pl/shops/electrolux-pl
+2026-09-08,Electrolux,electrolux,3.0,%,False,https://letyshops.com/pl/shops/electrolux-pl
 2026-09-08,Eltrox,eltrox,2.75,%,False,https://letyshops.com/pl/shops/eltrox-pl
 2026-09-08,EMP,emp,5.0,%,False,https://letyshops.com/pl/shops/emp-pl
 2026-09-08,Empik Foto,empikfoto,5.0,%,False,https://letyshops.com/pl/shops/empikfoto-pl
@@ -131,7 +131,6 @@ date,retailer,igraal_slug,letyshops_rate,letyshops_rate_type,letyshops_boosted,l
 2026-09-08,Kiwi,kiwi,2.0,%,False,https://letyshops.com/pl/shops/kiwi
 2026-09-08,Komputronik,komputronik,1.0,%,False,https://letyshops.com/pl-en/shops/komputronik-pl
 2026-09-08,Konesso,konesso,,no cashback,False,
-2026-09-08,Krakvet,krakvet,3.0,%,False,https://letyshops.com/pl/shops/krakvet
 2026-09-08,Kubenz,kubenz,,not_found,False,
 2026-09-08,Kubota,kubota,,not_found,False,
 2026-09-08,KurJerzy.pl,kurjerzy.pl,2.8,%,False,https://letyshops.com/pl/shops/kurjerzy-pl
@@ -257,6 +256,7 @@ date,retailer,igraal_slug,letyshops_rate,letyshops_rate_type,letyshops_boosted,l
 2026-09-08,Zalando,zalando.pl,,no cashback,False,
 2026-09-08,Zelmer,zelmer,,not_found,False,
 2026-09-08,Znak,znak,1.5,%,False,https://letyshops.com/pl/shops/znak
+2026-09-08,ZooFaster,krakvet,3.0,%,False,https://letyshops.com/pl/shops/krakvet
 2026-09-08,zooplus,zooplus,1.5,%,False,https://letyshops.com/pl/shops/zooplus-pl
 2026-09-08,Zwieger,zwieger,2.0,%,False,https://letyshops.com/pl/shops/zwieger-pl
 2026-09-08,24mx,24mx,2.5,%,False,https://letyshops.com/pl/shops/24mx-pl

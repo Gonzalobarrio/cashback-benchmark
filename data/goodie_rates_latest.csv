@@ -131,7 +131,6 @@ date,retailer,igraal_slug,goodie_rate,goodie_rate_type,goodie_url
 2026-09-08,Kiwi,kiwi,,no cashback,https://goodie.pl/marka/kiwi
 2026-09-08,Komputronik,komputronik,0.75,%,https://goodie.pl/marka/komputronik
 2026-09-08,Konesso,konesso,,no cashback,https://goodie.pl/marka/konesso
-2026-09-08,Krakvet,krakvet,,not_found,
 2026-09-08,Kubenz,kubenz,,no cashback,https://goodie.pl/marka/kubenz
 2026-09-08,Kubota,kubota,,not_found,
 2026-09-08,KurJerzy.pl,kurjerzy.pl,,not_found,
@@ -257,6 +256,7 @@ date,retailer,igraal_slug,goodie_rate,goodie_rate_type,goodie_url
 2026-09-08,Zalando,zalando.pl,,no cashback,https://goodie.pl/marka/zalando
 2026-09-08,Zelmer,zelmer,,no cashback,https://goodie.pl/marka/zelmer
 2026-09-08,Znak,znak,,no cashback,https://goodie.pl/marka/znak
+2026-09-08,ZooFaster,krakvet,2.0,%,https://goodie.pl/marka/zoofaster
 2026-09-08,zooplus,zooplus,1.5,up_to_%,https://goodie.pl/marka/zooplus
 2026-09-08,Zwieger,zwieger,2.0,%,https://goodie.pl/marka/zwieger
 2026-09-08,24mx,24mx,,not_found,
