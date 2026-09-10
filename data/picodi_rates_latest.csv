@@ -9,54 +9,54 @@ date,retailer,igraal_slug,picodi_rate,picodi_rate_type,picodi_url
 2026-09-10,Temu,temu,20.7,up_to_%,https://www.picodi.com/pl/temu/offers
 2026-09-10,SHEIN,shein,4.5,up_to_%,https://www.picodi.com/pl/shein/offers
 2026-09-10,RTV Euro AGD,rtveuro,1.8,up_to_%,https://www.picodi.com/pl/rtveuroagd/offers
-2026-09-10,Lidl,lidl,0.5,%,https://www.picodi.com/pl/lidl/offers
-2026-09-10,Leroy Merlin,leroymerlin,1.3,%,https://www.picodi.com/pl/leroy-merlin/offers
+2026-09-10,Lidl,lidl,0.5,up_to_%,https://www.picodi.com/pl/lidl/offers
+2026-09-10,Leroy Merlin,leroymerlin,1.3,up_to_%,https://www.picodi.com/pl/leroy-merlin/offers
 2026-09-10,CCC,ccc,2.0,up_to_%,https://www.picodi.com/pl/ccc/offers
-2026-09-10,Hebe,hebe,1.8,%,https://www.picodi.com/pl/hebe/offers
-2026-09-10,OBI,obi,1.5,%,https://www.picodi.com/pl/obi/offers
+2026-09-10,Hebe,hebe,1.8,up_to_%,https://www.picodi.com/pl/hebe/offers
+2026-09-10,OBI,obi,1.5,up_to_%,https://www.picodi.com/pl/obi/offers
 2026-09-10,Adidas,adidas,1.8,up_to_%,https://www.picodi.com/pl/adidas-pl/offers
 2026-09-10,Sephora,sephora,3.3,up_to_%,https://www.picodi.com/pl/sephora/offers
 2026-09-10,Douglas,douglas,3.0,up_to_%,https://www.picodi.com/pl/douglas/offers
 2026-09-10,home&you,home-you,1.2,up_to_%,https://www.picodi.com/pl/home-you/offers
-2026-09-10,Abra,abra,1.5,%,https://www.picodi.com/pl/abra/offers
-2026-09-10,Acer,acer,2.1,%,https://www.picodi.com/pl/acer/offers
+2026-09-10,Abra,abra,1.5,up_to_%,https://www.picodi.com/pl/abra/offers
+2026-09-10,Acer,acer,2.1,up_to_%,https://www.picodi.com/pl/acer/offers
 2026-09-10,Aclari,aclari,,not_found,
-2026-09-10,Aelia,aelia,2.0,%,https://www.picodi.com/pl/aelia/offers
-2026-09-10,Agoda,agoda,1.8,%,https://www.picodi.com/pl/agoda/offers
+2026-09-10,Aelia,aelia,2.0,up_to_%,https://www.picodi.com/pl/aelia/offers
+2026-09-10,Agoda,agoda,1.8,up_to_%,https://www.picodi.com/pl/agoda/offers
 2026-09-10,Airalo,airalo,3.5,up_to_%,https://www.picodi.com/pl/airalo/offers
-2026-09-10,AirHelp,airhelp,4.5,%,https://www.picodi.com/pl/air-help/offers
-2026-09-10,ALAB Laboratoria,alab-laboratoria,20.0,%,https://www.picodi.com/pl/alablaboratoria/offers
+2026-09-10,AirHelp,airhelp,4.5,up_to_%,https://www.picodi.com/pl/air-help/offers
+2026-09-10,ALAB Laboratoria,alab-laboratoria,1.9,up_to_%,https://www.picodi.com/pl/alablaboratoria/offers
 2026-09-10,Alibaba,alibaba.com,2.5,up_to_%,https://www.picodi.com/pl/alibaba/offers
-2026-09-10,Alpine Pro,alpinepro,2.4,%,https://www.picodi.com/pl/alpinepro/offers
+2026-09-10,Alpine Pro,alpinepro,2.4,up_to_%,https://www.picodi.com/pl/alpinepro/offers
 2026-09-10,Amazon,amazon,3.0,up_to_%,https://www.picodi.com/pl/amazon-com/offers
-2026-09-10,Audioteka,audioteka,2.1,%,https://www.picodi.com/pl/audioteka-pl/offers
+2026-09-10,Audioteka,audioteka,2.1,up_to_%,https://www.picodi.com/pl/audioteka-pl/offers
 2026-09-10,AUTODOC,autodoc,4.2,up_to_%,https://www.picodi.com/pl/autodoc/offers
-2026-09-10,AXA Partners,axa-partners,6.0,%,https://www.picodi.com/pl/axa-assistance/offers
+2026-09-10,AXA Partners,axa-partners,6.0,up_to_%,https://www.picodi.com/pl/axa-assistance/offers
 2026-09-10,Banggood,banggood,4.7,up_to_%,https://www.picodi.com/pl/banggood-com/offers
 2026-09-10,Bank Pekao,bank-pekao,,not_found,
-2026-09-10,Baseus,baseus,1.2,%,https://www.picodi.com/pl/baseus/offers
-2026-09-10,BasicLab,basiclab,1.2,%,https://www.picodi.com/pl/basiclab/offers
-2026-09-10,BeDiet,bediet,,not_found,
-2026-09-10,BIG STAR,bigstar,1.8,%,https://www.picodi.com/pl/big-star/offers
-2026-09-10,Bimba Y Lola,bimbaylola,2.4,%,https://www.picodi.com/pl/bimba-y-lola/offers
-2026-09-10,Bonprix,bonprix,1.2,%,https://www.picodi.com/pl/bonprix/offers
-2026-09-10,Born2Be,born2be,1.8,%,https://www.picodi.com/pl/born2be/offers
+2026-09-10,Baseus,baseus,1.2,up_to_%,https://www.picodi.com/pl/baseus/offers
+2026-09-10,BasicLab,basiclab,1.2,up_to_%,https://www.picodi.com/pl/basiclab/offers
+2026-09-10,BeDiet,bediet,,zł,https://www.picodi.com/pl/bediet/offers
+2026-09-10,BIG STAR,bigstar,1.8,up_to_%,https://www.picodi.com/pl/big-star/offers
+2026-09-10,Bimba Y Lola,bimbaylola,2.4,up_to_%,https://www.picodi.com/pl/bimba-y-lola/offers
+2026-09-10,Bonprix,bonprix,1.2,up_to_%,https://www.picodi.com/pl/bonprix/offers
+2026-09-10,Born2Be,born2be,1.8,up_to_%,https://www.picodi.com/pl/born2be/offers
 2026-09-10,Brainmarket,brainmarket,,not_found,
-2026-09-10,Brasty,brasty,,not_found,
-2026-09-10,Bricoman,bricoman,,not_found,
-2026-09-10,Bricomarche,bricomarche,,not_found,
-2026-09-10,Brooks,brooks,,not_found,
-2026-09-10,Byrokko,byrokko,,not_found,
-2026-09-10,Canal Plus,canalplus,,not_found,
-2026-09-10,Carrefour,carrefour,,not_found,
-2026-09-10,Castorama,castorama,,not_found,
-2026-09-10,Ceneo,ceneo,,not_found,
-2026-09-10,Cobi,cobi,,not_found,
-2026-09-10,Cocolita,cocolita,,not_found,
-2026-09-10,Colorland,colorland,,not_found,
-2026-09-10,Converse,converse,,not_found,
-2026-09-10,Crocs,crocs,,not_found,
-2026-09-10,Cropp,cropp,,not_found,
+2026-09-10,Brasty,brasty,1.8,up_to_%,https://www.picodi.com/pl/brasty/offers
+2026-09-10,Bricoman,bricoman,,zł,https://www.picodi.com/pl/bricoman/offers
+2026-09-10,Bricomarche,bricomarche,1.4,up_to_%,https://www.picodi.com/pl/bricomarche/offers
+2026-09-10,Brooks,brooks,3.0,up_to_%,https://www.picodi.com/pl/brooks/offers
+2026-09-10,Byrokko,byrokko,2.4,up_to_%,https://www.picodi.com/pl/byrokko/offers
+2026-09-10,Canal Plus,canalplus,,zł,https://www.picodi.com/pl/nc/offers
+2026-09-10,Carrefour,carrefour,0.9,up_to_%,https://www.picodi.com/pl/carrefour/offers
+2026-09-10,Castorama,castorama,1.2,up_to_%,https://www.picodi.com/pl/castorama/offers
+2026-09-10,Ceneo,ceneo,0.0,up_to_%,https://www.picodi.com/pl/ceneo/offers
+2026-09-10,Cobi,cobi,1.1,up_to_%,https://www.picodi.com/pl/cobi/offers
+2026-09-10,Cocolita,cocolita,1.4,up_to_%,https://www.picodi.com/pl/cocolita-pl/offers
+2026-09-10,Colorland,colorland,1.1,up_to_%,https://www.picodi.com/pl/colorland/offers
+2026-09-10,Converse,converse,3.6,up_to_%,https://www.picodi.com/pl/converse/offers
+2026-09-10,Crocs,crocs,1.2,up_to_%,https://www.picodi.com/pl/crocs/offers
+2026-09-10,Cropp,cropp,10.0,up_to_%,https://www.picodi.com/pl/cropp/offers
 2026-09-10,Cyfrowe.pl,cyfrowe.pl,,not_found,
 2026-09-10,Dedoles,dedoles,,not_found,
 2026-09-10,DeLonghi,delonghi,,not_found,
