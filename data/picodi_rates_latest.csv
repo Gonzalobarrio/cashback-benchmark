@@ -20,7 +20,7 @@ date,retailer,igraal_slug,picodi_rate,picodi_rate_type,picodi_url
 2026-09-21,home&you,home-you,1.2,up_to_%,https://www.picodi.com/pl/home-you/offers
 2026-09-21,Abra,abra,1.5,%,https://www.picodi.com/pl/abra/offers
 2026-09-21,Acer,acer,2.1,%,https://www.picodi.com/pl/acer/offers
-2026-09-21,Aclari,aclari,,not_found,
+2026-09-21,Aclari,aclari,0.9,%,https://www.picodi.com/pl/aclari/offers
 2026-09-21,Aelia,aelia,2.0,%,https://www.picodi.com/pl/aelia/offers
 2026-09-21,Agoda,agoda,1.8,%,https://www.picodi.com/pl/agoda/offers
 2026-09-21,Airalo,airalo,3.5,up_to_%,https://www.picodi.com/pl/airalo/offers
@@ -42,7 +42,7 @@ date,retailer,igraal_slug,picodi_rate,picodi_rate_type,picodi_url
 2026-09-21,Bonprix,bonprix,1.2,%,https://www.picodi.com/pl/bonprix/offers
 2026-09-21,Born2Be,born2be,1.8,%,https://www.picodi.com/pl/born2be/offers
 2026-09-21,Brainmarket,brainmarket,,not_found,
-2026-09-21,Brasty,brasty,,not_found,
+2026-09-21,Brasty,brasty,1.8,up_to_%,https://www.picodi.com/pl/brasty/offers
 2026-09-21,Bricoman,bricoman,,not_found,
 2026-09-21,Bricomarche,bricomarche,,not_found,
 2026-09-21,Brooks,brooks,,not_found,
