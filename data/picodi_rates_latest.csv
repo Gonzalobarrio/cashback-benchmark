@@ -50,10 +50,10 @@ date,retailer,igraal_slug,picodi_rate,picodi_rate_type,picodi_url
 2026-09-23,Canal Plus,canalplus,,zł,https://www.picodi.com/pl/nc/offers
 2026-09-23,Carrefour,carrefour,0.9,up_to_%,https://www.picodi.com/pl/carrefour/offers
 2026-09-23,Castorama,castorama,1.2,up_to_%,https://www.picodi.com/pl/castorama/offers
-2026-09-23,Ceneo,ceneo,,not_found,
-2026-09-23,Cobi,cobi,,not_found,
-2026-09-23,Cocolita,cocolita,,not_found,
-2026-09-23,Colorland,colorland,,not_found,
+2026-09-23,Ceneo,ceneo,0.0,up_to_%,https://www.picodi.com/pl/ceneo/offers
+2026-09-23,Cobi,cobi,1.1,up_to_%,https://www.picodi.com/pl/cobi/offers
+2026-09-23,Cocolita,cocolita,1.4,up_to_%,https://www.picodi.com/pl/cocolita-pl/offers
+2026-09-23,Colorland,colorland,1.1,up_to_%,https://www.picodi.com/pl/colorland/offers
 2026-09-23,Converse,converse,,not_found,
 2026-09-23,Crocs,crocs,,not_found,
 2026-09-23,Cropp,cropp,,not_found,
