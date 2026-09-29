@@ -29,7 +29,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-09-29,Alibaba,alibaba.com,8.4,%
 2026-09-29,Alpine Pro,alpinepro,4.8,%
 2026-09-29,Amazon,amazon,,no cashback
-2026-09-29,Audioteka,audioteka,,no cashback
+2026-09-29,Audioteka,audioteka,2.5,%
 2026-09-29,AUTODOC,autodoc,7.0,%
 2026-09-29,AXA Partners,axa-partners,15.0,%
 2026-09-29,Banggood,banggood,10.0,%
@@ -201,7 +201,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-09-29,RedBull Mobile,redbullmobile,,no cashback
 2026-09-29,Regatta,regatta,8.0,%
 2026-09-29,Renee,renee,6.0,%
-2026-09-29,Reporter Young,reporteryoung,3.5,%
+2026-09-29,Reporter Young,reporteryoung,,no cashback
 2026-09-29,RestaurantWeek,restaurant-week,3.5,%
 2026-09-29,Rocketjobs.pl,rocketjobs,7.5,%
 2026-09-29,Ryobi,ryobi,4.0,%
