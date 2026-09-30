@@ -4,7 +4,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-09-30,Answear,answear,3.0,%
 2026-09-30,Decathlon,decathlon,2.0,%
 2026-09-30,Empik,empik,1.6,%
-2026-09-30,Lounge by Zalando,zalando-lounge,12.0,%
+2026-09-30,Lounge by Zalando,zalando-lounge,10.0,%
 2026-09-30,MediaMarkt,mediamarkt,4.0,%
 2026-09-30,Temu,temu,40.0,%
 2026-09-30,SHEIN,shein,13.5,%
@@ -91,7 +91,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-09-30,Feniko,feniko,,zł
 2026-09-30,Fera,fera,2.0,%
 2026-09-30,Fielmann,fielmann,6.0,%
-2026-09-30,Flexispot,flexispot,4.0,%
+2026-09-30,FlexiSpot,flexispot,4.0,%
 2026-09-30,Flixbus,flixbus,4.0,%
 2026-09-30,Footdistrict,footdistrict,8.0,%
 2026-09-30,Footshop,footshop,3.0,%
@@ -257,7 +257,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-09-30,Zelmer,zelmer,3.3,%
 2026-09-30,Znak,znak,3.0,%
 2026-09-30,ZooFaster,krakvet,2.0,%
-2026-09-30,zooplus,zooplus,2.1,%
+2026-09-30,zooplus,zooplus,3.0,%
 2026-09-30,Zwieger,zwieger,3.0,%
 2026-09-30,24mx,24mx,2.5,%
 2026-09-30,4kidspoint,4kidspoint,3.5,%
