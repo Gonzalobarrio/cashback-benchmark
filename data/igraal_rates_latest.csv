@@ -10,8 +10,8 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-10-01,SHEIN,shein,13.5,%
 2026-10-01,RTV Euro AGD,rtveuro,1.5,%
 2026-10-01,Lidl,lidl,1.0,%
-2026-10-01,Leroy Merlin,leroymerlin,2.5,%
-2026-10-01,CCC,ccc,5.0,%
+2026-10-01,Leroy Merlin,leroymerlin,,no cashback
+2026-10-01,CCC,ccc,,no cashback
 2026-10-01,Hebe,hebe,5.0,%
 2026-10-01,OBI,obi,2.5,%
 2026-10-01,Adidas,adidas,5.0,%
@@ -65,7 +65,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-10-01,DHgate,dhgate,2.0,%
 2026-10-01,DHL,dhl,,zł
 2026-10-01,Diablo Chairs,diablochairs,4.0,%
-2026-10-01,Disney+,disneyplus,,zł
+2026-10-01,Disney+,disneyplus,,no cashback
 2026-10-01,Drogeria.pl,drogeria.pl,3.0,%
 2026-10-01,Dstreet,dstreet,9.0,%
 2026-10-01,Dyson,dyson,2.5,%
@@ -115,7 +115,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-10-01,Huawei,huawei,3.5,%
 2026-10-01,iBOOD,ibood,1.0,%
 2026-10-01,iDream,idream,3.0,%
-2026-10-01,iHerb,iherb,3.0,%
+2026-10-01,iHerb,iherb,,no cashback
 2026-10-01,IKEA,ikea,4.0,%
 2026-10-01,Intymna,intymna,3.0,%
 2026-10-01,iParts,iparts,1.8,%
@@ -165,7 +165,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-10-01,Neness,neness,6.0,%
 2026-10-01,NEONAIL,neonail,7.0,%
 2026-10-01,Neonet,neonet,0.75,%
-2026-10-01,New Balance,nbsklep,5.0,%
+2026-10-01,New Balance,nbsklep,3.0,%
 2026-10-01,Nike,nike,,no cashback
 2026-10-01,NinjaShark,ninja,4.0,%
 2026-10-01,NordVPN,nordvpn,30.0,%
@@ -199,7 +199,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-10-01,Radisson Hotels,radissonhotels,2.0,%
 2026-10-01,Recman,recman,5.0,%
 2026-10-01,RedBull Mobile,redbullmobile,,no cashback
-2026-10-01,Regatta,regatta,8.0,%
+2026-10-01,Regatta,regatta,3.0,%
 2026-10-01,Renee,renee,6.0,%
 2026-10-01,Reporter Young,reporteryoung,3.5,%
 2026-10-01,RestaurantWeek,restaurant-week,3.5,%
