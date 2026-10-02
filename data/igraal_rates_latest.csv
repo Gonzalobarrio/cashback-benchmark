@@ -134,7 +134,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-10-02,Kubota,kubota,4.5,%
 2026-10-02,KurJerzy.pl,kurjerzy.pl,3.0,%
 2026-10-02,Lacoste,lacoste,8.0,%
-2026-10-02,Lampy.pl,lampy,8.0,%
+2026-10-02,Lampy.pl,lampy,5.0,%
 2026-10-02,Legimi,legimi,15.0,%
 2026-10-02,LEGO,lego,3.0,%
 2026-10-02,Leo Express,leoexpress,4.0,%
@@ -238,7 +238,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-10-02,Unisono,unisono,,no cashback
 2026-10-02,uPacjenta,upacjenta,3.36,%
 2026-10-02,Van Graaf,vangraaf,7.0,%
-2026-10-02,Vans,vans,4.0,%
+2026-10-02,Vans,vans,,no cashback
 2026-10-02,Vasco Electronics,vascoelectronics,,zł
 2026-10-02,Venezia,venezia,2.5,%
 2026-10-02,Victoria's Secret,victorias-secret,3.0,%
