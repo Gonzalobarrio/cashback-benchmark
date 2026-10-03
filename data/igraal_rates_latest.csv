@@ -28,15 +28,15 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-10-03,ALAB Laboratoria,alab-laboratoria,6.0,%
 2026-10-03,Alibaba,alibaba.com,8.4,%
 2026-10-03,Alpine Pro,alpinepro,4.8,%
-2026-10-03,Amazon,amazon,,no cashback
+2026-10-03,Amazon,amazon,4.0,%
 2026-10-03,Audioteka,audioteka,2.5,%
 2026-10-03,AUTODOC,autodoc,7.0,%
 2026-10-03,AXA Partners,axa-partners,15.0,%
 2026-10-03,Banggood,banggood,10.0,%
-2026-10-03,Bank Pekao,bank-pekao,,zł
+2026-10-03,Bank Pekao,bank-pekao,4.0,%
 2026-10-03,Baseus,baseus,4.0,%
 2026-10-03,BasicLab,basiclab,2.0,%
-2026-10-03,BeDiet,bediet,,no cashback
+2026-10-03,BeDiet,bediet,4.0,%
 2026-10-03,BIG STAR,bigstar,4.0,%
 2026-10-03,Bimba Y Lola,bimbaylola,6.0,%
 2026-10-03,Bonprix,bonprix,4.0,%
@@ -47,7 +47,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-10-03,Bricomarche,bricomarche,3.5,%
 2026-10-03,Brooks,brooks,6.0,%
 2026-10-03,Byrokko,byrokko,8.0,%
-2026-10-03,Canal Plus,canalplus,,zł
+2026-10-03,Canal Plus,canalplus,4.0,%
 2026-10-03,Carrefour,carrefour,2.0,%
 2026-10-03,Castorama,castorama,2.5,%
 2026-10-03,Ceneo,ceneo,1.0,%
@@ -58,12 +58,12 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-10-03,Crocs,crocs,2.0,%
 2026-10-03,Cropp,cropp,4.0,%
 2026-10-03,Cyfrowe.pl,cyfrowe.pl,2.0,%
-2026-10-03,Dedoles,dedoles,4.0,%
+2026-10-03,Dedoles,dedoles,,no cashback
 2026-10-03,DeLonghi,delonghi,6.0,%
 2026-10-03,Dermacol,dermacol,3.0,%
 2026-10-03,Desigual,desigual,7.7,%
 2026-10-03,DHgate,dhgate,2.0,%
-2026-10-03,DHL,dhl,,zł
+2026-10-03,DHL,dhl,4.0,%
 2026-10-03,Diablo Chairs,diablochairs,4.0,%
 2026-10-03,Disney+,disneyplus,4.0,%
 2026-10-03,Drogeria.pl,drogeria.pl,3.0,%
@@ -83,12 +83,12 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-10-03,ESET,eset,8.5,%
 2026-10-03,eSky,esky,2.0,%
 2026-10-03,Estro,estro,7.0,%
-2026-10-03,Eurofirany,eurofirany,,no cashback
+2026-10-03,Eurofirany,eurofirany,4.0,%
 2026-10-03,Euroflorist,euroflorist,10.0,%
 2026-10-03,Eveline,eveline,6.0,%
 2026-10-03,Eventim,eventim,1.0,%
 2026-10-03,eZebra,ezebra,4.0,%
-2026-10-03,Feniko,feniko,,zł
+2026-10-03,Feniko,feniko,4.0,%
 2026-10-03,Fera,fera,2.0,%
 2026-10-03,Fielmann,fielmann,6.0,%
 2026-10-03,FlexiSpot,flexispot,4.0,%
@@ -108,7 +108,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-10-03,Green Touch,greentouch,3.3,%
 2026-10-03,Greenpoint,greenpoint,4.0,%
 2026-10-03,Groupon,groupon,5.6,%
-2026-10-03,Gunfire,gunfire,4.0,%
+2026-10-03,Gunfire,gunfire,,no cashback
 2026-10-03,H&M,hm,8.0,%
 2026-10-03,Homla,homla,2.5,%
 2026-10-03,HP,hp,7.0,%
@@ -122,7 +122,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-10-03,JD Sports,jdsports,5.0,%
 2026-10-03,Joom,joom,9.0,%
 2026-10-03,Josera,josera,5.5,%
-2026-10-03,Justjoinit,justjoinit,13.0,%
+2026-10-03,Justjoinit,justjoinit,4.0,%
 2026-10-03,Katalog Marzeń,katalog-marzen,2.8,%
 2026-10-03,Kenwood,kenwood,6.0,%
 2026-10-03,KFC,kfc,3.0,%
@@ -146,35 +146,35 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-10-03,LOT,lot,1.0,%
 2026-10-03,Lufthansa,lufthansa,1.2,%
 2026-10-03,Mamyito,mamyito,4.5,%
-2026-10-03,Mango Outlet,mango-outlet,3.0,%
+2026-10-03,Mango Outlet,mango-outlet,4.0,%
 2026-10-03,Marilyn,marilyn,6.0,%
 2026-10-03,Max Elektro,maxelektro,2.0,%
-2026-10-03,Maxi Zoo,maxizoo,5.0,%
+2026-10-03,Maxi Zoo,maxizoo,6.0,%
 2026-10-03,MebleMWM,meblemwm,3.5,%
 2026-10-03,Medicine,wearmedicine,3.0,%
 2026-10-03,Merkury Market,merkurymarket,2.0,%
 2026-10-03,Michael Kors,michaelkors,3.0,%
 2026-10-03,Modivo,modivo.pl,3.5,%
 2026-10-03,ModnaKiecka.pl,modnakiecka.pl,4.0,%
-2026-10-03,Morele.net,morele,,zł
+2026-10-03,Morele.net,morele,4.0,%
 2026-10-03,Mountain Warehouse,mountainwarehouse,3.0,%
 2026-10-03,Mova,mova,4.2,%
 2026-10-03,MyHeritage DNA,myheritagedna,4.0,%
 2026-10-03,MyProtein,myprotein,10.0,%
 2026-10-03,NAOKO,naoko,5.0,%
-2026-10-03,Neness,neness,6.0,%
+2026-10-03,Neness,neness,4.0,%
 2026-10-03,NEONAIL,neonail,7.0,%
 2026-10-03,Neonet,neonet,0.75,%
 2026-10-03,New Balance,nbsklep,3.0,%
 2026-10-03,Nike,nike,4.0,%
 2026-10-03,NinjaShark,ninja,4.0,%
 2026-10-03,NordVPN,nordvpn,30.0,%
-2026-10-03,norton,norton,,no cashback
+2026-10-03,norton,norton,4.0,%
 2026-10-03,Notino,notino,3.5,%
 2026-10-03,Novakid,novakid,,zł
 2026-10-03,OleOle!,oleole,1.0,%
 2026-10-03,Olimp Store,olimp-store,2.5,%
-2026-10-03,Orange,orange,2.11,%
+2026-10-03,Orange,orange,4.0,%
 2026-10-03,Pan Materac,panmaterac,8.0,%
 2026-10-03,Pandora,pandora,4.0,%
 2026-10-03,Parfumdreams,parfumdreams,12.0,%
@@ -185,10 +185,10 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-10-03,Philips,philips,4.0,%
 2026-10-03,Philips Hue,philips-hue,7.0,%
 2026-10-03,Pitbull,pitbull,5.0,%
-2026-10-03,Play,play,,zł
-2026-10-03,Pleso,plesotherapy,,zł
-2026-10-03,Plus,plus,,zł
-2026-10-03,Preply,preply,,zł
+2026-10-03,Play,play,4.0,%
+2026-10-03,Pleso,plesotherapy,4.0,%
+2026-10-03,Plus,plus,4.0,%
+2026-10-03,Preply,preply,4.0,%
 2026-10-03,Primodo,primodo,5.0,%
 2026-10-03,PRM,prm,6.0,%
 2026-10-03,Proton VPN,protonvpn,70.0,%
@@ -198,7 +198,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-10-03,Pyszne.pl,pyszne,2.0,%
 2026-10-03,Radisson Hotels,radissonhotels,2.0,%
 2026-10-03,Recman,recman,5.0,%
-2026-10-03,RedBull Mobile,redbullmobile,,no cashback
+2026-10-03,RedBull Mobile,redbullmobile,4.0,%
 2026-10-03,Regatta,regatta,3.0,%
 2026-10-03,Renee,renee,6.0,%
 2026-10-03,Reporter Young,reporteryoung,3.5,%
@@ -210,7 +210,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-10-03,Sferis,sferis,1.6,%
 2026-10-03,Sinsay,sinsay,5.0,%
 2026-10-03,Skechers,skechers,8.5,%
-2026-10-03,SkyShowtime,skyshowtime,,zł
+2026-10-03,SkyShowtime,skyshowtime,4.0,%
 2026-10-03,Smyk,smyk,1.26,%
 2026-10-03,Sony.pl,sony,2.5,%
 2026-10-03,SportStyleStory,sportstylestory,6.0,%
@@ -224,7 +224,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-10-03,Tanie-opony.pl,tanie-opony.pl,1.8,%
 2026-10-03,Tefal,tefal,5.0,%
 2026-10-03,Tescoma,tescoma,3.5,%
-2026-10-03,TestDNA,testdna,,no cashback
+2026-10-03,TestDNA,testdna,4.0,%
 2026-10-03,Teufel,teufel,4.0,%
 2026-10-03,Top Secret,topsecret,4.2,%
 2026-10-03,Trip.com,trip-com,3.85,%
@@ -245,7 +245,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-10-03,VidaXL,vidaxl,2.5,%
 2026-10-03,Vision Express,visionexpress,6.3,%
 2026-10-03,Vobis,vobis,1.0,%
-2026-10-03,Wolt,wolt,,zł
+2026-10-03,Wolt,wolt,4.0,%
 2026-10-03,Wrangler,wrangler,10.0,%
 2026-10-03,x-kom,x-kom,4.0,%
 2026-10-03,Xiaomi,mi,2.0,%
@@ -253,7 +253,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-10-03,Yanosik,yanosik,3.0,%
 2026-10-03,Yope,yope,7.0,%
 2026-10-03,Yves Rocher,yves-rocher,5.0,%
-2026-10-03,Zalando,zalando.pl,,zł
+2026-10-03,Zalando,zalando.pl,4.0,%
 2026-10-03,Zelmer,zelmer,3.3,%
 2026-10-03,Znak,znak,3.0,%
 2026-10-03,ZooFaster,krakvet,2.0,%
