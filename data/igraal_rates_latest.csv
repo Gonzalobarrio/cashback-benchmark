@@ -1,20 +1,20 @@
 date,retailer,slug,igraal_rate,cashback_type
-2026-10-05,AliExpress,aliexpress,1.0,%
+2026-10-05,AliExpress,aliexpress,25.0,%
 2026-10-05,Allegro,allegro,5.5,%
 2026-10-05,Answear,answear,3.0,%
-2026-10-05,Decathlon,decathlon,2.0,%
+2026-10-05,Decathlon,decathlon,4.0,%
 2026-10-05,Empik,empik,6.0,%
-2026-10-05,Lounge by Zalando,zalando-lounge,10.0,%
-2026-10-05,MediaMarkt,mediamarkt,4.0,%
-2026-10-05,Temu,temu,40.0,%
+2026-10-05,Lounge by Zalando,zalando-lounge,12.0,%
+2026-10-05,MediaMarkt,mediamarkt,6.0,%
+2026-10-05,Temu,temu,50.0,%
 2026-10-05,SHEIN,shein,13.5,%
-2026-10-05,RTV Euro AGD,rtveuro,1.5,%
+2026-10-05,RTV Euro AGD,rtveuro,3.0,%
 2026-10-05,Lidl,lidl,1.0,%
-2026-10-05,Leroy Merlin,leroymerlin,2.5,%
+2026-10-05,Leroy Merlin,leroymerlin,3.5,%
 2026-10-05,CCC,ccc,5.0,%
 2026-10-05,Hebe,hebe,5.0,%
 2026-10-05,OBI,obi,2.5,%
-2026-10-05,Adidas,adidas,5.0,%
+2026-10-05,Adidas,adidas,6.0,%
 2026-10-05,Sephora,sephora,9.0,%
 2026-10-05,Douglas,douglas,10.0,%
 2026-10-05,home&you,home-you,6.5,%
@@ -53,7 +53,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-10-05,Ceneo,ceneo,1.0,%
 2026-10-05,Cobi,cobi,3.5,%
 2026-10-05,Cocolita,cocolita,3.5,%
-2026-10-05,Colorland,colorland,8.0,%
+2026-10-05,Colorland,colorland,11.5,%
 2026-10-05,Converse,converse,5.0,%
 2026-10-05,Crocs,crocs,2.0,%
 2026-10-05,Cropp,cropp,4.0,%
@@ -68,12 +68,12 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-10-05,Disney+,disneyplus,,zł
 2026-10-05,Drogeria.pl,drogeria.pl,3.0,%
 2026-10-05,Dstreet,dstreet,9.0,%
-2026-10-05,Dyson,dyson,4.0,%
+2026-10-05,Dyson,dyson,2.5,%
 2026-10-05,E-Kwiaty,e-kwiaty,4.0,%
 2026-10-05,e-torty,e-torty,10.0,%
 2026-10-05,eBilet,ebilet,1.0,%
 2026-10-05,Egmont,egmont,3.6,%
-2026-10-05,Electrolux,electrolux,2.0,%
+2026-10-05,Electrolux,electrolux,,no cashback
 2026-10-05,Eltrox,eltrox,4.5,%
 2026-10-05,EMP,emp,7.0,%
 2026-10-05,Empik Foto,empikfoto,10.0,%
@@ -115,11 +115,11 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-10-05,Huawei,huawei,3.5,%
 2026-10-05,iBOOD,ibood,1.0,%
 2026-10-05,iDream,idream,3.0,%
-2026-10-05,iHerb,iherb,3.0,%
+2026-10-05,iHerb,iherb,15.0,%
 2026-10-05,IKEA,ikea,4.0,%
 2026-10-05,Intymna,intymna,3.0,%
 2026-10-05,iParts,iparts,1.8,%
-2026-10-05,JD Sports,jdsports,5.0,%
+2026-10-05,JD Sports,jdsports,7.5,%
 2026-10-05,Joom,joom,9.0,%
 2026-10-05,Josera,josera,5.5,%
 2026-10-05,Justjoinit,justjoinit,13.0,%
@@ -146,10 +146,10 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-10-05,LOT,lot,1.0,%
 2026-10-05,Lufthansa,lufthansa,1.2,%
 2026-10-05,Mamyito,mamyito,4.5,%
-2026-10-05,Mango Outlet,mango-outlet,4.0,%
+2026-10-05,Mango Outlet,mango-outlet,3.0,%
 2026-10-05,Marilyn,marilyn,6.0,%
 2026-10-05,Max Elektro,maxelektro,2.0,%
-2026-10-05,Maxi Zoo,maxizoo,6.0,%
+2026-10-05,Maxi Zoo,maxizoo,5.0,%
 2026-10-05,MebleMWM,meblemwm,3.5,%
 2026-10-05,Medicine,wearmedicine,3.0,%
 2026-10-05,Merkury Market,merkurymarket,2.0,%
@@ -165,12 +165,12 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-10-05,Neness,neness,6.0,%
 2026-10-05,NEONAIL,neonail,7.0,%
 2026-10-05,Neonet,neonet,0.75,%
-2026-10-05,New Balance,nbsklep,3.0,%
+2026-10-05,New Balance,nbsklep,10.0,%
 2026-10-05,Nike,nike,,no cashback
 2026-10-05,NinjaShark,ninja,4.0,%
-2026-10-05,NordVPN,nordvpn,30.0,%
+2026-10-05,NordVPN,nordvpn,80.0,%
 2026-10-05,norton,norton,,no cashback
-2026-10-05,Notino,notino,3.5,%
+2026-10-05,Notino,notino,5.0,%
 2026-10-05,Novakid,novakid,,zł
 2026-10-05,OleOle!,oleole,1.0,%
 2026-10-05,Olimp Store,olimp-store,2.5,%
@@ -195,7 +195,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-10-05,Przyjaciele Kawy,przyjacielekawy,4.0,%
 2026-10-05,Puma,puma,6.0,%
 2026-10-05,PWN,pwn,2.7,%
-2026-10-05,Pyszne.pl,pyszne,2.0,%
+2026-10-05,Pyszne.pl,pyszne,25.0,%
 2026-10-05,Radisson Hotels,radissonhotels,2.0,%
 2026-10-05,Recman,recman,5.0,%
 2026-10-05,RedBull Mobile,redbullmobile,,no cashback
@@ -208,7 +208,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-10-05,Samsung,samsung,5.0,%
 2026-10-05,SeePlaces,seeplaces,3.15,%
 2026-10-05,Sferis,sferis,1.6,%
-2026-10-05,Sinsay,sinsay,5.0,%
+2026-10-05,Sinsay,sinsay,10.0,%
 2026-10-05,Skechers,skechers,8.5,%
 2026-10-05,SkyShowtime,skyshowtime,,zł
 2026-10-05,Smyk,smyk,2.0,%

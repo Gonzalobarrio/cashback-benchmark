@@ -1,22 +1,22 @@
 date,retailer,igraal_slug,letyshops_rate,letyshops_rate_type,letyshops_boosted,letyshops_url
-2026-10-05,AliExpress,aliexpress,5.0,%,False,https://letyshops.com/pl/shops/aliexpress
-2026-10-05,Allegro,allegro,1.7,%,False,https://letyshops.com/pl/shops/allegro-pl
+2026-10-05,AliExpress,aliexpress,50.0,%,False,https://letyshops.com/pl/shops/aliexpress
+2026-10-05,Allegro,allegro,6.8,%,False,https://letyshops.com/pl-en/shops/allegro-pl
 2026-10-05,Answear,answear,2.0,%,False,https://letyshops.com/pl/shops/answear
 2026-10-05,Decathlon,decathlon,2.25,%,False,https://letyshops.com/pl/shops/decathlon-pl
 2026-10-05,Empik,empik,6.25,%,False,https://letyshops.com/pl/shops/empik-pl
-2026-10-05,Lounge by Zalando,zalando-lounge,6.0,%,False,https://letyshops.com/pl/shops/zalando-lounge-pl
-2026-10-05,MediaMarkt,mediamarkt,3.5,%,False,https://letyshops.com/pl/shops/media-markt-pl
+2026-10-05,Lounge by Zalando,zalando-lounge,6.0,%,False,https://letyshops.com/pl-en/shops/zalando-lounge-pl
+2026-10-05,MediaMarkt,mediamarkt,10.5,%,False,https://letyshops.com/pl-en/shops/media-markt-pl
 2026-10-05,Temu,temu,5.5,%,False,https://letyshops.com/pl/shops/temu
 2026-10-05,SHEIN,shein,5.0,%,False,https://letyshops.com/pl/shops/shein-pl
 2026-10-05,RTV Euro AGD,rtveuro,3.5,%,False,https://letyshops.com/pl/shops/rtv-euro-agd
-2026-10-05,Lidl,lidl,0.75,%,False,https://letyshops.com/pl-en/shops/lidl-pl
+2026-10-05,Lidl,lidl,0.75,%,False,https://letyshops.com/pl/shops/lidl-pl
 2026-10-05,Leroy Merlin,leroymerlin,1.75,%,False,https://letyshops.com/pl/shops/leroy-merlin
 2026-10-05,CCC,ccc,3.0,%,False,https://letyshops.com/pl/shops/ccc-pl
-2026-10-05,Hebe,hebe,4.0,%,False,https://letyshops.com/pl/shops/hebe
+2026-10-05,Hebe,hebe,4.0,%,False,https://letyshops.com/pl-en/shops/hebe
 2026-10-05,OBI,obi,2.5,%,False,https://letyshops.com/pl/shops/obi-pl
 2026-10-05,Adidas,adidas,3.0,%,False,https://letyshops.com/pl/shops/adidas-polska
-2026-10-05,Sephora,sephora,4.5,%,False,https://letyshops.com/pl/shops/sephora-pl
-2026-10-05,Douglas,douglas,5.0,%,False,https://letyshops.com/pl/shops/douglas
+2026-10-05,Sephora,sephora,4.5,%,False,https://letyshops.com/pl-en/shops/sephora-pl
+2026-10-05,Douglas,douglas,5.0,%,False,https://letyshops.com/pl-en/shops/douglas
 2026-10-05,home&you,home-you,2.0,%,False,https://letyshops.com/pl/shops/home-you
 2026-10-05,Abra,abra,,not_found,False,
 2026-10-05,Acer,acer,4.5,%,False,https://letyshops.com/pl/shops/acer-pl
@@ -65,10 +65,10 @@ date,retailer,igraal_slug,letyshops_rate,letyshops_rate_type,letyshops_boosted,l
 2026-10-05,DHgate,dhgate,25.0,%,False,https://letyshops.com/pl/shops/dhgate
 2026-10-05,DHL,dhl,2.5,%,False,https://letyshops.com/pl/shops/dhl-pl
 2026-10-05,Diablo Chairs,diablochairs,2.25,%,False,https://letyshops.com/pl/shops/diablo-chairs
-2026-10-05,Disney+,disneyplus,1.7,%,False,https://letyshops.com/pl/shops/disney
+2026-10-05,Disney+,disneyplus,6.8,%,False,https://letyshops.com/pl/shops/disney
 2026-10-05,Drogeria.pl,drogeria.pl,4.0,%,False,https://letyshops.com/pl/shops/drogeria-pl
 2026-10-05,Dstreet,dstreet,4.5,%,False,https://letyshops.com/pl/shops/dstreet
-2026-10-05,Dyson,dyson,2.4,%,False,https://letyshops.com/pl/shops/dyson-pl
+2026-10-05,Dyson,dyson,2.4,%,False,https://letyshops.com/pl-en/shops/dyson-pl
 2026-10-05,E-Kwiaty,e-kwiaty,3.0,%,False,https://letyshops.com/pl/shops/e-kwiaty-pl
 2026-10-05,e-torty,e-torty,7.5,%,False,https://letyshops.com/pl/shops/e-torty-pl
 2026-10-05,eBilet,ebilet,0.4,%,False,https://letyshops.com/pl/shops/ebilet-pl
@@ -79,7 +79,7 @@ date,retailer,igraal_slug,letyshops_rate,letyshops_rate_type,letyshops_boosted,l
 2026-10-05,Empik Foto,empikfoto,5.0,%,False,https://letyshops.com/pl/shops/empikfoto-pl
 2026-10-05,Endo,endo,,no cashback,False,
 2026-10-05,eobuwie,eobuwie,3.0,%,False,https://letyshops.com/pl/shops/eobuwie-pl
-2026-10-05,Erli,erli,2.2,%,False,https://letyshops.com/pl/shops/erli
+2026-10-05,Erli,erli,2.2,%,False,https://letyshops.com/pl-en/shops/erli
 2026-10-05,ESET,eset,6.0,%,False,https://letyshops.com/pl/shops/eset-pl
 2026-10-05,eSky,esky,1.75,%,False,https://letyshops.com/pl/shops/esky
 2026-10-05,Estro,estro,3.5,%,False,https://letyshops.com/pl/shops/estro-pl
@@ -87,7 +87,7 @@ date,retailer,igraal_slug,letyshops_rate,letyshops_rate_type,letyshops_boosted,l
 2026-10-05,Euroflorist,euroflorist,7.5,%,False,https://letyshops.com/pl/shops/euroflorist-pl
 2026-10-05,Eveline,eveline,3.5,%,False,https://letyshops.com/pl/shops/eveline-pl
 2026-10-05,Eventim,eventim,1.5,%,False,https://letyshops.com/pl/shops/eventim-pl
-2026-10-05,eZebra,ezebra,4.0,%,False,https://letyshops.com/pl-en/shops/ezebra
+2026-10-05,eZebra,ezebra,4.0,%,False,https://letyshops.com/pl/shops/ezebra
 2026-10-05,Feniko,feniko,,not_found,False,
 2026-10-05,Fera,fera,2.0,%,False,https://letyshops.com/pl/shops/fera-pl
 2026-10-05,Fielmann,fielmann,,not_found,False,
@@ -109,7 +109,7 @@ date,retailer,igraal_slug,letyshops_rate,letyshops_rate_type,letyshops_boosted,l
 2026-10-05,Greenpoint,greenpoint,2.0,%,False,https://letyshops.com/pl/shops/greenpoint-pl
 2026-10-05,Groupon,groupon,3.5,%,False,https://letyshops.com/pl/shops/groupon-pl
 2026-10-05,Gunfire,gunfire,,no cashback,False,
-2026-10-05,H&M,hm,1.5,%,False,https://letyshops.com/pl/shops/h-m-pl
+2026-10-05,H&M,hm,1.5,%,False,https://letyshops.com/pl-en/shops/h-m-pl
 2026-10-05,Homla,homla,,no cashback,False,
 2026-10-05,HP,hp,3.5,%,False,https://letyshops.com/pl/shops/hp-pl
 2026-10-05,Huawei,huawei,3.0,%,False,https://letyshops.com/pl/shops/huawei-pl
@@ -128,7 +128,7 @@ date,retailer,igraal_slug,letyshops_rate,letyshops_rate_type,letyshops_boosted,l
 2026-10-05,KFC,kfc,2.75,%,False,https://letyshops.com/pl/shops/kfc-polska
 2026-10-05,Kinguin,kinguin,,not_found,False,
 2026-10-05,Kiwi,kiwi,2.0,%,False,https://letyshops.com/pl/shops/kiwi
-2026-10-05,Komputronik,komputronik,1.0,%,False,https://letyshops.com/pl/shops/komputronik-pl
+2026-10-05,Komputronik,komputronik,1.0,%,False,https://letyshops.com/pl-en/shops/komputronik-pl
 2026-10-05,Konesso,konesso,,no cashback,False,
 2026-10-05,Kubenz,kubenz,,not_found,False,
 2026-10-05,Kubota,kubota,,not_found,False,
@@ -170,11 +170,11 @@ date,retailer,igraal_slug,letyshops_rate,letyshops_rate_type,letyshops_boosted,l
 2026-10-05,NinjaShark,ninja,2.5,%,False,https://letyshops.com/pl/shops/ninja-pl
 2026-10-05,NordVPN,nordvpn,20.0,%,False,https://letyshops.com/pl/shops/nord-vpn
 2026-10-05,norton,norton,,no cashback,False,
-2026-10-05,Notino,notino,2.5,%,False,https://letyshops.com/pl/shops/notino-pl
+2026-10-05,Notino,notino,2.5,%,False,https://letyshops.com/pl-en/shops/notino-pl
 2026-10-05,Novakid,novakid,,no cashback,False,
 2026-10-05,OleOle!,oleole,1.0,%,False,https://letyshops.com/pl/shops/oleole-pl
 2026-10-05,Olimp Store,olimp-store,,not_found,False,
-2026-10-05,Orange,orange,2.5,%,False,https://letyshops.com/pl-en/shops/orange-pl
+2026-10-05,Orange,orange,2.5,%,False,https://letyshops.com/pl/shops/orange-pl
 2026-10-05,Pan Materac,panmaterac,4.0,%,False,https://letyshops.com/pl/shops/pan-materac
 2026-10-05,Pandora,pandora,3.0,%,False,https://letyshops.com/pl/shops/pandora-pl
 2026-10-05,Parfumdreams,parfumdreams,,no cashback,False,
@@ -188,29 +188,29 @@ date,retailer,igraal_slug,letyshops_rate,letyshops_rate_type,letyshops_boosted,l
 2026-10-05,Play,play,2.5,%,False,https://letyshops.com/pl/shops/play-pl
 2026-10-05,Pleso,plesotherapy,,not_found,False,
 2026-10-05,Plus,plus,,no cashback,False,
-2026-10-05,Preply,preply,5.0,%,False,https://letyshops.com/pl/shops/preply
+2026-10-05,Preply,preply,50.0,%,False,https://letyshops.com/pl/shops/preply
 2026-10-05,Primodo,primodo,,not_found,False,
 2026-10-05,PRM,prm,6.0,%,False,https://letyshops.com/pl/shops/prm-pl
 2026-10-05,Proton VPN,protonvpn,,not_found,False,
 2026-10-05,Przyjaciele Kawy,przyjacielekawy,3.7,%,False,https://letyshops.com/pl/shops/przyjaciele-kawy-pl
 2026-10-05,Puma,puma,,no cashback,False,
 2026-10-05,PWN,pwn,,not_found,False,
-2026-10-05,Pyszne.pl,pyszne,1.5,%,False,https://letyshops.com/pl/shops/pyszne-pl
+2026-10-05,Pyszne.pl,pyszne,1.5,%,False,https://letyshops.com/pl-en/shops/pyszne-pl
 2026-10-05,Radisson Hotels,radissonhotels,4.0,%,False,https://letyshops.com/pl/shops/radisson-hotels-pl
 2026-10-05,Recman,recman,,no cashback,False,
 2026-10-05,RedBull Mobile,redbullmobile,,no cashback,False,
 2026-10-05,Regatta,regatta,4.0,%,False,https://letyshops.com/pl/shops/regatta-pl
-2026-10-05,Renee,renee,3.0,%,False,https://letyshops.com/pl/shops/renee
+2026-10-05,Renee,renee,3.0,%,False,https://letyshops.com/pl-en/shops/renee
 2026-10-05,Reporter Young,reporteryoung,,no cashback,False,
 2026-10-05,RestaurantWeek,restaurant-week,,not_found,False,
 2026-10-05,Rocketjobs.pl,rocketjobs,,not_found,False,
 2026-10-05,Ryobi,ryobi,6.0,%,False,https://letyshops.com/pl/shops/ryobi-pl
-2026-10-05,Samsung,samsung,2.5,%,False,https://letyshops.com/pl/shops/samsung-pl
+2026-10-05,Samsung,samsung,2.5,%,False,https://letyshops.com/pl-en/shops/samsung-pl
 2026-10-05,SeePlaces,seeplaces,2.25,%,False,https://letyshops.com/pl/shops/seeplaces-pl
 2026-10-05,Sferis,sferis,7.5,%,False,https://letyshops.com/pl/shops/sferis-pl
-2026-10-05,Sinsay,sinsay,5.0,%,False,https://letyshops.com/pl/shops/sinsay-pl
+2026-10-05,Sinsay,sinsay,5.0,%,False,https://letyshops.com/pl-en/shops/sinsay-pl
 2026-10-05,Skechers,skechers,,not_found,False,
-2026-10-05,SkyShowtime,skyshowtime,1.7,%,False,https://letyshops.com/pl/shops/skyshowtime-pl
+2026-10-05,SkyShowtime,skyshowtime,6.8,%,False,https://letyshops.com/pl/shops/skyshowtime-pl
 2026-10-05,Smyk,smyk,1.5,%,False,https://letyshops.com/pl/shops/smyk
 2026-10-05,Sony.pl,sony,1.5,%,False,https://letyshops.com/pl/shops/sony-pl
 2026-10-05,SportStyleStory,sportstylestory,5.0,%,False,https://letyshops.com/pl/shops/sportstylestory-pl
