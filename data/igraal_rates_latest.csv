@@ -121,7 +121,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-10-11,iParts,iparts,1.8,%
 2026-10-11,JD Sports,jdsports,5.0,%
 2026-10-11,Joom,joom,9.0,%
-2026-10-11,Josera,josera,,no cashback
+2026-10-11,Josera,josera,5.5,%
 2026-10-11,Justjoinit,justjoinit,13.0,%
 2026-10-11,Katalog Marzeń,katalog-marzen,2.8,%
 2026-10-11,Kenwood,kenwood,6.0,%
@@ -131,7 +131,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-10-11,Komputronik,komputronik,1.5,%
 2026-10-11,Konesso,konesso,,no cashback
 2026-10-11,Kubenz,kubenz,2.76,%
-2026-10-11,Kubota,kubota,,no cashback
+2026-10-11,Kubota,kubota,4.5,%
 2026-10-11,KurJerzy.pl,kurjerzy.pl,3.0,%
 2026-10-11,Lacoste,lacoste,8.0,%
 2026-10-11,Lampy.pl,lampy,12.0,%
@@ -193,7 +193,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-10-11,PRM,prm,6.0,%
 2026-10-11,Proton VPN,protonvpn,70.0,%
 2026-10-11,Przyjaciele Kawy,przyjacielekawy,4.0,%
-2026-10-11,Puma,puma,6.0,%
+2026-10-11,Puma,puma,,no cashback
 2026-10-11,PWN,pwn,2.7,%
 2026-10-11,Pyszne.pl,pyszne,2.0,%
 2026-10-11,Radisson Hotels,radissonhotels,2.0,%
