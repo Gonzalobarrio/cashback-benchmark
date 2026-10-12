@@ -28,7 +28,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-10-12,ALAB Laboratoria,alab-laboratoria,6.0,%
 2026-10-12,Alibaba,alibaba.com,8.4,%
 2026-10-12,Alpine Pro,alpinepro,4.8,%
-2026-10-12,Amazon,amazon,,no cashback
+2026-10-12,Amazon,amazon,4.0,%
 2026-10-12,Audioteka,audioteka,2.5,%
 2026-10-12,AUTODOC,autodoc,7.0,%
 2026-10-12,AXA Partners,axa-partners,15.0,%
@@ -58,7 +58,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-10-12,Crocs,crocs,2.0,%
 2026-10-12,Cropp,cropp,4.0,%
 2026-10-12,Cyfrowe.pl,cyfrowe.pl,2.0,%
-2026-10-12,Dedoles,dedoles,,no cashback
+2026-10-12,Dedoles,dedoles,4.0,%
 2026-10-12,DeLonghi,delonghi,6.0,%
 2026-10-12,Dermacol,dermacol,3.0,%
 2026-10-12,Desigual,desigual,7.7,%
@@ -88,7 +88,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-10-12,Eveline,eveline,6.0,%
 2026-10-12,Eventim,eventim,1.0,%
 2026-10-12,eZebra,ezebra,4.0,%
-2026-10-12,Feniko,feniko,,zł
+2026-10-12,Feniko,feniko,4.0,%
 2026-10-12,Fera,fera,2.0,%
 2026-10-12,Fielmann,fielmann,6.0,%
 2026-10-12,FlexiSpot,flexispot,4.0,%
@@ -187,7 +187,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-10-12,Pitbull,pitbull,5.0,%
 2026-10-12,Play,play,4.0,%
 2026-10-12,Pleso,plesotherapy,4.0,%
-2026-10-12,Plus,plus,,zł
+2026-10-12,Plus,plus,4.0,%
 2026-10-12,Preply,preply,4.0,%
 2026-10-12,Primodo,primodo,5.0,%
 2026-10-12,PRM,prm,6.0,%
@@ -214,7 +214,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-10-12,Smyk,smyk,1.26,%
 2026-10-12,Sony.pl,sony,4.0,%
 2026-10-12,SportStyleStory,sportstylestory,6.0,%
-2026-10-12,Stradivarius,stradivarius,,no cashback
+2026-10-12,Stradivarius,stradivarius,4.0,%
 2026-10-12,Streetstyle24,streetstyle24,4.5,%
 2026-10-12,Stylevana,stylevana,3.0,%
 2026-10-12,Sun & Snow,sun-and-snow,4.5,%
