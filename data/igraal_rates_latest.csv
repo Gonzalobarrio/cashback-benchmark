@@ -17,7 +17,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-10-14,Adidas,adidas,3.0,%
 2026-10-14,Sephora,sephora,7.5,%
 2026-10-14,Douglas,douglas,8.0,%
-2026-10-14,home&you,home-you,3.0,%
+2026-10-14,home&you,home-you,6.5,%
 2026-10-14,Abra,abra,4.2,%
 2026-10-14,Acer,acer,4.0,%
 2026-10-14,Aclari,aclari,1.8,%
@@ -71,7 +71,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-10-14,Dyson,dyson,2.5,%
 2026-10-14,E-Kwiaty,e-kwiaty,4.0,%
 2026-10-14,e-torty,e-torty,10.0,%
-2026-10-14,eBilet,ebilet,1.0,%
+2026-10-14,eBilet,ebilet,0.5,%
 2026-10-14,Egmont,egmont,3.6,%
 2026-10-14,Electrolux,electrolux,2.0,%
 2026-10-14,Eltrox,eltrox,4.5,%
@@ -108,7 +108,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-10-14,Green Touch,greentouch,3.3,%
 2026-10-14,Greenpoint,greenpoint,4.0,%
 2026-10-14,Groupon,groupon,5.6,%
-2026-10-14,Gunfire,gunfire,,no cashback
+2026-10-14,Gunfire,gunfire,3.15,%
 2026-10-14,H&M,hm,8.0,%
 2026-10-14,Homla,homla,2.5,%
 2026-10-14,HP,hp,7.0,%
@@ -120,7 +120,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-10-14,Intymna,intymna,3.0,%
 2026-10-14,iParts,iparts,1.8,%
 2026-10-14,JD Sports,jdsports,5.0,%
-2026-10-14,Joom,joom,9.0,%
+2026-10-14,Joom,joom,4.8,%
 2026-10-14,Josera,josera,5.5,%
 2026-10-14,Justjoinit,justjoinit,13.0,%
 2026-10-14,Katalog Marzeń,katalog-marzen,2.8,%
@@ -153,8 +153,8 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-10-14,MebleMWM,meblemwm,3.5,%
 2026-10-14,Medicine,wearmedicine,3.0,%
 2026-10-14,Merkury Market,merkurymarket,2.0,%
-2026-10-14,Michael Kors,michaelkors,,no cashback
-2026-10-14,Modivo,modivo.pl,3.5,%
+2026-10-14,Michael Kors,michaelkors,3.0,%
+2026-10-14,Modivo,modivo.pl,3.0,%
 2026-10-14,ModnaKiecka.pl,modnakiecka.pl,4.0,%
 2026-10-14,Morele.net,morele,,zł
 2026-10-14,Mountain Warehouse,mountainwarehouse,3.0,%
@@ -175,7 +175,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-10-14,OleOle!,oleole,1.0,%
 2026-10-14,Olimp Store,olimp-store,2.5,%
 2026-10-14,Orange,orange,2.11,%
-2026-10-14,Pan Materac,panmaterac,8.0,%
+2026-10-14,Pan Materac,panmaterac,4.0,%
 2026-10-14,Pandora,pandora,4.0,%
 2026-10-14,Parfumdreams,parfumdreams,12.0,%
 2026-10-14,Peek & Cloppenburg,peek-and-cloppenburg,2.0,%
@@ -200,7 +200,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-10-14,Recman,recman,5.0,%
 2026-10-14,RedBull Mobile,redbullmobile,,no cashback
 2026-10-14,Regatta,regatta,3.0,%
-2026-10-14,Renee,renee,6.0,%
+2026-10-14,Renee,renee,3.0,%
 2026-10-14,Reporter Young,reporteryoung,3.5,%
 2026-10-14,RestaurantWeek,restaurant-week,3.5,%
 2026-10-14,Rocketjobs.pl,rocketjobs,7.5,%
