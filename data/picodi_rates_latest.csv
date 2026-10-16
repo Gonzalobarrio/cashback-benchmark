@@ -25,7 +25,7 @@ date,retailer,igraal_slug,picodi_rate,picodi_rate_type,picodi_url
 2026-10-16,Agoda,agoda,1.8,up_to_%,https://www.picodi.com/pl/agoda/offers
 2026-10-16,Airalo,airalo,3.5,up_to_%,https://www.picodi.com/pl/airalo/offers
 2026-10-16,AirHelp,airhelp,4.5,up_to_%,https://www.picodi.com/pl/air-help/offers
-2026-10-16,ALAB Laboratoria,alab-laboratoria,20.0,up_to_%,https://www.picodi.com/pl/alablaboratoria/offers
+2026-10-16,ALAB Laboratoria,alab-laboratoria,1.9,up_to_%,https://www.picodi.com/pl/alablaboratoria/offers
 2026-10-16,Alibaba,alibaba.com,2.5,up_to_%,https://www.picodi.com/pl/alibaba/offers
 2026-10-16,Alpine Pro,alpinepro,2.4,up_to_%,https://www.picodi.com/pl/alpinepro/offers
 2026-10-16,Amazon,amazon,9.0,up_to_%,https://www.picodi.com/pl/amazon-com/offers
@@ -51,6 +51,7 @@ date,retailer,igraal_slug,picodi_rate,picodi_rate_type,picodi_url
 2026-10-16,Carrefour,carrefour,,not_found,
 2026-10-16,Castorama,castorama,,not_found,
 2026-10-16,Ceneo,ceneo,,not_found,
+2026-10-16,CleanWhale,cleanwhale,,not_found,
 2026-10-16,Cobi,cobi,,not_found,
 2026-10-16,Cocolita,cocolita,,not_found,
 2026-10-16,Colorland,colorland,,not_found,

@@ -12,7 +12,7 @@ date,retailer,igraal_slug,letyshops_rate,letyshops_rate_type,letyshops_boosted,l
 2026-10-16,Lidl,lidl,0.75,%,False,https://letyshops.com/pl/shops/lidl-pl
 2026-10-16,Leroy Merlin,leroymerlin,1.75,%,False,https://letyshops.com/pl/shops/leroy-merlin
 2026-10-16,CCC,ccc,3.0,%,False,https://letyshops.com/pl/shops/ccc-pl
-2026-10-16,Hebe,hebe,,no cashback,False,
+2026-10-16,Hebe,hebe,4.0,%,False,https://letyshops.com/pl-en/shops/hebe
 2026-10-16,OBI,obi,2.5,%,False,https://letyshops.com/pl/shops/obi-pl
 2026-10-16,Adidas,adidas,3.0,%,False,https://letyshops.com/pl/shops/adidas-polska
 2026-10-16,Sephora,sephora,4.5,%,False,https://letyshops.com/pl-en/shops/sephora-pl
@@ -51,6 +51,7 @@ date,retailer,igraal_slug,letyshops_rate,letyshops_rate_type,letyshops_boosted,l
 2026-10-16,Carrefour,carrefour,1.5,%,False,https://letyshops.com/pl/shops/carrefour-pl
 2026-10-16,Castorama,castorama,2.0,%,False,https://letyshops.com/pl/shops/castorama-pl
 2026-10-16,Ceneo,ceneo,,not_found,False,
+2026-10-16,CleanWhale,cleanwhale,,not_found,False,
 2026-10-16,Cobi,cobi,1.75,%,False,https://letyshops.com/pl/shops/cobi-pl
 2026-10-16,Cocolita,cocolita,3.5,%,False,https://letyshops.com/pl/shops/cocolita-pl
 2026-10-16,Colorland,colorland,,no cashback,False,

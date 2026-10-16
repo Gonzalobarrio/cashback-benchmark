@@ -51,6 +51,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-10-16,Carrefour,carrefour,2.0,%
 2026-10-16,Castorama,castorama,2.5,%
 2026-10-16,Ceneo,ceneo,1.0,%
+2026-10-16,CleanWhale,cleanwhale,3.0,%
 2026-10-16,Cobi,cobi,3.5,%
 2026-10-16,Cocolita,cocolita,3.5,%
 2026-10-16,Colorland,colorland,8.0,%
@@ -96,7 +97,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-10-16,Footdistrict,footdistrict,8.0,%
 2026-10-16,Footshop,footshop,3.0,%
 2026-10-16,Foreo,foreo,3.5,%
-2026-10-16,FotoForma,fotoforma,,no cashback
+2026-10-16,FotoForma,fotoforma,2.0,%
 2026-10-16,G2A,g2a,3.0,%
 2026-10-16,Gameseal,gameseal,3.0,%
 2026-10-16,Gamivo,gamivo,4.0,%
