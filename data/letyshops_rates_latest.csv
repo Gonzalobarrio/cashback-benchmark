@@ -88,7 +88,7 @@ date,retailer,igraal_slug,letyshops_rate,letyshops_rate_type,letyshops_boosted,l
 2026-10-19,Euroflorist,euroflorist,7.5,%,False,https://letyshops.com/pl/shops/euroflorist-pl
 2026-10-19,Eveline,eveline,3.5,%,False,https://letyshops.com/pl/shops/eveline-pl
 2026-10-19,Eventim,eventim,1.5,%,False,https://letyshops.com/pl/shops/eventim-pl
-2026-10-19,eZebra,ezebra,4.0,%,False,https://letyshops.com/pl/shops/ezebra
+2026-10-19,eZebra,ezebra,,no cashback,False,
 2026-10-19,Feniko,feniko,,not_found,False,
 2026-10-19,Fera,fera,2.0,%,False,https://letyshops.com/pl/shops/fera-pl
 2026-10-19,Fielmann,fielmann,,not_found,False,
@@ -229,7 +229,7 @@ date,retailer,igraal_slug,letyshops_rate,letyshops_rate_type,letyshops_boosted,l
 2026-10-19,Teufel,teufel,2.0,%,False,https://letyshops.com/pl/shops/teufel-pl
 2026-10-19,Top Secret,topsecret,,no cashback,False,
 2026-10-19,Trip.com,trip-com,2.75,%,False,https://letyshops.com/pl/shops/trip-com
-2026-10-19,Triverna,triverna,2.4,%,False,https://letyshops.com/pl/shops/triverna-pl
+2026-10-19,Triverna,triverna,,no cashback,False,
 2026-10-19,Twojemeble.pl,twojemeble.pl,2.25,%,False,https://letyshops.com/pl/shops/twojemeble-pl
 2026-10-19,Uber,uber,,no cashback,False,
 2026-10-19,Ubisoft,ubisoft,,not_found,False,
