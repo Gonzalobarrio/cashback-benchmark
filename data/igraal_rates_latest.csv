@@ -28,16 +28,16 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-10-24,ALAB Laboratoria,alab-laboratoria,6.0,%
 2026-10-24,Alibaba,alibaba.com,4.0,%
 2026-10-24,Alpine Pro,alpinepro,4.8,%
-2026-10-24,Amazon,amazon,4.0,%
+2026-10-24,Amazon,amazon,10.0,%
 2026-10-24,Audioteka,audioteka,2.5,%
 2026-10-24,AUTODOC,autodoc,7.0,%
 2026-10-24,AXA Partners,axa-partners,15.0,%
 2026-10-24,Banggood,banggood,10.0,%
-2026-10-24,Bank Pekao,bank-pekao,4.0,%
+2026-10-24,Bank Pekao,bank-pekao,10.0,%
 2026-10-24,Baseus,baseus,4.0,%
 2026-10-24,BasicLab,basiclab,2.0,%
-2026-10-24,BeDiet,bediet,4.0,%
-2026-10-24,BIG STAR,bigstar,4.0,%
+2026-10-24,BeDiet,bediet,10.0,%
+2026-10-24,BIG STAR,bigstar,10.0,%
 2026-10-24,Bimba Y Lola,bimbaylola,6.0,%
 2026-10-24,Bonprix,bonprix,4.0,%
 2026-10-24,Born2Be,born2be,3.0,%
@@ -45,9 +45,9 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-10-24,Brasty,brasty,2.0,%
 2026-10-24,Bricoman,bricoman,6.0,%
 2026-10-24,Bricomarche,bricomarche,3.5,%
-2026-10-24,Brooks,brooks,4.0,%
+2026-10-24,Brooks,brooks,10.0,%
 2026-10-24,Byrokko,byrokko,8.0,%
-2026-10-24,Canal Plus,canalplus,4.0,%
+2026-10-24,Canal Plus,canalplus,10.0,%
 2026-10-24,Carrefour,carrefour,2.0,%
 2026-10-24,Castorama,castorama,2.5,%
 2026-10-24,Ceneo,ceneo,1.0,%
@@ -59,14 +59,14 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-10-24,Crocs,crocs,2.0,%
 2026-10-24,Cropp,cropp,4.0,%
 2026-10-24,Cyfrowe.pl,cyfrowe.pl,2.0,%
-2026-10-24,Dedoles,dedoles,4.0,%
+2026-10-24,Dedoles,dedoles,10.0,%
 2026-10-24,DeLonghi,delonghi,3.0,%
 2026-10-24,Dermacol,dermacol,3.0,%
-2026-10-24,Desigual,desigual,,no cashback
+2026-10-24,Desigual,desigual,7.7,%
 2026-10-24,DHgate,dhgate,2.0,%
-2026-10-24,DHL,dhl,4.0,%
+2026-10-24,DHL,dhl,10.0,%
 2026-10-24,Diablo Chairs,diablochairs,4.0,%
-2026-10-24,Disney+,disneyplus,4.0,%
+2026-10-24,Disney+,disneyplus,10.0,%
 2026-10-24,Drogeria.pl,drogeria.pl,3.0,%
 2026-10-24,Dstreet,dstreet,9.0,%
 2026-10-24,Dyson,dyson,2.5,%
@@ -84,7 +84,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-10-24,ESET,eset,8.5,%
 2026-10-24,eSky,esky,2.0,%
 2026-10-24,Estro,estro,7.0,%
-2026-10-24,Eurofirany,eurofirany,4.0,%
+2026-10-24,Eurofirany,eurofirany,10.0,%
 2026-10-24,Euroflorist,euroflorist,10.0,%
 2026-10-24,Eveline,eveline,6.0,%
 2026-10-24,Eventim,eventim,1.0,%
@@ -117,7 +117,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-10-24,iBOOD,ibood,1.0,%
 2026-10-24,iDream,idream,3.0,%
 2026-10-24,iHerb,iherb,3.0,%
-2026-10-24,IKEA,ikea,10.0,%
+2026-10-24,IKEA,ikea,4.0,%
 2026-10-24,Intymna,intymna,3.0,%
 2026-10-24,iParts,iparts,1.8,%
 2026-10-24,JD Sports,jdsports,2.5,%
@@ -163,19 +163,19 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-10-24,MyHeritage DNA,myheritagedna,4.0,%
 2026-10-24,MyProtein,myprotein,10.0,%
 2026-10-24,NAOKO,naoko,5.0,%
-2026-10-24,Neness,neness,4.0,%
+2026-10-24,Neness,neness,10.0,%
 2026-10-24,NEONAIL,neonail,7.0,%
 2026-10-24,Neonet,neonet,0.75,%
 2026-10-24,New Balance,nbsklep,3.0,%
-2026-10-24,Nike,nike,10.0,%
+2026-10-24,Nike,nike,4.0,%
 2026-10-24,NinjaShark,ninja,4.0,%
 2026-10-24,NordVPN,nordvpn,25.0,%
 2026-10-24,norton,norton,4.0,%
 2026-10-24,Notino,notino,3.5,%
-2026-10-24,Novakid,novakid,4.0,%
+2026-10-24,Novakid,novakid,10.0,%
 2026-10-24,OleOle!,oleole,1.0,%
 2026-10-24,Olimp Store,olimp-store,2.5,%
-2026-10-24,Orange,orange,10.0,%
+2026-10-24,Orange,orange,4.0,%
 2026-10-24,Pan Materac,panmaterac,4.0,%
 2026-10-24,Pandora,pandora,4.0,%
 2026-10-24,Parfumdreams,parfumdreams,12.0,%
@@ -188,18 +188,18 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-10-24,Pitbull,pitbull,5.0,%
 2026-10-24,Play,play,4.0,%
 2026-10-24,Pleso,plesotherapy,4.0,%
-2026-10-24,Plus,plus,4.0,%
-2026-10-24,Preply,preply,4.0,%
+2026-10-24,Plus,plus,10.0,%
+2026-10-24,Preply,preply,10.0,%
 2026-10-24,Primodo,primodo,5.0,%
 2026-10-24,PRM,prm,6.0,%
 2026-10-24,Proton VPN,protonvpn,70.0,%
 2026-10-24,Przyjaciele Kawy,przyjacielekawy,4.0,%
 2026-10-24,Puma,puma,3.0,%
 2026-10-24,PWN,pwn,2.7,%
-2026-10-24,Pyszne.pl,pyszne,2.0,%
+2026-10-24,Pyszne.pl,pyszne,10.0,%
 2026-10-24,Radisson Hotels,radissonhotels,2.0,%
 2026-10-24,Recman,recman,5.0,%
-2026-10-24,RedBull Mobile,redbullmobile,4.0,%
+2026-10-24,RedBull Mobile,redbullmobile,10.0,%
 2026-10-24,Regatta,regatta,3.0,%
 2026-10-24,Renee,renee,3.0,%
 2026-10-24,Reporter Young,reporteryoung,3.5,%
@@ -211,11 +211,11 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-10-24,Sferis,sferis,1.6,%
 2026-10-24,Sinsay,sinsay,5.0,%
 2026-10-24,Skechers,skechers,8.5,%
-2026-10-24,SkyShowtime,skyshowtime,4.0,%
+2026-10-24,SkyShowtime,skyshowtime,10.0,%
 2026-10-24,Smyk,smyk,1.26,%
 2026-10-24,Sony.pl,sony,4.0,%
 2026-10-24,SportStyleStory,sportstylestory,6.0,%
-2026-10-24,Stradivarius,stradivarius,4.0,%
+2026-10-24,Stradivarius,stradivarius,10.0,%
 2026-10-24,Streetstyle24,streetstyle24,4.5,%
 2026-10-24,Stylevana,stylevana,3.0,%
 2026-10-24,Sun & Snow,sun-and-snow,4.5,%
@@ -225,13 +225,13 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-10-24,Tanie-opony.pl,tanie-opony.pl,1.8,%
 2026-10-24,Tefal,tefal,5.0,%
 2026-10-24,Tescoma,tescoma,3.5,%
-2026-10-24,TestDNA,testdna,4.0,%
+2026-10-24,TestDNA,testdna,10.0,%
 2026-10-24,Teufel,teufel,4.0,%
 2026-10-24,Top Secret,topsecret,4.2,%
 2026-10-24,Trip.com,trip-com,3.85,%
 2026-10-24,Triverna,triverna,2.0,%
 2026-10-24,Twojemeble.pl,twojemeble.pl,2.7,%
-2026-10-24,Uber,uber,10.0,%
+2026-10-24,Uber,uber,4.0,%
 2026-10-24,Ubisoft,ubisoft,0.5,%
 2026-10-24,Ucando,ucando,4.0,%
 2026-10-24,Udemy,udemy,5.0,%
@@ -246,7 +246,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-10-24,VidaXL,vidaxl,2.5,%
 2026-10-24,Vision Express,visionexpress,6.3,%
 2026-10-24,Vobis,vobis,1.0,%
-2026-10-24,Wolt,wolt,10.0,%
+2026-10-24,Wolt,wolt,4.0,%
 2026-10-24,Wrangler,wrangler,10.0,%
 2026-10-24,x-kom,x-kom,4.0,%
 2026-10-24,Xiaomi,mi,2.0,%
@@ -254,7 +254,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-10-24,Yanosik,yanosik,3.0,%
 2026-10-24,Yope,yope,7.0,%
 2026-10-24,Yves Rocher,yves-rocher,5.0,%
-2026-10-24,Zalando,zalando.pl,4.0,%
+2026-10-24,Zalando,zalando.pl,10.0,%
 2026-10-24,Zelmer,zelmer,3.3,%
 2026-10-24,Znak,znak,3.0,%
 2026-10-24,ZooFaster,krakvet,2.0,%
