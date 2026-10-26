@@ -10,7 +10,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-10-26,SHEIN,shein,10.0,%
 2026-10-26,RTV Euro AGD,rtveuro,1.5,%
 2026-10-26,Lidl,lidl,1.0,%
-2026-10-26,Leroy Merlin,leroymerlin,2.5,%
+2026-10-26,Leroy Merlin,leroymerlin,5.0,%
 2026-10-26,CCC,ccc,5.0,%
 2026-10-26,Hebe,hebe,5.0,%
 2026-10-26,OBI,obi,2.5,%
@@ -18,7 +18,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-10-26,Sephora,sephora,7.5,%
 2026-10-26,Douglas,douglas,8.0,%
 2026-10-26,home&you,home-you,3.0,%
-2026-10-26,Abra,abra,4.2,%
+2026-10-26,Abra,abra,2.0,%
 2026-10-26,Acer,acer,4.0,%
 2026-10-26,Aclari,aclari,1.8,%
 2026-10-26,Aelia,aelia,5.0,%
@@ -28,15 +28,15 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-10-26,ALAB Laboratoria,alab-laboratoria,6.0,%
 2026-10-26,Alibaba,alibaba.com,4.0,%
 2026-10-26,Alpine Pro,alpinepro,4.8,%
-2026-10-26,Amazon,amazon,10.0,%
+2026-10-26,Amazon,amazon,5.0,%
 2026-10-26,Audioteka,audioteka,2.5,%
 2026-10-26,AUTODOC,autodoc,7.0,%
 2026-10-26,AXA Partners,axa-partners,15.0,%
-2026-10-26,Banggood,banggood,10.0,%
+2026-10-26,Banggood,banggood,6.5,%
 2026-10-26,Bank Pekao,bank-pekao,5.0,%
 2026-10-26,Baseus,baseus,4.0,%
 2026-10-26,BasicLab,basiclab,2.0,%
-2026-10-26,BeDiet,bediet,10.0,%
+2026-10-26,BeDiet,bediet,5.0,%
 2026-10-26,BIG STAR,bigstar,5.0,%
 2026-10-26,Bimba Y Lola,bimbaylola,6.0,%
 2026-10-26,Bonprix,bonprix,4.0,%
@@ -47,7 +47,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-10-26,Bricomarche,bricomarche,3.5,%
 2026-10-26,Brooks,brooks,5.0,%
 2026-10-26,Byrokko,byrokko,8.0,%
-2026-10-26,Canal Plus,canalplus,5.0,%
+2026-10-26,Canal Plus,canalplus,10.0,%
 2026-10-26,Carrefour,carrefour,2.0,%
 2026-10-26,Castorama,castorama,2.5,%
 2026-10-26,Ceneo,ceneo,1.0,%
@@ -84,7 +84,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-10-26,ESET,eset,8.5,%
 2026-10-26,eSky,esky,2.0,%
 2026-10-26,Estro,estro,7.0,%
-2026-10-26,Eurofirany,eurofirany,10.0,%
+2026-10-26,Eurofirany,eurofirany,5.0,%
 2026-10-26,Euroflorist,euroflorist,10.0,%
 2026-10-26,Eveline,eveline,6.0,%
 2026-10-26,Eventim,eventim,1.0,%
@@ -163,11 +163,11 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-10-26,MyHeritage DNA,myheritagedna,4.0,%
 2026-10-26,MyProtein,myprotein,10.0,%
 2026-10-26,NAOKO,naoko,5.0,%
-2026-10-26,Neness,neness,10.0,%
+2026-10-26,Neness,neness,5.0,%
 2026-10-26,NEONAIL,neonail,7.0,%
 2026-10-26,Neonet,neonet,0.75,%
 2026-10-26,New Balance,nbsklep,3.0,%
-2026-10-26,Nike,nike,10.0,%
+2026-10-26,Nike,nike,5.0,%
 2026-10-26,NinjaShark,ninja,4.0,%
 2026-10-26,NordVPN,nordvpn,25.0,%
 2026-10-26,norton,norton,5.0,%
@@ -199,10 +199,10 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-10-26,Pyszne.pl,pyszne,2.0,%
 2026-10-26,Radisson Hotels,radissonhotels,2.0,%
 2026-10-26,Recman,recman,5.0,%
-2026-10-26,RedBull Mobile,redbullmobile,10.0,%
+2026-10-26,RedBull Mobile,redbullmobile,5.0,%
 2026-10-26,Regatta,regatta,3.0,%
 2026-10-26,Renee,renee,3.0,%
-2026-10-26,Reporter Young,reporteryoung,3.5,%
+2026-10-26,Reporter Young,reporteryoung,1.5,%
 2026-10-26,RestaurantWeek,restaurant-week,3.5,%
 2026-10-26,Rocketjobs.pl,rocketjobs,7.5,%
 2026-10-26,Ryobi,ryobi,4.0,%
@@ -215,24 +215,24 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-10-26,Smyk,smyk,1.26,%
 2026-10-26,Sony.pl,sony,5.0,%
 2026-10-26,SportStyleStory,sportstylestory,6.0,%
-2026-10-26,Stradivarius,stradivarius,10.0,%
+2026-10-26,Stradivarius,stradivarius,5.0,%
 2026-10-26,Streetstyle24,streetstyle24,4.5,%
 2026-10-26,Stylevana,stylevana,3.0,%
 2026-10-26,Sun & Snow,sun-and-snow,4.5,%
-2026-10-26,Surfshark,surfshark,10.0,%
+2026-10-26,Surfshark,surfshark,5.0,%
 2026-10-26,Świat supli,swiatsupli,2.5,%
 2026-10-26,Tagomago,tagomago,3.0,%
 2026-10-26,Tanie-opony.pl,tanie-opony.pl,1.8,%
 2026-10-26,Tefal,tefal,5.0,%
 2026-10-26,Tescoma,tescoma,3.5,%
-2026-10-26,TestDNA,testdna,10.0,%
+2026-10-26,TestDNA,testdna,5.0,%
 2026-10-26,Teufel,teufel,4.0,%
 2026-10-26,Top Secret,topsecret,4.2,%
 2026-10-26,Trip.com,trip-com,3.85,%
 2026-10-26,Triverna,triverna,2.0,%
 2026-10-26,Twojemeble.pl,twojemeble.pl,2.7,%
 2026-10-26,Uber,uber,5.0,%
-2026-10-26,Ubisoft,ubisoft,0.5,%
+2026-10-26,Ubisoft,ubisoft,0.2,%
 2026-10-26,Ucando,ucando,4.0,%
 2026-10-26,Udemy,udemy,5.0,%
 2026-10-26,Under Armour,under-armour,6.0,%
