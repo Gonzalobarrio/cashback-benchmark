@@ -33,10 +33,10 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-11-01,AUTODOC,autodoc,7.0,%
 2026-11-01,AXA Partners,axa-partners,15.0,%
 2026-11-01,Banggood,banggood,6.5,%
-2026-11-01,Bank Pekao,bank-pekao,1.5,%
+2026-11-01,Bank Pekao,bank-pekao,8.0,%
 2026-11-01,Baseus,baseus,4.0,%
 2026-11-01,BasicLab,basiclab,2.0,%
-2026-11-01,BeDiet,bediet,1.5,%
+2026-11-01,BeDiet,bediet,8.0,%
 2026-11-01,BIG STAR,bigstar,1.5,%
 2026-11-01,Bimba Y Lola,bimbaylola,6.0,%
 2026-11-01,Bonprix,bonprix,4.0,%
@@ -45,9 +45,9 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-11-01,Brasty,brasty,2.0,%
 2026-11-01,Bricoman,bricoman,6.0,%
 2026-11-01,Bricomarche,bricomarche,3.5,%
-2026-11-01,Brooks,brooks,1.5,%
+2026-11-01,Brooks,brooks,8.0,%
 2026-11-01,Byrokko,byrokko,8.0,%
-2026-11-01,Canal Plus,canalplus,1.5,%
+2026-11-01,Canal Plus,canalplus,8.0,%
 2026-11-01,Carrefour,carrefour,2.0,%
 2026-11-01,Castorama,castorama,2.5,%
 2026-11-01,Ceneo,ceneo,1.0,%
@@ -64,9 +64,9 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-11-01,Dermacol,dermacol,3.0,%
 2026-11-01,Desigual,desigual,7.7,%
 2026-11-01,DHgate,dhgate,2.0,%
-2026-11-01,DHL,dhl,1.5,%
+2026-11-01,DHL,dhl,8.0,%
 2026-11-01,Diablo Chairs,diablochairs,4.0,%
-2026-11-01,Disney+,disneyplus,1.5,%
+2026-11-01,Disney+,disneyplus,8.0,%
 2026-11-01,Drogeria.pl,drogeria.pl,3.0,%
 2026-11-01,Dstreet,dstreet,9.0,%
 2026-11-01,Dyson,dyson,2.5,%
@@ -84,7 +84,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-11-01,ESET,eset,8.5,%
 2026-11-01,eSky,esky,2.0,%
 2026-11-01,Estro,estro,7.0,%
-2026-11-01,Eurofirany,eurofirany,1.5,%
+2026-11-01,Eurofirany,eurofirany,8.0,%
 2026-11-01,Euroflorist,euroflorist,10.0,%
 2026-11-01,Eveline,eveline,6.0,%
 2026-11-01,Eventim,eventim,1.0,%
@@ -123,20 +123,20 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-11-01,JD Sports,jdsports,2.5,%
 2026-11-01,Joom,joom,4.8,%
 2026-11-01,Josera,josera,5.5,%
-2026-11-01,Justjoinit,justjoinit,1.5,%
+2026-11-01,Justjoinit,justjoinit,8.0,%
 2026-11-01,Katalog Marzeń,katalog-marzen,2.8,%
 2026-11-01,Kenwood,kenwood,6.0,%
 2026-11-01,KFC,kfc,3.0,%
 2026-11-01,Kinguin,kinguin,10.0,%
 2026-11-01,Kiwi,kiwi,3.0,%
 2026-11-01,Komputronik,komputronik,1.5,%
-2026-11-01,Konesso,konesso,1.5,%
+2026-11-01,Konesso,konesso,8.0,%
 2026-11-01,Kubenz,kubenz,2.76,%
 2026-11-01,Kubota,kubota,4.5,%
 2026-11-01,KurJerzy.pl,kurjerzy.pl,3.0,%
 2026-11-01,Lacoste,lacoste,8.0,%
 2026-11-01,Lampy.pl,lampy,5.0,%
-2026-11-01,Legimi,legimi,1.5,%
+2026-11-01,Legimi,legimi,7.0,%
 2026-11-01,LEGO,lego,3.0,%
 2026-11-01,Leo Express,leoexpress,4.0,%
 2026-11-01,Levi's,levis,5.0,%
@@ -157,25 +157,25 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-11-01,Michael Kors,michaelkors,3.0,%
 2026-11-01,Modivo,modivo.pl,3.0,%
 2026-11-01,ModnaKiecka.pl,modnakiecka.pl,4.0,%
-2026-11-01,Morele.net,morele,1.5,%
+2026-11-01,Morele.net,morele,8.0,%
 2026-11-01,Mountain Warehouse,mountainwarehouse,3.0,%
 2026-11-01,Mova,mova,4.2,%
 2026-11-01,MyHeritage DNA,myheritagedna,4.0,%
 2026-11-01,MyProtein,myprotein,10.0,%
 2026-11-01,NAOKO,naoko,5.0,%
-2026-11-01,Neness,neness,1.5,%
+2026-11-01,Neness,neness,8.0,%
 2026-11-01,NEONAIL,neonail,7.0,%
 2026-11-01,Neonet,neonet,0.75,%
 2026-11-01,New Balance,nbsklep,3.0,%
-2026-11-01,Nike,nike,1.5,%
+2026-11-01,Nike,nike,8.0,%
 2026-11-01,NinjaShark,ninja,4.0,%
 2026-11-01,NordVPN,nordvpn,25.0,%
 2026-11-01,norton,norton,8.0,%
 2026-11-01,Notino,notino,3.5,%
-2026-11-01,Novakid,novakid,1.5,%
+2026-11-01,Novakid,novakid,8.0,%
 2026-11-01,OleOle!,oleole,1.0,%
 2026-11-01,Olimp Store,olimp-store,2.5,%
-2026-11-01,Orange,orange,1.5,%
+2026-11-01,Orange,orange,8.0,%
 2026-11-01,Pan Materac,panmaterac,4.0,%
 2026-11-01,Pandora,pandora,4.0,%
 2026-11-01,Parfumdreams,parfumdreams,12.0,%
@@ -187,9 +187,9 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-11-01,Philips Hue,philips-hue,7.0,%
 2026-11-01,Pitbull,pitbull,5.0,%
 2026-11-01,Play,play,8.0,%
-2026-11-01,Pleso,plesotherapy,1.5,%
-2026-11-01,Plus,plus,1.5,%
-2026-11-01,Preply,preply,1.5,%
+2026-11-01,Pleso,plesotherapy,8.0,%
+2026-11-01,Plus,plus,8.0,%
+2026-11-01,Preply,preply,8.0,%
 2026-11-01,Primodo,primodo,5.0,%
 2026-11-01,PRM,prm,6.0,%
 2026-11-01,Proton VPN,protonvpn,70.0,%
@@ -199,7 +199,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-11-01,Pyszne.pl,pyszne,2.0,%
 2026-11-01,Radisson Hotels,radissonhotels,2.0,%
 2026-11-01,Recman,recman,5.0,%
-2026-11-01,RedBull Mobile,redbullmobile,1.5,%
+2026-11-01,RedBull Mobile,redbullmobile,8.0,%
 2026-11-01,Regatta,regatta,3.0,%
 2026-11-01,Renee,renee,3.0,%
 2026-11-01,Reporter Young,reporteryoung,1.5,%
@@ -213,30 +213,30 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-11-01,Skechers,skechers,8.5,%
 2026-11-01,SkyShowtime,skyshowtime,8.0,%
 2026-11-01,Smyk,smyk,1.26,%
-2026-11-01,Sony.pl,sony,4.0,%
+2026-11-01,Sony.pl,sony,1.5,%
 2026-11-01,SportStyleStory,sportstylestory,6.0,%
-2026-11-01,Stradivarius,stradivarius,1.5,%
+2026-11-01,Stradivarius,stradivarius,8.0,%
 2026-11-01,Streetstyle24,streetstyle24,4.5,%
 2026-11-01,Stylevana,stylevana,3.0,%
 2026-11-01,Sun & Snow,sun-and-snow,4.5,%
-2026-11-01,Surfshark,surfshark,1.5,%
+2026-11-01,Surfshark,surfshark,8.0,%
 2026-11-01,Świat supli,swiatsupli,2.5,%
 2026-11-01,Tagomago,tagomago,3.0,%
 2026-11-01,Tanie-opony.pl,tanie-opony.pl,1.8,%
 2026-11-01,Tefal,tefal,5.0,%
 2026-11-01,Tescoma,tescoma,3.5,%
-2026-11-01,TestDNA,testdna,1.5,%
+2026-11-01,TestDNA,testdna,8.0,%
 2026-11-01,Teufel,teufel,4.0,%
 2026-11-01,Top Secret,topsecret,4.2,%
 2026-11-01,Trip.com,trip-com,3.85,%
 2026-11-01,Triverna,triverna,2.0,%
 2026-11-01,Twojemeble.pl,twojemeble.pl,2.7,%
-2026-11-01,Uber,uber,1.5,%
+2026-11-01,Uber,uber,8.0,%
 2026-11-01,Ubisoft,ubisoft,0.2,%
 2026-11-01,Ucando,ucando,4.0,%
 2026-11-01,Udemy,udemy,5.0,%
 2026-11-01,Under Armour,under-armour,6.0,%
-2026-11-01,Unisono,unisono,1.5,%
+2026-11-01,Unisono,unisono,8.0,%
 2026-11-01,uPacjenta,upacjenta,3.36,%
 2026-11-01,Van Graaf,vangraaf,7.0,%
 2026-11-01,Vans,vans,4.0,%
@@ -246,9 +246,9 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-11-01,VidaXL,vidaxl,2.5,%
 2026-11-01,Vision Express,visionexpress,6.3,%
 2026-11-01,Vobis,vobis,1.0,%
-2026-11-01,Wolt,wolt,1.5,%
+2026-11-01,Wolt,wolt,8.0,%
 2026-11-01,Wrangler,wrangler,10.0,%
-2026-11-01,x-kom,x-kom,1.5,%
+2026-11-01,x-kom,x-kom,8.0,%
 2026-11-01,Xiaomi,mi,2.0,%
 2026-11-01,xlmoto,xlmoto,4.0,%
 2026-11-01,Yanosik,yanosik,3.0,%
