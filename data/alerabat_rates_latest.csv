@@ -16,7 +16,7 @@ date,retailer,igraal_slug,alerabat_rate,alerabat_rate_type,alerabat_url
 2026-11-05,OBI,obi,2.5,up_to_%,https://alerabat.com/kody-promocyjne/obi
 2026-11-05,Adidas,adidas,3.0,up_to_%,https://alerabat.com/kod-promocyjny/adidas-pl
 2026-11-05,Sephora,sephora,3.0,up_to_%,https://alerabat.com/kod-promocyjny/sephora
-2026-11-05,Douglas,douglas,,not_found,
+2026-11-05,Douglas,douglas,5.0,up_to_%,https://alerabat.com/kod-promocyjny/douglas-pl
 2026-11-05,home&you,home-you,,not_found,
 2026-11-05,Abra,abra,,not_found,
 2026-11-05,Acer,acer,2.5,up_to_%,https://alerabat.com/kody-promocyjne/acer
@@ -252,7 +252,7 @@ date,retailer,igraal_slug,alerabat_rate,alerabat_rate_type,alerabat_url
 2026-11-05,Xiaomi,mi,1.0,up_to_%,https://alerabat.com/kody-promocyjne/xiaomi
 2026-11-05,xlmoto,xlmoto,2.5,up_to_%,https://alerabat.com/kody-promocyjne/xl-moto
 2026-11-05,Yanosik,yanosik,2.0,up_to_%,https://alerabat.com/kody-promocyjne/yanosik
-2026-11-05,Yope,yope,,no cashback,https://alerabat.com/kody-promocyjne/yope
+2026-11-05,Yope,yope,5.0,up_to_%,https://alerabat.com/kody-promocyjne/yope
 2026-11-05,Yves Rocher,yves-rocher,2.5,up_to_%,https://alerabat.com/kod-promocyjny/yves-rocher
 2026-11-05,Zalando,zalando.pl,4.0,up_to_%,https://alerabat.com/kod-promocyjny/zalando-pl
 2026-11-05,Zelmer,zelmer,3.0,up_to_%,https://alerabat.com/kody-promocyjne/zelmer
