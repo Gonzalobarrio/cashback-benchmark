@@ -36,7 +36,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-11-09,Bank Pekao,bank-pekao,24.0,%
 2026-11-09,Baseus,baseus,4.0,%
 2026-11-09,BasicLab,basiclab,2.0,%
-2026-11-09,BeDiet,bediet,2.0,%
+2026-11-09,BeDiet,bediet,24.0,%
 2026-11-09,BIG STAR,bigstar,24.0,%
 2026-11-09,Bimba Y Lola,bimbaylola,6.0,%
 2026-11-09,Bonprix,bonprix,4.0,%
@@ -45,7 +45,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-11-09,Brasty,brasty,2.0,%
 2026-11-09,Bricoman,bricoman,6.0,%
 2026-11-09,Bricomarche,bricomarche,3.5,%
-2026-11-09,Brooks,brooks,2.0,%
+2026-11-09,Brooks,brooks,24.0,%
 2026-11-09,Byrokko,byrokko,8.0,%
 2026-11-09,Canal Plus,canalplus,24.0,%
 2026-11-09,Carrefour,carrefour,2.0,%
@@ -89,7 +89,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-11-09,Eveline,eveline,6.0,%
 2026-11-09,Eventim,eventim,1.0,%
 2026-11-09,eZebra,ezebra,4.0,%
-2026-11-09,Feniko,feniko,2.0,%
+2026-11-09,Feniko,feniko,24.0,%
 2026-11-09,Fera,fera,2.0,%
 2026-11-09,Fielmann,fielmann,6.0,%
 2026-11-09,FlexiSpot,flexispot,4.0,%
@@ -117,7 +117,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-11-09,iBOOD,ibood,1.0,%
 2026-11-09,iDream,idream,3.0,%
 2026-11-09,iHerb,iherb,3.0,%
-2026-11-09,IKEA,ikea,2.0,%
+2026-11-09,IKEA,ikea,24.0,%
 2026-11-09,Intymna,intymna,3.0,%
 2026-11-09,iParts,iparts,1.8,%
 2026-11-09,JD Sports,jdsports,2.5,%
@@ -130,7 +130,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-11-09,Kinguin,kinguin,10.0,%
 2026-11-09,Kiwi,kiwi,3.0,%
 2026-11-09,Komputronik,komputronik,1.5,%
-2026-11-09,Konesso,konesso,24.0,%
+2026-11-09,Konesso,konesso,2.0,%
 2026-11-09,Kubenz,kubenz,2.76,%
 2026-11-09,Kubota,kubota,4.5,%
 2026-11-09,KurJerzy.pl,kurjerzy.pl,3.0,%
@@ -157,7 +157,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-11-09,Michael Kors,michaelkors,3.0,%
 2026-11-09,Modivo,modivo.pl,3.0,%
 2026-11-09,ModnaKiecka.pl,modnakiecka.pl,4.0,%
-2026-11-09,Morele.net,morele,2.0,%
+2026-11-09,Morele.net,morele,24.0,%
 2026-11-09,Mountain Warehouse,mountainwarehouse,3.0,%
 2026-11-09,Mova,mova,4.2,%
 2026-11-09,MyHeritage DNA,myheritagedna,4.0,%
@@ -175,7 +175,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-11-09,Novakid,novakid,24.0,%
 2026-11-09,OleOle!,oleole,1.0,%
 2026-11-09,Olimp Store,olimp-store,2.5,%
-2026-11-09,Orange,orange,24.0,%
+2026-11-09,Orange,orange,2.0,%
 2026-11-09,Pan Materac,panmaterac,4.0,%
 2026-11-09,Pandora,pandora,4.0,%
 2026-11-09,Parfumdreams,parfumdreams,12.0,%
@@ -187,9 +187,9 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-11-09,Philips Hue,philips-hue,7.0,%
 2026-11-09,Pitbull,pitbull,5.0,%
 2026-11-09,Play,play,24.0,%
-2026-11-09,Pleso,plesotherapy,2.0,%
-2026-11-09,Plus,plus,2.0,%
-2026-11-09,Preply,preply,2.0,%
+2026-11-09,Pleso,plesotherapy,24.0,%
+2026-11-09,Plus,plus,24.0,%
+2026-11-09,Preply,preply,24.0,%
 2026-11-09,Primodo,primodo,5.0,%
 2026-11-09,PRM,prm,6.0,%
 2026-11-09,Proton VPN,protonvpn,70.0,%
@@ -202,7 +202,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-11-09,RedBull Mobile,redbullmobile,24.0,%
 2026-11-09,Regatta,regatta,3.0,%
 2026-11-09,Renee,renee,3.0,%
-2026-11-09,Reporter Young,reporteryoung,1.5,%
+2026-11-09,Reporter Young,reporteryoung,,no cashback
 2026-11-09,RestaurantWeek,restaurant-week,3.5,%
 2026-11-09,Rocketjobs.pl,rocketjobs,7.5,%
 2026-11-09,Ryobi,ryobi,4.0,%
@@ -215,7 +215,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-11-09,Smyk,smyk,1.26,%
 2026-11-09,Sony.pl,sony,5.0,%
 2026-11-09,SportStyleStory,sportstylestory,6.0,%
-2026-11-09,Stradivarius,stradivarius,2.0,%
+2026-11-09,Stradivarius,stradivarius,24.0,%
 2026-11-09,Streetstyle24,streetstyle24,4.5,%
 2026-11-09,Stylevana,stylevana,3.0,%
 2026-11-09,Sun & Snow,sun-and-snow,4.5,%
@@ -236,7 +236,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-11-09,Ucando,ucando,4.0,%
 2026-11-09,Udemy,udemy,5.0,%
 2026-11-09,Under Armour,under-armour,6.0,%
-2026-11-09,Unisono,unisono,2.0,%
+2026-11-09,Unisono,unisono,24.0,%
 2026-11-09,uPacjenta,upacjenta,3.36,%
 2026-11-09,Van Graaf,vangraaf,7.0,%
 2026-11-09,Vans,vans,4.0,%
