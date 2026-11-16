@@ -146,6 +146,7 @@ date,retailer,igraal_slug,letyshops_rate,letyshops_rate_type,letyshops_boosted,l
 2026-11-16,Lookfantastic,lookfantastic,5.0,%,False,https://letyshops.com/pl/shops/lookfantastic-pl
 2026-11-16,LOT,lot,,not_found,False,
 2026-11-16,Lufthansa,lufthansa,1.25,%,False,https://letyshops.com/pl/shops/lufthansa-pl
+2026-11-16,LycaMobile,lyca-mobile,,no cashback,False,
 2026-11-16,Mamyito,mamyito,4.0,%,False,https://letyshops.com/pl/shops/mamyito-pl
 2026-11-16,Mango Outlet,mango-outlet,,not_found,False,
 2026-11-16,Marilyn,marilyn,,not_found,False,
@@ -271,7 +272,6 @@ date,retailer,igraal_slug,letyshops_rate,letyshops_rate_type,letyshops_boosted,l
 2026-11-16,Kaufland,kaufland,,not_found,False,
 2026-11-16,Kolba,kolba,,no cashback,False,
 2026-11-16,KROSS,kross,,not_found,False,
-2026-11-16,LycaMobile,lyca-mobile,,no cashback,False,
 2026-11-16,Mango,mango,,no cashback,False,
 2026-11-16,Nintendo eShop,nintendo-eshop,,not_found,False,
 2026-11-16,OnePlus,oneplus,,no cashback,False,

@@ -44,7 +44,7 @@ date,retailer,igraal_slug,picodi_rate,picodi_rate_type,picodi_url
 2026-11-16,Brainmarket,brainmarket,,not_found,
 2026-11-16,Brasty,brasty,1.8,up_to_%,https://www.picodi.com/pl/brasty/offers
 2026-11-16,Bricoman,bricoman,,not_found,
-2026-11-16,Bricomarche,bricomarche,,not_found,
+2026-11-16,Bricomarche,bricomarche,2.5,%,https://www.picodi.com/pl/bricomarche/offers
 2026-11-16,Brooks,brooks,,not_found,
 2026-11-16,Byrokko,byrokko,,not_found,
 2026-11-16,Canal Plus,canalplus,,not_found,
@@ -146,6 +146,7 @@ date,retailer,igraal_slug,picodi_rate,picodi_rate_type,picodi_url
 2026-11-16,Lookfantastic,lookfantastic,,not_found,
 2026-11-16,LOT,lot,,not_found,
 2026-11-16,Lufthansa,lufthansa,,not_found,
+2026-11-16,LycaMobile,lyca-mobile,,not_found,
 2026-11-16,Mamyito,mamyito,,not_found,
 2026-11-16,Mango Outlet,mango-outlet,,not_found,
 2026-11-16,Marilyn,marilyn,,not_found,
@@ -271,7 +272,6 @@ date,retailer,igraal_slug,picodi_rate,picodi_rate_type,picodi_url
 2026-11-16,Kaufland,kaufland,,not_found,
 2026-11-16,Kolba,kolba,,not_found,
 2026-11-16,KROSS,kross,,not_found,
-2026-11-16,LycaMobile,lyca-mobile,,not_found,
 2026-11-16,Mango,mango,,not_found,
 2026-11-16,Nintendo eShop,nintendo-eshop,,not_found,
 2026-11-16,OnePlus,oneplus,,not_found,
