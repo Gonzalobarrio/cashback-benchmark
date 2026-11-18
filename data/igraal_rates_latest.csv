@@ -28,7 +28,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-11-18,ALAB Laboratoria,alab-laboratoria,6.0,%
 2026-11-18,Alibaba,alibaba.com,4.0,%
 2026-11-18,Alpine Pro,alpinepro,4.8,%
-2026-11-18,Amazon,amazon,1.0,%
+2026-11-18,Amazon,amazon,10.0,%
 2026-11-18,Audioteka,audioteka,2.5,%
 2026-11-18,AUTODOC,autodoc,7.0,%
 2026-11-18,AXA Partners,axa-partners,15.0,%
@@ -45,9 +45,9 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-11-18,Brasty,brasty,2.0,%
 2026-11-18,Bricoman,bricoman,6.0,%
 2026-11-18,Bricomarche,bricomarche,3.5,%
-2026-11-18,Brooks,brooks,1.0,%
+2026-11-18,Brooks,brooks,10.0,%
 2026-11-18,Byrokko,byrokko,8.0,%
-2026-11-18,Canal Plus,canalplus,10.0,%
+2026-11-18,Canal Plus,canalplus,1.0,%
 2026-11-18,Carrefour,carrefour,2.0,%
 2026-11-18,Castorama,castorama,2.5,%
 2026-11-18,Ceneo,ceneo,1.0,%
@@ -64,7 +64,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-11-18,Dermacol,dermacol,3.0,%
 2026-11-18,Desigual,desigual,7.7,%
 2026-11-18,DHgate,dhgate,2.0,%
-2026-11-18,DHL,dhl,10.0,%
+2026-11-18,DHL,dhl,1.0,%
 2026-11-18,Diablo Chairs,diablochairs,4.0,%
 2026-11-18,Disney+,disneyplus,10.0,%
 2026-11-18,Drogeria.pl,drogeria.pl,3.0,%
@@ -75,7 +75,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-11-18,eBilet,ebilet,0.5,%
 2026-11-18,Egmont,egmont,3.6,%
 2026-11-18,Electrolux,electrolux,2.0,%
-2026-11-18,Eltrox,eltrox,1.0,%
+2026-11-18,Eltrox,eltrox,10.0,%
 2026-11-18,EMP,emp,7.0,%
 2026-11-18,Empik Foto,empikfoto,10.0,%
 2026-11-18,Endo,endo,9.0,%
@@ -84,12 +84,12 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-11-18,ESET,eset,8.5,%
 2026-11-18,eSky,esky,2.0,%
 2026-11-18,Estro,estro,7.0,%
-2026-11-18,Eurofirany,eurofirany,1.0,%
+2026-11-18,Eurofirany,eurofirany,10.0,%
 2026-11-18,Euroflorist,euroflorist,10.0,%
 2026-11-18,Eveline,eveline,6.0,%
 2026-11-18,Eventim,eventim,1.0,%
 2026-11-18,eZebra,ezebra,4.0,%
-2026-11-18,Feniko,feniko,1.0,%
+2026-11-18,Feniko,feniko,10.0,%
 2026-11-18,Fera,fera,2.0,%
 2026-11-18,Fielmann,fielmann,6.0,%
 2026-11-18,FlexiSpot,flexispot,4.0,%
@@ -168,7 +168,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-11-18,NEONAIL,neonail,7.0,%
 2026-11-18,Neonet,neonet,0.75,%
 2026-11-18,New Balance,nbsklep,3.0,%
-2026-11-18,Nike,nike,10.0,%
+2026-11-18,Nike,nike,1.0,%
 2026-11-18,NinjaShark,ninja,8.0,%
 2026-11-18,NordVPN,nordvpn,,%
 2026-11-18,norton,norton,10.0,%
@@ -189,7 +189,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-11-18,Pitbull,pitbull,5.0,%
 2026-11-18,Play,play,10.0,%
 2026-11-18,Pleso,plesotherapy,10.0,%
-2026-11-18,Plus,plus,1.0,%
+2026-11-18,Plus,plus,10.0,%
 2026-11-18,Preply,preply,1.0,%
 2026-11-18,Primodo,primodo,5.0,%
 2026-11-18,PRM,prm,6.0,%
@@ -200,7 +200,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-11-18,Pyszne.pl,pyszne,2.0,%
 2026-11-18,Radisson Hotels,radissonhotels,2.0,%
 2026-11-18,Recman,recman,5.0,%
-2026-11-18,RedBull Mobile,redbullmobile,10.0,%
+2026-11-18,RedBull Mobile,redbullmobile,1.0,%
 2026-11-18,Regatta,regatta,3.0,%
 2026-11-18,Renee,renee,3.0,%
 2026-11-18,Reporter Young,reporteryoung,1.5,%
@@ -212,7 +212,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-11-18,Sferis,sferis,1.6,%
 2026-11-18,Sinsay,sinsay,5.0,%
 2026-11-18,Skechers,skechers,8.5,%
-2026-11-18,SkyShowtime,skyshowtime,1.0,%
+2026-11-18,SkyShowtime,skyshowtime,10.0,%
 2026-11-18,Smyk,smyk,1.26,%
 2026-11-18,Sony.pl,sony,5.0,%
 2026-11-18,SportStyleStory,sportstylestory,6.0,%
@@ -240,7 +240,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-11-18,Unisono,unisono,10.0,%
 2026-11-18,uPacjenta,upacjenta,3.36,%
 2026-11-18,Van Graaf,vangraaf,7.0,%
-2026-11-18,Vans,vans,1.0,%
+2026-11-18,Vans,vans,10.0,%
 2026-11-18,Vasco Electronics,vascoelectronics,10.0,%
 2026-11-18,Venezia,venezia,2.5,%
 2026-11-18,Victoria's Secret,victorias-secret,3.0,%
@@ -249,7 +249,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-11-18,Vobis,vobis,1.0,%
 2026-11-18,Wolt,wolt,10.0,%
 2026-11-18,Wrangler,wrangler,10.0,%
-2026-11-18,x-kom,x-kom,1.0,%
+2026-11-18,x-kom,x-kom,10.0,%
 2026-11-18,Xiaomi,mi,2.0,%
 2026-11-18,xlmoto,xlmoto,4.0,%
 2026-11-18,Yanosik,yanosik,3.0,%
