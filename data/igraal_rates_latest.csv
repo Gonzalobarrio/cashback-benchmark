@@ -8,7 +8,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-11-19,MediaMarkt,mediamarkt,4.0,%
 2026-11-19,Temu,temu,24.0,%
 2026-11-19,SHEIN,shein,10.0,%
-2026-11-19,RTV Euro AGD,rtveuro,1.5,%
+2026-11-19,RTV Euro AGD,rtveuro,,no cashback
 2026-11-19,Lidl,lidl,1.0,%
 2026-11-19,Leroy Merlin,leroymerlin,2.5,%
 2026-11-19,CCC,ccc,5.0,%
@@ -64,9 +64,9 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-11-19,Dermacol,dermacol,3.0,%
 2026-11-19,Desigual,desigual,7.7,%
 2026-11-19,DHgate,dhgate,2.0,%
-2026-11-19,DHL,dhl,10.0,%
+2026-11-19,DHL,dhl,7.5,%
 2026-11-19,Diablo Chairs,diablochairs,4.0,%
-2026-11-19,Disney+,disneyplus,10.0,%
+2026-11-19,Disney+,disneyplus,7.5,%
 2026-11-19,Drogeria.pl,drogeria.pl,3.0,%
 2026-11-19,Dstreet,dstreet,9.0,%
 2026-11-19,Dyson,dyson,2.5,%
@@ -84,7 +84,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-11-19,ESET,eset,8.5,%
 2026-11-19,eSky,esky,2.0,%
 2026-11-19,Estro,estro,7.0,%
-2026-11-19,Eurofirany,eurofirany,10.0,%
+2026-11-19,Eurofirany,eurofirany,7.5,%
 2026-11-19,Euroflorist,euroflorist,10.0,%
 2026-11-19,Eveline,eveline,6.0,%
 2026-11-19,Eventim,eventim,1.0,%
@@ -116,7 +116,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-11-19,Huawei,huawei,3.5,%
 2026-11-19,iBOOD,ibood,3.0,%
 2026-11-19,iDream,idream,3.0,%
-2026-11-19,iHerb,iherb,3.0,%
+2026-11-19,iHerb,iherb,8.0,%
 2026-11-19,IKEA,ikea,7.5,%
 2026-11-19,Intymna,intymna,3.0,%
 2026-11-19,iParts,iparts,1.8,%
@@ -130,7 +130,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-11-19,Kinguin,kinguin,10.0,%
 2026-11-19,Kiwi,kiwi,3.0,%
 2026-11-19,Komputronik,komputronik,1.5,%
-2026-11-19,Konesso,konesso,10.0,%
+2026-11-19,Konesso,konesso,7.5,%
 2026-11-19,Kubenz,kubenz,2.76,%
 2026-11-19,Kubota,kubota,4.5,%
 2026-11-19,KurJerzy.pl,kurjerzy.pl,3.0,%
@@ -188,8 +188,8 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-11-19,Philips Hue,philips-hue,7.0,%
 2026-11-19,Pitbull,pitbull,5.0,%
 2026-11-19,Play,play,7.5,%
-2026-11-19,Pleso,plesotherapy,10.0,%
-2026-11-19,Plus,plus,10.0,%
+2026-11-19,Pleso,plesotherapy,7.5,%
+2026-11-19,Plus,plus,7.5,%
 2026-11-19,Preply,preply,7.5,%
 2026-11-19,Primodo,primodo,5.0,%
 2026-11-19,PRM,prm,6.0,%
@@ -200,7 +200,7 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-11-19,Pyszne.pl,pyszne,2.0,%
 2026-11-19,Radisson Hotels,radissonhotels,2.0,%
 2026-11-19,Recman,recman,5.0,%
-2026-11-19,RedBull Mobile,redbullmobile,10.0,%
+2026-11-19,RedBull Mobile,redbullmobile,7.5,%
 2026-11-19,Regatta,regatta,3.0,%
 2026-11-19,Renee,renee,3.0,%
 2026-11-19,Reporter Young,reporteryoung,1.5,%
@@ -232,12 +232,12 @@ date,retailer,slug,igraal_rate,cashback_type
 2026-11-19,Trip.com,trip-com,3.85,%
 2026-11-19,Triverna,triverna,2.0,%
 2026-11-19,Twojemeble.pl,twojemeble.pl,2.7,%
-2026-11-19,Uber,uber,10.0,%
+2026-11-19,Uber,uber,7.5,%
 2026-11-19,Ubisoft,ubisoft,0.2,%
 2026-11-19,Ucando,ucando,4.0,%
 2026-11-19,Udemy,udemy,5.0,%
 2026-11-19,Under Armour,under-armour,6.0,%
-2026-11-19,Unisono,unisono,10.0,%
+2026-11-19,Unisono,unisono,7.5,%
 2026-11-19,uPacjenta,upacjenta,3.36,%
 2026-11-19,Van Graaf,vangraaf,7.0,%
 2026-11-19,Vans,vans,7.5,%
