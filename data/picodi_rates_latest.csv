@@ -42,7 +42,7 @@ date,retailer,igraal_slug,picodi_rate,picodi_rate_type,picodi_url
 2026-11-27,Bonprix,bonprix,1.2,%,https://www.picodi.com/pl/bonprix/offers
 2026-11-27,Born2Be,born2be,1.8,%,https://www.picodi.com/pl/born2be/offers
 2026-11-27,Brainmarket,brainmarket,,not_found,
-2026-11-27,Brasty,brasty,,not_found,
+2026-11-27,Brasty,brasty,1.8,up_to_%,https://www.picodi.com/pl/brasty/offers
 2026-11-27,Bricoman,bricoman,,not_found,
 2026-11-27,Bricomarche,bricomarche,,not_found,
 2026-11-27,Brooks,brooks,,not_found,
@@ -169,6 +169,7 @@ date,retailer,igraal_slug,picodi_rate,picodi_rate_type,picodi_url
 2026-11-27,Neonet,neonet,,not_found,
 2026-11-27,New Balance,nbsklep,,not_found,
 2026-11-27,Nike,nike,,not_found,
+2026-11-27,NinjaShark,ninja,,not_found,
 2026-11-27,NordVPN,nordvpn,,not_found,
 2026-11-27,norton,norton,,not_found,
 2026-11-27,Notino,notino,,not_found,
@@ -209,7 +210,6 @@ date,retailer,igraal_slug,picodi_rate,picodi_rate_type,picodi_url
 2026-11-27,Samsung,samsung,,not_found,
 2026-11-27,SeePlaces,seeplaces,,not_found,
 2026-11-27,Sferis,sferis,,not_found,
-2026-11-27,SharkNinja,ninja,,not_found,
 2026-11-27,Sinsay,sinsay,,not_found,
 2026-11-27,Skechers,skechers,,not_found,
 2026-11-27,SkyShowtime,skyshowtime,,not_found,
