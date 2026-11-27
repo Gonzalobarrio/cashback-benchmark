@@ -169,7 +169,6 @@ date,retailer,igraal_slug,goodie_rate,goodie_rate_type,goodie_url
 2026-11-27,Neonet,neonet,1.5,%,https://goodie.pl/marka/neonet
 2026-11-27,New Balance,nbsklep,2.5,up_to_%,https://goodie.pl/marka/new-balance
 2026-11-27,Nike,nike,,no cashback,https://goodie.pl/marka/nike
-2026-11-27,NinjaShark,ninja,,not_found,
 2026-11-27,NordVPN,nordvpn,20.0,%,https://goodie.pl/marka/nordvpn
 2026-11-27,norton,norton,,no cashback,https://goodie.pl/marka/norton
 2026-11-27,Notino,notino,2.5,up_to_%,https://goodie.pl/marka/notino
@@ -210,6 +209,7 @@ date,retailer,igraal_slug,goodie_rate,goodie_rate_type,goodie_url
 2026-11-27,Samsung,samsung,2.5,up_to_%,https://goodie.pl/marka/samsung
 2026-11-27,SeePlaces,seeplaces,2.25,%,https://goodie.pl/marka/seeplaces
 2026-11-27,Sferis,sferis,7.5,up_to_%,https://goodie.pl/marka/sferis
+2026-11-27,SharkNinja,ninja,2.5,up_to_%,https://goodie.pl/marka/shark-ninja
 2026-11-27,Sinsay,sinsay,5.0,up_to_%,https://goodie.pl/marka/sinsay
 2026-11-27,Skechers,skechers,4.25,up_to_%,https://goodie.pl/marka/skechers
 2026-11-27,SkyShowtime,skyshowtime,,no cashback,https://goodie.pl/marka/sky-showtime
